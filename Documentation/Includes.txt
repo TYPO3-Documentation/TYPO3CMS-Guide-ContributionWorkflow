@@ -1,0 +1,29 @@
+﻿.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. This is 'Includes.txt'. It is included at the very top of each and
+   every ReST source file in this documentation project (= manual).
+
+
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+
+.. role::   typoscript(code)
+
+.. role::   ts(typoscript)
+   :class:  typoscript
+
+.. role::   php(code)
+
+.. highlight:: typoscript
+
+.. highlight:: php
+
+.. _Forge: https://forge.typo3.org
+.. _Gerrit: https://review.typo3.org
+.. _T3O: https://typo3.org
+.. _Slack: https://slack.typo3.org
+.. _Forger: https://forger.typo3.org
