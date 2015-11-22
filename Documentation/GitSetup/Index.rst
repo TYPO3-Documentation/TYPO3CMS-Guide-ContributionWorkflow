@@ -97,7 +97,7 @@ Once you are happy with your changes, you can push them via
 
 .. code-block:: bash
 
-   git push origin HEAD:refs/for/master
+   git push origin HEAD:refs/publish/master
 
 .. note::
 
@@ -105,7 +105,7 @@ Once you are happy with your changes, you can push them via
 
    .. code-block:: bash
 
-      git push Gerrit HEAD:refs/for/master
+      git push Gerrit HEAD:refs/publish/master
 
 Other resources
 ===============
