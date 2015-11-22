@@ -2,9 +2,9 @@
 
 .. _redmine-index:
 
-====================
-Working with Redmine
-====================
+==============================
+Working with the Issue Tracker
+==============================
 
 This document defines the workflow of handling tickets in TYPO3s Redmine available at Forge_.
 There are edge cases to this which should be discussed on a per-case basis in order to refine the workflow more.
