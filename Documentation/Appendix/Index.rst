@@ -8,15 +8,11 @@ Appendix
 
 You can use this page as a reference to almost all topics we went over in this document.
 
-General Topics
-==============
-
 .. toctree::
    :glob:
    :titlesonly:
 
-   CommitMessage
-   CommitHook
+   GeneralTopics/Index
    OSX/Index
    Windows/Index
    Linux/Index
