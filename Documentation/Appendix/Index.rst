@@ -6,14 +6,17 @@
 Appendix
 ========
 
+You can use this page as a reference to almost all topics we went over in this document.
+
+General Topics
+==============
+
 .. toctree::
+   :glob:
+   :titlesonly:
 
    CommitMessage
-   SSHKeyOSX
-   SSHKeyWindows
-   SSHKeyUnix
-   Composer
-   nodejs
-   Grunt
-   bower
-   Gulp
+   CommitHook
+   OSX/Index
+   Windows/Index
+   Linux/Index

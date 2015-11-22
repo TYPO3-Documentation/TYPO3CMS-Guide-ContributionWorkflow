@@ -1,8 +1,7 @@
 .. include:: ../Includes.txt
 
-.. _composer:
+.. _forger-index:
 
 ===================
-Installing Composer
+Working with Forger
 ===================
-

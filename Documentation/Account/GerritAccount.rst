@@ -1,6 +1,6 @@
 .. include:: ../Includes.txt
 
-.. _TYPO3-Tutorial-ContributionWorkflow-GerritAccount:
+.. _GerritAccount:
 
 Setting up your Gerrit account
 ------------------------------
@@ -31,8 +31,8 @@ On the left hand side, click **SSH Public Keys** to set up your key.
 
 .. note::
 
-   If you work with different computers, for example with a notebook at work and another computer at home you will need
-   so set up a key per computer. Luckily Gerrit_ can handle multiple keys.
+   If you work with different computers, for example with a notebook at work and another computer at home you can either
+   copy your private key or create a seperate key for the other computer. Luckily Gerrit_ can handle multiple keys.
 
 .. image:: _assets/gerrit_ssh_keys.png
    :width: 400px
