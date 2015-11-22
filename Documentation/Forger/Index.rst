@@ -6,7 +6,7 @@
 Working with Forger
 ===================
 
-.. sidebar:: GIT Tower
+.. sidebar:: TYPO3 Forger
 
    .. image:: _assets/dave.png
       :width: 200px
