@@ -18,4 +18,5 @@ Apart from that it contains a lot of valuable information, a lot of mini-tutoria
    Gerrit/Index
    Forger/Index
    Redmine/Index
+   BugfixingAZ/Index
    Appendix/Index

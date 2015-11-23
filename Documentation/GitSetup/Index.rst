@@ -90,6 +90,8 @@ You can instruct git to push to Gerrit_ instead of the original repository. It a
 
       git remote add Gerrit ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
 
+.. _git-setup-pushing:
+
 Pushing your changes
 ====================
 
