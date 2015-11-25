@@ -40,7 +40,7 @@ node.js and NPM
 TYPO3 itself does not need node.js to run, but node.js is something similar to composer, but for the world outside of
 PHP.
 
-We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt, Bower or Gulp.
+We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt and Bower.
 
 Bower
 =====
@@ -68,13 +68,3 @@ does - it runs tasks for us.
 In our case grunt compiles CSS from LESS, minifies and concatenates JavaScript files, runs syntax checks and a couple of
 other useful things. The good news is that TYPO3 comes with a predefined set of tasks that grunt will run, so you don't
 have to take care of all the busywork underneath.
-
-Gulp
-====
-
-.. sidebar:: Gulp
-
-   You can learn more about Gulp on their website http://gulpjs.com/.
-
-We use Gulp very sparsely (at the time of writing just to optimize the SVGs we use in the TYPO3 core). This might change
-in the future though.
