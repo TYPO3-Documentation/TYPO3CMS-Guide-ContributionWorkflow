@@ -71,6 +71,10 @@ Install your pre-commit hook
 
 .. note::
 
+   If you get a warning message from curl "Failed to create the file .git/hooks/commit-msg: No such file or directory." just create the directory .git/hooks .
+
+.. note::
+
    You can read about the why and where of the pre-commit hook :ref:`here<commit-hook>`.
 
 Setting up your remote
