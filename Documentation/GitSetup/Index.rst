@@ -28,11 +28,11 @@ These steps will walk you through your basic GIT setup when working with TYPO3.
 Clone a fresh TYPO3 sourcecode
 ==============================
 
-Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3. Run ```composer install``` after that.
+Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3. Run ``composer install`` after that.
 
 .. code-block:: bash
 
-   git clone https://git.typo3.org/Packages/TYPO3.CMS.git .
+   git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
    composer install
 
 If you rather like to work with your favourite GIT GUI, we compiled a list of the ones used throughout the core team
