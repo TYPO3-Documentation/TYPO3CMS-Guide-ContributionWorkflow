@@ -86,14 +86,6 @@ You can instruct git to push to Gerrit_ instead of the original repository. It a
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
-.. note::
-
-   If you want a little more verbosity or dislike the fascade of ``pushInsteadOf`` you can add Gerrit_ as a remote explicitely via
-
-   .. code-block:: bash
-
-      git remote add Gerrit ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-
 .. _git-setup-pushing:
 
 Pushing your changes
@@ -104,14 +96,6 @@ Once you are happy with your changes, you can push them via
 .. code-block:: bash
 
    git push origin HEAD:refs/publish/master
-
-.. note::
-
-   If you have set up your remote explicitly, you need to push to that remote name instead, of course.
-
-   .. code-block:: bash
-
-      git push Gerrit HEAD:refs/publish/master
 
 Other resources
 ===============
