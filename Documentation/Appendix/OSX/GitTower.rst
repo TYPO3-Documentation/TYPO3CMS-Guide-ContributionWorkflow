@@ -3,22 +3,22 @@
 .. _gittower-osx:
 
 ======================
-Working with GIT Tower
+Working with Git Tower
 ======================
 
-.. sidebar:: GIT Tower
+.. sidebar:: Git Tower
 
    .. image:: _assets/tower_app_icon.png
       :width: 200px
 
 
-GIT Tower is a GIT GUI for OSX.
+Git Tower is a Git GUI for OSX.
 
 Tower provides extended support for Gerrit_, which comes in handy because we work with Gerrit_ in the TYPO3 project.
 
-Although it is a paid product, we think the cost is absolutetly worth it.
+Although it is a paid product, we think the cost is absolutely worth it.
 
-You can learn more about GIT Tower on their website http://www.git-tower.com/.
+You can learn more about Git Tower on their website http://www.git-tower.com/.
 
 Enabling Extended Gerrit Support in Tower
 =========================================

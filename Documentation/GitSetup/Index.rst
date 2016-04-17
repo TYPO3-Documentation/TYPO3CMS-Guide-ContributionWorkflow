@@ -3,7 +3,7 @@
 .. _git-setup:
 
 ===============================
-Setting up your GIT environment
+Setting up your Git environment
 ===============================
 
 .. toctree::
@@ -12,7 +12,7 @@ Setting up your GIT environment
    Prerequisites
    WorkflowExplained
 
-These steps will walk you through your basic GIT setup when working with TYPO3.
+These steps will walk you through your basic Git setup when working with TYPO3.
 
 
 .. tip::
@@ -21,7 +21,7 @@ These steps will walk you through your basic GIT setup when working with TYPO3.
 
 .. note::
 
-   We expect you have a fully fledged web development setup at hand.
+   We expect you have a fully-fledged web development setup at hand.
 
    If you are not sure, though, :ref:`take a look here <prerequisites>`.
 
@@ -35,17 +35,17 @@ Switch into your **empty** htdocs directory of choice and clone a fresh master o
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
    composer install
 
-If you rather like to work with your favourite GIT GUI, we compiled a list of the ones used throughout the core team
+If you rather like to work with your favorite Git GUI, we compiled a list of the ones used throughout the core team
 here.
 
-* Sourcetree on Windows
-* Sourcetree on OSX
-* :ref:`GIT Tower on OSX<gittower-osx>`
+* :ref:`SourceTree on Windows<windows-clonewithsourcetree>`
+* SourceTree on OSX
+* :ref:`Git Tower on OSX<gittower-osx>`
 
 Add your TYPO3.org account to the git repository
 ================================================
 
-You need to instruct GIT to work with your name and email address. Make sure the e-mail address is the one you used when
+You need to instruct git to work with your name and email address. Make sure the email address is the one you used when
 :ref:`setting up your TYPO3 account<TYPO3Account>`.
 
 .. code-block:: bash
@@ -80,7 +80,7 @@ Install your pre-commit hook
 Setting up your remote
 ======================
 
-You can instruct git to push to Gerrit_ instead of the original repository. It acts as a kind of fascade in front of GIT.
+You can instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git.
 
 .. code-block:: bash
 

@@ -17,7 +17,7 @@ At the bottom you will find a link called **Sign Up**.
 .. image:: _assets/typo3_account_step2.png
    :width: 400px
 
-Upon clicking it, you will se a small form to fill in.
+Upon clicking it, you will see a small form to fill in.
 
 .. image:: _assets/typo3_account_step3.png
    :width: 400px
@@ -29,11 +29,11 @@ Name
    Please use your real name here. It isn't really fun discussing with l33troXXor92.
 
 E-mail
-   Your E-Mail address should be the one you want to be using for notification e-mails from Forge_ and Gerrit_. Also
-   twice if your company e-mail is appropriate here.
+   Your email address should be the one you want to be using for notification emails from Forge_ and Gerrit_. Also
+   think twice whether your company email is appropriate here.
 
 Username
-   Pick a username you like. The form will tell you, in case it should be taken.
+   Pick a username you like. The form will directly tell you whether it's available or not.
 
 Password
    Choose a strong password here. Ideally, use a password manager to create a really strong password.
@@ -43,4 +43,4 @@ Repeat
 
 .. note::
 
-   Once you have registered you will receive an e-mail from the system to verify your account - basic stuff.
+   Once you have registered you will receive an email from the system to verify your account - basic stuff.

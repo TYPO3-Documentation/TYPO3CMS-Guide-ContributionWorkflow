@@ -26,7 +26,7 @@ Find the pool `here <https://forge.typo3.org/projects/typo3cms-core/issues?set_f
 Dedicated Patchlevel Versions
 -----------------------------
 
-This is the “real” next patchlevel release that is planed.
+This is the “real” next patchlevel release that is planned.
 Whenever a contributor takes up a task he/she will have to make sure the ticket is set from “Candidate for patchlevel” to this dedicated version.
 Taking up such an issue comes with the commitment to get this issue done by the time of release. Other members of the core team should support this cause by reviewing as usual.
 

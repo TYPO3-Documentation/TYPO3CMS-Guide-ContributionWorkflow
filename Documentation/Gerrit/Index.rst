@@ -17,7 +17,7 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 .. image:: _assets/gerrit-ui.png
    :alt: Screenshot of a code review on Gerrit
 
-#. The **searchbox** lets you write complex searchqueries with little coding knowledge. For detailed information on how to
+#. The **search box** lets you write complex search queries with little coding knowledge. For detailed information on how to
    use the search refer to the official documentation on https://review.typo3.org/Documentation/user-search.html.
 
 #. The **commit message** formatted like we explained in :ref:`"The commit message"<commitmessage>`.
@@ -25,18 +25,18 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 #. The **Reply Button** which you will use to vote on code quality and testing as well as to send comments. We will be
    covering this button in more detail later.
 
-#. The **Download Button**. You will be using this control to cherrypick a change in order to test it later.
+#. The **Download Button**. You will be using this control to cherry pick a change in order to test it later.
 
 #. Other changes **related** to this change. This can be either due to a similar topic or because the commit summary is
    related to the change we are currently reviewing.
 
 #. The **current review status**. Here you can see who has voted (and how they voted) on a change, yet. Notice that if a
-   change gets refined over time with new patchsets your votes will be reset (simply because the review has changed.
+   change gets refined over time with new patch sets your votes will be reset (simply because the review has changed.
 
 #. All **changed files** in this current change. You can click every file to take a look at what exactly has changed. There
-   is a select box on top of the file list that allows you to do a diff between patchsets to quickly see what has changed.
+   is a select box on top of the file list that allows you to do a diff between patch sets to quickly see what has changed.
 
-#. The **history** of this change. Here you can see comments, new patchsets, votes on a change etc.
+#. The **history** of this change. Here you can see comments, new patch sets, votes on a change etc.
 
 Commenting and voting
 =====================
@@ -47,7 +47,7 @@ can apply your votes.
 .. image:: _assets/gerrit-vote.png
 
 Click on ``Post`` and your comments will be saved. At the same time all other contributors who either watched this change
-or have already voted on this change will get notified. This is a good time to build a rule in your e-mail client btw.
+or have already voted on this change will get notified. This is a good time to build a rule in your email client btw.
 
 Commenting files
 ================
@@ -76,7 +76,7 @@ Testing a change
    If you do not want to code anything but like to review changes, there is a dedicated, easy to use Review Box based
    on Vagrant available at https://github.com/Tuurlijk/TYPO3.Review.
 
-If you want to test the changed code on your local machine you can use a technique called **cherry-picking** with GIT.
+If you want to test the changed code on your local machine you can use a technique called **cherry-picking** with Git.
 In order to get the right command Gerrit_ offers a handy feature available under the **Download Button** in the top right
 corner of the Gerrit_ UI.
 
@@ -87,9 +87,9 @@ Then run the command in your Terminal application of choice.
 
 .. important::
 
-   Make sure to always get the latest patchset of the current review. You can check this by looking at the **Patch Sets**
+   Make sure to always get the latest patch set of the current review. You can check this by looking at the **Patch Sets**
    menu left of the **Download Button**. The left and right numbers should always be the same, so you know you picked the
-   latest patchset.
+   latest patch set.
 
 .. image:: _assets/gerrit-cherrypick.png
 

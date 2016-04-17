@@ -23,7 +23,7 @@ A **code-review** and **testing the change** (manual testing + unit tests + func
 
 Code Review
 -----------
-A basic code review is ready possible by using the Gerrit web interface.
+A basic code review is possible by using the Gerrit web interface.
 Simply navigate to the RFC and use the diff-tool ("side-by-side" or "unified").
 You can add comments to the code lines.
 
@@ -35,7 +35,7 @@ If you're able to improve the patch yourself, it is very much appreciated if you
 Testing a patch
 ---------------
 
-For testing a the actual patch you need to import the change into your local repository.
+For testing the actual patch you need to import the change into your local repository.
 Gerrit helps a lot by providing the necessary command line to cherry-pick the change.
 Use the **Download button** on the top right, and copy the command next to the "cherry-pick" label.
 
@@ -93,7 +93,7 @@ If you're currently working on the master-branch this must be ``refs/publish/mas
 Starting a new Change Request (RFC)
 ===================================
 
-Make sure you have the a clean local repository. (see above)
+Make sure you have a clean local repository. (see above)
 
 Create or pick an issue on the Bug tracker. We will pretend to work on issue number #12345 here.
 
@@ -139,7 +139,7 @@ where <release-branch> has to match the branch you're currently working on. Plea
 be targeted at least for master. If other branches are involved, list them in your commit message in the releases
 line, but still your push goes to master. Don't push for all intended branches, push to master only. Your patch will
 most probably be discussed and changed, until it is ready to be merged. After this, backports to the other targeted
-branches are done, the resposibility here takes the person who merged the master patch.
+branches are done, the responsibility here takes the person who merged the master patch.
 
 Long story short: **push to master**. The rest is being taken care of when time is right.
 
@@ -178,12 +178,13 @@ First try to use the Gerrit cherry-pick feature for automatic backporting.
 .. image:: ../_assets/gerrit_cherrypick_1.png
    :width: 400px
 
-In the following modal, you can easily select the branch, you want to cherry pick to, by just typing partial informations.
+In the following modal, you can easily select the branch, you want to cherry pick to, by just typing partial information.
 
 .. image:: ../_assets/gerrit_cherrypick_2.png
    :width: 400px
 
-Remove from the commit message everything below the Change-ID because the information about former reviewer is not needed for the cherry pick. Make sure that you **don't alter the Change-ID** but remove every line (also emty ones) below it. After doing so hit the "Cherry Pick Change" button.
+Remove from the commit message everything below the Change-ID because the information about former reviewers is not needed
+for the cherry pick. Make sure that you **don't alter the Change-ID** but remove every line (also empty ones) below it. After doing so hit the "Cherry Pick Change" button.
 
 .. image:: ../_assets/gerrit_cherrypick_3.png
    :width: 400px
@@ -191,7 +192,8 @@ Remove from the commit message everything below the Change-ID because the inform
 Manual backport
 ---------------
 
-If the automatic backporting fails, you need to manually cherry-pick the patch to the target branch. (e.g. cherry-pick the master patch onto your local (up to date) TYPO3_6-2 branch) You will most likely need to adjust the code for the older branch.
+If the automatic backporting fails, you need to manually cherry-pick the patch to the target branch. (e.g. cherry-pick the
+master patch onto your local (up to date) TYPO3_6-2 branch) You will most likely need to adjust the code for the older branch.
 
 Edit the commit message to comply to the guidelines again. (e.g. remove the Reviewed-* and Tested-* lines added by Gerrit)
 **Keep the Change-Id though!**

@@ -20,7 +20,7 @@ Gerrit_ can authenticate you based on this key.
    Double-click the Terminal application.
    The Terminal window opens with the command line prompt displaying the name of your machine and your username.
 
-An SSH key consists of a pair of files. One is the private key, which you should **never** give to anyone. Noone will ever
+An SSH key consists of a pair of files. One is the private key, which you should **never** give to anyone. No one will ever
 ask you for it and if so, simply ignore them - they are trying to steal it.
 The other is the public key. When you generate your keys, you will use ``ssh-keygen`` to store the keys in a safe location
 so you can authenticate with Gerrit_.
@@ -65,7 +65,7 @@ After you confirm the passphrase, the system generates the key pair and you will
    +-----------------+
 
 Your private key is saved to the ``id_rsa`` file in the ``.ssh`` subdirectory of your home directory and is used to verify
-the public key you use belongs your Gerrit_ account.
+the public key you use belongs to your Gerrit_ account.
 
 .. warning::
 

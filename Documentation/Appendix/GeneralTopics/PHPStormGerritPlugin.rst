@@ -10,7 +10,7 @@ There is a very handy plugin for PHPStorm which will get Gerrit_ into the IDE PH
 
 In order to make it work just install the plugin by opening up PHPStorms preferences and navigate to ``Plugins``.
 
-Click ``Browse Repositories`` at the bottom and enter ``Gerrit`` in the searchbox.
+Click ``Browse Repositories`` at the bottom and enter ``Gerrit`` in the search box.
 
 .. image:: ../_assets/phpstorm-gerrit-install.png
 
@@ -20,7 +20,7 @@ After restarting PHPStorm you need to go back to PHPStorms preferences and navig
 
 Enter ``review.typo3.org`` as the URL and add your login credentials you use on TYPO3.org.
 
-The Gerrit Module appears at the bottom next to version control.
+The Gerrit module appears at the bottom next to version control.
 
 .. image:: ../_assets/phpstorm-gerrit-plugin.png
 
