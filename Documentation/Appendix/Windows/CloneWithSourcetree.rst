@@ -3,7 +3,7 @@
 .. _windows-clonewithsourcetree:
 
 ==================================
-Cloning with Sourcetree on Windows
+Cloning with SourceTree on Windows
 ==================================
 
 SourceTree General Setup
@@ -26,7 +26,7 @@ Basic Settings
 --------------
 
 First of all set the basic settings for your Git configuration by clicking on the settings button in SourceTree and
-add your name, e-mail and SSH Key. Make sure the option "SSH Client" is set to PuTTY/Plink.
+add your name, email and SSH Key. Make sure the option "SSH Client" is set to PuTTY/Plink.
 
 .. image:: ../_assets/SourceTree/0_Win_SourceTree_Setup1.png
 

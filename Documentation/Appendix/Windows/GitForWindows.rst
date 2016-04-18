@@ -69,7 +69,7 @@ Done!
 Configuration
 =============
 
-If you only use Git for TYPO3 then you can use the global settings. If you use it for several unrelated projects then you can set
+If you only use Git for TYPO3 then you can use the global settings. If you use it for several unrelated projects, then you can set
 local settings; these are valid for a single repository. Think about the best settings for your situation. Perhaps the global
 settings are best for your projects at work (perhaps a repository per project?) and then you can set the local settings for each
 of the TYPO3 version and perhaps some extensions you maintain.

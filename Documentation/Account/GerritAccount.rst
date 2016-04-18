@@ -10,7 +10,7 @@ Head over to Gerrit_ and click the **Sign In** button in the top right corner.
 .. image:: _assets/gerrit_step1.png
    :width: 400px
 
-You will be prompted a regular **Basic Authentication** window, simply enter your TYPO3.org username and password you
+You will be prompted with a regular **Basic Authentication** window, simply enter your TYPO3.org username and password you
 had :ref:`set up earlier <TYPO3Account>`.
 
 .. note::
@@ -32,7 +32,7 @@ On the left hand side, click **SSH Public Keys** to set up your key.
 .. note::
 
    If you work with different computers, for example with a notebook at work and another computer at home you can either
-   copy your private key or create a seperate key for the other computer. Luckily Gerrit_ can handle multiple keys.
+   copy your private key or create a separate key for the other computer. Luckily Gerrit_ can handle multiple keys.
 
 .. image:: _assets/gerrit_ssh_keys.png
    :width: 400px

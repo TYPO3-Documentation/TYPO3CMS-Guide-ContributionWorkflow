@@ -18,7 +18,7 @@ and reviews.
 
 So Forger_ does a few things for us
 
-#. Provide a decent **search** over issues on Forge_, available via the huge searchbox on the startpage and in the top right
+#. Provide a decent **search** over issues on Forge_, available via the huge search box on the start page and in the top right
    corner.
 
 #. Visualize the current development with a lot of useful **graphs**. You can learn more about the graphs
@@ -30,6 +30,6 @@ So Forger_ does a few things for us
    current development. Just put up any board on a huge screen and use an auto-reload plugin in your browser. Take a look
    at the ``Sprints`` menu.
 
-#. Supply a **Issue Management** view to show issues aggregated by year, month and status, based on their last update.
+#. Supply an **Issue Management** view to show issues aggregated by year, month and status, based on their last update.
 
 #. A **rst file generator** which is useful when you add documentation snippets to a review.

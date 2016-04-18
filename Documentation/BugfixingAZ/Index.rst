@@ -11,18 +11,18 @@ guide you through it step by step.
 
 .. note::
 
-   We expect you went through the setup process so we won't be covering this here.
+   We expect you went through the setup process so we won't be covering that here.
 
 Identify the issue
 ==================
 
 Be up to date
-   First of all, you should make sure that the bug does not exist in the latest master branch. Do a ``git pull`` on your
+   First of all, you should make sure that the bug does exist in the latest master branch. Do a ``git pull`` on your
    development environment, flush all caches, do a ``composer install``, just to be sure.
 
-Remove side efects
+Remove side effects
    Work on a TYPO3 instance which is as clean as possible so you can rule out extensions messing with the TYPO3 core. If you
-   needs to set up an extension to illustrate the problem, make sure it is as free of side effects as possible.
+   need to set up an extension to illustrate the problem, make sure it is as free of side effects as possible.
 
 Narrow down the problem
    Try different browsers, this will help the team (and you) a lot to provide a proper description of the problem.
@@ -35,7 +35,7 @@ Create an issue
 
 Head over to Forge_ and log in (if you aren't already). You can find the TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/.
 
-If you click "New issue" you will see a form with a couple of fields that are important. Let's go over these real quick.
+If you click "New issue" you will see a form with a couple of fields that are important. Let's go over these really quick.
 
 Tracker
    The tracker is just Redmines term for the type of issue. The trackers you will be using the most are **Feature** and **Bug**.
@@ -48,7 +48,7 @@ Subject
 
 Description
    As usual, provide steps how to reproduce the problem. Redmine offers a lot of text formatting options: use them to make
-   your report readible. If you attach **images** (which makes sense, because a screenshot says more than 1000 words), consider
+   your report readable. If you attach **images** (which makes sense, because a screenshot says more than 1000 words), consider
    displaying it inline in your description using exclamation marks to wrap your filename in - this saves everybody a click
    and makes it easier to understand which image goes where. As you can imagine: provide a screenshot of the relevant parts
    of the image.
@@ -61,11 +61,11 @@ Fix the code
 
 .. sidebar:: UnitTests
 
-   Adding Unittests is a good idea at this point because it makes it a lot easier to ensure TYPO3 behaves consistently
+   Adding Unit Tests is a good idea at this point because it makes it a lot easier to ensure TYPO3 behaves consistently
    now and in the future.
 
-This is actually the part that is pretty straight-foward. But be warned, they are still some dark places deep inside the
-TYPO3 core dating back to the medieval times of PHP4 (yes, TYPO3 is a around for quite some time) which we didn't have
+This is actually the part that is pretty straightforward. But be warned, they are still some dark places deep inside the
+TYPO3 core dating back to the medieval times of PHP4 (yes, TYPO3 has been around for quite some time) which we didn't have
 to touch yet, because they just work.
 
 If you should encounter any problems or have questions, talk to us on Slack_ in the ``typo3-cms-coredev`` channel.
@@ -84,7 +84,7 @@ Adding documentation
 
    Select the type of rst snippet you want to create, enter your issue number and click the search button.
 
-If your change makes is necessary to add to the official documentation you have to add a rst snippet to your change.
+If your change makes it necessary to add to the official documentation you have to add a rst snippet to your change.
 There are 4 different types of documentation snippets which have to follow a certain format and **always** need to go
 into ``typo3/sysext/core/Documentation/Changelog/master``.
 

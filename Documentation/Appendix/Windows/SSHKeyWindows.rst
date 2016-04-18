@@ -23,12 +23,12 @@ Generate your keys with Putty
 
 4.) Fill the fields for comment (1) and add your name for instance
 5.) Add a passphrase for your pivate key (2, 3)
-6.) Save you private key in a protected place on the local filesystem  (4)
+6.) Save you private key in a protected place on the local filesystem (4)
 7.) Copy the displayed public key and add it to your Gerrit account
 
 .. note::
 
-   Keep in mind that putty uses a propriatary format to store keys, which is incompatible with OpenSSH, when you use any
+   Keep in mind that putty uses a proprietary format to store keys, which is incompatible with OpenSSH, when you use any
    of the save-buttons. If you need to store you private key in the OpenSSH format use the menu item Conversions->Export
    OpenSSH key.
 
@@ -38,7 +38,7 @@ Use pageant to load your pivate key on startup
 
 Putty provides a key agent named "pageant", which can be added to your autostart folder.
 This allows you to enter your passphrase only once at startup and any tools using putty (e.g. git-for-windows,
-tortoisegit, etc) can automatically use your private key.
+tortoisegit, etc.) can automatically use your private key.
 
 In order to achieve this, create a new shortcut in the following folder:
 C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
