@@ -2,7 +2,7 @@
 
 .. _appendix-osx:
 
-Apple OS X help
+OS X help
 ===============
 
 .. toctree::

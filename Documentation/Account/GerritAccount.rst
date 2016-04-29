@@ -45,6 +45,6 @@ Click **Add Key** to add your new key and paste your key into the textbox below.
 
 If you don't know how to create your SSH Public Key, we have compiled a list of links for you:
 
-* :ref:`Apple OSX <ssh-key-osx>`
+* :ref:`OS X <ssh-key-osx>`
 * :ref:`Microsoft Windows <ssh-key-win>`
 * :ref:`Linux/Unix <ssh-key-unix>`
