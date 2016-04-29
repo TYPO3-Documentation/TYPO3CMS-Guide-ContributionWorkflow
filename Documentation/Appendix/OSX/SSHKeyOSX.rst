@@ -1,5 +1,7 @@
 .. include:: ../../Includes.txt
 
+.. highlight:: bash
+
 .. _ssh-key-osx:
 
 ================================
@@ -27,9 +29,7 @@ so you can authenticate with Gerrit_.
 
 To generate SSH keys in Mac OS X, follow these steps:
 
-#. Enter the following command in the Terminal window.
-
-   .. code-block:: bash
+#. Enter the following command in the Terminal window::
 
       ssh-keygen -t rsa
 
@@ -45,7 +45,7 @@ To generate SSH keys in Mac OS X, follow these steps:
 
 After you confirm the passphrase, the system generates the key pair and you will see output like this:
 
-.. code-block:: bash
+.. code-block:: text
 
    Your identification has been saved in /Users/yourmacusername/.ssh/id_rsa.
    Your public key has been saved in /Users/yourmacusername/.ssh/id_rsa.pub.
@@ -72,9 +72,7 @@ the public key you use belongs to your Gerrit_ account.
    Never share your private key with anyone! Ever! **We mean it!**
 
 Your public key is saved to a file called ``id_rsa.pub`` in the ``.ssh`` subdirectory of your home directory. You can copy
-it to your clipboard using the following command:
-
-.. code-block:: bash
+it to your clipboard using the following command::
 
    pbcopy < ~/.ssh/id_rsa.pub
 
