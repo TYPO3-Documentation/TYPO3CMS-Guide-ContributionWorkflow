@@ -46,8 +46,39 @@ can apply your votes.
 
 .. image:: _assets/gerrit-vote.png
 
+.. sidebar:: Votes
+
+   The +2 and -2 votes only available for core developers. See the section `Policy for votes`_. for more details.
+
 Click on ``Post`` and your comments will be saved. At the same time all other contributors who either watched this change
 or have already voted on this change will get notified. This is a good time to build a rule in your email client btw.
+
+Policy for votes
+================
+
+**Verify:** Needs two +1, one of them being an core developer
+
+**Code Review:** Needs two +1, one of them being an core developer
+A core developer can give a "+2" right away if another +1 vote already exists
+
+Authors should not vote for their own patches, unless the patch has been changed substantially by other developers.
+
+As soon as the patch has reached the approved status, a core developer can decide to push the "Submit" button, finally pushing it to the main repository.
+
+No brainers
+-----------
+
+An core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI")
+An core developer can give a +2 and wait a bit before submitting (used to be FYI24, FYI48, ...).
+
+Practical considerations
+------------------------
+
+The activecore developer who gave an early +1 should try and go back to transform the +1 into a +2 after a second review came in, if applicable.
+Each newly pushed patch requires a complete new round of voting before it can be submitted. So everyone that reviewed once is invited to re-vote as soon as a new patch is pushed. Using Gerrit's Patch History feature allows to quickly see what has changed from the already reviewed patch to the new one. Consider this rules when comparing patches:
+
+* If the patch was re-pushed due to the comments, check the diff between the versions of the patch.
+* If the patch needed to be rebased onto current master, the changeset might contain the changes due to rebasing. So better check the diff between base and most recent version in this case.
 
 Commenting files
 ================
