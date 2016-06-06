@@ -81,6 +81,13 @@ You can instruct Git to push to Gerrit_ instead of the original repository. It a
 
 .. _git-setup-pushing:
 
+Set a Commit Message
+====================
+
+See how to compose a proper commit message here_.
+
+.. _here: https://wiki.typo3.org/CommitMessage_Format_(Git)
+
 Pushing your changes
 ====================
 
