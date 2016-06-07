@@ -221,7 +221,9 @@ All you need is the template like::
 
 in a file, e.g. ~/.gitmessage.txt
 
-and the command::
+and the command:
+
+.. code-block:: shell
 
    git config --global commit.template ~/.gitmessage.txt
 
