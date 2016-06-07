@@ -13,6 +13,7 @@ Setting up your Git environment
 
    Prerequisites
    WorkflowExplained
+   CommitMessageFormat
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
