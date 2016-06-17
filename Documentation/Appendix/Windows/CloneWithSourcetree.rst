@@ -131,9 +131,11 @@ Setup for pushing to Gerrit
 
 In the Git Bash window (click Terminal), enter the following commands to set that you push to Gerrit instead of the TYPO3 repository directly.
 
-git config url."ssh://<username>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
-git config remote.origin.push refs/heads/*:refs/for/*
-git config branch.autosetuprebase remote
+.. code-block:: bash
+
+   git config url."ssh://<username>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+   git config remote.origin.push refs/heads/*:refs/for/*
+   git config branch.autosetuprebase remote
 
 
 Create a branch
