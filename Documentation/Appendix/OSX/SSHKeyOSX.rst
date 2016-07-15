@@ -31,7 +31,7 @@ To generate SSH keys in Mac OS X, follow these steps:
 
 #. Enter the following command in the Terminal window::
 
-      ssh-keygen -t rsa
+      ssh-keygen -t rsa -b 4096
 
    This starts the key generation process. When you execute this command, the ssh-keygen utility prompts you to indicate where to store the key.
 
@@ -77,3 +77,7 @@ it to your clipboard using the following command::
    pbcopy < ~/.ssh/id_rsa.pub
 
 Now you can head over to Gerrit_, go to settings and paste your public key as described :ref:`here<GerritAccount>`.
+
+Testing your connection: 
+
+      ssh -T <YOUR_TYPO3_USERNAME>@review.typo3.org
