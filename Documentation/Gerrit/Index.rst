@@ -105,7 +105,7 @@ Testing a change
 .. sidebar:: TYPO3 Review Box
 
    If you do not want to code anything but like to review changes, there is a dedicated, easy to use Review Box based
-   on Vagrant available at https://github.com/Tuurlijk/TYPO3.Review.
+   on Vagrant available at https://github.com/Tuurlijk/TYPO3.Homestead.
 
 If you want to test the changed code on your local machine you can use a technique called **cherry-picking** with Git.
 In order to get the right command Gerrit_ offers a handy feature available under the **Download Button** in the top right
