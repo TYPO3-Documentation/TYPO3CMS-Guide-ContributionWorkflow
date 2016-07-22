@@ -93,7 +93,7 @@ annoying to handle (imagine a change with 150 files being modified). But Gerrit_
 
 If you click on a file in the **changed files** section, you will see a diff of this file against the current codebase.
 
-Simply point to the place you want to add a comment and hit the ``C`` key on your keyboard. Leave your comment in the comment
+Simply point to the place you want to add a comment and hit the :kbd:`C` key on your keyboard. Leave your comment in the comment
 box and hit ``Save``. Keep in mind that all comments will not be sent to the reviewers immediately - you will still need
 to use the **Reply Button** to send them all (ideally with a vote indicating how severe your finding were).
 
