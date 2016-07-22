@@ -56,9 +56,9 @@ or have already voted on this change will get notified. This is a good time to b
 Policy for votes
 ================
 
-**Verify:** Needs two +1, one of them being an core developer
+**Verify:** Needs two +1, one of them being a core developer.
 
-**Code Review:** Needs two +1, one of them being an core developer
+**Code Review:** Needs two +1, one of them being a core developer.
 A core developer can give a "+2" right away if another +1 vote already exists
 
 Authors should not vote for their own patches, unless the patch has been changed substantially by other developers.
@@ -68,13 +68,13 @@ As soon as the patch has reached the approved status, a core developer can decid
 No brainers
 -----------
 
-An core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI")
-An core developer can give a +2 and wait a bit before submitting (used to be FYI24, FYI48, ...).
+A core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI").
+A core developer can give a +2 and wait a bit before submitting (used to be FYI24, FYI48, ...).
 
 Practical considerations
 ------------------------
 
-The activecore developer who gave an early +1 should try and go back to transform the +1 into a +2 after a second review came in, if applicable.
+The active core developer who gave an early +1 should try and go back to transform the +1 into a +2 after a second review came in, if applicable.
 Each newly pushed patch requires a complete new round of voting before it can be submitted. So everyone that reviewed once is invited to re-vote as soon as a new patch is pushed. Using Gerrit's Patch History feature allows to quickly see what has changed from the already reviewed patch to the new one. Consider this rules when comparing patches:
 
 * If the patch was re-pushed due to the comments, check the diff between the versions of the patch.
@@ -95,7 +95,7 @@ If you click on a file in the **changed files** section, you will see a diff of 
 
 Simply point to the place you want to add a comment and hit the ``C`` key on your keyboard. Leave your comment in the comment
 box and hit ``Save``. Keep in mind that all comments will not be sent to the reviewers immediately - you will still need
-to use **Reply Button** to send them all (ideally with a vote indicating how severe your finding were.
+to use the **Reply Button** to send them all (ideally with a vote indicating how severe your finding were).
 
 .. image:: _assets/gerrit-comment-box.png
 
