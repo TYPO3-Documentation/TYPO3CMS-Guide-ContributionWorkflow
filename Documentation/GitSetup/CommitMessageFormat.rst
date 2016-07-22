@@ -175,7 +175,7 @@ system will not properly update forge.**
    This should be done on bugfixes which should be backported to older,
    still actively supported, releases.::
 
-      Releases: master, 6.2
+      Releases: master, 7.6, 6.2
 
 -  For TYPO3  **documentation patches**, refer to the corresponding TYPO3 Core patch::
 
