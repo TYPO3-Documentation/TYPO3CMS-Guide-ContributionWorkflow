@@ -56,9 +56,9 @@ or have already voted on this change will get notified. This is a good time to b
 Policy for votes
 ================
 
-**Verify:** Needs two +1, one of them being an core developer
+**Verify:** Needs two +1, one of them being a core developer.
 
-**Code Review:** Needs two +1, one of them being an core developer.
+**Code Review:** Needs two +1, one of them being a core developer.
 A core developer can give a "+2" right away if another +1 vote already exists
 
 Authors should not vote for their own patches, unless the patch has been changed substantially by other developers.
@@ -68,7 +68,7 @@ As soon as the patch has reached the approved status, a core developer can decid
 No brainers
 -----------
 
-A core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI")
+A core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI").
 A core developer can give a +2 and wait a bit before submitting (used to be FYI24, FYI48, ...).
 
 Practical considerations
