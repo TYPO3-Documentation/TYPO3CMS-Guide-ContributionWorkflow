@@ -80,7 +80,7 @@ Adding documentation
 
 .. sidebar:: Forger
 
-   If you want to save yourself some time you can use the rst Helper at https://forger.typo3.org/standard/rst
+   If you want to save yourself some time you can use the rst Helper at https://forger.typo3.org/utility/rst
 
    Select the type of rst snippet you want to create, enter your issue number and click the search button.
 
