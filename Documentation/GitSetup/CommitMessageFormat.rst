@@ -5,15 +5,7 @@
 
 .. _Commit-Message-Format:
 
-=======================================
-Commit Message Format (Git) - TYPO3Wiki
-=======================================
-
-.. highlight:: none
-
-Taken from: `Wiki on 2016-06-07 <https://wiki.typo3.org/CommitMessage_Format_%28Git%29>`__
-
-
+==================================
 Commit Message rules for TYPO3 CMS
 ==================================
 
@@ -193,6 +185,20 @@ the time tracking feature in the settings of your Forge Project and
 just add the time you worked to your commit message, like::
 
    Resolves: #12345 @1h:30
+
+
+Change-Id
+---------
+
+This unique randomly generated ID will later identify this change in the review
+system. Be sure to keep the same Change-Id (using `git commit --amend`) when
+adding a new patchset to an existing review.
+
+The `Change-Id` line is added automatically by the
+:ref:`git commit hook <git-setup-precommithook>`. Do not add this line manually
+unless you know what you are doing. The commit hook is executed after you edited
+your commit message, so just leave it out and it will be added after exiting the
+editor.
 
 
 Reverting patches
