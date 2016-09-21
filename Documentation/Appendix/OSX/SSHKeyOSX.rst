@@ -78,6 +78,11 @@ it to your clipboard using the following command::
 
 Now you can head over to Gerrit_, go to settings and paste your public key as described :ref:`here<GerritAccount>`.
 
-Testing your connection: 
+Gerrit is using the special port `29418` instead of the default SSH port `22` which has to be configured accordingly. This can be done in your local `~/.ssh/config` file which would contain the following sections then::
+
+   Host review.typo3.org
+      Port 29418
+
+Testing your connection::
 
       ssh -T <YOUR_TYPO3_USERNAME>@review.typo3.org
