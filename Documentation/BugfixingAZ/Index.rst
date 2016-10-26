@@ -121,6 +121,8 @@ Important Information
 Commit and Push
 ===============
 
+To commit your changes, decide whether you are creating a complete new patch, or improving an existing one. If you cherry-picked before or push for a second or third or fourty second time, you need to ammend your changes. Here are the commands: ``git commit -a`` will create a complete new patch. A ``Change-Id`` will be created upon first push, so don't insert one yourself. ``git commit -a --amend`` will update an existing patchset. The commit message should be in place already. Feel free to adjust it, but leave the ``Change-Id`` untouched.
+
 Once you are happy with your change, push it to Gerrit_ as described :ref:`here<git-setup-pushing>`.
 
 Keep in mind that you can commit as often as you want, just make sure to keep the ``Change-Id`` line intact.
