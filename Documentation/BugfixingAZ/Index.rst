@@ -11,7 +11,8 @@ guide you through it step by step.
 
 .. note::
 
-   We expect you went through the setup process so we won't be covering that here.
+   We assume you went through the setup process so we won't be covering that here.
+
 
 Identify the issue
 ==================
@@ -29,6 +30,7 @@ Narrow down the problem
 
 Talk to the core team
    When in doubt, don't hesitate to talk to us on Slack_ in the ``typo3-cms-coredev`` channel.
+
 
 Create an issue
 ===============
@@ -56,6 +58,7 @@ Description
    Do **not** add screenshots of code, use the ``<pre><code>`` tags in Redmine so we can search for the lines of code via
    Forger.
 
+
 Fix the code
 ============
 
@@ -74,6 +77,7 @@ If you should encounter any problems or have questions, talk to us on Slack_ in 
 
    Make sure you are using the correct PHP codestyle - which is **PSR-2** at the time of writing. Instruct your IDE to
    work against this standard, install PHP Codesniffer, ask us if you need any assistance.
+
 
 Adding documentation
 ====================
@@ -118,12 +122,45 @@ Features
 Important Information
    #. **Description** - describe what is so important it needed an rst snippet
 
+
 Commit and Push
 ===============
 
-Once you are happy with your change, push it to Gerrit_ as described :ref:`here<git-setup-pushing>`.
+.. highlight:: shell
 
-Keep in mind that you can commit as often as you want, just make sure to keep the ``Change-Id`` line intact.
+When committing your changes decide about whether you are creating *a completely new patch* or whether
+you are improving *an existing one.* You can change your local commit as often as you want to.
+Once you are happy with your change, push it to Gerrit_ as described in :ref:`git-setup-pushing-your-changes`.
+
+Create a new patch
+------------------
+
+To create a totally new patch you have to attach a new commit message. A commit message is new if it doesn't contain
+as `Change-Id: ...` line. The common command to do so is::
+
+   git commit -a
+
+The pre-commit hook (:ref:`git-setup-precommithook`) automatically generates the `Change-Id: ...` line
+and fills in a unique id.
+
+Change an existing patch
+------------------------
+
+To improve an existing commit you have to keep a part of the old commit message.
+Precisely, it's the `Change-Id: ...` line that you need to keep unmodified. The common command
+to do so is::
+
+   git commit -a --amend
+
+The `--amend` option fills in the old commit message which you can then edit. Change whatever you like but keep
+the `Change-ID: ...` line.
+
+.. tip::
+
+   Keep in mind that you can commit **as often as you want,**
+   just make sure you keep the `Change-Id:` line intact.
+
+
 
 Use Botty on Slack
 ==================
@@ -131,6 +168,7 @@ Use Botty on Slack
 Once your push to Gerrit_ went through, you will get back the URL of your new change. If you are on Slack_ you can now
 advertise your new change using the command ``review:show [ReviewNumber or URL]``. This will work only in public channels,
 though.
+
 
 Wait for reviews
 ================
