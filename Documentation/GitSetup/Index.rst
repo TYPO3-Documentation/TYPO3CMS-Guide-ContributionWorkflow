@@ -80,6 +80,8 @@ You can instruct Git to push to Gerrit_ instead of the original repository. It a
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
+
+
 .. _git-setup-pushing:
 
 Set a Commit Message
@@ -87,6 +89,8 @@ Set a Commit Message
 
 See :ref:`how to compose a proper commit message <Commit-Message-Format>`.
 
+
+.. _git-setup-pushing-your-changes:
 
 Pushing your changes
 ====================
