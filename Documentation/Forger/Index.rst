@@ -22,7 +22,7 @@ So Forger_ does a few things for us
    corner.
 
 #. Visualize the current development with a lot of useful **graphs**. You can learn more about the graphs
-   `here <https://forger.typo3.org/standard/help>`_.
+   `here <https://forger.typo3.org/utility/help>`_.
 
 #. Show and filter **reviews** incl. filters to easily find things to review. Check out the ``Reviews`` menu.
 
