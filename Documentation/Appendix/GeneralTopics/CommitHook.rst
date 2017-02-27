@@ -2,6 +2,8 @@
 
 .. _commit-hook:
 
+.. _why-pre-commit-hook:
+
 ======================
 Why a pre-commit hook?
 ======================
@@ -20,3 +22,49 @@ For detailed information on the format of a commit message, :ref:`click here<com
 
    The hook will **not** prevent you from committing. It will complain about a messed up commit message, though. In case
    you forgot to write a correct commit message, you can always ``amend`` your last commit message to correct it.
+   
+.. _post-checkout-for-composer-update:
+
+======================================
+Post-checkout hook for composer update
+======================================
+
+If you want to run `composer update` for each checkout (e.g. when switching branches, tags, etc), then you can use the `post-checkout` commit hook.
+
+Create a file named `.git/hooks/post-checkout` with the following contents:
+
+.. code::
+
+   #!/usr/bin/env python3
+   #-*- coding: utf-8 -*-
+
+   """A post-checkout git hook to execute `composer install`
+
+   :Author: Philipp Gampe
+   """
+
+   import subprocess
+   import string
+   import os
+   import sys
+
+   PATH_TO_COMPOSER = '/home/phil/bin/composer.phar'
+   HOOK_DIR = os.path.dirname(os.path.realpath(__file__))
+   GIT_ROOT_DIR = os.path.dirname(os.path.dirname(HOOK_DIR))
+
+   def main():
+       if sys.argv[3] == '1':
+           os.chdir(GIT_ROOT_DIR)
+           return subprocess.run([PATH_TO_COMPOSER, 'install'], timeout=30)
+
+   if __name__ == '__main__':
+       result = main()
+       if result:
+           exit(result.returncode)
+       else:
+           exit(0)
+
+.. important::
+
+   You need to adjust the `PATH_TO_COMPOSER` variable, that is defiened after the import statements. 
+   Additionally the `python3` executable needs to be available in your `PATH`.
