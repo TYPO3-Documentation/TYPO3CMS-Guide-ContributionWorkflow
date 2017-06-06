@@ -177,16 +177,6 @@ system will not properly update forge.**
 each issue number.**
 
 
-Time Tracking
--------------
-
-If you want your project to be able to track time you need to enable
-the time tracking feature in the settings of your Forge Project and
-just add the time you worked to your commit message, like::
-
-   Resolves: #12345 @1h:30
-
-
 Change-Id
 ---------
 
