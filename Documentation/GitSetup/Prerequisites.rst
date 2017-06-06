@@ -40,20 +40,7 @@ node.js and NPM
 TYPO3 itself does not need node.js to run, but node.js is something similar to composer, but for the world outside of
 PHP.
 
-We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt and Bower.
-
-Bower
-=====
-
-.. sidebar:: Bower
-
-   You can learn more about Bower on their website http://bower.io/.
-
-Bower is - again - a dependency manager. But this time, we deal with frontend related things like Bootstrap, jQuery,
-icon fonts and others.
-
-Just like Grunt, we already included a turn-key setup so you just need to change things here if you want to add a new
-dependency to the TYPO3 core.
+We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt.
 
 Grunt
 =====
