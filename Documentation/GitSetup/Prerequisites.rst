@@ -30,17 +30,69 @@ Since we use quite some packages (because why would we invent things ourselves t
 extremely useful tool for us.
 
 
+Setting up your frontend build toolchain.
+=========================================
+
+.. sidebar:: Frontend build
+
 node.js and NPM
-===============
+---------------
 
-.. sidebar:: NodeJS and NPM
+TYPO3 itself does not need node.js to run, but node.js is something similar to composer, but for the world outside of PHP.
+We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt and Bower.
 
-   You can learn more about node.js and NPM on their websites https://nodejs.org/ and https://www.npmjs.com/.
+Install on MacOS
+~~~~~~~~~~~~~~~~
 
-TYPO3 itself does not need node.js to run, but node.js is something similar to composer, but for the world outside of
-PHP.
+1. install the packagemanager homebrew => `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. install nodejs => `$ brew install nodejs`
+3. install latest npm => `$ npm install -g npm@latest`
 
-We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt.
+
+Installer for Windows and MacOS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Go to https://nodejs.org/en/
+2. Download the package and install
+3. after this get the newest npm with `$ npm install -g npm@latest`
+
+
+Linux
+~~~~~
+
+1. Download Installer => `$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+2. install nodejs => `$ sudo apt-get install -y nodejs`
+3. install latest npm => `$ sudo npm install -g npm@latest`
+
+Additional infos
+https://nodejs.org/en/download/package-manager/
+
+
+Install all required packages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Go to the `Build` folder.
+Install all dependencies with `npm install`.
+Wait for the the end of the install progress.
+Type `npm run` to see availablel tasks.
+Type `npm run build` for the build process
+
+Tasks
+~~~~~
+
+* `npm run build`
+ * Compile all
+* `npm run build-css`
+ * Compile SCSS to CSS
+* `npm run lint`
+ *  Test your SCSS and ts files
+* `npm run build-js`
+ * Compile JavaScript
+* `npm run format`
+ * Resolve Styleissues
+* `npm run update`
+ * Update dependencies
+
 
 Grunt
 =====
