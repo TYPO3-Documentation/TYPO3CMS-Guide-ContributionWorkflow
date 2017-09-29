@@ -53,10 +53,14 @@ Resolves
    at once (yay!), make sure to add more lines, do not separate them by comma or alike.
 
 Reverts
-   See `Lifecycle of a patch: reverting patches <https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/Appendix/GeneralTopics/LifeOfAPatch.html#reverting-patches>`_.
+   See Lifecycle of a patch :ref:`lifeOfAPatch-Reverting-Patches`.
 
 Related
-   Other issues related to this change which are not resolved. You need to reference an issue on Forge_ here simply by adding #[ISSUE_NUMBER]. If your change is related to multiple issues at once, make sure to add more lines, do not separate them by comma or alike.
+   Other issues related to this change which are not resolved. You need to
+   reference an issue on Forge_ by just adding the issue number like in
+   'Related: #00000'.
+   If your change is related to multiple issues use multiple 'Related' lines.
+   Each line can only have one issue number.
 
 Releases
    This is a comma separated list of the target versions you intend to apply this fix on. In general, we **always** fix
