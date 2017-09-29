@@ -202,6 +202,8 @@ Push the review back to Gerrit.
 
 On Gerrit the original patch will show the cherry-pick as a related patch.
 
+.. _lifeOfAPatch-Reverting-Patches:
+
 Reverting patches
 =================
 
