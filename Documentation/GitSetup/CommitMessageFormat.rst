@@ -98,9 +98,9 @@ Additionally other flags  **have to be added** under certain circumstances:
 Deprecations:
 ~~~~~~~~~~~~~
 
--  Deprecations must **not** use the breaking Prefix [!!!]
+-  :ref:`Deprecations<deprecations>` must **not** use the breaking Prefix [!!!]
 
--  Deprecations may **only** be of type **[TASK]** or **[FEATURE]**
+-  :ref:`Deprecations<deprecations>` may **only** be of type **[TASK]** or **[FEATURE]**
 
 
 Example topic descriptions:

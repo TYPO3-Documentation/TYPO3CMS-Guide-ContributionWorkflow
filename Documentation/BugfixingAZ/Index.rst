@@ -104,7 +104,7 @@ Breaking Changes
    #. **Migration** - provide instructions what needs to be done to get things working again. Explicitly mention if no
       migration is possible.
 
-Deprecations
+:ref:`Deprecations<deprecations>`
    #. **Description** - why things had to be deprecated.
 
    #. **Impact** - how will the change affect your installation.
