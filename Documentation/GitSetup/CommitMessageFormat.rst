@@ -1,4 +1,4 @@
-﻿
+
 .. include:: ../Includes.txt
 
 .. comment: utf-8, tag: 3 blanks
@@ -14,7 +14,9 @@ commit messages. A deeper `introduction on git revision log
 conventions <http://tbaggery.com/2008/04/19/a-note-about-git-commit-
 messages.html>`_ is helpful to understand the scope.
 
-A commit message might look like this::
+A commit message might look like this:
+
+.. code-block:: none
 
    [BUGFIX] Short summary of changes introduced by this patch
 
@@ -54,7 +56,7 @@ please consider writing a proper message!
 
 
 Topic description (first line)
-------------------------------
+==============================
 
 -  Prefix the line with a tag:  *[BUGFIX]*,  *[FEATURE]*,  *[TASK]* or  *[CLEANUP]*.
 
@@ -62,7 +64,8 @@ Topic description (first line)
 
 Possible tags are:
 
--  *[FEATURE]*: A new feature (also small additions). Most likely it will be an added
+[FEATURE]
+   A new feature (also small additions). Most likely it will be an added
    feature, but it could also be removed. Features may exclusively be targeted for
    the "master" branch of TYPO3 CMS, because no new features are allowed in older
    branches. Exceptions to this have to be discussed on a case-to-case basis with
@@ -70,58 +73,64 @@ Possible tags are:
    `TYPO3 CMS Important Changes Documentation HowTo
    <https://wiki.typo3.org/TYPO3_CMS_Important_Changes_Documentation_HowTo>`_ .
 
--  *[BUGFIX]*: A fix for a bug.
+[BUGFIX]
+   A fix for a bug.
 
--  *[CLEANUP]*: This tag may be used for changes that do **not** alter functionality,
+[CLEANUP]
+   This tag may be used for changes that do **not** alter functionality,
    but try to improve code style and readability. Examples: coding guideline compliance,
    comment improvements
 
--  *[TASK]*: Anything not covered by the above categories. E.g. Refactoring of a component
+[TASK]
+   Anything not covered by the above categories. E.g. Refactoring of a component
 
 Additionally other flags  **have to be added** under certain circumstances:
 
--  *[!!!]*: Breaking change. After this patch, something works different than before
+[!!!]
+   Breaking change. After this patch, something works different than before
    and the user / admin / extension developer will have to change something. Has to
    be  **documented** accordingly and should only be targeted for master branch.
    See `TYPO3 CMS Important Changes Documentation HowTo
    <https://wiki.typo3.org/TYPO3_CMS_Important_Changes_Documentation_HowTo>`_.
 
--  *[WIP]*: Work In Progress. This flag will be removed, once the final version of a
+[WIP]
+   Work In Progress. This flag will be removed, once the final version of a
    change is available. Changes marked WIP are never merged.
 
--  *[SECURITY]*: Visualizes that a change fixes a security issue. This tag is used
+[SECURITY]
+   Visualizes that a change fixes a security issue. This tag is used
    by the Security Team, in case you found a security issues please always follow
    `get in contact with the Security Team
    <http://typo3.org/teams/security/contact-us/>`_ first!
 
 
-Deprecations:
-~~~~~~~~~~~~~
+Deprecations
+------------
 
--  Deprecations must **not** use the breaking Prefix [!!!]
+-  :ref:`Deprecations <deprecations>` must **not** use the breaking Prefix [!!!]
 
--  Deprecations may **only** be of type **[TASK]** or **[FEATURE]**
+-  :ref:`Deprecations <deprecations>` may **only** be of type **[TASK]** or **[FEATURE]**
 
 
-Example topic descriptions:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Examples of topic descriptions
+------------------------------
 
--  [BUGFIX] Throw HttpStatusExceptions in BackendController
+`[BUGFIX] Throw HttpStatusExceptions in BackendController`
 
--  [FEATURE] Add option to hide BE search box in list mod
+`[FEATURE] Add option to hide BE search box in list mod`
 
--  [!!!][FEATURE] Implement new BE login form service
+`[!!!][FEATURE] Implement new BE login form service`
 
--  [!!!][TASK] Replace Foo API with new approach
+`[!!!][TASK] Replace Foo API with new approach`
 
--  [SECURITY] SQL Injection vulnerability in prepared statements
+`[SECURITY] SQL Injection vulnerability in prepared statements`
 
-Note: The [!!!] prefix is added at the *very beginning* of the line,
+*Note:* The [!!!] prefix is added at the *very beginning* of the line,
 so it doesn't get overlooked.
 
 
 Message body
-------------
+============
 
 -  Describe the problem and the change introduced by the Change Request.
    (The problem is already described in the Forge ticket.)
@@ -143,71 +152,80 @@ Message body
 Relationships
 -------------
 
-**Important: The space after the colon (:) is mandatory. Otherwise the
-system will not properly update forge.**
+.. important::
 
--  Refer to the bug tracker entry (features and tasks, closes the issue
-   on submit) (on `https://forge.typo3.org/ <https://forge.typo3.org/>`_ )::
+   1. The space after the colon (:) is mandatory. Otherwise the system will not
+      properly update forge.
+
+   2. If you have multiple resolved or related issues, use one line for each
+      issue number.
+
+
+1. `Resolves:`
+   For **features** and **tasks**, closes the issue on submit.
+   Refer to the bug tracker entry at https://forge.typo3.org/::
 
       Resolves: #12345
 
-   -  *Historical* : Some issues from the time since the introduction of GIT
-      (March 1st 2011) and the migration of the bug tracker to Forge
-      (March 29th 2011), still refer to Mantis bug tracker numbers, with a
-      prefix the number with an  *M* , i.e.::
+   *Historical* : Some issues from the time since the introduction of GIT
+   (March 1st 2011) and the migration of the bug tracker to Forge
+   (March 29th 2011), still refer to Mantis bug tracker numbers, with a
+   prefix the number with an  *M* , i.e.::
 
-         Resolves: #M12345
+      Resolves: #M12345
 
--  Refer to the bug tracker entry (all types, simply a relation, no
-   closing) (on `https://forge.typo3.org <https://forge.typo3.org/>`_ )::
+
+2. `Related:`
+   For **all types**, specifying simply a relation, no closing.
+   Refer to the bug tracker entry at https://forge.typo3.org/::
 
       Related: #12345
 
--  Refer to the  **branches for which this change will apply**:
+
+3. `Releases:`
+   Refer to the  **branches for which this change will apply**.
    This should be done on bugfixes which should be backported to older,
-   still actively supported, releases.::
+   still actively supported releases. Example::
 
       Releases: master, 7.6, 6.2
 
--  For TYPO3  **documentation patches**, refer to the corresponding TYPO3 Core patch::
+4. `Depends`
+   For TYPO3  **documentation patches**.
+   Refer to the corresponding TYPO3 Core patch::
 
       Depends: ChangeIdOfCorePatch
 
-**If you have multiple resolved or related issues, use one line for
-each issue number.**
 
+5. `Change-Id:`
+   Do not write or change this line yourself. But keep the line once it exists.
 
-Change-Id
----------
+   The change id is a randomly generated unique ID that identifies this change in
+   the review system.
+   The `Change-Id` line is automatically added by the :ref:`git commit hook
+   <git-setup-precommithook>`. The commit hook is executed when you have finished
+   editing and save the commit message.
 
-This unique randomly generated ID will later identify this change in the review
-system. Be sure to keep the same Change-Id (using `git commit --amend`) when
-adding a new patchset to an existing review.
+   *Attention:* Be sure to keep the existing Change-Id when adding a new patchset
+   to an existing review. Use `git commit --amend` to do so.
 
-The `Change-Id` line is added automatically by the
-:ref:`git commit hook <git-setup-precommithook>`. Do not add this line manually
-unless you know what you are doing. The commit hook is executed after you edited
-your commit message, so just leave it out and it will be added after exiting the
-editor.
 
 
 Reverting patches
------------------
+=================
 
 If there's the need to revert a patch, please add this information to
 the commit message:
 
-#. a Resolves-line for the ticket with reason for the revert
+1. Add a `Resolves`-line for the ticket that is giving the reason for the
+   revert.
 
-#. a Reverts-line for the ticket of the original patch
+2. Add a `Reverts`-line for the ticket that belongs to the original patch.
 
 
 Commit Template
 ===============
 
-You can use a custom template for getting the commit message faster
-done.
-
+You can use a custom template for getting done the commit message faster.
 All you need is the template like::
 
    [BUGFIX|TASK]
@@ -215,11 +233,8 @@ All you need is the template like::
    Resolves:
    Releases:
 
-in a file, e.g. ~/.gitmessage.txt
-
-and the command:
+in a file, for example :file:`~/.gitmessage.txt`, and the command:
 
 .. code-block:: shell
 
    git config --global commit.template ~/.gitmessage.txt
-
