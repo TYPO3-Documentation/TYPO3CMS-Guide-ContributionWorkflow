@@ -6,13 +6,16 @@
 TYPO3 Contribution Workflow
 ===========================
 
-This guide will walk you through everything necessary to become a TYPO3 contribution pro in no time.
+This guide will walk you through everything necessary to become a TYPO3
+contribution professional in no time.
 
-Apart from that it contains a lot of valuable information, a lot of mini-tutorials and tips & tricks.
+Apart from that it contains a lot of valuable information, a lot of
+mini-tutorials and a lot of tips and tricks.
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
+   Sitemap/Index
    Account/Index
    GitSetup/Index
    Gerrit/Index
@@ -20,3 +23,4 @@ Apart from that it contains a lot of valuable information, a lot of mini-tutoria
    Redmine/Index
    BugfixingAZ/Index
    Appendix/Index
+   Targets

@@ -7,11 +7,9 @@ Prerequisites and useful tools
 ==============================
 
 Here's a list of the tools we use in the TYPO3 project.
-
-If some of these are new for you, take a few minutes to read up about what they do for us, maybe they prove useful in
-your everyday work as well.
-
-You can find installation tutorials in the :ref:`Appendix<appendix>` section.
+If some of these are new for you, take a few minutes to read up about what they
+do for us. Maybe they prove useful in your everyday work as well.
+You can find installation tutorials in the :ref:`Appendix <appendix>` section.
 
 Composer
 ========
@@ -32,8 +30,6 @@ extremely useful tool for us.
 
 Setting up your frontend build toolchain.
 =========================================
-
-.. sidebar:: Frontend build
 
 node.js and NPM
 ---------------
@@ -80,19 +76,12 @@ Type `npm run build` for the build process
 Tasks
 ~~~~~
 
-* `npm run build`
- * Compile all
-* `npm run build-css`
- * Compile SCSS to CSS
-* `npm run lint`
- *  Test your SCSS and ts files
-* `npm run build-js`
- * Compile JavaScript
-* `npm run format`
- * Resolve Styleissues
-* `npm run update`
- * Update dependencies
-
+-   `npm run build` - Compile all.
+-   `npm run build-css` - Compile SCSS to CSS.
+-   `npm run lint` -  Test your SCSS and ts files.
+-   `npm run build-js` - Compile JavaScript.
+-   `npm run format` - Resolve Style issues.
+-   `npm run update` - Update dependencies.
 
 Grunt
 =====
