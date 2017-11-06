@@ -16,13 +16,13 @@ Here is how:
 Deprecate a class
 =================
 
- * Add an :php:`@deprecated` annotation to the class doc comment
+ * Add a :php:`@deprecated` annotation to the class doc comment
  * Deprecate the constructor - see next section about deprecating a method
 
 Deprecate method
 ================
 
- * Add an :php:`@deprecated` annotation to the class doc comment
+ * Add a :php:`@deprecated` annotation to the method doc comment
  * Add a :php:`trigger_error` call to the method, describing the migration
    path and triggering an error of type :php:`E_USER_DEPRECATED`
 
