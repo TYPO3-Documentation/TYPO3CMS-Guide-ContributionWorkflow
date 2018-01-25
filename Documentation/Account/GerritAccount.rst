@@ -5,9 +5,17 @@
 Setting up your Gerrit account
 ------------------------------
 
-Head over to Gerrit_ and click the **Sign In** button in the top right corner.
+Head over to Gerrit_ and scroll at the end of the page and switch to the new UI.
 
-.. image:: _assets/gerrit_step1.png
+.. note::
+    If you still want to use the old UI, please follow the version 1.0 of this guide.
+
+.. image:: _assets/gerrit_newui.png
+   :width: 400px
+
+Now you can click the **Sign In** button in the top right corner.
+
+.. image:: _assets/gerrit_signin.png
    :width: 400px
 
 You will be prompted with a regular **Basic Authentication** window, simply enter your TYPO3.org username and password you
