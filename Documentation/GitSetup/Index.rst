@@ -80,6 +80,11 @@ You can instruct Git to push to Gerrit_ instead of the original repository. It a
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
+If you get an error message after pushing to gerrit like below, you need to change manually the ``url`` parameter in ``.git/config``.
+::
+      fatal: unable to access 'https://git.typo3.org/Packages/TYPO3.CMS.git/': The requested URL returned error: 403
+   
+   
 
 
 .. _git-setup-pushing:
