@@ -145,7 +145,7 @@ Some examples of topic descriptions
 
 `[!!!][TASK] Replace Foo API with new approach`
 
-`[SECURITY] Fix SQL Injection vulnerability in prepared statements`
+`[SECURITY] Escape record title in RecordsOverview`
 
 *Note:* The [!!!] prefix is added at the *very beginning* of the line, so it doesn't get overlooked.
 
