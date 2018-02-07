@@ -91,7 +91,7 @@ Additionally other flags  **should be added** under certain circumstances:
       Whenever your change introduces a breaking change, it is **mandatory** to put **!!!** in front of the keyword.
 
 [WIP]
-   Work In Progress. This flag is not mandatory; will be removed, once the final version of a
+   Work In Progress. This flag is not mandatory and must be added before the other keywords; will be removed, once the final version of a
    change is available. Changes marked WIP are never merged.
 
 So say you want to add a breaking feature which is still work in progress, you would use ``!!![WIP][FEATURE] Transform Lead to Gold`` as your summary line.
@@ -155,7 +155,7 @@ Description (Message body)
 
 Here you can go into detail about the how and why of the change. It should be brief, but yet descriptive so people reviewing your change get an idea what they need to look out for
 
--  Describe the problem and the change introduced by the Change Request.
+-  Describe the fix/change introduced by the Change Request.
    (The problem is already described in the Forge ticket.)
 
 -  Keep it simple and don't repeat information that is already part of
@@ -177,7 +177,7 @@ Relationships
       issue number**. Do not separate them by comma or alike!
 
 1. `Resolves:`
-   You need to reference an issue on Forge_ here simply by adding #[ISSUE_NUMBER]. For **features** and **tasks**, it closes the issue on submit.::
+   You need to reference an issue on Forge_ here simply by adding #[ISSUE_NUMBER]. For **features** and **tasks**, it closes the issue on merge.::
 
       Resolves: #12345
 
@@ -273,7 +273,7 @@ should have been:
 
 .. code-block:: none
    
-   [BUGFIX] EXT:filelist Canceling the file exists already modal works now
+   [BUGFIX] EXT:filelist Cancelling the file exists already modal works now
 
 should have been:
 
@@ -296,7 +296,7 @@ should have been:
 
 .. note::   
 
-   Please note that in this case the subject of the commit to revert was poorly written,too! This required some additional adjusting. 
+   Please note that in this case the subject of the commit to revert was poorly written,too! This required some additional adjustment.. 
  
 
  **Example 4**
@@ -407,7 +407,7 @@ should have been:
 
 .. code-block:: none 
 
-   [BUGFIX] Invalid session token on creating content element in admin panel
+   [BUGFIX] Invalidate session token on creating content element in admin panel
 
 Should have been: 
 
