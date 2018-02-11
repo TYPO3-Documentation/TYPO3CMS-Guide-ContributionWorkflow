@@ -24,7 +24,7 @@ A commit message might look like this:
    and not what is has not been working
    (that is part of the bug report already).
 
-   More detailed explanatory text, if necessary. Wrap it to 74 characters.
+   More detailed explanatory text, if necessary. Wrap it to 72 characters.
    The first line is treated as the subject of the commit message and
    the rest of the text as the body.  The blank line separating the
    subject from the body is critical (unless you omit the body entirely);
