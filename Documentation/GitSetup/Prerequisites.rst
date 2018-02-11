@@ -31,57 +31,53 @@ extremely useful tool for us.
 Setting up your frontend build toolchain.
 =========================================
 
-node.js and NPM
+Yarn
 ---------------
 
-TYPO3 itself does not need node.js to run, but node.js is something similar to composer, but for the world outside of PHP.
-We will be mainly using NPM (NodeJS package manager) to get helpful tools like Grunt and Bower.
+TYPO3 itself does not need yarn to run, but yarn is something similar to composer, but for the world outside of PHP.
+We will be mainly using yarn to get helpful tools like Grunt and Bower.
 
 Install on MacOS
 ~~~~~~~~~~~~~~~~
 
 1. install the packagemanager homebrew => `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. install nodejs => `$ brew install nodejs`
-3. install latest npm => `$ npm install -g npm@latest`
+2. install yarn => `$ brew install yarn`
 
 
 Installer for Windows and MacOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Go to https://nodejs.org/en/
+1. Go to https://yarnpkg.com/lang/en/docs/install/#windows-tab
 2. Download the package and install
-3. after this get the newest npm with `$ npm install -g npm@latest`
 
 
 Linux
 ~~~~~
 
-1. Download Installer => `$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
-2. install nodejs => `$ sudo apt-get install -y nodejs`
-3. install latest npm => `$ sudo npm install -g npm@latest`
+1. Go to https://yarnpkg.com/lang/en/docs/install/#linux-tab
+2. Download the package and install
 
 Additional infos
-https://nodejs.org/en/download/package-manager/
+https://yarnpkg.com
 
 
 Install all required packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go to the `Build` folder.
-Install all dependencies with `npm install`.
+Go to the `Build` folder of your TYPO3 install root directory.
+Install all dependencies with `yarn install`.
 Wait for the the end of the install progress.
-Type `npm run` to see availablel tasks.
-Type `npm run build` for the build process
+Type `yarn build` for the build process
 
 Tasks
 ~~~~~
 
--   `npm run build` - Compile all.
--   `npm run build-css` - Compile SCSS to CSS.
--   `npm run lint` -  Test your SCSS and ts files.
--   `npm run build-js` - Compile JavaScript.
--   `npm run format` - Resolve Style issues.
--   `npm run update` - Update dependencies.
+-   `yarn build` - Compile everything.
+-   `yarn build-css` - Compile SCSS to CSS.
+-   `yarn lint` -  Test your SCSS and ts files.
+-   `yarn build-js` - Compile JavaScript.
+-   `yarn format` - Resolve Style issues.
+-   `yarn update` - Update dependencies (Use this if you are **really** sure what you're doing).
 
 Grunt
 =====
