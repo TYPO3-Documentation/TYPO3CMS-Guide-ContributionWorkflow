@@ -17,7 +17,7 @@ mini-tutorials and a lot of tips and tricks.
 
    Sitemap/Index
    Account/Index
-   GitSetup/Index
+   Setup/Index
    Gerrit/Index
    Forger/Index
    Redmine/Index
