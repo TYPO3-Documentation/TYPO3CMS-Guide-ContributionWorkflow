@@ -66,10 +66,7 @@ Install your pre-commit hook
 
 ::
 
-   curl -o .git/hooks/commit-msg "https://typo3.org/fileadmin/resources/git/commit-msg.txt" && chmod +x .git/hooks/commit-msg
-
-If you get a warning message from curl "*Failed to create the file .git/hooks/commit-msg: No such
-file or directory.*" just create the directory .git/hooks: ``mkdir .git/hooks``
+   mkdir -p .git/hooks && curl "https://typo3.org/fileadmin/resources/git/commit-msg.txt" -o .git/hooks/commit-msg && chmod +x .git/hooks/commit-msg
 
 You can read about the why and where of the pre-commit hook :ref:`here<commit-hook>`.
 
