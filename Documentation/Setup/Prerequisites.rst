@@ -93,16 +93,46 @@ In our case grunt compiles CSS from LESS, minifies and concatenates JavaScript f
 other useful things. The good news is that TYPO3 comes with a predefined set of tasks that grunt will run, so you don't
 have to take care of all the busywork underneath.
 
-Setting up your IDE
+
+.. _cgl:
+
+Coding Guidelines
 ===================
 
 Make sure your IDE is setup properly to comply with the :ref:`Coding Guidelines for TYPO3 (CGL) <t3coreapi:cgl>`. For
 example, (following PSR-2) space characters (not tabs) are used to indent source code. See
 :ref:`Whitespace and indentation <t3coreapi:cgl-general-requirements-for-php-files>` for more information.
 
+.. _cgl-fix-my-commit:
+
+cglFixMyCommit
+--------------
+
 If you don't make sure your source code is formatted correctly, the automatic tests on the review server will fail,
 after you upload your patch.
 
-You may verify this before uploading your changes by running the script `Build/Scripts/cglFixMyCommit.sh dryrun`
-after you made your changes. This will show necessary modifications. To apply the modifications, run it without the
-dryrun parameter. In general though, if everything is setup correctly, this should not be necessary. 
+If that happens to you, you can fix this by running the following script. It will apply a fix to all php files
+in your last commit.
+
+After that you will need to do the following:
+
+`git commit --amend`
+`git
+
+Linux and MacOS
+~~~~~~~~~~~~~~~
+
+`Build/Scripts/cglFixMyCommit.sh dryrun`
+
+This will show necessary modifications. To apply the modifications, run it without the dryrun parameter:
+
+`Build/Scripts/cglFixMyCommit.sh`
+
+
+Linux and MacOS
+~~~~~~~~~~~~~~~
+
+`Build/Scripts/cglFixMyCommit.bat`
+
+
+
