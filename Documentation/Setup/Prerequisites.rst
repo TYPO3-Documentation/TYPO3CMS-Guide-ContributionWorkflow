@@ -117,7 +117,7 @@ in your last commit.
 After that you will need to do the following:
 
 `git commit --amend`
-`git
+
 
 Linux and MacOS
 ~~~~~~~~~~~~~~~
