@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: ../../Includes.txt
 
 .. highlight:: bash
 
@@ -11,8 +11,6 @@ Setting up your Git environment
 .. toctree::
    :maxdepth: 1
 
-   Prerequisites
-   WorkflowExplained
    CommitMessageFormat
 
 These steps will walk you through your basic Git setup when working with TYPO3.
