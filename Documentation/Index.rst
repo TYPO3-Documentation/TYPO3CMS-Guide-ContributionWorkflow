@@ -17,6 +17,7 @@ mini-tutorials and a lot of tips and tricks.
 
    Sitemap/Index
    Introduction/Index
+   WorkflowExplained/Index
    Account/Index
    Setup/Index
    Gerrit/Index

@@ -12,7 +12,6 @@ Setting up your environment
    :maxdepth: 1
 
    Prerequisites
-   WorkflowExplained
    Git/Index
 
 
