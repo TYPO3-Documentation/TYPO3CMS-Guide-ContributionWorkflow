@@ -55,9 +55,10 @@ kept up-to-date to the best of the Documentation Team's abilities.
    WorkflowExplained/Index
    Account/Index
    Setup/Index
-   Gerrit/Index
    Forger/Index
+   Forge/Index
    Redmine/Index
+   Gerrit/Index
    BugfixingAZ/Index
    Appendix/Index
    Targets

@@ -40,6 +40,8 @@ Talk to the core team
    `#typo3-cms-coredev` channel.
 
 
+.. note::
+
 Create an issue
 ===============
 

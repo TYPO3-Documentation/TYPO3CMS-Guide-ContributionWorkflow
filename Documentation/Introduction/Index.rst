@@ -50,6 +50,11 @@ You will need to format your Source Code according to the TYPO3 Coding Guideline
 
 * :ref:`TYPO3 Coding Guidelines <t3coreapi:cgl>`
 
+.. todo: Some more recommended reading for general (PHP) design issues might be a good idea here (exception handling,
+   static functions, unit tests, dependency injection, ORM, doctrine), also for JavaScript / Typescript ...
+
+
+
 .. _slack:
 
 Getting help / Slack
