@@ -7,6 +7,14 @@ Introduction
 ============
 
 
+.. _overview:
+
+Overview
+========
+
+This guide will walk you through everything necessary to become a TYPO3
+contribution professional in no time.
+
 .. _intended-audience:
 
 Intended audience
@@ -30,15 +38,23 @@ because they are specific to TYPO3 development:
 
 You will need to setup a specific git hook for the commit-msg, for example.
 
-.. _getting-help:
+Further recommended reading
+===========================
 
-Getting help
-============
+In order to efficiently contribute to the TYPO3 core, you should familiarize yourself with its basic concepts. Helpful
+reading for this is the following:
+
+* :ref:`TYPO3 Core API <t3coreapi:start>`
+
+You will need to format your Source Code according to the TYPO3 Coding Guidelines:
+
+* :ref:`TYPO3 Coding Guidelines <t3coreapi:cgl>`
 
 .. _slack:
 
-Slack
-~~~~~
+Getting help / Slack
+====================
+
 
 If you wish to contribute, joining the `TYPO3 slack workspace <https://typo3.slack.com>`__ is strongly
 recommended because it is the main communication medium currently used. In order to join the slack workspace, you
@@ -56,9 +72,11 @@ Botty on Slack
 Also checkout the help page on `"Botty" <https://wiki.typo3.org/T3Bot>`__, the TYPO3 slack bot. We will show you
 some of its commands later in this manual.
 
-.. note::
-      You cannot use Botty in your private channel or in a direct messaging channel with someone else. Botty will
-      only be available in a public channel, to which it has been invited (which is the case in #typo3-cms-coredev).
+
+.. sidebar:: Botty
+
+   You cannot use Botty in your private channel or in a direct messaging channel with someone else. Botty will
+   only be available in a public channel, to which it has been invited (which is the case in #typo3-cms-coredev).
 
 
 .. _other-resources-for-contribution:
