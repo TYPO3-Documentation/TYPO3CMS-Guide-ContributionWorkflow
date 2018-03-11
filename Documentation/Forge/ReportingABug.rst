@@ -51,6 +51,23 @@ Description
    As usual, provide steps how to reproduce the problem. See the next section for more information on formatting your
    text.
 
+Category
+   Choose a category that fits your issue.
+
+TYPO3 version
+   Choose the correct TYPO3 version.
+
+PHP Version
+   Choose the correct PHP version.
+
+
+.. _important::
+   If you are not a member of the TYPO3 core team, you should not be filling out
+   the following fields: Priority, Assignee, Target version, Start date, Due
+   date, Estimated time, Done, Complexity, Is Regression and Sprint Focus. Do
+   not set a Watcher, unless someone has requested, that you do this.
+
+
 
 Hints for Formatting in Redmine
 ===============================
@@ -89,6 +106,12 @@ External Links
 
 Format your links correctly for better readability. You can insert the URL directly, but if the URL is long, it is
 better to provide a descriptive anchor text.
+
+**Syntax:**
+
+::
+
+   "Anchor text":url
 
 **Example:**
 

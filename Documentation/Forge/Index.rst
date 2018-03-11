@@ -2,9 +2,9 @@
 
 .. _forge-index:
 
-===================================
-Reporting and handling bugs (Forge)
-===================================
+==============================
+Working with the Issue Tracker
+==============================
 
 So you found a bug in TYPO3 (who would have thought there are any?) and want to report it right away? **Great**.
 
@@ -32,9 +32,8 @@ In order to do this, you can use Forger to search and narrow down your search by
 .. image:: _assets/forger-filter.png
 
 
-
-
 .. toctree::
-:maxdepth: 1
+   :maxdepth: 1
 
-      ReportingABug
+   ReportingABug
+   TicketWorkflow
