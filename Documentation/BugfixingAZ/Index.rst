@@ -36,7 +36,7 @@ Narrow down the problem
    proper description of the problem.
 
 Talk to the core team
-   When in doubt, don't hesitate to talk to us on Slack_ in the 
+   When in doubt, don't hesitate to talk to us on Slack_ in the
    `#typo3-cms-coredev` channel.
 
 
@@ -62,9 +62,9 @@ Subject
    generic and doesn't describe the problem specificly. Just imagine how you
    would like to get a report yourself :)
 
-Description 
+Description
    As usual, provide the steps to reproduce the problem. Redmine offers a lot
-   of text formatting options: Use them to make your report readable! 
+   of text formatting options: Use them to make your report readable!
 
    A screenshot says more than 1000 words. So consider attaching **images**
    and, preferably add them **inline** (like `!image.png!`) so that they are
@@ -94,7 +94,7 @@ the `#typo3-cms-coredev` channel.
 
    Make sure you are using the correct PHP codestyle. It is **PSR-2** at
    the time of writing and specified in the :ref:`TYPO3 Coding Guidelines
-   <t3api:cgl>` . Instruct your IDE to work against this standard,
+   <t3coreapi:cgl>` . Instruct your IDE to work against this standard,
    install PHP Codesniffer, ask us if you need any assistance.
 
 
@@ -111,8 +111,8 @@ uses. All you need for this is `Docker installed locally.
 
 You have to load the necessary PHP container from `Bitbucket T3COM bamboo-
 remote-agent <https://bitbucket.typo3.com/projects/T3COM/repos/bamboo-remote-agent/browse>`__.
-There are a lot of containers for testing with different PHP versions and 
-different databases and the functional tests. As an example, if you want to run 
+There are a lot of containers for testing with different PHP versions and
+different databases and the functional tests. As an example, if you want to run
 the unit tests for current master you have to load the php72 container::
 
    docker pull typo3gmbh/php72:latest
