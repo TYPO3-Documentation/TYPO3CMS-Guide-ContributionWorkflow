@@ -2,9 +2,9 @@
 
 .. _osx-npm:
 
-==================
+===================
 Yarn install on OSX
-==================
+===================
 
 Head over to https://yarnpkg.com and download the OSX installer. It will detect your operating system version and will
 give you the right downloads right off the bat.
