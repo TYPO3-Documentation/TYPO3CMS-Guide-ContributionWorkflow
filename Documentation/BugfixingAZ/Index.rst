@@ -122,7 +122,7 @@ database credentials inside of the ``Build`` folder of the TYPO3 core in the fil
 When you search for ``typo3DatabaseUsername`` in this Java file you will find the definitions
 of the different database credentials.
 
-.. tip::
+.. admonition:: Advice: Be patient!
 
    Be sure to have a cup of coffee, a good book or other things to be done to span the waiting time,
    because the functional tests will be running a lot of time longer than the unit tests. You can expect
