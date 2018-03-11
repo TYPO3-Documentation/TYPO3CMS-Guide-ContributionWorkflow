@@ -1,11 +1,15 @@
 .. include:: ../../Includes.txt
 
-.. _commit-hook:
+.. _appendix-commit-hook:
 
-.. _why-pre-commit-hook:
+============
+Commit hooks
+============
 
-======================
-Why a pre-commit hook?
+.. _why-commit-msg-hook:
+
+
+Why a commit-msg hook?
 ======================
 
 First of all, this hook will be executed whenever you do a commit on your local machine.
@@ -18,11 +22,7 @@ a Change-Id on your own, the result will be chaos.
 Apart from that the hook will check your commit message for logical errors like missing keywords, Resolves lines etc.
 For detailed information on the format of a commit message, :ref:`click here<commitmessage>`.
 
-.. important::
 
-   The hook will **not** prevent you from committing. It will complain about a messed up commit message, though. In case
-   you forgot to write a correct commit message, you can always ``amend`` your last commit message to correct it.
-   
 .. _post-checkout-for-composer-update:
 
 ======================================
