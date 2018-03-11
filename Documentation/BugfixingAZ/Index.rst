@@ -13,8 +13,8 @@ process step by step.
 
 .. note::
 
-   We assume you went through the setup process so we won't be covering that
-   here.
+   We assume you already went through the setup process so we won't be covering 
+   that here again.
 
 
 Identify the issue
