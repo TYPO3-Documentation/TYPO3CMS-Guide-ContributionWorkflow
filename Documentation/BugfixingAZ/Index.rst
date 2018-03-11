@@ -84,7 +84,7 @@ Test the code
 
 .. highlight:: shell
 
-It is a good idea to test the TYPO3 core with your fix to be shure that the automatic tests, that are
+It is a good idea to test the TYPO3 core with your fix to be sure that the automatic tests, that are
 running on bamboo after you have pushed a patch to the Gerrit review system, do not fail.
 
 The best for doing so is to run the tests locally with the same setup Bamboo uses.
@@ -97,7 +97,7 @@ As an example, if you want to run the unit tests for current master you have to 
 
    docker pull typo3gmbh/php72:latest
 
-Than you have to start the container. It will end up with a bash open::
+Then you have to start the container. It will end up with a bash open::
 
    docker run --name=typo3_core_test -v <absolute local path where your typo3 checkout is>:/srv/tmp/cms -it --rm typo3gmbh/php72:latest /sbin/my_init -- bash
 
@@ -124,9 +124,9 @@ of the different database credentials.
 
 .. tip::
 
-   Be shure to have a cup of coffee, a good book or other things to be done to span the waiting time,
+   Be sure to have a cup of coffee, a good book or other things to be done to span the waiting time,
    because the functional tests will be running a lot of time longer than the unit tests. You can expect
-   a runtime of around 45 Minutes, depending on how powerful your local machine is.
+   a runtime of around 45 minutes, depending on how powerful your local machine is.
 
 
 Adding documentation
