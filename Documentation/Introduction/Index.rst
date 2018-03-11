@@ -38,6 +38,8 @@ because they are specific to TYPO3 development:
 
 You will need to setup a specific git hook for the commit-msg, for example.
 
+.. _recommended-reading:
+
 Further recommended reading
 ===========================
 
@@ -50,15 +52,11 @@ You will need to format your Source Code according to the TYPO3 Coding Guideline
 
 * :ref:`TYPO3 Coding Guidelines <t3coreapi:cgl>`
 
-.. todo: Some more recommended reading for general (PHP) design issues might be a good idea here (exception handling,
-   static functions, unit tests, dependency injection, ORM, doctrine), also for JavaScript / Typescript ...
 
+.. _slack-intro:
 
-
-.. _slack:
-
-Getting help / Slack
-====================
+Slack
+=====
 
 
 If you wish to contribute, joining the `TYPO3 slack workspace <https://typo3.slack.com>`__ is strongly
@@ -70,6 +68,7 @@ information about the most important channels.
 The channel **#typo3-cms-coredev** is your channel of choice for core development. If you have some general TYPO3
 support issues, please use **#typo3-cms** for that.
 
+.. _botty:
 
 Botty on Slack
 ~~~~~~~~~~~~~~
@@ -78,7 +77,7 @@ Also checkout the help page on `"Botty" <https://wiki.typo3.org/T3Bot>`__, the T
 some of its commands later in this manual.
 
 
-.. sidebar:: Botty
+.. note:: Botty
 
    You cannot use Botty in your private channel or in a direct messaging channel with someone else. Botty will
    only be available in a public channel, to which it has been invited (which is the case in #typo3-cms-coredev).
@@ -98,9 +97,10 @@ You can find general information here:
 
 Some examples of areas where you can contribute are:
 
-* `TYPO3 documentation <https://typo3.org/teams-committees/documentation/>`__: You can get in touch
-  with the TYPO3 documentation team in the #typo3-documentation channel on :ref:`Slack <t3contrib:slack>` or just use the "Edit me
-  on github" button.
+* `TYPO3 documentation <https://typo3.org/teams-committees/documentation/>`__:
+  You can get in touch with the TYPO3 documentation team in the
+  #typo3-documentation channel on :ref:`slack-intro` or just
+  use the "Edit me on github" button.
 * `Translation <https://forge.typo3.org/projects/team-translation>`__
 * There is a vast amount of extensions available for TYPO3. A large number of these extensions are hosted on github and
   "issues" and "pull requests" are welcome. If you are interested in helping with an extension, check out where the
