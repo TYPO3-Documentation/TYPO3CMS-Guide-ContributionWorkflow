@@ -57,7 +57,6 @@ kept up-to-date to the best of the Documentation Team's abilities.
    Setup/Index
    Forger/Index
    Forge/Index
-   Redmine/Index
    Gerrit/Index
    BugfixingAZ/Index
    Appendix/Index
