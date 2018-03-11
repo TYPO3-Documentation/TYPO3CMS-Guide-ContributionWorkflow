@@ -144,7 +144,7 @@ that looks a bit different. For the mysql setup use::
           && bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
 
 When you want to test against other databases like PostgreSQL or MSSQL you will
-find the database credentials inside the :files:`Build` folder of the TYPO3
+find the database credentials inside the :file:`Build` folder of the TYPO3
 core in the file :file:`Build/bamboo/src/main/java/core/AbstractCoreSpec.java`.
 
 Search for 'typo3DatabaseUsername' in this Java file to find the definitions of
