@@ -26,50 +26,92 @@ These steps will walk you through your basic Git setup when working with TYPO3.
 
    If you are not sure, though, :ref:`take a look here <prerequisites>`.
 
-Clone a fresh TYPO3 sourcecode
-==============================
 
-Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3. Run ``composer install`` after that::
+Make sure, you have cloned the TYPO3 source as described previously.
 
-   git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-   composer install
-
-If you rather like to work with your favorite Git GUI, we compiled a list of the ones used throughout the core team
-here.
-
-* :ref:`SourceTree on Windows<windows-clonewithsourcetree>`
-* SourceTree on OSX
-* :ref:`Git Tower on OSX<gittower-osx>`
-
-Add your TYPO3.org account to the git repository
-================================================
+Add your TYPO3.org account to your git configuration
+====================================================
 
 You need to instruct git to work with your name and email address. Make sure the email address is the one you used when
 :ref:`setting up your TYPO3 account<TYPO3Account>`.
+
 
 ::
 
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
 
+
 In order to avoid weird merges in your local repository when pulling in new commits from typo3.org, we encourage everybody
 to set the autosetuprebase option, such that your local commits are always rebased on top of the official code::
 
    git config branch.autosetuprebase remote
 
-.. _git-setup-precommithook:
+.. _commit-hook:
 
-Install your pre-commit hook
-============================
+Install your commit hooks
+=========================
+
+.. _git-setup-commit-msg-hook:
+
+commit-msg hook
+---------------
+
+.. important::
+   The commit-msg hook is mandatory. It must be installed before you commit
+   your changes. The hook will not prevent you from committing. It will
+   complain about a messed up commit message, though. In case you forgot
+   to write a correct commit message, you can always amend your last commit
+   message to correct it.
+
+
+Make sure that the directory .git/hooks exists first:
 
 ::
 
-   curl -o .git/hooks/commit-msg "https://typo3.org/fileadmin/resources/git/commit-msg.txt" && chmod +x .git/hooks/commit-msg
+   mkdir .git/hooks
 
-If you get a warning message from curl "*Failed to create the file .git/hooks/commit-msg: No such
-file or directory.*" just create the directory .git/hooks: ``mkdir .git/hooks``
 
-You can read about the why and where of the pre-commit hook :ref:`here<commit-hook>`.
+::
+
+   cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+   chmod +x .git/hooks/commit-msg
+
+
+You can read about the why and where of this hook :ref:`here<appendix-commit-hook>`.
+
+pre-commit hook
+---------------
+
+Again, you can copy the pre-commit hook from the build directory. This is not
+available prior to the 8.7 branch.
+
+.. note::
+   The pre-commit hook is optional. It is not required for creating commits,
+   but it will assist you in detecting problems with not correctly formatted
+   files which will later cause the automatic tests to fail.
+
+
+::
+
+   cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
+   chmod +x .git/hooks/pre-commit
+
+
+The pre-commit hook will check that all PHP files that will be committed
+conform to the TYPO3 Coding Guidelines. If this is not the case, the
+hook will display an error message. It will not automatically repair
+any files though. You must do this yourself and afterwards amend your
+commit:
+
+::
+
+   git commit -a --amend
+
+
+.. important::
+   The pre-commit hook is not supported on Windows.
+
 
 Setting up your remote
 ======================

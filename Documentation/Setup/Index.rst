@@ -12,6 +12,8 @@ Setting up your environment
    :maxdepth: 1
 
    Prerequisites
+   SetupIde
+   SetupTypo3
    Git/Index
 
 
