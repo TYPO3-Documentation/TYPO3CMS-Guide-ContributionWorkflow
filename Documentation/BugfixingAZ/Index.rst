@@ -45,7 +45,7 @@ Create an issue
 
 Head over to Forge_. Log in if you aren't already. You can find the TYPO3
 core issue tracker at `Forge projects typo3cms-core
-<https://forge.typo3.org/projects/typo3cms-core/>` __.
+<https://forge.typo3.org/projects/typo3cms-core/>`__.
 
 If you click "New issue" you will see a form with a couple of fields that are
 important. Let's go over these really quick.
@@ -94,7 +94,7 @@ the `#typo3-cms-coredev` channel.
 
    Make sure you are using the correct PHP codestyle. It is **PSR-2** at
    the time of writing and specified in the :ref:`TYPO3 Coding Guidelines
-   <t3coreapi:cgl>` . Instruct your IDE to work against this standard,
+   <t3coreapi:cgl>`. Instruct your IDE to work against this standard,
    install PHP Codesniffer, ask us if you need any assistance.
 
 
