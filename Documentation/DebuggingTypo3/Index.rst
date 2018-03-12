@@ -39,7 +39,7 @@ Remember to restart your Webserver / php-fpm after you made your changes.
 Install plugin
 --------------
 
-Install plugin "Xdebug Helper" for your browser. To start debugging, click the bug and select "Debug".
+Install plugin "Xdebug Helper" for your browser. To start debugging, click on the bug icon and select "Debug".
 
 
 Phpstorm
