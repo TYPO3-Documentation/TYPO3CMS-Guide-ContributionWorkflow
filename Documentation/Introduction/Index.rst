@@ -102,10 +102,12 @@ Some examples of areas where you can contribute are:
   #typo3-documentation channel on :ref:`slack-intro` or just
   use the "Edit me on github" button.
 * `Translation <https://forge.typo3.org/projects/team-translation>`__
-* A large number of these extensions available for TYPO3 are hosted on github and
-  "issues" and "pull requests" are welcome. If you are interested in helping with an extension, check out where the
-  source is located by visiting the `TYPO3 Extension Repository <https://extensions.typo3.org/>`__ (TER). In the
-  detail view for each extension, you will usually find a "Take a look in the code" link, which will link directly to
+* A large number of extensions available for TYPO3 are hosted on github
+  and "issues" and "pull requests" are welcome. If you are interested
+  in helping with an extension, check out where the source is located
+  by visiting the `TYPO3 Extension Repository <https://extensions.typo3.org/>`__
+  (TER). In the detail view for each extension, you will usually find
+  a "Take a look in the code" link, which will link directly to
   the source code repository.
 
 
@@ -118,13 +120,13 @@ General recommendations for contribution
 ========================================
 
 In general: If you wish to make a contribution, familiarize yourself with the basics and general conventions used. In
-Open Source projects it is usually mandatory that your code must follow the general coding guidelines for the
+Open-source projects it is usually mandatory that your code must follow the general coding guidelines for the
 project and that your commit messages either follow general recommendations for commit messages or use specific
 constraints for the project.
 
 Some github projects have a contribution guide available, the TYPO3 CMS project has this guide.
 
-If in, doubt, ask on slack. Most likely, someone will be happy to help you.
+If in doubt, ask on slack. Most likely, someone will be happy to help you.
 
 
 .. Credits
