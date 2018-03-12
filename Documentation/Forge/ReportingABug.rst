@@ -2,9 +2,21 @@
 
 .. _bugreporting-index:
 
-=======================
-Reporting a bug (Forge)
-=======================
+===============
+Reporting a bug
+===============
+
+
+Searching for existing bugs
+===========================
+
+Before you want to report a bug, you may want to search through the existing issues, to see if any related issues
+or even the exact same problem has already been reported.
+
+In order to do this, you can use `Forger <https://forger.typo3.com>`__ to search and narrow down your search by using the filters on the left.
+
+.. image:: _assets/forger-filter.png
+
 
 Identify the issue
 ==================
@@ -61,11 +73,12 @@ PHP Version
    Choose the correct PHP version.
 
 
-.. _important::
+.. important::
+
    If you are not a member of the TYPO3 core team, you should not be filling out
    the following fields: Priority, Assignee, Target version, Start date, Due
    date, Estimated time, Done, Complexity, Is Regression and Sprint Focus. Do
-   not set a Watcher, unless someone has requested, that you do this.
+   not set a Watcher, unless someone has requested that you do this.
 
 
 
