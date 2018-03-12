@@ -17,8 +17,9 @@ General setup
 =============
 
 `File: Settings: Languages & Frameworks: PHP`
-   - `PHP Language Level`: choose appropriate version
-   - `CLI Interpreter`: choose appropriate version
+
+* `PHP Language Level`: choose appropriate version
+* `CLI Interpreter`: choose appropriate version
 
 .. image:: _assets/settings-language+frameworks-php.png
    :align: center
