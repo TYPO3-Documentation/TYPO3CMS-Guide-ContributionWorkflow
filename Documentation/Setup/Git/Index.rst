@@ -8,10 +8,6 @@
 Setting up your Git environment
 ===============================
 
-.. toctree::
-   :maxdepth: 1
-
-   CommitMessageFormat
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
