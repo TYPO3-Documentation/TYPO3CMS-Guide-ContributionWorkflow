@@ -26,7 +26,6 @@ For detailed information on the format of a commit message, :ref:`click here<com
 
 .. _post-checkout-for-composer-update:
 
-======================================
 Post-checkout hook for composer update
 ======================================
 
