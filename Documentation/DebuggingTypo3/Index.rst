@@ -47,3 +47,4 @@ Phpstorm
 
 * Check `Run: Webserver Debug Validation`
 * Start `Run: Start listing for PHP Debug Connections`
+* Create some breakpoints
