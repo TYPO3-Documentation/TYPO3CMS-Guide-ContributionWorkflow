@@ -28,8 +28,8 @@ This will show necessary modifications. To apply the modifications, run it witho
 `Build/Scripts/cglFixMyCommit.sh`
 
 
-Linux and MacOS
-===============
+Windows
+=======
 
 `Build/Scripts/cglFixMyCommit.bat`
 
