@@ -1,22 +1,22 @@
 .. include:: ../Includes.txt
 .. highlight:: shell
 
-.. _bugfix-index:
+.. _Fixing-a-bug-A-Z:
 
 ================
 Fixing a bug A-Z
 ================
 
-So you wat to fix a bug in TYPO3. **Great!** This document will guide you through the
-process step by step.
+So you want to fix a bug in TYPO3. **Great!** This document will guide you
+through the process step by step.
 
 .. note::
 
-   We assume you already went through the setup process so we won't be covering 
+   We assume you already went through the setup process so we won't be covering
    that here again.
 
 
-
+.. _Bugfixing-Fix-the-code:
 
 Fix the code
 ============
@@ -41,6 +41,8 @@ the `#typo3-cms-coredev` channel.
    <t3coreapi:cgl>`. Instruct your IDE to work against this standard,
    install PHP Codesniffer, ask us if you need any assistance.
 
+
+.. _Bugfixing-Test-the-code:
 
 Test the code
 =============
@@ -102,6 +104,8 @@ the different database credentials.
    minutes or more.
 
 
+.. _Bugfixing-Adding-documentation:
+
 Adding documentation
 ====================
 
@@ -151,7 +155,9 @@ Important Information
    #. **Description** - describe what is so important it needed an rst snippet
 
 
-Commit and Push
+.. _Bugfixing-Commit-and-push:
+
+Commit and push
 ===============
 
 When committing your changes decide about whether you are creating *a
@@ -160,12 +166,16 @@ change your local commit as often as you want to. Once you are happy with your
 change, push it to Gerrit.
 
 
+.. _Bugfixing-Set-a-Commit-Message:
+
 Set a Commit Message
 --------------------
 
 Please make sure that you read the general guidelines for commit messages: See
 :ref:`how to compose a proper commit message <commitmessage>`.
 
+
+.. _Bugfixing-Create-a-new-patch:
 
 Create a new patch
 ------------------
@@ -179,6 +189,8 @@ command to do so is::
 The :ref:`pre-commit hook <git-setup-precommithook>` automatically generates
 the `Change-Id: ...` line and fills in a unique id.
 
+
+.. _Bugfixing-Change-an-existing-patch:
 
 Change an existing patch
 ------------------------
@@ -198,7 +210,7 @@ Change whatever you like but keep the `Change-ID: ...` line.
    just make sure you keep the `Change-Id:` line intact.
 
 
-.. _git-setup-pushing-your-changes:
+.. _Bugfixing-Pushing-your-changes:
 
 Pushing your changes
 --------------------
@@ -213,6 +225,8 @@ to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
 Pushing to the original repository is denied.
 
 
+.. _Bugfixing-Use-Botty-on-Slack:
+
 Use Botty on Slack
 ==================
 
@@ -221,6 +235,8 @@ change. If you are on Slack_ you can now advertise your new change using the
 command `review:show [ReviewNumber or URL]`. Note that the command works in
 public channels only.
 
+
+.. _Bugfixing-Wait-for-reviews:
 
 Wait for reviews
 ================

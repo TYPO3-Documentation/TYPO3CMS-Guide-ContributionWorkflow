@@ -1,12 +1,14 @@
 .. include:: ../Includes.txt
 
-.. _gerrit-index:
+.. _Working-with-Gerrit:
 
 ===================
 Working with Gerrit
 ===================
 
 This chapter will explain the most important parts of the Gerrit_ UI to you.
+
+.. _Gerrit-Overview-of-the-UI:
 
 Overview of the UI
 ==================
@@ -37,6 +39,9 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 
 #. The **history** of this change. Here you can see comments, new patch sets, votes on a change etc.
 
+
+.. _Gerrit-Commenting-and-voting:
+
 Commenting and voting
 =====================
 
@@ -52,6 +57,9 @@ can also apply your votes.
 Click on ``Post`` and your comments will be saved. At the same time all other contributors who either watched this change
 or have already voted on this change will get notified. This is a good time to build a rule in your email client btw.
 
+
+.. _Gerrit-Policy-for-votes:
+
 Policy for votes
 ================
 
@@ -64,11 +72,17 @@ Authors should not vote for their own patches, unless the patch has been changed
 
 As soon as the patch has reached the approved status, a core developer can decide to push the "Submit" button, finally pushing it to the main repository.
 
+
+.. _Gerrit-No-brainers:
+
 No brainers
 -----------
 
 A core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI").
 A core developer can give a +2 and wait a bit before submitting (used to be FYI24, FYI48, ...).
+
+
+.. _Gerrit-Practical-considerations:
 
 Practical considerations
 ------------------------
@@ -78,6 +92,9 @@ Each newly pushed patch requires a complete new round of voting before it can be
 
 * If the patch was re-pushed due to the comments, check the diff between the versions of the patch.
 * If the patch needed to be rebased onto current master, the changeset might contain the changes due to rebasing. So better check the diff between base and most recent version in this case.
+
+
+.. _Gerrit-Commenting-files:
 
 Commenting files
 ================
@@ -98,7 +115,8 @@ to use the **Reply Button** to send them all (ideally with a vote indicating how
 
 .. image:: _assets/gerrit-comment-box.png
 
-.. _git-reset-to-a-clean-state:
+
+.. _Gerrit-Reset-to-a-clean-state:
 
 Reset to a clean state
 =======================
@@ -111,6 +129,9 @@ You can use the following command in your TYPO3 root directory:
 
    git reset --hard origin/master
    git pull
+
+
+.. _Gerrit-Testing-a-change:
 
 Testing a change
 ================
@@ -141,7 +162,6 @@ For example, run the following:
    git pull
    # use the correct cherry-pick commmand here
    git fetch https://review.typo3.org/Packages/TYPO3.CMS refs/changes/<no>/<revid>/<change> && git cherry-pick FETCH_HEAD
-
 
 
 .. important::

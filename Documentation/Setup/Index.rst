@@ -9,7 +9,7 @@ Setting up your environment
 ===========================
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
 
    Prerequisites
    SettingUpPhpstorm/Index

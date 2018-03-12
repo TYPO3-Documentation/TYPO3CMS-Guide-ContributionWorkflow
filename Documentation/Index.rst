@@ -1,11 +1,10 @@
 .. include:: Includes.txt
 
-.. _TYPO3.Tutorial.ContributionWorkflow.Index:
+.. _Start:
 
 ========================
 TYPO3 Contribution Guide
 ========================
-
 
 :Language:
          en

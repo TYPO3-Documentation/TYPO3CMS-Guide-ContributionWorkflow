@@ -34,7 +34,7 @@ Composer is a mandatory tool for setting up your toolchain for TYPO3. Follow the
 installation instructions from https://getcomposer.org. Afterwards, you should
 have a working executable `composer` available.
 
-::
+Verify composer is working::
 
    $ composer --version
 
@@ -51,23 +51,20 @@ We will be mainly using yarn to get helpful tools like Grunt and Bower.
 Install on MacOS
 ~~~~~~~~~~~~~~~~
 
-1. install the packagemanager homebrew:
+1. install the packagemanager homebrew::
 
-::
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-   $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. install yarn::
 
-2. install yarn:
-
-::
-
-   $ brew install yarn
+      brew install yarn
 
 
 Installer for Windows and MacOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Go to https://yarnpkg.com/lang/en/docs/install/#windows-tab
+
 2. Download the package and install
 
 
@@ -75,10 +72,10 @@ Linux
 ~~~~~
 
 1. Go to https://yarnpkg.com/lang/en/docs/install/#linux-tab
+
 2. Download the package and install
 
-Additional infos
-https://yarnpkg.com
+For additional infos see https://yarnpkg.com
 
 
 Install all required packages
