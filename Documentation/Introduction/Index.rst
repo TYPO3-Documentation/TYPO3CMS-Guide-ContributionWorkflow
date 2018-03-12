@@ -102,7 +102,7 @@ Some examples of areas where you can contribute are:
   #typo3-documentation channel on :ref:`slack-intro` or just
   use the "Edit me on github" button.
 * `Translation <https://forge.typo3.org/projects/team-translation>`__
-* There is a vast amount of extensions available for TYPO3. A large number of these extensions are hosted on github and
+* A large number of these extensions available for TYPO3 are hosted on github and
   "issues" and "pull requests" are welcome. If you are interested in helping with an extension, check out where the
   source is located by visiting the `TYPO3 Extension Repository <https://extensions.typo3.org/>`__ (TER). In the
   detail view for each extension, you will usually find a "Take a look in the code" link, which will link directly to

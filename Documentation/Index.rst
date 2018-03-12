@@ -59,5 +59,6 @@ kept up-to-date to the best of the Documentation Team's abilities.
    Forge/Index
    Gerrit/Index
    BugfixingAZ/Index
+   DebuggingTypo3/Index
    Appendix/Index
    Targets

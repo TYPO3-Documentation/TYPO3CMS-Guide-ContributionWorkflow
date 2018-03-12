@@ -11,8 +11,8 @@ Setup the TYPO3 installation
 
 .. _git-clone:
 
-Clone a fresh TYPO3 sourcecode
-==============================
+git clone
+=========
 
 Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3. Run ``composer install`` after that::
 

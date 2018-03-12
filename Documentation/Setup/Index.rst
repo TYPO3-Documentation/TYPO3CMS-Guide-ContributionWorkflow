@@ -12,7 +12,7 @@ Setting up your environment
    :maxdepth: 1
 
    Prerequisites
-   SetupIde
+   SettingUpPhpstorm/Index
    SetupTypo3
    Git/Index
 
