@@ -113,7 +113,7 @@ There are scripts available for fixing Coding Guideline issues, see :ref:`cgl-fi
 Setting up your remote
 ======================
 
-You can instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
+You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
