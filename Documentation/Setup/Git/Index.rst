@@ -29,6 +29,11 @@ These steps will walk you through your basic Git setup when working with TYPO3.
 
 Make sure, you have cloned the TYPO3 source as described previously.
 
+
+::
+
+      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+
 Add your TYPO3.org account to your git configuration
 ====================================================
 
@@ -113,6 +118,9 @@ commit:
    The pre-commit hook is not supported on Windows.
 
 
+There are scripts available for fixing Coding Guideline issues, see :ref:`cgl-fix-my-commit`.
+
+
 Setting up your remote
 ======================
 
@@ -120,29 +128,6 @@ You can instruct Git to push to Gerrit_ instead of the original repository. It a
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
-
-
-.. _git-setup-pushing:
-
-Set a Commit Message
-====================
-
-See :ref:`how to compose a proper commit message <Commit-Message-Format>`.
-
-
-.. _git-setup-pushing-your-changes:
-
-Pushing your changes
-====================
-
-Once you are happy with your changes, you can push them via::
-
-   git push origin HEAD:refs/publish/master
-
-Where ``master`` is the target, so ``master`` is current development trunk. E.g. if you want to push
-to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
-
-Pushing to the original repository is denied.
 
 Other resources
 ===============
