@@ -154,6 +154,13 @@ Features
 Important Information
    #. **Description** - describe what is so important it needed an rst snippet
 
+You can use the following script to check that your rst file is ok. The script will
+check all files in `typo3/sysext/core/Documentation/Changelog`.
+
+::
+
+   Build/Scripts/validateRstFiles.sh
+
 
 .. _Bugfixing-Commit-and-push:
 
