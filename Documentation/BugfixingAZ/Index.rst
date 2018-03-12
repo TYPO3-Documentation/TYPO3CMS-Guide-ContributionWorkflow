@@ -157,7 +157,14 @@ Commit and Push
 When committing your changes decide about whether you are creating *a
 completely new patch* or whether you are improving *an existing one.* You can
 change your local commit as often as you want to. Once you are happy with your
-change, push it to Gerrit_ as described in :ref:`git-setup-pushing-your-changes`.
+change, push it to Gerrit.
+
+
+Set a Commit Message
+--------------------
+
+Please make sure that you read the general guidelines for commit messages: See
+:ref:`how to compose a proper commit message <commitmessage>`.
 
 
 Create a new patch
@@ -190,6 +197,20 @@ Change whatever you like but keep the `Change-ID: ...` line.
    Keep in mind that you can commit **as often as you want,**
    just make sure you keep the `Change-Id:` line intact.
 
+
+.. _git-setup-pushing-your-changes:
+
+Pushing your changes
+--------------------
+
+Once you are happy with your changes, you can push them via::
+
+   git push origin HEAD:refs/publish/master
+
+Where ``master`` is the target, so ``master`` is current development trunk. E.g. if you want to push
+to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
+
+Pushing to the original repository is denied.
 
 
 Use Botty on Slack
