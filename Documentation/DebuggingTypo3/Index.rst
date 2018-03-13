@@ -4,6 +4,7 @@
 
 .. _phpstorm-setup-xdebug:
 
+
 ===============
 Debugging TYPO3
 ===============
