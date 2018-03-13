@@ -193,7 +193,7 @@ command to do so is::
 
    git commit -a
 
-The :ref:`pre-commit hook <git-setup-precommithook>` automatically generates
+The :ref:`commit-msg hook <git-setup-commit-msg-hook>` automatically generates
 the `Change-Id: ...` line and fills in a unique id.
 
 
