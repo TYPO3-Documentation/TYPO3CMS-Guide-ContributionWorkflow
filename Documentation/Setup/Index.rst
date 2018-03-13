@@ -11,9 +11,8 @@ Setting up your environment
 .. toctree::
    :titlesonly:
 
-   Prerequisites
-   SettingUpPhpstorm/Index
+   Prerequisites   
    SetupTypo3
    Git/Index
-
+   SettingUpPhpstorm/Index
 
