@@ -29,8 +29,8 @@ Apache Webserver
 ::
 
    sudo apt-get install apache2
-   a2enmod deflate rewrite headers mime expires
-   service apache2 restart
+   sudo a2enmod deflate rewrite headers mime expires
+   sudo service apache2 restart
 
 
 PHP 7.2
@@ -58,7 +58,7 @@ Make some changes to php.ini and reload
 
 ::
 
-   service apache2 reload
+   sudo service apache2 reload
 
 
 MySQL Server
@@ -100,8 +100,8 @@ Enable it
 
 ::
 
-   a2ensite t3coredev
-   service apache2 reload
+   sudo a2ensite t3coredev
+   sudo service apache2 reload
 
 
 Create a domain in your /etc/hosts
