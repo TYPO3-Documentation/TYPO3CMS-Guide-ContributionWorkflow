@@ -109,6 +109,7 @@ Create a domain in your /etc/hosts
 /etc/hosts:
 
 ::
+
    127.0.0.1 localhost t3coredev
 
 
