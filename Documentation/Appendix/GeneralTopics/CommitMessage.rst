@@ -98,9 +98,14 @@ Note that if you want to add a breaking feature which is still work in progress,
 
 [SECURITY]
    Visualizes that a change fixes a security issue. This tag is used
-   by the Security Team, in case you found a security issues please always follow
-   `get in contact with the Security Team
-   <http://typo3.org/teams/security/contact-us/>`_ first!
+   by the Security Team.
+   
+.. important::   
+
+   In case you found a security issue, always get in touch with the Security Team
+   <http://typo3.org/teams/security/contact-us/>`_ **first**! Never post information
+   about security vulnerabilities in a public place such as Slack or push patches
+   that disclose information about vulnerabilities.
 
 -  Keep the whole line below 52 characters if possible, but below 80 in any case
 
