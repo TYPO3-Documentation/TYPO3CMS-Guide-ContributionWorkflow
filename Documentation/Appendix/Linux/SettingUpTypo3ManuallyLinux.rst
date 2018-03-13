@@ -12,7 +12,7 @@ Prerequisites
 =============
 
 You will need a Webserver, PHP and database on your system. Look at the page `System requirements
-<https://typo3.org/typo3-cms/overview/requirements/>` and check out the specific system
+<https://typo3.org/typo3-cms/overview/requirements/>`__ and check out the specific system
 requirements for the current master branch on the `Download TYPO3 <https://typo3.org/download/>`__
 page.
 
@@ -57,6 +57,7 @@ Make some changes to php.ini and reload
 
 
 ::
+
    service apache2 reload
 
 
