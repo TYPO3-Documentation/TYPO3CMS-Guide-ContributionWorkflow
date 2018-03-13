@@ -9,10 +9,11 @@ Setting up your environment
 ===========================
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
 
    Prerequisites
-   WorkflowExplained
+   SettingUpPhpstorm/Index
+   SetupTypo3
    Git/Index
 
 

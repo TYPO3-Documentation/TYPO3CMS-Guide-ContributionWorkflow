@@ -2,9 +2,9 @@
 
 .. _redmine-index:
 
-==============================
-Working with the Issue Tracker
-==============================
+===============
+Ticket Workflow
+===============
 
 This document defines the workflow of handling tickets in TYPO3s Redmine available at Forge_.
 There are edge cases to this which should be discussed on a per-case basis in order to refine the workflow more.
@@ -35,3 +35,24 @@ Candidate for Major Version
 
 Features and tasks will go into this pool.
 These can be worked on as usual.
+
+Status
+======
+
+When an issue is reported, the status is set to **New**.
+
+Needs Feedback
+--------------
+
+This issue needs more information to get resolved. 
+
+Under Review
+------------
+
+As soon as a patch is uploaded for the issue, the status will automatically
+be set to "Under Review".
+
+Resolved
+--------
+
+As soon as the patch is merged, the status will be set to "Resolved".

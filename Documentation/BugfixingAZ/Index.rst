@@ -1,78 +1,22 @@
 .. include:: ../Includes.txt
 .. highlight:: shell
 
-.. _bugfix-index:
+.. _Fixing-a-bug-A-Z:
 
 ================
 Fixing a bug A-Z
 ================
 
-So you found a bug in TYPO3. Who would have thought there bugs? And you want to
-fix them right away? **Great!** This document will guide you through the
-process step by step.
+So you want to fix a bug in TYPO3. **Great!** This document will guide you
+through the process step by step.
 
 .. note::
 
-   We assume you already went through the setup process so we won't be covering 
+   We assume you already went through the setup process so we won't be covering
    that here again.
 
 
-Identify the issue
-==================
-
-Be up to date
-   First of all, you should make sure that the bug does exist in the latest
-   master branch. Do a `git pull` on your development environment, flush all
-   caches, do a `composer install`, just to be sure.
-
-Remove side effects
-   Work on a TYPO3 instance which is as clean as possible so you can rule out
-   that extensions are messing with the TYPO3 core. If you need to set up an
-   extension to illustrate the problem, make sure it is as free of side effects
-   as possible.
-
-Narrow down the problem
-   Try different browsers, this will help you and the team a lot to provide a
-   proper description of the problem.
-
-Talk to the core team
-   When in doubt, don't hesitate to talk to us on Slack_ in the
-   `#typo3-cms-coredev` channel.
-
-
-Create an issue
-===============
-
-Head over to Forge_. Log in if you aren't already. You can find the TYPO3
-core issue tracker at `Forge projects typo3cms-core
-<https://forge.typo3.org/projects/typo3cms-core/>`__.
-
-If you click "New issue" you will see a form with a couple of fields that are
-important. Let's go over these really quick.
-
-Tracker
-   The tracker is just Redmines term for the type of issue. The trackers you
-   will be using the most are **Feature** and **Bug**. The others, like
-   "Stories" and "Epics", are mostly for internal organization and things which
-   aren't really a feature or a bug. They just denote tasks that somebody needs
-   to take care of.
-
-Subject
-   Pick a meaningful subject. Something like "GIFBUILDER broken" is very
-   generic and doesn't describe the problem specificly. Just imagine how you
-   would like to get a report yourself :)
-
-Description
-   As usual, provide the steps to reproduce the problem. Redmine offers a lot
-   of text formatting options: Use them to make your report readable!
-
-   A screenshot says more than 1000 words. So consider attaching **images**
-   and, preferably add them **inline** (like `!image.png!`) so that they are
-   shown **within** the text where they do belong.
-
-   Do **not** add screenshots of code but use `<pre>` and `<code>` tags instead
-   so that the code can be searched for.
-
+.. _Bugfixing-Fix-the-code:
 
 Fix the code
 ============
@@ -97,6 +41,8 @@ the `#typo3-cms-coredev` channel.
    <t3coreapi:cgl>`. Instruct your IDE to work against this standard,
    install PHP Codesniffer, ask us if you need any assistance.
 
+
+.. _Bugfixing-Test-the-code:
 
 Test the code
 =============
@@ -158,6 +104,8 @@ the different database credentials.
    minutes or more.
 
 
+.. _Bugfixing-Adding-documentation:
+
 Adding documentation
 ====================
 
@@ -206,15 +154,35 @@ Features
 Important Information
    #. **Description** - describe what is so important it needed an rst snippet
 
+You can use the following script to check that your rst file is ok. The script will
+check all files in `typo3/sysext/core/Documentation/Changelog`.
 
-Commit and Push
+::
+
+   Build/Scripts/validateRstFiles.sh
+
+
+.. _Bugfixing-Commit-and-push:
+
+Commit and push
 ===============
 
 When committing your changes decide about whether you are creating *a
 completely new patch* or whether you are improving *an existing one.* You can
 change your local commit as often as you want to. Once you are happy with your
-change, push it to Gerrit_ as described in :ref:`git-setup-pushing-your-changes`.
+change, push it to Gerrit.
 
+
+.. _Bugfixing-Set-a-Commit-Message:
+
+Set a Commit Message
+--------------------
+
+Please make sure that you read the general guidelines for commit messages: See
+:ref:`how to compose a proper commit message <commitmessage>`.
+
+
+.. _Bugfixing-Create-a-new-patch:
 
 Create a new patch
 ------------------
@@ -228,6 +196,8 @@ command to do so is::
 The :ref:`pre-commit hook <git-setup-precommithook>` automatically generates
 the `Change-Id: ...` line and fills in a unique id.
 
+
+.. _Bugfixing-Change-an-existing-patch:
 
 Change an existing patch
 ------------------------
@@ -247,15 +217,39 @@ Change whatever you like but keep the `Change-ID: ...` line.
    just make sure you keep the `Change-Id:` line intact.
 
 
+.. _Bugfixing-Pushing-your-changes:
+
+Pushing your changes
+--------------------
+
+Once you are happy with your changes, you can push them via::
+
+   git push origin HEAD:refs/publish/master
+
+Where ``master`` is the target, so ``master`` is current development trunk. E.g. if you want to push
+to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
+
+
+.. important::
+   Pushing to a branch other than master only makes sense if the bug only
+   exists on that branch and does not exist on master. Backporting of a
+   fix to a branch is done by the core team member who merges the original
+   fix to the master branch.
+
+
+.. _Bugfixing-Use-Botty-on-Slack:
 
 Use Botty on Slack
 ==================
 
 Once your push to Gerrit_ went through, you will get back the URL of your new
-change. If you are on Slack_ you can now advertise your new change using the
-command `review:show [ReviewNumber or URL]`. Note that the command works in
-public channels only.
+change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
+your new change in the
+`#typo3-cms-coredev <https://typo3.slack.com/messages/C03AM9R17/convo/C03AM9R17-1520857790.000310/>`__
+channel using the command `review:show [ReviewNumber or URL]`.
 
+
+.. _Bugfixing-Wait-for-reviews:
 
 Wait for reviews
 ================

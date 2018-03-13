@@ -2,16 +2,11 @@
 
 .. highlight:: bash
 
-.. _git-setup:
+.. _Setting-up-your-Git-environment:
 
 ===============================
 Setting up your Git environment
 ===============================
-
-.. toctree::
-   :maxdepth: 1
-
-   CommitMessageFormat
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
@@ -26,28 +21,17 @@ These steps will walk you through your basic Git setup when working with TYPO3.
 
    If you are not sure, though, :ref:`take a look here <prerequisites>`.
 
-Clone a fresh TYPO3 sourcecode
-==============================
 
-Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3. Run ``composer install`` after that::
+Make sure, you have cloned the TYPO3 source as described previously::
 
-   git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-   composer install
+      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
 
-If you rather like to work with your favorite Git GUI, we compiled a list of the ones used throughout the core team
-here.
 
-* :ref:`SourceTree on Windows<windows-clonewithsourcetree>`
-* SourceTree on OSX
-* :ref:`Git Tower on OSX<gittower-osx>`
-
-Add your TYPO3.org account to the git repository
-================================================
+Add your TYPO3.org account to your git configuration
+====================================================
 
 You need to instruct git to work with your name and email address. Make sure the email address is the one you used when
-:ref:`setting up your TYPO3 account<TYPO3Account>`.
-
-::
+:ref:`setting up your TYPO3 account<TYPO3Account>`::
 
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
@@ -57,50 +41,82 @@ to set the autosetuprebase option, such that your local commits are always rebas
 
    git config branch.autosetuprebase remote
 
-.. _git-setup-precommithook:
 
-Install your pre-commit hook
-============================
+.. _commit-hook:
 
-::
+Install your commit hooks
+=========================
 
-   curl -o .git/hooks/commit-msg "https://typo3.org/fileadmin/resources/git/commit-msg.txt" && chmod +x .git/hooks/commit-msg
+.. _git-setup-commit-msg-hook:
 
-If you get a warning message from curl "*Failed to create the file .git/hooks/commit-msg: No such
-file or directory.*" just create the directory .git/hooks: ``mkdir .git/hooks``
+commit-msg hook
+---------------
 
-You can read about the why and where of the pre-commit hook :ref:`here<commit-hook>`.
+.. important::
+   The commit-msg hook is mandatory. It must be installed before you commit
+   your changes. The hook will not prevent you from committing. It will
+   complain about a messed up commit message, though. In case you forgot
+   to write a correct commit message, you can always amend your last commit
+   message to correct it.
+
+
+Activate the hook::
+
+   # ensure folder exists
+   mkdir .git/hooks  2>/dev/null
+
+   # copy
+   cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+
+   # make executable
+   chmod +x .git/hooks/commit-msg
+
+You can read about the why and where of this hook :ref:`here <appendix-commit-hook>`.
+
+pre-commit hook
+---------------
+
+.. note::
+   The pre-commit hook is optional. It is not required for creating commits,
+   but it will assist you in detecting problems with not correctly formatted
+   files which will later cause the automatic tests to fail.
+
+Again, you can copy the pre-commit hook from the build directory. This is not
+available prior to the 8.7 branch::
+
+   # ensure folder exists
+   mkdir .git/hooks  2>/dev/null
+
+   # copy
+   cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
+
+   # make executable
+   chmod +x .git/hooks/pre-commit
+
+
+The pre-commit hook will check that all PHP files that will be committed
+conform to the TYPO3 Coding Guidelines. If this is not the case, the
+hook will display an error message. It will not automatically repair
+any files though. You must do this yourself and afterwards amend your
+commit::
+
+   git commit -a --amend
+
+
+.. important::
+   The pre-commit hook is not supported on Windows.
+
+
+There are scripts available for fixing Coding Guideline issues, see :ref:`cgl-fix-my-commit`.
+
 
 Setting up your remote
 ======================
 
-You can instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
+You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
-
-
-.. _git-setup-pushing:
-
-Set a Commit Message
-====================
-
-See :ref:`how to compose a proper commit message <Commit-Message-Format>`.
-
-
-.. _git-setup-pushing-your-changes:
-
-Pushing your changes
-====================
-
-Once you are happy with your changes, you can push them via::
-
-   git push origin HEAD:refs/publish/master
-
-Where ``master`` is the target, so ``master`` is current development trunk. E.g. if you want to push
-to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
-
-Pushing to the original repository is denied.
 
 Other resources
 ===============
