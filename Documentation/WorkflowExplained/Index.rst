@@ -43,6 +43,7 @@ We use an 6-eye principle to ensure proper quality assurance and Gerrit_ helps u
    is supposed to do (like fixing an issue) and checks whether the unit tests run through.
 #. If a review has enough positive votes, an **active contributor** (aka member of the core team) is able to merge that review
    into the existing codebase. The reason we need a member of the core team to finally merge the change is that we run a
-   "You break it, you fix it" policy, so the core team members that merged a change immediately becomes responsible for that
-   change in case the original author decides to no longer work on it.
+   "You break it, you fix it" policy, so the core team member that merged a change immediately becomes responsible for that
+   change in case the original author decides to no longer work on it. And he / she will be responsible for
+   backporting it to older TYPO3 versions.
 

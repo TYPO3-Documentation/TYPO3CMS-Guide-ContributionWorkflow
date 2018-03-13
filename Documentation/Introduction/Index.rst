@@ -36,7 +36,7 @@ because they are specific to TYPO3 development:
 * :ref:`Contribution workflow <t3contrib:workflow-explained>`
 * :ref:`Setting up git <t3contrib:git-setup>`
 
-You will need to setup a specific git hook for the commit-msg, for example.
+You will need to setup a specific git hook for the commit message, for example.
 
 .. _recommended-reading:
 
@@ -66,7 +66,16 @@ information about the most important channels.
 
 
 The channel **#typo3-cms-coredev** is your channel of choice for core development. If you have some general TYPO3
-support issues, please use **#typo3-cms** for that.
+support issues, please use **#typo3-cms** for that. If you are not sure which channel to use for your question
+you can use **#random** where you get direct help or a hint for the right channel to ask your question.
+
+
+.. note::
+   Do not ask if you can ask a question. Ask your question directly.
+
+
+As always, regard the general `Code of conduct <https://typo3.org/community/code-of-conduct/>`__.
+
 
 .. _botty:
 
@@ -100,7 +109,7 @@ Some examples of areas where you can contribute are:
 * `TYPO3 documentation <https://typo3.org/teams-committees/documentation/>`__:
   You can get in touch with the TYPO3 documentation team in the
   #typo3-documentation channel on :ref:`slack-intro` or just
-  use the "Edit me on github" button.
+  use the "Edit me on github" button which is located on the top right of every documentation page.
 * `Translation <https://forge.typo3.org/projects/team-translation>`__
 * A large number of extensions available for TYPO3 are hosted on github
   and "issues" and "pull requests" are welcome. If you are interested
@@ -155,7 +164,7 @@ If you want to support us, please join the slack channel `#typo3-documentation
 
 Visit https://forger.typo3.org/slack to gain access to Slack.
 
-Have a look at the contribution page for more information about how to contribute to TYPO3
+Have a look at the contribution page for more information about how to contribute to the TYPO3
 documentation: https://docs.typo3.org/Contribute/Index.html
 
 And finally, as a last resort, you can get in touch with the documentation team `by mail <documentation@typo3.org>`_.

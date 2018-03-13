@@ -39,7 +39,7 @@ These can be worked on as usual.
 Status
 ======
 
-When an issue is reported, the status is set to "New".
+When an issue is reported, the status is set to **New**.
 
 Needs Feedback
 --------------

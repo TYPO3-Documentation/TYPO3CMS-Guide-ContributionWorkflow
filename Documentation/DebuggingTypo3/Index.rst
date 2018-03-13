@@ -8,18 +8,18 @@
 Debugging TYPO3
 ===============
 
-Debugging TYPO3 with Phpstorm and Xdebug
+Debugging TYPO3 with PhpStorm and Xdebug
 ========================================
 
 
 .. youtube:: VtffB0CG1ok
 
 
-In order to configure Phpstorm with Xdebug you need to do 3 things:
+In order to configure PhpStorm with Xdebug you need to do 3 things:
 
 1. Configure xdebug settings in php.ini
 2. Use appropriate plugin with your browser
-3. Configure Phpstorm
+3. Configure PhpStorm
 
 
 php.ini
@@ -42,7 +42,7 @@ Install plugin
 Install plugin "Xdebug Helper" for your browser. To start debugging, click on the bug icon and select "Debug".
 
 
-Phpstorm
+PhpStorm
 --------
 
 * Check `Run: Webserver Debug Validation`

@@ -229,7 +229,12 @@ Once you are happy with your changes, you can push them via::
 Where ``master`` is the target, so ``master`` is current development trunk. E.g. if you want to push
 to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
 
-Pushing to the original repository is denied.
+
+.. important::
+   Pushing to a branch other than master only makes sense if the bug only
+   exists on that branch and does not exist on master. Backporting of a
+   fix to a branch is done by the core team member who merges the original
+   fix to the master branch.
 
 
 .. _Bugfixing-Use-Botty-on-Slack:
@@ -238,9 +243,10 @@ Use Botty on Slack
 ==================
 
 Once your push to Gerrit_ went through, you will get back the URL of your new
-change. If you are on Slack_ you can now advertise your new change using the
-command `review:show [ReviewNumber or URL]`. Note that the command works in
-public channels only.
+change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
+your new change in the
+`#typo3-cms-coredev <https://typo3.slack.com/messages/C03AM9R17/convo/C03AM9R17-1520857790.000310/>`__
+channel using the command `review:show [ReviewNumber or URL]`.
 
 
 .. _Bugfixing-Wait-for-reviews:

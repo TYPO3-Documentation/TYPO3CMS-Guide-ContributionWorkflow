@@ -123,7 +123,7 @@ Reset to a clean state
 
 Before you cherry-pick the change, you should reset your current master to a clean state
 
-You can use the following command in your TYPO3 root directory:
+You can use the following commands in the root directory of your cloned TYPO3 repository:
 
 .. code-block:: bash
 
