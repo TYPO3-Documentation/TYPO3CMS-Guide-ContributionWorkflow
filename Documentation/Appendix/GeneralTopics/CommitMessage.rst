@@ -102,7 +102,7 @@ Note that if you want to add a breaking feature which is still work in progress,
    
 .. important::   
 
-   In case you found a security issue, always get in touch with the Security Team
+   In case you found a security issue, always get in touch with the `Security Team
    <http://typo3.org/teams/security/contact-us/>`_ **first**! Never post information
    about security vulnerabilities in a public place such as Slack or push patches
    that disclose information about vulnerabilities.
