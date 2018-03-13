@@ -69,3 +69,12 @@ specific. Usually, it should suffice to use `yarn install` and `yarn build`.
 -   `yarn build-js` - Compile JavaScript.
 -   `yarn format` - Resolve Style issues.
 -   `yarn update` - Update dependencies (Use this if you are **really** sure what you're doing).
+
+Setting up a working TYPO3 installation
+=======================================
+
+You will now need to use your git clone to setup a working installation
+of TYPO3. There are many different ways how you can do this. We will
+provide only one example:
+
+* :ref:`ddev`
