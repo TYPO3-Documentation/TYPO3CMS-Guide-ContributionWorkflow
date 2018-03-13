@@ -24,15 +24,18 @@ in `.ddev/config.yaml` before you start it.
 Setting up the prerequisites
 ============================
 
-You will need to install docker and other `System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
+You will need to install docker and other
+`System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
-Then install ddev as described in the `Installation <https://ddev.readthedocs.io/en/latest/#installation>` instructions.
+Then install ddev as described in the
+`Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
+instructions.
 
-clone TYPO3
+Clone TYPO3
 ===========
 
-Change to the directory, where your TYPO3 installation should exist and
-clone the TYPO3 repository as described in :ref:`setup-typo3`.
+Create a clone of git as described in :ref:`git-clone`.
+
 
 ::
 
@@ -42,6 +45,7 @@ clone the TYPO3 repository as described in :ref:`setup-typo3`.
    yarn install
    yarn build
    cd ..
+
 
 
 Configure ddev
@@ -111,3 +115,11 @@ http://ddev.dev.local/typo3.
 You will now be guided through the basic installation steps by TYPO3.
 
 
+Shutdown ddev
+=============
+
+When you are done you can do
+
+::
+
+   ddev stop
