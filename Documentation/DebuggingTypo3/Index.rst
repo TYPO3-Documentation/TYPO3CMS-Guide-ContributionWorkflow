@@ -18,8 +18,8 @@ Debugging TYPO3 with PhpStorm and Xdebug
 
 In order to configure PhpStorm with Xdebug you need to do 3 things:
 
-1. Configure xdebug settings in php.ini
-2. Use appropriate plugin with your browser
+1. Configure xdebug settings in your php.ini
+2. Use the appropriate plugin in your browser
 3. Configure PhpStorm
 
 
@@ -31,7 +31,7 @@ Example setup:
 ::
 
    xdebug.remote_enable = 1
-   xdebug.remote_host = <ip>
+   xdebug.remote_host = <your ip adress or hostname>
    xdebug.max_nesting_level = 1000
 
 
