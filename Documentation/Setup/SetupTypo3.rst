@@ -19,6 +19,16 @@ Switch into your **empty** htdocs directory of choice and clone a fresh master o
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
 
 
+
+Typically, you would create a symbolic link `typo3_src` which will
+point to your TYPO3 source. When working with the git clone
+directly though, we can put everything into the root directory.
+
+.. _git-guis:
+
+git GUIs
+========
+
 If you rather like to work with your favorite Git GUI, we compiled a list of the ones used throughout the core team
 here.
 
@@ -69,3 +79,13 @@ specific. Usually, it should suffice to use `yarn install` and `yarn build`.
 -   `yarn build-js` - Compile JavaScript.
 -   `yarn format` - Resolve Style issues.
 -   `yarn update` - Update dependencies (Use this if you are **really** sure what you're doing).
+
+Setting up a working TYPO3 installation
+=======================================
+
+You will now need to use your git clone to setup a working installation
+of TYPO3. There are many different ways how you can do this. We will
+provide a fex examples in the Appendix:
+
+* :ref:`ddev`
+* :ref:`setting-up-typo3-manually`
