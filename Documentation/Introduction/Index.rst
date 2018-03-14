@@ -34,7 +34,7 @@ may not have to read this entire document. Make sure that you **at least** look 
 because they are specific to TYPO3 development:
 
 * :ref:`Contribution workflow <t3contrib:workflow-explained>`
-* :ref:`Setting up git <t3contrib:git-setup>`
+* :ref:`Setting-up-your-Git-environment`
 
 You will need to setup a specific git hook for the commit message, for example.
 
