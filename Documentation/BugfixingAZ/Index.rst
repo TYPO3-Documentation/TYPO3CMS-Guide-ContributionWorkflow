@@ -34,12 +34,26 @@ there is ancient code we didn't have to touch yet because it just works.
 If you should encounter any problems or have questions, talk to us on Slack_ in
 the `#typo3-cms-coredev` channel.
 
+
+.. _Bugfixing-Coding-Guidelines:
+
+Coding Guidelines
+=================
+
 .. attention::
 
    Make sure you are using the correct PHP codestyle. It is **PSR-2** at
    the time of writing and specified in the :ref:`TYPO3 Coding Guidelines
    <t3coreapi:cgl>`. Instruct your IDE to work against this standard,
-   install PHP Codesniffer, ask us if you need any assistance.
+   ask us if you need any assistance.
+
+
+You will find more information about this and about the :ref:`appendix-cgl` of
+other file types such as JavaScript in the Appendix.
+
+
+There is information about how to set up with :ref:`PhpStorm with PSR-2
+<phpstorm-setup-cgl>`.
 
 
 .. _Bugfixing-Test-the-code:

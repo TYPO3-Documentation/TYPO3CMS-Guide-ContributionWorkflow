@@ -57,15 +57,24 @@ In order to test this, use `Code: Reformat Code` to reformat a PHP file
 
 **See also:**
 
-* `Coding guidelines for TYPO3 <https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html>`__
+* `Coding guidelines for TYPO3
+  <https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html>`__
 
 
-Xliff files
------------
+JavaScript files
+----------------
 
-Language files are usually stored in a Folder Resources/Private/Language
-in files with the ending *.xlf*. While no tabs are allowed to indent
-in PHP files, you should edit Xliff files using tabs.
+The following rules should be applied for JavaScript:
+`Airbnb JavaScript Style Guide <https://github.com/airbnb/javascript>`__
+
+You can use an .eslintrc file to set this up in PhpStorm.
+
+
+More information
+-----------------
+
+You can find more information on the :ref:`Coding Guidelines section in the Appendix
+<appendix-cgl>`.
 
 .. _phpstorm-setup-plugins:
 
