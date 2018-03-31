@@ -15,6 +15,11 @@ Overview
 This guide will walk you through everything necessary to become a TYPO3
 contribution professional in no time.
 
+Here is a video to get you started. Just make sure you come back here, 
+to read the rest of the guide afterwards. 
+
+.. youtube:: gN8BVSBlgfU
+
 .. _intended-audience:
 
 Intended audience
