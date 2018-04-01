@@ -63,7 +63,7 @@ commit-msg hook
 Activate the hook::
 
    # ensure folder exists
-   mkdir .git/hooks  2>/dev/null
+   mkdir -p .git/hooks
 
    # copy
    cp Build/git-hooks/commit-msg .git/hooks/commit-msg
@@ -85,13 +85,17 @@ Again, you can copy the pre-commit hook from the build directory. This is not
 available prior to the 8.7 branch::
 
    # ensure folder exists
-   mkdir .git/hooks  2>/dev/null
+   mkdir -p .git/hooks
 
    # copy
    cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
 
    # make executable
    chmod +x .git/hooks/pre-commit
+
+.. note::
+   You do not need the mkdir unless the .git/hooks directory doesn't exist. 
+   It does not do any harm to execute it in any case though. 
 
 
 The pre-commit hook will check that all PHP files that will be committed
