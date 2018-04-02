@@ -55,19 +55,8 @@ Choose PSR-1 / PSR-2
 
 In order to test this, use `Code: Reformat Code` to reformat a PHP file
 
-**See also:**
 
-* `Coding guidelines for TYPO3
-  <https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html>`__
-
-
-JavaScript files
-----------------
-
-The following rules should be applied for JavaScript:
-`Airbnb JavaScript Style Guide <https://github.com/airbnb/javascript>`__
-
-You can use an .eslintrc file to set this up in PhpStorm.
+.. todo: more information about how to setup Coding Style for JavaScript, TypeScript etc.
 
 
 More information
