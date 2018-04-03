@@ -173,7 +173,7 @@ check all files in `typo3/sysext/core/Documentation/Changelog`.
 
 ::
 
-   Build/Scripts/validateRstFiles.sh
+   Build/Scripts/validateRstFiles.php
 
 
 .. _Bugfixing-Commit-and-push:
