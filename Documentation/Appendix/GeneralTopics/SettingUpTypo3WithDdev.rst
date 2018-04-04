@@ -125,13 +125,13 @@ When you are done you can do
    ddev stop
    
    
-Ressources
+Resources
 =============
 
-Remember, you can use the Slack channels to ask for help! Follow the general convention for the channels: not too chatty, get straight to the point and ask, be nice. Register for the `TYPO3 slack workspace <https://forger.typo3.com/slack>`__, if you have not done so already. 
+Remember, you can use the Slack channels to ask for help! Follow the general convention for the channels: not too chatty, get straight to the point and ask, be nice. Register for the `TYPO3 slack workspace <https://forger.typo3.com/slack>`__ if you have not done so already. 
 
-Slack
------
+Slack channels
+--------------
 
 * **#ddev**
 * **#typo3-cms-coredev** : Only for core development, ask general TYPO3 support questions in **#typo3-cms**
