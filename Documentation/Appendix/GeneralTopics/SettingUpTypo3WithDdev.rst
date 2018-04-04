@@ -114,6 +114,10 @@ http://ddev.dev.local/typo3.
 
 You will now be guided through the basic installation steps by TYPO3.
 
+If you use the HTTPS url you may get a "Privacy error" or something similar from your browser. You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to ddev.ddev.local (unsafe)`, depends on browser). 
+
+The warning is due to the fact that self-signed certificates are being used. 
+
 
 Shutdown ddev
 =============
