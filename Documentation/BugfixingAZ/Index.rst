@@ -65,58 +65,9 @@ It is a good idea to test the TYPO3 core with your fix to be sure that the
 automatic tests, that are running on bamboo after you have pushed a patch to
 the Gerrit review system, do not fail.
 
-The best for doing so is to run the tests locally with the same setup Bamboo
-uses. All you need for this is `Docker installed locally.
-<https://www.docker.com/get-docker>`__
+See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
 
-You have to load the necessary PHP container from `Bitbucket T3COM bamboo-
-remote-agent <https://bitbucket.typo3.com/projects/T3COM/repos/bamboo-remote-agent/browse>`__.
-There are a lot of containers for testing with different PHP versions and
-different databases and the functional tests. As an example, if you want to run
-the unit tests for current master you have to load the php72 container::
-
-   docker pull typo3gmbh/php72:latest
-
-Then start the container like this. It leaves the bash shell open::
-
-   docker run -it --rm \
-      --name=typo3_core_test \
-      -v <absolute local path where your typo3 checkout is>:/srv/tmp/cms \
-      typo3gmbh/php72:latest \
-      /sbin/my_init -- bash
-
-At the bash prompt it takes three commands to run the unit tests::
-
-   export HOME=/root
-   cd /srv/tmp/cms
-   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
-
-If no test fails it is save to push your fix to Gerrit.
-
-Running the functional tests is almost the same. It is just the phpunit command
-that looks a bit different. For the mysql setup use::
-
-   export typo3DatabaseName="func" \
-          typo3DatabaseUsername="funcu" \
-          typo3DatabasePassword="funcp" \
-          typo3DatabaseHost="localhost" \
-          typo3InstallToolPassword="klaus" \
-          && bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
-
-When you want to test against other databases like PostgreSQL or MSSQL you will
-find the database credentials inside the :file:`Build` folder of the TYPO3
-core in the file :file:`Build/bamboo/src/main/java/core/AbstractCoreSpec.java`.
-
-Search for 'typo3DatabaseUsername' in this Java file to find the definitions of
-the different database credentials.
-
-.. hint::
-
-   Be sure to have a cup of coffee, a good book or other things to be done to
-   span the waiting time. Functional tests will take a lot more time than unit
-   tests. Depending on the power of your local machine you can expect about 45
-   minutes or more.
-
+If no test fails it is safe to push your fix to Gerrit.
 
 .. _Bugfixing-Adding-documentation:
 
