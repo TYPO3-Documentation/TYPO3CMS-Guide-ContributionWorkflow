@@ -75,7 +75,7 @@ support issues, please use **#typo3-cms** for that. If you are not sure which ch
 you can use **#random** where you get direct help or a hint for the right channel to ask your question.
 
 
-.. note::
+.. hint::
    Do not ask if you can ask a question. Ask your question directly.
 
 
@@ -91,7 +91,7 @@ Also checkout the help page on `"Botty" <https://wiki.typo3.org/T3Bot>`__, the T
 some of its commands later in this manual.
 
 
-.. note:: Botty
+.. hint::
 
    You cannot use Botty in your private channel or in a direct messaging channel with someone else. Botty will
    only be available in a public channel, to which it has been invited (which is the case in #typo3-cms-coredev).
