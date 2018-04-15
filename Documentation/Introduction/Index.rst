@@ -26,8 +26,8 @@ Intended audience
 =================
 
 This document is mostly intended to help developers who want to contribute to the TYPO3 CMS source code. It also
-provides some sections which will be helpful for people reporting bugs. You don't necessarily need to be a
-developer to file a bug report and help in this area is appreciated very much.
+provides some sections which will be helpful for people reporting bugs. If you are not a developer,
+you can still post a bug report and help in this area is appreciated very much.
 
 .. _how-to-read-this-document:
 
@@ -41,7 +41,7 @@ because they are specific to TYPO3 development:
 * :ref:`Contribution workflow <t3contrib:workflow-explained>`
 * :ref:`Setting-up-your-Git-environment`
 
-You will need to setup a specific git hook for the commit message, for example.
+You must setup a specific git hook for the commit message, for example.
 
 .. _recommended-reading:
 
