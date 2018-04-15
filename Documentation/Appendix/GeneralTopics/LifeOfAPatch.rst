@@ -12,7 +12,7 @@ Each RFC fixes one or more issues on Forge. An RFC can be updated multiple times
 .. note::
 
    This tutorial assumes your environment is set up properly as described in
-   :ref:`Contribution Walkthrough Environment Setup<git-setup>`
+   :ref:`Contribution Walkthrough Environment Setup<setup>`
 
 Reviewing a Change Request (RFC)
 ================================

@@ -214,7 +214,7 @@ Relationships
    Do not write or change this line yourself. But keep the line once it exists.
 
    The change id is a randomly generated unique ID that identifies this change in
-   Gerrit_ .
+   Gerrit_.
    The `Change-Id` line is automatically added by :ref:`our pre-commit hook
    <git-setup-precommithook>`. The commit hook is executed when you have finished
    editing and save the commit message.

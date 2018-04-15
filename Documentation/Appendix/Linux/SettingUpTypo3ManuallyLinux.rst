@@ -44,19 +44,15 @@ PHP 7.2
    php7.2-readline php7.2-soap php7.2-xml php7.2-zip
 
 .. important::
-Make sure you use the correct PHP version for your TYPO3 version. For
-   the current master TYPO3 9, this is PHP 7.2.
+   Make sure you use the correct PHP version for your TYPO3 version. For the current master TYPO3 9, this is PHP 7.2.
 
-Make some changes to php.ini and reload
-
-
-::
+Make some changes to php.ini and reload::
 
    max_execution_time = 240
    max_input_vars = 1500
 
 
-::
+Restart Webserver::
 
    sudo service apache2 reload
 

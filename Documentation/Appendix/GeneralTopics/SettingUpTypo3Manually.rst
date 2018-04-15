@@ -50,7 +50,7 @@ access it with username `typo3` and password `somepassword` from localhost.
    mysql> GRANT ALL ON t3coredev.* TO `typo3`@`localhost`;
 
 Create FIRST_INSTALL
-===================
+====================
 
 In your htdocs directory:
 

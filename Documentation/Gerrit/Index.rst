@@ -172,5 +172,9 @@ For example, run the following:
 
 .. image:: _assets/gerrit-cherrypick.png
 
+.. git-reset-to-a-clean-state:
 
-After this :ref:`Reset to a clean state <git-reset-to-a-clean-state>` again.
+After this Reset to a clean state again::
+
+   git reset --hard origin/master
+   git pull

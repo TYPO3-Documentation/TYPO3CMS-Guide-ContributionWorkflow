@@ -1,6 +1,6 @@
 .. include:: ../Includes.txt
 
-.. _forge-introduction
+.. _forge-introduction:
 
 =====================
 Introduction to Forge

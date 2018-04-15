@@ -35,7 +35,7 @@ here.
 * :ref:`SourceTree on Windows<windows-clonewithsourcetree>`
 * SourceTree on OSX
 * :ref:`Git Tower on OSX<gittower-osx>`
-* :ref:`GitKraken <https://www.gitkraken.com>`
+* `GitKraken <https://www.gitkraken.com>`__
 
 .. _composer-install:
 

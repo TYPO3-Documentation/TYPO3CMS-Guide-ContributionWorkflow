@@ -42,7 +42,7 @@ to set the autosetuprebase option, such that your local commits are always rebas
    git config branch.autosetuprebase remote
 
 
-.. _commit-hook:
+.. _setup-git-commit-hook:
 
 Install your commit hooks
 =========================
@@ -72,6 +72,9 @@ Activate the hook::
    chmod +x .git/hooks/commit-msg
 
 You can read about the why and where of this hook :ref:`here <appendix-commit-hook>`.
+
+
+.. _git-setup-precommithook:
 
 pre-commit hook
 ---------------

@@ -154,7 +154,7 @@ Run all unit tests
 Run all functional test
 -----------------------
 
-.. _hint::
+.. hint::
    This section is still a work in progress because it is depending on
    changes in the core Build directory.
 
