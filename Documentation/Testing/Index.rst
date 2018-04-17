@@ -32,7 +32,6 @@ All you need for this is `Docker installed locally.
 Quickstart
 ==========
 
-
 .. _testing-docker-pull:
 
 docker pull
@@ -58,8 +57,7 @@ running and executing the tests in one step.
 Conventions
 -----------
 
-* You should be in your current core directory. Here, we assume it
-  is :file:`/var/www/t3coredev`
+* You should be in your current core directory. 
 * The directory inside the docker container will be :file:`/srv/tmp/cms`
 
 .. _testing-docker-run-bash:
@@ -75,7 +73,7 @@ Start the container like this. It leaves the bash shell open::
 
    docker run -it --rm \
       --name=typo3_core_test \
-      -v $(pwd):/srv/tmp/cms \
+      -v <absolute local path where your typo3 checkout is>:/srv/tmp/cms \
       -w /srv/tmp/cms \
       typo3gmbh/php72:latest \
       /sbin/my_init -- bash
@@ -127,8 +125,8 @@ the different database credentials.
    tests. Depending on the power of your local machine you can expect about 45
    minutes or more.
 
-Alternative method: Run command
-===============================
+Alternative method: Run single command
+======================================
 
 You can also use docker in non-interactive mode. In that case, the docker
 container is run with a specific command executed.
@@ -141,6 +139,17 @@ Run all unit tests
 
 
 ::
+
+   docker run --rm \
+      --name=typo3_core_test \
+      -v <absolute local path where your typo3 checkout is>:/srv/tmp/cms \
+      -w /srv/tmp/cms \
+      typo3gmbh/php72:latest \
+      /sbin/my_init -- bin/phpunit \
+      -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
+
+If your system supports fetching the current directory with :code:`$(pwd)`
+you might do something like this::
 
    docker run --rm \
       --name=typo3_core_test \
@@ -157,7 +166,6 @@ Run all functional test
 .. hint::
    This section is still a work in progress because it is depending on
    changes in the core Build directory.
-
 
 The functional tests require access to the database. For example, for
 the MySQL database, use the following file for setting the environment
@@ -180,7 +188,7 @@ variables for docker.
 
    docker run --rm \
    --name=typo3_core_test \
-   -v $(pwd):/srv/tmp/cms \
+   -v <absolute local path where your typo3 checkout is>:/srv/tmp/cms \
    -w /srv/tmp/cms \
    --env-file Build/bamboo/docker/credentials-mysql \
    typo3gmbh/php72:latest \
