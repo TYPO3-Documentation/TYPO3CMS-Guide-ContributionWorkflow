@@ -85,7 +85,7 @@ Setting up a working TYPO3 installation
 
 You will now need to use your git clone to setup a working installation
 of TYPO3. There are many different ways how you can do this. We will
-provide a fex examples in the Appendix:
+provide a few examples in the Appendix:
 
 * :ref:`ddev`
 * :ref:`setting-up-typo3-manually`
