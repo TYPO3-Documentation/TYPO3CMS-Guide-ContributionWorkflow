@@ -144,8 +144,13 @@ Set a Commit Message
 --------------------
 
 Please make sure that you read the general guidelines for commit messages: See
-:ref:`how to compose a proper commit message <commitmessage>`.
+:ref:`how to compose a proper commit message <commitmessage>`. Your code will 
+not be merged if it does not follow the commit message rules.    
 
+
+.. important::
+   The section about commit messages is a must-read. Read it. Follow it.
+   
 
 .. _Bugfixing-Create-a-new-patch:
 
