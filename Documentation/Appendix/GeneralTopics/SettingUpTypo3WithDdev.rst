@@ -97,6 +97,10 @@ MySQL credentials to setup your TYPO3 installation, e.g.
 FIRST_INSTALL
 =============
 
+.. hint::
+   Creating FIRST_INSTALL is probably not necessary. Check to see if the database exists.
+   ddev describe should give you enough information for that. 
+
 Now, create a file `FIRST_INSTALL`:
 
 ::
@@ -117,16 +121,21 @@ If you use the HTTPS url you may get a "Privacy error" or something similar from
 
 The warning is due to the fact that self-signed certificates are being used. 
 
+Additional setup
+================
+
+Be sure to add .ddev to your local gitignore (e.g. :file:`.git/info/exclude`). 
 
 Shutdown DDEV
 =============
 
-When you are done you can do
+When you are done you can do::
 
-::
-
-   ddev stop
+   ddev remove
    
+`ddev remove` does not remove the database. For a list of commands see::
+
+   ddev help
    
 Resources
 =============
