@@ -8,7 +8,7 @@
 Setting up TYPO3 with DDEV
 ==========================
 
-`Ddev <https://ddev.readthedocs.io>`__ provides several pre-configured
+`DDEV <https://ddev.readthedocs.io>`__ provides several pre-configured
 environments based on Docker. 
 
 Here is a description of how you can use DDEV to setup a working TYPO3
@@ -118,7 +118,7 @@ If you use the HTTPS url you may get a "Privacy error" or something similar from
 The warning is due to the fact that self-signed certificates are being used. 
 
 
-Shutdown ddev
+Shutdown DDEV
 =============
 
 When you are done you can do
@@ -140,11 +140,11 @@ Slack channels
 * **#typo3-cms-coredev** : Only for core development, ask general TYPO3 support questions in **#typo3-cms**
 
 
-ddev documentation
+DDEV documentation
 ------------------
 
 * `Get Started with DDEV <https://www.drud.com/get-started/>`__
-* `ddev System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__
+* `DDEV System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__
 * `Generel DDEV installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 * `DDEV TYPO3 Quickstart <https://ddev.readthedocs.io/en/latest/users/cli-usage/#typo3-quickstart>`__
 * `DDEV commands <https://ddev.readthedocs.io/en/latest/users/cli-usage>`__
