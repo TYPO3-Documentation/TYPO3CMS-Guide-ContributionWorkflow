@@ -9,16 +9,15 @@ Setting up TYPO3 with DDEV
 ==========================
 
 `Ddev <https://ddev.readthedocs.io>`__ provides several pre-configured
-development environments based on Docker. You can use an existing
-TYPO3 environment and adapt it to your needs.
+environments based on Docker. 
 
 Here is a description of how you can use DDEV to setup a working TYPO3
 installation using the cloned master.
 
 You don't need to have a Webserver or Database running on your system.
-Everything will be supplied by ddev. In fact, if you do have a Webserver
+Everything will be supplied by DDEV. In fact, if you do have a Webserver
 or Database running on your machine, make sure there are no conflicts.
-You can change the default ports ddev uses (e.g. port 80 / 443 for Webserver)
+You can change the default ports DDEV uses (e.g. port 80 / 443 for Webserver)
 in `.ddev/config.yaml` before you start it.
 
 Setting up the prerequisites
@@ -27,7 +26,7 @@ Setting up the prerequisites
 You will need to install docker and other
 `System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
-Then install ddev as described in the
+Then install DDEV as described in the
 `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 instructions.
 
@@ -48,7 +47,7 @@ Create a clone of git as described in :ref:`git-clone`.
 
 
 
-Configure ddev
+Configure DDEV
 ==============
 
 
@@ -65,7 +64,7 @@ this is PHP 7.2).
 
    php_version: "7.2"
 
-Start ddev
+Start DDEV
 ==========
 
 ::
@@ -76,7 +75,7 @@ Start ddev
 Check for database credentials
 ==============================
 
-Let ddev dump information:
+Let DDEV dump information:
 
 ::
 
@@ -144,11 +143,11 @@ Slack channels
 ddev documentation
 ------------------
 
-
+* `Get Started with DDEV <https://www.drud.com/get-started/>`__
 * `ddev System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__
-* `Generel ddev installation <https://ddev.readthedocs.io/en/latest/#installation>`__
-* `ddev TYPO3 Quickstart <https://ddev.readthedocs.io/en/latest/users/cli-usage/#typo3-quickstart>`__
-* `ddev commands <https://ddev.readthedocs.io/en/latest/users/cli-usage>`__
+* `Generel DDEV installation <https://ddev.readthedocs.io/en/latest/#installation>`__
+* `DDEV TYPO3 Quickstart <https://ddev.readthedocs.io/en/latest/users/cli-usage/#typo3-quickstart>`__
+* `DDEV commands <https://ddev.readthedocs.io/en/latest/users/cli-usage>`__
 
 
 * `TYPO3 GmbH Blog post: DDEV adds support for TYPO3 CMS <https://typo3.com/blog/ddev-adds-support-for-typo3-cms/>`__
