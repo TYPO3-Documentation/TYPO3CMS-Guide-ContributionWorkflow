@@ -59,10 +59,10 @@ A summary line starts with a **keyword** and a **brief summary** of what the cha
 
 Possible keywords are:
 
-[BUGFIX]
+``[BUGFIX]``
    A fix for a bug.
 
-[FEATURE]
+``[FEATURE]``
    A new feature (also small additions). Most likely it will be an added
    feature, but it could also be removed. Features may exclusively be targeted for
    the "master" branch of TYPO3 CMS, because no new features are allowed in older
@@ -71,15 +71,15 @@ Possible keywords are:
    `TYPO3 CMS Important Changes Documentation HowTo
    <https://wiki.typo3.org/TYPO3_CMS_Important_Changes_Documentation_HowTo>`_ .
 
-[DOCS]
+``[DOCS]``
    This tag is used for changes regarding the documentation.
 
-[TASK]
+``[TASK]``
    Anything not covered by the above categories. E.g. Refactoring of a component
 
 Additionally other flags  **should be added** under certain circumstances:
 
-[!!!]
+``[!!!]``
    Breaking change. After this patch, something works different than before
    and the user / admin / extension developer will have to change something. Has to
    be  **documented** accordingly and should only be targeted for master branch.
@@ -88,22 +88,22 @@ Additionally other flags  **should be added** under certain circumstances:
 
    .. important::
 
-      Whenever your change introduces a breaking change, it is **mandatory** to put **!!!** in front of the keyword.
+      Whenever your change introduces a breaking change, it is **mandatory** to put ``[!!!]`` in front of the keyword.
 
-[WIP]
+``[WIP]``
    Work In Progress. This flag is not mandatory and must be added before any other keywords; will be removed, once the final version of a
    change is available. Changes marked WIP are never merged. An example could be: ``[WIP][TASK] Write some neat comment``.
 
 Note that if you want to add a breaking feature which is still work in progress, you would use ``[WIP][!!!][FEATURE] Transform Lead to Gold`` as your summary line. This way it is very easy to see the WIP state; that it is also breaking doesn't really matter at this point.
 
-[SECURITY]
+``[SECURITY]``
    Visualizes that a change fixes a security issue. This tag is used
    by the Security Team.
    
 .. important::   
 
    In case you found a security issue, always get in touch with the `Security Team
-   <http://typo3.org/teams/security/contact-us/>`_ **first**! Never post information
+   <https://typo3.org/community/teams/security/contact-us/>`_ **first**! Never post information
    about security vulnerabilities in a public place such as Slack or push patches
    that disclose information about vulnerabilities.
 
