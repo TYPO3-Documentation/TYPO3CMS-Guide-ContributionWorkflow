@@ -18,7 +18,7 @@ After restarting PHPStorm you need to go back to PHPStorms preferences and navig
 
 .. image:: ../_assets/phpstorm-gerrit-settings.png
 
-Enter ``review.typo3.org`` as the URL and add your login credentials you use on TYPO3.org.
+Enter ``https://review.typo3.org`` as the URL and add your login credentials you use on TYPO3.org.
 
 The Gerrit module appears at the bottom next to version control.
 
