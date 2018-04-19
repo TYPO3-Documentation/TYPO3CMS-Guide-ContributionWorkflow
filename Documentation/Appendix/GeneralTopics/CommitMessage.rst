@@ -59,10 +59,10 @@ A summary line starts with a **keyword** and a **brief summary** of what the cha
 
 Possible keywords are:
 
-``[BUGFIX]``
+`[BUGFIX]`
    A fix for a bug.
 
-``[FEATURE]``
+`[FEATURE]`
    A new feature (also small additions). Most likely it will be an added
    feature, but it could also be removed. Features may exclusively be targeted for
    the "master" branch of TYPO3 CMS, because no new features are allowed in older
@@ -71,15 +71,15 @@ Possible keywords are:
    `TYPO3 CMS Important Changes Documentation HowTo
    <https://wiki.typo3.org/TYPO3_CMS_Important_Changes_Documentation_HowTo>`_ .
 
-``[DOCS]``
+`[DOCS]`
    This tag is used for changes regarding the documentation.
 
-``[TASK]``
+`[TASK]`
    Anything not covered by the above categories. E.g. Refactoring of a component
 
 Additionally other flags  **should be added** under certain circumstances:
 
-``[!!!]``
+`[!!!]`
    Breaking change. After this patch, something works different than before
    and the user / admin / extension developer will have to change something. Has to
    be  **documented** accordingly and should only be targeted for master branch.
@@ -88,19 +88,20 @@ Additionally other flags  **should be added** under certain circumstances:
 
    .. important::
 
-      Whenever your change introduces a breaking change, it is **mandatory** to put ``[!!!]`` in front of the keyword.
+      Whenever your change introduces a breaking change, it is **mandatory** to
+      put `[!!!]` in front of the keyword.
 
-``[WIP]``
+`[WIP]`
    Work In Progress. This flag is not mandatory and must be added before any other keywords; will be removed, once the final version of a
    change is available. Changes marked WIP are never merged. An example could be: ``[WIP][TASK] Write some neat comment``.
 
 Note that if you want to add a breaking feature which is still work in progress, you would use ``[WIP][!!!][FEATURE] Transform Lead to Gold`` as your summary line. This way it is very easy to see the WIP state; that it is also breaking doesn't really matter at this point.
 
-``[SECURITY]``
+`[SECURITY]`
    Visualizes that a change fixes a security issue. This tag is used
    by the Security Team.
-   
-.. important::   
+
+.. important::
 
    In case you found a security issue, always get in touch with the `Security Team
    <https://typo3.org/community/teams/security/contact-us/>`_ **first**! Never post information
@@ -113,7 +114,7 @@ Note that if you want to add a breaking feature which is still work in progress,
 .. sidebar:: Imperative mood and other great rules
 
    https://chris.beams.io/posts/git-commit/#seven-rules is an excellent guide about how to write good subject lines.
-   
+
 -  It is *very important* that the message is written in **imperative mood**; that means that it must be written as if you are giving a command or an instruction, since a commit is a set of instructions for how to go from a previous state to the new state and the commit message should describe this process. This convention matches up with generated commit messages by commands like git merge and git revert.
    If in doubt, the *golden rule* to follow is very simple: Review your subject lines, and apply the following words in front of it:
 
@@ -154,7 +155,7 @@ Some examples of topic descriptions
 *Note:* The [!!!] prefix is added at the *very beginning* of the line, so it doesn't get overlooked.
 
 
-Description (Message body) 
+Description (Message body)
 ==========================
 
 Here you can go into detail about the how and why of the change. It should be brief, but yet descriptive so people reviewing your change get an idea what they need to look out for
@@ -194,7 +195,7 @@ Relationships
 
 2. `Related:`
    Other issues related to this change which are not resolved (for **all types**, it simply adds a relation, no closing). You need to reference an issue on Forge_ by just adding the issue number like in::
-   
+
       Related: #12345
 
 3. `Releases:`
@@ -202,7 +203,7 @@ Relationships
 
       Releases: master, 7.6, 6.2
 
-   Always make sure the target version does indeed exist, when in doubt, as in the coredev channel on Slack_.   
+   Always make sure the target version does indeed exist, when in doubt, as in the coredev channel on Slack_.
 
 4. `Depends`
    For TYPO3  **documentation patches**.
@@ -253,7 +254,7 @@ in a file, for example :file:`~/.gitmessage.txt`, and the command:
 .. code-block:: shell
 
    git config --global commit.template ~/.gitmessage.txt
-   
+
 
 Bad summary lines examples vs. good examples
 ============================================
@@ -263,27 +264,27 @@ Please note that the following examples are taken from *real commits*.
 **Example 1**
 
 .. code-block:: none
-   
+
    [FOLLOWUP][BUGFIX] Remove uglify of jquery-ui/sortable.js
 
 should have been:
 
 .. code-block:: none
-   
+
    [BUGFIX] Remove uglify of jquery-ui/sortable.js
 
 
 **Example 2**
 
 .. code-block:: none
-   
+
    [BUGFIX] EXT:filelist Cancelling the file exists already modal works now
 
 should have been:
 
 .. code-block:: none
-   
-   [BUGFIX] Allow cancelling modal that appears when file exists 
+
+   [BUGFIX] Allow cancelling modal that appears when file exists
 
 
 **Example 3**
@@ -295,13 +296,13 @@ should have been:
 should have been:
 
 .. code-block:: none
-   
+
    [TASK] Revert "[FEATURE] introduce YAML "imports""
 
-.. note::   
+.. note::
 
-   Please note that in this case the subject of the commit to revert was poorly written,too! This required some additional adjustment.. 
- 
+   Please note that in this case the subject of the commit to revert was poorly written,too! This required some additional adjustment..
+
 
  **Example 4**
 
@@ -332,10 +333,10 @@ should have been:
 **Example 6**
 
 .. code-block:: none
-   
+
    [BUGFIX] Element Browser should only render default language pages
 
-should have been: 
+should have been:
 
 .. code-block:: none
 
@@ -348,7 +349,7 @@ should have been:
 
    [BUGFIX] D3.js uses basic authentication credentials cached in browser
 
-should have been: 
+should have been:
 
 .. code-block:: none
 
@@ -362,7 +363,7 @@ should have been:
    [DOCS] 1/1 9.1 Documentation
 
 should have been:
- 
+
 .. code-block:: none
 
    [DOCS] Add documentation for version 9.1 (1/1)
@@ -370,12 +371,12 @@ should have been:
 
 **Example 9**
 
-.. code-block:: none  
+.. code-block:: none
 
    [FEATURE] Option to globally enable redirect hit count
 
 should have been:
- 
+
 .. code-block:: none
 
    [FEATURE] Add option to globally enable redirect hit count
@@ -383,38 +384,38 @@ should have been:
 
 **Example 10**
 
-.. code-block:: none 
+.. code-block:: none
 
    [TASK] Improved extension configuration API
 
-should have been:  
+should have been:
 
-.. code-block:: none 
+.. code-block:: none
 
    [TASK] Improve extension configuration API
 
 
 **Example 11**
 
-.. code-block:: none    
+.. code-block:: none
 
    [BUGFIX] NewContentElementWizardController to NewContentElementController
 
 should have been:
 
-.. code-block:: none    
+.. code-block:: none
 
    [BUGFIX] Remove recently introduced NewContentElementWizardController
 
 
 **Example 12**
 
-.. code-block:: none 
+.. code-block:: none
 
    [BUGFIX] Invalidate session token on creating content element in admin panel
 
-Should have been: 
+Should have been:
 
-.. code-block:: none 
+.. code-block:: none
 
    [BUGFIX] Fix backend edit URL in admin panel
