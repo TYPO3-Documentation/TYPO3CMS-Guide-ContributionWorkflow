@@ -7,6 +7,12 @@
 Coding Guidelines
 =================
 
+More information is found in the :ref:`Coding Guidelines <t3coreapi:cgl>`
+section of the Core API.
+
+This is just a very brief overview.
+
+
 PHP
 ===
 
@@ -39,3 +45,4 @@ Xliff files
 Language files are usually stored in a Folder Resources/Private/Language
 in files with the ending *.xlf*. While no tabs are allowed to indent
 in PHP files, you should edit Xliff files using tabs.
+

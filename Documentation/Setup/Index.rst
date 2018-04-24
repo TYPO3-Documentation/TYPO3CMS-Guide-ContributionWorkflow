@@ -14,5 +14,5 @@ Setting up your environment
    Prerequisites   
    SetupTypo3
    Git/Index
-   SettingUpPhpstorm/Index
+   SetupIde
 

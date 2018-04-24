@@ -6,7 +6,8 @@
 Appendix
 ========
 
-You can use this page as a reference to almost all topics we went over in this document.
+The appendix contains some additional information that covers topics
+in more depth than what is already described in the main section.
 
 .. toctree::
    :glob:
@@ -16,3 +17,4 @@ You can use this page as a reference to almost all topics we went over in this d
    OSX/Index
    Windows/Index
    Linux/Index
+   SpecificTopics/Index
