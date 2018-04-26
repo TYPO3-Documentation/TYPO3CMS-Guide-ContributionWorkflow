@@ -2,15 +2,17 @@
 
 .. _Start:
 
-========================
-TYPO3 Contribution Guide
-========================
+===========================================
+TYPO3 Contribution Guide - Core Development
+===========================================
 
 :Language:
          en
 
 :Description:
-         Guide for TYPO3 core contribution.
+         Guide for TYPO3 core contribution. Alternate names: 
+         Contribution Walkthrough, Contribution Walkthrough
+         Tutorial
 
 :Keywords:
          forDevelopers, forAdvanced
