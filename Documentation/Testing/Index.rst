@@ -78,16 +78,6 @@ Start the container like this. It leaves the bash shell open::
       typo3gmbh/php72:latest \
       /sbin/my_init -- bash
 
-
-Run all Tests in one directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To run only the tests in a specific directory (and its subdirectories)::
-
-   bin/phpunit typo3/sysext/redirects/Tests/Unit/Service
-
-
-
 Run all Unit Tests
 ------------------
 
