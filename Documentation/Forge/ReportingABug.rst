@@ -26,11 +26,10 @@ Identify the issue
 Before you report a bug, make sure that your issue will be helpful
 by following these guidelines:
 
-Be up to date
-   First of all, you should make sure that the bug does exist in the
-   latest master branch. Do a ``git pull`` on your development
-   environment, flush all caches, do a ``composer install``,
-   just to be sure.
+Check for already existing issues
+   Search for already existing issues for this problem. You can use
+   `Forger <https://forger.typo3.com>`__ to search for existing issues,
+   as already described in the previous paragraph.
 
 Remove side effects
    Work on a TYPO3 instance which is as clean as possible so you can
@@ -42,10 +41,11 @@ Narrow down the problem
    Try different browsers, this will help the team (and you) a lot to
    provide a proper description of the problem.
 
-Check for already existing issues
-   Search for already existing issues for this problem. You can use
-   `Forger <https://forger.typo3.com>`__ to search for existing issues,
-   as already described in the previous paragraph.
+Be up to date
+   First of all you should make sure that the bug does exist on the latest TYPO3
+   version; we always recommend you to upgrade your TYPO3 environment to the latest
+   release of the LTS version you use.
+   See https://get.typo3.org/ to get the latest version of your LTS.
 
 Talk to the core team
    When in doubt, don't hesitate to talk to us on Slack in the
@@ -75,18 +75,26 @@ Subject
    generic and doesn't help describing the problem. Just imagine how you
    would like to get a report for yourself :)
 
+   Bad:
+
+      GIFBUILDER broken
+
+   Good:
+
+      Text is not added to GIFBUILDER when using TEXT object
+
 Description
-   As usual, provide steps how to reproduce the problem. See the next
-   section for more information on formatting your text.
+   Provide steps how to reproduce the problem. See the next section for more
+   information on formatting your text.
 
 Category
    Choose a category that fits your issue.
 
 TYPO3 version
-   Choose the correct TYPO3 version.
+   Choose the TYPO3 version, where the error occurs.
 
 PHP Version
-   Choose the correct PHP version.
+   Choose the PHP version, where the error occurs.
 
 
 .. important::
