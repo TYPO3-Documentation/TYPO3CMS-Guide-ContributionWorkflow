@@ -237,24 +237,33 @@ the commit message:
 
 You will find  more information about the life cycle of a patch here :ref:`lifeOfAPatch-Reverting-Patches`.
 
+.. _committemplate:
 
 Commit Template
 ===============
 
-You can use a custom template for getting done the commit message faster.
-All you need is the template like::
+You can use a custom template for automatically generating a commit message with the basics. When editing the commit message during a commit, you can then add the necessary information. 
 
-   [BUGFIX|TASK]
+This is a sample template::
 
-   Resolves:
-   Releases:
+   [BUGFIX|TASK|FEATURE]
 
-in a file, for example :file:`~/.gitmessage.txt`, and the command:
+   Resolves: #
+   Releases: master, 8.7
+
+Put this in a file, for example :file:`~/.gitmessage.txt`, and then configure it as template:
 
 .. code-block:: shell
 
    git config --global commit.template ~/.gitmessage.txt
 
+This will add the template to your global git configuration (stored for your user, e.g. in ~/.gitconfig). You may not want to do this, because then the template will always be used for git commit, not only for TYPO3 projects.
+
+In this case, you can set the template only for the current TYPO3 repository. That means, the command has to be repeated whenever you create a new TYPO3 repository.
+
+.. code-block:: shell
+
+   git config --local commit.template ~/.gitmessage.txt
 
 Bad summary lines examples vs. good examples
 ============================================
