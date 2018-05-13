@@ -5,7 +5,7 @@
 Setting up your Gerrit account
 ------------------------------
 
-Head over to Gerrit_ and scroll at the end of the page and switch to the new UI.
+Head over to Gerrit_, scroll to the end of the page and switch to the new UI.
 
 .. note::
     If you still want to use the old UI, please follow the version 1.0 of this guide.
