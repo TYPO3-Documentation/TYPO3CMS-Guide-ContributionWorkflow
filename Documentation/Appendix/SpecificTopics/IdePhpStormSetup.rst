@@ -72,7 +72,9 @@ You can find more information on the :ref:`Coding Guidelines section in the Appe
 Optional Plugins
 ================
 
-Here are some Plugins, you might use when developing TYPO3.
+Here are some Plugins, you might use when developing TYPO3. DynamicReturnTypePlugin
+and Php Inspections are not TYPO3 specific, but will show possible errors and 
+are strongly recommended when developing for the TYPO3 core.
 
 .. hint::
    None of these Plugins are mandatory, check out what might be useful for yourself!
@@ -91,13 +93,15 @@ Install Plugins: `File: Settings: Plugins`
 * `Php Inspections (EA Extended)
   <https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended->`__ :
   Static Code Analysis tool for PHP
+* `Fluid plugin <https://plugins.jetbrains.com/plugin/9469-fluid-plugin--free-version>`__ 
+  (sgalinski)
+* `TypoScript plugin
+  <https://plugins.jetbrains.com/plugin/7463-typoscript-plugin>`__ (sgalinski)
+* :ref:`phpstorm-gerritplugin`
 * `TYPO3 CMS Plugin
   <https://plugins.jetbrains.com/plugin/9496-typo3-cms-plugin>`__
 * `TYPO3 XLIFF Utility
   <https://plugins.jetbrains.com/plugin/8098-typo3-xliff-utility>`__
-* `TypoScript plugin
-  <https://plugins.jetbrains.com/plugin/7463-typoscript-plugin>`__
-* :ref:`phpstorm-gerritplugin`
 
 
 .. _phpstorm-setup-testing:
