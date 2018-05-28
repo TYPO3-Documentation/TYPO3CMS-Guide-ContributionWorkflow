@@ -62,5 +62,6 @@ kept up-to-date to the best of the Documentation Team's abilities.
    BugfixingAZ/Index
    Testing/Index
    DebuggingTypo3/Index
+   CheatSheets/Index
    Appendix/Index
    Targets
