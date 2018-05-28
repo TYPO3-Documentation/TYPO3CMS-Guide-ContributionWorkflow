@@ -43,6 +43,22 @@ because they are specific to TYPO3 development:
 
 You must setup a specific git hook for the commit message, for example.
 
+.. _whats-new-in-this-document:
+
+What's new in this document
+===========================
+
+If you already read this manual but want to checkout what's new, see these
+new chapters:
+
+* :ref:`cheat-sheet-git` (May 28, 2018)
+* :ref:`settting-up-typo3-with-ddev` (Mar 13, 2018)
+* :ref:`phpstorm-setup` (Mar 12, 2018)
+* :ref:`phpstorm-setup-xdebug` (Mar 12, 2018)
+* :ref:`testing` (Mar 10, 2018)
+* This :ref:`introduction` chapter (Feb 28, 2018)
+
+
 .. _recommended-reading:
 
 Further recommended reading
