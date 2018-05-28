@@ -63,14 +63,15 @@ or have already voted on this change will get notified. This is a good time to b
 Policy for votes
 ================
 
-**Verify:** Needs two +1, one of them being a core developer.
+**Code Review:** Needs +1 of two reviewers, one of them being a core developer.
 
-**Code Review:** Needs two +1, one of them being a core developer.
-A core developer can give a "+2" right away if another +1 vote already exists
+**Verified:** Needs +1 of two reviewers, one of them being a core developer.
+
+A core developer can give a +2 right away on these two checks if another +1 vote already exists.
 
 Authors should not vote for their own patches, unless the patch has been changed substantially by other developers.
 
-As soon as the patch has reached the approved status, a core developer can decide to push the "Submit" button, finally pushing it to the main repository.
+As soon as the patch has reached the approved status by getting a +2 on **Code Review** and **Verified**, a core developer can decide to push the "Submit" button, finally pushing it to the main repository.
 
 
 .. _Gerrit-No-brainers:
