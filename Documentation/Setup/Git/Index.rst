@@ -38,7 +38,7 @@ You need to instruct git to work with your name and email address. Make sure the
 
 By default, git config sets the local configuration (same as using `--local` option for `git config`), meaning the configuration will be written to the configuration file in your repository (.git/config). If your name and email address is already set in your global git settings (in your home directory, e.g. `~/.gitconfig`) and is the same as the one for typo3.org / gerrit, you don't have to explicitly do this for each repository.
 
-Check your git configuration:
+Check your git configuration::
 
     git config -l
 
