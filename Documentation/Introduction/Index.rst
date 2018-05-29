@@ -15,6 +15,11 @@ Overview
 This guide will walk you through everything necessary to become a TYPO3
 contribution professional in no time.
 
+.. _getting-started-video:
+
+Getting started video
+=====================
+
 Here is a video to get you started. Just make sure you come back here, 
 to read the rest of the guide afterwards. 
 
@@ -26,7 +31,7 @@ Intended audience
 =================
 
 This document is mostly intended to help developers who want to contribute to the TYPO3 CMS source code. It also
-provides some sections which will be helpful for people reporting bugs. If you are not a developer,
+provides some sections which will be helpful for people reporting bugs and testing patches. If you are not a developer,
 you can still post a bug report and help in this area is appreciated very much.
 
 .. _how-to-read-this-document:
