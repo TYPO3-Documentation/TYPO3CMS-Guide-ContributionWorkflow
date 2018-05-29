@@ -22,7 +22,7 @@ Common quick links:
 
 - :ref:`git setup <Setting-up-your-Git-environment>`
 - :ref:`git cheat sheet <cheat-sheet-git>`
-- :ref:`commitmessage`
+- :ref:`Commit message rules <commitmessage>`
 - :ref:`New chapters <whats-new-in-this-document>`
 
 
