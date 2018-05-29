@@ -45,6 +45,7 @@ because they are specific to TYPO3 development:
 
 * :ref:`Contribution workflow <t3contrib:workflow-explained>`
 * :ref:`Setting-up-your-Git-environment`
+* :ref:`commitmessage`
 
 You must setup a specific git hook for the commit message, for example.
 
