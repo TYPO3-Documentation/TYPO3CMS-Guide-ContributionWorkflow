@@ -69,6 +69,8 @@ Policy for votes
 
 A core developer can give a +2 right away on these two checks if another +1 vote already exists.
 
+Votes from the Bamboo build server (user *TYPO3com*) do not count. This means that a patch which is fully reviewed usually has at least 3 **Verified** +1 votes, two from humans and one from Bamboo.
+
 Authors should not vote for their own patches, unless the patch has been changed substantially by other developers.
 
 As soon as the patch has reached the approved status by getting a +2 on **Code Review** and **Verified**, a core developer can decide to push the "Submit" button, finally pushing it to the main repository.
