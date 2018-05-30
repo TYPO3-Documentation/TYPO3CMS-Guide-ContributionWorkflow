@@ -72,6 +72,8 @@ Rebase::
 Workflow - commit msg
 =====================
 
+Details: :ref:`commitmessage`
+
 Commit template::
 
    [BUGFIX|TASK|FEATURE]
@@ -79,14 +81,7 @@ Commit template::
    Resolves: #
    Releases: master, 8.7
 
-Minimal example Bugfix::
-
-   [BUGFIX] Fixes a bug
-
-   Resolves: #12345
-   Releases: master, 8.7
-
-Other keyword examples::
+Other keywords::
 
    [BUGFIX]
    [FEATURE]
@@ -97,10 +92,6 @@ Other keyword examples::
 
 * subject < 52 chars
 * other lines <= 72 chars
-
-More::
-
-   Related: #12345
 
 
 Workflow - other branches
