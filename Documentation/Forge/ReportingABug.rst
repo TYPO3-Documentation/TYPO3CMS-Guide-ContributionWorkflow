@@ -54,7 +54,7 @@ Talk to the core team
 Create an issue
 ===============
 
-Head over to Forge_ and log in (if you aren't already). You can find the
+:ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already). You can find the
 TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/.
 
 If you click "New issue" you will see a form with a couple of fields
