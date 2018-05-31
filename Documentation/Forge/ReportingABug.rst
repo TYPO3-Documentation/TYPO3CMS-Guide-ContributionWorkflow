@@ -17,9 +17,6 @@ problem has already been reported.
 In order to do this, you can use `Forger <https://forger.typo3.com>`__
 to search and narrow down your search by using the filters on the left.
 
-.. image:: _assets/forger-filter.png
-
-
 Identify the issue
 ==================
 
