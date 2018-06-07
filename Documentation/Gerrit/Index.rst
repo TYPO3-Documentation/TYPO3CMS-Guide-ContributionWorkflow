@@ -48,7 +48,8 @@ Commenting and voting
 In order to comment on a change you can click on the **Reply button** and enter your comment. Here, you
 can also apply your votes.
 
-.. image:: _assets/gerrit-vote.png
+.. figure:: _assets/gerrit-vote.png
+   :class: with-shadow
 
 .. sidebar:: Votes
 
@@ -116,7 +117,8 @@ Simply point to the place you want to add a comment and hit the :kbd:`C` key on 
 box and hit ``Save``. Keep in mind that all comments will not be sent to the reviewers immediately - you will still need
 to use the **Reply Button** to send them all (ideally with a vote indicating how severe your finding were).
 
-.. image:: _assets/gerrit-comment-box.png
+.. figure:: _assets/gerrit-comment-box.png
+   :class: with-shadow
 
 
 .. _Gerrit-Reset-to-a-clean-state:
@@ -173,7 +175,8 @@ For example, run the following:
    menu left of the **Download Button**. The left and right numbers should always be the same, so you know you picked the
    latest patch set. You can also klick on **Go to latest patch set**.
 
-.. image:: _assets/gerrit-cherrypick.png
+.. figure:: _assets/gerrit-cherrypick.png
+   :class: with-shadow
 
 .. git-reset-to-a-clean-state:
 
