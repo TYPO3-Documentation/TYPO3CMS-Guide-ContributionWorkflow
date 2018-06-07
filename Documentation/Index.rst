@@ -46,6 +46,7 @@ Common quick links
 
 - `Register for typo3.org <https://my.typo3.org/index.php?id=2>`__
 - `Register for Slack <https://my.typo3.org/index.php?id=35>`__
+- `Gerrit <https://review.typo3.org>`__
 - `Forge Issues <https://forge.typo3.org/projects/typo3cms-core/issues>`__
 - `Forger <https://forger.typo3.com>`__
 - `TYPO3 Slack <https://typo3.slack.com>`__
