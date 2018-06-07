@@ -10,9 +10,11 @@ Head over to Gerrit_, scroll to the end of the page and switch to the new UI.
 .. note::
     If you still want to use the old UI, please follow the version 1.0 of this guide.
 
-.. image:: _assets/gerrit_newui.png
-   :width: 400px
-
+.. figure:: _assets/gerrit_newui.png
+   :width: 400 px
+   :class: with-shadow
+   :alt: Image of Gerrit
+   
 Now you can click the **Sign In** button in the top right corner.
 
 .. image:: _assets/gerrit_signin.png
