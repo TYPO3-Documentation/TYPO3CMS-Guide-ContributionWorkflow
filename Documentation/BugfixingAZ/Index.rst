@@ -183,7 +183,7 @@ Change whatever you like but keep the `Change-ID: ...` line.
 
 .. tip::
 
-   Keep in mind that you can commit **as often as you want,**
+   Keep in mind that you can commit with --amend **as often as you want,**
    just make sure you keep the `Change-Id:` line intact.
 
 
