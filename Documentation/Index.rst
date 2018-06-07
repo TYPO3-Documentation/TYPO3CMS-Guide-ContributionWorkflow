@@ -15,8 +15,11 @@ a GNU/GPL CMS/Framework available from `www.typo3.org
 <https://typo3.org/>`_
 
 
-Common quick links:
-===================
+Common quick links
+==================
+
+... in this guide:
+------------------
 
 .. rst-class:: horizbuttons-primary-xxl
 
@@ -24,6 +27,28 @@ Common quick links:
 - :ref:`git cheat sheet <cheat-sheet-git>`
 - :ref:`Commit message rules <commitmessage>`
 - :ref:`New chapters <whats-new-in-this-document>`
+
+... in other guides:
+--------------------
+
+.. rst-class:: horizbuttons-primary-xxl
+
+- :ref:`TYPO3 Core API <t3coreapi:start>`
+- :ref:`TYPO3 Coding Guidelines (in Core API) <t3coreapi:cgl>`
+- :ref:`TCA Reference <t3tca:Start>`
+- :ref:`TypoScript Reference <t3tsref:Start>`
+- :ref:`TSconfig Reference <t3tsconfig:Start>`
+
+... other:
+--------------------
+
+.. rst-class:: horizbuttons-primary-xxl
+
+- `Register for typo3.org <https://my.typo3.org/index.php?id=2>`__
+- `Register for Slack <https://my.typo3.org/index.php?id=35>`__
+- `Forge Issues TYPO3 Core <https://forge.typo3.org/projects/typo3cms-core/issues>`__
+- `Forger <https://forger.typo3.com>`__
+- `TYPO3 Slack <https://typo3.slack.com>`__
 
 
 .. toctree::
