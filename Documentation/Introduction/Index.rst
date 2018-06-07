@@ -12,8 +12,8 @@ Introduction
 Overview
 ========
 
-This guide will walk you through everything necessary to become a TYPO3
-contribution professional in no time.
+This guide will provide you with everything you need to become a TYPO3
+contributor.
 
 .. _getting-started-video:
 
@@ -30,9 +30,9 @@ to read the rest of the guide afterwards.
 Intended audience
 =================
 
-This document is mostly intended to help developers who want to contribute to the TYPO3 CMS source code. It also
-provides some sections which will be helpful for people reporting bugs and testing patches. If you are not a developer,
-you can still post a bug report and help in this area is appreciated very much.
+This document is intended to help developers who wish to contribute to the TYPO3 CMS source code. It also
+provides useful guidance for people who are reporting bugs and testing patches. If you are not a developer,
+you can still post a bug report and help in this area is always appreciated.
 
 .. _how-to-read-this-document:
 
@@ -40,8 +40,7 @@ How to read this document
 =========================
 
 If open-source development, git, composer, developing web applications, using Gerrit etc. is nothing new for you, you
-may not have to read this entire document. Make sure that you **at least** look at the following sections, though,
-because they are specific to TYPO3 development:
+may not have to read this document. Make sure that you **at least** look at the following sections as they are required for TYPO3 development:
 
 * :ref:`Contribution workflow <t3contrib:workflow-explained>`
 * :ref:`Setting-up-your-Git-environment`
@@ -54,7 +53,7 @@ You must setup a specific git hook for the commit message, for example.
 What's new in this document
 ===========================
 
-If you already read this manual but want to checkout what's new, see these
+If you have already read this manual but want to checkout what's new, check these
 new chapters:
 
 * :ref:`cheat-sheet-git` (May 28, 2018)
@@ -67,11 +66,11 @@ new chapters:
 
 .. _recommended-reading:
 
-Further recommended reading
+Further reading
 ===========================
 
 In order to efficiently contribute to the TYPO3 core, you should familiarize yourself with its basic concepts. Helpful
-reading for this is the following:
+reading for this can be found here:
 
 * :ref:`TYPO3 Core API <t3coreapi:start>`
 
@@ -86,11 +85,11 @@ Slack
 =====
 
 
-If you wish to contribute, joining the `TYPO3 slack workspace <https://typo3.slack.com>`__ is strongly
-recommended because it is the main communication medium currently used. In order to join the slack workspace, you
-must create yourself a `typo3.org <https://my.typo3.org/index.php?id=2>`__ account and then  `Register 
+If you wish to contribute, joining the `TYPO3 slack workspace <https://typo3.slack.com>`__ is 
+recommended as it is the projects chosen platform for communication. In order to join the slack workspace, you
+must create a `typo3.org <https://my.typo3.org/index.php?id=2>`__ account and then  `Register 
 for TYPO3's Slack Platform <https://my.typo3.org/index.php?id=35>`__. On that page, you will also find 
-information about the most important channels.
+information about recomended channels.
 
 .. hint::
    You will need a typo3.org account for contribution anyway in order to use Forge and Gerrit.
@@ -104,10 +103,11 @@ Slack channels
 
 
 .. hint::
-   Do not ask if you can ask a question. Ask your question directly.
+   You do not need to ask for permission when asking a question. Ask your question directly to the channel and 
+   await a response.
 
 
-As always, regard the general `Code of conduct <https://typo3.org/community/code-of-conduct/>`__.
+As always, make sure to read the `Code of conduct <https://typo3.org/community/code-of-conduct/>`__.
 
 
 .. _botty:
@@ -168,7 +168,7 @@ constraints for the project.
 
 Some github projects have a contribution guide available, the TYPO3 CMS project has this guide.
 
-If in doubt, ask on slack. Most likely, someone will be happy to help you.
+If in doubt, ask on slack. Other contributors will be happy to help you.
 
 
 .. Credits
