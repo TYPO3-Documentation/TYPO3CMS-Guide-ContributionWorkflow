@@ -88,13 +88,19 @@ Slack
 
 If you wish to contribute, joining the `TYPO3 slack workspace <https://typo3.slack.com>`__ is strongly
 recommended because it is the main communication medium currently used. In order to join the slack workspace, you
-must `Register for TYPO3's Slack Platform <https://forger.typo3.com/slack>`__. On that page, you will also find
+must create yourself a `typo3.org <https://my.typo3.org/index.php?id=2>`__ account and then  `Register 
+for TYPO3's Slack Platform <https://my.typo3.org/index.php?id=35>`__. On that page, you will also find 
 information about the most important channels.
 
+.. hint::
+   You will need a typo3.org account for contribution anyway in order to use Forge and Gerrit.
 
-The channel **#typo3-cms-coredev** is your channel of choice for core development. If you have some general TYPO3
-support issues, please use **#typo3-cms** for that. If you are not sure which channel to use for your question
-you can use **#random** where you get direct help or a hint for the right channel to ask your question.
+Slack channels
+--------------
+
+* **#typo3-cms-coredev** is your channel of choice for core development 
+* **#typo3-cms** is for general support issues
+* **#random** if you are not sure which channel to use or have a general question
 
 
 .. hint::
