@@ -16,8 +16,8 @@ In this guide we will deal with those involved in the contribution process which
 * Gerrit_, our **Code Review** System:
 * Slack, which is used for general communication. Read the 
   :ref:`section about Slack in the introduction <slack-intro>` 
-  and `register for TYPO3's Slack Workspace 
-  <https://my.typo3.org/index.php?id=35>`, if you have not done so already.
+  and `register <https://my.typo3.org/index.php?id=35>`__ 
+  for TYPO3's Slack Workspace, if you have not done so already.
 
 So let's go over the two accounts you need to set up in order to contribute code:
 
