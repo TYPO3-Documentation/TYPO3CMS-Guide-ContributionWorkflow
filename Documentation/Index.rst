@@ -33,8 +33,8 @@ Common quick links
 
 .. rst-class:: horizbuttons-primary-xxl
 
-- :ref:`TYPO3 Core API <t3coreapi:start>`
-- :ref:`TYPO3 Coding Guidelines (in Core API) <t3coreapi:cgl>`
+- :ref:`Core API <t3coreapi:start>`
+- :ref:`Coding Guidelines <t3coreapi:cgl>`
 - :ref:`TCA Reference <t3tca:Start>`
 - :ref:`TypoScript Reference <t3tsref:Start>`
 - :ref:`TSconfig Reference <t3tsconfig:Start>`
@@ -46,7 +46,7 @@ Common quick links
 
 - `Register for typo3.org <https://my.typo3.org/index.php?id=2>`__
 - `Register for Slack <https://my.typo3.org/index.php?id=35>`__
-- `Forge Issues TYPO3 Core <https://forge.typo3.org/projects/typo3cms-core/issues>`__
+- `Forge Issues <https://forge.typo3.org/projects/typo3cms-core/issues>`__
 - `Forger <https://forger.typo3.com>`__
 - `TYPO3 Slack <https://typo3.slack.com>`__
 
