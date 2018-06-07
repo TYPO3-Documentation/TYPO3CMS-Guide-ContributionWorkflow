@@ -14,15 +14,9 @@ Setup the TYPO3 installation
 git clone
 =========
 
-Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3. Run ``composer install`` after that::
+Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3:: 
 
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-
-
-
-Typically, you would create a symbolic link `typo3_src` which will
-point to your TYPO3 source. When working with the git clone
-directly though, we can put everything into the root directory.
 
 .. _git-guis:
 
