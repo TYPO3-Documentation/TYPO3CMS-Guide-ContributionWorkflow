@@ -12,7 +12,7 @@ through the process step by step.
 
 .. note::
 
-   We assume you have already reviweed the setup process so we won't be covering
+   We assume you have already reviwed the setup process so we won't be covering
    that here again.
 
 
