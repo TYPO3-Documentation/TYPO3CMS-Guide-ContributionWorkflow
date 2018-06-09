@@ -212,7 +212,7 @@ to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
 Use Botty on Slack
 ==================
 
-Once your push to Gerrit_ goes through, you will recieve a URL for your new
+Once your push to Gerrit_ goes through, you will receive a URL for your new
 change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
 your new change in the
 `#typo3-cms-coredev <https://typo3.slack.com/messages/C03AM9R17/convo/C03AM9R17-1520857790.000310/>`__
