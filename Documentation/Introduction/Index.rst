@@ -53,7 +53,7 @@ You must setup a specific git hook for the commit message, for example.
 What's new in this document
 ===========================
 
-If you have already read this manual but want to checkout what's new, check these
+If you have already read this manual but want to see what's new, check these
 new chapters:
 
 * :ref:`cheat-sheet-git` (May 28, 2018)
