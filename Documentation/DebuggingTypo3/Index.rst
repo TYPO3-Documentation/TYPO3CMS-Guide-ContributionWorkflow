@@ -16,7 +16,7 @@ Debugging TYPO3 with PhpStorm and Xdebug
 .. youtube:: VtffB0CG1ok
 
 
-In order to configure PhpStorm with Xdebug you need to do 3 things:
+In order to configure PhpStorm with Xdebug you need to do three things:
 
 1. Configure xdebug settings in your php.ini
 2. Use the appropriate plugin in your browser
