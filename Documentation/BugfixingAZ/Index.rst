@@ -7,12 +7,12 @@
 Fixing a bug A-Z
 ================
 
-So you want to fix a bug in TYPO3. **Great!** This document will guide you
+So you want to fix a bug in TYPO3? **Great!** This document will guide you
 through the process step by step.
 
 .. note::
 
-   We assume you already went through the setup process so we won't be covering
+   We assume you have already reviewed the setup process so we won't be covering
    that here again.
 
 
@@ -26,7 +26,7 @@ Fix the code
    Adding Unit Tests is a good idea at this point because it makes it a lot
    easier to ensure TYPO3 behaves consistently now and in the future.
 
-This is actually the part that is pretty straightforward. But be warned, there
+This part is pretty straightforward. But be warned, there
 are still a few dark places deep inside the TYPO3 core dating back to the
 medieval times of PHP4. Yes, TYPO3 has been around for quite some time now. And
 there is ancient code we didn't have to touch yet because it just works.
@@ -132,8 +132,8 @@ check all files in `typo3/sysext/core/Documentation/Changelog`.
 Commit and push
 ===============
 
-When committing your changes decide about whether you are creating *a
-completely new patch* or whether you are improving *an existing one.* You can
+When committing your changes decide whether you are creating *a
+completely new patch* or instead you are improving *an existing one.* You can
 change your local commit as often as you want to. Once you are happy with your
 change, push it to Gerrit.
 
@@ -212,7 +212,7 @@ to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
 Use Botty on Slack
 ==================
 
-Once your push to Gerrit_ went through, you will get back the URL of your new
+Once your push to Gerrit_ goes through, you will receive a URL for your new
 change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
 your new change in the
 `#typo3-cms-coredev <https://typo3.slack.com/messages/C03AM9R17/convo/C03AM9R17-1520857790.000310/>`__
@@ -224,5 +224,6 @@ channel using the command `review:show [ReviewNumber or URL]`.
 Wait for reviews
 ================
 
-Lean back, have a tea, put the battle-armor on and wait for feedback on your
-reviews.
+It's time to sit back and await feedback on your changes. The review team process
+dozens of requests each day, so expect a succinct response that is short and to the point.
+
