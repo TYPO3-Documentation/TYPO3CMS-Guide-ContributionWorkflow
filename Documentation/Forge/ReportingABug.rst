@@ -12,7 +12,7 @@ Searching for existing bugs
 
 Before you go ahead and report a bug, it is recommended that you check
 `Forger <https://forger.typo3.com>`__ to see if the the same issue or 
-something has already been reported.
+something similar has already been reported.
 
 `Forger's <https://forger.typo3.com>`__ search functionality makes it
 easy to find existing issues. You can find the search option on the left
