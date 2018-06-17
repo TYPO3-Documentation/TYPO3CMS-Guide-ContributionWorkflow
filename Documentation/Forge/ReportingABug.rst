@@ -15,8 +15,8 @@ Before you go ahead and report a bug, it is recommended that you check
 something similar has already been reported.
 
 `Forger's <https://forger.typo3.com>`__ search functionality makes it
-easy to find existing issues. You can find the search option on the left
-hand side of the navigation menu.
+easy to find existing issues. Filters are located on the the left hand
+side of the navigation menu. You can use this feature to help refine searches.
 
 Identify the issue
 ==================
