@@ -13,7 +13,7 @@ Working with Forger
 
    https://forger.typo3.org
 
-The majority of the work in the TYPO3 project is manager via a tool called Forger_, which acts as a read-only view on issues
+The majority of the work in the TYPO3 project is managed via a tool called Forger_, which acts as a read-only view on issues
 and reviews.
 
 Forger_ performs several tasks, including:
