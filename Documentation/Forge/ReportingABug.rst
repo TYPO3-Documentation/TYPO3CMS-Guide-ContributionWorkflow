@@ -10,20 +10,21 @@ Reporting a bug
 Searching for existing bugs
 ===========================
 
-Before you want to report a bug, you may want to search through the
-existing issues, to see if any related issues or even the exact same
-problem has already been reported.
+Before you go ahead and report a bug, it is recommended that you check
+`Forger <https://forger.typo3.com>`__ to see if the the same issue or 
+something similar has already been reported.
 
-In order to do this, you can use `Forger <https://forger.typo3.com>`__
-to search and narrow down your search by using the filters on the left.
+`Forger's <https://forger.typo3.com>`__ search functionality makes it
+easy to find existing issues. Filters are located on the the left hand
+side of the navigation menu. You can use this feature to help refine searches.
 
 Identify the issue
 ==================
 
-Before you report a bug, make sure that your issue will be helpful
+Before you report a bug, make sure that the issue you report will be helpful
 by following these guidelines:
 
-Check for already existing issues
+Check for existing issues
    Search for already existing issues for this problem. You can use
    `Forger <https://forger.typo3.com>`__ to search for existing issues,
    as already described in the previous paragraph.
