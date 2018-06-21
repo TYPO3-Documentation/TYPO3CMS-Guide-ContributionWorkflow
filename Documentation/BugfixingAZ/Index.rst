@@ -140,16 +140,26 @@ change, push it to Gerrit.
 
 .. _Bugfixing-Set-a-Commit-Message:
 
-Set a Commit Message
---------------------
+Commit Message rules for TYPO3 CMS
+----------------------------------
 
-Please make sure that you read the general guidelines for commit messages: See
-:ref:`how to compose a proper commit message <commitmessage>`. Your code will 
-not be merged if it does not follow the commit message rules.    
-
+Please make sure that you read the :ref:`commitmessage` in the Appendix. 
+Your code will not be merged if it does not follow the commit message 
+rules.    
 
 .. important::
-   The section about commit messages is a must-read. Read it. Follow it.
+   The section :ref:`commitmessage` is a must-read. Read it. Follow it.
+
+For a bugfix, your commit message may look something like this:
+
+.. code-block:: none
+
+   [BUGFIX] Subject line of max 52 chars
+
+   Some descriptions with line length of max. 72 characters
+
+   Resolves: #12346
+   Releases: master, 8.7
    
 
 .. _Bugfixing-Create-a-new-patch:
