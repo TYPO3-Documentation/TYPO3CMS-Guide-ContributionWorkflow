@@ -208,11 +208,11 @@ Once you are happy with your changes, you can push them via::
 
 Where ``master`` is the target, so ``master`` is current development trunk.
 
-Use the following for TYPO3v8 LTS:
+Use the following for TYPO3v8 LTS::
 
    git push origin HEAD:refs/publish/TYPO3_8-7
 
-Use the following for TYPO3v7 LTS:
+Use the following for TYPO3v7 LTS::
 
    git push origin HEAD:refs/publish/TYPO3_7-6
 
