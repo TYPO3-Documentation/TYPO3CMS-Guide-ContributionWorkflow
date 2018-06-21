@@ -33,9 +33,10 @@ Push to gerrit::
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
-Set commit message template::
+Optional you can set a commit message template::
 
-   git config commit.template ~/.gitmessage.txt
+   git config commit.template <Path-to-your>.gitmessage.txt
+For additional information about how to set up a proper gitmessage read here: :ref:`Template for commitmessage <commit-template>`
 
 Workflow - common commands
 ==========================
