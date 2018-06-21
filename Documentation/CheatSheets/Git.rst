@@ -4,13 +4,24 @@
 
 .. _cheat-sheet-git:
 
+.. attention::
+   This is a short list of commands. If you are not familiar with the
+   workflow yet, make sure you follow the link at the beginning of 
+   each section and read the detailed description.
+
 ==========================================
 git cheat sheet for Core development
 ==========================================
 
+git clone
+=========
+
 Clone latest master into current directory::
 
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+
+.. _cheat-sheet-git-setup:
+
 Setup
 =====
 
