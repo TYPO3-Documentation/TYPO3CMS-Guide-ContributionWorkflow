@@ -196,8 +196,15 @@ Once you are happy with your changes, you can push them via::
 
    git push origin HEAD:refs/publish/master
 
-Where ``master`` is the target, so ``master`` is current development trunk. E.g. if you want to push
-to 7.6 LTS instead, run ``git push origin HEAD:refs/publish/TYPO3_7-6``.
+Where ``master`` is the target, so ``master`` is current development trunk.
+
+Use the following for TYPO3v8 LTS:
+
+   git push origin HEAD:refs/publish/TYPO3_8-7
+
+Use the following for TYPO3v7 LTS:
+
+   git push origin HEAD:refs/publish/TYPO3_7-6
 
 
 .. important::
