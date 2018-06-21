@@ -36,7 +36,7 @@ Push to gerrit::
 Optional you can set a commit message template::
 
    git config commit.template <Path-to-your>.gitmessage.txt
-For additional information about how to set up a proper gitmessage read here: :ref:`Template for commitmessage <commit-template>`
+For additional information about how to set up a proper gitmessage read here: :ref:`committemplate`
 
 Workflow - common commands
 ==========================
