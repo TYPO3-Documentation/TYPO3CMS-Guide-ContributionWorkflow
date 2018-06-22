@@ -123,6 +123,8 @@ If you use the HTTPS url you may get a "Privacy error" or something similar from
 
 The warning is due to the fact that self-signed certificates are being used. 
 
+If you are getting a `trustedHostsPattern` error on initial access, try accessing the HTTP domain first.
+
 Additional setup
 ================
 
