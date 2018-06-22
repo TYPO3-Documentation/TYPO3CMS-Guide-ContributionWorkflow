@@ -11,7 +11,7 @@ Searching for existing bugs
 ===========================
 
 Before you go ahead and report a bug, it is recommended that you check
-`Forger <https://forger.typo3.com>`__ to see if the the same issue or 
+`Forger <https://forger.typo3.com>`__ to see if the the same issue or
 something similar has already been reported.
 
 `Forger's <https://forger.typo3.com>`__ search functionality makes it
@@ -62,83 +62,109 @@ If you click "New issue" you will see a form with a couple of fields
 that are important. Let's go over these really quick.
 
 Tracker
-   The tracker is just Redmines term for the type of issue. The trackers
-   you will be using the most are **Feature** and **Bug**. The others
-   are mostly for internal organization (like **Stories** and **Epics**) and
-   things which aren't really a feature or a bug... they are just **Tasks**
-   somebody needs to take care of.
+-------
+
+The tracker is just Redmines term for the type of issue. The trackers you will
+be using the most are **Feature** and **Bug**.
+
+The others are mostly for internal organization (like **Stories** and **Epics**)
+and things which aren't really a feature or a bug... they are just **Tasks**
+somebody needs to take care of.
 
 Subject
-   Pick a meaningful subject. Something like "GIFBUILDER broken" is very
-   generic and doesn't help describing the problem. Just imagine how you
-   would like to get a report for yourself :)
+-------
 
-   Bad:
+Pick a meaningful subject. Something like "GIFBUILDER broken" is very generic
+and doesn't help describing the problem. Just imagine how you would like to get
+a report for yourself :)
 
-      GIFBUILDER broken
+Bad example:
+   GIFBUILDER broken
 
-   Good:
-
-      Text is not added to GIFBUILDER when using TEXT object
+Good example:
+   Text is not added to GIFBUILDER when using TEXT object
 
 Description
-   Provide steps how to reproduce the problem; speaking in a general way, always keep in mind these points when writing your      issue report 
-   
-   + **be detailed in describing your problem**
-	The more detail you add, the higher are the chanches that we understand your problem. Add screenshots or add a stacktrace      can also be a great help.
-   + **be concise and clear**
-	No one will judge you for your literary skills; we need to understand quickly where the problem lies.
-   + **well format your issue**
-	Using for example code formatting helps readability; also don't use very long sentences; instead use bullet points. See the    next section for more information on formatting your text. 
-   + **be polite. always.**
-	
-   A good bug report should contain all or at least most of these elements:
+-----------
 
-   **1) Prerequisites:**
-   
-   Here you can add 
-   + a brief description of your environment, incuding the operating system (Windows, Linux), the full version of TYPO3, the      webserver used, the database used (mySql, SQLServer) and its version.
-   + a description of the TYPO3 setup that you are using or that is necessary to trigger the bug. Your issue came out using      TYPO3 with multiple languages? Or when you have more than two frontend groups? You have to tell us, otherwise we could not    be capable of reproducing your issue.
+Provide steps how to reproduce the problem; speaking in a general way, always
+keep in mind these points when writing your issue report:
 
-   We don't need a full description of your environment, or the full TypoScript configuration, but just the parts that are        relevant to trigger the bug.
+Be detailed in describing your problem
+   The more detail you add, the higher are the chances that we understand your
+   problem. Add screenshots or add a stacktrace can also be a great help.
+Be concise and clear
+   No one will judge you for your literary skills; we need to understand quickly
+   where the problem lies.
+Well format your issue
+   Using formatted example code helps readability; also don't use very long
+   sentences; instead use bullet points. See the next section for more
+   information on formatting your text.
+Be polite.
+   Always.
 
-   **2) Steps to reproduce the problem**
-   
-   This is a short easy-to-follow guide that allows us to understand how to trigger the bug following it.  Using a numerated      list of steps is just fine here; you can also add screenshots.
+A good bug report should contain all or at least most of these elements:
 
-   **3) Actual results**
+#. Prerequisites:
 
-   This is the heart of your problem: what happened after you followed the steps? Please add also here if your problem is        repeteable or comes out randomly.
+   Here you can add:
+      + A brief description of your environment, including the operating system
+        (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
+        used, the database used (mySql, SQLServer, ...) and its version.
+      + A description of the TYPO3 setup that you are using or that is necessary
+        to trigger the bug. Your issue came out using TYPO3 with multiple
+        languages? Or when you have more than two frontend groups? You have to
+        tell us, otherwise we could not be capable of reproducing your issue.
 
-   **4) Expected results**
-   
+   We don't need a full description of your environment, or the full TypoScript
+   configuration, but just the parts that are relevant to trigger the bug.
+
+#. Steps to reproduce the problem
+
+   This is a short easy-to-follow guide that allows us to understand how to
+   trigger the bug following it. Using a numerated list of steps is just fine
+   here; you can also add screenshots.
+
+#. Actual results
+
+   This is the heart of your problem: what happened after you followed the
+   steps? Please add also here if your problem is repeteable or comes out
+   randomly.
+
+#. Expected results
+
    What you expected to happen instead.
 
-   **5) Additional notes**
-   
-   Additional information like special conditions or other details not reported on the previous points.
+#. Additional notes
 
-   Please consider that this guide is very generic; not always all these parts are always necessary, but having as much          information as possible really could help a lot.
+   Additional information like special conditions or other details not reported
+   on the previous points.
+
+Please consider that this guide is very generic; not always all these parts are
+always necessary, but having as much information as possible really could help a
+lot.
 
 Category
-   Choose a category that fits your issue.
+--------
+
+Choose a category that fits your issue.
 
 TYPO3 version
-   Choose the TYPO3 version, where the error occurs.
+-------------
+
+Choose the TYPO3 version, where the error occurs.
 
 PHP Version
-   Choose the PHP version, where the error occurs.
+-----------
 
+Choose the PHP version, where the error occurs.
 
 .. important::
 
-   If you are not a member of the TYPO3 core team, you should not be
-   filling out the following fields: Priority, Assignee, Target version,
-   Start date, Due date, Estimated time, Done, Complexity, Is
-   Regression and Sprint Focus. Do not set a Watcher, unless someone
-   has requested that you do this.
-
-
+   If you are not a member of the TYPO3 core team, you should not be filling out
+   the following fields: Priority, Assignee, Target version, Start date, Due
+   date, Estimated time, Done, Complexity, Is Regression and Sprint Focus. Do
+   not set a Watcher, unless someone has requested that you do this.
 
 Hints for Formatting in Redmine
 ===============================
