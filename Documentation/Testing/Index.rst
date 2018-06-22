@@ -115,10 +115,10 @@ the different database credentials.
    tests. Depending on the power of your local machine you can expect about 45
    minutes or more.
 
-Run Acceptance Tests
---------------------
- 
-Ensure temporary test directory exits or create it::
+Run all Acceptance Tests
+------------------------
+
+Ensure temporary test directory exists or create it::
 
     mkdir -p typo3temp/var/tests
 
@@ -137,7 +137,8 @@ Running all acceptance tests use::
 
 .. hint::
 
-   Depending on the power of your local machine you can expect about 30 minutes or more.
+   Depending on the power of your local machine you can expect about 30 minutes
+   or more.
 
 Running a single acceptance test use::
 
@@ -151,4 +152,5 @@ Running a single acceptance test with debug output use::
 
     bin/codecept run Acceptance -c vendor/typo3/testing-framework/Resources/Core/Build/AcceptanceTests.yml --debug typo3/sysext/core/Tests/Acceptance/Backend/Topbar/LogoCest.php
 
-Reports will be stored in typo3temp/var/tests/AcceptanceReports with screenshots from browser.
+Reports will be stored in :file:`typo3temp/var/tests/AcceptanceReports` with
+screenshots from browser.
