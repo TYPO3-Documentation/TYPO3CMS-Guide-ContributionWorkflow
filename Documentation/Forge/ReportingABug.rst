@@ -82,8 +82,43 @@ Subject
       Text is not added to GIFBUILDER when using TEXT object
 
 Description
-   Provide steps how to reproduce the problem. See the next section for more
-   information on formatting your text.
+   Provide steps how to reproduce the problem; speaking in a general way, always keep in mind these points when writing your      issue report 
+   
+   + **be detailed in describing your problem**
+	The more detail you add, the higher are the chanches that we understand your problem. Add screenshots or add a stacktrace      can also be a great help.
+   + **be concise and clear**
+	No one will judge you for your literary skills; we need to understand quickly where the problem lies.
+   + **well format your issue**
+	Using for example code formatting helps readability; also don't use very long sentences; instead use bullet points. See the    next section for more information on formatting your text. 
+   + **be polite. always.**
+	
+   A good bug report should contain all or at least most of these elements:
+
+   **1) Prerequisites:**
+   
+   Here you can add 
+   + a brief description of your environment, incuding the operating system (Windows, Linux), the full version of TYPO3, the      webserver used, the database used (mySql, SQLServer) and its version.
+   + a description of the TYPO3 setup that you are using or that is necessary to trigger the bug. Your issue came out using      TYPO3 with multiple languages? Or when you have more than two frontend groups? You have to tell us, otherwise we could not    be capable of reproducing your issue.
+
+   We don't need a full description of your environment, or the full TypoScript configuration, but just the parts that are        relevant to trigger the bug.
+
+   **2) Steps to reproduce the problem**
+   
+   This is a short easy-to-follow guide that allows us to understand how to trigger the bug following it.  Using a numerated      list of steps is just fine here; you can also add screenshots.
+
+   **3) Actual results**
+
+   This is the heart of your problem: what happened after you followed the steps? Please add also here if your problem is        repeteable or comes out randomly.
+
+   **4) Expected results**
+   
+   What you expected to happen instead.
+
+   **5) Additional notes**
+   
+   Additional information like special conditions or other details not reported on the previous points.
+
+   Please consider that this guide is very generic; not always all these parts are always necessary, but having as much          information as possible really could help a lot.
 
 Category
    Choose a category that fits your issue.
