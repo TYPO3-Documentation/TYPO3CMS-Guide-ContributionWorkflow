@@ -115,3 +115,42 @@ the different database credentials.
    tests. Depending on the power of your local machine you can expect about 45
    minutes or more.
 
+Run all Acceptance Tests
+------------------------
+
+Ensure temporary test directory exists or create it::
+
+    mkdir -p typo3temp/var/tests
+
+Start webserver and chrome driver in background::
+
+    php -S localhost:8000 >/dev/null 2>&1 &
+    bin/chromedriver --url-base=/wd/hub >/dev/null 2>&1 &
+
+Running all acceptance tests use::
+
+   export typo3DatabaseName="func" \
+          typo3DatabaseUsername="funcu" \
+          typo3DatabasePassword="funcp" \
+          typo3DatabaseHost="localhost" \
+          && bin/codecept run Acceptance -c vendor/typo3/testing-framework/Resources/Core/Build/AcceptanceTests.yml
+
+.. hint::
+
+   Depending on the power of your local machine you can expect about 30 minutes
+   or more.
+
+Running a single acceptance test use::
+
+   export typo3DatabaseName="func" \
+          typo3DatabaseUsername="funcu" \
+          typo3DatabasePassword="funcp" \
+          typo3DatabaseHost="localhost" \
+          && bin/codecept run Acceptance -c vendor/typo3/testing-framework/Resources/Core/Build/AcceptanceTests.yml typo3/sysext/core/Tests/Acceptance/Backend/Topbar/LogoCest.php
+
+Running a single acceptance test with debug output use::
+
+    bin/codecept run Acceptance -c vendor/typo3/testing-framework/Resources/Core/Build/AcceptanceTests.yml --debug typo3/sysext/core/Tests/Acceptance/Backend/Topbar/LogoCest.php
+
+Reports will be stored in :file:`typo3temp/var/tests/AcceptanceReports` with
+screenshots from browser.
