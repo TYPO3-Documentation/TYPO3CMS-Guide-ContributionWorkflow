@@ -8,7 +8,8 @@ Working with Gerrit
 
 This chapter will explain the most important parts of the Gerrit_ UI to you.
 
-Please note: We will focus upon the new UI in this chapter. Currently, if you first open Gerrit, you'll might see an older version of the UI. If so, please scroll down and click on the link "New UI" on the right side of the footer.
+.. note::
+   We will focus on the new UI in this chapter. Currently, when you first open Gerrit, you might see an older version of the UI. If so, please scroll down and click on the link "New UI" on the right side of the footer.
 
 .. _Gerrit-Overview-of-the-UI:
 
