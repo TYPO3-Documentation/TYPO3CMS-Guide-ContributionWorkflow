@@ -85,7 +85,7 @@ Run all Unit Tests
 
 
     export HOME=/root \
-    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
+    && bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
 
 
 Run all Functional Tests
