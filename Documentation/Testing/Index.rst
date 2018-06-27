@@ -84,7 +84,7 @@ Run all Unit Tests
 *From inside the container*, to run all unit tests::
 
 
-    export HOME=/root \
+    HOME=/root \
     bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
 
 
