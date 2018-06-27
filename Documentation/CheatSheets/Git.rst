@@ -27,7 +27,12 @@ Setup
 
 Details: :ref:`Setting-up-your-Git-environment`
 
-Set username and email in repo::
+.. attention::
+
+   The following commands assume you are in the working directory of the TYPO3
+   core repository.
+
+Set username and email in repository configuration (implicit --local)::
 
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
@@ -40,14 +45,21 @@ Copy commit-msg hook::
 
    cp Build/git-hooks/commit-msg .git/hooks/commit-msg
 
-Push to gerrit::
+Push to gerrit
+
+* **replace** `<YOUR_TYPO3_USERNAME>` with your Gerrit / typo3.org user name!
+
+::
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
 Optional: Set a commit message template::
 
-   git config commit.template <Path-to-your>.gitmessage.txt
-For additional information about how to set up a proper gitmessage read here: :ref:`committemplate`
+   git config commit.template ~/.gitmessage.txt
+
+This command uses the file ~/.gitmessage.txt as git message tepmlate. 
+For additional information about how to set up a proper gitmessage 
+see :ref:`committemplate`
 
 Workflow - common commands
 ==========================
@@ -77,16 +89,12 @@ Push changes to remote master on gerrit::
 
    git push origin HEAD:refs/publish/master
 
-Rebase::
-
-   todo ...
-
 Workflow - commit msg
 =====================
 
 Details: :ref:`commitmessage`
 
-Commit template::
+Example commit template::
 
    [BUGFIX|TASK|FEATURE]
 
@@ -110,29 +118,25 @@ Workflow - other branches
 =========================
 
 Show all branches::
-
    git branch -a
 
 Checkout 8.7 branch::
-
    git checkout TYPO3_8-7
 
 Push 8.7 branch::
-
    git push origin HEAD:refs/publish/TYPO3_8-7
 
+Push 7.6 branch::
+   git push origin HEAD:refs/publish/TYPO3_7-6
 
 Workflow - Undoing / fixing things
 ==================================
 
 Throw away all changes since last commit::
-
    git reset HEAD --hard
 
 Unstage a file (remove file from index, but keep in working dir)::
-
    git reset <path>
 
 Change author for last commit::
-
-   git commit --amend --author "Somename <someemail>"
+   git commit --amend --author "Some Name <some@email>"
