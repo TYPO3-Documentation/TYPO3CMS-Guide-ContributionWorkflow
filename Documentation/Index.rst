@@ -18,8 +18,8 @@ a GNU/GPL CMS/Framework available from `www.typo3.org
 Common quick links
 ==================
 
-... in this guide:
-------------------
+In this guide:
+--------------
 
 .. rst-class:: horizbuttons-primary-xxl
 
@@ -28,8 +28,8 @@ Common quick links
 - :ref:`Commit message rules <commitmessage>`
 - :ref:`New chapters <whats-new-in-this-document>`
 
-... in other guides:
---------------------
+Other manuals:
+--------------
 
 .. rst-class:: horizbuttons-primary-xxl
 
@@ -39,17 +39,23 @@ Common quick links
 - :ref:`TypoScript Reference <t3tsref:Start>`
 - :ref:`TSconfig Reference <t3tsconfig:Start>`
 
-... other:
---------------------
+Core Contribution Tools
+-----------------------
 
 .. rst-class:: horizbuttons-primary-xxl
 
-- `Register for typo3.org <https://my.typo3.org/index.php?id=2>`__
-- `Register for Slack <https://my.typo3.org/index.php?id=35>`__
 - `Gerrit <https://review.typo3.org>`__
 - `Forge Issues <https://forge.typo3.org/projects/typo3cms-core/issues>`__
 - `Forger <https://forger.typo3.com>`__
 - `TYPO3 Slack <https://typo3.slack.com>`__
+
+Signup
+------
+
+.. rst-class:: horizbuttons-primary-xxl
+
+- `Signup for typo3.org <https://my.typo3.org/index.php?id=2>`__
+- `Signup for Slack <https://my.typo3.org/index.php?id=35>`__
 
 
 .. toctree::
