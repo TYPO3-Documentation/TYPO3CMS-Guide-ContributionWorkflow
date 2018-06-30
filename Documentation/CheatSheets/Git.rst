@@ -118,25 +118,32 @@ Workflow - other branches
 =========================
 
 Show all branches::
+
    git branch -a
 
 Checkout 8.7 branch::
+
    git checkout TYPO3_8-7
 
 Push 8.7 branch::
+
    git push origin HEAD:refs/publish/TYPO3_8-7
 
 Push 7.6 branch::
+
    git push origin HEAD:refs/publish/TYPO3_7-6
 
 Workflow - Undoing / fixing things
 ==================================
 
 Throw away all changes since last commit::
+
    git reset HEAD --hard
 
 Unstage a file (remove file from index, but keep in working dir)::
+
    git reset <path>
 
 Change author for last commit::
+
    git commit --amend --author "Some Name <some@email>"
