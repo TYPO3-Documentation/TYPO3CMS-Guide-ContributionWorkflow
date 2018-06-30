@@ -94,11 +94,13 @@ Workflow - commit msg
 
 Details: :ref:`commitmessage`
 
-Example commit template::
+Example commit message for a bugfix::
 
-   [BUGFIX|TASK|FEATURE]
+   [BUGFIX] Subject line
+   
+   Description
 
-   Resolves: #
+   Resolves: #12345
    Releases: master, 8.7
 
 Other keywords::
