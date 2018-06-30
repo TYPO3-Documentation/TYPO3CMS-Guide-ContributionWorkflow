@@ -1,60 +1,63 @@
 .. include:: ../Includes.txt
 
+
 .. _GerritAccount:
 
+==============================
 Setting up your Gerrit account
-------------------------------
+==============================
 
-Head over to Gerrit_, scroll to the end of the page and switch to the new UI.
+.. rst-class:: bignums-xxl
+
+1. Switch to new UI in Gerrit
+
+   .. image:: _assets/gerrit-new-ui2.png
+      :class: with-shadow
+
+   Head over to `Gerrit <https://review.typo3.org>`__, scroll to the bottom
+   of the page and click the link "New UI". You can also work with the old
+   UI, but then some things will look a little different.
 
 
-.. figure:: _assets/gerrit_newui.png
-   :width: 400 px
-   :class: with-shadow
-   
-Now you can click the **Sign In** button in the top right corner.
+2. Click the **Sign In** button in the top right corner.
 
-.. figure:: _assets/gerrit_signin.png
-   :width: 400px
-   :class: with-shadow
+   .. image:: _assets/gerrit_signin2.png
+      :class: with-shadow
 
-You will be prompted with a regular **Basic Authentication** window, simply enter your TYPO3.org username and password you
-had :ref:`set up earlier <TYPO3Account>`.
+   You will be prompted with a regular **Basic Authentication** window,
+   simply enter your TYPO3.org username and password you had
+   :ref:`set up earlier <TYPO3Account>`.
 
-.. note::
 
-   Once you are logged into Gerrit_, you can start to make yourself familiar with the interface. Don't worry if it looks
-   intimidating at first, you'll be a **Pro** with it in no time.
+3. Create your ssh key
 
-Adding your SSH key
-~~~~~~~~~~~~~~~~~~~
+   If you don't know how to create your SSH Public/Private Key,
+   we have compiled a list of links for you:
 
-All communication with Gerrit_ works via SSH, so you will need to set up your public key to work.
-Click on your profile in the top right corner and click **Settings**.
+   * :ref:`OS X <ssh-key-osx>`
+   * :ref:`Microsoft Windows <ssh-key-win>`
+   * :ref:`Linux/Unix <ssh-key-unix>`
 
-.. figure:: _assets/gerrit_settings.png
-   :width: 400px
-   :class: with-shadow
 
-On the left hand side, click **SSH Public Keys** to set up your key.
+4. Add your public SSH key to Gerrit
 
-.. note::
+   .. image:: _assets/gerrit-add-ssh-key2.png
+      :class: with-shadow
 
-   If you work with different computers, for example with a notebook at work and another computer at home you can either
-   copy your private key or create a separate key for the other computer. Luckily Gerrit_ can handle multiple keys.
+   * Click on your profile in the top right corner and click **Settings**.
 
-.. figure:: _assets/gerrit_ssh_keys.png
-   :width: 400px
-   :class: with-shadow
+   * On the left hand side, click **SSH Keys**.
+
+   * Copy-paste the contents of your public ssh key file (e.g.
+     :file:`~/.ssh/id_rsa.pub`) into the text field next to **New SSH key** and
+     then click on **Add new SSH key**.
+
+If you work with different computers, for example with a notebook
+at work and another computer at home you can either copy your
+private key or create a separate key for the other computer. Luckily
+Gerrit can handle multiple keys.
 
 .. important::
 
-   Keep your keys private. Never give them away. No member of the TYPO3 project will ever ask you for your keys.
-
-Click **Add Key** to add your new key and paste your key into the textbox below.
-
-If you don't know how to create your SSH Public Key, we have compiled a list of links for you:
-
-* :ref:`OS X <ssh-key-osx>`
-* :ref:`Microsoft Windows <ssh-key-win>`
-* :ref:`Linux/Unix <ssh-key-unix>`
+   Always keep your keys private. Never give them away. No member of the
+   TYPO3 project will ever ask you for your keys.
