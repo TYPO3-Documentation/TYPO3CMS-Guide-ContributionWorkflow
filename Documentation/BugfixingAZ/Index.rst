@@ -232,8 +232,10 @@ Use Botty on Slack
 Once your push to Gerrit_ goes through, you will receive a URL for your new
 change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
 your new change in the
-`#typo3-cms-coredev <https://typo3.slack.com/messages/C03AM9R17/convo/C03AM9R17-1520857790.000310/>`__
-channel using the command `review:show [ReviewNumber or URL]`.
+`#typo3-cms-coredev`
+channel using the command::
+
+   review:show [ReviewNumber or URL]
 
 
 .. _Bugfixing-Wait-for-reviews:
@@ -243,4 +245,15 @@ Wait for reviews
 
 It's time to sit back and await feedback on your changes. The review team process
 dozens of requests each day, so expect a succinct response that is short and to the point.
+
+Improve your patch
+==================
+
+It is not unusual for a patch to get comments requesting changes. If that happens,
+please respond in a timely fashion. If things are unclear, ask in the `typo3-cms-coredev`
+channel on Slack. 
+
+When you change your patch, make sure you do not add another commit. Append to 
+your original commit instead as described in :ref:`lifeOfAPatch`.
+
 
