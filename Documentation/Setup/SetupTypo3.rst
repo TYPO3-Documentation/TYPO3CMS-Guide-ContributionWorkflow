@@ -74,6 +74,8 @@ specific. Usually, it should suffice to use `yarn install` and `yarn build`.
 -   `yarn format` - Resolve Style issues.
 -   `yarn update` - Update dependencies (Use this if you are **really** sure what you're doing).
 
+.. _setup-typo3-installation:
+
 Setting up a working TYPO3 installation
 =======================================
 
