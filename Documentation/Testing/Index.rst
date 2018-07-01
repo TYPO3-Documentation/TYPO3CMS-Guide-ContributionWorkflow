@@ -29,13 +29,10 @@ All you need for this is `Docker installed locally.
 <https://www.docker.com/get-docker>`__
 
 
-Quickstart
-==========
-
 .. _testing-docker-pull:
 
 docker pull
------------
+===========
 
 You have to pull the necessary docker image for PHP from `Bitbucket T3COM bamboo-
 remote-agent <https://bitbucket.typo3.com/projects/T3COM/repos/bamboo-remote-agent/browse>`__.
@@ -48,38 +45,34 @@ the unit tests for current master you have to load the php72 container::
 .. _testing-docker-run:
 
 docker run
-----------
+==========
 
-There are different ways to do this, you can start an interactive session
-on your docker container or you can execute one of the commands for
-running and executing the tests in one step.
-
-Conventions
------------
-
-* You should be in your current core directory. 
-* The directory inside the docker container will be :file:`/srv/tmp/cms`
-
-.. _testing-docker-run-bash:
-
-
-docker run - Interactive method
--------------------------------
-
-docker run
-~~~~~~~~~~
-
-Start the container like this. It leaves the bash shell open::
+Start the container like this. Replace 
+`<absolute-local-path-where-your typo3-checkout-is>` with your 
+current directory::
 
    docker run -it --rm \
       --name=typo3_core_test \
-      -v <absolute local path where your typo3 checkout is>:/srv/tmp/cms \
+      -v <absolute-local-path-where-your typo3-checkout-is>:/srv/tmp/cms \
       -w /srv/tmp/cms \
       typo3gmbh/php72:latest \
       /sbin/my_init -- bash
 
+Or, for more convenience, you can just use this, which determines
+your current directory with pwd::
+
+   docker run -it --rm \
+      --name=typo3_core_test \
+      -v `pwd`:/srv/tmp/cms \
+      -w /srv/tmp/cms \
+      typo3gmbh/php72:latest \
+      /sbin/my_init -- bash
+
+
+.. _testing-docker-run-unit:
+
 Run all Unit Tests
-------------------
+==================
 
 *From inside the container*, to run all unit tests::
 
@@ -87,9 +80,10 @@ Run all Unit Tests
     HOME=/root \
     bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
 
+.. testing-docker-run-functional:
 
 Run all Functional Tests
-------------------------
+========================
 
 Running the functional tests is almost the same. It is just the phpunit command
 that looks a bit different. For the MySQL setup use::
@@ -115,8 +109,10 @@ the different database credentials.
    tests. Depending on the power of your local machine you can expect about 45
    minutes or more.
 
-Run all Acceptance Tests
-------------------------
+.. _testing-docker-run-acceptance:
+
+Run Acceptance Tests
+=====================
 
 Ensure temporary test directory exists or create it::
 
@@ -127,7 +123,10 @@ Start webserver and chrome driver in background::
     php -S localhost:8000 >/dev/null 2>&1 &
     bin/chromedriver --url-base=/wd/hub >/dev/null 2>&1 &
 
-Running all acceptance tests use::
+Run all acceptance tests
+------------------------
+
+::
 
    export typo3DatabaseName="func" \
           typo3DatabaseUsername="funcu" \
@@ -140,7 +139,10 @@ Running all acceptance tests use::
    Depending on the power of your local machine you can expect about 30 minutes
    or more.
 
-Running a single acceptance test use::
+Run a single acceptance test
+----------------------------
+
+::
 
    export typo3DatabaseName="func" \
           typo3DatabaseUsername="funcu" \
@@ -148,9 +150,15 @@ Running a single acceptance test use::
           typo3DatabaseHost="localhost" \
           && bin/codecept run Acceptance -c vendor/typo3/testing-framework/Resources/Core/Build/AcceptanceTests.yml typo3/sysext/core/Tests/Acceptance/Backend/Topbar/LogoCest.php
 
-Running a single acceptance test with debug output use::
+Run a single acceptance test with debug output
+----------------------------------------------
+
+::
 
     bin/codecept run Acceptance -c vendor/typo3/testing-framework/Resources/Core/Build/AcceptanceTests.yml --debug typo3/sysext/core/Tests/Acceptance/Backend/Topbar/LogoCest.php
+
+Results
+-------
 
 Reports will be stored in :file:`typo3temp/var/tests/AcceptanceReports` with
 screenshots from browser.
