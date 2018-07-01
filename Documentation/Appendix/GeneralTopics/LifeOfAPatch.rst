@@ -21,6 +21,8 @@ Reviewing consists of two parts:
 
 A **code-review** and **testing the change** (manual testing + unit tests + functional tests)
 
+.. _lifeOfAPatch-review:
+
 Code Review
 -----------
 A basic code review is possible by using the Gerrit web interface.
@@ -31,6 +33,9 @@ Using the **Reply button**, you can post your comments and add a note.
 Of course you should also vote for the change (Be graceful with -1 votes though.).
 If you're able to improve the patch yourself, it is very much appreciated if you also submit an improved version.
 (see below)
+
+
+.. _lifeOfAPatch-test:
 
 Testing a patch
 ---------------
@@ -55,6 +60,9 @@ Otherwise throw the changes away, to bring your repository back to a clean state
 .. code-block:: bash
 
    git reset --hard origin/master
+
+
+.. _lifeOfAPatch-improve-patch:
 
 Improving a change and uploading a new Patch Set
 ================================================
@@ -89,6 +97,8 @@ You can amend as often as you want. Once you are satisfied, push your improved P
 
 where <release-branch> has to be replaced with the target branch as shown in Gerrit.
 If you're currently working on the master-branch this must be ``refs/publish/master`` as well.
+
+.. _lifeOfAPatch-new-patch:
 
 Starting a new Change Request (RFC)
 ===================================
@@ -159,6 +169,9 @@ as soon as your Change Request is reviewed.
 If Gerrit refuses your push, please read the Troubleshooting Guide.
 
 Finally clean up your local repository again.
+
+
+.. _lifeOfAPatch-backport:
 
 Backporting a change to other branches
 ======================================
