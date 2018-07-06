@@ -28,7 +28,8 @@ TYPO3 Contribution Guide - Core Development
 
    This manual contains information that is relevant for
 
-   * writing and submitting patches for the TYPO3 CMS source code
+   * :ref:`writing and submitting patches <TYPO3-Guide-ContributionWorkflow-Account>`
+     for the TYPO3 CMS source code
    * :ref:`submitting issues <bugreporting-index>` (bug reports and
      feature requests) to the bugtracker `Forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
    * :ref:`running the TYPO3 testsuite <testing>` locally with docker

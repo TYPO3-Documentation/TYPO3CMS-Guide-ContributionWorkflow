@@ -7,7 +7,7 @@
 Setting up your Gerrit account
 ==============================
 
-.. rst-class:: bignums-xxl
+.. rst-class:: bignums
 
 1. Switch to new UI in Gerrit
 
