@@ -1,6 +1,9 @@
 .. include:: Includes.txt
 
 .. _Start:
+.. _overview:
+.. _intended-audience:
+.. _recommended-reading:
 
 ===========================================
 TYPO3 Contribution Guide - Core Development
