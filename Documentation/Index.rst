@@ -6,56 +6,42 @@
 TYPO3 Contribution Guide - Core Development
 ===========================================
 
-Guide for TYPO3 core contribution. Alternate names:
-Contribution Walkthrough, Contribution Walkthrough
-Tutorial
-
-The content of this document is related to TYPO3 CMS,
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
-
-
-Common quick links
-==================
-
-In this guide:
---------------
-
-.. rst-class:: horizbuttons-primary-xxl
+.. rst-class:: horizbuttons-primary-m
 
 - :ref:`git setup <Setting-up-your-Git-environment>`
 - :ref:`git cheat sheet <cheat-sheet-git>`
 - :ref:`Commit message rules <commitmessage>`
-- :ref:`New chapters <whats-new-in-this-document>`
-
-Other manuals:
---------------
-
-.. rst-class:: horizbuttons-primary-xxl
-
-- :ref:`Core API <t3coreapi:start>`
-- :ref:`Coding Guidelines <t3coreapi:cgl>`
-- :ref:`TCA Reference <t3tca:Start>`
-- :ref:`TypoScript Reference <t3tsref:Start>`
-- :ref:`TSconfig Reference <t3tsconfig:Start>`
-
-Core Contribution Tools
------------------------
-
-.. rst-class:: horizbuttons-primary-xxl
-
 - `Gerrit <https://review.typo3.org>`__
 - `Forge Issues <https://forge.typo3.org/projects/typo3cms-core/issues>`__
 - `Forger <https://forger.typo3.com>`__
 - `TYPO3 Slack <https://typo3.slack.com>`__
 
-Signup
-------
+.. rst-class:: bignums
 
-.. rst-class:: horizbuttons-primary-xxl
+1. About this manual
 
-- `Signup for typo3.org <https://my.typo3.org/index.php?id=2>`__
-- `Signup for Slack <https://my.typo3.org/index.php?id=35>`__
+   Here, you will find everything you need to get started with
+   TYPO3 core development.
+
+   This manual contains information that is relevant for
+
+   * writing and submitting patches for the TYPO3 CMS source code
+   * :ref:`submitting issues <bugreporting-index>` (bug reports and
+     feature requests) to the bugtracker `Forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
+   * :ref:`running the TYPO3 testsuite <testing>` locally with docker
+   * :ref:`adding documentation <Bugfixing-Adding-documentation>` for the Changelog in the TYPO3 core
+   * finding patches that need reviewing / testing with `Forger <https://forger.typo3.com/gerrit/status>`__
+   * :ref:`reviewing and testing <lifeOfAPatch>` patches
+
+2. Additional information
+
+   When developing, you will want to be well informed about the
+   latest developments in the TYPO3 core. For additional
+   information, look here:
+
+   * `Core ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+   * :ref:`Core API <t3coreapi:start>`
+   * :ref:`Coding Guidelines <t3coreapi:cgl>`
 
 
 .. toctree::
