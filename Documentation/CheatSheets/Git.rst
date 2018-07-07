@@ -4,14 +4,18 @@
 
 .. _cheat-sheet-git:
 
+==========================================
+git cheat sheet for Core development
+==========================================
+
 .. attention::
    This is a short list of commands. If you are not familiar with the
    workflow yet, make sure you follow the link at the beginning of 
    each section and read the detailed description.
 
-==========================================
-git cheat sheet for Core development
-==========================================
+See also this general `cheat sheet for git 
+<https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
+if you are not very familiar with git. 
 
 git clone
 =========
