@@ -61,7 +61,7 @@ Optional: Set a commit message template::
 
    git config commit.template ~/.gitmessage.txt
 
-This command uses the file ~/.gitmessage.txt as git message tepmlate. 
+This command uses the file ~/.gitmessage.txt as git message template. 
 For additional information about how to set up a proper gitmessage 
 see :ref:`committemplate`
 
@@ -69,8 +69,6 @@ Workflow - common commands
 ==========================
 
 For details see :ref:`Bugfixing-Commit-and-push`
-
-Change to directory with .git for this to work.
 
 Reset repo to last remote commit in master::
 
