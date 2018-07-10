@@ -6,15 +6,21 @@
 Working with Gerrit
 ===================
 
-This chapter will explain the most important parts of the Gerrit_ UI to you.
+Gerrit is a web based code review and project management for Git based projects.
 
-.. note::
-   We will focus on the new UI in this chapter. Currently, when you first open Gerrit, you might see an older version of the UI. If so, please scroll down and click on the link "New UI" on the right side of the footer.
+TYPO3's Gerrit interface is located at https://review.typo3.org.
+
+Gerrit handles the whole review process and is a gatekeeper in front of the official TYPO3 Git repository on git.typo3.org. Pushing to this repository is not allowed for anybody, instead every change has to pass a review process in Gerrit, which later pushes the change to the repository.
 
 .. _Gerrit-Overview-of-the-UI:
 
 Overview of the UI
 ==================
+
+This chapter will explain the most important parts of the Gerrit_ UI to you.
+
+.. note::
+   We will focus on the new UI in this chapter. Currently, when you first open Gerrit, you might see an older version of the UI. If so, please scroll down and click on the link "New UI" on the right side of the footer.
 
 This is a screenshot of an open review on Gerrit_. We will go through the parts of the UI next:
 
