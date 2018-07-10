@@ -89,7 +89,7 @@ need to go into :file:`typo3/sysext/core/Documentation/Changelog/master/`.
 
 These are the mandatory sections that a rst snippet needs to have:
 
-Breaking Changes
+Breaking Changes: A patch moved or removed a specific part of core functionality that may break extensions if they use this part.
    #. **Description** - why things had to break backwards compatibility.
 
    #. **Impact** - how will the change affect your installation.
@@ -100,7 +100,7 @@ Breaking Changes
    #. **Migration** - provide instructions what needs to be done to get things
       working again. Explicitly mention if no migration is possible.
 
-:ref:`Deprecations <deprecations>`
+:ref:`Deprecations <deprecations>`: A patch deprecates a certain core functionality for a planned removal.
    #. **Description** - why things had to be deprecated.
 
    #. **Impact** - how will the change affect your installation.
@@ -111,7 +111,7 @@ Breaking Changes
    #. **Migration** - provide instructions what needs to be done to get things
       working again. Explicitly mention if no migration is possible.
 
-Features
+Features: A patch adds new functionality.
    #. **Description** - what can the new feature do.
 
    #. **Impact** - how users are affected by this new feature.
