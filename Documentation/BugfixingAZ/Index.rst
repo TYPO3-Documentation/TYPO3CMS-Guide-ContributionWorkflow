@@ -87,9 +87,28 @@ to add a rst snippet describing your change. There are four different types of
 documentation snippets which have to follow a certain format and **always**
 need to go into :file:`typo3/sysext/core/Documentation/Changelog/master/`.
 
+Description of Changes
+-----------------------
+
+There are four different types of breaking changes. Choose one which fits your patch:
+
+**Breaking Changes**: A patch moved or removed a specific part of core functionality 
+that may break extensions if they use this part.
+
+**:ref:`Deprecations <deprecations>`**: A patch deprecates a certain core functionality 
+for a planned removal.
+
+**Features:** A patch adds new functionality.
+
+**Important Information:** Anything that does not fit the other categories but is 
+important enough to require a Changelog entry.   
+
+Mandatory sections of breaking changes
+---------------------------------------
+
 These are the mandatory sections that a rst snippet needs to have:
 
-Breaking Changes: A patch moved or removed a specific part of core functionality that may break extensions if they use this part.
+Breaking Changes
    #. **Description** - why things had to break backwards compatibility.
 
    #. **Impact** - how will the change affect your installation.
@@ -100,7 +119,7 @@ Breaking Changes: A patch moved or removed a specific part of core functionality
    #. **Migration** - provide instructions what needs to be done to get things
       working again. Explicitly mention if no migration is possible.
 
-:ref:`Deprecations <deprecations>`: A patch deprecates a certain core functionality for a planned removal.
+:ref:`Deprecations <deprecations>`
    #. **Description** - why things had to be deprecated.
 
    #. **Impact** - how will the change affect your installation.
@@ -111,7 +130,7 @@ Breaking Changes: A patch moved or removed a specific part of core functionality
    #. **Migration** - provide instructions what needs to be done to get things
       working again. Explicitly mention if no migration is possible.
 
-Features: A patch adds new functionality.
+Features
    #. **Description** - what can the new feature do.
 
    #. **Impact** - how users are affected by this new feature.
@@ -119,8 +138,11 @@ Features: A patch adds new functionality.
 Important Information
    #. **Description** - describe what is so important it needed an rst snippet
 
-You can use the following script to check that your rst file is ok. The script will
-check all files in `typo3/sysext/core/Documentation/Changelog`.
+Check your rst file
+--------------------
+
+When you are done, you can use the following script to check that your rst file is ok. 
+The script will check all files in `typo3/sysext/core/Documentation/Changelog`.
 
 ::
 
