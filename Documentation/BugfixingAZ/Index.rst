@@ -95,7 +95,7 @@ There are four different types of breaking changes. Choose one which fits your p
 **Breaking Changes**: A patch moved or removed a specific part of core functionality 
 that may break extensions if they use this part.
 
-**:ref:`Deprecations <deprecations>`**: A patch deprecates a certain core functionality 
+**Deprecations**: A patch deprecates a certain core functionality 
 for a planned removal.
 
 **Features:** A patch adds new functionality.
