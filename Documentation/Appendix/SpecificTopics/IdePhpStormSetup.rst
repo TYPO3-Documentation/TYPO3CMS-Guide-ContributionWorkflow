@@ -40,10 +40,18 @@ code. See
 :ref:`Whitespace and indentation <t3coreapi:cgl-general-requirements-for-php-files>`
 for more information.
 
+.. _phpstorm-setup-cgl-editorconfig:
 
-.. hint::
-   Please also note that there is an .editorconfig file in the TYPO3 core repository.
-   See http://EditorConfig.org for more information.
+EditorConfig
+------------
+
+Please note that there is an .editorconfig file in the TYPO3 core repository.
+See http://EditorConfig.org for more information. Use the `EditorConfig plugin
+<https://plugins.jetbrains.com/plugin/7294-editorconfig>`__
+
+If you use the .editorconfig file (which is included in the TYPO3 core), some 
+standard formatting rules are already setup automatically (e.g. indent with 
+4 spaces for PHP files). 
 
 PHP files
 ---------
@@ -81,7 +89,7 @@ are strongly recommended when developing for the TYPO3 core.
 
 Install Plugins: `File: Settings: Plugins`
 
-
+* `EditorConfig plugin <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__
 * `DynamicReturnTypePlugin
   <https://plugins.jetbrains.com/plugin/7251-dynamicreturntypeplugin>`__ :
   With this Plugin, return types for some functions can be configured
