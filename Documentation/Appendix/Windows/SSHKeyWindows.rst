@@ -41,9 +41,12 @@ This allows you to enter your passphrase only once at startup and any tools usin
 tortoisegit, etc.) can automatically use your private key.
 
 In order to achieve this, create a new shortcut in the following folder:
-C:\\Users\\<username>\\AppData\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\
+:file:`C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`
 
 The target of the shortcut must be:
-%ProgramFiles(x86)%\\PuTTY\\pageant.exe "<full path to your saved private key.ppk>"
+
+.. code-block:: shell
+
+   %ProgramFiles(x86)%\PuTTY\pageant.exe "<full path to your saved private key.ppk>"
 
 pageant will run as background task and will place a nice little icon into your tray icons.
