@@ -96,7 +96,9 @@ Workflow - commit msg
 
 Details: :ref:`commitmessage`
 
-Example commit message for a bugfix::
+Example commit message for a bugfix:
+
+.. code-block:: text
 
    [BUGFIX] Subject line
    
@@ -105,7 +107,9 @@ Example commit message for a bugfix::
    Resolves: #12345
    Releases: master, 8.7
 
-Other keywords::
+Other keywords:
+
+.. code-block:: text
 
    [BUGFIX]
    [FEATURE]
