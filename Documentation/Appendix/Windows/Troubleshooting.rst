@@ -15,9 +15,7 @@ SSH
 
 Permission denied (publickey)
 -------------
-If you try to push to gerrit and you keep getting the following error message:
-
-.. shell::
+If you try to push to gerrit and you keep getting the following error message::
 	Permission denied (publickey).
 	fatal: Could not read from remote repository.
 
