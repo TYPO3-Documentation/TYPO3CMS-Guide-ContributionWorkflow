@@ -23,7 +23,8 @@ If you try to push to gerrit and you keep getting the following error message:
 
 Checklist:
 	1. The public(!) SSH key is stored in your Gerrit Acccount
-	2. Check if the SSH key is in the correct OpenSSH format
+	2. Check if the private(!) SSH key is in the correct OpenSSH format
+	You can Export your SSH key to the correct OpenSSH format in the Putty Key Generator with Conversions -> Export OpenSSH Key -> safe with a filename, but without a file ending!
 	3. In the Git Bash check if the ssh-agent is running or turn it on::
 
 		ssh-agent -s
@@ -32,7 +33,7 @@ Checklist:
 
 		ssh-add ~/.ssh/my_key
 
-	the SSH key should have no file ending. In windows explorer you should find/place the SSH key to::
+	the SSH key should have NO file ending (like .ppk). In windows explorer you should find the SSH key in::
 
 		C:\Users\<username>\.ssh\
 
