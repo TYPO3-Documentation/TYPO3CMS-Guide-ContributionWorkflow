@@ -11,7 +11,7 @@ Setting up TYPO3 with DDEV
 ==========================
 
 `DDEV <https://ddev.readthedocs.io>`__ provides several pre-configured
-environments based on Docker. 
+environments based on Docker.
 
 Here is a description of how you can use DDEV to setup a working TYPO3
 installation using the cloned master.
@@ -101,7 +101,7 @@ FIRST_INSTALL
 
 .. hint::
    Creating FIRST_INSTALL is probably not necessary. Check to see if the database exists.
-   ddev describe should give you enough information for that. 
+   ddev describe should give you enough information for that.
 
 Now, create a file `FIRST_INSTALL`:
 
@@ -119,16 +119,16 @@ http://ddev.dev.local/typo3.
 
 You will now be guided through the basic installation steps by TYPO3.
 
-If you use the HTTPS url you may get a "Privacy error" or something similar from your browser. You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to ddev.ddev.local (unsafe)`, depends on browser). 
+If you use the HTTPS url you may get a "Privacy error" or something similar from your browser. You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to ddev.ddev.local (unsafe)`, depends on browser).
 
-The warning is due to the fact that self-signed certificates are being used. 
+The warning is due to the fact that self-signed certificates are being used.
 
 If you are getting a `trustedHostsPattern` error on initial access, try accessing the HTTP domain first.
 
 Additional setup
 ================
 
-Be sure to add .ddev to your local gitignore (e.g. :file:`.git/info/exclude`). 
+Be sure to add .ddev to your local gitignore (e.g. :file:`.git/info/exclude`).
 
 Shutdown DDEV
 =============
@@ -136,15 +136,33 @@ Shutdown DDEV
 When you are done you can do::
 
    ddev remove
-   
+
 `ddev remove` does not remove the database. For a list of commands see::
 
    ddev help
-   
+
+
+.. hint::
+   If you shutdown/restart docker while working with ddev and dont run "ddev stop" before in currently running ddev projects,
+   the database might get corrupt and ddev start wont work anymore with the error::
+      Failed to start <projectname>: db service health check timed out
+   **keep in mind, this will remove your data entirely**
+
+   try running::
+
+      "ddev remove --remove-data
+
+   and::
+
+      "ddev start"
+
+   See https://github.com/drud/ddev/issues/748
+
+
 Resources
 =============
 
-Remember, you can use the Slack channels to ask for help! Follow the general convention for the channels: not too chatty, get straight to the point and ask, be nice. Register for the `TYPO3 slack workspace <https://forger.typo3.com/slack>`__ if you have not done so already. 
+Remember, you can use the Slack channels to ask for help! Follow the general convention for the channels: not too chatty, get straight to the point and ask, be nice. Register for the `TYPO3 slack workspace <https://forger.typo3.com/slack>`__ if you have not done so already.
 
 Slack channels
 --------------
