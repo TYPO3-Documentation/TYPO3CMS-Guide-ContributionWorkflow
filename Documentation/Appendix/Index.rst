@@ -16,6 +16,4 @@ in more depth than what is already described in the main section.
    OSX/Index
    Windows/Index
    Linux/Index
-   Slack
-   GeneralTopics/Index
-   SpecificTopics/Index
+   *
