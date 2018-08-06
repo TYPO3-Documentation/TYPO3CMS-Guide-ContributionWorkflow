@@ -135,4 +135,6 @@ You must instruct Git to push to Gerrit_ instead of the original repository. It 
 Other resources
 ===============
 
-We have compiled a list of helpful examples for you in the :ref:`Appendix<appendix>` section.
+See :ref:`git cheat sheet <cheat-sheet-git>` for more git commands.
+
+We have compiled a list of more information for you in the :ref:`Appendix<appendix>` section.
