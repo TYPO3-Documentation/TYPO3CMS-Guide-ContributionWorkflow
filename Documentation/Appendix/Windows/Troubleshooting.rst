@@ -29,15 +29,17 @@ Checklist for ssh problems
 
 .. rst-class:: bignums
 
-1. Make sure the public(!) SSH key is stored in your Gerrit Acccount
+1. Make sure the **public** SSH key is stored in your Gerrit Acccount
 
-2. Check if the private(!) SSH key is in the correct OpenSSH format. 
+   See :ref:`GerritAccount`
 
-   You can Export your SSH key to the correct OpenSSH format in the Putty Key 
+2. Check if your **private** SSH key is in the correct OpenSSH format. 
+
+   You can export your SSH key to the correct OpenSSH format with the Putty Key 
    Generator with Conversions -> Export OpenSSH Key -> safe with a filename, 
    but without a file ending!
 
-3. In the Git Bash check if the ssh-agent is running or turn it on
+3. Check if the ssh-agent is running or turn it on
 
    .. code-block:: bash
   
@@ -51,5 +53,9 @@ Checklist for ssh problems
 
    The SSH key should have NO file ending (like .ppk). 
    In windows explorer you should find the SSH key in 
-   :file:`C:\Users\<username>\.ssh\`
+   the file:
+   
+   .. code-block:: bash
+   
+      C:\Users\<username>\.ssh\
 
