@@ -3,6 +3,7 @@
 .. highlight:: bash
 
 .. _ddev:
+
 .. _settting-up-typo3-with-ddev:
 
 ==========================
@@ -147,9 +148,8 @@ or::
 
 
 .. hint::
-   If you shutdown/restart docker while working with ddev and dont run "ddev stop" 
-   before in currently running ddev projects,
-   the database might get corrupt and ddev start won't work anymore with the error::
+   If you dont run "ddev stop" or "ddev remove" before shutting down or restarting docker
+   the database might get corrupt and "ddev start" won't work anymore with the error::
       Failed to start <projectname>: db service health check timed out
    **keep in mind, this will remove your data entirely**
 
