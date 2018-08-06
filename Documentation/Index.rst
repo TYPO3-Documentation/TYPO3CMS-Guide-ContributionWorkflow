@@ -49,7 +49,6 @@ TYPO3 Contribution Guide - Core Development
 .. toctree::
    :hidden:
 
-   Sitemap/Index
    Introduction/Index
    WorkflowExplained/Index
    Account/Index
@@ -62,4 +61,4 @@ TYPO3 Contribution Guide - Core Development
    DebuggingTypo3/Index
    CheatSheets/Index
    Appendix/Index
-   Targets
+   Sitemap/Index

@@ -17,3 +17,4 @@ in more depth than what is already described in the main section.
    Windows/Index
    Linux/Index
    *
+   ResourcesForEditors/Index
