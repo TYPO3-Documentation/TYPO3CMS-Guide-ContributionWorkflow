@@ -135,6 +135,11 @@ Shutdown DDEV
 
 When you are done you can do::
 
+   ddev stop
+   
+or::   
+
+
    ddev remove
 
 `ddev remove` does not remove the database. For a list of commands see::
