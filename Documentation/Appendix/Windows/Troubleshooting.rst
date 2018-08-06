@@ -16,7 +16,6 @@ SSH
 Permission denied (publickey)
 -----------------------------
 
-
 If you try to push to gerrit and you keep getting the following error message
 
 .. code-block:: none
@@ -25,7 +24,7 @@ If you try to push to gerrit and you keep getting the following error message
    fatal: Could not read from remote repository.
 
 Checklist for ssh problems
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. rst-class:: bignums
 
