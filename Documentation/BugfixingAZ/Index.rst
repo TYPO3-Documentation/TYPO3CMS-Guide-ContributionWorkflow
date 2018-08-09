@@ -215,6 +215,7 @@ First, change to the :file:`core` directory::
    open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
    cd -
  
+ 
  Make sure you add the generated files directory :file:`Documentation-GENERATED-temp`
  to your local .gitignore file or to :file:`.git/info/exclude`, e.g.::
  
