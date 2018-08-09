@@ -100,7 +100,7 @@ Quick start for creating a patch.
 
 8. Create your patch
 
-   More information: :ref:`Fixing-a-bug-start`
+   More information: :ref:`Fixing-a-bug-A-Z`
 
    Create your patch, make sure you add tests and :ref:`run existing tests <testing>`.
    Add :ref:`documentation <Bugfixing-Adding-documentation>`
@@ -134,7 +134,7 @@ Quick start for creating a patch.
    look at the comments and try to improve your patch.
 
 Do not get discouraged if your patch is downvoted, commented on and not merged right
-away! Find a way to improve it. Ask in the **#typo3-cms-core channel**
+away! Find a way to improve it. Ask in the **#typo3-cms-core** channel
 in `Slack <https://typo3.slack.com>`__, if things are unclear.
 
 Refer to :ref:`lifeOfAPatch` for information about how to push a new patchset.
