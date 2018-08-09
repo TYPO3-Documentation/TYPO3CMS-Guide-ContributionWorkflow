@@ -28,7 +28,7 @@ Quick start for creating a patch.
 
    * Signup for a `typo3.org account <https://my.typo3.org/index.php?id=2>`__
    * Signup for `Slack <https://my.typo3.org/index.php?id=35>`__, join the
-     `#typo3-cms-contribution` channel
+     `#typo3-cms-coredev` channel
 
 2. Setup ssh key for Gerrit
 
@@ -134,7 +134,7 @@ Quick start for creating a patch.
    look at the comments and try to improve your patch.
 
 Do not get discouraged if your patch is downvoted, commented on and not merged right
-away! Find a way to improve it. Ask in the **#typo3-cms-core** channel
+away! Find a way to improve it. Ask in the **#typo3-cms-coredev** channel
 in `Slack <https://typo3.slack.com>`__, if things are unclear.
 
 Refer to :ref:`lifeOfAPatch` for information about how to push a new patchset.
