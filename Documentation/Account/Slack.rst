@@ -17,4 +17,4 @@ the slack workspace, you must already have your
 
 On that page, you will also find information about recomended channels.
 
-See :ref:`Appendix: Slack <slack-intro>` for more information on Slack.
+See :ref:`Appendix: Slack <appendix-slack-intro>` for more information on Slack.
