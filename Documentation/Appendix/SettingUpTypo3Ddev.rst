@@ -14,7 +14,7 @@ Setting up TYPO3 with DDEV
 environments based on Docker.
 
 Here is a description of how you can use DDEV to setup a working TYPO3
-installation using the cloned master.
+installation using the cloned master of the TYPO3 git repository.
 
 You don't need to have a Webserver or Database running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
@@ -35,11 +35,13 @@ instructions.
 Clone TYPO3
 ===========
 
-Create a clone of git as described in :ref:`git-clone`.
+Create a clone of the TYPO3 git repository as described in :ref:`git-clone`.
 
 
 ::
 
+   mkdir t3master
+   cd t3master
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
    composer install
    cd Build
@@ -115,11 +117,11 @@ Setup your TYPO3 installation
 
 Now load the URL as shown by `ddev start` in your browser with the path
 `/typo3` appended to it. Typically this will be
-http://ddev.dev.local/typo3.
+http://t3master.ddev.local/typo3.
 
 You will now be guided through the basic installation steps by TYPO3.
 
-If you use the HTTPS url you may get a "Privacy error" or something similar from your browser. You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to ddev.ddev.local (unsafe)`, depends on browser).
+If you use the HTTPS url you may get a "Privacy error" or something similar from your browser. You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to t3master.ddev.local (unsafe)`, depends on browser).
 
 The warning is due to the fact that self-signed certificates are being used.
 
@@ -128,7 +130,7 @@ If you are getting a `trustedHostsPattern` error on initial access, try accessin
 Additional setup
 ================
 
-Be sure to add .ddev to your local gitignore (e.g. :file:`.git/info/exclude`).
+Be sure to add the .ddev directory to your local gitignore (e.g. :file:`.git/info/exclude`).
 
 Shutdown DDEV
 =============
@@ -155,17 +157,17 @@ or::
 
    try running::
 
-      "ddev remove --remove-data
+      ddev remove --remove-data
 
    and::
 
-      "ddev start"
+      ddev start
 
    See https://github.com/drud/ddev/issues/748
 
 
 Resources
-=============
+=========
 
 Remember, you can use the Slack channels to ask for help! Follow the general convention for the channels: not too chatty, get straight to the point and ask, be nice. Register for the `TYPO3 slack workspace <https://forger.typo3.com/slack>`__ if you have not done so already.
 
