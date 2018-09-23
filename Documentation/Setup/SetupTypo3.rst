@@ -36,7 +36,7 @@ here.
 composer install
 ================
 
-::
+Run composer install from the same directory you cloned the master repository (this may take several minutes)::
 
    composer install
 
