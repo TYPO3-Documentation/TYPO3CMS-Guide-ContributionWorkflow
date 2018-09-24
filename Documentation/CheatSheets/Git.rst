@@ -91,6 +91,12 @@ Push changes to remote master on gerrit::
 
    git push origin HEAD:refs/publish/master
 
+Push changes to remote master on gerrit as draft::
+
+   git push origin HEAD:refs/drafts/master
+   
+The pushed patch will only be visible to you and those who you add as a reviewer. It also does not start any automated tests or builds on the TYPO3 testing infrastructure.
+
 Workflow - commit msg
 =====================
 
