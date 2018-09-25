@@ -36,8 +36,10 @@ here.
 composer install
 ================
 
-::
+Run composer install in the same directory you cloned the master repository to.
+This may take several minutes::
 
+   # cd <cloned project>
    composer install
 
 .. _yarn-build:
