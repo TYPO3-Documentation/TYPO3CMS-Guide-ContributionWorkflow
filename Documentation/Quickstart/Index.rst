@@ -82,6 +82,9 @@ Quick start for creating a patch.
 5. Setup your TYPO3 installation
 
    More information: :ref:`setup-typo3-installation`
+   
+   Setup your TYPO3 installation usig the git cloned TYPO3 source (as described above).
+   
 
 6. Setup your IDE to adhere to the coding guidelines
 
