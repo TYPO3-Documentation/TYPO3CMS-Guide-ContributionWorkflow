@@ -196,13 +196,23 @@ name as suggested in the generator.
 Check your rst file
 ~~~~~~~~~~~~~~~~~~~
 
-When your change is finished, you can use the following script to check that 
+When your change is finished, you can run the following script to check that 
 your rst file is ok. The script will check all files in 
 :file:`typo3/sysext/core/Documentation/Changelog`.
 
 ::
 
    Build/Scripts/validateRstFiles.php
+
+This script will check if the .rst files contain all mandatory tags that 
+are required for the Changelog. It will **not** do a reST syntax check. 
+
+In order to make sure that your file contains no syntax errors and will 
+be rendered correctly, do one or more of the following:
+
+* Check our :ref:`format-rest-cgl` and :ref:`rest-common-pitfalls`.
+* Use an editor or IDE that properly supports reST and shows errors
+* Render the Changelog locally with docker as explained in the next section
 
 
 .. _render-the-changelog:
