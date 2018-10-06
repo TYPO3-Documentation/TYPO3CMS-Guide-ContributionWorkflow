@@ -6,20 +6,53 @@
 Introduction
 ============
 
-.. _general-recommendations-contributions:
+This guide provides all necessary information to enable you to contribute to the TYPO3 
+source code. 
 
-General recommendations for contribution
-========================================
+The main focus is adding patches (to fix bugs or add new features) to the TYPO3 source 
+code, but you will also find information for :ref:`writing bug reports <bugreporting-index>`, 
+:ref:`adding documentation <Adding-documentation>`, :ref:`running tests <testing>`, 
+:ref:`reviewing and testing patches <ifeOfAPatch>` etc.
 
-In general: If you wish to make a contribution, familiarize yourself with the basics and general conventions used. In
-Open-source projects it is usually mandatory that your code must follow the general coding guidelines for the
-project and that your commit messages either follow general recommendations for commit messages or use specific
-constraints for the project.
+How this guide is structured
+============================
 
-Some github projects have a contribution guide available, the TYPO3 CMS project has this guide.
+The guide is structured in a way to give you all necessary information **in the order
+that you need it.** This means you can read it from the beginning and use it as a 
+hands on guide, performing the steps as you go along. 
 
-If in doubt, ask on slack. Other contributors will be happy to help you.
+For an overview of all necessary steps for creating a patch, look at the
+:ref:`Quickstart <core-contrib-quickstart>` chapter.
 
+The further you go along, the more advanced the topics will become.
+
+But, you can also use it as a reference guide and jump straight to a section you
+are looking for. In this case, use the search box to search for what
+you are looking for or browse through the menu. 
+
+Some pages near the end of the manual assume that you are already familiar with 
+contributing and serve as reference pages, for example the 
+:ref:`cheat sheet <core-contrib-quickstart>`.
+
+Some of the information, that is too extensive for the main guide, is found in 
+the :ref:`appendix`. 
+
+Additional information
+======================
+
+In general: If you wish to make a contribution, familiarize yourself with 
+the basics and general conventions used. For the TYPO3 source it is  
+mandatory that your code must follow the general 
+:ref:`coding guidelines <t3coreapi:cgl>` for the
+project and that your commit messages follow the 
+:ref:`commit messages rules <commitmessage>`.
+
+When developing, you will also want to be well informed about the
+latest developments in the TYPO3 core. For additional
+information, look here:
+
+* `Core ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+* :ref:`Core API <t3coreapi:start>`
 
 .. _other-resources-for-contribution:
 
