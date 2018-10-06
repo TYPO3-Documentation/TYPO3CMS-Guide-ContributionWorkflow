@@ -35,15 +35,7 @@ TYPO3 Contribution Guide - Core Development
    * finding patches that need reviewing / testing with `Forger <https://forger.typo3.com/gerrit/status>`__
    * :ref:`reviewing and testing <lifeOfAPatch>` patches
 
-**Additional information:**
 
-   When developing, you will want to be well informed about the
-   latest developments in the TYPO3 core. For additional
-   information, look here:
-
-   * `Core ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-   * :ref:`Core API <t3coreapi:start>`
-   * :ref:`Coding Guidelines <t3coreapi:cgl>`
 
 
 .. toctree::
