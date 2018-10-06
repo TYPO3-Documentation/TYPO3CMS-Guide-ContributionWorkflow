@@ -25,10 +25,11 @@ check that you have followed all steps up to **"8 Create your patch"**.
 Fix the code
 ============
 
-.. sidebar:: UnitTests
+.. sidebar:: Tests
 
-   Adding Unit Tests is a good idea at this point because it makes it a lot
-   easier to ensure TYPO3 behaves consistently now and in the future.
+   Adding Unit Tests or Functional Tests is a good idea at this point 
+   because it makes it a lot easier to ensure TYPO3 behaves consistently 
+   now and in the future.
 
 This part is pretty straightforward. But be warned, there
 are still a few dark places deep inside the TYPO3 core dating back to the
