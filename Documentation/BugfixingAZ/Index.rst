@@ -15,7 +15,7 @@ through the process step by step.
 Prerequisites
 =============
 
-We assume, you have followed all steps in the pevious chapters. If in 
+We assume, you have followed all steps in the previous chapters. If in 
 doubt, read the :ref:`Quickstart <core-contrib-quickstart>` chapter and 
 check that you have followed all steps up to **"8 Create your patch"**. 
 
