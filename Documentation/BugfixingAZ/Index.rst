@@ -75,6 +75,7 @@ See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
 If no test fails it is safe to push your fix to Gerrit.
 
 .. _Bugfixing-Adding-documentation:
+.. _Adding-documentation:
 
 Adding documentation
 ====================
