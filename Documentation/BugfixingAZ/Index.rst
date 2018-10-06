@@ -7,13 +7,17 @@
 Fixing a bug A-Z
 ================
 
-So you want to fix a bug in TYPO3? **Great!** This document will guide you
+So you want to fix a bug in TYPO3? **Great!** This chapter will guide you
 through the process step by step.
 
-.. note::
+.. _Bugfixing-prerequisites:
 
-   We assume you have already reviewed the setup process so we won't be covering
-   that here again.
+Prerequisites
+=============
+
+We assume, you have followed all steps in the pevious chapters. If in 
+doubt, read the :ref:`Quickstart <core-contrib-quickstart>` chapter and 
+check that you have followed all steps up to **"8 Create your patch"**. 
 
 
 .. _Bugfixing-Fix-the-code:
