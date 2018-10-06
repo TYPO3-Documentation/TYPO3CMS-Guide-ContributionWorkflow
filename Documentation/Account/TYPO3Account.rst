@@ -13,6 +13,8 @@ The fields in detail
 
 Username
    Pick a username you like. The form will directly tell you whether it's available or not.
+   To save yourself from annoying problems later on down the road, to not use special 
+   characters like `@` or `!` in your username. Just use alphanumeric characters.
 
 E-mail
    Your email address should be the one you want to be using for notification emails from Forge_ and Gerrit_. Also
