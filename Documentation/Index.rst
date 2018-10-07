@@ -42,6 +42,7 @@ TYPO3 Contribution Guide - Core Development
    :hidden:
 
    Introduction/Index
+   HowToGetHelp/Index
    Quickstart/Index
    WorkflowExplained/Index
    Account/Index
