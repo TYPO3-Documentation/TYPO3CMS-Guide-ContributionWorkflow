@@ -1,17 +1,34 @@
 .. include:: ../Includes.txt
 
+.. _forge-index:
 .. _bugreporting-index:
 
-===============
-Reporting a bug
-===============
+==========================
+Reporting an issue (Forge)
+==========================
+
+.. _forge-introduction:
 
 
-Searching for existing bugs
-===========================
+Introduction to Forge
+=====================
+
+The issue tracker Forge is currently based on Redmine. It is used to
+report and handle open issues (including bugs and feature requests).
+You need to set up an account first, see
+:ref:`TYPO3-Guide-ContributionWorkflow-Account`.
+
+When you want to report a bug or suggest a new feature, you need to go to the
+`"Issues" section for the TYPO3 Core
+<https://forge.typo3.org/projects/typo3cms-core/issues>`__.
+
+
+
+Searching for existing issues
+=============================
 
 Before you go ahead and report a bug, it is recommended that you check
-`Forger <https://forger.typo3.com>`__ to see if the the same issue or
+`Forger <https://forger.typo3.com>`__ to see if the same issue or
 something similar has already been reported.
 
 `Forger's <https://forger.typo3.com>`__ search functionality makes it
@@ -21,13 +38,9 @@ side of the navigation menu. You can use this feature to help refine searches.
 Identify the issue
 ==================
 
-Before you report a bug, make sure that the issue you report will be helpful
+Before you report a bug or suggest a new feature, make sure that
+the issue you report will be helpful
 by following these guidelines:
-
-Check for existing issues
-   Search for already existing issues for this problem. You can use
-   `Forger <https://forger.typo3.com>`__ to search for existing issues,
-   as already described in the previous paragraph.
 
 Remove side effects
    Work on a TYPO3 instance which is as clean as possible so you can
@@ -45,9 +58,11 @@ Be up to date
    release of the LTS version you use.
    See https://get.typo3.org/ to get the latest version of your LTS.
 
+   Or even better: use the latest version from git.
+
 Talk to the core team
-   When in doubt, don't hesitate to talk to us on Slack in the
-   `#typo3-cms-coredev <https://typo3.slack.com/messages/C03AM9R17/details/>`__
+   When in doubt, don't hesitate to talk to us on `Slack <https://typo3.slack.com>`__
+   in the **#typo3-cms-coredev**
    channel. (Remember to `register <https://forger.typo3.com/slack>`__
    first.)
 
@@ -60,6 +75,13 @@ TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/.
 
 If you click "New issue" you will see a form with a couple of fields
 that are important. Let's go over these really quick.
+
+.. important::
+
+   If you are not a member of the TYPO3 core team, you should not be filling out
+   the following fields: Priority, Assignee, Target version, Start date, Due
+   date, Estimated time, Done, Complexity, Is Regression and Sprint Focus. Do
+   not set a Watcher, unless someone has requested that you do this.
 
 Tracker
 -------
@@ -98,16 +120,42 @@ Be concise and clear
    where the problem lies.
 Well format your issue
    Using formatted example code helps readability; also don't use very long
-   sentences; instead use bullet points. See the next section for more
-   information on formatting your text.
+   sentences; instead use bullet points. See the section
+   :ref:`hints-for-formatting-in-readmine` for more information on formatting your text.
 Be polite.
    Always.
+
+See :ref:`best-practices-bug-report` for additional hints on what should be in
+the description of a bug report.
+
+Category
+--------
+
+Choose a category that fits your issue.
+
+TYPO3 version
+-------------
+
+Choose the TYPO3 version, where the error occurs.
+
+PHP Version
+-----------
+
+Choose the PHP version, where the error occurs. If in doubt, leave this blank.
+
+
+
+.. _best-practices-bug-report:
+
+Best practices for writing a good bug report
+============================================
 
 A good bug report should contain all or at least most of these elements:
 
 #. Prerequisites:
 
    Here you can add:
+
       + A brief description of your environment, including the operating system
         (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
         used, the database used (mySql, SQLServer, ...) and its version.
@@ -140,31 +188,12 @@ A good bug report should contain all or at least most of these elements:
    Additional information like special conditions or other details not reported
    on the previous points.
 
-Please consider that this guide is very generic; not always all these parts are
+Please consider that these guidelines are very generic; not always all these parts are
 always necessary, but having as much information as possible really could help a
 lot.
 
-Category
---------
 
-Choose a category that fits your issue.
-
-TYPO3 version
--------------
-
-Choose the TYPO3 version, where the error occurs.
-
-PHP Version
------------
-
-Choose the PHP version, where the error occurs.
-
-.. important::
-
-   If you are not a member of the TYPO3 core team, you should not be filling out
-   the following fields: Priority, Assignee, Target version, Start date, Due
-   date, Estimated time, Done, Complexity, Is Regression and Sprint Focus. Do
-   not set a Watcher, unless someone has requested that you do this.
+.. _hints-for-formatting-in-readmine:
 
 Hints for Formatting in Redmine
 ===============================
