@@ -87,15 +87,44 @@ Stage and commit all changes to already existing commit::
 
    git commit -a --amend
 
-Push changes to remote master on gerrit::
+Push changes to remote master on gerrit (default method)::
 
    git push origin HEAD:refs/publish/master
 
-Push changes to remote master on gerrit as draft::
+Workflow - special commands
+===========================
+
+push as draft
+-------------
+
+*When pushing as draft, the pushed patch will only be visible to you 
+and those who you add as a reviewer. It also does not start any 
+automated tests or builds on the TYPO3 testing infrastructure.*
+
+Push changes to remote master on gerrit as **draft**::
 
    git push origin HEAD:refs/drafts/master
    
-The pushed patch will only be visible to you and those who you add as a reviewer. It also does not start any automated tests or builds on the TYPO3 testing infrastructure.
+
+other branches
+--------------
+
+Show all branches::
+
+   git branch -a
+
+Checkout 8.7 branch::
+
+   git checkout TYPO3_8-7
+
+Push 8.7 branch::
+
+   git push origin HEAD:refs/publish/TYPO3_8-7
+
+Push 7.6 branch::
+
+   git push origin HEAD:refs/publish/TYPO3_7-6
+
 
 Workflow - commit msg
 =====================
@@ -127,25 +156,6 @@ Other keywords:
 * subject < 52 chars
 * other lines <= 72 chars
 
-
-Workflow - other branches
-=========================
-
-Show all branches::
-
-   git branch -a
-
-Checkout 8.7 branch::
-
-   git checkout TYPO3_8-7
-
-Push 8.7 branch::
-
-   git push origin HEAD:refs/publish/TYPO3_8-7
-
-Push 7.6 branch::
-
-   git push origin HEAD:refs/publish/TYPO3_7-6
 
 Workflow - Undoing / fixing things
 ==================================
