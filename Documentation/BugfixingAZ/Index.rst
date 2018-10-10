@@ -3,12 +3,18 @@
 
 .. _Fixing-a-bug-A-Z:
 
-================
-Fixing a bug A-Z
-================
+===============================
+Creating a patch (Fixing a Bug)
+===============================
 
-So you want to fix a bug in TYPO3? **Great!** This chapter will guide you
-through the process step by step.
+.. The chapter header was renamed from "Fixing a Bug A-Z" to
+   "Creating a patch". Since this may be confusing for users
+   the old title was added in '()'. This may be removed
+   later.
+
+So you want to fix a bug or add a new feature to TYPO3? **Great!**
+
+This chapter will guide you through the process step by step.
 
 .. _Bugfixing-prerequisites:
 
@@ -37,7 +43,8 @@ medieval times of PHP4. Yes, TYPO3 has been around for quite some time now. And
 there is ancient code we didn't have to touch yet because it just works.
 
 If you should encounter any problems or have questions, talk to us on Slack_ in
-the `#typo3-cms-coredev` channel.
+the `#typo3-cms-coredev` channel (for more information on Slack, see
+:ref:`appendix-slack-intro`).
 
 
 .. _Bugfixing-Coding-Guidelines:
@@ -313,9 +320,9 @@ the `Change-Id: ...` line and fills in a unique id.
 Change an existing patch
 ------------------------
 
-To improve an existing commit you have to keep a part of the old commit
-message. Precisely, it is the `Change-Id: ...` line that you need to keep
-unmodified. The common command to do so is::
+To improve an existing patch you have to append to the already existing commit
+message. See :ref:`lifeOfAPatch-improve-patch` for
+more information on changing an existing patch::
 
    git commit -a --amend
 
@@ -333,11 +340,33 @@ Change whatever you like but keep the `Change-ID: ...` line.
 Pushing your changes
 --------------------
 
-Once you are happy with your changes, you can push them via::
+Before you submit your patch for review, check what you are going to push:
+
+.. code-block:: bash
+
+   git log origin/<release-branch>..HEAD
+
+specifically (for *master* branch):
+
+::
+
+   git log origin/master..HEAD
+
+You must only see one commit (for the basic workflow described in this guide).
+
+To submit the patch to Gerrit, issue the following command:
+
+.. code-block:: bash
+
+   git push origin HEAD:refs/publish/<release-branch>
+
+specifically (for *master* branch):
+
+::
+
 
    git push origin HEAD:refs/publish/master
 
-Where ``master`` is the target, so ``master`` is current development trunk.
 
 Use the following for TYPO3v8 LTS::
 
@@ -353,6 +382,22 @@ Use the following for TYPO3v7 LTS::
    exists on that branch and does not exist on master. Backporting of a
    fix to a branch is done by the core team member who merges the original
    fix to the master branch.
+
+
+Long story short: In most cases, **push to master**. The rest is being taken
+care of when time is right.
+
+If Gerrit accepts your push, it responds with the following messages:
+
+.. code-block:: bash
+
+   remote: New Changes:
+   remote:   https://review.typo3.org/<gerrit-id>
+   remote:
+   To ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git
+    * [new branch]      HEAD -> refs/publish/<release-branch>
+
+You can visit the link to https://review.typo3.org to see your patch in Gerrit.
 
 
 .. _Bugfixing-Use-Botty-on-Slack:
@@ -377,6 +422,9 @@ Wait for reviews
 It's time to sit back and await feedback on your changes. The review team process
 dozens of requests each day, so expect a succinct response that is short and to the point.
 
+You will get notified by email, if there is activity on your patch in Gerrit
+(e.g. votes, comments, new patchsets etc.).
+
 Improve your patch
 ==================
 
@@ -385,6 +433,6 @@ please respond in a timely fashion. If things are unclear, ask in the `typo3-cms
 channel on Slack. 
 
 When you change your patch, make sure you do not add another commit. Append to 
-your original commit instead as described in :ref:`lifeOfAPatch`.
+your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.
 
 

@@ -47,9 +47,10 @@ TYPO3 Contribution Guide - Core Development
    Account/Index
    Setup/Index
    Forger/Index
-   Forge/Index
-   Gerrit/Index
+   ReportingAnIssue/Index
    BugfixingAZ/Index
+   HandlingAPatch/Index
+   HandlingIssues/TicketWorkflow
    Testing/Index
    DebuggingTypo3/Index
    CheatSheets/Index
