@@ -329,7 +329,7 @@ There may be more than one conflict in a file!
 
 When you are done, add the file and then continue, e.g. if you were rebasing:
 
-.. code-block::
+.. code-block:: bash
 
    git add <path1>
    git add <path2>
