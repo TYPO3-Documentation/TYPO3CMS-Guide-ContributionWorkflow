@@ -27,7 +27,7 @@ What is rebase?
 
 Simply speaking, git reapplies commits on top of another
 base tip (as explained in the
-`Pro Git book <https://git-scm.com/docs/git-rebase>`__.
+`Pro Git book <https://git-scm.com/docs/git-rebase>`__).
 
 When you start your patch, it will be based on a specific
 commit. Meanwhile, other commits are merged and the TYPO3 codebase
