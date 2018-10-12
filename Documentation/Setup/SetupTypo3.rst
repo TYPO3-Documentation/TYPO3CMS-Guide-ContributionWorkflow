@@ -9,6 +9,7 @@
 Setup the TYPO3 installation
 ============================
 
+.. _setup-typo3-git-clone:
 .. _git-clone:
 
 git clone
