@@ -3,6 +3,7 @@
 
 .. _phpstorm-setup:
 
+
 ===================
 Setting up PhpStorm
 ===================
@@ -34,24 +35,25 @@ Coding Guidelines
 =================
 
 Make sure your IDE is setup properly to comply with the
-:ref:`Coding Guidelines for TYPO3 (CGL) <t3coreapi:cgl>`. For example,
-(following PSR-2) space characters (not tabs) are used to indent source
-code. See
-:ref:`Whitespace and indentation <t3coreapi:cgl-general-requirements-for-php-files>`
-for more information.
+:ref:`Coding Guidelines for TYPO3 (CGL) <t3coreapi:cgl>`.
 
 .. _phpstorm-setup-cgl-editorconfig:
 
 EditorConfig
 ------------
 
-Please note that there is an .editorconfig file in the TYPO3 core repository.
+Please note that there is an
+`.editorconfig <https://git.typo3.org/Packages/TYPO3.CMS.git/blob/HEAD:/.editorconfig>`__
+file in the TYPO3 core repository.
 See http://EditorConfig.org for more information. Use the `EditorConfig plugin
-<https://plugins.jetbrains.com/plugin/7294-editorconfig>`__
+<https://plugins.jetbrains.com/plugin/7294-editorconfig>`__ for PhpStorm.
 
-If you use the .editorconfig file (which is included in the TYPO3 core), some 
+If you use the :file:`.editorconfig` file (which is included in the TYPO3 core), some
 standard formatting rules are already setup automatically (e.g. indent with 
-4 spaces for PHP files). 
+4 spaces for PHP files).
+
+However, the rules defined in :file:`.editorconfig` are very minimal, so at
+least set up PhpStorm to comply with PSR-1 / PSR-2 for PHP as described next.
 
 PHP files
 ---------
@@ -66,7 +68,7 @@ Choose PSR-1 / PSR-2
    :alt: Setup PhpStorm Predefined Code Style
 
 
-In order to test this, use `Code: Reformat Code` to reformat a PHP file
+In order to test this, use `Code: Reformat Code` to reformat a PHP file.
 
 
 More information

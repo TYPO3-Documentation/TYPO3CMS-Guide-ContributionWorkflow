@@ -3,9 +3,11 @@
 
 .. _GerritAccount:
 
-==============================
-Setting up your Gerrit account
-==============================
+.. _gerrit-ssh:
+
+=======================
+Setting up Gerrit (ssh)
+=======================
 
 .. rst-class:: bignums
 

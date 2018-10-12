@@ -16,12 +16,12 @@ This is just a very brief overview.
 PHP
 ===
 
-Make sure you are using the correct PHP codestyle. It is **PSR-2** at
+Make sure you are using the correct PHP codestyle. It is **PSR-1 / PSR-2** at
 the time of writing and specified in the :ref:`TYPO3 Coding Guidelines
 <t3coreapi:cgl>`.
 
-The section on how to setup PhpStorm includes information on how
-to configure the correct coding style: :ref:`phpstorm-setup-cgl`.
+See :ref:`PhpStorm setup: CGL <phpstorm-setup-cgl>` for information on how
+to configure the correct coding style.
 
 The Appendix contains information on scripts to check / fix coding
 guideline issues: :ref:`cgl-fix-my-commit`

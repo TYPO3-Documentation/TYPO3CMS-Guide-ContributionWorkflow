@@ -94,7 +94,7 @@ Grunt
 Grunt is a JavaScript-based task runner. While this does not sound very expressive at first this is basically, what grunt
 does - it runs tasks for us.
 
-In our case grunt compiles CSS from LESS, minifies and concatenates JavaScript files, runs syntax checks and a couple of
+In our case grunt compiles CSS, minifies and concatenates JavaScript files, runs syntax checks and a couple of
 other useful things. The good news is that TYPO3 comes with a predefined set of tasks that grunt will run, so you don't
 have to take care of all the busywork underneath.
 

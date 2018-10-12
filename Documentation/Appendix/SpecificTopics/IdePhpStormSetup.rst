@@ -1,14 +1,13 @@
-.. The content of this page has moved. This page can be removed later.
+.. The content of this page has moved. This page can be removed later (2018-10-12).
 
 :orphan:
 
 .. include:: ../../Includes.txt
 
-===================
-Setting up PhpStorm
-===================
+=====
+Moved
+=====
 
 
-.. rst-class:: horizbuttons-tip-xxl
+This chapter has moved to :ref:`phpstorm-setup`
 
-- :ref:`This chapter has moved <phpstorm-setup>`

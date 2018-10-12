@@ -1,13 +1,12 @@
-.. The content of this page has moved. This page can be removed later.
+.. The content of this page has moved. This page can be removed later (2018-10-12).
 
 :orphan:
 
 .. include:: ../../Includes.txt
 
-===================================
-Commit Message rules for TYPO3 CMS
-===================================
 
-.. rst-class:: horizbuttons-tip-xxl
+=====
+Moved
+=====
 
-- :ref:`This chapter has moved <commitmessage>`
+This chapter has moved to :ref:`commitmessage`

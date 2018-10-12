@@ -1,16 +1,14 @@
-.. include:: ../Includes.txt
-
 :orphan:
 
-===================
-Working with Gerrit
-===================
+.. include:: ../Includes.txt
 
 
 
-.. rst-class:: horizbuttons-tip-xxl
+=====
+Moved
+=====
 
-- :ref:`This chapter has moved <lifeOfAPatch>`
+This chapter has moved to :ref:`lifeOfAPatch`.
 
 
 

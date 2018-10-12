@@ -1,13 +1,12 @@
-.. The content of this page has moved. This page can be removed later.
+.. The content of this page has moved. This page can be removed later (2018-10-12).
 
 :orphan:
 
 .. include:: ../../Includes.txt
 
-=================
-Coding Guidelines
-=================
+=====
+Moved
+=====
 
-.. rst-class:: horizbuttons-tip-xxl
 
-- :ref:`This chapter has moved <appendix-cgl>`
+This chapter has moved to :ref:`appendix-cgl`

@@ -1,14 +1,11 @@
-.. The content of this page has moved. This page can be removed later.
+.. The content of this page has moved. This page can be removed later (2018-10-12).
 
 :orphan:
 
 .. include:: ../../Includes.txt
 
-========================================================================
-How to deprecate classes, methods, arguments and hooks in the TYPO3 core
-========================================================================
+=====
+Moved
+=====
 
-
-.. rst-class:: horizbuttons-tip-xxl
-
-- :ref:`This chapter has moved <deprecations>`
+This chapter has moved to :ref:`deprecations`

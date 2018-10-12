@@ -1,16 +1,11 @@
-.. The content of this page has moved. This page can be removed later.
+.. The content of this page has moved. This page can be removed later (2018-10-12).
 
 :orphan:
 
 .. include:: ../../Includes.txt
 
-.. _phpstorm-gerritplugin:
+=====
+Moved
+=====
 
-==========================
-Gerrit Plugin for PHPStorm
-==========================
-
-
-.. rst-class:: horizbuttons-tip-xxl
-
-- :ref:`This chapter has moved <phpstorm-gerritplugin>`
+This chapter has moved to :ref:`phpstorm-gerritplugin`

@@ -1,13 +1,12 @@
-.. The content of this page has moved. This page can be removed later.
+.. The content of this page has moved. This page can be removed later (2018-10-12).
 
 :orphan:
 
 .. include:: ../../Includes.txt
 
-============
-Commit hooks
-============
 
-.. rst-class:: horizbuttons-tip-xxl
+=====
+Moved
+=====
 
-- :ref:`This chapter has moved <commit-hook>`
+This chapter has moved to :ref:`commit-hook`
