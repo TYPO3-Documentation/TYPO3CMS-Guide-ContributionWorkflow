@@ -17,7 +17,7 @@ Rebase & Merge conflicts
    For more information, see :ref:`h2document:docs-contribute`.
 
 
-Occasionally, if your patch has been pushed to Gerrit a while
+If your patch has been pushed to Gerrit a while
 ago and has not been merged yet, you may be asked to rebase.
 
 .. _rebase-intro:
@@ -42,7 +42,7 @@ There are other applications for rebase (e.g. squash commits),
 but this is the one relevant for the Contribution Guide, so
 this is what we mean when we talk about rebase.
 
-Do not let information on the internet confuse you: Usually
+Do not let information on the Web confuse you: Usually
 it is assumed that someone is working on a different branch
 (feature branch). In our commit model, we always work on one
 branch (master). See :ref:`workflow-explained` to recapitulate.
