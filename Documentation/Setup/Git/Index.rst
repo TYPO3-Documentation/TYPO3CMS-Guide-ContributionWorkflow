@@ -10,19 +10,12 @@ Setting up your Git environment
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
+Prerequisites
+=============
 
-.. tip::
-
-   If you want to get an introduction to how our workflow works, :ref:`head over here<workflow-explained>`
-
-.. note::
-
-   We expect you have a fully-fledged web development setup at hand.
-
-   If you are not sure, though, :ref:`take a look here <prerequisites>`.
-
-
-Make sure, you have cloned the TYPO3 source as described previously::
+* If you want to get an introduction to how our workflow works, :ref:`head over here<workflow-explained>`
+* We expect you have a fully-fledged web development setup at hand. If you are not sure, though, :ref:`take a look here <prerequisites>`.
+* Make sure, you have cloned the TYPO3 source as described previously in :ref:`setup-typo3-git-clone`::
 
       git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
 
