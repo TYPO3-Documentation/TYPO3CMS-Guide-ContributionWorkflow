@@ -4,9 +4,6 @@
 
 .. include:: ../../Includes.txt
 
-
-.. _phpstorm-setup:
-
 ===================
 Setting up PhpStorm
 ===================
