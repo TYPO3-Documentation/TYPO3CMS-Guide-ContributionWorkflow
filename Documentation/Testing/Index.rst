@@ -56,7 +56,7 @@ current directory::
       -v <absolute-local-path-where-your typo3-checkout-is>:/srv/tmp/cms \
       -w /srv/tmp/cms \
       typo3gmbh/php72:latest \
-      /sbin/my_init -- bash
+      bash
 
 Or, for more convenience, you can just use this, which determines
 your current directory with pwd::
@@ -66,8 +66,12 @@ your current directory with pwd::
       -v `pwd`:/srv/tmp/cms \
       -w /srv/tmp/cms \
       typo3gmbh/php72:latest \
-      /sbin/my_init -- bash
+      bash
 
+.. note::
+   The docker run command has changed, it used to contain /sbin/my_init 
+   which has been discontinued from the typo3gmb/php72:latest docker 
+   container
 
 .. _testing-docker-run-unit:
 
