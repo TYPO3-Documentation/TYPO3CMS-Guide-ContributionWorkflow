@@ -75,7 +75,7 @@ For finding an existing review (patch), there are several possibilities:
   and a link to the review on Gerrit.
 * In any case, you can use `Forger <https://forger.typo3.org>`__ to
   search for the review, for example use the `Forger Gerrit Overview
-  <https://forger.typo3.com/gerrit/status>`__ to filter for rewiews
+  <https://forger.typo3.com/gerrit/status>`__ to filter for reviews
   or the `Review board bugfixes
   <https://forger.typo3.com/sprint/reviews?&boardId=bugfix>`__ to get
   an overview of all open patches for bugs.
