@@ -13,9 +13,12 @@ git cheat sheet for Core development
    workflow yet, make sure you follow the link at the beginning of 
    each section and read the detailed description.
 
-See also this general `cheat sheet for git 
-<https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
-if you are not very familiar with git. 
+See also these not TYPO3 specific cheat sheets for git if you are not very familiar with git:
+
+* `cheat sheet for git
+  <https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
+* `"git - the simple guide" by Roger Dudler <http://rogerdudler.github.io/git-guide/>`__
+
 
 git clone
 =========
