@@ -91,6 +91,8 @@ Quick start for creating a patch.
    More information: :ref:`setup-ide`
 
    Use the :file:`.editorconfig` in the TYPO3 core directory to setup your IDE.
+   As :file:`.editorconfig` only contains minimal rules, it is a good idea to 
+   additionally setup your IDE to use PSR-1 / PSR-2 for PHP files. 
 
 7. Create an Issue on Forge
 
