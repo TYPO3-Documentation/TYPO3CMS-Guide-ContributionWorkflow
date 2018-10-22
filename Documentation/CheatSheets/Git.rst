@@ -70,7 +70,7 @@ Workflow - common commands
 
 For details see :ref:`Bugfixing-Commit-and-push`
 
-Reset repo to last remote commit in master::
+Reset repo to last remote commit in (remote) master::
 
    git reset --hard origin/master && git pull origin master
 
