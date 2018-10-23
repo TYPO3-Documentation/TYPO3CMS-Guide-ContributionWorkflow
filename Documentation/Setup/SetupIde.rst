@@ -21,7 +21,7 @@ See http://EditorConfig.org for more information.
 
 Please note that the rules in :file:`.editorconfig` are very minimal. So, additionally,
 setup your Editor / IDE to use PSR-1 / PSR-2 for PHP files, and use the other
-standards as described in the :ref:`Coding Guidelines of TYPO3 <t3coreapi:coding-cgl>`.
+standards as described in the :ref:`Coding Guidelines of TYPO3 <t3coreapi:cgl>`.
 
-See `PhpStorm setup CGL <phpstorm-setup-cgl>` for information about setting up
+See :ref:`PhpStorm setup CGL <phpstorm-setup-cgl>` for information about setting up
 PhpStorm to comply with the Coding Guidelines.
