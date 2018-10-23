@@ -1,32 +1,51 @@
 .. include:: ../Includes.txt
 
+
+.. highlight:: bash
+
 .. _lifeOfAPatch-improve-patch:
 
-=========================
-Uploading a new Patch Set
-=========================
+======================
+Upload a new Patch Set
+======================
 
-To improve an existing patch set, make sure your local repository has the latest changes and
-cherry-pick the latest patch set from Gerrit as described in :ref:`cherry-pick-a-patch`.
+This chapter handles improving an existing patch.
 
-Edit the files to solve your concerns and test this new version carefully.
 
-Update the change by **amending** the previous commit. This will overwrite the commit you fetched from Gerrit
-with your changes:
+.. rst-class:: bignums-xxl
 
-.. code-block:: bash
+1. Get the latest patchset of the patch
 
-   git commit --amend -a
+   The latest version of the patch is still in your local git repository. If not,
+   you must cherry-pick the latest patch set from Gerrit as described in
+   :ref:`cherry-pick-a-patch`.
 
-.. warning::
+2. Edit files to improve the patch
 
-   Make sure to not change or remove the Change-Id: line!
+3. Test your changes
 
-You can amend as often as you want. Once you are satisfied, push your improved Patch Set to Gerrit:
+   Run the TYPO3 testsuite locally, as described under :ref:`testing`.
 
-.. code-block:: bash
+4. Add files and amend to commit
 
-   git push origin HEAD:refs/publish/<release-branch>
+   Update the change by **amending** the previous commit. This will overwrite
+   the commit you fetched from Gerrit with your changes::
 
-where <release-branch> has to be replaced with the target branch as shown in Gerrit.
-If you're currently working on the master-branch this must be ``refs/publish/master`` as well.
+      git commit --amend -a
+
+   .. warning::
+
+      Make sure to not change or remove the Change-Id: line!
+
+   You can amend as often as you want.
+
+5. Push your change to Gerrit
+
+   Once you are satisfied, push your improved Patch Set to Gerrit::
+
+      git push origin HEAD:refs/publish/<release-branch>
+
+   where <release-branch> has to be replaced with the target branch as shown in Gerrit.
+   If you're currently working on the master-branch this must be `refs/publish/master`::
+
+      git push origin HEAD:refs/publish/master

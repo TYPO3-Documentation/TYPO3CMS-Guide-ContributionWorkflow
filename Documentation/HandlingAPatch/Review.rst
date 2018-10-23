@@ -1,8 +1,8 @@
 .. include:: ../Includes.txt
 
-=================
-Reviewing a patch
-=================
+==============
+Review a patch
+==============
 
 Reviewing consists of two parts:
 
@@ -33,8 +33,8 @@ for more information on this).
 .. _lifeOfAPatch-test:
 .. _Gerrit-Testing-a-change:
 
-Testing a patch
-===============
+Test a patch
+============
 
 For testing the patch you need to import the change into your local repository.
 
@@ -59,8 +59,8 @@ Otherwise throw the changes away, to bring your repository back to a clean state
 
 .. _Gerrit-Commenting-files:
 
-Commenting files
-================
+Comment files
+=============
 
 .. This section was moved from Gerrit/Index.rst
 
@@ -84,8 +84,8 @@ to use the **Reply Button** to send them all (ideally with a vote indicating how
 
 .. _gerrit-voting:
 
-Voting
-======
+Vote
+====
 
 In order to comment or vote on a change you can click on the **Reply button** and enter your comment. Here, you
 can also apply your votes.

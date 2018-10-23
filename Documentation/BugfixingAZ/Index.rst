@@ -3,434 +3,169 @@
 
 .. _Fixing-a-bug-A-Z:
 
-===============================
-Creating a patch (Fixing a Bug)
-===============================
-
-.. The chapter header was renamed from "Fixing a Bug A-Z" to
-   "Creating a patch". Since this may be confusing for users
-   the old title was added in '()'. This may be removed
-   later.
+=======================
+Create & submit a patch
+=======================
 
 So you want to fix a bug or add a new feature to TYPO3? **Great!**
 
-This chapter will guide you through the process step by step.
+This chapter will guide you through the process step by step. If you
+should encounter any problems or have questions, talk to us on
+https://typo3.slack.com in the **#typo3-cms-coredev** channel
+(for more information on Slack, see :ref:`appendix-slack-intro`).
+
 
 .. _Bugfixing-prerequisites:
 
 Prerequisites
 =============
 
-We assume, you have followed all steps in the previous chapters. If in 
-doubt, read the :ref:`Quickstart <core-contrib-quickstart>` chapter and 
-check that you have followed all steps up to **"8 Create your patch"**. 
+We assume, you have followed all steps in the **intro & setup** chapters.If
+not, use :ref:`quickstart-create-a-patch` to guide you through
+the entire process.
+
+Also, an **issue** must exist for the patch you want to create. Every patch
+must refer to at least one corresponding issue. If there is no issue
+yet, create one now by going to https://forge.typo3.org/.
+(see :ref:`create-an-issue` for more information).
 
 
 .. _Bugfixing-Fix-the-code:
+.. _fix-the-code:
 
-Fix the code
-============
+Step by step walkthrough
+========================
 
-.. sidebar:: Tests
+.. rst-class:: bignums-xxl
 
-   Adding Unit Tests or Functional Tests is a good idea at this point 
-   because it makes it a lot easier to ensure TYPO3 behaves consistently 
-   now and in the future.
+1. Make your changes to the code
 
-This part is pretty straightforward. But be warned, there
-are still a few dark places deep inside the TYPO3 core dating back to the
-medieval times of PHP4. Yes, TYPO3 has been around for quite some time now. And
-there is ancient code we didn't have to touch yet because it just works.
+   This part is pretty straightforward. But be warned, there
+   are still a few dark places deep inside the TYPO3 core dating back to the
+   medieval times of PHP4. Yes, TYPO3 has been around for quite some time now. And
+   there is ancient code we didn't have to touch yet because it just works.
 
-If you should encounter any problems or have questions, talk to us on Slack_ in
-the `#typo3-cms-coredev` channel (for more information on Slack, see
-:ref:`appendix-slack-intro`).
+2. Add tests
 
+   Add Unit Tests or Functional Tests for new functionality, refine existing tests
+   if necessary. Tests are important because they ensure that
+   TYPO3 will behave consistently now and in the future.
 
-.. _Bugfixing-Coding-Guidelines:
+3. Run tests
 
-Coding Guidelines
-=================
+   It is a good idea to test the TYPO3 core with your fix to be sure that the
+   automatic tests, that are running on bamboo after you have pushed a patch to
+   the Gerrit review system, will not fail.
 
-.. attention::
+   See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
 
-   Make sure you are using the correct PHP codestyle. It is **PSR-2** at
-   the time of writing and specified in the :ref:`TYPO3 Coding Guidelines
-   <t3coreapi:cgl>`. Instruct your IDE to work against this standard,
-   ask us if you need any assistance.
+   If no test fails it is safe to push your fix to Gerrit.
 
+4. Add documentation
 
-You will find more information about this and about the :ref:`appendix-cgl` of
-other file types such as JavaScript in the Appendix.
+   For new features, breaking changes and deprecations, it is necessary to :ref:`add
+   information to the changelog <changelog>`.
 
+5. Absorb the commit message rules
 
-There is information about how to set up with :ref:`PhpStorm with PSR-2
-<phpstorm-setup-cgl>`.
+   Please make sure that you read the :ref:`commitmessage` in the Appendix.
+   Your code will not be merged if it does not follow the commit message
+   rules.
 
+   .. important::
+      The section :ref:`commitmessage` is a must-read. Read it. Follow it.
 
-.. _Bugfixing-Test-the-code:
+   For a bugfix, your commit message may look something like this:
 
-Test the code
-=============
+   .. code-block:: none
 
-It is a good idea to test the TYPO3 core with your fix to be sure that the
-automatic tests, that are running on bamboo after you have pushed a patch to
-the Gerrit review system, do not fail.
+      [BUGFIX] Subject line of max 52 chars
 
-See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
+      Some descriptions with line length of max. 72 characters
 
-If no test fails it is safe to push your fix to Gerrit.
-
-.. _Bugfixing-Adding-documentation:
-.. _Adding-documentation:
-
-Adding documentation
-====================
-
-.. rst-class:: horizbuttons-primary-m
-
-- :ref:`h2document:Formatting-with-reST`
-- :ref:`h2document:format-rest-cgl`
-- :ref:`h2document:rest-common-pitfalls`
-- :ref:`h2document:rendering-docs-quickstart`
-
-
-The documentation `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-and documentation for
-`system extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
-is maintained in the core.
-
-Changelog
----------
-
-If your change makes it necessary to update the official documentation, you have
-to add a .rst (reStructuredText) file describing your change. Not all patches
-need an entry in the Changelog. Check the list below. Also see the current
-`Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__ 
-for some examples. 
-
-Types of changes
-~~~~~~~~~~~~~~~~
-
-There are four different types of changes
-which have to follow a certain format and **always**
-need to go into :file:`typo3/sysext/core/Documentation/Changelog/master/`.
-
-Choose one which fits your patch:
-
-.. _documenting-changelog-breaking-changes:
-
-Breaking Changes
-""""""""""""""""
-
-A patch moved or removed a specific part of core functionality
-that may break extensions if they use this part.
-
-**Mandatory sections:**
-
-#. **Description** - why things had to break backwards compatibility.
-
-#. **Impact** - how will the change affect your installation.
-
-#. **Affected Installations** - describe scenarios under which circumstances
-   a TYPO3 install will be affected by this change.
-
-#. **Migration** - provide instructions what needs to be done to get things
-   working again. Explicitly mention if no migration is possible.
-
-
-.. _documenting-changelog-deprecations:
-
-Deprecations
-""""""""""""
-
-A patch deprecates a certain core functionality
-for a planned removal. See more information: :ref:`Deprecations <deprecations>`
-
-**Mandatory sections:**
-
-#. **Description** - why things had to be deprecated.
-
-#. **Impact** - how will the change affect your installation.
-
-#. **Affected Installations** - describe scenarios under which circumstances
-   an TYPO3 install will be affected by this change.
-
-#. **Migration** - provide instructions what needs to be done to get things
-   working again. Explicitly mention if no migration is possible.
-
-
-.. _documenting-changelog-features:
-
-Features
-""""""""
-
-A patch adds new functionality.
-
-**Mandatory sections:**
-
-#. **Description** - what can the new feature do.
-
-#. **Impact** - how users are affected by this new feature.
-
-
-.. _documenting-changelog-important-information:
-
-Important Information
-""""""""""""""""""""" 
-
-Anything that does not fit the other categories but is
-important enough to require a Changelog entry.
-
-#. **Description** - describe what is so important it needed an rst snippet
-
-ReST-File-Generator
-~~~~~~~~~~~~~~~~~~~
-
-.. tip::
-
-   If you want to save yourself some time you can use the rst Helper at
-   https://forger.typo3.org/utility/rst
-
-   Select the type of rst snippet you want to create, enter your issue number
-   and click the search button.
-
-When you are done, copy the generated text and create a file with the same
-name as suggested in the generator.
-
-.. _changelog-check-rst:
-
-Check your rst file
-~~~~~~~~~~~~~~~~~~~
-
-When your change is finished, you can run the following script to check that 
-your rst file is ok. The script will check all files in 
-:file:`typo3/sysext/core/Documentation/Changelog`.
-
-::
-
-   Build/Scripts/validateRstFiles.php
-
-This script will check if the .rst files contain all mandatory tags that 
-are required for the Changelog. It will **not** do a reST syntax check. 
-
-In order to make sure that your file contains no syntax errors and will 
-be rendered correctly, do one or more of the following:
-
-* Check our :ref:`format-rest-cgl` and :ref:`rest-common-pitfalls`.
-* Use an editor or IDE that properly supports reST and shows errors
-* Render the Changelog locally with docker as explained in the next section
-
-
-.. _render-the-changelog:
-
-Render the Changelog
-~~~~~~~~~~~~~~~~~~~~
-
-If you wish to render the Changelog locally, you can use docker as described 
-in :ref:`h2document:rendering-docs-quickstart`.
-
-First, change to the :file:`core` directory::
-
-   cd typo3/sysext/core/
-   source <(docker run --rm t3docs/render-documentation show-shell-commands)
-   dockrun_t3rdf makehtml
-   open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-   cd -
- 
- 
-  
-.. _documenting-system-extensions: 
- 
-Documenting system extensions
------------------------------
-
-Documentation for system extensions is maintained within a :file:`Documentation`
-directory in the respective system extension directory, e.g. 
-:file:`typo3/sysext/form/Documentation`.
-
-Not all system extensions have their own documentation. Some documentation
-(e.g. for the system extension *core*) is maintained within the :ref:`t3coreapi:start`.
-
-If in doubt, ask in the **#typo3-cms-coredev** channel on Slack.
-
-For starting a system extension from scratch, please see
-:ref:`h2document:writing-doc-for-ext-from-scratch`.
-
-For an overview of the rendered documentation for system extensions, see
-`System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.  
-
-When you have made changes to the documentation, you can render 
-locally with docker to test your changes as described in
-:ref:`render-the-changelog`.
-
-
-.. _Bugfixing-Commit-and-push:
-
-Commit and push
-===============
-
-When committing your changes decide whether you are creating *a
-completely new patch* or instead you are improving *an existing one.* You can
-change your local commit as often as you want to. Once you are happy with your
-change, push it to Gerrit.
-
-
-.. _Bugfixing-Set-a-Commit-Message:
-
-Commit Message rules for TYPO3 CMS
-----------------------------------
-
-Please make sure that you read the :ref:`commitmessage` in the Appendix. 
-Your code will not be merged if it does not follow the commit message 
-rules.    
-
-.. important::
-   The section :ref:`commitmessage` is a must-read. Read it. Follow it.
-
-For a bugfix, your commit message may look something like this:
-
-.. code-block:: none
-
-   [BUGFIX] Subject line of max 52 chars
-
-   Some descriptions with line length of max. 72 characters
-
-   Resolves: #12346
-   Releases: master, 8.7
+      Resolves: #12346
+      Releases: master, 8.7
    
+6. Commit
 
-.. _Bugfixing-Create-a-new-patch:
+   Only create one commit. Do not create a branch. Work on master.
 
-Create a new patch
-------------------
+   .. code-block:: bash
 
-To create a totally new patch you have to attach a new commit message. A commit
-message is new if it doesn't contain as `Change-Id: ...` line. The common
-command to do so is::
+      git commit -a
 
-   git commit -a
-
-The :ref:`commit-msg hook <git-setup-commit-msg-hook>` automatically generates
-the `Change-Id: ...` line and fills in a unique id.
+   The :ref:`commit-msg hook <git-setup-commit-msg-hook>` will do some sanity
+   checks and add a line starting with `Change-Id:`.
 
 
-.. _Bugfixing-Change-an-existing-patch:
+   If you have activated the :ref:`pre-commit hook <git-setup-precommithook>`
+   it will loudly complain if something does not conform to the coding guidelines.
 
-Change an existing patch
-------------------------
+   In that case, use the :ref:`cgl-fix-my-commit` script to to fix CGL issues
+   (it uses `php-cs-fixer <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`__).
 
-To improve an existing patch you have to append to the already existing commit
-message. See :ref:`lifeOfAPatch-improve-patch` for
-more information on changing an existing patch::
+   After you have created your commit, you can still make changes by
+   amending to your commit::
 
-   git commit -a --amend
+      git commit -a --amend
 
-The `--amend` option fills in the old commit message which you can then edit.
-Change whatever you like but keep the `Change-ID: ...` line.
+   .. tip::
 
-.. tip::
-
-   Keep in mind that you can commit with --amend **as often as you want,**
-   just make sure you keep the `Change-Id:` line intact.
+      Keep in mind that you can commit with --amend **as often as you want,**
+      just make sure you keep the `Change-Id:` line intact.
 
 
-.. _Bugfixing-Pushing-your-changes:
 
-Pushing your changes
---------------------
+7. Check your commit history
 
-Before you submit your patch for review, check what you are going to push:
+   Before you submit your patch for review, check what you are going to push::
 
-.. code-block:: bash
+      git log origin/master..HEAD
 
-   git log origin/<release-branch>..HEAD
+   You must only see one commit (for the basic workflow described in this guide).
 
-specifically (for *master* branch):
+8. Push to Gerrit
 
-::
+   To submit the patch to Gerrit, issue the following command::
 
-   git log origin/master..HEAD
-
-You must only see one commit (for the basic workflow described in this guide).
-
-To submit the patch to Gerrit, issue the following command:
-
-.. code-block:: bash
-
-   git push origin HEAD:refs/publish/<release-branch>
-
-specifically (for *master* branch):
-
-::
+      git push origin HEAD:refs/publish/master
 
 
-   git push origin HEAD:refs/publish/master
+   If Gerrit accepts your push, it responds with the following messages:
+
+   .. code-block:: bash
+
+      remote: New Changes:
+      remote:   https://review.typo3.org/<gerrit-id>
+      remote:
+      To ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git
+       * [new branch]      HEAD -> refs/publish/<release-branch>
+
+   You can visit the link to https://review.typo3.org to see your patch in Gerrit.
+
+   Advanced users / core team only: See
+   :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
+   for pushing to other branches.
+
+9. Use Botty on Slack and wait for reviews
+
+   Once your push to Gerrit_ goes through, you will receive a URL for your new
+   change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
+   your new change in the **#typo3-cms-coredev** channel using the command::
+
+      review:show [ReviewNumber or URL]
 
 
-Use the following for TYPO3v8 LTS::
+   Now, it's time to sit back and await feedback on your changes. The review team process
+   dozens of requests each day, so expect a succinct response that is short and to the point.
 
-   git push origin HEAD:refs/publish/TYPO3_8-7
+   You will get notified by email, if there is activity on your patch in Gerrit
+   (e.g. votes, comments, new patchsets etc.).
 
-Use the following for TYPO3v7 LTS::
-
-   git push origin HEAD:refs/publish/TYPO3_7-6
-
-
-.. important::
-   Pushing to a branch other than master only makes sense if the bug only
-   exists on that branch and does not exist on master. Backporting of a
-   fix to a branch is done by the core team member who merges the original
-   fix to the master branch.
-
-
-Long story short: In most cases, **push to master**. The rest is being taken
-care of when time is right.
-
-If Gerrit accepts your push, it responds with the following messages:
-
-.. code-block:: bash
-
-   remote: New Changes:
-   remote:   https://review.typo3.org/<gerrit-id>
-   remote:
-   To ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-    * [new branch]      HEAD -> refs/publish/<release-branch>
-
-You can visit the link to https://review.typo3.org to see your patch in Gerrit.
-
-
-.. _Bugfixing-Use-Botty-on-Slack:
-
-Use Botty on Slack
-==================
-
-Once your push to Gerrit_ goes through, you will receive a URL for your new
-change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
-your new change in the
-`#typo3-cms-coredev`
-channel using the command::
-
-   review:show [ReviewNumber or URL]
-
-
-.. _Bugfixing-Wait-for-reviews:
-
-Wait for reviews
-================
-
-It's time to sit back and await feedback on your changes. The review team process
-dozens of requests each day, so expect a succinct response that is short and to the point.
-
-You will get notified by email, if there is activity on your patch in Gerrit
-(e.g. votes, comments, new patchsets etc.).
-
-Improve your patch
-==================
 
 It is not unusual for a patch to get comments requesting changes. If that happens,
-please respond in a timely fashion. If things are unclear, ask in the `typo3-cms-coredev`
-channel on Slack. 
+please respond in a timely fashion. If things are unclear, ask in the **#typo3-cms-coredev**
+channel on https://typo3.slack.com.
 
 When you change your patch, make sure you do not add another commit. Append to 
 your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.

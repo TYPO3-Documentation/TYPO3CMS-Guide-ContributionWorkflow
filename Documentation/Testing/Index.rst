@@ -3,9 +3,9 @@
 
 .. _testing:
 
-================
-Testing the Core
-================
+=========
+Run tests
+=========
 
 For every patch that is uploaded to the Gerrit review server, a number
 of tests are run automatically using Bamboo.

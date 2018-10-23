@@ -3,9 +3,9 @@
 .. _lifeOfAPatch:
 .. _improving-a-patch:
 
-=======================================
-Handling and improving a patch (Gerrit)
-=======================================
+===================================
+Handle and improve a patch (Gerrit)
+===================================
 
 .. note::
 
@@ -39,6 +39,7 @@ automatically run on every patch (set), the results being shown as a +1 or
    :titlesonly:
 
    GerritBasics
+   CherryPick
    ChangeAPatch
    Rebase
    ResolveMergeConflicts

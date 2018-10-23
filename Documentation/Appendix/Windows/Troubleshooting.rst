@@ -26,7 +26,7 @@ If you try to push to gerrit and you keep getting the following error message
 Checklist for ssh problems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. rst-class:: bignums
+.. rst-class:: bignums-xxl
 
 1. Make sure the **public** SSH key is stored in your Gerrit Acccount
 

@@ -2,9 +2,9 @@
 
 .. _forger-index:
 
-===================
-Working with Forger
-===================
+======================
+Introduction to Forger
+======================
 
 .. sidebar:: TYPO3 Forger
 

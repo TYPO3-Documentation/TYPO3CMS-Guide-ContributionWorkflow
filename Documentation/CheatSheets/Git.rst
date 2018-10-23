@@ -13,11 +13,7 @@ git cheat sheet for Core development
    workflow yet, make sure you follow the link at the beginning of 
    each section and read the detailed description.
 
-See also these not TYPO3 specific cheat sheets for git if you are not very familiar with git:
-
-* `cheat sheet for git
-  <https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
-* `"git - the simple guide" by Roger Dudler <http://rogerdudler.github.io/git-guide/>`__
+.. _cheat-sheet-git-clone:
 
 git clone
 =========
@@ -33,11 +29,11 @@ Setup
 
 Details: :ref:`Setting-up-your-Git-environment`
 
-You can use `git config` with `--local`, `--global` or `--system` to set your configuration for: 
+You can use `git config` with:
 
-* `--system` (system): writes to git system config file, e.g. file:`/etc/gitconfig`
-* `--global` (user) : writes to git config file for user, e.g. file:`~/.gitconfig`
-* `--local` (repository) : writes to git config file for current repository, e.g. file:`.git/config`
+* `--system` (system): uses **system** config file, e.g. file:`/etc/gitconfig`
+* `--global` (user) : uses **user** config file, e.g. file:`~/.gitconfig`
+* `--local` (repository) : uses **repo** (current repository) config file, e.g. file:`.git/config`
 
 If you want a setting to be active for all your repositories, use `--global`. 
 
@@ -79,7 +75,7 @@ Push to gerrit
    git config commit.template ~/.gitmessage.txt
 
 This command uses the file ~/.gitmessage.txt as git message template. 
-For additional information about how to set up a proper gitmessage 
+For additional information about how to set up a proper commit message
 see :ref:`committemplate`
 
 Show current configuration::
@@ -129,6 +125,8 @@ Push changes to remote master on gerrit as **draft**::
    git push origin HEAD:refs/drafts/master
    
 
+.. _cheat-sheet-git-other-branches:
+
 other branches
 --------------
 
@@ -139,6 +137,17 @@ Show all branches::
 Checkout 8.7 branch::
 
    git checkout TYPO3_8-7
+
+
+.. important::
+   Pushing to a branch other than master only makes sense if the bug only
+   exists on that branch and does not exist on master. Backporting of a
+   fix to a branch is done by the core team member who merges the original
+   fix to the master branch.
+
+
+Long story short: In most cases, **push to master**. The rest is being taken
+care of when time is right.
 
 Push 8.7 branch::
 
@@ -196,3 +205,26 @@ Change author for last commit::
    git commit --amend --author "Some Name <some@email>"
 
 
+Squash last 2 commits:
+
+   This is very handy, in case you accidentally created a new commit
+   instead of adding to an existing commit (with `git commit --amend`).
+
+   * All changes have been committed or stashed
+   * Run the following command:
+
+   ::
+
+      git rebase -i HEAD~2
+
+   * In the editor, replace 'pick' with 'squash' in the line describing the latest commit
+
+
+References
+==========
+
+See also these not TYPO3 specific cheat sheets for git if you are not very familiar with git:
+
+* `cheat sheet for git
+  <https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
+* `"git - the simple guide" by Roger Dudler <http://rogerdudler.github.io/git-guide/>`__

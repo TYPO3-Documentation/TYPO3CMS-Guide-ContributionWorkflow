@@ -2,9 +2,9 @@
 
 .. _lifeOfAPatch-backport:
 
-======================================
-Backporting a change to other branches
-======================================
+===================================
+Backport a change to other branches
+===================================
 
 .. note::
 

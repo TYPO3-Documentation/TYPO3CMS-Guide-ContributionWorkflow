@@ -9,7 +9,7 @@
 Setting up Gerrit (ssh)
 =======================
 
-.. rst-class:: bignums
+.. rst-class:: bignums-xxl
 
 1. Switch to new UI in Gerrit
 

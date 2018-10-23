@@ -3,9 +3,9 @@
 .. _forge-index:
 .. _bugreporting-index:
 
-==========================
-Reporting an issue (Forge)
-==========================
+=======================
+Report an issue (Forge)
+=======================
 
 .. _forge-introduction:
 
@@ -66,6 +66,8 @@ Talk to the core team
    channel. (Remember to `register <https://forger.typo3.com/slack>`__
    first.)
 
+
+.. _create-an-issue:
 
 Create an issue
 ===============

@@ -2,9 +2,9 @@
 
 .. _lifeOfAPatch-Reverting-Patches:
 
-=================
-Reverting patches
-=================
+==============
+Revert patches
+==============
 
 .. note::
 
