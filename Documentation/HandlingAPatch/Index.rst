@@ -40,6 +40,8 @@ automatically run on every patch (set), the results being shown as a +1 or
 
    GerritBasics
    ChangeAPatch
+   Rebase
+   ResolveMergeConflicts
    Review
    Backporting
    Revert
