@@ -15,7 +15,8 @@ git cheat sheet for Core development
 
 See also this general `cheat sheet for git 
 <https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
-if you are not very familiar with git. 
+if you are not very familiar with git. There, you can lookup some common
+commands like `git log`, `git status`, `git diff` etc. 
 
 git clone
 =========
@@ -31,15 +32,30 @@ Setup
 
 Details: :ref:`Setting-up-your-Git-environment`
 
+You can use `git config` with `--local`, `--global` or `--system` to set your configuration for: 
+
+* `--system` (system): writes to git system config file, e.g. file:`/etc/gitconfig`
+* `--global` (user) : writes to git config file for user, e.g. file:`~/.gitconfig`
+* `--local` (repository) : writes to git config file for current repository, e.g. file:`.git/config`
+
+If you want a setting to be active for all your repositories, use `--global`. 
+
+`--local` is the default. 
+
 .. attention::
 
    The following commands assume you are in the working directory of the TYPO3
-   core repository.
+   core repository. 
 
-Set username and email in repository configuration (implicit --local)::
+Set username and email in repository configuration (`--local`)::
 
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
+
+If your username and email is the same for all your projects, set it globally::
+
+   git config --global user.name "Your Name"
+   git config --global user.email "your-email@example.com"
 
 Set autosetuprebase::
 
@@ -57,13 +73,18 @@ Push to gerrit
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
-Optional: Set a commit message template::
+*Optional*: Set a commit message template::
 
    git config commit.template ~/.gitmessage.txt
 
 This command uses the file ~/.gitmessage.txt as git message template. 
 For additional information about how to set up a proper gitmessage 
 see :ref:`committemplate`
+
+Show current configuration::
+
+  git config -l
+
 
 Workflow - common commands
 ==========================
@@ -78,7 +99,7 @@ Stage and commit all changes::
 
    git commit -a
 
-or::
+Is the same as::
 
    git add .
    git commit
@@ -90,6 +111,7 @@ Stage and commit all changes to already existing commit::
 Push changes to remote master on gerrit (default method)::
 
    git push origin HEAD:refs/publish/master
+   
 
 Workflow - special commands
 ===========================
@@ -171,3 +193,5 @@ Unstage a file (remove file from index, but keep in working dir)::
 Change author for last commit::
 
    git commit --amend --author "Some Name <some@email>"
+
+
