@@ -9,10 +9,10 @@ Introduction
 This guide provides all necessary information to enable you to contribute to the TYPO3 
 source code. 
 
-The main focus is adding patches (to fix bugs or add new features) to the TYPO3 source 
+The main focus is submitting patches (to fix bugs or add new features) to the TYPO3 source 
 code, but you will also find information for :ref:`writing bug reports <bugreporting-index>`, 
 :ref:`adding documentation <Adding-documentation>`, :ref:`running tests <testing>`, 
-:ref:`reviewing and testing patches <ifeOfAPatch>` etc.
+:ref:`reviewing and testing patches <lifeOfAPatch>` etc.
 
 How this guide is structured
 ============================
