@@ -45,6 +45,9 @@ Step by step walkthrough
    medieval times of PHP4. Yes, TYPO3 has been around for quite some time now. And
    there is ancient code we didn't have to touch yet because it just works.
 
+   Make sure to look at :ref:`deprecations` in the Appendix for information
+   about to deprecate things if you need to make changes to the public API.
+
 2. Add tests
 
    Add Unit Tests or Functional Tests for new functionality, refine existing tests
