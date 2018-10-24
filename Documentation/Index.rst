@@ -17,6 +17,7 @@ TYPO3 Contribution Guide - Core Development
 - :ref:`git cheat sheet <cheat-sheet-git>`
 - :ref:`Commit message rules <commitmessage>`
 - :ref:`quickstart-create-a-patch`
+- :ref:`whats_new_in_this_guide`
 
 **About this manual:**
 

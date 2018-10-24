@@ -10,6 +10,4 @@ Life of a patch
 ===============
 
 
-.. rst-class:: horizbuttons-tip-xxl
-
-- :ref:`This chapter has moved <lifeOfAPatch>`
+This chapter has moved to :ref:`lifeOfAPatch`

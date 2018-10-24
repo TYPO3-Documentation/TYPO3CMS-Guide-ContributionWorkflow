@@ -123,10 +123,10 @@ show you:
 In that case, you will need to resolve the conflicts in
 some way.
 
-See next section :ref:`resolve-merge-conflicts` for more information about
+See next section :ref:`how-to-resolve-merge-conflicts` for more information about
 resolving merge conflicts.
 
-.. _resolve-merge-conflicts:
+.. _how-to-resolve-merge-conflicts:
 
 How to resolve conflicts?
 =========================
