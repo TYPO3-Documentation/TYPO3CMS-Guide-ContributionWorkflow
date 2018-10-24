@@ -8,7 +8,7 @@ Coding Guidelines
 =================
 
 More information is found in the :ref:`Coding Guidelines <t3coreapi:cgl>`
-section of the Core API.
+section of the "TYPO3 Explained" manual (formerly known as "Core API").
 
 This is just a very brief overview.
 
