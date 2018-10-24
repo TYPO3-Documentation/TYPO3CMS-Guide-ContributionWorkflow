@@ -42,10 +42,6 @@ This chapter handles improving an existing patch.
 5. Push your change to Gerrit
 
    Once you are satisfied, push your improved Patch Set to Gerrit::
-
-      git push origin HEAD:refs/publish/<release-branch>
-
-   where <release-branch> has to be replaced with the target branch as shown in Gerrit.
-   If you're currently working on the master-branch this must be `refs/publish/master`::
+     
 
       git push origin HEAD:refs/publish/master
