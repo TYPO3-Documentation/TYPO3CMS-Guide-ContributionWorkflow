@@ -86,7 +86,7 @@ Show current configuration::
 Workflow - common commands
 ==========================
 
-For details see :ref:`Bugfixing-Commit-and-push`
+For details see :ref:`Fixing-a-bug-A-Z`
 
 Reset repo to last remote commit in (remote) master::
 
@@ -110,25 +110,22 @@ Push changes to remote master on gerrit (default method)::
    git push origin HEAD:refs/publish/master
    
 
-Workflow - special commands
-===========================
+Workflow - drafts
+=================
 
-push as draft
--------------
+Push changes to remote master on gerrit as **draft**::
+
+   git push origin HEAD:refs/drafts/master
+
 
 *When pushing as draft, the pushed patch will only be visible to you 
 and those who you add as a reviewer. It also does not start any 
 automated tests or builds on the TYPO3 testing infrastructure.*
 
-Push changes to remote master on gerrit as **draft**::
-
-   git push origin HEAD:refs/drafts/master
-   
-
 .. _cheat-sheet-git-other-branches:
 
-other branches
---------------
+Workflow -other branches
+========================
 
 Show all branches::
 
