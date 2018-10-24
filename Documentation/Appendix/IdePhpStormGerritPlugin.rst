@@ -2,9 +2,9 @@
 
 .. _phpstorm-gerritplugin:
 
-==========================
-Gerrit Plugin for PHPStorm
-==========================
+=======================
+PhpStorm: Gerrit Plugin
+=======================
 
 There is a very handy plugin for PHPStorm which will get Gerrit_ into the IDE PHPStorm.
 

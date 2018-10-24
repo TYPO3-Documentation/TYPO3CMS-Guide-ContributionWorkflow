@@ -4,9 +4,9 @@
 .. _phpstorm-setup:
 
 
-===================
-Setting up PhpStorm
-===================
+===============
+PhpStorm: Setup
+===============
 
 Here are some hints and examples, what you can do to setup PhpStorm.
 
