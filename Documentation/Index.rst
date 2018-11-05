@@ -60,8 +60,7 @@ TYPO3 Contribution Guide - Core Development
    Account/Index
    Setup/Index
    Forger/Index
-   DividerTasks
-   Quickstart/Index
+   DividerTasks   
    ReportingAnIssue/Index
    BugfixingAZ/Index
    AddingDocumentation/Index
@@ -71,5 +70,6 @@ TYPO3 Contribution Guide - Core Development
    HandlingIssues/TicketWorkflow
    DividerQuickRef
    CheatSheets/Index
+   Quickstart/Index
    Appendix/Index
    Sitemap/Index
