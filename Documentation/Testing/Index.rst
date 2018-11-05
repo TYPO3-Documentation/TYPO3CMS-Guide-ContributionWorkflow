@@ -147,3 +147,10 @@ standard exit codes:
 
 Reports of the acceptance tests will be stored in
 :file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the browser.
+
+
+More information
+================
+
+More details about the test system, test strategies, execution and set up can
+be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
