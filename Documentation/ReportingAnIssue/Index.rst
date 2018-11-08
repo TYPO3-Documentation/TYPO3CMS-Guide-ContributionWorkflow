@@ -197,7 +197,7 @@ lot.
 
 .. _hints-for-formatting-in-readmine:
 
-Hints for Formatting in Redmine
+Hints for formatting in Redmine
 ===============================
 
 Redmine offers quite a few text formatting options: use them to make
