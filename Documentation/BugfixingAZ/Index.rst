@@ -54,22 +54,16 @@ Step by step walkthrough
    if necessary. Tests are important because they ensure that
    TYPO3 will behave consistently now and in the future.
 
-3. Run tests
-
-   It is a good idea to test the TYPO3 core with your fix to be sure that the
-   automatic tests, that are running on bamboo after you have pushed a patch to
-   the Gerrit review system, will not fail.
+3. Optional: Run tests
 
    See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
-
-   If no test fails it is safe to push your fix to Gerrit.
 
 4. Add documentation
 
    For new features, breaking changes and deprecations, it is necessary to :ref:`add
    information to the changelog <changelog>`.
 
-5. Absorb the commit message rules
+5. Use the commit message rules
 
    Please make sure that you read the :ref:`commitmessage` in the Appendix.
    Your code will not be merged if it does not follow the commit message
@@ -117,9 +111,7 @@ Step by step walkthrough
       Keep in mind that you can commit with --amend **as often as you want,**
       just make sure you keep the `Change-Id:` line intact.
 
-
-
-7. Check your commit history
+7. Optional: Check your commit history
 
    Before you submit your patch for review, check what you are going to push::
 
@@ -150,7 +142,7 @@ Step by step walkthrough
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
    for pushing to other branches.
 
-9. Use Botty on Slack and wait for reviews
+9. Optional: Use Botty on Slack and wait for reviews
 
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
@@ -158,17 +150,19 @@ Step by step walkthrough
 
       review:show [ReviewNumber or URL]
 
-
+   This is not something, you will do for every review. As a first contributor
+   it is recommended to mention that you are new to the process. 
+   
    Now, it's time to sit back and await feedback on your changes. The review team process
    dozens of requests each day, so expect a succinct response that is short and to the point.
 
    You will get notified by email, if there is activity on your patch in Gerrit
-   (e.g. votes, comments, new patchsets etc.).
+   (e.g. votes, comments, new patchsets, merge etc.).
 
 
 It is not unusual for a patch to get comments requesting changes. If that happens,
-please respond in a timely fashion. If things are unclear, ask in the **#typo3-cms-coredev**
-channel on https://typo3.slack.com.
+please respond in a timely fashion and improve your review. If things are unclear, 
+ask in the **#typo3-cms-coredev** channel on https://typo3.slack.com.
 
 When you change your patch, make sure you do not add another commit. Append to 
 your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.
