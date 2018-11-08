@@ -22,7 +22,7 @@ This chapter handles improving an existing patch.
 
 2. Edit files to improve the patch
 
-3. Test your changes
+3. Optional: Test your changes
 
    Run the TYPO3 testsuite locally, as described under :ref:`testing`.
 
