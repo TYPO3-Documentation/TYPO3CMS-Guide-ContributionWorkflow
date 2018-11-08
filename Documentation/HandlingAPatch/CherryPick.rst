@@ -13,22 +13,24 @@ to cherry-pick it from the review-system into your local git repository.
 
 .. rst-class:: bignums-xxl
 
-1. Find the review on Gerrit, see :ref:`Find-a-review`
+1. Find the review on Gerrit
+
+   see :ref:`Find-a-review`
 
 2. Select the latest patchset and click download
 
    .. image:: _assets/gerrit-go-to-latest-patchset.png
-   :class: with-shadow
+      :class: with-shadow
 
    .. image:: _assets/gerrit-download.png
-   :class: with-shadow
+      :class: with-shadow
 
 3. Click on copy next to the line for "Cherry pick"
 
    This copies the command to the clipboard.
 
    .. image:: _assets/gerrit-cherry-pick.png
-   :class: with-shadow
+      :class: with-shadow
 
 4. Clean up your local repository
 
