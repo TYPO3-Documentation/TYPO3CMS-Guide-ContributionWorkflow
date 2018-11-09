@@ -306,5 +306,5 @@ descriptive anchor text.
 Additional Resources
 ====================
 
-* `Redmine Info <https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile`__
+* `Redmine Info <https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile>`__
 * `Symfony : Tips for reporting a bug <https://symfony.com/doc/current/contributing/code/bugs.html>`__
