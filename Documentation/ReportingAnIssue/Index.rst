@@ -131,9 +131,6 @@ Format your issue
 Be polite.
    Always.
 
-See :ref:`best-practices-bug-report` for additional hints on what should be in
-the description of a bug report.
-
 Category
 --------
 
