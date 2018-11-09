@@ -1,14 +1,12 @@
 .. include:: ../Includes.txt
 
-=============
-Gerrit Basics
-=============
-
 
 .. _Working-with-Gerrit:
 
+======================
 Introduction to Gerrit
 ======================
+
 
 .. This text has been moved from Gerrit/Index.rst
 
@@ -21,7 +19,7 @@ Gerrit handles the review process and is a gatekeeper in front of the official T
 .. _Gerrit-Overview-of-the-UI:
 
 Overview of the UI
-------------------
+==================
 
 This chapter will explain the most important parts of the Gerrit_ UI to you.
 
@@ -45,7 +43,7 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 #. The **Reply Button** which you will use to vote on code quality and testing as well as to send comments. We will be
    covering this button in more detail later.
 
-#. The **Download Button**. You will be using this control to cherry pick a change in order to test it later.
+#. The **Download Button**. You will be using this control to :ref:`cherry pick a change <cherry-pick-a-patch>`.
 
 #. Other changes **related** to this change. This can be either due to a similar topic or because the commit summary is
    related to the change we are currently reviewing.
@@ -59,25 +57,5 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 #. The **history** of this change. Here you can see comments, new patch sets, votes on a change etc.
 
 
-.. _Find-a-review:
 
-Finding a review on Gerrit
-==========================
-
-For finding an existing review (patch), there are several possibilities:
-
-* If you are in any way involved in the review (e.g. you are author,
-  reviewer or you made changes), you will get a notification about
-  it to your email adress. The notification contains a link
-* Once a patch has been pushed for an issue, the corresponding issue
-  on `Forge <https://forge.typo3.org>`__ will contain comments with the
-  topic "Updated by Gerrit Code Review ..."
-  and a link to the review on Gerrit.
-* In any case, you can use `Forger <https://forger.typo3.org>`__ to
-  search for the review, for example use the `Forger Gerrit Overview
-  <https://forger.typo3.com/gerrit/status>`__ to filter for reviews
-  or the `Review board bugfixes
-  <https://forger.typo3.com/sprint/reviews?&boardId=bugfix>`__ to get
-  an overview of all open patches for bugs.
-* Or use the search box on `Gerrit <https://review.typo3.org>`__
 

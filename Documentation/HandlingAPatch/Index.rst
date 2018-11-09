@@ -39,6 +39,7 @@ automatically run on every patch (set), the results being shown as a +1 or
    :titlesonly:
 
    GerritBasics
+   FindAReview
    CherryPick
    CleanupTypo3
    ChangeAPatch
