@@ -22,8 +22,6 @@ When you want to report a bug or suggest a new feature, you need to go to the
 `"Issues" section for the TYPO3 Core
 <https://forge.typo3.org/projects/typo3cms-core/issues>`__.
 
-
-
 Searching for existing issues
 =============================
 
@@ -72,8 +70,8 @@ Talk to the core team
 Create an issue
 ===============
 
-:ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already). You can find the
-TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/.
+:ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already). 
+You can find the TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/.
 
 If you click "New issue" you will see a form with a couple of fields
 that are important. Let's go over these really quick.
@@ -111,18 +109,24 @@ Good example:
 Description
 -----------
 
-Provide steps how to reproduce the problem; speaking in a general way, always
-keep in mind these points when writing your issue report:
+For bugs, provide steps how to reproduce the problem. See :ref:`best-practices-bug-report`
+for some extra hints on what should go in the description. 
+
+Be sure to add images, code snippets and or stacktraces if they help to refine
+the problem description. See :ref:`create-issue-files` for hints on adding files. 
+
+Always keep in mind these points when writing your issue report:
 
 Be detailed in describing your problem
    The more detail you add, the higher are the chances that we understand your
-   problem. Add screenshots or add a stacktrace can also be a great help.
+   problem. 
 Be concise and clear
-   No one will judge you for your literary skills; we need to understand quickly
+   No one will judge you for your literary skills. We need to understand quickly
    where the problem lies.
-Well format your issue
-   Using formatted example code helps readability; also don't use very long
-   sentences; instead use bullet points. See the section
+Format your issue
+   Formatting your report helps readability. For longer text, use headers (h1, h2)
+   to structure it. Use highlighted code (<>) for code snippets. Don't use very long
+   sentences, instead use bullet points. See the section
    :ref:`hints-for-formatting-in-readmine` for more information on formatting your text.
 Be polite.
    Always.
@@ -135,15 +139,40 @@ Category
 
 Choose a category that fits your issue.
 
-TYPO3 version
+TYPO3 version 
 -------------
+
+(for bugs only)
 
 Choose the TYPO3 version, where the error occurs.
 
-PHP Version
+PHP Version 
 -----------
 
+(for bugs only)
+
 Choose the PHP version, where the error occurs. If in doubt, leave this blank.
+Usually, it is enough to supply the TYPO3 version. 
+
+.. _create-issue-files:
+
+(optional) Files
+----------------
+
+You can additionally uploads files if they help to understand and reproduce the 
+problem. 
+
+Some hints for files:
+
+* Do not copy-paste huge **stack dumps** into the description. Cut out the relevant parts
+  for the description and add the complete stack dump as extra file. 
+* **Images** can be a huge help in understanding the problem. Do not insert complete 
+  screen dumps but clip the image to the relevant parts. If it helps, add boxes or
+  arrows to highlight important things in the image. Use 
+  :ref:`Redmine formatting for inline images <redmine-images>`
+* If a **video** is even better in understanding a bug, try to create a short (!) 
+  video that clarifies your issue. For example, use an animated gif screen capture 
+  tool to create an animated gif.
 
 
 
@@ -152,15 +181,27 @@ Choose the PHP version, where the error occurs. If in doubt, leave this blank.
 Best practices for writing a good bug report
 ============================================
 
-A good bug report should contain all or at least most of these elements:
+It is **not** necessary to add **all** available information to your bug report. 
+It is important to provide **the specific information that is necessary** to be
+able to **understand**, **reproduce** and **fix** the bug. 
+
+Use your common sense and your experience to guide you: What would you need if you
+wanted to find the bug in the code and fix it? What do you need if you want to 
+reproduce it to debug it or test if the patch solves the problem? 
+
+A good bug report should contain all or any of these elements:
 
 #. Prerequisites:
 
    Here you can add:
 
-      + A brief description of your environment, including the operating system
+      + A brief description of your environment. Depending on the nature of 
+        the bug it *might* inclde your operating system
         (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
         used, the database used (mySql, SQLServer, ...) and its version.
+        In any case, the full version of TYPO3 (e.g. 9.5.1) is very helpful. If
+        your bug is reproducible on several versions (e.g. 10.1.0 and 9.5.1), 
+        that is helpful as well.
       + A description of the TYPO3 setup that you are using or that is necessary
         to trigger the bug. Your issue came out using TYPO3 with multiple
         languages? Or when you have more than two frontend groups? You have to
@@ -190,12 +231,18 @@ A good bug report should contain all or at least most of these elements:
    Additional information like special conditions or other details not reported
    on the previous points.
 
-Please consider that these guidelines are very generic; not always all these parts are
-always necessary, but having as much information as possible really could help a
-lot.
+Please consider that these guidelines are very generic. Not always all these parts are
+necessary, but having the necessary information could help a lot to reproduce and fix
+the bug. 
+
+.. tip::
+
+   Use redmine formatting to structure your bug report and make it more readable, for
+   example use headlines (h1, h2) to structure the parts, hightlighted code (<>) for
+   code snippets, code for inline images (!image!). 
 
 
-.. _hints-for-formatting-in-readmine:
+.. _formatting-in-redmine:
 
 Hints for formatting in Redmine
 ===============================
@@ -207,6 +254,8 @@ able to reproduce the problem and help with fixing, testing and
 merging patches. During the life cycle of a bug report and patch,
 several people will be reading your report. High readability and
 clarity makes things easier for everyone and saves time.
+
+.. _redmine-images:
 
 Images
 ------
@@ -255,4 +304,10 @@ descriptive anchor text.
 
 **See:**
 
-* `Redmine Info <https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile#External-links>`__
+* `Redmine Info: External links <https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile#External-links>`__
+
+Additional Resources
+====================
+
+* `Redmine Info <https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile`__
+* `Symfony : Tips for reporting a bug <https://symfony.com/doc/current/contributing/code/bugs.html>`__
