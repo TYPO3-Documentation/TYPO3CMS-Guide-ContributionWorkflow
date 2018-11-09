@@ -40,6 +40,7 @@ automatically run on every patch (set), the results being shown as a +1 or
 
    GerritBasics
    CherryPick
+   CleanupTypo3
    ChangeAPatch
    Rebase
    ResolveMergeConflicts

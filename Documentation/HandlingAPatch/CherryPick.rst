@@ -1,7 +1,9 @@
 .. include:: ../Includes.txt
 
+.. highlight:: bash
+
 .. _cherry-pick-a-patch:
-.. _Gerrit-Reset-to-a-clean-state:
+
 
 ===================
 Cherry-pick a patch
@@ -9,6 +11,13 @@ Cherry-pick a patch
 
 In order to test a patch or make additional changes on it, you will need
 to cherry-pick it from the review-system into your local git repository.
+
+
+.. important::
+
+   Make sure to always get the latest patch set of the current review. You can check this by looking at the **Patch Sets**
+   menu left of the **Download Button**. The left and right numbers should always be the same, so you know you picked the
+   latest patch set. You can also click on **Go to latest patch set**.
 
 
 .. rst-class:: bignums-xxl
@@ -41,11 +50,12 @@ to cherry-pick it from the review-system into your local git repository.
 
 5. Execute the command (git cherry-pick)
 
-   In your shell, paste the copied command and execute it.
+   In your shell, paste the copied command and execute it. Example::
 
-.. important::
+      git fetch https://review.typo3.org/Packages/TYPO3.CMS refs/changes/47/56947/11 && git cherry-pick FETCH_HEAD
 
-   Make sure to always get the latest patch set of the current review. You can check this by looking at the **Patch Sets**
-   menu left of the **Download Button**. The left and right numbers should always be the same, so you know you picked the
-   latest patch set. You can also click on **Go to latest patch set**.
+6. Cleanup your TYPO3 installation
+
+   Depending on the changes made by the patch, you may have to apply some changes
+   to your TYPO3 installation: see :ref:`cleanup-typo3`.
 
