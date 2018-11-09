@@ -127,7 +127,7 @@ Format your issue
    Formatting your report helps readability. For longer text, use headers (h1, h2)
    to structure it. Use highlighted code (<>) for code snippets. Don't use very long
    sentences, instead use bullet points. See the section
-   :ref:`hints-for-formatting-in-readmine` for more information on formatting your text.
+   :ref:`formatting-in-redmine` for more information on formatting your text.
 Be polite.
    Always.
 
