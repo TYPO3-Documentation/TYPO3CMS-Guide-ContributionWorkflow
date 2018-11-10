@@ -31,7 +31,12 @@ need an entry in the Changelog. Check the list below. Also see the current
 `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
 for some examples.
 
-ReST-File-Generator
+Every file may optionally contain tags, but it must contain at least a
+NotScanned, PartiallyScanned or FullyScanned tag for the extension scanner.
+See :ref:`t3coreapi:connection-to-changelog-rst-files` in TYPO3 Explained.
+If you use the Forger reST File Generator, it will take care of this.
+
+reST File Generator
 -------------------
 
 .. tip::
@@ -39,8 +44,11 @@ ReST-File-Generator
    If you want to save yourself some time you can use the rst Helper at
    https://forger.typo3.org/utility/rst
 
-   Select the type of rst snippet you want to create, enter your issue number
-   and click the search button.
+This is strongly recommended because the tool will generate correctly
+formatted files. You can always add more to the .rst file directly later.
+
+Select the type of rst snippet you want to create, enter your issue number
+and click the search button. Select appropriate tags.
 
 When you are done, copy the generated text and create a file with the same
 name as suggested in the generator.
