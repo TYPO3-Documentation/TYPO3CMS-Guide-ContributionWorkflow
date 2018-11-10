@@ -45,13 +45,13 @@ automatically runs docker using an image which corresponds to the environment
 you provide with the command line arguments.
 
 
-Run tests with runtTests.sh using docker
-========================================
+Run tests with runTests.sh using docker
+=======================================
 
 .. _testing-install-docker:
 
 Prerequisites
--------------<
+-------------
 
 You might want to run the script with the -h option to get up-to-date
 information about system requirements::
@@ -76,19 +76,31 @@ of master (as described in :ref:`setup`).
    time will take some time, because all necessary prerequisites for the docker images
    need to be fetched. The next runs should be faster.
 
-**Show help**::
+Show help
+~~~~~~~~~
+
+.. code-block::
 
    ./Build/Scripts/runTests.sh -h
 
-**Run all unit tests**::
+Run all unit tests
+~~~~~~~~~~~~~~~~~~
 
-   ./Build/Scripts/runTests.sh
+.. code-block:: bash
 
-**Run unit tests with xdebug (uses default port 9000)**::
+   Build/Scripts/runTests.sh
+
+Run unit tests with xdebug (uses default port 9000)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
 
    ./Build/Scripts/runTests.sh -x
    
-**Run specific unit tests with xdebug**::
+Run specific unit tests with xdebug
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
 
    Build/Scripts/runTests.sh -x <directory or file>
 
@@ -96,24 +108,30 @@ Example::
 
    Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/   
 
-**Run functional tests**::
+Run functional tests
+~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
 
    ./Build/Scripts/runTests.sh -s functional
 
-**Run functional tests with PostgreSQL**::
+Run functional tests with PostgreSQL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
 
    ./Build/Scripts/runTests.sh -s functional -d postgres
 
-**Run acceptance tests**::
+Run acceptance tests
+~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
 
    ./Build/Scripts/runTests.sh -s acceptance
 
 Depending on the power of your local machine you can expect about 30 minutes
 or more for the acceptance tests.
 
-**See help for more options**::
-
-   ./Build/Scripts/runTests.sh -h
 
 Additional hints
 ----------------
@@ -185,14 +203,14 @@ Examples:
 Run all unit tests
 ------------------
 
-.. code-block::
+.. code-block:: bash
 
    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
 
 Run specific unit tests
 -----------------------
 
-.. code-block::
+.. code-block:: bash
 
    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml <directory or file>
 
@@ -204,7 +222,7 @@ Example::
 Run all functional tests
 ------------------------
 
-.. code-block::
+.. code-block:: bash
 
   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
 
@@ -237,5 +255,5 @@ More information
   be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
 * :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
 * external: `Serious software testing: TYPO3 runs its 20,000th build!
-   <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__ for more information
+  <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__ for more information
   on how the automatic tests are run with Bamboo for every patchset that is uploaded for the core

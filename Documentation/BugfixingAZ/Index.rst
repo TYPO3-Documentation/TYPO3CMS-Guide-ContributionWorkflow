@@ -174,10 +174,10 @@ your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.
 Helpful links
 =============
 
-* `Gerrit <https://review.typo3.org>` Review server
-* `Forge <https://forge.typo3.org>` Issue tracker
-* `Forger <https://forger.typo3.org>` Search for reviews and issues
-* `Slack <https://slack.typo3.org>` chat system
+* `Gerrit <https://review.typo3.org>`__ Review server
+* `Forge <https://forge.typo3.org>`__ Issue tracker
+* `Forger <https://forger.typo3.org>`__ Search for reviews and issues
+* `Slack <https://slack.typo3.org>`__ chat system
 
 More information
 ================
