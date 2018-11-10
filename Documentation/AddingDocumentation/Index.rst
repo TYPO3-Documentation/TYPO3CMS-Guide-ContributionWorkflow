@@ -3,9 +3,9 @@
 .. _Bugfixing-Adding-documentation:
 .. _Adding-documentation:
 
-=================
-Add documentation
-=================
+==================================
+Add documentation (Changelog etc.)
+==================================
 
 .. rst-class:: horizbuttons-primary-m
 
