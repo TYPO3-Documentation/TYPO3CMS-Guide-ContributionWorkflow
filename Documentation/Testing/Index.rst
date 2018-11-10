@@ -87,6 +87,14 @@ of master (as described in :ref:`setup`).
 **Run unit tests with xdebug (uses default port 9000)**::
 
    ./Build/Scripts/runTests.sh -x
+   
+**Run specific unit tests with xdebug**::
+
+   Build/Scripts/runTests.sh -x <directory or file>
+
+Example::
+
+   Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/   
 
 **Run functional tests**::
 
