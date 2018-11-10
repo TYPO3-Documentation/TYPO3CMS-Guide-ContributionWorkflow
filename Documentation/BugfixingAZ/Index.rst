@@ -7,6 +7,17 @@
 Create & submit a patch
 =======================
 
+**Quick links:**
+
+.. rst-class:: horizbuttons-primary-m
+
+- :ref:`git setup <Setting-up-your-Git-environment>`
+- :ref:`git cheat sheet <cheat-sheet-git>`
+- :ref:`Commit Message rules <commitmessage>`
+- :ref:`Deprecations <deprecations>`
+- :ref:`Testing <testing>`
+- :ref:`Adding-documentation`
+
 So you want to fix a bug or add a new feature to TYPO3? **Great!**
 
 This chapter will guide you through the process step by step. If you
@@ -182,10 +193,6 @@ Helpful links
 More information
 ================
 
-* :ref:`commitmessage` in this guide
-* :ref:`deprecations` in this guide
-* :ref:`Testing the core <testing>` in this guide
-* :ref:`t3coreapi:testing` in TYPO3 explained for more in-depth discussion of testing the core
 * :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
 * :ref:`improving-a-patch` in this guide for next steps in improving your patch or reviewing other patches
 

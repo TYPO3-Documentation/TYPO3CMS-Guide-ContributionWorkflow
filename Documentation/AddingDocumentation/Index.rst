@@ -7,6 +7,8 @@
 Add documentation (Changelog etc.)
 ==================================
 
+**Quick links:**
+
 .. rst-class:: horizbuttons-primary-m
 
 - :ref:`h2document:Formatting-with-reST`
