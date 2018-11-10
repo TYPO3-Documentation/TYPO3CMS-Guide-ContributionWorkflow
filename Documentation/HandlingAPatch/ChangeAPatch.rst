@@ -22,11 +22,18 @@ This chapter handles improving an existing patch.
 
 2. Edit files to improve the patch
 
-3. Optional: Test your changes
+3. Add tests (recommended)
+
+   If you add functionality, it is a good idea to add tests.
+
+   See :ref:`t3coreapi:testing-writing-unit` in TYPO3 Explained for more information
+   about writing Unit Tests.
+
+4. Test your changes (optional)
 
    Run the TYPO3 testsuite locally, as described under :ref:`testing`.
 
-4. Add files and amend to commit
+5. Add files and amend to commit
 
    Update the change by **amending** the previous commit. This will overwrite
    the commit you fetched from Gerrit with your changes::
@@ -39,7 +46,7 @@ This chapter handles improving an existing patch.
 
    You can amend as often as you want.
 
-5. Push your change to Gerrit
+6. Push your change to Gerrit
 
    Once you are satisfied, push your improved Patch Set to Gerrit::
      
