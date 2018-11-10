@@ -54,6 +54,9 @@ Step by step walkthrough
    if necessary. Tests are important because they ensure that
    TYPO3 will behave consistently now and in the future.
 
+   See :ref:`t3coreapi:testing-writing-unit` in TYPO3 Explained for more information
+   about writing Unit Tests.
+
 3. Optional: Run tests
 
    See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
@@ -167,4 +170,22 @@ ask in the **#typo3-cms-coredev** channel on https://typo3.slack.com.
 When you change your patch, make sure you do not add another commit. Append to 
 your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.
 
+
+Helpful links
+=============
+
+* `Gerrit <https://review.typo3.org>` Review server
+* `Forge <https://forge.typo3.org>` Issue tracker
+* `Forger <https://forger.typo3.org>` Search for reviews and issues
+* `Slack <https://slack.typo3.org>` chat system
+
+More information
+================
+
+* :ref:`commitmessage` in this guide
+* :ref:`deprecations` in this guide
+* :ref:`Testing the core <testing>` in this guide
+* :ref:`t3coreapi:testing` in TYPO3 explained for more in-depth discussion of testing the core
+* :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
+* :ref:`improving-a-patch` in this guide for next steps in improving your patch or reviewing other patches
 

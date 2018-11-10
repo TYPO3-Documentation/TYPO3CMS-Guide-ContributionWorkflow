@@ -17,7 +17,7 @@ of tests are run automatically using Bamboo.
    `Serious software testing: TYPO3 runs its 20,000th build!
    <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__
 
-You can run these tests locally with docker using the same setup Bamboo uses.
+You can run these tests locally with docker using a similar setup.
 
 Practical considerations
 ========================
@@ -44,10 +44,14 @@ in different environments (PHP version, database engine, ...). The script
 automatically runs docker using an image which corresponds to the environment
 you provide with the command line arguments.
 
+
+Run tests with runtTests.sh using docker
+========================================
+
 .. _testing-install-docker:
 
 Prerequisites
--------------
+-------------<
 
 You might want to run the script with the -h option to get up-to-date
 information about system requirements::
@@ -148,9 +152,82 @@ standard exit codes:
 Reports of the acceptance tests will be stored in
 :file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the browser.
 
+Run tests directly without docker
+=================================
+
+If you have problems with docker, you can run some of the lowlevel scripts and
+commands directly. However it does depend on your system, whether they run
+successfully. The docker / runTests.sh method gives us the possibility to have
+a controlled environment where the tests run in. That also means, the databases
+that the functional tests require are already created automatically. That is not
+the case, if you run the tests locally on your current system.
+
+That being said, running the tests directly is not being officially supported,
+but you can try this out yourself.
+
+You can look in the source of Build/Scripts/runTests.sh or rather in
+Build/testing-docker/local/docker-compose.yml to see which commands the runTests.sh
+script calls and run these directly. Not everything will work, because there may
+be dependencies, that are only available in the docker container.
+
+Also, you can run some of the scripts in Build/Scripts directly.
+
+Examples:
+
+Run all unit tests
+------------------
+
+.. code-block::
+
+   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
+
+Run specific unit tests
+-----------------------
+
+.. code-block::
+
+   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml <directory or file>
+
+Example::
+
+   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml typo3/sysext/core/Tests/Unit/LinkHandling/
+
+
+Run all functional tests
+------------------------
+
+.. code-block::
+
+  bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
+
+Check for Coding Guidelines
+---------------------------
+
+The cgl checking commands / scripts not only check, they repair as well!
+
+You can use the already mentioned script cglFixMyCommit::
+
+Mac / Linus::
+
+   Build/Scripts/cglFixMyCommit.sh
+
+Windows::
+
+   Build/Scripts/cglFixMyCommit.sh
+
+
+.. important::
+
+   Remember, cglFixMyCommit only checks files in latest commit, so you must have
+   committed already. Commit again with --amend after you checked things and repaired
+   the file, or call cglFixMyCommit.sh -h for alternatives.
 
 More information
 ================
 
-More details about the test system, test strategies, execution and set up can
-be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
+* More details about the test system, test strategies, execution and set up can
+  be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
+* :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
+* external: `Serious software testing: TYPO3 runs its 20,000th build!
+   <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__ for more information
+  on how the automatic tests are run with Bamboo for every patchset that is uploaded for the core
