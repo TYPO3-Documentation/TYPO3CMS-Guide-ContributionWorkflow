@@ -26,14 +26,21 @@ TYPO3 Contribution Guide - Core Development
 
    This manual contains information that you need in order to:
 
-   * :ref:`create and submit a patch <TYPO3-Guide-ContributionWorkflow-Account>`
+   * :ref:`create and submit a patch <Fixing-a-bug-A-Z>`
      for the TYPO3 CMS source code
-   * :ref:`submit an issue <bugreporting-index>` (bug reports and
+   * :ref:`report an issue <bugreporting-index>` (bug reports and
      feature requests) to the bugtracker `Forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
    * :ref:`run the TYPO3 testsuite <testing>` locally with docker
    * :ref:`add documentation <Bugfixing-Adding-documentation>` for the Changelog in the TYPO3 core
-   * find patches that need reviewing / testing with `Forger <https://forger.typo3.com/gerrit/status>`__
-   * :ref:`reviewing and testing <lifeOfAPatch>` patches
+   * :ref:`review and test <lifeOfAPatch-review>` patches
+
+**Other contribution**
+
+For contriubtion to other areas besides the TYPO3 core, please look at https://typo3.org/community/contribute/.
+
+For example, you can contribute to the
+
+* :ref:`TYPO3 documentation <
 
 **Useful external links:**
 
