@@ -4,14 +4,15 @@
 
 .. _cheat-sheet-git:
 
-==========================================
+====================================
 git cheat sheet for Core development
-==========================================
+====================================
 
-.. attention::
-   This is a short list of commands. If you are not familiar with the
-   workflow yet, make sure you follow the link at the beginning of 
-   each section and read the detailed description.
+This is a short list of commands. If you are not familiar with the
+workflow yet, make sure you follow the link at the beginning of 
+each section and read the detailed description.
+
+The following commands assume you are in the working directory of the TYPO3 core repository.
 
 .. _cheat-sheet-git-clone:
 
@@ -29,27 +30,12 @@ Setup
 
 Details: :ref:`Setting-up-your-Git-environment`
 
-You can use `git config` with:
-
-* `--system` (system): uses **system** config file, e.g. file:`/etc/gitconfig`
-* `--global` (user) : uses **user** config file, e.g. file:`~/.gitconfig`
-* `--local` (repository) : uses **repo** (current repository) config file, e.g. file:`.git/config`
-
-If you want a setting to be active for all your repositories, use `--global`. 
-
-`--local` is the default. 
-
-.. attention::
-
-   The following commands assume you are in the working directory of the TYPO3
-   core repository. 
-
-Set username and email in repository configuration (`--local`)::
+Set username and email in repository configuration (default is `--local` = in current repo .git/config)::
 
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
 
-If your username and email is the same for all your projects, set it globally::
+If your username and email is the same for all your projects, set it globally (in home config ~/.gitconfig, active for all git repos)::
 
    git config --global user.name "Your Name"
    git config --global user.email "your-email@example.com"
