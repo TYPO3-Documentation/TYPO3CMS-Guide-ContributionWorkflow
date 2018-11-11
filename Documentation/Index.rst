@@ -40,7 +40,7 @@ For contriubtion to other areas besides the TYPO3 core, please look at https://t
 
 For example, you can contribute to the
 
-* :ref:`TYPO3 documentation <
+* :ref:`TYPO3 documentation <h2document:docs-contribute>`
 
 **Useful external links:**
 
