@@ -35,7 +35,9 @@ for some examples.
 
 Every file may optionally contain tags, but it must contain at least a
 NotScanned, PartiallyScanned or FullyScanned tag for the extension scanner.
-See :ref:`t3coreapi:connection-to-changelog-rst-files` in TYPO3 Explained.
+See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more 
+inofrmation.
+
 If you use the Forger reST File Generator, it will take care of this.
 
 reST File Generator
@@ -196,3 +198,9 @@ For an overview of the rendered documentation for system extensions, see
 When you have made changes to the documentation, you can render
 locally with docker to test your changes as described in
 :ref:`render-the-changelog`.
+
+More information
+================
+
+* See `Documnenting Changes <https://docs.typo3.org/typo3cms/extensions/core/latest/Changelog/Howto.html>` for more information on the Changelog
+* See :ref:`extension-scanner` in TYPO3 Explained
