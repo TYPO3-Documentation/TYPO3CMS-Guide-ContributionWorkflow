@@ -36,7 +36,7 @@ TYPO3 Contribution Guide - Core Development
 
 **Other contribution**
 
-For contriubtion to other areas besides the TYPO3 core, please look at https://typo3.org/community/contribute/.
+For contribution to other areas besides the TYPO3 core, please look at https://typo3.org/community/contribute/.
 
 For example, you can contribute to the
 
