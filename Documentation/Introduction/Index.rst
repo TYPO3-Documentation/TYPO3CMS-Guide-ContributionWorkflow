@@ -21,9 +21,6 @@ The guide is structured in a way to give you all necessary information **in the 
 that you need it.** This means you can read it from the beginning and use it as a 
 hands on guide, performing the steps as you go along. 
 
-For an overview of all necessary steps for creating a patch, look at the
-:ref:`Quickstart <core-contrib-quickstart>` chapter.
-
 The further you go along, the more advanced the topics will become.
 
 But, you can also use it as a reference guide and jump straight to a section you
@@ -32,7 +29,9 @@ you are looking for or browse through the menu.
 
 Some pages near the end of the manual assume that you are already familiar with 
 contributing and serve as reference pages, for example the 
-:ref:`cheat sheet <core-contrib-quickstart>`.
+:ref:`git cheat sheet <cheat-sheet-git>` or the
+:ref:`Quickstart: Creating a patch <core-contrib-quickstart>` page for a terse
+overview of all steps involved in creating a patch.
 
 Some of the information, that is too extensive for the main guide, is found in 
 the :ref:`appendix`. 
