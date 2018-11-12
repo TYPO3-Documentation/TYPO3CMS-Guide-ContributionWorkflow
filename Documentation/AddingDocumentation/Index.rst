@@ -36,7 +36,7 @@ for some examples.
 Every file may optionally contain tags, but it must contain at least a
 NotScanned, PartiallyScanned or FullyScanned tag for the extension scanner.
 See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more 
-inofrmation.
+information.
 
 If you use the Forger reST File Generator, it will take care of this.
 
