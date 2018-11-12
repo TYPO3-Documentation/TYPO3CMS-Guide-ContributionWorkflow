@@ -33,7 +33,7 @@ Apache Webserver
 
    sudo apt-get install apache2
    sudo a2enmod deflate rewrite headers mime expires
-   sudo service apache2 restart
+  
 
 
 PHP 7.2
@@ -57,7 +57,7 @@ Make some changes to php.ini and reload::
 
 Restart Webserver::
 
-   sudo service apache2 reload
+   sudo service apache2 restart
 
 
 MySQL Server
