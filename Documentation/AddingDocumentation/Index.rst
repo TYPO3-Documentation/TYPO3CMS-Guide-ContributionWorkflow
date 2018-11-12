@@ -202,5 +202,5 @@ locally with docker to test your changes as described in
 More information
 ================
 
-* See `Documnenting Changes <https://docs.typo3.org/typo3cms/extensions/core/latest/Changelog/Howto.html>` for more information on the Changelog
+* See `Documenting Changes <https://docs.typo3.org/typo3cms/extensions/core/latest/Changelog/Howto.html>`__ for more information on the Changelog
 * See :ref:`extension-scanner` in TYPO3 Explained
