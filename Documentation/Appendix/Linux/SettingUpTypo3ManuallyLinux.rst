@@ -23,6 +23,9 @@ install on a Debian flavored Linux system (e.g. Ubuntu).
 .. important::
    This is a very simple, minimal setup. You might want to use Nginx instead or php-fpm with Apache.
 
+Setup
+=====
+
 Apache Webserver
 -----------------
 
@@ -110,4 +113,9 @@ Create a domain in your /etc/hosts
    127.0.0.1 localhost t3coredev
 
 
-You will now be able to access your TYPO3 installation via http://t3coredev/typo3/
+You will now be able to access your TYPO3 installation via http://t3coredev/typo3/ and it will greet you with an error message, because it is not configured yet
+
+Next step
+=========
+
+Proceed with :ref:`setting-up-typo3-manually`.
