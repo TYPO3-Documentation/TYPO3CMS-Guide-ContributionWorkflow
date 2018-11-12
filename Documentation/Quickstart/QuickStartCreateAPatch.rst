@@ -103,8 +103,6 @@ Quick start: Creating a patch
 
 9. Commit and push
 
-   More information: :ref:`Bugfixing-Create-a-new-patch`
-
    First, read :ref:`commitmessage`.
 
    Then, commit and push::
