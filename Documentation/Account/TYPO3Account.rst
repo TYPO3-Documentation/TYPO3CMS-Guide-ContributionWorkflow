@@ -2,14 +2,18 @@
 
 .. _TYPO3Account:
 
-Adding a TYPO3.org account
---------------------------
+==============================
+Signup for a TYPO3.org account
+==============================
 
 Head over to the `signup page on my.typo3.org <https://my.typo3.org/index.php?id=2>`__ 
 and fill out the form. 
 
 The fields in detail
-~~~~~~~~~~~~~~~~~~~~
+====================
+
+.. image:: _assets/register-t30.png
+   :class: with-shadow
 
 Username
    Pick a username you like. The form will directly tell you whether it's available or not.
