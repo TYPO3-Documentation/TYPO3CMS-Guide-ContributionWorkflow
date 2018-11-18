@@ -9,7 +9,7 @@
 Upload a new Patch Set
 ======================
 
-This chapter handles improving an existing patch.
+This chapter handles improving an existing patch. For creating a new patch, see :ref:`Fixing-a-bug-A-Z`.
 
 
 .. rst-class:: bignums-xxl
