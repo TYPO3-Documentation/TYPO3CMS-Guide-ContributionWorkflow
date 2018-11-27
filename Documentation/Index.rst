@@ -36,26 +36,26 @@ TYPO3 Contribution Guide - Core Development
 
 **Other contribution**
 
-For contribution to other areas besides the TYPO3 core, please look at https://typo3.org/community/contribute/.
+   For contribution to other areas besides the TYPO3 core, please look at https://typo3.org/community/contribute/.
 
-For example, you can contribute to the
+   For example, you can contribute to the
 
-* :ref:`TYPO3 documentation <h2document:docs-contribute>`
+   * :ref:`TYPO3 documentation <h2document:docs-contribute>`
 
 **Useful external links:**
 
-- `Gerrit (review server) <https://review.typo3.org>`__
-- `Forge (Bugtracker) <https://forge.typo3.org/projects/typo3cms-core/issues>`__
-- `Forger (Search & Tools) <https://forger.typo3.com>`__
-- `TYPO3 Slack (Chat) <https://typo3.slack.com>`__
+   - `Gerrit (review server) <https://review.typo3.org>`__
+   - `Forge (Bugtracker) <https://forge.typo3.org/projects/typo3cms-core/issues>`__
+   - `Forger (Search & Tools) <https://forger.typo3.com>`__
+   - `TYPO3 Slack (Chat) <https://typo3.slack.com>`__
 
 **Useful links to other TYPO3 manuals:**
 
-- :ref:`t3coreapi:start`
-- :ref:`t3coreapi:cgl`
-- :ref:`t3tca:start`
-- `Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-- :ref:`h2document:start`
+   - :ref:`t3coreapi:start`
+   - :ref:`t3coreapi:cgl`
+   - :ref:`t3tca:start`
+   - `Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+   - :ref:`h2document:start`
 
 
 .. toctree::
