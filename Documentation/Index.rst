@@ -63,6 +63,7 @@ TYPO3 Contribution Guide - Core Development
 
    DividerIntro
    Introduction/Index
+   Community/Index
    WorkflowExplained/Index
    Account/Index
    Setup/Index
@@ -78,5 +79,6 @@ TYPO3 Contribution Guide - Core Development
    DividerQuickRef
    CheatSheets/Index
    Quickstart/Index
+   WhatsNewInThisGuide
    Appendix/Index
    Sitemap/Index

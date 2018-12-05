@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: Includes.txt
 
 .. _whats_new_in_this_guide:
 
@@ -8,6 +8,7 @@ What's new in this guide
 
 New:
 
+* 2018-12-05 : :ref:`community`
 * 2018-10-23 : :ref:`rebase`
 * 2018-10-23 : :ref:`resolve-merge-conflicts`
 * 2018-10-05 : Added :ref:`cheat-sheet-git`, a number of changes were made
