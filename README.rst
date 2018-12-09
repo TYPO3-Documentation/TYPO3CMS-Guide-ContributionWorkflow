@@ -1,4 +1,7 @@
-
+\|
+`Contributing <CONTRIBUTING.md>`__  \|
+`Help & Support <https://typo3.org/help>`__ \|
+`Settings <Documentation/Settings.cfg>`__ \|
 
 ===========================================
 TYPO3 Contribution Guide - Core Development
@@ -10,6 +13,5 @@ How to become a TYPO3 core contributor.
 :Read online: https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
 
 
-For more information about contributing to TYPO3 documentation, see: https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/Index.html
 
 
