@@ -8,6 +8,7 @@ What's new in this guide
 
 New:
 
+* 2019-04-03: :ref:`aliases`
 * 2018-12-05 : :ref:`community`
 * 2018-10-23 : :ref:`rebase`
 * 2018-10-23 : :ref:`resolve-merge-conflicts`
