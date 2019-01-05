@@ -97,6 +97,7 @@ The merge conflict markers (in the file) will show:
    222
 
 
+.. _how-to-see-merge-conflicts:
 
 How to see merge conflicts in Gerrit or Forger
 ==============================================
