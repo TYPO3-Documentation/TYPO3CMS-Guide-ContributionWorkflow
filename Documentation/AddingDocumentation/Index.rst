@@ -165,15 +165,41 @@ Render the Changelog
 If you wish to render the Changelog locally, you can use docker as described
 in :ref:`h2document:rendering-docs-quickstart`.
 
-First, change to the :file:`core` directory::
+
+
+code-block:: bash
+   :linenos:
 
    cd typo3/sysext/core/
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
    dockrun_t3rdf makehtml
    open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+   #xdg-open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
    cd -
 
 
+#. First, change to the :file:`core` directory
+#. This is a combined command that does docker pull, docker run, and makes some shell commands available in current terminal!
+#. This runs the build command, it will create Documentation-GENERATED-temp in current directory
+#. `open` will run a URL - this should work on MacOS
+#. If you use Linux, use `xdg-open`, 
+   if this does not work, just open the URL in quotes in your browser. 
+#. cd - goes back to previous directory   
+
+.. tip::
+
+   The first time you run this, it will take long. :code:`docker pull` will download
+   the Docker image. The next time, it will be faster, because the image does
+   not have to be downloaded and `dockrun_t3rdf` will not build everything, it will only
+   build changed files. 
+
+.. important::
+
+   If you switch branches, you should rebuild everything. Remove the Documentation-GENERATED-temp
+   if in doubt or only generate documentation in master.
+
+Make things easier for yourself by adding these commands as aliases or adding
+them as commands in your IDE / editor. 
 
 .. _documenting-system-extensions:
 
