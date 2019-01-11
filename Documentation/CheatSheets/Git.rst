@@ -9,7 +9,7 @@ git cheat sheet for Core development
 ====================================
 
 This is a short list of commands. If you are not familiar with the
-workflow yet, make sure you follow the link at the beginning of 
+workflow yet, make sure you follow the link at the beginning of
 each section and read the detailed description.
 
 The following commands assume you are in the working directory of the TYPO3 core repository.
@@ -28,46 +28,7 @@ Clone latest master into current directory::
 Setup
 =====
 
-Details: :ref:`Setting-up-your-Git-environment`
-
-Set username and email in repository configuration (default is `--local` = in current repo .git/config)::
-
-   git config user.name "Your Name"
-   git config user.email "your-email@example.com"
-
-If your username and email is the same for all your projects, set it globally (in home config ~/.gitconfig, active for all git repos)::
-
-   git config --global user.name "Your Name"
-   git config --global user.email "your-email@example.com"
-
-Set autosetuprebase::
-
-   git config branch.autosetuprebase remote
-
-Copy commit-msg hook::
-
-   cp Build/git-hooks/commit-msg .git/hooks/commit-msg
-
-Push to gerrit
-
-* **replace** `<YOUR_TYPO3_USERNAME>` with your Gerrit / typo3.org user name!
-
-::
-
-   git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
-
-*Optional*: Set a commit message template::
-
-   git config commit.template ~/.gitmessage.txt
-
-This command uses the file ~/.gitmessage.txt as git message template. 
-For additional information about how to set up a proper commit message
-see :ref:`committemplate`
-
-Show current configuration::
-
-  git config -l
-
+For detailed setup instructions, please see: :ref:`Setting-up-your-Git-environment`
 
 Workflow - common commands
 ==========================
@@ -94,7 +55,7 @@ Stage and commit all changes to already existing commit::
 Push changes to remote master on gerrit (default method)::
 
    git push origin HEAD:refs/publish/master
-   
+
 
 Workflow - drafts
 =================
@@ -104,8 +65,8 @@ Push changes to remote master on gerrit as **draft**::
    git push origin HEAD:refs/drafts/master
 
 
-*When pushing as draft, the pushed patch will only be visible to you 
-and those who you add as a reviewer. It also does not start any 
+*When pushing as draft, the pushed patch will only be visible to you
+and those who you add as a reviewer. It also does not start any
 automated tests or builds on the TYPO3 testing infrastructure.*
 
 .. _cheat-sheet-git-other-branches:
@@ -130,7 +91,7 @@ Checkout 8.7 branch::
 
 
 Long story short: In most cases, **push to master**. The rest is being taken
-care of when time is right.
+care of by core team members!
 
 Push 8.7 branch::
 
@@ -151,7 +112,7 @@ Example commit message for a bugfix:
 .. code-block:: text
 
    [BUGFIX] Subject line
-   
+
    Description
 
    Resolves: #12345

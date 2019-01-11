@@ -18,6 +18,7 @@ Prerequisites
 * Make sure, you have cloned the TYPO3 source as described previously in :ref:`setup-typo3-git-clone`::
 
       git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+      composer install
 
 
 Set username and email
@@ -46,75 +47,35 @@ to set the autosetuprebase option, such that your local commits are always rebas
 
 
 .. _setup-git-commit-hook:
-
-Install your commit hooks
-=========================
-
 .. _git-setup-commit-msg-hook:
 
-commit-msg hook
----------------
+Install Your Commit Hooks
+=========================
 
-.. important::
-   The commit-msg hook is mandatory. It must be installed before you commit
-   your changes. The hook will not prevent you from committing. It will
-   complain about a messed up commit message, though. In case you forgot
-   to write a correct commit message, you can always amend your last commit
-   message to correct it.
+There are two git hooks available for TYPO3 development:
 
+* :ref:`commit-msg-hook`
+* :ref:`pre-commit-hook`
 
-Activate the hook::
+To set them up, do the following:
 
-   # ensure folder exists
-   mkdir -p .git/hooks
+For Linux / MacOS::
 
-   # copy
-   cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+  composer gerrit:setup
 
-   # make executable
-   chmod +x .git/hooks/commit-msg
+This will "install" the :file:`commit-msg` hook and :file:`pre-commit` hook.
 
-.. note::
-   You do not need the mkdir unless the .git/hooks directory doesn't exist. 
-   It does not do any harm to execute it in any case though. 
+For Windows::
 
-You can read about the why and where of this hook :ref:`here <appendix-commit-hook>`.
+  composer gerrit:setup:commitMessageHook:enable
+
+Or use a short form::
+
+  composer composer ge:set:com:enable
 
 
-.. _git-setup-precommithook:
-
-pre-commit hook
----------------
-
-.. important::
-   The pre-commit hook is not supported on Windows.
-
-.. note::
-   The pre-commit hook is optional. It is not required for creating commits,
-   but it will assist you in detecting problems with not correctly formatted
-   files which will later cause the automatic tests to fail.
-
-Again, you can copy the pre-commit hook from the build directory. This is not
-available prior to the 8.7 branch::
-
-   # ensure folder exists
-   mkdir -p .git/hooks
-
-   # copy
-   cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
-
-   # make executable
-   chmod +x .git/hooks/pre-commit
-
-The pre-commit hook will check that all PHP files that will be committed
-conform to the TYPO3 Coding Guidelines. If this is not the case, the
-hook will display an error message. It will not automatically repair
-any files though. You must do this yourself and afterwards amend your
-commit::
-
-   git commit -a --amend
-
-There are scripts available for fixing Coding Guideline issues, see :ref:`cgl-fix-my-commit`.
+This will only install the :file:`commit-msg` hook. The :file:`commit-msg` hook
+is mandatory.
 
 
 Setting up your remote
@@ -123,6 +84,42 @@ Setting up your remote
 You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+
+.. _committemplate:
+
+Setting up a Commit Message Template
+====================================
+
+This is optional!
+
+If you follow these instructions, whenever you create a new commit,
+Git will use the template to create the commit message, which you can
+then modify in your editor. So use this, to make it easier for you to
+fill out the required information.
+
+First, create a file, for example in :file:`~/.gitmessage.txt`.
+
+.. code-block:: none
+
+   [BUGFIX|TASK|FEATURE]
+
+   Resolves: #
+   Releases: master, 9.5
+
+Make Git use this file as a template for the commit message::
+
+   git config commit.template ~/.gitmessage.txt
+
+
+For additional information about how to write a proper commit message
+see :ref:`commitmessage`.
+
+Show Configuration
+==================
+
+Show current configuration::
+
+  git config -l
 
 
 Other resources

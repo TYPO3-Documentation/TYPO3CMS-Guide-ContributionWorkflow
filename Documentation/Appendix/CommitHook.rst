@@ -4,14 +4,18 @@
 .. _commit-hook:
 
 ============
-Commit hooks
+Commit Hooks
 ============
 
 .. _why-a-commit-msg-hook:
-.. _why-pre-commit-hook:
+.. _commit-msg-hook:
 
-Why a commit-msg hook?
-======================
+`commit-msg` Hook
+=================
+
+* File: :file:`.git/hooks/commit-msg`
+* Source file: :file:`Build/git-hooks/commit-msg`
+This hook is mandatory. It **must** be used for core contribution!
 
 First of all, this hook will be executed whenever you do a commit on your local machine.
 
@@ -22,6 +26,31 @@ a Change-Id on your own, the result will be chaos.
 
 Apart from that the hook will check your commit message for logical errors like missing keywords, Resolves lines etc.
 For detailed information on the format of a commit message, :ref:`click here<commitmessage>`.
+
+If the commit-msg hook finds errors in your commit-msg, you can try again, by ammending to the commit::
+
+   git commit --amend
+
+.. _why-pre-commit-hook:
+.. _pre-commit-hook:
+
+`pre-commit` Hook
+=================
+
+* File: :file:`.git/hooks/pre-commit`
+* Source file: :file:`Build/git-hooks/unix+mac/pre-commit`
+* This hook is optional. **This hook is not available for Windows.**
+
+The :file:`pre-commit` hook checks all added PHP files staged for the commit for Coding
+Guideline issues and will report any problems it finds.
+
+To fix the issues, see :ref:`cgl-fix-my-commit`.
+
+After fixing the files you must amend your
+commit::
+
+   git commit -a --amend
+
 
 
 .. _post-checkout-for-composer-update:

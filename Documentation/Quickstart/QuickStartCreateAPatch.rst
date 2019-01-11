@@ -45,9 +45,19 @@ Quick start: Creating a patch
 
       git config branch.autosetuprebase remote
 
-   Setup commit hook::
+   Setup commit-msg hook::
 
       cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+
+
+   .. tip::
+
+   On Linux / MacOS, instead of copying the commit-msg hook, you can simply run::
+
+      composer gerrit:setup
+
+   This will do all Commit Hook operations for you: copy :file:`commit-msg` and :file:`pre-commit hook`,
+   make them executable etc. For more information see :ref:`commit-hook` and :ref:`composer`.
 
    Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
 
