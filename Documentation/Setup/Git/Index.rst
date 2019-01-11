@@ -30,13 +30,6 @@ You need to instruct git to work with your name and email address. Make sure the
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
 
-By default, git config sets the local configuration (same as using `--local` option for `git config`), meaning the configuration will be written to the configuration file in your repository (.git/config). If your name and email address is already set in your global git settings (in your home directory, e.g. `~/.gitconfig`) and is the same as the one for typo3.org / gerrit, you don't have to explicitly do this for each repository.
-
-Check your git configuration::
-
-    git config -l
-
-
 Set autosetuprebase
 ===================
 
@@ -85,12 +78,15 @@ You must instruct Git to push to Gerrit_ instead of the original repository. It 
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
+
+
 .. _committemplate:
 
 Setting up a Commit Message Template
 ====================================
 
-This is optional!
+This is optional! If you do not wish to setup a commit message template,
+continue with the next step:  :ref:`forger-index`.
 
 If you follow these instructions, whenever you create a new commit,
 Git will use the template to create the commit message, which you can
