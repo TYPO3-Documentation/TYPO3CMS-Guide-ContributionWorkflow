@@ -20,17 +20,12 @@ Composer
 .. sidebar:: Composer
 
    You can learn a lot more about composer on their website https://getcomposer.org/.
+   Also, look at :ref:`composer` in the Appendix for some
+   information specific to the TYPO3 core contribution toolchain.
 
 Composer is a dependency manager for PHP.
 
-So what it basically does is find packages you have defined to be part of your application (in our case TYPO3). But what
-if these packages rely on other packages as well? This is where composer jumps in and takes care of keeping all these
-packages in sync.
-
-Since we use quite some packages (because why would we invent things ourselves that are already there?) composer is an
-extremely useful tool for us.
-
-Composer is a mandatory tool for setting up your toolchain for TYPO3. Follow the
+Composer is a **mandatory** tool for setting up your toolchain for TYPO3. Follow the
 installation instructions from https://getcomposer.org. Afterwards, you should
 have a working executable `composer` available.
 
