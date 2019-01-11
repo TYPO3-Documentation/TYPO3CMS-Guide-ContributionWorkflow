@@ -90,7 +90,10 @@ are strongly recommended when developing for the TYPO3 core.
 .. hint::
    None of these plugins are mandatory, check out what might be useful for yourself!
 
-Install plugins in PhpStorm: :guilabel:`File > Settings > Plugins`
+Install plugins in PhpStorm: :guilabel:`File > Settings > Plugins`.
+
+Recommended Plugins
+-------------------
 
 * `EditorConfig plugin <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__
 * `DynamicReturnTypePlugin
@@ -104,6 +107,14 @@ Install plugins in PhpStorm: :guilabel:`File > Settings > Plugins`
 * `Php Inspections (EA Extended)
   <https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended->`__ :
   Static Code Analysis tool for PHP
+* `reStructuredText plugin <https://plugins.jetbrains.com/plugin/7124-restructuredtext-support>`__:
+  This will show you errors in your reStructuredText files (file ending .rst)
+  when you are editing the core changelog or are updating the documentation
+  for a system extension.
+  
+Optional Plugins
+----------------
+  
 * `Fluid plugin <https://plugins.jetbrains.com/plugin/9469-fluid-plugin--free-version>`__ 
   (sgalinski)
 * `TypoScript plugin
