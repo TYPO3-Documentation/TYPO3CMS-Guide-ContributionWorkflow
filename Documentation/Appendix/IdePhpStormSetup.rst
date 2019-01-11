@@ -80,8 +80,8 @@ You can find more information on the :ref:`Coding Guidelines section in the Appe
 
 .. _phpstorm-setup-plugins:
 
-Optional Plugins
-================
+Plugins for PhpStorm
+====================
 
 Here are some plugins, you might use when developing TYPO3. DynamicReturnTypePlugin
 and Php Inspections are not TYPO3 specific, but will show possible errors and 
