@@ -95,5 +95,5 @@ Create a file named `.git/hooks/post-checkout` with the following contents:
 
 .. important::
 
-   You need to adjust the `PATH_TO_COMPOSER` variable, that is defiened after the import statements.
+   You need to adjust the `PATH_TO_COMPOSER` variable, that is defined after the import statements.
    Additionally the `python3` executable needs to be available in your `PATH`.
