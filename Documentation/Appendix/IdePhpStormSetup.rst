@@ -14,7 +14,7 @@ Conventions on this page
 ========================
 
 If you need to select something from the menu in PhpStorm, menu items
-are displayed like this: `File: Settings: ....`
+are displayed like this: :guilabel:`File > Settings > ....`
 
 General setup
 =============
@@ -58,7 +58,8 @@ least set up PhpStorm to comply with PSR-1 / PSR-2 for PHP as described next.
 PHP files
 ---------
 
-`File: Settings: Editor: Code Style : PHP : Set From : Predefined Style`
+Set **Predefined Style** in PhpStorm: 
+:guilabel:`File > Settings > Editor > Code Style > PHP > Set From > Predefined Style`
 
 Choose PSR-1 / PSR-2
 
@@ -82,14 +83,14 @@ You can find more information on the :ref:`Coding Guidelines section in the Appe
 Optional Plugins
 ================
 
-Here are some Plugins, you might use when developing TYPO3. DynamicReturnTypePlugin
+Here are some plugins, you might use when developing TYPO3. DynamicReturnTypePlugin
 and Php Inspections are not TYPO3 specific, but will show possible errors and 
 are strongly recommended when developing for the TYPO3 core.
 
 .. hint::
-   None of these Plugins are mandatory, check out what might be useful for yourself!
+   None of these plugins are mandatory, check out what might be useful for yourself!
 
-Install Plugins: `File: Settings: Plugins`
+Install plugins in PhpStorm: :guilabel:`File > Settings > Plugins`
 
 * `EditorConfig plugin <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__
 * `DynamicReturnTypePlugin
@@ -123,7 +124,8 @@ First setup the Testing Framework. Replace <YOUR_WEBROOT> with your path
 to the web directory. You must use absolute
 paths for this.
 
-`File: Settings: Languages & Frameworks: PHP: Test Frameworks`:
+Setup **Test Frameworks** in PhpStorm:
+:guilabel:`File > Settings > Languages & Frameworks > PHP: Test Frameworks`:
 
 * Use composer autoloader
 * `Path to script`: <YOUR_WEBROOT>/vendor/autoload.php
