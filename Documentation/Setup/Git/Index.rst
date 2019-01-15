@@ -47,29 +47,64 @@ Install Your Commit Hooks
 
 There are two git hooks available for TYPO3 development:
 
-* :ref:`commit-msg-hook`
-* :ref:`pre-commit-hook`
+* :ref:`commit-msg-hook`: mandatory
+* :ref:`pre-commit-hook`: optional, currently not available for Windows
 
 To set them up, do the following:
 
+commit-msg Hook
+---------------
+
+Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`::
+
+   # ensure folder exists
+   mkdir -p .git/hooks
+
+   # copy
+   cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+
+   # make executable
+   chmod +x .git/hooks/commit-msg
+
+.. note::
+
+   You usually do not need the `mkdir` or the `chmod`. It does not do any harm to
+   execute it in any case though.
+
+More information: :ref:`commit-msg-hook`
+
+
+pre-commit Hook
+---------------
+
+The pre-commit hook runs on Linux and MacOS. It is not required for core development.
+
+Activate the hook by copying the sample file to :file:`.git/hooks/pre-commit`::
+
+   # ensure folder exists
+   mkdir -p .git/hooks
+
+   # copy
+   cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
+
+   # make executable
+   chmod +x .git/hooks/pre-commit
+
+More information: :ref:`pre-commit-hook`
+
+
+Alternative: Setup With Composer
+--------------------------------
+
+As an alternative for copying the hook scripts manually, you can use the following composer command:
+
 For Linux / MacOS::
 
-  composer gerrit:setup
+   composer gerrit:setup
 
 This will "install" the :file:`commit-msg` hook and :file:`pre-commit` hook.
 
-For Windows::
-
-  composer gerrit:setup:commitMessageHook:enable
-
-Or use a short form::
-
-  composer composer ge:set:com:enable
-
-
-This will only install the :file:`commit-msg` hook. The :file:`commit-msg` hook
-is mandatory.
-
+More information: :ref:`custom-composer-commands`.
 
 Setting up your remote
 ======================
