@@ -1,8 +1,47 @@
+# Configuration for rendering documentation with docker-compose
+#
+# Examples:
+#  - make html output:
+#    docker-compose run --rm html
+#  - make all output (html, singlehtml, ...):
+#    docker-compose run --rm all
+#  - show howto
+#    docker-compose run --rm howto
+#
+# More information:
+#   https://github.com/t3docs/docker-render-documentation/blob/master/README.rst
+#
 version: '2'
 services:
-  t3docmake:
+  # generate documentation: html only
+  html:
     image: t3docs/render-documentation:latest
     volumes:
     - ./:/PROJECT:ro
     - ./Documentation-GENERATED-temp:/RESULT
     command: makehtml
+
+  # generate documentation: all output (html, singlehtml, ...)
+  all:
+    image: t3docs/render-documentation:latest
+    volumes:
+    - ./:/PROJECT:ro
+    - ./Documentation-GENERATED-temp:/RESULT
+    command: makeall
+
+  # show howto
+  howto:
+    image: t3docs/render-documentation:latest
+    volumes:
+    - ./:/PROJECT:ro
+    - ./Documentation-GENERATED-temp:/RESULT
+    command: show-howto
+
+  # show help
+  help:
+    image: t3docs/render-documentation:latest
+    volumes:
+    - ./:/PROJECT:ro
+    - ./Documentation-GENERATED-temp:/RESULT
+    command: --help
+
