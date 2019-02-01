@@ -20,6 +20,8 @@ services:
     - ./:/PROJECT:ro
     - ./Documentation-GENERATED-temp:/RESULT
     command: makehtml
+    environment:
+    - HOST_CWD=$PWD
 
   # generate documentation: all output (html, singlehtml, ...)
   all:
@@ -28,6 +30,8 @@ services:
     - ./:/PROJECT:ro
     - ./Documentation-GENERATED-temp:/RESULT
     command: makeall
+    environment:
+    - HOST_CWD=$PWD
 
   # show howto
   howto:
