@@ -167,14 +167,18 @@ in :ref:`h2document:rendering-docs-quickstart`.
 
 
 
-code-block:: bash
+.. code-block:: bash
    :linenos:
 
    cd typo3/sysext/core/
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
    dockrun_t3rdf makehtml
-   open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-   #xdg-open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+   # on Mac
+   open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+   # on Linux
+   xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+   # On Windows
+   start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
    cd -
 
 
