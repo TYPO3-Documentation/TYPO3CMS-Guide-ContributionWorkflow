@@ -78,6 +78,10 @@ Show all branches::
 
    git branch -a
 
+Checkout 9.5 branch::
+
+   git checkout 9.5
+
 Checkout 8.7 branch::
 
    git checkout TYPO3_8-7
@@ -92,6 +96,10 @@ Checkout 8.7 branch::
 
 Long story short: In most cases, **push to master**. The rest is being taken
 care of by core team members!
+
+Push 9.5 branch::
+
+   git push origin HEAD:refs/publish/9.5
 
 Push 8.7 branch::
 
@@ -116,7 +124,7 @@ Example commit message for a bugfix:
    Description
 
    Resolves: #12345
-   Releases: master, 8.7
+   Releases: master, 9.5
 
 Other keywords:
 
