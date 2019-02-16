@@ -54,7 +54,10 @@ Stage and commit all changes to already existing commit::
 
 Push changes to remote master on gerrit (default method)::
 
-   git push origin HEAD:refs/publish/master
+   git push origin HEAD:refs/for/master
+
+.. note::
+   Pushing to `refs/publish` is deprecated, we now push to `refs/for`.
 
 
 Workflow - drafts
@@ -99,15 +102,15 @@ care of by core team members!
 
 Push 9.5 branch::
 
-   git push origin HEAD:refs/publish/9.5
+   git push origin HEAD:refs/for/9.5
 
 Push 8.7 branch::
 
-   git push origin HEAD:refs/publish/TYPO3_8-7
+   git push origin HEAD:refs/for/TYPO3_8-7
 
 Push 7.6 branch::
 
-   git push origin HEAD:refs/publish/TYPO3_7-6
+   git push origin HEAD:refs/for/TYPO3_7-6
 
 
 Workflow - commit msg

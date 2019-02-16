@@ -137,7 +137,7 @@ Step by step walkthrough
 
    To submit the patch to Gerrit, issue the following command::
 
-      git push origin HEAD:refs/publish/master
+      git push origin HEAD:refs/for/master
 
 
    If Gerrit accepts your push, it responds with the following messages:
@@ -148,7 +148,7 @@ Step by step walkthrough
       remote:   https://review.typo3.org/<gerrit-id>
       remote:
       To ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-       * [new branch]      HEAD -> refs/publish/<release-branch>
+       * [new branch]      HEAD -> refs/for/<release-branch>
 
    You can visit the link to https://review.typo3.org to see your patch in Gerrit.
 

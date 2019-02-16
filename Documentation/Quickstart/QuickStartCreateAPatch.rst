@@ -118,7 +118,7 @@ Quick start: Creating a patch
    Then, commit and push::
 
       git commit -a
-      git push origin HEAD:refs/publish/master
+      git push origin HEAD:refs/for/master
 
 10. Finally, announce your review on Slack
 
