@@ -130,12 +130,12 @@ As soon as the patch has reached the approved status by getting a +2 on
 "Submit" button, finally pushing it to the main repository.
 
 
-.. _Gerrit-No-brainers:
+.. _Gerrit-Low-brainers:
 
-No brainers
+Low brainers
 -----------
 
-A core developer can give a +2 and submit right away in case of "no-brainers" (what used to be called "FYI").
+A core developer can give a +2 and submit right away in case of "low-brainers" (what used to be called "FYI").
 A core developer can give a +2 and wait a bit before submitting (used to be FYI24, FYI48, ...).
 
 
