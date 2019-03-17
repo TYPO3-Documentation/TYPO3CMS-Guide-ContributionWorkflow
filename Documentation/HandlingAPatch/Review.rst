@@ -129,7 +129,7 @@ As soon as the patch has reached the approved status by getting a +2 on
 **Code Review** and **Verified**, a core developer can decide to push the
 "Submit" button, finally pushing it to the main repository.
 
-
+.. _Gerrit-No-brainers:
 .. _Gerrit-Low-brainers:
 
 Low brainers
