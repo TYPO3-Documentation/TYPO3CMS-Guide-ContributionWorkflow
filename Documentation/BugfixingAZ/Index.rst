@@ -96,7 +96,7 @@ Step by step walkthrough
 
       Resolves: #12346
       Releases: master, 8.7
-   
+
 6. Commit
 
    Only create one commit. Do not create a branch. Work on master.
@@ -165,8 +165,8 @@ Step by step walkthrough
       review:show [ReviewNumber or URL]
 
    This is not something, you will do for every review. As a first contributor
-   it is recommended to mention that you are new to the process. 
-   
+   it is recommended to mention that you are new to the process.
+
    Now, it's time to sit back and await feedback on your changes. The review team process
    dozens of requests each day, so expect a succinct response that is short and to the point.
 
@@ -175,12 +175,16 @@ Step by step walkthrough
 
 
 It is not unusual for a patch to get comments requesting changes. If that happens,
-please respond in a timely fashion and improve your review. If things are unclear, 
+please respond in a timely fashion and improve your review. If things are unclear,
 ask in the **#typo3-cms-coredev** channel on https://typo3.slack.com.
 
-When you change your patch, make sure you do not add another commit. Append to 
+When you change your patch, make sure you do not add another commit. Append to
 your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.
 
+.. tip::
+
+   Look at the page :ref:`aliases` for some sample aliases which might help to
+   simplify your workflow.
 
 Helpful links
 =============
