@@ -24,7 +24,7 @@ Prerequisites
 Set username and email
 ======================
 
-You need to instruct git to work with your name and email address. Make sure the email address is the one you used when
+You need to instruct git to work with your name and email address. Make sure the email address and user name are the same as those you used when
 :ref:`setting up your TYPO3 account<TYPO3Account>`::
 
    git config user.name "Your Name"
