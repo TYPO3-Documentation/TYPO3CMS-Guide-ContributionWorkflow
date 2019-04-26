@@ -22,7 +22,7 @@ When you want to report a bug or suggest a new feature, go to the
 `"Issues" section for the TYPO3 Core
 <https://forge.typo3.org/projects/typo3cms-core/issues>`__.
 
-Searching for existing issues
+Searching for Existing Issues
 =============================
 
 Before you go ahead and report a bug, it is recommended that you check
@@ -33,7 +33,7 @@ something similar has already been reported.
 easy to find existing issues. Filters are located on the the left hand
 side of the navigation menu. You can use this feature to help refine searches.
 
-Identify the issue
+Identify the Issue
 ==================
 
 Before you report a bug or suggest a new feature, make sure that

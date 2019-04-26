@@ -4,9 +4,9 @@
 
 .. _Setting-up-your-Git-environment:
 
-===============================
-Setting up your Git environment
-===============================
+=========
+Git Setup
+=========
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
@@ -21,7 +21,7 @@ Prerequisites
       composer install
 
 
-Set username and email
+Set Username and Email
 ======================
 
 You need to instruct git to work with your name and email address. Make sure the email address is the one you used when
@@ -30,8 +30,8 @@ You need to instruct git to work with your name and email address. Make sure the
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
 
-Set autosetuprebase
-===================
+Set `autosetuprebase`
+=====================
 
 In order to avoid weird merges in your local repository when pulling in new commits from typo3.org, we encourage everybody
 to set the autosetuprebase option, such that your local commits are always rebased on top of the official code::
@@ -52,8 +52,8 @@ There are two git hooks available for TYPO3 development:
 
 To set them up, do the following:
 
-commit-msg Hook
----------------
+`commit-msg` Hook
+-----------------
 
 Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`::
 
@@ -74,8 +74,8 @@ Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`::
 More information: :ref:`commit-msg-hook`
 
 
-pre-commit Hook
----------------
+`pre-commit` Hook
+-----------------
 
 The pre-commit hook runs on Linux and MacOS. It is not required for core development.
 
@@ -106,7 +106,7 @@ This will "install" the :file:`commit-msg` hook and :file:`pre-commit` hook.
 
 More information: :ref:`custom-composer-commands`.
 
-Setting up your remote
+Setting up Your Remote
 ======================
 
 You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::

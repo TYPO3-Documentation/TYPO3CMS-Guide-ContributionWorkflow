@@ -12,8 +12,8 @@ Setup the TYPO3 installation
 .. _setup-typo3-git-clone:
 .. _git-clone:
 
-git clone
-=========
+`git clone`
+===========
 
 Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3:: 
 
@@ -21,7 +21,7 @@ Switch into your **empty** htdocs directory of choice and clone a fresh master o
 
 .. _git-guis:
 
-git GUIs
+Git GUIs
 ========
 
 If you rather like to work with your favorite Git GUI, we compiled a list of the ones used throughout the core team
@@ -34,8 +34,8 @@ here.
 
 .. _composer-install:
 
-composer install
-================
+`composer install`
+==================
 
 Run composer install in the same directory you cloned the master repository to.
 This may take several minutes::
@@ -45,8 +45,8 @@ This may take several minutes::
 
 .. _yarn-build:
 
-yarn install
-============
+`yarn install`
+==============
 
 Go to the `Build` folder of your TYPO3 install root directory.
 Install all dependencies with `yarn install`.
@@ -79,7 +79,7 @@ specific. Usually, it should suffice to use `yarn install` and `yarn build`.
 
 .. _setup-typo3-installation:
 
-Setting up a working TYPO3 installation
+Setting up a Working TYPO3 Installation
 =======================================
 
 You will now need to use your git clone to setup a working installation

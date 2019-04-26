@@ -6,7 +6,7 @@
 .. _prerequisites:
 
 ==============================
-Prerequisites and useful tools
+Prerequisites and Useful Tools
 ==============================
 
 Here's a list of the tools we use in the TYPO3 project.
@@ -34,7 +34,7 @@ Verify composer is working::
    $ composer --version
 
 
-Setting up your frontend build toolchain.
+Setting up Your Frontend Build Toolchain.
 =========================================
 
 Yarn
@@ -73,7 +73,7 @@ Linux
 For additional infos see https://yarnpkg.com
 
 
-Install all required packages
+Install all Required Packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The later section :ref:`yarn-build` will explain how to set

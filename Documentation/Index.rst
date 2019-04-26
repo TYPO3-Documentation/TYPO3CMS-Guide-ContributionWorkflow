@@ -33,9 +33,9 @@ TYPO3 Contribution Guide - Core Development
 
 .. rst-class:: horizbuttons-primary-m
 
-- :ref:`git setup <Setting-up-your-Git-environment>`
-- :ref:`git cheat sheet <cheat-sheet-git>`
-- :ref:`Commit message rules <commitmessage>`
+- :ref:`Git Setup <Setting-up-your-Git-environment>`
+- :ref:`Git Cheat Sheet <cheat-sheet-git>`
+- :ref:`Commit Message Rules <commitmessage>`
 - :ref:`quickstart-create-a-patch`
 - :ref:`whats_new_in_this_guide`
 
