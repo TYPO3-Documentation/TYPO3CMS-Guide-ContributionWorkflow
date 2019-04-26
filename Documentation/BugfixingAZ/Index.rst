@@ -2,9 +2,11 @@
 .. highlight:: shell
 
 .. _Fixing-a-bug-A-Z:
+.. _core-contrib-quickstart:
+.. _quickstart-create-a-patch:
 
 =======================
-Create & submit a patch
+Create & Submit a Patch
 =======================
 
 **Quick links:**
@@ -23,33 +25,100 @@ So you want to fix a bug or add a new feature to TYPO3? **Great!**
 This chapter will guide you through the process step by step. If you
 should encounter any problems or have questions, talk to us on
 https://typo3.slack.com in the **#typo3-cms-coredev** channel
-(for more information on Slack, see :ref:`appendix-slack-intro`).
+(see :ref:`appendix-slack-intro`).
 
 
 .. _Bugfixing-prerequisites:
-
-Prerequisites
-=============
-
-We assume, you have followed all steps in the **intro & setup** chapters.If
-not, use :ref:`quickstart-create-a-patch` to guide you through
-the entire process.
-
-Also, an **issue** must exist for the patch you want to create. Every patch
-must refer to at least one corresponding issue. If there is no issue
-yet, create one now by going to https://forge.typo3.org/.
-(see :ref:`create-an-issue` for more information).
-
-
 .. _Bugfixing-Fix-the-code:
 .. _fix-the-code:
 
-Step by step walkthrough
+Step by Step Walkthrough
 ========================
 
 .. rst-class:: bignums-xxl
 
-1. Make your changes to the code
+
+1. Setup accounts
+
+   * Signup for a `typo3.org account <https://my.typo3.org/index.php?id=2>`__
+   * Signup for `Slack <https://my.typo3.org/index.php?id=35>`__, join the
+     `#typo3-cms-coredev` channel
+
+   More information: :ref:`TYPO3-Guide-ContributionWorkflow-Account`
+
+   * Log in to `Gerrit <https://review.typo3.org>`__, click on Settings and upload your
+     ssh key
+   More information: :ref:`GerritAccount`
+
+2. Setup your git environment
+
+   More information: :ref:`Setting-up-your-Git-environment`
+
+   git clone::
+
+      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+
+   Setup name and email (same as you used for typo3.org), replace `"Your name"` and `"your-email@example.com"` here)::
+
+      git config user.name "Your Name"
+      git config user.email "your-email@example.com"
+
+
+   Setup autosetuprebase::
+
+      git config branch.autosetuprebase remote
+
+   Setup commit-msg hook::
+
+      cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+
+   Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
+
+      git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+
+
+3. Run composer and yarn
+
+   More information: :ref:`composer-install`
+
+   Inside your cloned TYPO3 repository, run composer::
+
+      composer install
+
+   Run yarn::
+
+      cd Build
+      yarn install
+      yarn build
+      cd ..
+
+
+4. Setup your TYPO3 installation
+
+   More information: :ref:`setup-typo3-installation`
+
+   Setup your TYPO3 installation usig the git cloned TYPO3 source (as described above).
+
+
+5. Setup your IDE to adhere to the coding guidelines
+
+   More information: :ref:`setup-ide`
+
+   Use the :file:`.editorconfig` in the TYPO3 core directory to setup your IDE.
+   As :file:`.editorconfig` only contains minimal rules, it is a good idea to
+   additionally setup your IDE to use PSR-1 / PSR-2 for PHP files.
+
+6. Create an Issue on Forge
+
+   More information: :ref:`bugreporting-index`
+
+   Every patch must have a matching issue on
+   `Forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__,
+   so create an issue now or submit
+   a patch for an existing issue.
+
+
+7. Make your changes to the code, add documentation, tests
 
    This part is pretty straightforward. But be warned, there
    are still a few dark places deep inside the TYPO3 core dating back to the
@@ -59,25 +128,17 @@ Step by step walkthrough
    Make sure to look at :ref:`deprecations` in the Appendix for information
    about to deprecate things if you need to make changes to the public API.
 
-2. Add tests
+   For new features, breaking changes and deprecations, it is necessary to :ref:`add
+   information to the changelog <changelog>`.
 
    Add Unit Tests or Functional Tests for new functionality, refine existing tests
    if necessary. Tests are important because they ensure that
    TYPO3 will behave consistently now and in the future.
 
-   See :ref:`t3coreapi:testing-writing-unit` in TYPO3 Explained for more information
-   about writing Unit Tests.
+   See :ref:`Testing the core <testing>` in TYPO3 Explained for more information
+   about writing and running tests.
 
-3. Optional: Run tests
-
-   See :ref:`Testing the core <testing>` for a step-by-step guide using docker.
-
-4. Add documentation
-
-   For new features, breaking changes and deprecations, it is necessary to :ref:`add
-   information to the changelog <changelog>`.
-
-5. Use the commit message rules
+8. Commit your changes
 
    Please make sure that you read the :ref:`commitmessage` in the Appendix.
    Your code will not be merged if it does not follow the commit message
@@ -96,8 +157,6 @@ Step by step walkthrough
 
       Resolves: #12346
       Releases: master, 8.7
-
-6. Commit
 
    Only create one commit. Do not create a branch. Work on master.
 
@@ -125,15 +184,7 @@ Step by step walkthrough
       Keep in mind that you can commit with --amend **as often as you want,**
       just make sure you keep the `Change-Id:` line intact.
 
-7. Optional: Check your commit history
-
-   Before you submit your patch for review, check what you are going to push::
-
-      git log origin/master..HEAD
-
-   You must only see one commit (for the basic workflow described in this guide).
-
-8. Push to Gerrit
+9. Push to Gerrit
 
    To submit the patch to Gerrit, issue the following command::
 
@@ -156,7 +207,7 @@ Step by step walkthrough
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
    for pushing to other branches.
 
-9. Optional: Use Botty on Slack and wait for reviews
+10. Optional: Use Botty on Slack and wait for reviews
 
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
@@ -167,12 +218,10 @@ Step by step walkthrough
    This is not something, you will do for every review. As a first contributor
    it is recommended to mention that you are new to the process.
 
-   Now, it's time to sit back and await feedback on your changes. The review team process
-   dozens of requests each day, so expect a succinct response that is short and to the point.
-
-   You will get notified by email, if there is activity on your patch in Gerrit
-   (e.g. votes, comments, new patchsets, merge etc.).
-
+Now, it's time to sit back and await feedback on your changes. The review team process
+dozens of requests each day, so expect a succinct response that is short and to the point.
+You will get notified by email, if there is activity on your patch in Gerrit
+(e.g. votes, comments, new patchsets, merge etc.).
 
 It is not unusual for a patch to get comments requesting changes. If that happens,
 please respond in a timely fashion and improve your review. If things are unclear,
@@ -194,9 +243,9 @@ Helpful links
 * `Forger <https://forger.typo3.org>`__ Search for reviews and issues
 * `Slack <https://slack.typo3.org>`__ chat system
 
-More information
-================
+Next Steps
+==========
 
-* :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
 * :ref:`improving-a-patch` in this guide for next steps in improving your patch or reviewing other patches
+
 

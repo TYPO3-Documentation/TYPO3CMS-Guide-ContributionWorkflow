@@ -1,6 +1,7 @@
 .. include:: ../Includes.txt
 
 .. _appendix-slack-intro:
+.. _slack:
 
 =====
 Slack
@@ -13,7 +14,7 @@ the slack workspace, you must already have your
 `typo3.org <https://my.typo3.org/index.php?id=2>`__ account and then
 `Register for TYPO3's Slack Platform <https://my.typo3.org/index.php?id=35>`__.
 
-On that page, you will also find information about recomended channels.
+On that page, you will also find information about recommended channels.
 
 Slack channels
 --------------

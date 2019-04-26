@@ -5,7 +5,7 @@
 .. _cheat-sheet-git:
 
 ====================================
-git cheat sheet for Core development
+Git Cheat Sheet for Core Development
 ====================================
 
 This is a short list of commands. If you are not familiar with the

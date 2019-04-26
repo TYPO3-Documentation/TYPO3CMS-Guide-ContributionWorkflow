@@ -4,7 +4,7 @@
 .. _bugreporting-index:
 
 =======================
-Report an issue (Forge)
+Report an Issue (Forge)
 =======================
 
 .. _forge-introduction:

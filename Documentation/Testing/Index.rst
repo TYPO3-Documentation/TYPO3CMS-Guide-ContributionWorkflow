@@ -4,7 +4,7 @@
 .. _testing:
 
 =========
-Run tests
+Run Tests
 =========
 
 For every patch that is uploaded to the Gerrit review server, a number
@@ -19,7 +19,7 @@ of tests are run automatically using Bamboo.
 
 You can run these tests locally with docker using a similar setup.
 
-Practical considerations
+Practical Considerations
 ========================
 
 Running *all* tests takes a considerable amount of time on a standard development
@@ -35,7 +35,7 @@ use cases:
   (coding guideline) problems or syntax errors in PHP (lint) *before* you
   upload your patch.
 
-How to run the tests
+How to Run the Tests
 ====================
 
 Tests can be run using the script `Build/Scripts/runTests.sh`. This
@@ -45,7 +45,7 @@ automatically runs docker using an image which corresponds to the environment
 you provide with the command line arguments.
 
 
-Run tests with runTests.sh using docker
+Run Tests with runTests.sh using docker
 =======================================
 
 .. _testing-install-docker:

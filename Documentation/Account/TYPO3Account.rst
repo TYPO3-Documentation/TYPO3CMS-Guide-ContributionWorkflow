@@ -3,14 +3,11 @@
 .. _TYPO3Account:
 
 ==============================
-Signup for a TYPO3.org account
+Signup for a TYPO3.org Account
 ==============================
 
 Head over to the `signup page on my.typo3.org <https://my.typo3.org/index.php?id=2>`__ 
 and fill out the form. 
-
-The fields in detail
-====================
 
 .. image:: _assets/register-t30.png
    :class: with-shadow

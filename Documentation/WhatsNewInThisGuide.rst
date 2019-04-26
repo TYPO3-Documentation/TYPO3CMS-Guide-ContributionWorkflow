@@ -1,3 +1,5 @@
+:orphan:
+
 .. include:: Includes.txt
 
 .. _whats_new_in_this_guide:

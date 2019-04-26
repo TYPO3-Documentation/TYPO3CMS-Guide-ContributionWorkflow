@@ -9,7 +9,7 @@
 Debug TYPO3
 ===========
 
-Debugging with PhpStorm and Xdebug
+Debugging With PhpStorm and Xdebug
 ==================================
 
 
@@ -37,7 +37,7 @@ Example setup:
 
 Remember to restart your Webserver / php-fpm after you made your changes.
 
-Install plugin
+Install Plugin
 --------------
 
 Install plugin "Xdebug Helper" for your browser. To start debugging, click on the bug icon and select "Debug".

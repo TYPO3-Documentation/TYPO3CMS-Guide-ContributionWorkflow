@@ -3,9 +3,9 @@
 .. _Bugfixing-Adding-documentation:
 .. _Adding-documentation:
 
-==================================
-Add documentation (Changelog etc.)
-==================================
+=================
+Add Documentation
+=================
 
 **Quick links:**
 
@@ -24,8 +24,8 @@ is maintained in the core.
 
 .. _changelog:
 
-Document changes (Changelog)
-============================
+Changelog
+=========
 
 If your change makes it necessary to update the official documentation, you have
 to add a .rst (reStructuredText) file describing your change. Not all patches
@@ -58,7 +58,7 @@ When you are done, copy the generated text and create a file with the same
 name as suggested in the generator.
 
 
-Types of changes
+Types of Changes
 ----------------
 
 There are four different types of changes
@@ -135,8 +135,8 @@ important enough to require a Changelog entry.
 
 .. _changelog-check-rst:
 
-Check your rst file
--------------------
+Check Your `rst` File
+---------------------
 
 When your change is finished, you can run the following script to check that
 your rst file is ok. The script will check all files in
@@ -207,7 +207,7 @@ them as commands in your IDE / editor.
 
 .. _documenting-system-extensions:
 
-Document system extensions
+Document System Extensions
 ==========================
 
 Documentation for system extensions is maintained within a :file:`Documentation`
@@ -229,7 +229,7 @@ When you have made changes to the documentation, you can render
 locally with docker to test your changes as described in
 :ref:`render-the-changelog`.
 
-More information
+More Information
 ================
 
 * See `Documenting Changes <https://docs.typo3.org/typo3cms/extensions/core/latest/Changelog/Howto.html>`__ for more information on the Changelog

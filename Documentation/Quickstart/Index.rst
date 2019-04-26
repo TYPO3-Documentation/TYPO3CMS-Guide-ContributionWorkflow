@@ -1,3 +1,5 @@
+:orphan:
+
 .. include:: ../Includes.txt
 
 .. highlight:: bash
@@ -9,15 +11,6 @@ Quick start
 ===========
 
 
-The quick start is a very fast walkthrough with very little explanation.
-If you get stuck or need more information, click on the "More information"
-link at the beginning of each section.
+This chapter will be removed, because the patch quick start has been merged
+into :ref:`Fixing-a-bug-A-Z`.
 
-Quick start handles **every** step to get the task done, which means it
-might briefly cover some setup steps that were already handled in earlier
-chapters.
-
-.. toctree::
-   :maxdepth: 1
-
-   QuickStartCreateAPatch.rst

@@ -4,7 +4,7 @@
 .. _improving-a-patch:
 
 ===================================
-Handle and improve a patch (Gerrit)
+Handle and Improve a Patch (Gerrit)
 ===================================
 
 .. note::

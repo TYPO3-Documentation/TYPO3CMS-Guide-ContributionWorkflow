@@ -4,9 +4,9 @@
 .. _slack-account:
 
 
-========================================================
-Register for your Slack account and join coredev-channel
-========================================================
+=====
+Slack
+=====
 
 If you wish to contribute, joining the #typo3-cms-coredev channel in the
 `TYPO3 slack workspace <https://typo3.slack.com>`__ is recommended as
@@ -17,8 +17,6 @@ can join the TYPO3 Slack workspace.
 
 Register for Slack account
 --------------------------
-
-
 
 .. rst-class:: bignums-xxl
 

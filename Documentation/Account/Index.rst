@@ -3,7 +3,7 @@
 .. _TYPO3-Guide-ContributionWorkflow-Account:
 
 ========================
-Setting up your Accounts
+Setting up Your Accounts
 ========================
 
 These are the TYPO3 online tools you will be using. For these you need a typo3.org account.

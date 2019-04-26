@@ -9,6 +9,26 @@
 TYPO3 Contribution Guide - Core Development
 ===========================================
 
+:Language:
+      en
+
+:Copyright:
+      2015-2019
+
+:Authors:
+      TYPO3 Core Team and community
+
+:Email:
+      documentation@typo3.org
+
+:License:
+      Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0),
+      https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+:Status:
+      Tested and reviewed on Dec 11, 2018
+
+
 **Quick links:**
 
 .. rst-class:: horizbuttons-primary-m
@@ -19,56 +39,53 @@ TYPO3 Contribution Guide - Core Development
 - :ref:`quickstart-create-a-patch`
 - :ref:`whats_new_in_this_guide`
 
+
+The content of this document is related to TYPO3 CMS,
+a GNU/GPL CMS/Framework available from `typo3.org
+<https://typo3.org/>`_ .
+
+
 **About this manual:**
 
-   Here, you will find everything you need to get started with
-   TYPO3 core development.
+   How to contribute to the TYPO3 codebase and how to submit issues (e.g. Bug reports).
 
-   This manual contains information that you need in order to:
+**Official documentation:**
 
-   * :ref:`create and submit a patch <Fixing-a-bug-A-Z>`
-     for the TYPO3 CMS source code
-   * :ref:`report an issue <bugreporting-index>` (bug reports and
-     feature requests) to the bugtracker `Forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
-   * :ref:`run the TYPO3 testsuite <testing>` locally with docker
-   * :ref:`add documentation <Bugfixing-Adding-documentation>` for the Changelog in the TYPO3 core
-   * :ref:`review and test <lifeOfAPatch-review>` patches
+   This document is included as part of the official TYPO3 documentation.
 
-**Other contribution**
+   If you find an error or something is missing, please:
+   `Report a Problem <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/issues/new>`__
 
-   For contribution to other areas besides the TYPO3 core, please look at https://typo3.org/community/contribute/.
+**Guide**
 
-   For example, you can contribute to the
+   This document is a Guide. Guides are designed to familiarize a reader with a specific topic
+   in order to provide a working knowledge of that particular process. Readers should peruse
+   the guide from cover to cover in order to gain a practical overview of the process.
+   Once completed, the Guide becomes a practical reference tool to which a reader can refer
+   as needed. Guides offer advice on how best to achieve a given task.
 
-   * :ref:`TYPO3 documentation <h2document:docs-contribute>`
+**For Contributors**
 
-**Useful external links:**
+   You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
+   on the top right to submit your change request.
 
-   - `Gerrit (review server) <https://review.typo3.org>`__
-   - `Forge (Bugtracker) <https://forge.typo3.org/projects/typo3cms-core/issues>`__
-   - `Forger (Search & Tools) <https://forger.typo3.com>`__
-   - `TYPO3 Slack (Chat) <https://typo3.slack.com>`__
+   You can find out more about how to do this and how to contact the Documentation
+   Team in :ref:`contribute`.
 
-**Useful links to other TYPO3 manuals:**
+   :ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/>`__
+   | `Issues <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/issues>`__
 
-   - :ref:`t3coreapi:start`
-   - :ref:`t3coreapi:cgl`
-   - :ref:`t3tca:start`
-   - `Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-   - :ref:`h2document:start`
+
+**Sitemap:**
+
+   :ref:`sitemap`
 
 
 .. toctree::
    :hidden:
 
-   DividerIntro
    Introduction/Index
-   Community/Index
-   WorkflowExplained/Index
-   Account/Index
    Setup/Index
-   Forger/Index
-   DividerTasks   
    ReportingAnIssue/Index
    BugfixingAZ/Index
    AddingDocumentation/Index
@@ -76,9 +93,6 @@ TYPO3 Contribution Guide - Core Development
    DebuggingTypo3/Index
    HandlingAPatch/Index
    HandlingIssues/TicketWorkflow
-   DividerQuickRef
    CheatSheets/Index
-   Quickstart/Index
-   WhatsNewInThisGuide
    Appendix/Index
    Sitemap/Index
