@@ -27,9 +27,7 @@ you are looking for or browse through the menu.
 
 Some pages near the end of the manual assume that you are already familiar with 
 contributing and serve as reference pages, for example the 
-:ref:`git cheat sheet <cheat-sheet-git>` or the
-:ref:`Quickstart: Creating a patch <core-contrib-quickstart>` page for a terse
-overview of all steps involved in creating a patch.
+:ref:`git cheat sheet <cheat-sheet-git>`.
 
 Some of the information, that is too extensive for the main guide, is found in 
 the :ref:`appendix`.
