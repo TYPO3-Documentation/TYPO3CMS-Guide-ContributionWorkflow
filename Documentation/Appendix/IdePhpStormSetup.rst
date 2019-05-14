@@ -90,7 +90,13 @@ are strongly recommended when developing for the TYPO3 core.
 .. hint::
    None of these plugins are mandatory, check out what might be useful for yourself!
 
-Install plugins in PhpStorm: :guilabel:`File > Settings > Plugins`.
+Install plugins in PhpStorm 
+---------------------------
+
+#. Open Settings: :guilabel:`File > Settings` (:kbd:`ctrl + alt + s`)
+#. Select :guilabel:`Plugins`
+#. Start typing name of plugin and select a match
+#. Click on :guilabel:`Install`.
 
 Recommended Plugins
 -------------------
