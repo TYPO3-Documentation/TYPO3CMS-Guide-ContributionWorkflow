@@ -163,4 +163,4 @@ from within the IDE.
 Other Resources
 ===============
 
-* https://wiki.typo3.org/Development/PHPStorm_Settings
+* `Susanne Moog: "PhpStorm—a Short Review" <https://typo3.org/article/phpstorm-a-short-review/>`__ (on typo3.org, 17th April, 2019)
