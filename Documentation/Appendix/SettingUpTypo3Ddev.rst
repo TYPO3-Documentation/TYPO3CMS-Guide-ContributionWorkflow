@@ -150,7 +150,7 @@ or::
 
 
 .. hint::
-   If you dont run "ddev stop" or "ddev remove" before shutting down or restarting docker
+   If you don't run "ddev stop" or "ddev remove" before shutting down or restarting docker
    the database might get corrupt and "ddev start" won't work anymore with the error::
       Failed to start <projectname>: db service health check timed out
    **keep in mind, this will remove your data entirely**
