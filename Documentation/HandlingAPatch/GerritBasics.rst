@@ -48,8 +48,9 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 #. Other changes **related** to this change. This can be either due to a similar topic or because the commit summary is
    related to the change we are currently reviewing.
 
-#. The **current review status**. Here you can see who has voted (and how they voted) on a change. Note that if a
-   change gets refined over time with new patch sets, your votes will be reset (simply because the review has changed).
+#. The **current review status**. Here you can see who has voted (and how they voted) on a change. The votes only apply
+   to one given patchset. If a new patchset is uploaded, it must be revoted. Note the +1 by TYPO3com, which means that
+   the automatic testsuite ran successfully. 
 
 #. All **changed files** in this current change. You can click every file to take a look at what exactly has changed. There
    is a select box on top of the file list that allows you to do a diff between patch sets to quickly see what has changed.
