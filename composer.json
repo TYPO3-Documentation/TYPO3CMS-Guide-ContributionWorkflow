@@ -1,5 +1,8 @@
 {
     "name": "typo3/guide-contributionworkflow",
     "type": "typo3-cms-documentation",
-    "description": "TYPO3 Contribution Guide - Core Development"
+    "description": "TYPO3 Contribution Guide - Core Development",
+    "require": {
+      "typo3/cms-core": "^9.5"
+    }
 }
