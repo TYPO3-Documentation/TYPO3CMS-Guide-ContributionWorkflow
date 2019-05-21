@@ -76,13 +76,6 @@ You can find the TYPO3 core issue tracker here: https://forge.typo3.org/projects
 If you click "New issue" you will see a form with a couple of fields
 that are important. Let's go over these really quick.
 
-.. important::
-
-   If you are not a member of the TYPO3 core team, you should not be filling out
-   the following fields: Priority, Assignee, Target version, Start date, Due
-   date, Estimated time, Done, Complexity, Is Regression and Sprint Focus. Do
-   not set a Watcher, unless someone has requested that you do this.
-
 Tracker
 -------
 
