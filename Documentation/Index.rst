@@ -36,6 +36,7 @@ TYPO3 Contribution Guide - Core Development
 - :ref:`Git Setup <Setting-up-your-Git-environment>`
 - :ref:`Git Cheat Sheet <cheat-sheet-git>`
 - :ref:`Commit Message Rules <commitmessage>`
+- :ref:`bugreporting-index`
 - :ref:`quickstart-create-a-patch`
 - :ref:`whats_new_in_this_guide`
 
@@ -64,7 +65,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
    Once completed, the Guide becomes a practical reference tool to which a reader can refer
    as needed. Guides offer advice on how best to achieve a given task.
 
-**For Contributors**
+**For Documentation Contributors**
 
    You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
    on the top right to submit your change request.
@@ -84,8 +85,42 @@ a GNU/GPL CMS/Framework available from `typo3.org
 .. toctree::
    :hidden:
 
-   Introduction/Index
+
+
+.. preface: Information about manual
+
+.. toctree::
+   :hidden:
+
+   Introduction/Preface
+
+
+.. introductory chapter
+
+.. toctree::
+   :hidden:
+   :caption: INTRODUCTION
+
+   Community/Index
+   WorkflowExplained/Index
+   Forger/Index
+
+
+.. setup
+
+.. toctree::
+   :hidden:
+   :caption: SETUP
+
    Setup/Index
+
+
+.. howtos
+
+.. toctree::
+   :hidden:
+   :caption: HOWTOS
+
    ReportingAnIssue/Index
    BugfixingAZ/Index
    AddingDocumentation/Index
@@ -93,6 +128,14 @@ a GNU/GPL CMS/Framework available from `typo3.org
    DebuggingTypo3/Index
    HandlingAPatch/Index
    HandlingIssues/TicketWorkflow
-   CheatSheets/Index
+
+
+.. references
+
+.. toctree::
+   :hidden:
+   :caption: REFERENCES
+
+   CheatSheets/Git
    Appendix/Index
    Sitemap/Index
