@@ -54,7 +54,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
    This document is included as part of the official TYPO3 documentation.
 
    If you find an error or something is missing, please:
-   `Report a Problem <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/issues/new>`__
+   `Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues/new>`__
 
 **Guide**
 
