@@ -49,7 +49,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
    How to contribute to the TYPO3 codebase and how to submit issues (e.g. Bug reports).
 
-**Official documentation:**
+**Official Documentation:**
 
    This document is included as part of the official TYPO3 documentation.
 
@@ -64,7 +64,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
    Once completed, the Guide becomes a practical reference tool to which a reader can refer
    as needed. Guides offer advice on how best to achieve a given task.
 
-**For Contributors**
+**For Documentation Contributors**
 
    You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
    on the top right to submit your change request.
