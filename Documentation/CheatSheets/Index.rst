@@ -1,3 +1,8 @@
+.. this is currently not included in menu.
+.. the Git cheat sheet is currently directly included in the menu
+
+:orphan:
+
 .. include:: ../Includes.txt
 
 .. _forge-index:

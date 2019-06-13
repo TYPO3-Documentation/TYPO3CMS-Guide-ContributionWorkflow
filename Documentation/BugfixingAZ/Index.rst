@@ -5,9 +5,9 @@
 .. _core-contrib-quickstart:
 .. _quickstart-create-a-patch:
 
-=======================
-Create & Submit a Patch
-=======================
+==============
+Create a Patch
+==============
 
 **Quick links:**
 

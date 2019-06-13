@@ -4,9 +4,9 @@
 
 .. _cheat-sheet-git:
 
-====================================
-Git Cheat Sheet for Core Development
-====================================
+===============
+Git Cheat Sheet
+===============
 
 This is a short list of commands. If you are not familiar with the
 workflow yet, make sure you follow the link at the beginning of

@@ -3,7 +3,7 @@
 .. _workflow-explained:
 
 ============================
-TYPO3 Contribution explained
+TYPO3 Contribution Explained
 ============================
 
 Ok, so you want to overview first, that's fine. Actually, it's a brilliant idea to understand the concept first to help
