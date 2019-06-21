@@ -191,6 +191,17 @@ Step by Step Walkthrough
       git push origin HEAD:refs/for/master
 
 
+   .. note::
+      In case you want to push a "Work in progress", use the following instead::
+
+          git push origin HEAD:refs/for/master%wip
+
+      You can also configure Gerrit to always mark your pushed as WIP. Therefore
+      head over to https://review.typo3.org/settings/ and configure "Set new
+      changes to "work in progress" by default".
+
+      See: https://gerrit-review.googlesource.com/Documentation/user-upload.html#wip
+
    If Gerrit accepts your push, it responds with the following messages:
 
    .. code-block:: bash
