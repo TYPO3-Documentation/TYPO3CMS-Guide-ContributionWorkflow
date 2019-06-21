@@ -91,12 +91,6 @@ Additionally other flags  **should be added** under certain circumstances:
       Whenever your change introduces a breaking change, it is **mandatory** to
       put `[!!!]` in front of the keyword.
 
-`[WIP]`
-   Work In Progress. This flag is not mandatory and must be added before any other keywords; will be removed, once the final version of a
-   change is available. Changes marked WIP are never merged. An example could be: ``[WIP][TASK] Write some neat comment``.
-
-Note that if you want to add a breaking feature which is still work in progress, you would use ``[WIP][!!!][FEATURE] Transform Lead to Gold`` as your summary line. This way it is very easy to see the WIP state; that it is also breaking doesn't really matter at this point.
-
 `[SECURITY]`
    Visualizes that a change fixes a security issue. This tag is used
    by the Security Team.
