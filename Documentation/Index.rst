@@ -70,8 +70,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
    You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
    on the top right to submit your change request.
 
-   You can find out more about how to do this and how to contact the Documentation
-   Team in :ref:`contribute`.
+   You can find out more about how to do this in :ref:`h2document:docs-contribute`.
 
    :ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/>`__
    | `Issues <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/issues>`__
@@ -84,29 +83,13 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
 .. toctree::
    :hidden:
-
-
-
-.. preface: Information about manual
-
-.. toctree::
-   :hidden:
-
-   Introduction/Preface
-
-
-.. introductory chapter
-
-.. toctree::
-   :hidden:
    :caption: INTRODUCTION
 
+   About
    Community/Index
    WorkflowExplained/Index
    Forger/Index
 
-
-.. setup
 
 .. toctree::
    :hidden:
@@ -114,8 +97,6 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
    Setup/Index
 
-
-.. howtos
 
 .. toctree::
    :hidden:
@@ -130,12 +111,11 @@ a GNU/GPL CMS/Framework available from `typo3.org
    HandlingIssues/TicketWorkflow
 
 
-.. references
-
 .. toctree::
    :hidden:
-   :caption: REFERENCES
+   :caption: OTHER
 
    CheatSheets/Git
    Appendix/Index
    Sitemap/Index
+

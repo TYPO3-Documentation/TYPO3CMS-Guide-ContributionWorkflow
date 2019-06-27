@@ -1,8 +1,10 @@
-.. include:: ../Includes.txt
+.. include:: Includes.txt
 
-=======
-Preface
-=======
+.. _about:
+
+================
+About This Guide
+================
 
 This guide provides all necessary information to enable you to contribute to the TYPO3 
 source code. 
@@ -37,22 +39,7 @@ What's New in This Guide
 
 See :ref:`whats_new_in_this_guide`.
 
-Additional information
-======================
 
-In general: If you wish to make a contribution, familiarize yourself with 
-the basics and general conventions used. For the TYPO3 source it is  
-mandatory that your code must follow the general 
-:ref:`coding guidelines <t3coreapi:cgl>` for the
-project and that your commit messages follow the 
-:ref:`commit messages rules <commitmessage>`.
-
-When developing, you will also want to be well informed about the
-latest developments in the TYPO3 core. For additional
-information, look here:
-
-* `Core ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-* :ref:`Core API <t3coreapi:start>`
 
 .. _other-resources-for-contribution:
 
@@ -87,10 +74,3 @@ about how to contribute to the TYPO3 documentation.
 
 And finally, as a last resort, you can get in touch with the
 Documentation Team `by mail <documentation@typo3.org>`_.
-
-.. _contact-core-team:
-
-Contact the Core Team
-=====================
-
-Contact the Core Team in the :ref:`Slack` channel **#typo3-cms-coredev**.
