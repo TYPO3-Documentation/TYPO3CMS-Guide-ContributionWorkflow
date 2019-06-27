@@ -19,7 +19,9 @@ are displayed like this: :guilabel:`File > Settings > ....`
 General setup
 =============
 
-`File: Settings: Languages & Frameworks: PHP`
+:guilabel:`File > Settings > Languages & Frameworks > PHP`
+
+(:kbd:`ctrl + alt + s` opens :guilabel:`File > Settings`)
 
 * `PHP Language Level`: choose appropriate version
 * `CLI Interpreter`: choose appropriate version
@@ -143,6 +145,8 @@ paths for this.
 
 Setup **Test Frameworks** in PhpStorm:
 :guilabel:`File > Settings > Languages & Frameworks > PHP: Test Frameworks`:
+
+(:kbd:`ctrl + alt + s` opens :guilabel:`File > Settings`)
 
 * Use composer autoloader
 * `Path to script`: <YOUR_WEBROOT>/vendor/autoload.php
