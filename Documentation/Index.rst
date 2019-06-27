@@ -95,7 +95,11 @@ a GNU/GPL CMS/Framework available from `typo3.org
    :hidden:
    :caption: SETUP
 
-   Setup/Index
+   Account/Index
+   Setup/Prerequisites
+   Setup/SetupTypo3
+   Setup/Git/Index
+   Setup/SetupIde
 
 
 .. toctree::
