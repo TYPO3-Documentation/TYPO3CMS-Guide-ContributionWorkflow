@@ -59,18 +59,20 @@ Push changes to remote master on gerrit (default method)::
 .. note::
    Pushing to `refs/publish` is deprecated, we now push to `refs/for`.
 
+.. _git-work-in-progress:
 
-Workflow - drafts
-=================
+Workflow - work in progress
+===========================
 
-Push changes to remote master on gerrit as **draft**::
+In case you want to push a "Work in progress", use the following instead::
 
-   git push origin HEAD:refs/drafts/master
+      git push origin HEAD:refs/for/master%wip
 
+You can also configure Gerrit to always mark your pushes as WIP. In order to do this
+head over to https://review.typo3.org/settings/ and configure "Set new
+changes" to "work in progress" by default".
 
-*When pushing as draft, the pushed patch will only be visible to you
-and those who you add as a reviewer. It also does not start any
-automated tests or builds on the TYPO3 testing infrastructure.*
+See: https://gerrit-review.googlesource.com/Documentation/user-upload.html#wip
 
 .. _cheat-sheet-git-other-branches:
 

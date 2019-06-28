@@ -191,6 +191,9 @@ Step by Step Walkthrough
       git push origin HEAD:refs/for/master
 
 
+   In case you want to push a "Work in progress", check out:
+   :ref:`git-work-in-progress`.
+
    If Gerrit accepts your push, it responds with the following messages:
 
    .. code-block:: bash
