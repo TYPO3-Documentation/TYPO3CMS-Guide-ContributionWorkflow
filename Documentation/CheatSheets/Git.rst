@@ -68,9 +68,9 @@ In case you want to push a "Work in progress", use the following instead::
 
       git push origin HEAD:refs/for/master%wip
 
-You can also configure Gerrit to always mark your pushed as WIP. Therefore
+You can also configure Gerrit to always mark your pushes as WIP. In order to do this
 head over to https://review.typo3.org/settings/ and configure "Set new
-changes to "work in progress" by default".
+changes" to "work in progress" by default".
 
 See: https://gerrit-review.googlesource.com/Documentation/user-upload.html#wip
 
