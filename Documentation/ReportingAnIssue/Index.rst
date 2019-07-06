@@ -73,6 +73,17 @@ Create an issue
 :ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already). 
 You can find the TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/issues.
 
+.. image:: _assets/new-issue.png
+   :class: with-shadow
+
+.. tip::
+
+   If you do not see the "New issue" link:
+
+   #. make sure that you are logged in
+   #. click on "CORE DEVELOPMENT" in the top left. Alternatively,
+      you can click on the "Issues" link (in the orange bar at the top)
+
 If you click "New issue" you will see a form with a couple of fields
 that are important. Let's go over these really quick.
 
@@ -89,15 +100,20 @@ somebody needs to take care of.
 Subject
 -------
 
-Pick a meaningful subject. Something like "GIFBUILDER broken" is very generic
+Pick a meaningful subject. Something like "Error in list module" is very generic
 and doesn't help describing the problem. Just imagine how you would like to get
 a report for yourself :)
 
+.. tip::
+
+   Remember, the subject is also helpful for people searching for already
+   existing issues. Be as clear and precise as possible!
+
 Bad example:
-   GIFBUILDER broken
+   Bug
 
 Good example:
-   Text is not added to GIFBUILDER when using TEXT object
+   JS error in Internet Explorer 11 when inserting record in list module.
 
 Description
 -----------
@@ -123,6 +139,8 @@ Format your issue
    :ref:`formatting-in-redmine` for more information on formatting your text.
 Be polite.
    Always.
+
+
 
 Category
 --------
@@ -164,7 +182,13 @@ Some hints for files:
   video that clarifies your issue. For example, use an animated gif screen capture 
   tool to create an animated gif.
 
+.. image:: _assets/new-issue2.png
+   :class: with-shadow
 
+.. tip::
+
+   Use the "Preview" function at the bottom of the page to check if your
+   issue is formatted well.
 
 .. _best-practices-bug-report:
 
@@ -262,6 +286,13 @@ of the problem.
 ::
 
    !filename.png!
+
+.. tip::
+
+   When more images are added on with comments on your original issue, all
+   images are displayed in a list. This makes it very difficult to determine,
+   which file belongs to the original issue description. This is another
+   reason to consider using inline images.
 
 **See:**
 
