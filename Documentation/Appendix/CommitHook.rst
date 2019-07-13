@@ -55,10 +55,10 @@ commit::
 
 .. _post-checkout-for-composer-update:
 
-Post-checkout hook for composer update
+Post-checkout hook for composer install
 ======================================
 
-If you want to run `composer update` for each checkout (e.g. when switching branches, tags, etc), then you can use the `post-checkout` commit hook.
+If you want to run `composer install` for each checkout (e.g. when switching branches, tags, etc), then you can use the `post-checkout` commit hook.
 
 Create a file named `.git/hooks/post-checkout` with the following contents:
 
