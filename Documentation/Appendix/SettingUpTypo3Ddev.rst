@@ -43,7 +43,6 @@ Create a clone of the TYPO3 git repository as described in :ref:`git-clone`.
    mkdir t3master
    cd t3master
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-   composer install
    cd Build
    yarn install
    yarn build
@@ -74,6 +73,17 @@ Start DDEV
 ::
 
    ddev start
+   
+   
+Install dependencies via composer
+=================================
+
+This runs inside the container and thus uses your configured PHP version.
+
+::
+
+   ddev composer install
+
 
 
 Check for database credentials
