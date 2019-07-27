@@ -59,13 +59,11 @@ Configure DDEV
    ddev config
 
 
-Now edit the configuration file `.ddev/config.yaml` and make sure you
-change the PHP version to the required version (in TYPO3 9 master
-this is PHP 7.2).
+In order to change the PHP version, edit the configuration file `.ddev/config.yaml`. See supported version here: https://typo3.org/cms/roadmap/
 
 ::
 
-   php_version: "7.2"
+   php_version: "7.3"
 
 Start DDEV
 ==========
