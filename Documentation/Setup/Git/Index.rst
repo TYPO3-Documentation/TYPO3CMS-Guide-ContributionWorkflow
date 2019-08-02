@@ -159,3 +159,9 @@ Other resources
 See :ref:`git cheat sheet <cheat-sheet-git>` for more git commands.
 
 We have compiled a list of more information for you in the :ref:`Appendix<appendix>` section.
+
+
+Troubleshooting
+===============
+
+Before you're able to push your commits you have to :ref:`set up your account <setting-up-your-account>`. First you need a TYPO3.org account. Then you have to add your SSH-Key to Gerrit.
