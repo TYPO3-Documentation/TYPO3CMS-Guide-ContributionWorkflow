@@ -152,6 +152,18 @@ Show current configuration::
 
   git config -l
 
+The result should look like this::
+
+   ...
+   remote.origin.url=git://git.typo3.org/Packages/TYPO3.CMS.git
+   remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+   branch.master.remote=origin
+   branch.master.merge=refs/heads/master
+   branch.autosetuprebase=remote
+   url.ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418.pushinsteadof=git://git.typo3.org
+   commit.template=/path/to/.gitmessage.txt
+   ...
+
 
 Other resources
 ===============
@@ -166,3 +178,25 @@ Troubleshooting
 
 Before you're able to push your commits you have to :ref:`set up your account <setting-up-your-account>`.
 First you need a TYPO3.org account. Then you have to add your SSH-Key to Gerrit.
+
+Compare the :file:`.git/config` file inside the repository if pushing doesn´t work::
+
+    [core]
+       repositoryformatversion = 0
+       filemode = true
+       bare = false
+       logallrefupdates = true
+       ignorecase = true
+       precomposeunicode = true
+    [remote "origin"]
+       url = git://git.typo3.org/Packages/TYPO3.CMS.git
+       fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "master"]
+       remote = origin
+       merge = refs/heads/master
+    [branch]
+       autosetuprebase = remote
+    [url "ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418"]
+       pushInsteadOf = git://git.typo3.org
+    [commit]
+       template = /path/to/.gitmessage.txt
