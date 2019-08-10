@@ -13,7 +13,7 @@ Add Documentation
 
 - :ref:`h2document:Formatting-with-reST`
 - :ref:`h2document:format-rest-cgl`
-- :ref:`h2document:rest-common-pitfalls`
+- :ref:`h2document:rest-cheat-sheet`
 - :ref:`h2document:rendering-docs-quickstart`
 
 
