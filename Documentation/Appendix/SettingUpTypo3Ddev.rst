@@ -26,11 +26,14 @@ Setting up the prerequisites
 ============================
 
 You will need to install docker and other
-`System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
+`ddev system requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
 Then install DDEV as described in the
 `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 instructions.
+
+In order to be able to build some assets (e.g. css, js files) you need to have `yarn` installed as `described here <https://yarnpkg.com/lang/en/docs/install/>`__.
+
 
 Clone TYPO3
 ===========
