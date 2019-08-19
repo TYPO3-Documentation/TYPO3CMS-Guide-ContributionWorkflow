@@ -113,7 +113,7 @@ Bad example:
    Bug
 
 Good example:
-   JS error in Internet Explorer 11 when inserting record in list module.
+   JS error in Internet Explorer when inserting record in list module.
 
 Description
 -----------
