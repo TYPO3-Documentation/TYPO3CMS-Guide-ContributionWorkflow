@@ -18,11 +18,13 @@ Prerequisites
 * Make sure, you have cloned the TYPO3 source as described previously in :ref:`setup-typo3-git-clone`::
 
       git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-      composer install
+
 
 
 Set Username and Email
 ======================
+
+*-- required* (unless this is already setup globally, see `git config --global -l`)
 
 You need to instruct git to work with your name and email address. Make sure the email address and user name are the same as those you used when
 :ref:`setting up your TYPO3 account<TYPO3Account>`::
@@ -30,8 +32,10 @@ You need to instruct git to work with your name and email address. Make sure the
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
 
-Set `autosetuprebase`
-=====================
+Set autosetuprebase
+===================
+
+*-- required*
 
 In order to avoid weird merges in your local repository when pulling in new commits from typo3.org, we encourage everybody
 to set the autosetuprebase option, such that your local commits are always rebased on top of the official code::
@@ -47,13 +51,15 @@ Install Your Commit Hooks
 
 There are two git hooks available for TYPO3 development:
 
-* :ref:`commit-msg-hook`: mandatory
+* :ref:`commit-msg-hook`: required
 * :ref:`pre-commit-hook`: optional, currently not available for Windows
 
 To set them up, do the following:
 
-`commit-msg` Hook
------------------
+commit-msg Hook
+---------------
+
+*-- required*
 
 Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`::
 
@@ -74,10 +80,12 @@ Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`::
 More information: :ref:`commit-msg-hook`
 
 
-`pre-commit` Hook
------------------
+pre-commit Hook
+---------------
 
-The pre-commit hook runs on Linux and MacOS. It is not required for core development.
+*-- optional*
+
+The pre-commit hook runs on Linux and MacOS, not on Windows.
 
 Activate the hook by copying the sample file to :file:`.git/hooks/pre-commit`::
 
@@ -109,6 +117,8 @@ More information: :ref:`custom-composer-commands`.
 Setting up Your Remote
 ======================
 
+*-- required*
+
 You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
@@ -120,8 +130,7 @@ You must instruct Git to push to Gerrit_ instead of the original repository. It 
 Setting up a Commit Message Template
 ====================================
 
-This is optional! If you do not wish to setup a commit message template,
-continue with the next step:  :ref:`forger-index`.
+*-- optional*
 
 If you follow these instructions, whenever you create a new commit,
 Git will use the template to create the commit message, which you can
@@ -147,6 +156,8 @@ see :ref:`commitmessage`.
 
 Show Configuration
 ==================
+
+*-- optional*
 
 Show current configuration::
 
