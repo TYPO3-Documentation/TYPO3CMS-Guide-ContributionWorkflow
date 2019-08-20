@@ -34,8 +34,8 @@ here.
 
 .. _composer-install:
 
-`composer install`
-==================
+Composer
+========
 
 Run composer install in the same directory you cloned the master repository to.
 This may take several minutes::
@@ -45,8 +45,8 @@ This may take several minutes::
 
 .. _yarn-build:
 
-`yarn install`
-==============
+Yarn
+====
 
 Go to the `Build` folder of your TYPO3 install root directory.
 Install all dependencies with `yarn install`.
