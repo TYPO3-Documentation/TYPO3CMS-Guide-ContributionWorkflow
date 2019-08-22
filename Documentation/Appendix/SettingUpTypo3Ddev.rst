@@ -46,10 +46,6 @@ Create a clone of the TYPO3 git repository as described in :ref:`git-clone`.
    mkdir t3master
    cd t3master
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-   cd Build
-   yarn install
-   yarn build
-   cd ..
 
 
 
@@ -75,7 +71,9 @@ Start DDEV
 
    ddev start
    
-   
+
+.. _ddev-composer-install:
+
 Install dependencies via composer
 =================================
 

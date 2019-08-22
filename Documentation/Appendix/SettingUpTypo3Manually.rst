@@ -24,17 +24,15 @@ You will need to set up the prerequisites for your operating system. Look at the
 Clone TYPO3
 ===========
 
-Create a clone of git as described in :ref:`git-clone`.
+Create a clone of git as described in :ref:`git-clone`, run :ref:`composer-install` and
+optionally :ref:`yarn-build`.
 
 
 ::
 
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
    composer install
-   cd Build
-   yarn install
-   yarn build
-   cd ..
+
 
 
 Create the database

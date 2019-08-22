@@ -12,8 +12,8 @@ Setup the TYPO3 installation
 .. _setup-typo3-git-clone:
 .. _git-clone:
 
-`git clone`
-===========
+git clone
+=========
 
 Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3:: 
 
@@ -34,8 +34,20 @@ here.
 
 .. _composer-install:
 
-Composer
-========
+composer install
+================
+
+*-- required* (unless run `composer install` from container solution, such as DDEV,
+see :ref:`composer-install`)
+
+.. tip::
+
+   If you plan to use a Docker based container solution for setting up your
+   TYPO3 installation (for example using :ref:`DDEV <ddev>`),
+   you can perform the step `composer install` later and let it run
+   :ref:`inside your Docker container <ddev-composer-install>`.
+
+Information about :ref:`setting up Composer <prerequisites-composer>` is found in previous chapter.
 
 Run composer install in the same directory you cloned the master repository to.
 This may take several minutes::
@@ -45,8 +57,15 @@ This may take several minutes::
 
 .. _yarn-build:
 
-Yarn
-====
+yarn install
+============
+
+.. tip::
+
+   This step is not necessary to setup a working environment. You may however
+   want to test this step because you might be needing it later if you make
+   changes in the frontend SCSS or TypeScript files in :file:`Build/Sources`.
+   If not, skip to :ref:`setup-typo3-installation`.
 
 Go to the `Build` folder of your TYPO3 install root directory.
 Install all dependencies with `yarn install`.
@@ -83,7 +102,7 @@ Setting up a Working TYPO3 Installation
 =======================================
 
 You will now need to use your git clone to setup a working installation
-of TYPO3. There are many different ways how you can do this. We will
+of TYPO3. There are many different ways how you can do this. We
 provide a few examples in the Appendix:
 
 * :ref:`ddev`
