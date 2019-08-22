@@ -10,14 +10,15 @@ What's new in this guide
 
 New:
 
+* 2019-08-22: :ref:`troubleshooting`
 * 2019-04-03: :ref:`aliases`
-* 2018-12-05 : :ref:`community`
-* 2018-10-23 : :ref:`rebase`
-* 2018-10-23 : :ref:`resolve-merge-conflicts`
-* 2018-10-05 : Added :ref:`cheat-sheet-git`, a number of changes were made
+* 2018-12-05: :ref:`community`
+* 2018-10-23: :ref:`rebase`
+* 2018-10-23: :ref:`resolve-merge-conflicts`
+* 2018-10-05: Added :ref:`cheat-sheet-git`, a number of changes were made
   after that until recently
-* 2018-04-24 : :ref:`phpstorm-setup`
-* 2018-03-13 : :ref:`ddev`
+* 2018-04-24: :ref:`phpstorm-setup`
+* 2018-03-13: :ref:`ddev`
 
 With considerable changes:
 
