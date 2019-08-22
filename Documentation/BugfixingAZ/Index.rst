@@ -204,6 +204,9 @@ Step by Step Walkthrough
       To ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git
        * [new branch]      HEAD -> refs/for/<release-branch>
 
+   If you see an error, check out the :ref:`Git Troubleshooting <git-troubleshooting>`
+   section.
+
    You can visit the link to https://review.typo3.org to see your patch in Gerrit.
 
    Advanced users / core team only: See

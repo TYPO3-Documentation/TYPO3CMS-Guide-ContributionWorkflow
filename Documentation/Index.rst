@@ -120,6 +120,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
    :caption: OTHER
 
    CheatSheets/Git
+   Troubleshooting/Index
    Appendix/Index
    Sitemap/Index
 
