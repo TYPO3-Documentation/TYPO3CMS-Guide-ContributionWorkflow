@@ -22,6 +22,11 @@ or Database running on your machine, make sure there are no conflicts.
 You can change the default ports DDEV uses (e.g. port 80 / 443 for Webserver)
 in `.ddev/config.yaml` before you start it.
 
+You can watch a video tutorial about setting up TYPO3 with DDEV, or go through steps outlined below.
+
+.. youtube:: HZVMPoI9SIk
+
+
 Setting up the prerequisites
 ============================
 
