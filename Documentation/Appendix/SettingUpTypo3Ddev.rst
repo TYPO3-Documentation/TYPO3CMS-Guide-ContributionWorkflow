@@ -197,7 +197,7 @@ DDEV documentation
 
 * `Get Started with DDEV <https://www.drud.com/get-started/>`__
 * `DDEV System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__
-* `Generel DDEV installation <https://ddev.readthedocs.io/en/latest/#installation>`__
+* `General DDEV installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 * `DDEV TYPO3 Quickstart <https://ddev.readthedocs.io/en/latest/users/cli-usage/#typo3-quickstart>`__
 * `DDEV commands <https://ddev.readthedocs.io/en/latest/users/cli-usage>`__
 
