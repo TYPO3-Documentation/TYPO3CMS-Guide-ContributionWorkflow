@@ -46,7 +46,7 @@ reST File Generator
 .. tip::
 
    If you want to save yourself some time you can use the rst Helper at
-   https://forger.typo3.org/utility/rst
+   https://forger.typo3.com/utilities/rst
 
 This is strongly recommended because the tool will generate correctly
 formatted files. You can always add more to the .rst file directly later.
