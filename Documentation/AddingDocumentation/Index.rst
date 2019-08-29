@@ -27,8 +27,8 @@ is maintained in the core.
 Changelog
 =========
 
-If your change makes it necessary to update the official documentation, you have
-to add a .rst (reStructuredText) file describing your change. Not all patches
+Some patches require a .rst (reStructuredText) Changelog file describing the change.
+Not all patches
 need an entry in the Changelog. Check the list below. Also see the current
 `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
 for some examples.
