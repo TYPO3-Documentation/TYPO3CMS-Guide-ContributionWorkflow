@@ -151,6 +151,24 @@ directly pushing to the target branches, you have to use this lengthy command::
 For example::
 
     git push origin HEAD:refs/for/master
+    
+    
+Push: Invalid Key Format
+------------------------
+
+If you get an error about an invalid key format this might happen if you didn't save your key in the OpenSSH format but in a proprietary  format like i.e. offered by putty. 
+
+Review the sections about creating a valid public/private key pair on your operating system: :ref:`gerrit-ssh`
+
+A valid private key in OpenSSH format starts with the following lines:
+
+.. code-block:: file
+
+   -----BEGIN RSA PRIVATE KEY-----
+   Proc-Type: 4,ENCRYPTED
+   DEK-Info: DES-EDE3-CBC,0314A92F87D7FEDF
+
+followed by about 25 lines of seemingly random signs. 
 
 Pushing old Patch Set again
 ---------------------------
@@ -163,3 +181,5 @@ Amend the commit using::
     git commit --amend
 
 Even without modifying the Commit Message, it gets a new SHA. This commit can be pushed again.
+
+
