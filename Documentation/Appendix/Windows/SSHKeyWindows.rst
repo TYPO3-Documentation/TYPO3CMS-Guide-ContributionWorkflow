@@ -60,11 +60,12 @@ In order to achieve this, create a new shortcut:
 * Copy and insert :file:`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 * Right click into the folder and select ``New->Short Cut``
 * Copy and insert %ProgramFiles%\PuTTY\pageant.exe "<full path to your saved
-  private key.ppk>". 
+  private key.ppk>".
 * Click ``Next``. If you get an error the program could not be found, delete
-  the argument with your private key and continue. But check then the
-  properties of the shortcut and add your private key again if it's not already
-  there.
+  the argument with your private key file and continue without an argument
+* Name your new shortcut and click ``Finish``
+* If you had to delete your private key file, check the properties of the newly
+  created shortcut and add your private key again if it's not already there
 
 Pageant will run as background task, place a nice little icon into your tray
 icons and start automatically after your login.
