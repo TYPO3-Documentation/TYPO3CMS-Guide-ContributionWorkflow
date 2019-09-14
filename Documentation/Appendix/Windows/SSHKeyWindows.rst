@@ -15,7 +15,7 @@ Generate your keys with Putty
 .. image:: ../_assets/puttygen-generate.png
    :class: with-shadow float-left
 
-* Download and run the PuTTY Windows Installer from the official `download page
+* Download and run the PuTTY Windows Installer from the `official download page
   <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__ (chiark.greenend.org.uk)
 * Start "PuTTYgen" from the start menu
 * Select ``ED25519`` (1) in the groupbox ``Parameters`` on the bottom. Alternatively you can select ``RSA`` and
