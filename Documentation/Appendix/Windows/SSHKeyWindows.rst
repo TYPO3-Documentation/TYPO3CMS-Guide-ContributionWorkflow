@@ -20,6 +20,7 @@ Generate your keys with Putty
 * Click the Generate (2) button and follow the screen instructions
 
 .. image:: ../_assets/puttygen-generate.png
+   :class: with-shadow
 
 * Fill the comment (1) to identify this key with your email for instance
 * Add a passphrase for your pivate key (2, 3)
@@ -34,6 +35,7 @@ Generate your keys with Putty
    OpenSSH key.
 
 .. image:: ../_assets/puttygen-save.png
+   :class: with-shadow
 
 
 Use pageant to load your pivate key on startup
