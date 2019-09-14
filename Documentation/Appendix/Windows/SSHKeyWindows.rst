@@ -16,7 +16,8 @@ Generate Your Keys with Putty
    :class: with-shadow float-left
 
 * Download and run the PuTTY Windows Installer from the `official download page
-  <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__ (chiark.greenend.org.uk)
+  <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__
+  (chiark.greenend.org.uk)
 * Start "PuTTYgen" from the start menu
 * Select ``ED25519`` (1) in the groupbox ``Parameters`` on the bottom.
   Alternatively you can select ``RSA`` and increase the ``Number of bits in a
@@ -53,7 +54,7 @@ and any tools using putty (e.g. git-for-windows, TortoiseGit, etc.) can
 automatically use your private key.
 
 In order to achieve this, create a new shortcut in the following folder:
-:file:`C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`.
+:file:`C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`
 
 The target of the shortcut must be:
 
