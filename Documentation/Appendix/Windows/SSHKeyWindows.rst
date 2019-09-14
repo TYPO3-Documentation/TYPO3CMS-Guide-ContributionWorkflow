@@ -6,10 +6,10 @@
 Creating a SSH Public Key on Windows
 ====================================
 
-In order to create a SSH key for windows you can follow these steps.
+In order to create a SSH key for Windows you can follow these steps.
 
 
-Generate Your Keys with Putty
+Generate Your Keys With Putty
 =============================
 
 .. image:: ../_assets/puttygen-generate.png
@@ -25,6 +25,7 @@ Generate Your Keys with Putty
 * Click the Generate (2) button and follow the screen instructions
 
 .. rst-class:: clear-both
+
 
 .. image:: ../_assets/puttygen-save.png
    :class: with-shadow float-left
