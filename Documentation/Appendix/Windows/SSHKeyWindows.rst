@@ -11,26 +11,28 @@ In order to create a SSH key for windows you can follow these steps.
 Generate your keys with Putty
 =============================
 
-#. download putty http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.66-installer.exe
+* Download and run the PuTTY Windows Installer from the official `download page
+  <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__ (chiark.greenend.org.uk)
+* Start "PuTTYgen" from the start menu
+* Select ``ED25519`` (1) in the groupbox ``Parameters`` on the bottom. Alternatively you can select ``RSA`` and
+  increase the ``Number of bits in a generated key`` field to ``4096``
+* Click the Generate (2) button and follow the screen instructions
 
-#. start "PUTTYgen" from the start menu
+.. image:: ../_assets/puttygen-generate.png
 
-.. image:: ../_assets/generate.png
-
-#. click the Generate (1) button and follow the screen instructions
-
-.. image:: ../_assets/windows-ssh-keygen-save.png
-
-4.) Fill the fields for comment (1) and add your name for instance
-5.) Add a passphrase for your pivate key (2, 3)
-6.) Save you private key in a protected place on the local filesystem (4)
-7.) Copy the displayed public key and add it to your Gerrit account
+* Fill the comment (1) to identify this key with your email for instance
+* Add a passphrase for your pivate key (2, 3)
+* Save you private key in a protected place on the local filesystem (4)
+* Convert the key to the needed format (5) see note below
+* Copy the displayed public key and add it to your Gerrit account (6)
 
 .. note::
 
    Keep in mind that putty uses a proprietary format to store keys, which is incompatible with OpenSSH, when you use any
    of the save-buttons. If you need to store you private key in the OpenSSH format use the menu item Conversions->Export
    OpenSSH key.
+
+.. image:: ../_assets/puttygen-save.png
 
 
 Use pageant to load your pivate key on startup
