@@ -59,7 +59,7 @@ The target of the shortcut must be:
 
 .. code-block:: shell
 
-   %ProgramFiles(x86)%\PuTTY\Pageant.exe "<full path to your saved private key.ppk>"
+   %ProgramFiles%\PuTTY\pageant.exe "<full path to your saved private key.ppk>"
 
 Pageant will run as background task and will place a nice little icon into your
 tray icons.
