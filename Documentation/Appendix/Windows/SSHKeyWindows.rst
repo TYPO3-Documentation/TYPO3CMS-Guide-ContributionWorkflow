@@ -22,7 +22,7 @@ Generate your keys with Putty
   increase the ``Number of bits in a generated key`` field to ``4096``
 * Click the Generate (2) button and follow the screen instructions
 
-.. rst-class::  clear-both
+.. rst-class:: clear-both
 
 .. image:: ../_assets/puttygen-save.png
    :class: with-shadow float-left
@@ -39,7 +39,7 @@ Generate your keys with Putty
    of the save-buttons. If you need to store you private key in the OpenSSH format use the menu item Conversions->Export
    OpenSSH key.
 
-.. rst-class::  clear-both
+.. rst-class:: clear-both
 
 
 Use pageant to load your pivate key on startup
