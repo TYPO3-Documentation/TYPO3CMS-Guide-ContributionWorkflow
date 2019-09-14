@@ -55,7 +55,7 @@ and any tools using putty (e.g. git-for-windows, TortoiseGit, etc.) can
 automatically use your private key.
 
 In order to achieve this, create a new shortcut in the following folder:
-:file:`C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`
+:file:`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 
 The target of the shortcut must be:
 
