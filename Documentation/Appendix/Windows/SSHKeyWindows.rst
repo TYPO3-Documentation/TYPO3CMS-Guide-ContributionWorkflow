@@ -54,14 +54,17 @@ autostart folder. This allows you to enter your passphrase only once at startup
 and any tools using putty (e.g. git-for-windows, TortoiseGit, etc.) can
 automatically use your private key.
 
-In order to achieve this, create a new shortcut in the following folder:
-:file:`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+In order to achieve this, create a new shortcut:
 
-The target of the shortcut must be:
+* Press :kbd:`Windows` + :kbd:`r`
+* Copy and insert :file:`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+* Right click into the folder and select ``New->Short Cut``
+* Copy and insert %ProgramFiles%\PuTTY\pageant.exe "<full path to your saved
+  private key.ppk>". 
+* Click ``Next``. If you get an error the program could not be found, delete
+  the argument with your private key and continue. But check then the
+  properties of the shortcut and add your private key again if it's not already
+  there.
 
-.. code-block:: shell
-
-   %ProgramFiles%\PuTTY\pageant.exe "<full path to your saved private key.ppk>"
-
-Pageant will run as background task and will place a nice little icon into your
-tray icons.
+Pageant will run as background task, place a nice little icon into your tray
+icons and start automatically after your login.
