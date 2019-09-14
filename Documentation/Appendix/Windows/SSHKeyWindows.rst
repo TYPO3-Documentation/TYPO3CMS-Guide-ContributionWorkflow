@@ -12,6 +12,9 @@ In order to create a SSH key for windows you can follow these steps.
 Generate your keys with Putty
 =============================
 
+.. image:: ../_assets/puttygen-generate.png
+   :class: with-shadow float-left
+
 * Download and run the PuTTY Windows Installer from the official `download page
   <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__ (chiark.greenend.org.uk)
 * Start "PuTTYgen" from the start menu
@@ -19,8 +22,10 @@ Generate your keys with Putty
   increase the ``Number of bits in a generated key`` field to ``4096``
 * Click the Generate (2) button and follow the screen instructions
 
-.. image:: ../_assets/puttygen-generate.png
-   :class: with-shadow
+.. rst-class::  clear-both
+
+.. image:: ../_assets/puttygen-save.png
+   :class: with-shadow float-left
 
 * Fill the comment (1) to identify this key with your email for instance
 * Add a passphrase for your pivate key (2, 3)
@@ -34,8 +39,7 @@ Generate your keys with Putty
    of the save-buttons. If you need to store you private key in the OpenSSH format use the menu item Conversions->Export
    OpenSSH key.
 
-.. image:: ../_assets/puttygen-save.png
-   :class: with-shadow
+.. rst-class::  clear-both
 
 
 Use pageant to load your pivate key on startup
