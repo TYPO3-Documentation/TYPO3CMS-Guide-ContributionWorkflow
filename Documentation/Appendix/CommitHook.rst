@@ -39,7 +39,7 @@ If the commit-msg hook finds errors in your commit-msg, you can try again, by am
 
 * File: :file:`.git/hooks/pre-commit`
 * Source file: :file:`Build/git-hooks/unix+mac/pre-commit`
-* This hook is optional. **This hook is not available for Windows.**
+* This hook is optional. **This hook is not available for Windows.**, however it can executed on Windows machines by using a tool like the `Git BASH <https://gitforwindows.org/>`__.
 
 The :file:`pre-commit` hook checks all added PHP files staged for the commit for Coding
 Guideline issues and will report any problems it finds.
