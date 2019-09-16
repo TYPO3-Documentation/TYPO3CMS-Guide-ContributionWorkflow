@@ -85,7 +85,7 @@ pre-commit Hook
 
 *-- optional*
 
-The pre-commit hook runs on Linux and MacOS, not on Windows.
+The pre-commit hook runs on Linux and MacOS. To use the pre-commit hook on Windows you can use a tool like the `Git BASH <https://gitforwindows.org/>`__.
 
 Activate the hook by copying the sample file to :file:`.git/hooks/pre-commit`::
 
