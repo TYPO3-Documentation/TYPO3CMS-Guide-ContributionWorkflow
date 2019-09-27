@@ -59,8 +59,9 @@ In order to achieve this, create a new shortcut:
 * Click ``Next``. If you get an error the program could not be found, delete
   the argument with your private key file and continue without an argument
 * Name your new shortcut and click ``Finish``
-* If you had to delete your private key file, check the properties of the newly
-  created shortcut and add your private key again if it's not already there
+* If you had to delete the argument because of an error message (see above),
+  check the properties of the newly created shortcut and add your private key
+  as argument again if it's not already there
 
 Pageant will run as background task, place a nice little icon into your tray
 icons and start automatically after your login.
