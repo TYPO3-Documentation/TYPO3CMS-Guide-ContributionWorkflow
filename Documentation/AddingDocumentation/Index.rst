@@ -205,6 +205,19 @@ in :ref:`h2document:rendering-docs-quickstart`.
 Make things easier for yourself by adding these commands as aliases or adding
 them as commands in your IDE / editor. 
 
+
+
+
+.. _documentation-main:
+
+Policy for Changing the Main Documentation
+==========================================
+
+Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi:start`,
+:ref:`t3tca:start` etc.) must be updated.
+
+The procedure is documented in :ref:`h2document:update-docs`.
+
 .. _documenting-system-extensions:
 
 Document System Extensions
