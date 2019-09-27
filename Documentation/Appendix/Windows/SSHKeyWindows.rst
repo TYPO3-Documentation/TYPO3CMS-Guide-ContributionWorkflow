@@ -52,10 +52,10 @@ automatically use your private key.
 In order to achieve this, create a new shortcut:
 
 * Press :kbd:`Windows` + :kbd:`r`
-* Copy and insert :file:`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+* Copy and insert :file:`%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup`
 * Right click into the folder and select ``New->Short Cut``
-* Copy and insert %ProgramFiles%\PuTTY\pageant.exe "<full path to your saved
-  private key.ppk>".
+* Copy and insert :file:`%ProgramFiles%\\PuTTY\\pageant.exe "<full path to your
+  saved private key.ppk>"`
 * Click ``Next``. If you get an error the program could not be found, delete
   the argument with your private key file and continue without an argument
 * Name your new shortcut and click ``Finish``
