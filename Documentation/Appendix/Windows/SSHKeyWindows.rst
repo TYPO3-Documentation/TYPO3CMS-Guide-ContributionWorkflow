@@ -13,7 +13,7 @@ Generate Your Keys With Putty
 =============================
 
 .. image:: ../_assets/puttygen-generate.png
-   :class: with-shadow float-left
+   :class: with-shadow
 
 * Download and run the PuTTY Windows Installer from the `official download page
   <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__
@@ -24,11 +24,8 @@ Generate Your Keys With Putty
   generated key`` field to ``4096``
 * Click the Generate (2) button and follow the screen instructions
 
-.. rst-class:: clear-both
-
-
 .. image:: ../_assets/puttygen-save.png
-   :class: with-shadow float-left
+   :class: with-shadow
 
 * Fill the comment (1) to identify this key with your email for instance
 * Add a passphrase for your pivate key (2, 3)
@@ -42,8 +39,6 @@ Generate Your Keys With Putty
    incompatible with OpenSSH, when you use any of the save-buttons. If you need
    to store you private key in the OpenSSH format use the menu item 
    ``Conversions->Export OpenSSH key``.
-
-.. rst-class:: clear-both
 
 
 Use Pageant to Load Your Pivate Key on Startup
