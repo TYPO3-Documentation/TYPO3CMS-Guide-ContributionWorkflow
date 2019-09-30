@@ -52,15 +52,16 @@ automatically use your private key.
 In order to achieve this, create a new shortcut:
 
 * Press :kbd:`Windows` + :kbd:`r`
-* Copy and insert :file:`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+* Copy and insert :file:`%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup`
 * Right click into the folder and select ``New->Short Cut``
-* Copy and insert %ProgramFiles%\PuTTY\pageant.exe "<full path to your saved
-  private key.ppk>".
+* Copy and insert :file:`%ProgramFiles%\\PuTTY\\pageant.exe "<full path to your
+  saved private key.ppk>"`
 * Click ``Next``. If you get an error the program could not be found, delete
   the argument with your private key file and continue without an argument
 * Name your new shortcut and click ``Finish``
-* If you had to delete your private key file, check the properties of the newly
-  created shortcut and add your private key again if it's not already there
+* If you had to delete the argument because of an error message (see above),
+  check the properties of the newly created shortcut and add your private key
+  as argument again if it's not already there
 
 Pageant will run as background task, place a nice little icon into your tray
 icons and start automatically after your login.
