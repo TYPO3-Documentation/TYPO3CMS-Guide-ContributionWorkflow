@@ -208,6 +208,11 @@ Step by Step Walkthrough
    section.
 
    You can visit the link to https://review.typo3.org to see your patch in Gerrit.
+   
+   If the automatically starting pre-merge build fails due to an error on Bamboo which
+   isn't caused by your patch (e.g. time out) you can restart it on
+   `Intercept <https://intercept.typo3.com/admin/bamboo/core>`__.
+   
 
    Advanced users / core team only: See
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
