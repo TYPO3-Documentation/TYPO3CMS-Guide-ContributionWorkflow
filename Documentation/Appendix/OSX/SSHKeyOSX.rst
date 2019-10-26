@@ -4,6 +4,11 @@
 
 .. _ssh-key-osx:
 
+.. index::
+   single: OS X; SSH key
+   single: SSH key; OS X
+
+
 ================================
 Creating a SSH Public Key on OSX
 ================================

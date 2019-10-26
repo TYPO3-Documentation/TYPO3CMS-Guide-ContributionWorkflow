@@ -2,6 +2,10 @@
 
 .. _osx-npm:
 
+.. index::
+   single: OS X; Yarn installation
+   single: Yarn installation; OS X
+
 ===================
 Yarn install on OSX
 ===================

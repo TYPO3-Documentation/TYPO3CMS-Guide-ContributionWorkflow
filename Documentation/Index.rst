@@ -117,10 +117,15 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
 .. toctree::
    :hidden:
-   :caption: OTHER
+   :caption: ADDITIONAL INFORMATION
 
    CheatSheets/Git
    Troubleshooting/Index
    Appendix/Index
+
+.. toctree::
+   :hidden:
+   :caption: __________
+
    Sitemap/Index
    genindex

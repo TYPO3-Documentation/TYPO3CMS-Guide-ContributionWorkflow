@@ -2,6 +2,9 @@
 
 .. _phpstorm-gerritplugin:
 
+.. index::
+   single: PhpStorm; Gerrit Plugin
+
 =======================
 PhpStorm: Gerrit Plugin
 =======================

@@ -3,6 +3,9 @@
 .. _forge-index:
 .. _bugreporting-index:
 
+.. index::
+   single: Forge; Report an Issue
+
 ===============
 Report an Issue
 ===============
@@ -24,6 +27,8 @@ When you want to report a bug or suggest a new feature, go to the
 `"Issues" section for the TYPO3 Core
 <https://forge.typo3.org/projects/typo3cms-core/issues>`__.
 
+
+
 .. _searching-for-existing-issues:
 
 .. index::
@@ -39,6 +44,7 @@ something similar has already been reported.
 `Forger's <https://forger.typo3.com>`__ search functionality makes it
 easy to find existing issues. Filters are located on the the left hand
 side of the navigation menu. You can use this feature to help refine searches.
+
 
 .. _identify-the-issue:
 
@@ -76,10 +82,13 @@ Talk to the core team
    channel. (Remember to `register <https://forger.typo3.com/slack>`__
    first.)
 
+
+
 .. _create-an-issue:
 
 .. index::
    single: Issue Reporting Workflow; Creation
+   single: Forge; Create an Issue
 
 Create an issue
 ===============
@@ -134,6 +143,7 @@ Bad example:
 Good example:
    JS error in Internet Explorer when inserting record in list module.
 
+
 .. _description:
 
 .. index::
@@ -163,6 +173,7 @@ Format your issue
    :ref:`formatting-in-redmine` for more information on formatting your text.
 Be polite.
    Always.
+
 
 .. _category:
 

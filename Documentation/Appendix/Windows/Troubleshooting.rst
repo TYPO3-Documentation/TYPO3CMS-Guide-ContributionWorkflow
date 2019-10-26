@@ -2,6 +2,10 @@
 
 .. _troubleshooting-for-windows:
 
+.. index::
+   single: Windows; Troubleshooting
+   single: Troubleshooting; Windows
+
 ============================
 Troubleshooting for Windows
 ============================

@@ -2,6 +2,10 @@
 
 .. _commitmessage:
 
+.. index::
+   single: Git; Commit Message Rules
+   single: Commit Message Rules
+
 ===================================
 Commit Message rules for TYPO3 CMS
 ===================================

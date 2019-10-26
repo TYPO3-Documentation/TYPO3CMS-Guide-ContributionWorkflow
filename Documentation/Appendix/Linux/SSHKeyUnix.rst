@@ -2,6 +2,10 @@
 
 .. _ssh-key-unix:
 
+.. index::
+   single: Linux; SSH Key
+   single: SSH Key; Linux
+
 =======================================
 Creating a SSH Public Key on Unix/Linux
 =======================================

@@ -2,6 +2,10 @@
 
 .. _git-for-windows:
 
+.. index::
+   single: Windows; Git
+   single: Git; Windows
+
 ============================
 Working with Git for Windows
 ============================

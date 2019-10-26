@@ -3,8 +3,11 @@
 .. highlight:: bash
 
 .. _ddev:
-
 .. _settting-up-typo3-with-ddev:
+
+.. index::
+   single: DDEV
+   single: Setup; DDEV
 
 ==========================
 Setting up TYPO3 with DDEV

@@ -3,6 +3,9 @@
 
 .. _troubleshooting:
 
+.. index::
+   single: Troubleshooting
+
 ===============
 Troubleshooting
 ===============
@@ -10,6 +13,10 @@ Troubleshooting
 .. Some of this text was taken from the Wiki page: https://wiki.typo3.org/TroubleShooting_(Git)
 
 .. _git-troubleshooting:
+
+.. index::
+   single: Git; Troubleshooting
+
 
 Git Troubleshooting
 ===================

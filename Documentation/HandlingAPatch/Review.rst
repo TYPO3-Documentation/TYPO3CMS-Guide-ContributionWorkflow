@@ -9,6 +9,11 @@ Reviewing consists of two parts:
 A **code-review** (with optional comments) and **testing the change**. You can do both or just one or the other.
 
 
+.. index::
+   single: Review; Code Review
+   single: Code Review
+   single: Gerrit; Review
+
 .. _lifeOfAPatch-review:
 
 Code Review
@@ -56,8 +61,12 @@ Otherwise throw the changes away, to bring your repository back to a clean state
    git reset --hard origin/master
 
 
-
 .. _Gerrit-Commenting-files:
+
+.. index::
+   single: Review; Comment Files
+   single: Gerrit; Comment Files
+   single: Comment Files
 
 Comment files
 =============
@@ -82,7 +91,13 @@ to use the **Reply Button** to send them all (ideally with a vote indicating how
    :class: with-shadow
 
 
+
 .. _gerrit-voting:
+
+.. index::
+   single: Review; Vote
+   single: Gerrit; Vote
+   single: Vote
 
 Vote
 ====
@@ -128,6 +143,7 @@ substantially by other developers.
 As soon as the patch has reached the approved status by getting a +2 on
 **Code Review** and **Verified**, a core developer can decide to push the
 "Submit" button, finally pushing it to the main repository.
+
 
 .. _Gerrit-No-brainers:
 .. _Gerrit-Low-brainers:

@@ -3,6 +3,9 @@
 
 .. _phpstorm-setup:
 
+.. index::
+   single: PhpStorm; PhpStorm Setup
+
 
 ===============
 PhpStorm: Setup
@@ -80,7 +83,12 @@ More information
 You can find more information on the :ref:`Coding Guidelines section in the Appendix
 <appendix-cgl>`.
 
+
+
 .. _phpstorm-setup-plugins:
+
+.. index::
+   single: PhpStorm; PhpStorm Plugins
 
 Plugins for PhpStorm
 ====================
@@ -135,6 +143,10 @@ Optional Plugins
 
 
 .. _phpstorm-setup-testing:
+
+.. index::
+   single: PhpStorm; Setup Testing Framework
+   single: Testing; Setup PhpStorm
 
 Setting up  PhpStorm for the Testing Framework
 ==============================================

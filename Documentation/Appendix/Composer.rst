@@ -4,6 +4,10 @@
 
 .. _composer:
 
+.. index::
+   single: Composer
+
+
 ========
 Composer
 ========
@@ -21,6 +25,9 @@ Since we use quite some packages (because why would we invent things ourselves t
 extremely useful tool for us.
 
 .. _install-composer:
+
+.. index::
+   single: Composer; Install Composer
 
 Install Composer
 ================
@@ -47,7 +54,12 @@ clone the Git source and after every `git pull` request or switching branches::
 But, just follow the :ref:`setup instructions <setup>`, it will walk you through the commands
 in the correct order!
 
+
+
 .. _custom-composer-commands:
+
+.. index::
+   single: Composer; Custom Composer Commands
 
 Custom TYPO3 Composer Commands
 ==============================

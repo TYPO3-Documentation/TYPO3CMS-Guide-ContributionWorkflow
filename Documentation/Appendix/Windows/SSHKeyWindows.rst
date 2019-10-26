@@ -2,6 +2,11 @@
 
 .. _ssh-key-win:
 
+.. index::
+   single: Windows; SSH key
+   single: SSH key; Windows
+
+
 ====================================
 Creating a SSH Public Key on Windows
 ====================================

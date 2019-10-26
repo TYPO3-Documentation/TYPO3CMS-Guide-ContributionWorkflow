@@ -2,6 +2,10 @@
 
 .. _lifeOfAPatch-backport:
 
+.. index::
+   single: Gerrit; Backport a Change
+   single: Backport a Change
+
 ===================================
 Backport a change to other branches
 ===================================

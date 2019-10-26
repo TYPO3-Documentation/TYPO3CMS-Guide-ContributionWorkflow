@@ -2,6 +2,10 @@
 
 .. _gittower-osx:
 
+.. index::
+   single: Git Tower
+   single: Git; Git Tower
+
 ======================
 Working with Git Tower
 ======================

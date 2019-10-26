@@ -2,6 +2,10 @@
 
 .. _issue-workflow:
 
+.. index::
+   single: Forge; Issue Workflow
+   single: Issue Workflow
+
 ======================
 Issue Workflow (Forge)
 ======================
@@ -18,6 +22,10 @@ in order to refine the workflow more.
 If in doubt, ask on `Slack <https://typo3.slack.com>`__
 in the **#typo3-cms-coredev** channel. (Remember to
 `register <https://forger.typo3.com/slack>`__ first.)
+
+
+.. index::
+   single: Issue Workflow; Target Versions
 
 Target Versions
 ===============
@@ -47,6 +55,10 @@ feel free to remove target versions set by issue reporters.
 
    Features and tasks will go into this pool.
    These can be worked on as usual.
+
+
+.. index::
+   single: Issue Workflow; Status
 
 Status
 ======

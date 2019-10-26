@@ -2,6 +2,10 @@
 
 .. _windows-clonewithsourcetree:
 
+.. index::
+   single: Windows; SourceTree
+   single: SourceTree
+
 ==================================
 Cloning with SourceTree on Windows
 ==================================
