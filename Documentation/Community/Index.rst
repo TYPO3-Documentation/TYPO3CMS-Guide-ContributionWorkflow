@@ -13,6 +13,11 @@ to the TYPO3 codebase. However, you might run into problems. If this is
 the case, there are several possibilities to get help. Do not hesitate
 to ask others, if you can't find the information you need.
 
+.. _slack:
+
+.. index::
+   single: Tools; Slack
+   single: Slack
 
 Slack
 =====
@@ -20,8 +25,6 @@ Slack
 The main communication platform for TYPO3 is the Slack chat system. In
 order to register for Slack, you **first need a typo3.org account**
 and **then request a Slack account**. This is explained here: :ref:`slack-account`.
-
- .. rst-class::  clear-both
 
 You can ask specific questions about contributing in the **#typo3-cms-coredev**
 channel, general TYPO3 questions should be asked in the **#typo3-cms** channel.
@@ -50,6 +53,13 @@ you the opportunity to ask questions and get help. In any case,
 read the event description and if in doubt, contact the person
 listed in the event description.
 
+.. _typo3-gmbh-review-friday:
+
+.. index::
+   single: Events; Review Friday
+   single: Review Friday
+   single: Review; Review Friday
+
 TYPO3 GmbH Review Friday
 ------------------------
 
@@ -70,6 +80,13 @@ at the `TYPO3 GmbH headquarters <https://typo3.com/contact/>`__.
 Search for the next Review Friday on `Events on typo3.org <https://typo3.org/community/events/>`__
 and look at the event description for further information.
 
+.. _code-sprints:
+
+.. index::
+   single: Events; Code Sprints
+   single: Code Sprints
+   single: Sprints
+
 Code Sprints
 ------------
 
@@ -81,6 +98,12 @@ Look for the next Code Sprints on the `Events page on typo3.org
 
 In the event description you should also find information about reimbursement and other
 information. You will usually need to signup for the event.
+
+.. _typo3-developer-days:
+
+.. index::
+   single: Events; Developer Days
+   single: Developer Days
 
 TYPO3 Developer Days
 --------------------

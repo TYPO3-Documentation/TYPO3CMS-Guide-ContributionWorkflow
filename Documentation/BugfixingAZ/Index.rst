@@ -5,6 +5,9 @@
 .. _core-contrib-quickstart:
 .. _quickstart-create-a-patch:
 
+.. index::
+   single: Code Contribution Workflow; Create Patch
+
 ==============
 Create a Patch
 ==============
@@ -258,5 +261,3 @@ Next Steps
 ==========
 
 * :ref:`improving-a-patch` in this guide for next steps in improving your patch or reviewing other patches
-
-

@@ -9,6 +9,8 @@ Report an Issue
 
 .. _forge-introduction:
 
+.. index::
+   single: Tools; Forge
 
 Introduction to Forge
 =====================
@@ -22,6 +24,11 @@ When you want to report a bug or suggest a new feature, go to the
 `"Issues" section for the TYPO3 Core
 <https://forge.typo3.org/projects/typo3cms-core/issues>`__.
 
+.. _searching-for-existing-issues:
+
+.. index::
+   single: Issue Reporting Workflow; Searching for Issues
+
 Searching for Existing Issues
 =============================
 
@@ -32,6 +39,11 @@ something similar has already been reported.
 `Forger's <https://forger.typo3.com>`__ search functionality makes it
 easy to find existing issues. Filters are located on the the left hand
 side of the navigation menu. You can use this feature to help refine searches.
+
+.. _identify-the-issue:
+
+.. index::
+   single: Issue Reporting Workflow; Identifying
 
 Identify the Issue
 ==================
@@ -64,13 +76,15 @@ Talk to the core team
    channel. (Remember to `register <https://forger.typo3.com/slack>`__
    first.)
 
-
 .. _create-an-issue:
+
+.. index::
+   single: Issue Reporting Workflow; Creation
 
 Create an issue
 ===============
 
-:ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already). 
+:ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already).
 You can find the TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/issues.
 
 .. image:: _assets/new-issue.png
@@ -97,6 +111,11 @@ The others are mostly for internal organization (like **Stories** and **Epics**)
 and things which aren't really a feature or a bug... they are just **Tasks**
 somebody needs to take care of.
 
+.. _subject:
+
+.. index::
+   single: Issue; Subject
+
 Subject
 -------
 
@@ -115,20 +134,25 @@ Bad example:
 Good example:
    JS error in Internet Explorer when inserting record in list module.
 
+.. _description:
+
+.. index::
+   single: Issue; Description
+
 Description
 -----------
 
 For bugs, provide steps how to reproduce the problem. See :ref:`best-practices-bug-report`
-for some extra hints on what should go in the description. 
+for some extra hints on what should go in the description.
 
 Be sure to add images, code snippets and or stacktraces if they help to refine
-the problem description. See :ref:`create-issue-files` for hints on adding files. 
+the problem description. See :ref:`create-issue-files` for hints on adding files.
 
 Always keep in mind these points when writing your issue report:
 
 Be detailed in describing your problem
    The more detail you add, the higher are the chances that we understand your
-   problem. 
+   problem.
 Be concise and clear
    No one will judge you for your literary skills. We need to understand quickly
    where the problem lies.
@@ -140,46 +164,62 @@ Format your issue
 Be polite.
    Always.
 
+.. _category:
 
+.. index::
+   single: Issue; Category
 
 Category
 --------
 
 Choose a category that fits your issue.
 
-TYPO3 version 
+.. _typo3-version:
+
+.. index::
+   single: Issue; TYPO3 version
+
+TYPO3 version
 -------------
 
 (for bugs only)
 
 Choose the TYPO3 version, where the error occurs.
 
-PHP Version 
+.. _php-version:
+
+.. index::
+   single: Issue; PHP version
+
+PHP Version
 -----------
 
 (for bugs only)
 
 Choose the PHP version, where the error occurs. If in doubt, leave this blank.
-Usually, it is enough to supply the TYPO3 version. 
+Usually, it is enough to supply the TYPO3 version.
 
 .. _create-issue-files:
+
+.. index::
+   single: Issue; Files
 
 (optional) Files
 ----------------
 
-You can additionally uploads files if they help to understand and reproduce the 
-problem. 
+You can additionally uploads files if they help to understand and reproduce the
+problem.
 
 Some hints for files:
 
 * Do not copy-paste huge **stack dumps** into the description. Cut out the relevant parts
-  for the description and add the complete stack dump as extra file. 
-* **Images** can be a huge help in understanding the problem. Do not insert complete 
+  for the description and add the complete stack dump as extra file.
+* **Images** can be a huge help in understanding the problem. Do not insert complete
   screen dumps but clip the image to the relevant parts. If it helps, add boxes or
-  arrows to highlight important things in the image. Use 
+  arrows to highlight important things in the image. Use
   :ref:`Redmine formatting for inline images <redmine-images>`
-* If a **video** is even better in understanding a bug, try to create a short (!) 
-  video that clarifies your issue. For example, use an animated gif screen capture 
+* If a **video** is even better in understanding a bug, try to create a short (!)
+  video that clarifies your issue. For example, use an animated gif screen capture
   tool to create an animated gif.
 
 .. image:: _assets/new-issue2.png
@@ -195,13 +235,13 @@ Some hints for files:
 Best practices for writing a good bug report
 ============================================
 
-It is **not** necessary to add **all** available information to your bug report. 
+It is **not** necessary to add **all** available information to your bug report.
 It is important to provide **the specific information that is necessary** to be
-able to **understand**, **reproduce** and **fix** the bug. 
+able to **understand**, **reproduce** and **fix** the bug.
 
 Use your common sense and your experience to guide you: What would you need if you
-wanted to find the bug in the code and fix it? What do you need if you want to 
-reproduce it to debug it or test if the patch solves the problem? 
+wanted to find the bug in the code and fix it? What do you need if you want to
+reproduce it to debug it or test if the patch solves the problem?
 
 A good bug report should contain all or any of these elements:
 
@@ -209,12 +249,12 @@ A good bug report should contain all or any of these elements:
 
    Here you can add:
 
-      + A brief description of your environment. Depending on the nature of 
+      + A brief description of your environment. Depending on the nature of
         the bug it *might* inclde your operating system
         (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
         used, the database used (mySql, SQLServer, ...) and its version.
         In any case, the full version of TYPO3 (e.g. 9.5.1) is very helpful. If
-        your bug is reproducible on several versions (e.g. 10.1.0 and 9.5.1), 
+        your bug is reproducible on several versions (e.g. 10.1.0 and 9.5.1),
         that is helpful as well.
       + A description of the TYPO3 setup that you are using or that is necessary
         to trigger the bug. Your issue came out using TYPO3 with multiple
@@ -247,16 +287,18 @@ A good bug report should contain all or any of these elements:
 
 Please consider that these guidelines are very generic. Not always all these parts are
 necessary, but having the necessary information could help a lot to reproduce and fix
-the bug. 
+the bug.
 
 .. tip::
 
    Use redmine formatting to structure your bug report and make it more readable, for
    example use headlines (h1, h2) to structure the parts, hightlighted code (<>) for
-   code snippets, code for inline images (!image!). 
-
+   code snippets, code for inline images (!image!).
 
 .. _formatting-in-redmine:
+
+.. index::
+   single: Issue; Formatting
 
 Hints for formatting in Redmine
 ===============================
@@ -270,6 +312,9 @@ several people will be reading your report. High readability and
 clarity makes things easier for everyone and saves time.
 
 .. _redmine-images:
+
+.. index::
+   single: Issue; Images
 
 Images
 ------

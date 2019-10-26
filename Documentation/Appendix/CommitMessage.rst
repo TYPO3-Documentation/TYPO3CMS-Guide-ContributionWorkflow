@@ -175,6 +175,12 @@ Relationships
    2. If you have multiple resolved or related issues, **use one line for each
       issue number**. Do not separate them by comma or alike!
 
+   ::
+
+      Resolves: #12345
+      Resolves: #67890
+
+
 1. `Resolves:`
    You need to reference an issue on Forge_ here simply by adding #[ISSUE_NUMBER]. For **features** and **tasks**, it closes the issue on merge.::
 

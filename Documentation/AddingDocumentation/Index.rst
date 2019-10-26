@@ -3,6 +3,9 @@
 .. _Bugfixing-Adding-documentation:
 .. _Adding-documentation:
 
+.. index::
+   single: Documentation Contribution Workflow; Adding Documentation
+
 =================
 Add Documentation
 =================
@@ -24,6 +27,10 @@ is maintained in the core.
 
 .. _changelog:
 
+.. index::
+   single: Documentation Contribution Workflow; Add Changelog
+   single: Changelog; Add Entries
+
 Changelog
 =========
 
@@ -39,6 +46,13 @@ See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
 information.
 
 If you use the Forger reST File Generator, it will take care of this.
+
+.. index::
+   single: Tools; reST File Generator
+   single: Changelog; Generate new Entries
+   single: Documentation Contribution Workflow; Generating reST Files
+
+.. _rest-file-generator:
 
 reST File Generator
 -------------------
@@ -69,6 +83,9 @@ Choose one which fits your patch:
 
 .. _documenting-changelog-breaking-changes:
 
+.. index::
+   single: Documentation Contribution Workflow; Breaking Changes
+
 Breaking Changes
 ~~~~~~~~~~~~~~~~
 
@@ -89,6 +106,9 @@ that may break extensions if they use this part.
 
 
 .. _documenting-changelog-deprecations:
+
+.. index::
+   single: Documentation Contribution Workflow; Deprecations
 
 Deprecations
 ~~~~~~~~~~~~
@@ -111,6 +131,9 @@ for a planned removal. See more information: :ref:`Deprecations <deprecations>`
 
 .. _documenting-changelog-features:
 
+.. index::
+   single: Documentation Contribution Workflow; Features
+
 Features
 ~~~~~~~~
 
@@ -125,6 +148,9 @@ A patch adds new functionality.
 
 .. _documenting-changelog-important-information:
 
+.. index::
+   single: Documentation Contribution Workflow; Important Information
+
 Important Information
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -134,6 +160,11 @@ important enough to require a Changelog entry.
 #. **Description** - describe what is so important it needed an rst snippet
 
 .. _changelog-check-rst:
+
+.. index::
+   single: Documentation Contribution Workflow; Checking reST Files
+   single: Tools; Checking reST Files
+   single: Changelog; Checking
 
 Check Your `rst` File
 ---------------------
@@ -159,13 +190,16 @@ be rendered correctly, do one or more of the following:
 
 .. _render-the-changelog:
 
+.. index::
+   single: Documentation Contribution Workflow; Rendering Changelog
+   single: Tools; Rendering Changelog
+   single: Changelog; Rendering
+
 Render the Changelog
 --------------------
 
 If you wish to render the Changelog locally, you can use docker as described
 in :ref:`h2document:rendering-docs-quickstart`.
-
-
 
 .. code-block:: bash
    :linenos:
@@ -205,9 +239,6 @@ in :ref:`h2document:rendering-docs-quickstart`.
 Make things easier for yourself by adding these commands as aliases or adding
 them as commands in your IDE / editor. 
 
-
-
-
 .. _documentation-main:
 
 Policy for Changing the Main Documentation
@@ -219,6 +250,9 @@ Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi
 The procedure is documented in :ref:`h2document:update-docs`.
 
 .. _documenting-system-extensions:
+
+.. index::
+   single: Documentation Contribution Workflow; Documenting System Extensions
 
 Document System Extensions
 ==========================

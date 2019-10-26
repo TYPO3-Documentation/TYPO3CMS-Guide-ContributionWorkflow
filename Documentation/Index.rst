@@ -123,4 +123,4 @@ a GNU/GPL CMS/Framework available from `typo3.org
    Troubleshooting/Index
    Appendix/Index
    Sitemap/Index
-
+   genindex

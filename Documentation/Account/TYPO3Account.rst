@@ -2,6 +2,10 @@
 
 .. _TYPO3Account:
 
+.. index::
+   single: Account; Typo3.org
+   single: Typo3.org
+
 ==============================
 Signup for a TYPO3.org Account
 ==============================

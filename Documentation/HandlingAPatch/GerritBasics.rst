@@ -3,6 +3,9 @@
 
 .. _Working-with-Gerrit:
 
+.. index::
+   single: Tools; Gerrit Introduction
+
 ======================
 Introduction to Gerrit
 ======================
@@ -17,6 +20,9 @@ TYPO3's Gerrit interface is located at https://review.typo3.org.
 Gerrit handles the review process and is a gatekeeper in front of the official TYPO3 Git repository on git.typo3.org. Pushing to git.typo3.org repository is not allowed for anybody, instead every change has to pass a review process in Gerrit, which later pushes the change to the repository.
 
 .. _Gerrit-Overview-of-the-UI:
+
+.. index::
+   single: Tools; Gerrit Ui
 
 Overview of the UI
 ==================
@@ -56,7 +62,3 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
    is a select box on top of the file list that allows you to do a diff between patch sets to quickly see what has changed.
 
 #. The **history** of this change. Here you can see comments, new patch sets, votes on a change etc.
-
-
-
-

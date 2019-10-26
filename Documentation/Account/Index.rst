@@ -3,6 +3,10 @@
 .. _TYPO3-Guide-ContributionWorkflow-Account:
 .. _setting-up-your-account:
 
+.. index::
+   single: Account; Setup
+   single: Account
+
 ========================
 Setting up Your Accounts
 ========================

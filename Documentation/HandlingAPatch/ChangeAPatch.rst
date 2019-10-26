@@ -5,6 +5,11 @@
 
 .. _lifeOfAPatch-improve-patch:
 
+.. index::
+   single: Code Contribution Workflow; Uploading new Patch Set
+   single: Git; Push
+   single: Git; Upload new Patch Set
+
 ======================
 Upload a new Patch Set
 ======================

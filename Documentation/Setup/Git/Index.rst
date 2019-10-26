@@ -4,6 +4,11 @@
 
 .. _Setting-up-your-Git-environment:
 
+.. index::
+   single: Code Contribution Workflow; git setup
+   single: Tools; git
+   single: Git; Setup
+
 =========
 Git Setup
 =========
@@ -19,7 +24,11 @@ Prerequisites
 
       git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
 
+.. _set-username-and-email:
 
+.. index::
+   single: Code Contribution Workflow; git setup username and email
+   single: Git Setup; username and email
 
 Set Username and Email
 ======================
@@ -31,6 +40,12 @@ You need to instruct git to work with your name and email address. Make sure the
 
    git config user.name "Your Name"
    git config user.email "your-email@example.com"
+
+.. _set-autosetuprebase:
+
+.. index::
+   single: Code Contribution Workflow; git setup rebase
+   single: Git Setup; rebase
 
 Set autosetuprebase
 ===================
@@ -45,6 +60,10 @@ to set the autosetuprebase option, such that your local commits are always rebas
 
 .. _setup-git-commit-hook:
 .. _git-setup-commit-msg-hook:
+
+.. index::
+   single: Code Contribution Workflow; git setup hooks
+   single: Git Setup; hooks
 
 Install Your Commit Hooks
 =========================
@@ -116,6 +135,9 @@ More information: :ref:`custom-composer-commands`.
 
 .. _git-setup-remote:
 
+.. index::
+   single: Code Contribution Workflow; git setup remote
+
 Setting up Your Remote
 ======================
 
@@ -125,9 +147,11 @@ You must instruct Git to push to Gerrit_ instead of the original repository. It 
 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
-
-
 .. _committemplate:
+
+.. index::
+   single: Code Contribution Workflow; git setup commit message template
+   single: Git Setup; commit message template
 
 Setting up a Commit Message Template
 ====================================

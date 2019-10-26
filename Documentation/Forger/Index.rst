@@ -2,6 +2,10 @@
 
 .. _forger-index:
 
+.. index::
+   single: Tools; Forger
+   single: Forger
+
 ======================
 Introduction to Forger
 ======================

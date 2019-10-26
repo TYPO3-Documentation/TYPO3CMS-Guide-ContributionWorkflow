@@ -2,6 +2,9 @@
 
 .. _workflow-explained:
 
+.. index::
+   single: Contribution Workflow; Core Explained
+
 ============================
 TYPO3 Contribution Explained
 ============================
@@ -46,4 +49,3 @@ We use an 6-eye principle to ensure proper quality assurance and Gerrit_ helps u
    "You break it, you fix it" policy, so the core team member that merged a change immediately becomes responsible for that
    change in case the original author decides to no longer work on it. And he / she will be responsible for
    backporting it to older TYPO3 versions.
-
