@@ -56,7 +56,7 @@ Prerequisites
 You might want to run the script with the -h option to get up-to-date
 information about system requirements::
 
-   Build/Scripts/runTests.sh -h
+   ./Build/Scripts/runTests.sh -h
 
 We cannot test the script with all current environments, so get the latest
 `docker <https://www.docker.com/get-docker>`__
@@ -79,16 +79,18 @@ of master (as described in :ref:`setup`).
 Show help
 ~~~~~~~~~
 
-.. code-block::
+.. code-block:: bash
 
    ./Build/Scripts/runTests.sh -h
+
+This will, amongst other, show all specific test suites you can currently run.
 
 Run all unit tests
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   Build/Scripts/runTests.sh
+   ./Build/Scripts/runTests.sh
 
 Run unit tests with xdebug (uses default port 9000)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,11 +104,11 @@ Run specific unit tests with xdebug
 
 .. code-block:: bash
 
-   Build/Scripts/runTests.sh -x <directory or file>
+   ./Build/Scripts/runTests.sh -x <directory or file>
 
 Example::
 
-   Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/   
+   ./Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/   
 
 Run functional tests
 ~~~~~~~~~~~~~~~~~~~~
@@ -235,11 +237,11 @@ You can use the already mentioned script cglFixMyCommit::
 
 Mac / Linus::
 
-   Build/Scripts/cglFixMyCommit.sh
+   ./Build/Scripts/cglFixMyCommit.sh
 
 Windows::
 
-   Build/Scripts/cglFixMyCommit.sh
+   ./Build/Scripts/cglFixMyCommit.sh
 
 
 .. important::
