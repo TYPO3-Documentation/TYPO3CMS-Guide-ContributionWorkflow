@@ -10,14 +10,15 @@ Cherry-pick a patch
 ===================
 
 In order to test a patch or make additional changes on it, you will need
-to cherry-pick it from the review-system into your local git repository.
+to cherry-pick it from the review system into your local git repository.
 
 
 .. important::
 
-   Make sure to always get the latest patch set of the current review. You can check this by looking at the **Patch Sets**
-   menu left of the **Download Button**. The left and right numbers should always be the same, so you know you picked the
-   latest patch set. You can also click on **Go to latest patch set**.
+   Make sure to always get the latest patch set of the current review.
+   You can check this by looking at the **Patch Sets** menu left of the
+   :guilabel:`Download` button. If the link :guilabel:`Go to latest patch set`
+   is not shown, you know you picked the latest patch set.
 
 
 .. rst-class:: bignums-xxl
@@ -28,8 +29,12 @@ to cherry-pick it from the review-system into your local git repository.
 
 2. Select the latest patchset and click download
 
+   If the recent patchset is not shown, select it first:
+
    .. image:: _assets/gerrit-go-to-latest-patchset.png
       :class: with-shadow
+
+   Then click on :guilabel:`Download`:
 
    .. image:: _assets/gerrit-download.png
       :class: with-shadow
