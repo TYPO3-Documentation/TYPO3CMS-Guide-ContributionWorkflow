@@ -18,7 +18,7 @@ to cherry-pick it from the review system into your local git repository.
    Make sure to always get the latest patch set of the current review.
    You can check this by looking at the **Patch Sets** menu left of the
    :guilabel:`Download` button. If the link :guilabel:`Go to latest patch set`
-   is not shown, so you know you picked the latest patch set.
+   is not shown, you know you picked the latest patch set.
 
 
 .. rst-class:: bignums-xxl
