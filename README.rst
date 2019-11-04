@@ -7,11 +7,7 @@
 TYPO3 Contribution Guide - Core Development
 ===========================================
 
-How to become a TYPO3 core contributor. 
+How to become a TYPO3 core contributor.
 
 :Repository:  https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow
-:Read online: https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
-
-
-
-
+:Read online: https://docs.typo3.org/m/typo3/guide-contributionworkflow/master/en-us/
