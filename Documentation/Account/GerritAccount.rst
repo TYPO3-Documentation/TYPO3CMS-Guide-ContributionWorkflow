@@ -11,17 +11,7 @@ Setting up Gerrit (ssh)
 
 .. rst-class:: bignums-xxl
 
-1. Switch to new UI in Gerrit
-
-   .. image:: _assets/gerrit-new-ui2.png
-      :class: with-shadow
-
-   Head over to `Gerrit <https://review.typo3.org>`__, scroll to the bottom
-   of the page and click the link "New UI". You can also work with the old
-   UI, but then some things will look a little different.
-
-
-2. Click the **Sign In** button in the top right corner.
+1. Click the **Sign In** button in the top right corner.
 
    .. image:: _assets/gerrit_signin2.png
       :class: with-shadow
@@ -31,7 +21,7 @@ Setting up Gerrit (ssh)
    :ref:`set up earlier <TYPO3Account>`.
 
 
-3. Create your ssh key
+2. Create your ssh key
 
    If you don't know how to create your SSH Public/Private Key,
    we have compiled a list of links for you:
@@ -41,7 +31,7 @@ Setting up Gerrit (ssh)
    * :ref:`Linux/Unix <ssh-key-unix>`
 
 
-4. Add your public SSH key to Gerrit
+3. Add your public SSH key to Gerrit
 
    .. image:: _assets/gerrit-add-ssh-key2.png
       :class: with-shadow
