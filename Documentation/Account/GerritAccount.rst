@@ -11,7 +11,7 @@ Setting up Gerrit (ssh)
 
 .. rst-class:: bignums-xxl
 
-1. Click the **Sign In** button in the top right corner.
+1. Click the **Sign In** button in the top right corner of the page `review.typo3.org <https://review.typo3.org>`__.
 
    .. image:: _assets/gerrit_signin2.png
       :class: with-shadow
