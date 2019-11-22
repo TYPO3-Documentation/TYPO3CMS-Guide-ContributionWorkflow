@@ -39,7 +39,9 @@ If the automatic backporting fails, you need to manually cherry-pick the patch t
 master patch onto your local (up to date) TYPO3_6-2 branch) You will most likely need to adjust the code for the older branch.
 
 Edit the commit message to comply to the guidelines again. (e.g. remove the Reviewed-* and Tested-* lines added by Gerrit)
-**Keep the Change-Id though!**
+
+.. important::
+   The Change-Id must be left unchanged, otherwise Gerrit is not able to link the backport to its original change!
 
 Push the review back to Gerrit.
 
