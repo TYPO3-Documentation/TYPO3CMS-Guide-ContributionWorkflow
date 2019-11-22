@@ -16,17 +16,18 @@ TYPO3 Contribution Guide - Core Development
       2015-2019
 
 :Authors:
-      TYPO3 Core Team and community
+      `TYPO3 Core Team <https://typo3.org/community/teams/typo3-development/>`__ & TYPO3 community
 
-:Email:
-      documentation@typo3.org
+:Contact:
+      `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__
 
 :License:
       Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0),
       https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-:Status:
-      Tested and reviewed on Dec 11, 2018
+The content of this document is related to TYPO3 CMS,
+a GNU/GPL CMS/Framework available from `typo3.org
+<https://typo3.org/>`_ .
 
 
 **Quick links:**
@@ -41,9 +42,11 @@ TYPO3 Contribution Guide - Core Development
 - :ref:`whats_new_in_this_guide`
 
 
-The content of this document is related to TYPO3 CMS,
-a GNU/GPL CMS/Framework available from `typo3.org
-<https://typo3.org/>`_ .
+.. rst-class:: horizbuttons-primary-m
+
+- :ref:`sitemap`
+- :ref:`index`
+
 
 
 **About this manual:**
@@ -54,8 +57,20 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
    This document is included as part of the official TYPO3 documentation.
 
+**For Documentation Contributors**
+
    If you find an error or something is missing, please:
    `Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues/new>`__
+
+   You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
+   on the top right to submit your change request.
+
+   You can find out more about how to do this in :ref:`h2document:docs-contribute`.
+
+   :ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow>`__
+   | `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues>`__
+   | `Pull Requests <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/pulls>`__
+
 
 **Guide**
 
@@ -64,21 +79,6 @@ a GNU/GPL CMS/Framework available from `typo3.org
    the guide from cover to cover in order to gain a practical overview of the process.
    Once completed, the Guide becomes a practical reference tool to which a reader can refer
    as needed. Guides offer advice on how best to achieve a given task.
-
-**For Documentation Contributors**
-
-   You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
-   on the top right to submit your change request.
-
-   You can find out more about how to do this in :ref:`h2document:docs-contribute`.
-
-   :ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/>`__
-   | `Issues <https://github.com/TYPO3-Documentation/ContributionWorkflowGuide/issues>`__
-
-
-**Sitemap:**
-
-   :ref:`sitemap`
 
 
 .. toctree::
@@ -117,15 +117,20 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
 .. toctree::
    :hidden:
-   :caption: ADDITIONAL INFORMATION
+   :caption: CHEAT SHEETS
 
    CheatSheets/Git
+
+.. toctree::
+   :hidden:
+   :caption: ADDITIONAL INFORMATION
+
    Troubleshooting/Index
    Appendix/Index
 
 .. toctree::
    :hidden:
-   :caption: __________
+   :caption: SITEMAP & INDEX
 
    Sitemap/Index
    genindex
