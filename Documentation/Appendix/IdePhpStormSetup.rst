@@ -5,6 +5,7 @@
 
 .. index::
    single: PhpStorm; PhpStorm Setup
+   single: Setup; PhpStorm
 
 
 ===============

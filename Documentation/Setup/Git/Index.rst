@@ -5,9 +5,11 @@
 .. _Setting-up-your-Git-environment:
 
 .. index::
-   single: Code Contribution Workflow; git setup
-   single: Tools; git
+   single: Code Contribution Workflow; Git Setup
+   single: Tools; Git
    single: Git; Setup
+   single: Setup; Git
+
 
 =========
 Git Setup
@@ -62,8 +64,9 @@ to set the autosetuprebase option, such that your local commits are always rebas
 .. _git-setup-commit-msg-hook:
 
 .. index::
-   single: Code Contribution Workflow; git setup hooks
-   single: Git Setup; hooks
+   single: Code Contribution Workflow; Git Hooks
+   single: Git Setup; Git Hooks
+   single: Setup; Git Hooks
 
 Install Your Commit Hooks
 =========================
@@ -150,8 +153,8 @@ You must instruct Git to push to Gerrit_ instead of the original repository. It 
 .. _committemplate:
 
 .. index::
-   single: Code Contribution Workflow; git setup commit message template
-   single: Git Setup; commit message template
+   single: Code Contribution Workflow; Commit Message Template
+   single: Git Setup; Commit Message Template
 
 Setting up a Commit Message Template
 ====================================

@@ -3,8 +3,8 @@
 .. _ssh-key-win:
 
 .. index::
-   single: Windows; SSH key
-   single: SSH key; Windows
+   single: Windows; SSH Key
+   single: SSH Key; Windows
 
 
 ====================================

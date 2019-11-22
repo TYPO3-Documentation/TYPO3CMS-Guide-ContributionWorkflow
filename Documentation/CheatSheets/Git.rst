@@ -5,7 +5,8 @@
 .. _cheat-sheet-git:
 
 .. index::
-   single: Git Cheat Sheet
+   single: Git; Git Cheat Sheet
+   single: Cheat Sheets; Git Cheat Sheet
 
 ===============
 Git Cheat Sheet

@@ -5,8 +5,8 @@
 .. _ssh-key-osx:
 
 .. index::
-   single: OS X; SSH key
-   single: SSH key; OS X
+   single: OS X; SSH Key
+   single: SSH Key; OS X
 
 
 ================================

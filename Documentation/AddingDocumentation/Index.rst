@@ -4,7 +4,7 @@
 .. _Adding-documentation:
 
 .. index::
-   single: Documentation Contribution Workflow; Adding Documentation
+   single: Documentation Contribution; Adding Documentation
 
 =================
 Add Documentation

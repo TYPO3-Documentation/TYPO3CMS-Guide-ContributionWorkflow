@@ -16,6 +16,7 @@ Troubleshooting
 
 .. index::
    single: Git; Troubleshooting
+   single: Troubleshooting; Git
 
 
 Git Troubleshooting

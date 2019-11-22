@@ -5,6 +5,7 @@
 
 .. index::
    single: Forge; Report an Issue
+   single: Issue; Report an Issue
 
 ===============
 Report an Issue
