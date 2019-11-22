@@ -38,7 +38,7 @@ a GNU/GPL CMS/Framework available from `typo3.org
 - :ref:`Git Cheat Sheet <cheat-sheet-git>`
 - :ref:`Commit Message Rules <commitmessage>`
 - :ref:`bugreporting-index`
-- :ref:`quickstart-create-a-patch`
+- :ref:`Create a Patch <quickstart-create-a-patch>`
 - :ref:`whats_new_in_this_guide`
 
 
