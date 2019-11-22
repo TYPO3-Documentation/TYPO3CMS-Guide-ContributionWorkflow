@@ -34,6 +34,10 @@ or the short form: **be nice, be helpful!**
 
 .. _botty:
 
+.. index::
+   single: Slack; Botty
+   single: Botty
+
 Botty on Slack
 ~~~~~~~~~~~~~~
 

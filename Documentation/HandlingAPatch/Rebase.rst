@@ -2,6 +2,10 @@
 
 .. _rebase:
 
+.. index::
+   single: Code Contribution Workflow; Rebasing
+   single: Git; Rebase
+
 ======
 Rebase
 ======

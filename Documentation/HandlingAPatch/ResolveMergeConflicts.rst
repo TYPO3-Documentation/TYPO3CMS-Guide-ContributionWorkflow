@@ -11,6 +11,9 @@ Resolve Merge conflicts
 
 .. _what-are-merge-conflicts:
 
+.. index::
+   single: Git; What are Merge conflicts
+
 What are merge conflicts?
 =========================
 
@@ -128,6 +131,9 @@ See next section :ref:`how-to-resolve-merge-conflicts` for more information abou
 resolving merge conflicts.
 
 .. _how-to-resolve-merge-conflicts:
+
+.. index::
+   single: Git; How to resolve Merge conflicts
 
 How to resolve conflicts?
 =========================

@@ -3,6 +3,9 @@
 .. _lifeOfAPatch:
 .. _improving-a-patch:
 
+.. index::
+   single: Code Contribution Workflow; Handle and Improve a Patch
+
 ===================================
 Handle and Improve a Patch (Gerrit)
 ===================================

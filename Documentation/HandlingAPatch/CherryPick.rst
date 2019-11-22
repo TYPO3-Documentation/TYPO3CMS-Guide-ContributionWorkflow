@@ -4,6 +4,9 @@
 
 .. _cherry-pick-a-patch:
 
+.. index::
+   single: Code Contribution Workflow; Cherry pick a patch
+   single: Git; Cherry pick a patch
 
 ===================
 Cherry-pick a patch

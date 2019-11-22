@@ -3,6 +3,10 @@
 
 .. _appendix-cgl:
 
+.. index::
+   single: CGL
+   single: Coding Guidelines
+
 =================
 Coding Guidelines
 =================

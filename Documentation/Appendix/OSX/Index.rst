@@ -2,6 +2,9 @@
 
 .. _appendix-osx:
 
+.. index::
+   single: OS X
+
 OS X help
 ===============
 

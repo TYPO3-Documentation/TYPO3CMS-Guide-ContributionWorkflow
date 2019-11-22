@@ -3,12 +3,21 @@
 .. _appendix-commit-hook:
 .. _commit-hook:
 
+.. index::
+   single: Git; Hooks
+   single: Git Hooks
+
 ============
 Commit Hooks
 ============
 
 .. _why-a-commit-msg-hook:
 .. _commit-msg-hook:
+
+.. index::
+   single: Git; commit-msg Hook
+   single: commit-msg Hook
+
 
 `commit-msg` Hook
 =================
@@ -31,8 +40,15 @@ If the commit-msg hook finds errors in your commit-msg, you can try again, by am
 
    git commit --amend
 
+
+
+
 .. _why-pre-commit-hook:
 .. _pre-commit-hook:
+
+.. index::
+   single: Git; pre-commit Hook
+   single: pre-commit Hook
 
 `pre-commit` Hook
 =================
@@ -54,6 +70,11 @@ commit::
 
 
 .. _post-checkout-for-composer-update:
+
+.. index::
+   single: Git; post-checkout Hook
+   single: post-checkout Hook
+
 
 Post-checkout hook for composer install
 ======================================

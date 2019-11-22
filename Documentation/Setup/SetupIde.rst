@@ -2,8 +2,10 @@
 
 .. highlight:: bash
 
-
 .. _setup-ide:
+
+.. index::
+   single: Code Contribution Workflow; setup IDE
 
 ==============
 Setup your IDE
@@ -12,6 +14,10 @@ Setup your IDE
 In the Appendix, you can find some hints that might be useful for
 :ref:`phpstorm-setup`.
 
+.. _coding-guidelines:
+
+.. index::
+   single: Code Contribution Workflow; setup coding guidelines
 
 Coding Guidelines
 -----------------

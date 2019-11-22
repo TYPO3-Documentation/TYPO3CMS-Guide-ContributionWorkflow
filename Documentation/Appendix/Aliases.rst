@@ -3,6 +3,10 @@
 
 .. _aliases:
 
+.. index::
+   single: Git; Aliases
+   single: Aliases
+
 =====================
 Aliases & Git Aliases
 =====================

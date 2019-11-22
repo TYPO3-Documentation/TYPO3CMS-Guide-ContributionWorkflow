@@ -4,10 +4,15 @@
 
 .. _phpstorm-setup-xdebug:
 
-
 ===========
 Debug TYPO3
 ===========
+
+.. _debugging-with-phpstorm-and-xdebug:
+
+.. index::
+   single: Tools; Debugging With PhpStorm and Xdebug
+   single: Debugging; With PhpStorm and Xdebug
 
 Debugging With PhpStorm and Xdebug
 ==================================

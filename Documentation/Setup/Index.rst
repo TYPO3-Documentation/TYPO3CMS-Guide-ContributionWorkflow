@@ -12,7 +12,7 @@ Setup
    :titlesonly:
 
    Account/Index
-   Prerequisites   
+   Prerequisites
    SetupTypo3
    Git/Index
    SetupIde

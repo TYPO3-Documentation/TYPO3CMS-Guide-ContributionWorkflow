@@ -4,6 +4,10 @@
 
 .. _setting-up-typo3-manually-linux:
 
+.. index::
+   single: Linux
+   single: Setup; Linux
+
 =====================================
 Setting up TYPO3 manually under Linux
 =====================================

@@ -1,9 +1,11 @@
 .. include:: ../Includes.txt
 
-
 .. _GerritAccount:
-
 .. _gerrit-ssh:
+
+.. index::
+   single: Tools; Gerrit
+   single: Account; Gerrit
 
 =======================
 Setting up Gerrit (ssh)

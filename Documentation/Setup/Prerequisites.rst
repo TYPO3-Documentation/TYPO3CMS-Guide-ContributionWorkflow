@@ -2,7 +2,6 @@
 
 .. highlight:: bash
 
-
 .. _prerequisites:
 
 ==============================
@@ -21,9 +20,10 @@ If some of these are new for you, take a few minutes to read up about what they
 do for us. Maybe they prove useful in your everyday work as well.
 You can find installation tutorials in the :ref:`Appendix <appendix>` section.
 
-
-
 .. _prerequisites-composer:
+
+.. index::
+   single: Tools; Composer
 
 Composer
 ========
@@ -50,7 +50,6 @@ Verify composer is working::
 
    $ composer --version
 
-
 Setting up Your Frontend Build Toolchain.
 =========================================
 
@@ -62,8 +61,11 @@ files. See :ref:`yarn build <yarn-build>` for more information on this.
 
 .. _prerequisites-yarn:
 
+.. index::
+   single: Tools; Yarn
+
 Yarn
----------------
+----
 
 TYPO3 itself does not need yarn to run, but yarn is something similar to composer, but for the world outside of PHP.
 We will be mainly using yarn to get helpful tools like Grunt and Bower.
@@ -106,6 +108,9 @@ everything up in your TYPO3 working directory.
 
 .. _prerequisites-grunt:
 
+.. index::
+   single: Tools; Grunt
+
 Grunt
 =====
 
@@ -119,5 +124,3 @@ does - it runs tasks for us.
 In our case grunt compiles CSS, minifies and concatenates JavaScript files, runs syntax checks and a couple of
 other useful things. The good news is that TYPO3 comes with a predefined set of tasks that grunt will run, so you don't
 have to take care of all the busywork underneath.
-
-

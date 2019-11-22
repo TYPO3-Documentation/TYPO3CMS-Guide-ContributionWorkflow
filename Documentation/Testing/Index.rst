@@ -3,6 +3,10 @@
 
 .. _testing:
 
+.. index::
+   single: Code Contribution Workflow; Running Tests Locally
+   single: Testing; Running Tests Locally
+
 =========
 Run Tests
 =========
@@ -44,6 +48,11 @@ in different environments (PHP version, database engine, ...). The script
 automatically runs docker using an image which corresponds to the environment
 you provide with the command line arguments.
 
+.. _run-tests-with-runtests.sh-using-docker:
+
+.. index::
+   single: Code Contribution Workflow; Running Tests Locally using Docker
+   single: Testing; Running Tests Locally using Docker
 
 Run Tests with runTests.sh using docker
 =======================================
@@ -178,12 +187,18 @@ standard exit codes:
 Reports of the acceptance tests will be stored in
 :file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the browser.
 
+.. _run-tests-directly-without-docker:
+
+.. index::
+   single: Code Contribution Workflow; Running Tests Locally without Docker
+   single: Testing; Running Tests Locally without Docker
+
 Run tests directly without docker
 =================================
 
 If you have problems with docker, you can run some of the lowlevel scripts and
 commands directly. However it does depend on your system, whether they run
-successfully. The docker / runTests.sh method gives us the possibility to have
+successfully. The docker / :file:`runTests.sh` method gives us the possibility to have
 a controlled environment where the tests run in. That also means, the databases
 that the functional tests require are already created automatically. That is not
 the case, if you run the tests locally on your current system.
@@ -191,12 +206,12 @@ the case, if you run the tests locally on your current system.
 That being said, running the tests directly is not being officially supported,
 but you can try this out yourself.
 
-You can look in the source of Build/Scripts/runTests.sh or rather in
-Build/testing-docker/local/docker-compose.yml to see which commands the runTests.sh
+You can look in the source of :file:`Build/Scripts/runTests.sh` or rather in
+:file:`Build/testing-docker/local/docker-compose.yml` to see which commands the :file:`runTests.sh`
 script calls and run these directly. Not everything will work, because there may
 be dependencies, that are only available in the docker container.
 
-Also, you can run some of the scripts in Build/Scripts directly.
+Also, you can run some of the scripts in :file:`Build/Scripts` directly.
 
 Examples:
 
@@ -225,6 +240,13 @@ Run all functional tests
 .. code-block:: bash
 
   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
+
+.. _check-for-coding-guidelines:
+
+.. index::
+   single: Code Contribution Workflow; Checking for Coding Guidelines
+   single: Tools; Checking for Coding Guidelines
+
 
 Check for Coding Guidelines
 ---------------------------

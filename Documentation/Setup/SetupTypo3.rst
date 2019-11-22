@@ -2,7 +2,6 @@
 
 .. highlight:: bash
 
-
 .. _setup-typo3:
 
 ============================
@@ -11,6 +10,9 @@ Setup the TYPO3 installation
 
 .. _setup-typo3-git-clone:
 .. _git-clone:
+
+.. index::
+   single: Code Contribution Workflow; git clone
 
 git clone
 =========
@@ -34,6 +36,9 @@ here.
 
 .. _composer-install:
 
+.. index::
+   single: Code Contribution Workflow; composer install
+
 composer install
 ================
 
@@ -56,6 +61,9 @@ This may take several minutes::
    composer install
 
 .. _yarn-build:
+
+.. index::
+   single: Code Contribution Workflow; yarn install
 
 yarn install
 ============

@@ -3,6 +3,10 @@
 
 .. _cgl-fix-my-commit:
 
+.. index::
+   single: CGL; Fix
+   single: CGL; Troubleshoot
+
 ==============
 cglFixMyCommit
 ==============

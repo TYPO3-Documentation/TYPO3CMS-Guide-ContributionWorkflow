@@ -2,6 +2,10 @@
 
 .. _osx-grunt:
 
+.. index::
+   single: OS X; Grunt installation
+   single: Grunt installation; OS X
+
 ====================
 GRUNT install on OSX
 ====================
