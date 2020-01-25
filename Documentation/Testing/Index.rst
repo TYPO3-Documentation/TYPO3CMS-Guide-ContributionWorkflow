@@ -255,7 +255,7 @@ The cgl checking commands / scripts not only check, they repair as well!
 
 You can use the already mentioned script cglFixMyCommit::
 
-Mac / Linus::
+Mac / Linux::
 
    Build/Scripts/cglFixMyCommit.sh
 
