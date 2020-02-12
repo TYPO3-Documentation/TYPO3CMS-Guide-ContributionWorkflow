@@ -206,7 +206,7 @@ in :ref:`h2document:rendering-docs-quickstart`.
 
    cd typo3/sysext/core/
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
-   dockrun_t3rdf makehtml
+   dockrun_t3rd makehtml
    # on Mac
    open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
    # on Linux
