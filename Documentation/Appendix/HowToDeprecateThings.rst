@@ -67,7 +67,7 @@ and remove an unused argument, use :php:`func_get_args()` for arguments existenc
 
    public function TS_AtagToAbs($value)
    {
-      if (func_get_args() > 1) {
+      if (func_num_args() > 1) {
          trigger_error('Second argument of TS_AtagToAbs() is not in use and is removed, however the argument in the callers code can be removed without side-effects.', E_USER_DEPRECATED);
       }
       // ...
