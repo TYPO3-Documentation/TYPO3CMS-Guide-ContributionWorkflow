@@ -59,7 +59,7 @@ Deprecate method arguments
 
 If you want to deprecate method arguments, check for argument existence and
 trigger an error the same way you would for a method. If you want to deprecate
-and remove an unused argument, use :php:`func_get_args()` for arguments existence
+and remove an unused argument, use :php:`func_get_args()` or :php:`func_num_args()`
 (see example below):
 
 .. code-block:: php
