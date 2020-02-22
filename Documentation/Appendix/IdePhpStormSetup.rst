@@ -132,10 +132,10 @@ Recommended Plugins
 Optional Plugins
 ----------------
   
-* `Fluid plugin <https://plugins.jetbrains.com/plugin/9469-fluid-plugin--free-version>`__ 
+* `Fluid plugin <https://plugins.jetbrains.com/plugin/11151-fluid--enterprise>`__ 
   (sgalinski)
 * `TypoScript plugin
-  <https://plugins.jetbrains.com/plugin/7463-typoscript-plugin>`__ (sgalinski)
+  <https://plugins.jetbrains.com/plugin/11243-typoscript--enterprise>`__ (sgalinski)
 * :ref:`phpstorm-gerritplugin`
 * `TYPO3 CMS Plugin
   <https://plugins.jetbrains.com/plugin/9496-typo3-cms-plugin>`__
