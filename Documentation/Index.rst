@@ -51,34 +51,34 @@ a GNU/GPL CMS/Framework available from `typo3.org
 
 **About this manual:**
 
-   How to contribute to the TYPO3 codebase and how to submit issues (e.g. Bug reports).
+How to contribute to the TYPO3 codebase and how to submit issues (e.g. Bug reports).
 
 **Official Documentation:**
 
-   This document is included as part of the official TYPO3 documentation.
+This document is included as part of the official TYPO3 documentation.
 
 **For Documentation Contributors**
 
-   If you find an error or something is missing, please:
-   `Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues/new>`__
+If you find an error or something is missing, please:
+`Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues/new>`__
 
-   You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
-   on the top right to submit your change request.
+You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
+on the top right to submit your change request.
 
-   You can find out more about how to do this in :ref:`h2document:docs-contribute`.
+You can find out more about how to do this in :ref:`h2document:docs-contribute`.
 
-   :ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow>`__
-   | `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues>`__
-   | `Pull Requests <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/pulls>`__
+:ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow>`__
+| `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues>`__
+| `Pull Requests <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/pulls>`__
 
 
 **Guide**
 
-   This document is a Guide. Guides are designed to familiarize a reader with a specific topic
-   in order to provide a working knowledge of that particular process. Readers should peruse
-   the guide from cover to cover in order to gain a practical overview of the process.
-   Once completed, the Guide becomes a practical reference tool to which a reader can refer
-   as needed. Guides offer advice on how best to achieve a given task.
+This document is a Guide. Guides are designed to familiarize a reader with a specific topic
+in order to provide a working knowledge of that particular process. Readers should peruse
+the guide from cover to cover in order to gain a practical overview of the process.
+Once completed, the Guide becomes a practical reference tool to which a reader can refer
+as needed. Guides offer advice on how best to achieve a given task.
 
 
 .. toctree::
