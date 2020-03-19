@@ -2,12 +2,11 @@
 
 .. highlight:: bash
 
-.. _ssh-key-osx:
-
 .. index::
    single: OS X; SSH Key
    single: SSH Key; OS X
 
+.. _ssh-key-osx:
 
 ================================
 Creating a SSH Public Key on OSX

@@ -1,10 +1,10 @@
 .. include:: ../Includes.txt
 
-.. _lifeOfAPatch-backport:
-
 .. index::
    single: Gerrit; Backport a Change
    single: Backport a Change
+
+.. _lifeOfAPatch-backport:
 
 ===================================
 Backport a change to other branches

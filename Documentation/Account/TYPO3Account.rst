@@ -1,10 +1,10 @@
 .. include:: ../Includes.txt
 
-.. _TYPO3Account:
-
 .. index::
    single: Account; Typo3.org
    single: Typo3.org
+
+.. _TYPO3Account:
 
 ==============================
 Signup for a TYPO3.org Account

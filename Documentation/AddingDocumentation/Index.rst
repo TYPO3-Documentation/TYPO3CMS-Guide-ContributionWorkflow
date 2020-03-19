@@ -1,10 +1,10 @@
 .. include:: ../Includes.txt
 
-.. _Bugfixing-Adding-documentation:
-.. _Adding-documentation:
-
 .. index::
    single: Documentation Contribution; Adding Documentation
+
+.. _Bugfixing-Adding-documentation:
+.. _Adding-documentation:
 
 =================
 Add Documentation
@@ -25,11 +25,11 @@ and documentation for
 `system extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
 is maintained in the core.
 
-.. _changelog:
-
 .. index::
    single: Documentation Contribution Workflow; Add Changelog
    single: Changelog; Add Entries
+
+.. _changelog:
 
 Changelog
 =========
@@ -81,10 +81,10 @@ need to go into :file:`typo3/sysext/core/Documentation/Changelog/master/`.
 
 Choose one which fits your patch:
 
-.. _documenting-changelog-breaking-changes:
-
 .. index::
    single: Documentation Contribution Workflow; Breaking Changes
+
+.. _documenting-changelog-breaking-changes:
 
 Breaking Changes
 ~~~~~~~~~~~~~~~~
@@ -105,10 +105,10 @@ that may break extensions if they use this part.
    working again. Explicitly mention if no migration is possible.
 
 
-.. _documenting-changelog-deprecations:
-
 .. index::
    single: Documentation Contribution Workflow; Deprecations
+
+.. _documenting-changelog-deprecations:
 
 Deprecations
 ~~~~~~~~~~~~
@@ -129,10 +129,10 @@ for a planned removal. See more information: :ref:`Deprecations <deprecations>`
    working again. Explicitly mention if no migration is possible.
 
 
-.. _documenting-changelog-features:
-
 .. index::
    single: Documentation Contribution Workflow; Features
+
+.. _documenting-changelog-features:
 
 Features
 ~~~~~~~~
@@ -146,10 +146,10 @@ A patch adds new functionality.
 #. **Impact** - how users are affected by this new feature.
 
 
-.. _documenting-changelog-important-information:
-
 .. index::
    single: Documentation Contribution Workflow; Important Information
+
+.. _documenting-changelog-important-information:
 
 Important Information
 ~~~~~~~~~~~~~~~~~~~~~
@@ -159,21 +159,19 @@ important enough to require a Changelog entry.
 
 #. **Description** - describe what is so important it needed an rst snippet
 
-.. _changelog-check-rst:
-
 .. index::
    single: Documentation Contribution Workflow; Checking reST Files
    single: Tools; Checking reST Files
    single: Changelog; Checking
+
+.. _changelog-check-rst:
 
 Check Your `rst` File
 ---------------------
 
 When your change is finished, you can run the following script to check that
 your rst file is ok. The script will check all files in
-:file:`typo3/sysext/core/Documentation/Changelog`.
-
-::
+:file:`typo3/sysext/core/Documentation/Changelog`::
 
    Build/Scripts/validateRstFiles.php
 
@@ -187,13 +185,12 @@ be rendered correctly, do one or more of the following:
 * Use an editor or IDE that properly supports reST and shows errors
 * Render the Changelog locally with docker as explained in the next section
 
-
-.. _render-the-changelog:
-
 .. index::
    single: Documentation Contribution Workflow; Rendering Changelog
    single: Tools; Rendering Changelog
    single: Changelog; Rendering
+
+.. _render-the-changelog:
 
 Render the Changelog
 --------------------
@@ -249,10 +246,10 @@ Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi
 
 The procedure is documented in :ref:`h2document:update-docs`.
 
-.. _documenting-system-extensions:
-
 .. index::
    single: Documentation Contribution Workflow; Documenting System Extensions
+
+.. _documenting-system-extensions:
 
 Document System Extensions
 ==========================

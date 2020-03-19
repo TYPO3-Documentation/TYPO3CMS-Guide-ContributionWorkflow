@@ -1,9 +1,11 @@
 .. include:: ../Includes.txt
 
-.. _workflow-explained:
+
 
 .. index::
    single: Contribution Workflow; Core Explained
+
+.. _workflow-explained:
 
 ============================
 TYPO3 Contribution Explained

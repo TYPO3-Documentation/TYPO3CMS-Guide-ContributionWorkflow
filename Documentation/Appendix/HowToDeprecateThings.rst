@@ -1,9 +1,9 @@
 .. include:: ../Includes.txt
 
-.. _deprecations:
-
 .. index::
    single: Deprecation
+
+.. _deprecations:
 
 ========================================================================
 How to deprecate classes, methods, arguments and hooks in the TYPO3 core
@@ -17,10 +17,10 @@ or change functionality in the TYPO3 core, it has to be deprecated first.
 Here is how:
 
 
-.. _deprecate-class:
-
 .. index::
    single: Deprecation; Deprecate a class
+
+.. _deprecate-class:
 
 Deprecate a class
 =================
@@ -29,10 +29,10 @@ Deprecate a class
  * Deprecate the constructor - see next section about deprecating a method
 
 
-.. _deprecate-method:
-
 .. index::
    single: Deprecation; Deprecate a method
+
+.. _deprecate-method:
 
 Deprecate method
 ================
@@ -49,10 +49,10 @@ Deprecate method
    );
 
 
-.. _deprecate-method-arguments:
-
 .. index::
    single: Deprecation; Deprecate method arguments
+
+.. _deprecate-method-arguments:
 
 Deprecate method arguments
 ==========================
@@ -74,10 +74,10 @@ and remove an unused argument, use :php:`func_get_args()` or :php:`func_num_args
    }
 
 
-.. _deprecate-hooks:
-
 .. index::
    single: Deprecation; Deprecate a hook
+
+.. _deprecate-hooks:
 
 Deprecate a hook
 ================
@@ -110,10 +110,10 @@ before the hook call:
    }
 
 
-.. _deprecate-used-methods:
-
 .. index::
    single: Deprecation; Deprecate methods still called by the core
+
+.. _deprecate-used-methods:
 
 Deprecate methods still called by the TYPO3 Core
 ================================================

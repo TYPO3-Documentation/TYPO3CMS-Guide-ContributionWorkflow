@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _osx-npm:
-
 .. index::
    single: OS X; Yarn installation
    single: Yarn installation; OS X
+
+.. _osx-npm:
 
 ===================
 Yarn install on OSX

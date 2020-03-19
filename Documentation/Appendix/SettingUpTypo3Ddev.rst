@@ -2,12 +2,13 @@
 
 .. highlight:: bash
 
-.. _ddev:
-.. _settting-up-typo3-with-ddev:
 
 .. index::
    single: DDEV
    single: Setup; DDEV
+
+.. _ddev:
+.. _settting-up-typo3-with-ddev:
 
 ==========================
 Setting up TYPO3 with DDEV
@@ -46,10 +47,7 @@ In order to be able to build some assets (e.g. css, js files) you need to have `
 Clone TYPO3
 ===========
 
-Create a clone of the TYPO3 git repository as described in :ref:`git-clone`.
-
-
-::
+Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
 
    mkdir t3master
    cd t3master
@@ -66,11 +64,12 @@ Configure DDEV
    ddev config
 
 
-In order to change the PHP version, edit the configuration file `.ddev/config.yaml`. See supported version here: https://typo3.org/cms/roadmap/
-
-::
+In order to change the PHP version, edit the configuration file `.ddev/config.yaml`::
 
    php_version: "7.3"
+
+
+See supported version here: https://typo3.org/cms/roadmap/
 
 Start DDEV
 ==========
@@ -85,9 +84,7 @@ Start DDEV
 Install dependencies via composer
 =================================
 
-This runs inside the container and thus uses your configured PHP version.
-
-::
+This runs inside the container and thus uses your configured PHP version::
 
    ddev composer install
 
@@ -96,16 +93,12 @@ This runs inside the container and thus uses your configured PHP version.
 Check for database credentials
 ==============================
 
-Let DDEV dump information:
-
-::
+Let DDEV dump information::
 
    ddev describe
 
 You will need username, password, Database name, host and port of the
-MySQL credentials to setup your TYPO3 installation, e.g.
-
-::
+MySQL credentials to setup your TYPO3 installation, e.g.::
 
    MySQL Credentials
    -----------------
@@ -122,9 +115,7 @@ FIRST_INSTALL
    Creating FIRST_INSTALL is probably not necessary. Check to see if the database exists.
    ddev describe should give you enough information for that.
 
-Now, create a file `FIRST_INSTALL`:
-
-::
+Now, create a file `FIRST_INSTALL`::
 
    touch FIRST_INSTALL
 

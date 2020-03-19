@@ -20,10 +20,12 @@ If some of these are new for you, take a few minutes to read up about what they
 do for us. Maybe they prove useful in your everyday work as well.
 You can find installation tutorials in the :ref:`Appendix <appendix>` section.
 
-.. _prerequisites-composer:
+
 
 .. index::
    single: Tools; Composer
+
+.. _prerequisites-composer:
 
 Composer
 ========
@@ -59,10 +61,12 @@ Yarn and Grunt are not required for setting up a working TYPO3 installation. You
 will need them however if you plan to create patches which require changing frontend
 files. See :ref:`yarn build <yarn-build>` for more information on this.
 
-.. _prerequisites-yarn:
+
 
 .. index::
    single: Tools; Yarn
+
+.. _prerequisites-yarn:
 
 Yarn
 ----
@@ -106,10 +110,12 @@ Install all Required Packages
 The later section :ref:`yarn-build` will explain how to set
 everything up in your TYPO3 working directory.
 
-.. _prerequisites-grunt:
+
 
 .. index::
    single: Tools; Grunt
+
+.. _prerequisites-grunt:
 
 Grunt
 =====

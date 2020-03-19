@@ -1,10 +1,12 @@
 .. include:: ../Includes.txt
 
-.. _lifeOfAPatch-Reverting-Patches:
+
 
 .. index::
    single: Gerrit; Revert a Change
    single: Revert a Change
+
+.. _lifeOfAPatch-Reverting-Patches:
 
 ==============
 Revert patches

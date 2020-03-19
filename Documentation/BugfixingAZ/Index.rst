@@ -1,12 +1,13 @@
 .. include:: ../Includes.txt
 .. highlight:: shell
 
+.. index::
+   single: Code Contribution Workflow; Create Patch
+
 .. _Fixing-a-bug-A-Z:
 .. _core-contrib-quickstart:
 .. _quickstart-create-a-patch:
 
-.. index::
-   single: Code Contribution Workflow; Create Patch
 
 ==============
 Create a Patch

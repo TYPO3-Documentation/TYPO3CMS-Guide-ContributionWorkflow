@@ -1,9 +1,9 @@
 .. include:: ../../Includes.txt
 
-.. _appendix-osx:
-
 .. index::
    single: OS X
+
+.. _appendix-osx:
 
 OS X help
 ===============

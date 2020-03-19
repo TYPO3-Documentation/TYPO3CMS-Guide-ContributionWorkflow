@@ -1,9 +1,9 @@
 .. include:: ../Includes.txt
 
-.. _Find-a-review:
-
 .. index::
    single: Code Contribution Workflow; Finding Reviews
+
+.. _Find-a-review:
 
 =======================
 Find a review on Gerrit
@@ -12,11 +12,11 @@ Find a review on Gerrit
 For finding an existing review (patch), there are several possibilities. Use whatever
 is most convenient for you or what fits your needs.
 
-.. _forger:
-
 .. index::
    single: Tools; Forger Finding Reviews
    single: Review; Finding Reviews
+
+.. _forger:
 
 Forger
 ======
@@ -45,11 +45,13 @@ If you are in any way involved in the review (e.g. you are author,
 reviewer or you made changes), you will get a notification about
 it to your email adress. The notification contains a link.
 
-.. _gerrit-your-changes:
+
 
 .. index::
    single: Tools; Gerrit Your Changes
    single: Review; Own Changes
+
+.. _gerrit-your-changes:
 
 Gerrit: Your Changes
 ====================
@@ -60,11 +62,13 @@ and select Your: Changes.
 .. image:: _assets/gerrit-your-patches.png
    :class: with-shadow
 
-.. _gerrit-open-changes:
+
 
 .. index::
    single: Tools; Gerrit Open Changes
    single: Review; Open Changes
+
+.. _gerrit-open-changes:
 
 Gerrit: Open Changes
 ====================
@@ -72,11 +76,13 @@ Gerrit: Open Changes
 Select `Changes : Open <https://review.typo3.org/q/status:open>`__ to
 get the latest changes or changes with recent modifications.
 
-.. _gerrit-search:
+
 
 .. index::
    single: Tools; Gerrit Search
    single: Review; Search
+
+.. _gerrit-search:
 
 Gerrit: Search
 ==============

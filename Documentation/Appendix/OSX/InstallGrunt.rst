@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _osx-grunt:
-
 .. index::
    single: OS X; Grunt installation
    single: Grunt installation; OS X
+
+.. _osx-grunt:
 
 ====================
 GRUNT install on OSX

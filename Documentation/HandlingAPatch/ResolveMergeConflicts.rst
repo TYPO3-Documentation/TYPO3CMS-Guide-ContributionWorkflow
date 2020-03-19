@@ -9,10 +9,12 @@ Resolve Merge conflicts
 
 .. include:: ../_includes/NewPageInfo.rst.txt
 
-.. _what-are-merge-conflicts:
+
 
 .. index::
    single: Git; What are Merge conflicts
+
+.. _what-are-merge-conflicts:
 
 What are merge conflicts?
 =========================
@@ -130,10 +132,12 @@ some way.
 See next section :ref:`how-to-resolve-merge-conflicts` for more information about
 resolving merge conflicts.
 
-.. _how-to-resolve-merge-conflicts:
+
 
 .. index::
    single: Git; How to resolve Merge conflicts
+
+.. _how-to-resolve-merge-conflicts:
 
 How to resolve conflicts?
 =========================

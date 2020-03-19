@@ -1,20 +1,23 @@
 .. include:: ../Includes.txt
 
-.. _forge-index:
-.. _bugreporting-index:
 
 .. index::
    single: Forge; Report an Issue
    single: Issue; Report an Issue
 
+.. _forge-index:
+.. _bugreporting-index:
+
 ===============
 Report an Issue
 ===============
 
-.. _forge-introduction:
+
 
 .. index::
    single: Tools; Forge
+
+.. _forge-introduction:
 
 Introduction to Forge
 =====================
@@ -30,10 +33,10 @@ When you want to report a bug or suggest a new feature, go to the
 
 
 
-.. _searching-for-existing-issues:
-
 .. index::
    single: Issue Reporting Workflow; Searching for Issues
+
+.. _searching-for-existing-issues:
 
 Searching for Existing Issues
 =============================
@@ -47,10 +50,10 @@ easy to find existing issues. Filters are located on the the left hand
 side of the navigation menu. You can use this feature to help refine searches.
 
 
-.. _identify-the-issue:
-
 .. index::
    single: Issue Reporting Workflow; Identifying
+
+.. _identify-the-issue:
 
 Identify the Issue
 ==================
@@ -85,11 +88,11 @@ Talk to the core team
 
 
 
-.. _create-an-issue:
-
 .. index::
    single: Issue Reporting Workflow; Creation
    single: Forge; Create an Issue
+
+.. _create-an-issue:
 
 Create an issue
 ===============
@@ -121,10 +124,12 @@ The others are mostly for internal organization (like **Stories** and **Epics**)
 and things which aren't really a feature or a bug... they are just **Tasks**
 somebody needs to take care of.
 
-.. _subject:
+
 
 .. index::
    single: Issue; Subject
+
+.. _subject:
 
 Subject
 -------
@@ -145,10 +150,11 @@ Good example:
    JS error in Internet Explorer when inserting record in list module.
 
 
-.. _description:
 
 .. index::
    single: Issue; Description
+
+.. _description:
 
 Description
 -----------
@@ -176,20 +182,23 @@ Be polite.
    Always.
 
 
-.. _category:
 
 .. index::
    single: Issue; Category
+
+.. _category:
 
 Category
 --------
 
 Choose a category that fits your issue.
 
-.. _typo3-version:
+
 
 .. index::
    single: Issue; TYPO3 version
+
+.. _typo3-version:
 
 TYPO3 version
 -------------
@@ -198,10 +207,12 @@ TYPO3 version
 
 Choose the TYPO3 version, where the error occurs.
 
-.. _php-version:
+
 
 .. index::
    single: Issue; PHP version
+
+.. _php-version:
 
 PHP Version
 -----------
@@ -211,10 +222,12 @@ PHP Version
 Choose the PHP version, where the error occurs. If in doubt, leave this blank.
 Usually, it is enough to supply the TYPO3 version.
 
-.. _create-issue-files:
+
 
 .. index::
    single: Issue; Files
+
+.. _create-issue-files:
 
 (optional) Files
 ----------------
@@ -241,6 +254,7 @@ Some hints for files:
 
    Use the "Preview" function at the bottom of the page to check if your
    issue is formatted well.
+
 
 .. _best-practices-bug-report:
 
@@ -307,10 +321,12 @@ the bug.
    example use headlines (h1, h2) to structure the parts, hightlighted code (<>) for
    code snippets, code for inline images (!image!).
 
-.. _formatting-in-redmine:
+
 
 .. index::
    single: Issue; Formatting
+
+.. _formatting-in-redmine:
 
 Hints for formatting in Redmine
 ===============================
@@ -323,10 +339,12 @@ merging patches. During the life cycle of a bug report and patch,
 several people will be reading your report. High readability and
 clarity makes things easier for everyone and saves time.
 
-.. _redmine-images:
+
 
 .. index::
    single: Issue; Images
+
+.. _redmine-images:
 
 Images
 ------

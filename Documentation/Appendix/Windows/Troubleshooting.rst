@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _troubleshooting-for-windows:
-
 .. index::
    single: Windows; Troubleshooting
    single: Troubleshooting; Windows
+
+.. _troubleshooting-for-windows:
 
 ============================
 Troubleshooting for Windows

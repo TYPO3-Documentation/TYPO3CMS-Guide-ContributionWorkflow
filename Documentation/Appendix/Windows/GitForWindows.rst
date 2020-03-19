@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _git-for-windows:
-
 .. index::
    single: Windows; Git
    single: Git; Windows
+
+.. _git-for-windows:
 
 ============================
 Working with Git for Windows

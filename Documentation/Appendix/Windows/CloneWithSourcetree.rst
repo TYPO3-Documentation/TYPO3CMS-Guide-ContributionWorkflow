@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _windows-clonewithsourcetree:
-
 .. index::
    single: Windows; SourceTree
    single: SourceTree
+
+.. _windows-clonewithsourcetree:
 
 ==================================
 Cloning with SourceTree on Windows

@@ -1,10 +1,10 @@
 .. include:: ../Includes.txt
 
-.. _forger-index:
-
 .. index::
    single: Tools; Forger
    single: Forger
+
+.. _forger-index:
 
 ======================
 Introduction to Forger

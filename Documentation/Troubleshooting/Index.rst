@@ -1,23 +1,23 @@
 .. include:: ../Includes.txt
 .. highlight:: shell
 
-.. _troubleshooting:
+
 
 .. index::
    single: Troubleshooting
+
+.. _troubleshooting:
 
 ===============
 Troubleshooting
 ===============
 
-.. Some of this text was taken from the Wiki page: https://wiki.typo3.org/TroubleShooting_(Git)
-
-.. _git-troubleshooting:
 
 .. index::
    single: Git; Troubleshooting
    single: Troubleshooting; Git
 
+.. _git-troubleshooting:
 
 Git Troubleshooting
 ===================
