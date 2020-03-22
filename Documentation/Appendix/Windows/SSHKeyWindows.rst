@@ -1,11 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _ssh-key-win:
-
 .. index::
    single: Windows; SSH Key
    single: SSH Key; Windows
 
+.. _ssh-key-win:
 
 ====================================
 Creating a SSH Public Key on Windows

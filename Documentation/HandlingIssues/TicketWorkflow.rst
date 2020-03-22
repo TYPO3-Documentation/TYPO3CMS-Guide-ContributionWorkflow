@@ -1,10 +1,12 @@
 .. include:: ../Includes.txt
 
-.. _issue-workflow:
+
 
 .. index::
    single: Forge; Issue Workflow
    single: Issue Workflow
+
+.. _issue-workflow:
 
 ======================
 Issue Workflow (Forge)

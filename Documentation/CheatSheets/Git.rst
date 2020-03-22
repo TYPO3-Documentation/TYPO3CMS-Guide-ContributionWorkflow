@@ -2,11 +2,11 @@
 
 .. highlight:: bash
 
-.. _cheat-sheet-git:
-
 .. index::
    single: Git; Git Cheat Sheet
    single: Cheat Sheets; Git Cheat Sheet
+
+.. _cheat-sheet-git:
 
 ===============
 Git Cheat Sheet

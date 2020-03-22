@@ -1,9 +1,9 @@
 .. include:: ../Includes.txt
 
-.. _phpstorm-gerritplugin:
-
 .. index::
    single: PhpStorm; Gerrit Plugin
+
+.. _phpstorm-gerritplugin:
 
 =======================
 PhpStorm: Gerrit Plugin

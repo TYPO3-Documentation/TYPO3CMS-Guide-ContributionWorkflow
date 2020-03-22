@@ -61,17 +61,17 @@ Otherwise throw the changes away, to bring your repository back to a clean state
    git reset --hard origin/master
 
 
-.. _Gerrit-Commenting-files:
+
 
 .. index::
    single: Review; Comment Files
    single: Gerrit; Comment Files
    single: Comment Files
 
+.. _Gerrit-Commenting-files:
+
 Comment files
 =============
-
-.. This section was moved from Gerrit/Index.rst
 
 If you spotted a mistake in any file, you should provide the author with a useful clue where the mistake has been made.
 One way would be to simply note the filename and line number in the central comment box. But this would be cumbersome and
@@ -92,12 +92,12 @@ to use the **Reply Button** to send them all (ideally with a vote indicating how
 
 
 
-.. _gerrit-voting:
-
 .. index::
    single: Review; Vote
    single: Gerrit; Vote
    single: Vote
+
+.. _gerrit-voting:
 
 Vote
 ====

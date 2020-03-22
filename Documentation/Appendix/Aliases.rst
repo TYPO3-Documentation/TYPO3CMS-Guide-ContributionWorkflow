@@ -1,11 +1,10 @@
 .. include:: ../Includes.txt
 
-
-.. _aliases:
-
 .. index::
    single: Git; Aliases
    single: Aliases
+
+.. _aliases:
 
 =====================
 Aliases & Git Aliases

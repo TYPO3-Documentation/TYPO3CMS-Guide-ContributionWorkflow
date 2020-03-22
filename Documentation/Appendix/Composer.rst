@@ -2,11 +2,10 @@
 
 .. highlight:: bash
 
-.. _composer:
-
 .. index::
    single: Composer
 
+.. _composer:
 
 ========
 Composer
@@ -24,10 +23,10 @@ packages in sync.
 Since we use quite some packages (because why would we invent things ourselves that are already there?) composer is an
 extremely useful tool for us.
 
-.. _install-composer:
-
 .. index::
    single: Composer; Install Composer
+
+.. _install-composer:
 
 Install Composer
 ================
@@ -55,11 +54,10 @@ But, just follow the :ref:`setup instructions <setup>`, it will walk you through
 in the correct order!
 
 
-
-.. _custom-composer-commands:
-
 .. index::
    single: Composer; Custom Composer Commands
+
+.. _custom-composer-commands:
 
 Custom TYPO3 Composer Commands
 ==============================

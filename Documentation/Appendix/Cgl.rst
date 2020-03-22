@@ -1,11 +1,10 @@
 .. include:: ../Includes.txt
 
-
-.. _appendix-cgl:
-
 .. index::
    single: CGL
    single: Coding Guidelines
+
+.. _appendix-cgl:
 
 =================
 Coding Guidelines

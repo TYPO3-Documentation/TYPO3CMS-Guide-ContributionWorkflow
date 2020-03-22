@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _gittower-osx:
-
 .. index::
    single: Git Tower
    single: Git; Git Tower
+
+.. _gittower-osx:
 
 ======================
 Working with Git Tower

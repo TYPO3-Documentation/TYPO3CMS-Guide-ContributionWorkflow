@@ -2,11 +2,11 @@
 
 .. highlight:: bash
 
-.. _setting-up-typo3-manually-linux:
-
 .. index::
    single: Linux
    single: Setup; Linux
+
+.. _setting-up-typo3-manually-linux:
 
 =====================================
 Setting up TYPO3 manually under Linux
@@ -86,9 +86,7 @@ Create a basic site for your installation
 
 Edit a sitefile, e.g. `/etc/apache2/sites-available/t3coredev.conf`
 
-make sure it will point to the correct htdocs directory:
-
-::
+make sure it will point to the correct htdocs directory::
 
    <VirtualHost *:80>
       ServerAdmin youremail@yourdomain
@@ -99,9 +97,7 @@ make sure it will point to the correct htdocs directory:
    </VirtualHost>
 
 
-Enable it
-
-::
+Enable it::
 
    sudo a2ensite t3coredev
    sudo service apache2 reload

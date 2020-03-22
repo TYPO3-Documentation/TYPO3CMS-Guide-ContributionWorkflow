@@ -8,11 +8,12 @@
 Setup the TYPO3 installation
 ============================
 
-.. _setup-typo3-git-clone:
-.. _git-clone:
 
 .. index::
    single: Code Contribution Workflow; git clone
+
+.. _setup-typo3-git-clone:
+.. _git-clone:
 
 git clone
 =========
@@ -20,6 +21,7 @@ git clone
 Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3:: 
 
    git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+
 
 .. _git-guis:
 
@@ -34,10 +36,14 @@ here.
 * :ref:`Git Tower on OSX<gittower-osx>`
 * `GitKraken <https://www.gitkraken.com>`__
 
-.. _composer-install:
+
+
+
 
 .. index::
    single: Code Contribution Workflow; composer install
+
+.. _composer-install:
 
 composer install
 ================
@@ -60,10 +66,12 @@ This may take several minutes::
    # cd <cloned project>
    composer install
 
-.. _yarn-build:
+
 
 .. index::
    single: Code Contribution Workflow; yarn install
+
+.. _yarn-build:
 
 yarn install
 ============

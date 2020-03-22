@@ -1,11 +1,10 @@
 .. include:: ../Includes.txt
 
-
-.. _cgl-fix-my-commit:
-
 .. index::
    single: CGL; Fix
    single: CGL; Troubleshoot
+
+.. _cgl-fix-my-commit:
 
 ==============
 cglFixMyCommit

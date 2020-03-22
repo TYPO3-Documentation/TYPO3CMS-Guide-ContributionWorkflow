@@ -1,11 +1,13 @@
 .. include:: ../Includes.txt
 .. highlight:: shell
 
-.. _testing:
+
 
 .. index::
    single: Code Contribution Workflow; Running Tests Locally
    single: Testing; Running Tests Locally
+
+.. _testing:
 
 =========
 Run Tests
@@ -48,11 +50,13 @@ in different environments (PHP version, database engine, ...). The script
 automatically runs docker using an image which corresponds to the environment
 you provide with the command line arguments.
 
-.. _run-tests-with-runtests.sh-using-docker:
+
 
 .. index::
    single: Code Contribution Workflow; Running Tests Locally using Docker
    single: Testing; Running Tests Locally using Docker
+
+.. _run-tests-with-runtests.sh-using-docker:
 
 Run Tests with runTests.sh using docker
 =======================================
@@ -187,11 +191,13 @@ standard exit codes:
 Reports of the acceptance tests will be stored in
 :file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the browser.
 
-.. _run-tests-directly-without-docker:
+
 
 .. index::
    single: Code Contribution Workflow; Running Tests Locally without Docker
    single: Testing; Running Tests Locally without Docker
+
+.. _run-tests-directly-without-docker:
 
 Run tests directly without docker
 =================================
@@ -241,12 +247,13 @@ Run all functional tests
 
   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
 
-.. _check-for-coding-guidelines:
+
 
 .. index::
    single: Code Contribution Workflow; Checking for Coding Guidelines
    single: Tools; Checking for Coding Guidelines
 
+.. _check-for-coding-guidelines:
 
 Check for Coding Guidelines
 ---------------------------

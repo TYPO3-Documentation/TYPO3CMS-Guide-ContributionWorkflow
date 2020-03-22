@@ -1,10 +1,10 @@
 .. include:: ../Includes.txt
 
-.. _commitmessage:
-
 .. index::
    single: Git; Commit Message Rules
    single: Commit Message Rules
+
+.. _commitmessage:
 
 ===================================
 Commit Message rules for TYPO3 CMS

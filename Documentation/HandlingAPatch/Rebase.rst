@@ -1,17 +1,17 @@
 .. include:: ../Includes.txt
 
-.. _rebase:
+
 
 .. index::
    single: Code Contribution Workflow; Rebasing
    single: Git; Rebase
 
+.. _rebase:
+
 ======
 Rebase
 ======
 
-
-.. include:: ../_includes/NewPageInfo.rst.txt
 
 .. _rebase-intro:
 

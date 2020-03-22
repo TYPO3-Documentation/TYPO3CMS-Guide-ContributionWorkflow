@@ -32,11 +32,13 @@ As always, make sure to follow the `Code of conduct <https://typo3.org/community
 or the short form: **be nice, be helpful!**
 
 
-.. _botty:
+
 
 .. index::
    single: Slack; Botty
    single: Botty
+
+.. _botty:
 
 Botty on Slack
 ~~~~~~~~~~~~~~

@@ -13,11 +13,11 @@ it is the projects chosen platform for communication.
 It is mandatory to create a typo3.org account, before you
 can join the TYPO3 Slack workspace.
 
-.. _register-for-slack-account:
-
 .. index::
    single: Account; Slack Registration
    single: Tools; Slack Registration
+
+.. _register-for-slack-account:
 
 Register for Slack account
 --------------------------

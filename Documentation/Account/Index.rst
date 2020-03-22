@@ -1,11 +1,12 @@
 .. include:: ../Includes.txt
 
-.. _TYPO3-Guide-ContributionWorkflow-Account:
-.. _setting-up-your-account:
 
 .. index::
    single: Account; Setup
    single: Account
+
+.. _TYPO3-Guide-ContributionWorkflow-Account:
+.. _setting-up-your-account:
 
 ========================
 Setting up Your Accounts

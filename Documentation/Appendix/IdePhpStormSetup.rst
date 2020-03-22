@@ -1,12 +1,10 @@
 .. include:: ../Includes.txt
 
-
-.. _phpstorm-setup:
-
 .. index::
    single: PhpStorm; PhpStorm Setup
    single: Setup; PhpStorm
 
+.. _phpstorm-setup:
 
 ===============
 PhpStorm: Setup
@@ -85,11 +83,10 @@ You can find more information on the :ref:`Coding Guidelines section in the Appe
 <appendix-cgl>`.
 
 
-
-.. _phpstorm-setup-plugins:
-
 .. index::
    single: PhpStorm; PhpStorm Plugins
+
+.. _phpstorm-setup-plugins:
 
 Plugins for PhpStorm
 ====================
@@ -143,11 +140,11 @@ Optional Plugins
   <https://plugins.jetbrains.com/plugin/8098-typo3-xliff-utility>`__
 
 
-.. _phpstorm-setup-testing:
-
 .. index::
    single: PhpStorm; Setup Testing Framework
    single: Testing; Setup PhpStorm
+
+.. _phpstorm-setup-plugins:
 
 Setting up  PhpStorm for the Testing Framework
 ==============================================
