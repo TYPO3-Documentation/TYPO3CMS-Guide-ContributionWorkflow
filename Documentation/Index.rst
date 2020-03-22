@@ -113,17 +113,11 @@ as needed. Guides offer advice on how best to achieve a given task.
    HandlingAPatch/Index
    HandlingIssues/TicketWorkflow
 
-
-.. toctree::
-   :hidden:
-   :caption: CHEAT SHEETS
-
-   CheatSheets/Git
-
 .. toctree::
    :hidden:
    :caption: ADDITIONAL INFORMATION
 
+   CheatSheets/Git
    Troubleshooting/Index
    Appendix/Index
 

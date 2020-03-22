@@ -34,12 +34,6 @@ contributing and serve as reference pages, for example the
 Some of the information, that is too extensive for the main guide, is found in 
 the :ref:`appendix`.
 
-What's New in This Guide
-========================
-
-See :ref:`whats_new_in_this_guide`.
-
-
 
 .. _other-resources-for-contribution:
 
