@@ -275,17 +275,17 @@ A good bug report should contain all or any of these elements:
 
    Here you can add:
 
-      + A brief description of your environment. Depending on the nature of
-        the bug it *might* inclde your operating system
-        (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
-        used, the database used (mySql, SQLServer, ...) and its version.
-        In any case, the full version of TYPO3 (e.g. 9.5.1) is very helpful. If
-        your bug is reproducible on several versions (e.g. 10.1.0 and 9.5.1),
-        that is helpful as well.
-      + A description of the TYPO3 setup that you are using or that is necessary
-        to trigger the bug. Your issue came out using TYPO3 with multiple
-        languages? Or when you have more than two frontend groups? You have to
-        tell us, otherwise we could not be capable of reproducing your issue.
+   * A brief description of your environment. Depending on the nature of
+     the bug it *might* inclde your operating system
+     (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
+     used, the database used (mySql, SQLServer, ...) and its version.
+     In any case, the full version of TYPO3 (e.g. 9.5.1) is very helpful. If
+     your bug is reproducible on several versions (e.g. 10.1.0 and 9.5.1),
+     that is helpful as well.
+   * A description of the TYPO3 setup that you are using or that is necessary
+     to trigger the bug. Your issue came out using TYPO3 with multiple
+     languages? Or when you have more than two frontend groups? You have to
+     tell us, otherwise we could not be capable of reproducing your issue.
 
    We don't need a full description of your environment, or the full TypoScript
    configuration, but just the parts that are relevant to trigger the bug.
