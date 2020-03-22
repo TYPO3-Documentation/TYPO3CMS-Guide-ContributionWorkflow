@@ -25,14 +25,39 @@ The further you go along, the more advanced the topics will become.
 
 But, you can also use it as a reference guide and jump straight to a section you
 are looking for. In this case, use the search box to search for what
-you are looking for or browse through the menu. 
+you are looking for or browse through the menu.
 
-Some pages near the end of the manual assume that you are already familiar with 
-contributing and serve as reference pages, for example the 
-:ref:`git cheat sheet <cheat-sheet-git>`.
+For example:
 
-Some of the information, that is too extensive for the main guide, is found in 
-the :ref:`appendix`.
+* :ref:`quickstart-create-a-patch` walks you through making a change in the TYPO3
+  core (e.g. fix a bug or create a new feature).
+
+
+The chapters are structured as follows:
+
+* The chapters in :guilabel:`INTRODUCTION` give you an introduction. They are not necessary
+  for contribution but will give you some background information which may make
+  some things easier.
+* The chapters in :guilabel:`SETUP` show how to setup a TYPO3 installation, Git and your
+  accounts for contribution. This is a necessary prerequisite for most actions
+  (e.g. creating a patch), but must be done only once. We recommend to start with
+  this.
+* The chapters in :guilabel:`HOWTOS` walk you through one task. In most cases, it is assumed
+  that you already setup your environment.
+* :ref:`ADDITIONAL INFORMATION` contains a cheat sheet
+  :ref:`git cheat sheet <cheat-sheet-git>`, :guilabel:`Troubleshooting`
+  and the :ref:`appendix` which is a reference of some topics in more depth than what
+  was described in the main section. These pages near the end of the manual assume
+  that you are already familiar with contributing and serve as reference pages.
+
+
+
+Conventions used in this guide
+==============================
+
+* When referring to elements in the gui, we use this formatting:
+  :guilabel:`Add new SSH key`.
+* Keystrokes are referred to by :kbd:`CTRL + c`
 
 
 .. _other-resources-for-contribution:
