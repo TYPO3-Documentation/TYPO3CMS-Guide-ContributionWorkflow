@@ -13,7 +13,7 @@ TYPO3 Contribution Guide - Core Development
       en
 
 :Copyright:
-      2015-2019
+      since 2015
 
 :Authors:
       `TYPO3 Core Team <https://typo3.org/community/teams/typo3-development/>`__ & TYPO3 community
@@ -39,7 +39,6 @@ a GNU/GPL CMS/Framework available from `typo3.org
 - :ref:`Commit Message Rules <commitmessage>`
 - :ref:`bugreporting-index`
 - :ref:`Create a Patch <quickstart-create-a-patch>`
-- :ref:`whats_new_in_this_guide`
 
 
 .. rst-class:: horizbuttons-primary-m
