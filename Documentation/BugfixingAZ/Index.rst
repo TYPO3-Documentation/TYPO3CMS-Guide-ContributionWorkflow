@@ -79,6 +79,7 @@ Step by Step Walkthrough
    Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
 
       git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+      git config remote.origin.push +refs/heads/master:refs/for/master
 
 
 3. Run composer and yarn
@@ -192,7 +193,7 @@ Step by Step Walkthrough
 
    To submit the patch to Gerrit, issue the following command::
 
-      git push origin HEAD:refs/for/master
+      git push
 
 
    In case you want to push a "Work in progress", check out:
