@@ -1,5 +1,7 @@
 .. include:: ../Includes.txt
 
+.. _reviewPatch:
+
 ==============
 Review a patch
 ==============
@@ -145,6 +147,43 @@ As soon as the patch has reached the approved status by getting a +2 on
 "Submit" button, finally pushing it to the main repository.
 
 
+Hints on voting -1
+------------------
+
+See also :ref:`reviewPatch` about the policies on voting and how to vote.
+
+In general, -1 on reading and/or testing of a patch is a mechanism used to
+improve a patch. Still, -1 still takes a risk to kill someone elses patch
+and it usually actively prevents a merge. There are ways to override a -1, but
+those are not pushed through in real live gerrit habits. In general, if voting
+-1, you take some responsibility for this patch by saying "This one shouldn't
+be solved until this or that is fixed". Some hints on using -1 in reviews:
+
+* Think about your vote and always give a sane explanation. "-1 looks ugly" is
+  not enough.
+* If a patch is broken, does not fix the issue, is bogus, architecturally wrong
+  or collides with other goals, a -1 is clearly ok.
+* -1 can also be used if you are actively working on a patch and want to prevent
+  a quick merge: "-1, working on it now, will push soonish".
+* -1 may be ok if you have general doubts but you can not pin point it and need
+  a second opinion: "Hey, this solution looks somehow weird and I doubt this is
+  what we should do here. I think we should have a statement by x or y who have
+  a deeper knowledge of this subsystem to have an eye on that. I do not want
+  this patch to be merged until this was sorted out and will vote -1 for now
+  for this reason."
+
+Hints on voting -2
+------------------
+
+A -2 vote by an active contributor blocks a patch from merging. In contrast to
+-1, a -2 persists new patch sets is a "veto". Use with care. With a -2, you
+are taking responsibility of this patch and basically state that it will not
+be done until you actively removed your vote again.
+
+In the past, we usually had no real problem with someone giving -2 and then
+not acting responsible. It would be great if it stays this way.
+
+
 .. _Gerrit-No-brainers:
 .. _Gerrit-Low-brainers:
 
@@ -175,3 +214,29 @@ Consider these rules when comparing patches:
 * If the patch needed to be rebased onto current master, the changeset might
   contain the changes due to rebasing. So better check the diff between base
   and most recent version in this case.
+
+How to handle [WIP] patches
+===========================
+
+Prefixing your commit message with a [WIP] (work-in-progress) in the title is a
+way to show people a quick-shot version of something that is not finished yet,
+but goes into the right direction. Usually, WIP patches are not actively
+reviewed by others and the original author should take responsibility to finish
+this patch later.
+
+As a contributor, you usually can not expect someone else to pick up your WIP
+patch and finish it, except you stated that goal clearly: "Hey, I've done a
+quick shot with this patch to show a possible solution for this issue, but the patch
+is not finished yet. Foo and bar is missing and we still need a concept for foobar.
+I'll probably not work actively work on it anytime soon, but maybe the current
+state is helpful already".
+
+Better: "Hey, I worked in this area and came up with this WIP patch for now. I
+wanted to show into which direction this patch is leading, but we currently have
+some open questions. However, it would be great if you can give me feedback to
+the general approach at this early state already to decide if it is worth
+following this solution to its end."
+
+Having too many WIP patches in the review queue is not really helpful. Consider
+to fork the project in github or somewhere else and push to gerrit again if
+you patches evolved.
