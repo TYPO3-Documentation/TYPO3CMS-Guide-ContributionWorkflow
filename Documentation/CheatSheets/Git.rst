@@ -172,19 +172,15 @@ Change author for last commit::
    git commit --amend --author "Some Name <some@email>"
 
 
-Squash last 2 commits:
+Squash last 2 commits::
 
-   This is very handy, in case you accidentally created a new commit
-   instead of adding to an existing commit (with `git commit --amend`).
+   git rebase -i HEAD~2
 
-   * All changes have been committed or stashed
-   * Run the following command:
+In the editor, replace 'pick' with 'squash' in the line describing the latest commit
 
-   ::
-
-      git rebase -i HEAD~2
-
-   * In the editor, replace 'pick' with 'squash' in the line describing the latest commit
+This is very handy, in case you accidentally created a new commit
+instead of adding to an existing commit (with `git commit --amend`). This way,
+you can merge the last 2 commits and the commit messages.
 
 
 References
@@ -194,6 +190,7 @@ See also these not TYPO3 specific cheat sheets for git if you are not very famil
 
 * `cheat sheet for git
   <https://services.github.com/on-demand/downloads/github-git-cheat-sheet/>`__
+  (in several languages)
 * `"git - the simple guide" by Roger Dudler <http://rogerdudler.github.io/git-guide/>`__
 * `"Oh, shit, git!" by Katie Sylor-Miller <https://ohshitgit.com/>`__ is basically a cheat sheet for Git, but
   focuses mostly on fixing things that went wrong.
