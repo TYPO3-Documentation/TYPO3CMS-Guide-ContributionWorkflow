@@ -225,14 +225,14 @@ Step by Step Walkthrough
 
 10. Optional: Use Botty on Slack and wait for reviews
 
-   Once your push to Gerrit_ goes through, you will receive a URL for your new
-   change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
-   your new change in the **#typo3-cms-coredev** channel using the command::
+    Once your push to Gerrit_ goes through, you will receive a URL for your new
+    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
+    your new change in the **#typo3-cms-coredev** channel using the command::
 
-      review:show [ReviewNumber or URL]
+       review:show [ReviewNumber or URL]
 
-   This is not something, you will do for every review. As a first contributor
-   it is recommended to mention that you are new to the process.
+    This is not something, you will do for every review. As a first contributor
+    it is recommended to mention that you are new to the process.
 
 Now, it's time to sit back and await feedback on your changes. The review team process
 dozens of requests each day, so expect a succinct response that is short and to the point.
@@ -243,13 +243,11 @@ It is not unusual for a patch to get comments requesting changes. If that happen
 please respond in a timely fashion and improve your review. If things are unclear,
 ask in the **#typo3-cms-coredev** channel on https://typo3.slack.com.
 
-When you change your patch, make sure you do not add another commit. Append to
-your original commit instead as described in :ref:`lifeOfAPatch-improve-patch`.
 
 .. tip::
 
    Look at the page :ref:`aliases` for some sample aliases which might help to
-   simplify your workflow.
+   simplify your workflow in the future.
 
 Helpful links
 =============
@@ -262,4 +260,15 @@ Helpful links
 Next Steps
 ==========
 
-* :ref:`improving-a-patch` in this guide for next steps in improving your patch or reviewing other patches
+You will find some more information about the review process in the chapter
+:ref:`lifeOfAPatch`. The following pages are especially relevant
+for new contributors:
+
+* :ref:`Working-with-Gerrit` describes the review tool Gerrit.
+* :ref:`Find-a-review` is helpful if you don't know how to find your patch on Gerrit.
+* Gerrit works with up- and downvoting patches. A patch must get a specific number of
+  upvotes before it can be merged. :ref:`lifeOfAPatch-review` gives
+  an introduction to how this works.
+* When you make additional changes to your patch, make sure you do not add another
+  commit. Append to your original commit instead as described in
+  :ref:`lifeOfAPatch-improve-patch`.
