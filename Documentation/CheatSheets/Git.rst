@@ -58,6 +58,12 @@ Stage and commit all changes to already existing commit::
 
 Push changes to remote master on gerrit (default method)::
 
+   git push
+
+This assumes, you have correctly configured your remote as described in
+:ref:`git-setup-remote`. If not, you must explicitly push using the
+`refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__::
+
    git push origin HEAD:refs/for/master
 
 .. note::

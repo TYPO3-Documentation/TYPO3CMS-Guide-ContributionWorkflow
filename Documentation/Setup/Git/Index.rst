@@ -160,6 +160,12 @@ You must instruct Git to push to Gerrit_ instead of the original repository. It 
    git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
 
 
+This will instruct Git to push using the
+`refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__
+when you do `git push`::
+
+   git config remote.origin.push +refs/heads/master:refs/for/master
+
 
 .. index::
    single: Code Contribution Workflow; Commit Message Template
