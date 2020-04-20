@@ -193,8 +193,12 @@ Step by Step Walkthrough
 
    To submit the patch to Gerrit, issue the following command::
 
-      git push
+      git push origin HEAD:refs/for/master
 
+   If you have setup the default as described in :ref:`git-setup-remote`
+   it is sufficient to use::
+
+      git push
 
    In case you want to push a "Work in progress", check out:
    :ref:`git-work-in-progress`.
@@ -217,7 +221,6 @@ Step by Step Walkthrough
    If the automatically starting pre-merge build fails due to an error on Bamboo which
    isn't caused by your patch (e.g. time out) you can restart it on
    `Intercept <https://intercept.typo3.com/admin/bamboo/core>`__.
-   
 
    Advanced users / core team only: See
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
