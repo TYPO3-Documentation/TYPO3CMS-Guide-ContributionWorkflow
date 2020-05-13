@@ -268,7 +268,7 @@ Mac / Linux::
 
 Windows::
 
-   Build/Scripts/cglFixMyCommit.sh
+   Build/Scripts/cglFixMyCommit.bat
 
 
 .. important::
