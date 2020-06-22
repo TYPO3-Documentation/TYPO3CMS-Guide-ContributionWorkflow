@@ -26,7 +26,7 @@ Forger_ performs several tasks, including:
    found on the start page and in the top right corner.
 
 #. Visualize the current development with a lot of useful **graphs**. You can learn more about the graphs
-   `here <https://forger.typo3.org/utility/help>`_.
+   `here <https://forger.typo3.org/help>`_.
 
 #. Show and filter **reviews** incl. filters to easily find things to review. Check out the ``Reviews`` menu.
 
@@ -38,4 +38,4 @@ Forger_ performs several tasks, including:
 #. Supply an `Issue Management <https://forger.typo3.com/management>`__ view to show issues aggregated by year,
    month and status, based on the last time they were updated.
 
-#. A `rst file generator <https://forger.typo3.com/utility/rst>`__ which is useful when you add documentation snippets to a review.
+#. A `rst file generator <https://forger.typo3.com/utilities/rst>`__ which is useful when you add documentation snippets to a review.
