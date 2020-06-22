@@ -22,8 +22,7 @@ There are edge cases to this which should be discussed on a per-case basis
 in order to refine the workflow more.
 
 If in doubt, ask on `Slack <https://typo3.slack.com>`__
-in the **#typo3-cms-coredev** channel. (Remember to
-`register <https://forger.typo3.com/slack>`__ first.)
+in the **#typo3-cms-coredev** channel. (Remember to :ref:`register <slack-account>` first.)
 
 
 .. index::
