@@ -28,14 +28,16 @@ Examples:
 
 * select `Reviews : All <https://forger.typo3.com/gerrit/status>`__
   to view and filter for reviews
-* `Sprints Reviews <https://forger.typo3.com/sprint/reviews?&boardId=bugfix>`__
+* `Sprints Reviews <https://forger.typo3.com/sprint/reviews>`__
   to see a board
   of all open patches by type (Bugs, Tasks, Features)
 
 .. image:: _assets/forger-review-board.svg
    :class: with-shadow
 
-* `Sprints : Sprints Boards : Next patch level <https://forger.typo3.com/sprint?&boardId=next-patchlevel>`__
+* `Sprints TYPO3-Core <https://forger.typo3.com/sprint/core>`__
+  to see a board
+  of all open core issues by type (Next patchlevel, Regressions)
 
 
 Email notification
