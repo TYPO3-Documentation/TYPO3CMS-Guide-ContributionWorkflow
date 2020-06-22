@@ -25,7 +25,8 @@ Forger_ performs several tasks, including:
 #. Provides an extensive `search <https://forger.typo3.com>`__ over issues on Forge_, available via the search box
    found on the start page and in the top right corner.
 
-#. Visualize the current development with a lot of useful **graphs**.
+#. Visualize the current development with a lot of useful **graphs**. You can learn more about the graphs
+   `here <https://forger.typo3.org/help>`_.
 
 #. Show and filter **reviews** incl. filters to easily find things to review. Check out the ``Reviews`` menu.
 
