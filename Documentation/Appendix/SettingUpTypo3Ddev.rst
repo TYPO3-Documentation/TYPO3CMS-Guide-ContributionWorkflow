@@ -41,7 +41,10 @@ Then install DDEV as described in the
 `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 instructions.
 
-In order to be able to build some assets (e.g. css, js files) you need to have `yarn` installed as `described here <https://yarnpkg.com/lang/en/docs/install/>`__.
+Composer can run inside of ddev, so there is no need to set it up locally.
+
+In order to be able to build some assets (e.g. css, js files) you still need to have `yarn`
+installed locally, as `described here <https://yarnpkg.com/lang/en/docs/install/>`__.
 
 
 Clone TYPO3
