@@ -60,6 +60,12 @@ see :ref:`composer-install`)
 
 Information about :ref:`setting up Composer <prerequisites-composer>` is found in previous chapter.
 
+Composer cannot detect the TYPO3 version of your cloned project because there is none. Before you run 
+`composer install` you need to run the following::
+
+   # cd <cloned project>
+   export COMPOSER_ROOT_VERSION=11.0.0
+
 Run composer install in the same directory you cloned the master repository to.
 This may take several minutes::
 
