@@ -176,7 +176,7 @@ Hints on voting -2
 ------------------
 
 A -2 vote by an active contributor blocks a patch from merging. In contrast to
--1, a -2 persists new patch sets is a "veto". Use with care. With a -2, you
+-1, a -2 is a "veto". Use with care. With a -2, you
 are taking responsibility of this patch and basically state that it will not
 be done until you actively removed your vote again.
 
@@ -238,5 +238,5 @@ the general approach at this early state already to decide if it is worth
 following this solution to its end."
 
 Having too many WIP patches in the review queue is not really helpful. Consider
-to fork the project in github or somewhere else and push to gerrit again if
-you patches evolved.
+to fork the project in GitHub or somewhere else and push to gerrit again if
+your patches evolved.
