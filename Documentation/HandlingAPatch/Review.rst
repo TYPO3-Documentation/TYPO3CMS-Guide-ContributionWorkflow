@@ -218,7 +218,8 @@ Consider these rules when comparing patches:
 How to handle [WIP] patches
 ===========================
 
-Prefixing your commit message with a [WIP] (work-in-progress) in the title is a
+It is possible to push patches as "WIP" (:ref:`work in progress <git-work-in-progress>`)
+patches. This is a
 way to show people a quick-shot version of something that is not finished yet,
 but goes into the right direction. Usually, WIP patches are not actively
 reviewed by others and the original author should take responsibility to finish
