@@ -59,9 +59,14 @@ and setting up a working TYPO3 installation for core development, skip to number
 
 2. Setup your TYPO3 installation
 
-   More information: :ref:`setup-typo3-installation`.
+   More information: :ref:`setup-typo3`.
 
-   Setup your TYPO3 installation usig the git cloned TYPO3 source.
+   Setup your TYPO3 installation usig the git cloned TYPO3 source::
+   
+      mkdir t3master;cd t3master
+      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+      
+   etc.    
 
    Use :ref:`DDEV <settting-up-typo3-with-ddev>` if you want
    a quick and simple setup without having to install all system requirements.
