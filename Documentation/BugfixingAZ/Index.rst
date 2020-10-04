@@ -256,6 +256,7 @@ You will find some more information about the review process in the chapter
 :ref:`lifeOfAPatch`. The following pages are especially relevant
 for new contributors:
 
+* :ref:`new-contributors-tips`
 * :ref:`Working-with-Gerrit` describes the review tool Gerrit.
 * :ref:`Find-a-review` is helpful if you don't know how to find your patch on Gerrit.
 * Gerrit works with up- and downvoting patches. A patch must get a specific number of
