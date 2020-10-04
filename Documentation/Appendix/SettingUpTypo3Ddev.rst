@@ -34,17 +34,16 @@ You can watch a video tutorial about setting up TYPO3 with DDEV, or go through s
 Setting up the prerequisites
 ============================
 
-You will need to install docker and other
+You will need to install Docker and other
 `ddev system requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
 Then install DDEV as described in the
 `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 instructions.
 
-Composer can run inside of ddev, so there is no need to set it up locally.
+.. note::
 
-In order to be able to build some assets (e.g. css, js files) you still need to have `yarn`
-installed locally, as `described here <https://yarnpkg.com/lang/en/docs/install/>`__.
+   Composer and yarn can run inside of DDEV, so there is no need to set them up locally.
 
 
 Clone TYPO3
@@ -66,6 +65,15 @@ Configure DDEV
 
    ddev config
 
+DDEV should suggest the correct defaults and you just need to press ENTER::
+
+   > Project name (t3master):
+
+   > Docroot Location (current directory):
+
+   > Found a typo3 codebase at /var/www/t3master.
+   > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
+
 
 In order to change the PHP version, edit the configuration file `.ddev/config.yaml`::
 
@@ -81,6 +89,15 @@ Start DDEV
 
    ddev start
    
+DDEV should now show a URL under which the site can be reached::
+
+   > TYPO3 does not seem to have been set up yet, missing LocalConfiguration.php (/var/www/t3master/typo3conf/LocalConfiguration.php)
+   > Generating AdditionalConfiguration.php file for database connection.
+   > Successfully started t3master
+   > Project can be reached at http://t3master.ddev.site http://127.0.0.1:32773
+
+Ignore the warning about missing :file:`LocalConfiguration.php` for now, we will take
+care of that below.
 
 .. _ddev-composer-install:
 
@@ -92,33 +109,32 @@ This runs inside the container and thus uses your configured PHP version::
    ddev composer install
 
 
+It is not necessary for the initial build, but once you change some assets (e.g.
+Typescript, SCSS files), you should build with yarn. You might like to try this
+now::
 
-Check for database credentials
-==============================
+   cd Build
+   ddev exec yarn
+   cd ..
+
+.. seealso::
+
+   * `Using Developer Tools with DDEV-Local <https://ddev.readthedocs.io/en/stable/users/developer-tools/>`__
+
+
+DDEV describe
+=============
 
 Let DDEV dump information::
 
    ddev describe
 
-You will need username, password, Database name, host and port of the
-MySQL credentials to setup your TYPO3 installation, e.g.::
-
-   MySQL Credentials
-   -----------------
-   Username:     	db
-   Password:     	db
-   Database name:	db
-   Host:         	db
-   Port:         	3306
+You may need some of this later.
 
 FIRST_INSTALL
 =============
 
-.. hint::
-   Creating FIRST_INSTALL is probably not necessary. Check to see if the database exists.
-   ddev describe should give you enough information for that.
-
-Now, create a file `FIRST_INSTALL`::
+Create a file `FIRST_INSTALL`::
 
    touch FIRST_INSTALL
 
@@ -126,17 +142,20 @@ Now, create a file `FIRST_INSTALL`::
 Setup your TYPO3 installation
 =============================
 
-Now load the URL as shown by `ddev start` in your browser with the path
-`/typo3` appended to it. Typically this will be
-http://t3master.ddev.site/typo3.
+Now load the URL as shown by `ddev start` or `ddev describe` in your browser, e.g.
+http://t3master.ddev.site.
 
 You will now be guided through the basic installation steps by TYPO3.
 
-If you use the HTTPS url you may get a "Privacy error" or something similar from your browser. You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to t3master.ddev.local (unsafe)`, depends on browser).
+.. tip::
 
-The warning is due to the fact that self-signed certificates are being used.
+   If you use the HTTPS url you may get a "Privacy error" or something similar from your browser.
+   You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to t3master.ddev.local
+   (unsafe)`, depends on browser).
 
-If you are getting a `trustedHostsPattern` error on initial access, try accessing the HTTP domain first.
+   The warning is due to the fact that self-signed certificates are being used.
+
+   If you are getting a `trustedHostsPattern` error on initial access, try accessing the HTTP domain first.
 
 Additional setup
 ================
@@ -175,6 +194,15 @@ or::
       ddev start
 
    See https://github.com/drud/ddev/issues/748
+
+Next step
+=========
+
+If you are in the middle of setting up a TYPO3 installation for core development, continue with
+
+.. rst-class:: horizbuttons-primary-m
+
+- :ref:`Setting-up-your-Git-environment`.
 
 
 Resources

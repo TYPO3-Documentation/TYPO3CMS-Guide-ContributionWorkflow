@@ -26,10 +26,12 @@ Create a Patch
 
 So you want to fix a bug or add a new feature to TYPO3? **Great!**
 
-This chapter will guide you through the process step by step. If you
-should encounter any problems or have questions, talk to us on
-https://typo3.slack.com in the **#typo3-cms-coredev** channel
-(see :ref:`appendix-slack-intro`).
+.. tip::
+
+   If you
+   should encounter any problems or have questions, talk to us on
+   https://typo3.slack.com in the **#typo3-cms-coredev** channel
+   (see :ref:`appendix-slack-intro`).
 
 
 .. _Bugfixing-prerequisites:
@@ -39,28 +41,34 @@ https://typo3.slack.com in the **#typo3-cms-coredev** channel
 Step by Step Walkthrough
 ========================
 
+If you already walked through the manual up to here and performed all steps for setting up your accounts
+and setting up a working TYPO3 installation for core development, skip to number 6:
+"Make your changes to the code"!
+
 .. rst-class:: bignums-xxl
 
-
 1. Setup accounts
+
+   More information: :ref:`setting-up-your-account`
 
    * Signup for a `typo3.org account <https://my.typo3.org/index.php?id=2>`__
    * Signup for `Slack <https://my.typo3.org/index.php?id=35>`__, join the
      `#typo3-cms-coredev` channel
-
-   More information: :ref:`TYPO3-Guide-ContributionWorkflow-Account`
-
    * Log in to `Gerrit <https://review.typo3.org>`__, click on Settings and upload your
      ssh key
-   More information: :ref:`GerritAccount`
 
-2. Setup your git environment
+2. Setup your TYPO3 installation
+
+   More information: :ref:`setup-typo3-installation`.
+
+   Setup your TYPO3 installation usig the git cloned TYPO3 source.
+
+   Use :ref:`DDEV <settting-up-typo3-with-ddev>` if you want
+   a quick and simple setup without having to install all system requirements.
+
+3. Setup your git environment
 
    More information: :ref:`Setting-up-your-Git-environment`
-
-   git clone::
-
-      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
 
    Setup name and email (same as you used for typo3.org), replace `"Your name"` and `"your-email@example.com"` here)::
 
@@ -81,31 +89,7 @@ Step by Step Walkthrough
       git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
       git config remote.origin.push +refs/heads/master:refs/for/master
 
-
-3. Run composer and yarn
-
-   More information: :ref:`composer-install`
-
-   Inside your cloned TYPO3 repository, run composer::
-
-      composer install
-
-   Run yarn::
-
-      cd Build
-      yarn install
-      yarn build
-      cd ..
-
-
-4. Setup your TYPO3 installation
-
-   More information: :ref:`setup-typo3-installation`
-
-   Setup your TYPO3 installation usig the git cloned TYPO3 source (as described above).
-
-
-5. Setup your IDE to adhere to the coding guidelines
+4. Setup your IDE to adhere to the coding guidelines
 
    More information: :ref:`setup-ide`
 
@@ -113,7 +97,7 @@ Step by Step Walkthrough
    As :file:`.editorconfig` only contains minimal rules, it is a good idea to
    additionally setup your IDE to use PSR-1 / PSR-2 for PHP files.
 
-6. Create an Issue on Forge
+5. Create an Issue on Forge
 
    More information: :ref:`bugreporting-index`
 
@@ -123,7 +107,7 @@ Step by Step Walkthrough
    a patch for an existing issue.
 
 
-7. Make your changes to the code, add documentation, tests
+6. Make your changes to the code, add documentation, tests
 
    This part is pretty straightforward. But be warned, there
    are still a few dark places deep inside the TYPO3 core dating back to the
@@ -143,7 +127,7 @@ Step by Step Walkthrough
    See :ref:`Testing the core <testing>` in TYPO3 Explained for more information
    about writing and running tests.
 
-8. Commit your changes
+7. Commit your changes
 
    Please make sure that you read the :ref:`commitmessage` in the Appendix.
    Your code will not be merged if it does not follow the commit message
@@ -189,7 +173,7 @@ Step by Step Walkthrough
       Keep in mind that you can commit with --amend **as often as you want,**
       just make sure you keep the `Change-Id:` line intact.
 
-9. Push to Gerrit
+8. Push to Gerrit
 
    To submit the patch to Gerrit, issue the following command::
 
@@ -226,16 +210,16 @@ Step by Step Walkthrough
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
    for pushing to other branches.
 
-10. Optional: Use Botty on Slack and wait for reviews
+9. Optional: Use Botty on Slack and wait for reviews
 
-    Once your push to Gerrit_ goes through, you will receive a URL for your new
-    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
-    your new change in the **#typo3-cms-coredev** channel using the command::
+   Once your push to Gerrit_ goes through, you will receive a URL for your new
+   change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
+   your new change in the **#typo3-cms-coredev** channel using the command::
 
-       review:show [ReviewNumber or URL]
+      review:show [ReviewNumber or URL]
 
-    This is not something, you will do for every review. As a first contributor
-    it is recommended to mention that you are new to the process.
+   This is not something, you will do for every review. As a first contributor
+   it is recommended to mention that you are new to the process.
 
 Now, it's time to sit back and await feedback on your changes. The review team process
 dozens of requests each day, so expect a succinct response that is short and to the point.
