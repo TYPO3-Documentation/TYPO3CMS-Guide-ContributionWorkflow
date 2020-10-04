@@ -17,7 +17,7 @@ to ask others, if you can't find the information you need.
    single: Tools; Slack
    single: Slack
 
-.. _slack:
+.. _communitySlack:
 
 Slack
 =====

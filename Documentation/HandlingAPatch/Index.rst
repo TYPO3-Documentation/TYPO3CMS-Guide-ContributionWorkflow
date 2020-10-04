@@ -42,14 +42,16 @@ automatically run on every patch (set), the results being shown as a +1 or
 .. toctree::
    :titlesonly:
 
+   Tips
    GerritBasics
    FindAReview
    CherryPick
    CleanupTypo3
    ChangeAPatch
+   Review
    Rebase
    ResolveMergeConflicts
-   Review
    Backporting
    Revert
+
 
