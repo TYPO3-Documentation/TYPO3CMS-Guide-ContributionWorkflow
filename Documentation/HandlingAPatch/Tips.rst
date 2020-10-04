@@ -47,7 +47,7 @@ frustrated or giving up:
   dedication it should receive.
 
 * The review queue is often longer than the review power available.
-  (See the dashboard on `Forger <https://forger.typo3.com/>` for the
+  (See the dashboard on `Forger <https://forger.typo3.com/>`__ for the
   number of open reviews.) Sometimes patches are overlooked
   just because there is other hot stuff being worked on.
 
