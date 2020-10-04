@@ -9,6 +9,14 @@ Setup the TYPO3 installation
 ============================
 
 
+.. important::
+
+   If you are setting TYPO3 up with DDEV, you can skip this page and jump straight to
+
+   .. rst-class:: horizbuttons-primary-m
+
+   - :ref:`ddev`
+
 .. index::
    single: Code Contribution Workflow; git clone
 

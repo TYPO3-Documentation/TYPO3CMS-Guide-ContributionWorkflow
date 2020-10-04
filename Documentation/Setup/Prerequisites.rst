@@ -8,6 +8,14 @@
 Prerequisites and Useful Tools
 ==============================
 
+.. note::
+
+   If you are using DDEV to setup your TYPO3 installation, it is not necessary to install
+   the tools locally (e.g. Composer, yarn). They will be supplied by DDEV and you can run
+   them inside the container.
+
+   In that case you can skip right to :ref:`ddev`.
+
 Here's a list of the tools we use in the TYPO3 project:
 
 
