@@ -93,13 +93,13 @@ Show all branches::
 
    git branch -a
 
+Checkout 10.4 branch::
+
+   git checkout 10.4
+
 Checkout 9.5 branch::
 
    git checkout 9.5
-
-Checkout 8.7 branch::
-
-   git checkout TYPO3_8-7
 
 
 .. important::
@@ -112,17 +112,13 @@ Checkout 8.7 branch::
 Long story short: In most cases, **push to master**. The rest is being taken
 care of by core team members!
 
+Push 10.4 branch::
+
+   git push origin HEAD:refs/for/10.4
+
 Push 9.5 branch::
 
    git push origin HEAD:refs/for/9.5
-
-Push 8.7 branch::
-
-   git push origin HEAD:refs/for/TYPO3_8-7
-
-Push 7.6 branch::
-
-   git push origin HEAD:refs/for/TYPO3_7-6
 
 
 Workflow - commit msg
@@ -139,7 +135,7 @@ Example commit message for a bugfix:
    Description
 
    Resolves: #12345
-   Releases: master, 9.5
+   Releases: master, 10.4
 
 Other keywords:
 
