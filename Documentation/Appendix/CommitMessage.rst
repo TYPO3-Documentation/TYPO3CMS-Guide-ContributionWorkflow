@@ -205,7 +205,7 @@ Relationships
 3. `Releases:`
    This is a comma separated list of the target versions you intend to apply this fix on. In general, we **always** fix things on **master** first and then backport a change if it goes along with our support rules for older versions.. Example::
 
-      Releases: master, 7.6, 6.2
+      Releases: master, 10.4, 9.5
 
    Always make sure the target version does indeed exist, when in doubt, as in the coredev channel on Slack_.
 

@@ -190,7 +190,7 @@ First, create a file, for example in :file:`~/.gitmessage.txt`.
    [BUGFIX|TASK|FEATURE]
 
    Resolves: #
-   Releases: master, 9.5
+   Releases: master, 10.4
 
 Make Git use this file as a template for the commit message::
 

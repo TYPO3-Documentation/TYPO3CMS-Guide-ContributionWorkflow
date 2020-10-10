@@ -62,11 +62,11 @@ and setting up a working TYPO3 installation for core development, skip to number
    More information: :ref:`setup-typo3`.
 
    Setup your TYPO3 installation usig the git cloned TYPO3 source::
-   
+
       mkdir t3master;cd t3master
       git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-      
-   etc.    
+
+   etc.
 
    Use :ref:`DDEV <settting-up-typo3-with-ddev>` if you want
    a quick and simple setup without having to install all system requirements.
@@ -150,7 +150,7 @@ and setting up a working TYPO3 installation for core development, skip to number
       Some descriptions with line length of max. 72 characters
 
       Resolves: #12346
-      Releases: master, 8.7
+      Releases: master, 10.4
 
    Only create one commit. Do not create a branch. Work on master.
 
@@ -206,7 +206,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    section.
 
    You can visit the link to https://review.typo3.org to see your patch in Gerrit.
-   
+
    If the automatically starting pre-merge build fails due to an error on Bamboo which
    isn't caused by your patch (e.g. time out) you can restart it on
    `Intercept <https://intercept.typo3.com/admin/bamboo/core>`__.
