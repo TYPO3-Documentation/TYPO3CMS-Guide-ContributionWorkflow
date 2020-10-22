@@ -113,9 +113,11 @@ It is not necessary for the initial build, but once you change some assets (e.g.
 Typescript, SCSS files), you should build with yarn. You might like to try this
 now::
 
-   cd Build
-   ddev exec yarn
-   cd ..
+   ddev exec "cd Build && yarn install"
+   ddev exec "cd Build && yarn build"
+
+The first command is required once, the second (build) command is required after
+every change of a resource file.
 
 .. seealso::
 
