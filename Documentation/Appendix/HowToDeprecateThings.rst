@@ -102,7 +102,7 @@ the future:
 
    +use TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait;
    +
-   class MyClass
+   class RecordHistory
    {
    +       use PublicPropertyDeprecationTrait;
    +
@@ -110,14 +110,14 @@ the future:
    +         * @var string[]
    +         */
    +        private $deprecatedPublicProperties = [
-   +            'imagesOnPage' => 'Using TSFE->imagesOnPage is deprecated and will no longer work with TYPO3 v11.0. Use AssetCollector()->getMedia() instead.'
+   +            'changeLog' => 'Using changeLog is deprecated and will not be possible anymore in TYPO3 v11.0. Use getChangeLog() instead.',
    +       ];
    +
            /**
-            * @var bool
+            * @var array
             */
-   -       public $imagesOnPage;
-   +       protected $imagesOnPage;
+   -       public $changeLog = [];
+   +       protected $changeLog = [];
 
 
 .. index::
