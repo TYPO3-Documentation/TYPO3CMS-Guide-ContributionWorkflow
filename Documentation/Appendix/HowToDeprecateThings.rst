@@ -74,6 +74,52 @@ and remove an unused argument, use :php:`func_get_args()` or :php:`func_num_args
    }
 
 
+.. _make-class-properties-protected:
+
+Make class properties protected
+===============================
+
+To reach full encapsulation of classes, the public access to properties should be removed.
+The property access should be done by public methods only.
+
+Public properties that should be protected can be migrated to protected or private and
+wrapped with getters/setters as needed.
+
+During a phase of deprecation, entries into the deprecation log are triggered, if an
+extension accesses a previously public property. The code still keeps working until the
+next major release, when the deprecation and public access fallback are removed from the code.
+
+To deprecate usage of a (still) public property that should be changed to protected in
+the future:
+
+#. Add the :php:`TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait` trait to
+   the class.
+#. Add the property :php:`$deprecatedPublicMethods` to the class and list all properties that
+   should no longer be accessed from outside of the class.
+#. Make the property private/protected.
+
+.. code-block:: diff
+
+   +use TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait;
+   +
+   class RecordHistory
+   {
+   +       use PublicPropertyDeprecationTrait;
+   +
+   +       /**
+   +         * @var string[]
+   +         */
+   +        private $deprecatedPublicProperties = [
+   +            'changeLog' => 'Using changeLog is deprecated and will not be possible anymore in TYPO3 v11.0. Use getChangeLog() instead.',
+   +       ];
+   +
+           /**
+            * @var array
+            */
+   -       public $changeLog = [];
+   +       protected $changeLog = [];
+
+
 .. index::
    single: Deprecation; Deprecate a hook
 
@@ -149,3 +195,12 @@ Example:
       $value = $this->TS_AtagToAbs($value);
       // ...
    }
+
+More information
+================
+
+Changelogs
+
+* 9.0 :doc:`Dealing with properties that become protected <t3core:Changelog/9.0/Important-81330-DealingWithPropertiesThatAreMigratedToProtected>`
+* 9.0 :doc:`Trait to migrate public access to protected by deprecation <t3core:Changelog/9.0/Feature-81330-TraitToMigratePublicAccessToProtectedByDeprecation>`
+* 9.4 :doc:`Trait to detect public deprecated methods: PublicMethodDeprecationTrait <t3core:Changelog/9.4/Feature-85247-TraitToDetectPublicDeprecatedMethods>`
