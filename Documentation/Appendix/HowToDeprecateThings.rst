@@ -80,39 +80,45 @@ Make class properties protected
 ===============================
 
 To reach full encapsulation of classes, the public access to properties should be removed.
-The property access shall be done by public methods only.
+The property access should be done by public methods only.
 
-Public properties that should be protected can be migrated to protected and setters and
-getters can be provided as needed.
+Public properties that should be protected can be migrated to protected or private and
+wrapped with getters/setters as needed.
 
 During a phase of deprecation, entries into the deprecation log are triggered, if an
 extension accesses a previously public property. The code still keeps working until the
-next major release, when the deprecation tags are removed from the code.
+next major release, when the deprecation and public access fallback are removed from the code.
 
 To deprecate usage of a (still) public property that should be changed to protected in
 the future:
 
-1. Add that :php:`TYPO3\CMS\Core\Compatibility\PublicMethodDeprecationTrait` trait to
+#. Add the :php:`TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait` trait to
    the class.
-2. Add the property :php:`$deprecatedPublicMethods` to the class and list all properties that
+#. Add the property :php:`$deprecatedPublicMethods` to the class and list all properties that
    should no longer be accessed from outside of the class.
+#. Make the property private/protected.
 
-.. code-block:: php
+.. code-block:: diff
 
-   use TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait;
-
+   +use TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait;
+   +
    class MyClass
    {
-      use PublicPropertyDeprecationTrait;
+   +       use PublicPropertyDeprecationTrait;
+   +
+   +       /**
+   +         * @var string[]
+   +         */
+   +        private $deprecatedPublicProperties = [
+   +            'imagesOnPage' => 'Using TSFE->imagesOnPage is deprecated and will no longer work with TYPO3 v11.0. Use AssetCollector()->getMedia() instead.'
+   +       ];
+   +
+           /**
+            * @var bool
+            */
+   -       public $imagesOnPage;
+   +       protected $imagesOnPage;
 
-      /**
-       * @var string[]
-       */
-       private $deprecatedPublicProperties = [
-            'imagesOnPage' => 'Using TSFE->imagesOnPage is deprecated and will no longer work with TYPO3 v11.0. Use AssetCollector()->getMedia() instead.',
-            'lastImageInfo' => 'Using TSFE->lastImageInfo is deprecated and will no longer work with TYPO3 v11.0.'
-       ];
-   }
 
 .. index::
    single: Deprecation; Deprecate a hook
