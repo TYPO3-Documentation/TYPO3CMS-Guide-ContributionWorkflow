@@ -120,6 +120,48 @@ the future:
    +       protected $changeLog = [];
 
 
+.. _make-class-methods-protected:
+
+Make class methods protected
+============================
+
+This works in a similar way as :ref:`make-class-properties-protected`: The trait
+:php:`TYPO3\CMS\Core\Compatibility\PublicMethodDeprecationTrait` allows to make
+public methods protected or private without breaking extensions.
+
+This can be used in case the public methods may still be called by extensions.
+This will then trigger a deprecation.
+
+In order to make a method private or protected:
+
+#. Add the :php:`TYPO3\CMS\Core\Compatibility\PublicMethodDeprecationTrait` trait to
+   the class.
+#. Add the property :php:`$deprecatedPublicMethods` to the class and list all methods that
+   should no longer be accessed from outside of the class.
+#. Make the method private/protected.
+
+
+.. code-block:: diff
+
+   +use TYPO3\CMS\Core\Compatibility\PublicMethodDeprecationTrait;
+   +
+   class PageRepository
+   {
+   +       use PublicMethodDeprecationTrait;
+   +
+   +       /**
+   +         * @var string[]
+   +         */
+   +        private $deprecatedPublicMethods = [
+   +            'init' => 'init() is now called implicitly on object creation, and is not necessary anymore to be called explicitly. Calling init() will throw an error in TYPO3 v10.0.',
+   +       ];
+   +
+
+   -       public function init($show_hidden)
+   +       protected function init($show_hidden)
+
+
+
 .. index::
    single: Deprecation; Deprecate a hook
 
