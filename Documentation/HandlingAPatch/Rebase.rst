@@ -88,15 +88,15 @@ Method 1: Use Rebase button on Gerrit
 
 **Prerequisites:**
 
-  If you have already pushed your change to Gerrit, you can use the
-  Rebase button.
+If you have already pushed your change to Gerrit, you can use the
+Rebase button.
 
-  This is only possible, if there are not yet any merge conflicts.
+This is only possible, if there are not yet any merge conflicts.
 
 **Do it:**
 
-   Load your patch in the browser, click on "Rebase" and then
-   "Rebase on top of the master branch".
+Load your patch in the browser, click on "Rebase" and then
+"Rebase on top of the master branch".
 
 
 
@@ -110,39 +110,39 @@ working on your patch.
 
 **Prerequisites:**
 
-   This command assumes, you are currently working on your patch
-   in your local git repository and you have a clean working
-   directory, meaning you committed your changes.
+This command assumes, you are currently working on your patch
+in your local git repository and you have a clean working
+directory, meaning you committed your changes.
 
 **Do it:**
 
-   ::
+::
 
-      git pull --rebase origin master
+   git pull --rebase origin master
 
-   (which is the pull command you already know, with the
-   additional option `--rebase`.)
+(which is the pull command you already know, with the
+additional option `--rebase`.)
 
-   or
+or
 
-   ::
+::
 
-      git fetch
-      git rebase origin/master
+   git fetch
+   git rebase origin/master
 
 **What does it do:**
 
-  From the manpage: "... rebase the current branch on top of the
-  upstream branch after fetching." (upstream is origin/master)
+From the manpage: "... rebase the current branch on top of the
+upstream branch after fetching." (upstream is origin/master)
 
-   Remember, git pull (internally) does a `git fetch` and then `git merge`.
-   With this command, git does a `git fetch` and then a `git rebase`
-   using the upstream branch (latest master branch).
+Remember, git pull (internally) does a `git fetch` and then `git merge`.
+With this command, git does a `git fetch` and then a `git rebase`
+using the upstream branch (latest master branch).
 
 **More information:**
 
-   * `StackOverflow: Difference between git pull and git pull --rebase
-     <https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase>`__
+* `StackOverflow: Difference between git pull and git pull --rebase
+  <https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase>`__
 
 
 

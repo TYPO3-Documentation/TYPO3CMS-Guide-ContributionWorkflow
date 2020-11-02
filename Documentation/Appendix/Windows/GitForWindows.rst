@@ -141,6 +141,8 @@ links. In the Git log you can now click directly to the issue in forge.
 * Enter in the field "bugtraq.url" ``https://forge.typo3.org/issues/%BUGID%``
 * In the field "bugtraq.logregex" enter two lines:
 
+.. code-block:: text
+
    (Resolves|Fixes|Related):\s+#\d+
    (\d+)
 
@@ -188,10 +190,10 @@ Select the branch 'master' from the dropdown and click OK.
 Starting a new patch
 ====================
 
-  * First create a new branch (see the review walkthrough).
-  * Make your changes in the code
-  * From the context menu select "Git commit -> <your_branch_name>..."
-  * Enter the commit message according to the >>>rules for the commit message<<< and click OK
+* First create a new branch (see the review walkthrough).
+* Make your changes in the code
+* From the context menu select "Git commit -> <your_branch_name>..."
+* Enter the commit message according to the >>>rules for the commit message<<< and click OK
 
 Your changes are now stored locally in a separate branch.
 

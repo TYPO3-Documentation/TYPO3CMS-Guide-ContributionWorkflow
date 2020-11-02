@@ -110,21 +110,17 @@ How to see merge conflicts in Gerrit or Forger
 If your patch has merge conflicts. Gerrit as well as Forger will
 show you:
 
-**Gerrit:**
+**Gerrit:** Load your patch page in the browser.
 
-   Load your patch page in the browser.
-
-   .. image:: _assets/gerrit_merge_conflict.png
-      :class: with-shadow
+.. image:: _assets/gerrit_merge_conflict.png
+   :class: with-shadow
 
 
-**Forger:**
+**Forger:** Open one of the `ReviewSprint <https://forger.typo3.com/sprint/reviews>`__
+views on Forger.
 
-   Open one of the `ReviewSprint <https://forger.typo3.com/sprint/reviews>`__
-   views on Forger.
-
-   .. image:: _assets/forger_merge_conflicts.png
-      :class: with-shadow
+.. image:: _assets/forger_merge_conflicts.png
+   :class: with-shadow
 
 In that case, you will need to resolve the conflicts in
 some way.
