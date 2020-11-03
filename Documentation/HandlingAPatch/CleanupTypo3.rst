@@ -36,19 +36,21 @@ any case or if in doubt, you can safely perform all steps.
    composer install
 
 **Changes in .css / .js files**:
-   Delete browser cache or
-   `hard refresh <https://www.getfilecloud.com/blog/2015/03/tech-tip-how-to-do-hard-refresh-in-browsers/>`__
-   (e.g. CTRL + F5)
+
+Delete browser cache or
+`hard refresh <https://www.getfilecloud.com/blog/2015/03/tech-tip-how-to-do-hard-refresh-in-browsers/>`__
+(e.g. CTRL + F5)
 
 **Changes in DB schema (ext_tables.sql)**:
 
-   Maintenance: Analyze Database Structure, Apply selected changes.
+Maintenance: Analyze Database Structure, Apply selected changes.
 
-   .. image:: _assets/analyze.svg
-      :class: with-shadow
+.. image:: _assets/analyze.svg
+   :class: with-shadow
 
 **In any case**:
-   Maintenance: Flush TYPO3 and PHP Cache
 
-   .. image:: _assets/flush_cache.svg
-      :class: with-shadow
+Maintenance: Flush TYPO3 and PHP Cache
+
+.. image:: _assets/flush_cache.svg
+   :class: with-shadow
