@@ -246,7 +246,7 @@ Helpful links
 
 * `Gerrit <https://review.typo3.org>`__ Review server
 * `Forge <https://forge.typo3.org>`__ Issue tracker
-* `Forger <https://forger.typo3.org>`__ Search for reviews and issues
+* `Forger <https://forger.typo3.com>`__ Search for reviews and issues
 * `Slack <https://slack.typo3.org>`__ chat system
 
 Next Steps

@@ -19,4 +19,4 @@
 .. _Gerrit: https://review.typo3.org
 .. _T3O: https://typo3.org
 .. _Slack: https://slack.typo3.org
-.. _Forger: https://forger.typo3.org
+.. _Forger: https://forger.typo3.com
