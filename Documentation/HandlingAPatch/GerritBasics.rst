@@ -43,7 +43,7 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 
 #. The **search box** lets you write complex search queries with little coding knowledge. For detailed information on how to
    use the search, refer to the official documentation on https://review.typo3.org/Documentation/user-search.html.
-   Most people use `Forger <https://forger.typo3.org>`__, because it provides more sophisticated ways to
+   Most people use `Forger <https://forger.typo3.com>`__, because it provides more sophisticated ways to
    find a review. Look at :ref:`Find-a-review` for more information.
 
 #. The **commit message** formatted like we explained in :ref:`"The commit message"<commitmessage>`.
@@ -58,7 +58,7 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
 
 #. The **current review status**. Here you can see who has voted (and how they voted) on a change. The votes only apply
    to one given patchset. If a new patchset is uploaded, it must be revoted. Note the +1 by TYPO3com, which means that
-   the automatic testsuite ran successfully. 
+   the automatic testsuite ran successfully.
 
 #. All **changed files** in this current change. You can click every file to take a look at what exactly has changed. There
    is a select box on top of the file list that allows you to do a diff between patch sets to quickly see what has changed.

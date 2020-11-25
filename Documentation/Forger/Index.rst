@@ -15,7 +15,7 @@ Introduction to Forger
    .. image:: _assets/dave.png
       :width: 200px
 
-   https://forger.typo3.org
+   https://forger.typo3.com/
 
 The majority of the work in the TYPO3 project is managed via a tool called Forger_, which acts as a read-only view on issues
 and reviews.
@@ -26,7 +26,7 @@ Forger_ performs several tasks, including:
    found on the start page and in the top right corner.
 
 #. Visualize the current development with a lot of useful **graphs**. You can learn more about the graphs
-   `here <https://forger.typo3.org/help>`_.
+   `here <https://forger.typo3.com/help>`_.
 
 #. Show and filter **reviews** incl. filters to easily find things to review. Check out the ``Reviews`` menu.
 

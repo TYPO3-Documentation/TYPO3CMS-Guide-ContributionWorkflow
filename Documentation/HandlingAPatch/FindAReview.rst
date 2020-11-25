@@ -21,7 +21,7 @@ is most convenient for you or what fits your needs.
 Forger
 ======
 
-In any case, you can use `Forger <https://forger.typo3.org>`__ to
+In any case, you can use `Forger <https://forger.typo3.com>`__ to
 search for the review.
 
 Examples:
