@@ -265,3 +265,4 @@ for new contributors:
 * When you make additional changes to your patch, make sure you do not add another
   commit. Append to your original commit instead as described in
   :ref:`lifeOfAPatch-improve-patch`.
+* Before starting to work on a new, unrelated patch you need to run the :ref:`cleanup-tasks`.
