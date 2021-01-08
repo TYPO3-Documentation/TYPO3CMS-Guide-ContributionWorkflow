@@ -60,6 +60,7 @@ Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
 Configure DDEV
 ==============
 
+For the master branch ddev v1.16.5 or later is suggested to have the correct setup included.
 
 ::
 
@@ -75,12 +76,10 @@ DDEV should suggest the correct defaults and you just need to press ENTER::
    > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
 
 
-In order to change the PHP version, edit the configuration file `.ddev/config.yaml`::
+In order to be able to use composer inside ddev, edit the configuration file `.ddev/config.yaml`::
 
-   php_version: "7.3"
+   composer_version: "2"
 
-
-See supported version here: https://typo3.org/cms/roadmap/
 
 Start DDEV
 ==========
@@ -104,7 +103,7 @@ care of that below.
 Install dependencies via composer
 =================================
 
-This runs inside the container and thus uses your configured PHP version::
+This runs inside the container and thus uses your configured Composer version::
 
    ddev composer install
 
