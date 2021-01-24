@@ -230,7 +230,7 @@ in :ref:`h2document:rendering-docs-quickstart`.
 
 .. important::
 
-   If you switch branches, you should rebuild everything. You can either remove folder 
+   If you switch branches, you should rebuild everything. You can either remove the folder 
    :file:`Documentation-GENERATED-temp/Cache` and all its contents or run `dockrun_t3rd 
    makehtml-no-cache` which has the same effect.
 
