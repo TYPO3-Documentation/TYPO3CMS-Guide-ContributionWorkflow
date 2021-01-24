@@ -225,13 +225,14 @@ in :ref:`h2document:rendering-docs-quickstart`.
 
    The first time you run this, it will take long. :code:`docker pull` will download
    the Docker image. The next time, it will be faster, because the image does
-   not have to be downloaded and `dockrun_t3rdf` will not build everything, it will only
+   not have to be downloaded and `dockrun_t3rd` will not build everything, it will only
    build changed files. 
 
 .. important::
 
-   If you switch branches, you should rebuild everything. Remove the Documentation-GENERATED-temp
-   if in doubt or only generate documentation in master.
+   If you switch branches, you should rebuild everything. You can either remove the folder 
+   :file:`Documentation-GENERATED-temp/Cache` and all its contents or run `dockrun_t3rd 
+   makehtml-no-cache` which has the same effect.
 
 Make things easier for yourself by adding these commands as aliases or adding
 them as commands in your IDE / editor. 
