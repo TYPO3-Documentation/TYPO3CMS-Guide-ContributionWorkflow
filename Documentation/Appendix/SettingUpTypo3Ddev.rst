@@ -25,8 +25,10 @@ Everything will be supplied by DDEV. In fact, if you do have a Webserver
 or Database running on your machine, make sure there are no conflicts.
 You can change the default ports DDEV uses (e.g. port 80 / 443 for Webserver)
 in `.ddev/config.yaml` before you start it.
+Have a look at :ref:`DDEV-Troubleshooting` if you run into problems.
 
-You can watch a video tutorial about setting up TYPO3 with DDEV, or go through steps outlined below.
+You can watch a video tutorial about setting up TYPO3 with DDEV, or go through
+steps outlined below.
 
 .. youtube:: HZVMPoI9SIk
 
@@ -87,7 +89,7 @@ Start DDEV
 ::
 
    ddev start
-   
+
 DDEV should now show a URL under which the site can be reached::
 
    > TYPO3 does not seem to have been set up yet, missing LocalConfiguration.php (/var/www/t3master/typo3conf/LocalConfiguration.php)
@@ -169,7 +171,7 @@ Shutdown DDEV
 When you are done you can do::
 
    ddev stop
-   
+
 For a list of commands see::
 
    ddev help
