@@ -139,7 +139,7 @@ Missing Change-Id in commit message
 If pushing a commit fails with this error message, you probably did not copy the :ref:`commit-hook <git-setup-commit-msg-hook>`.
 Make sure that the file :file:`.git/hooks/commit-msg` exists and is executable.
 
-Afterwards, you have to amend your commit to make it include the commit message::
+Afterwards, you have to amend your commit to make it include the Change-Id::
 
     git commit --amend
 
