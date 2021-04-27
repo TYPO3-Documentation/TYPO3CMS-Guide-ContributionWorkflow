@@ -144,7 +144,7 @@ Setup your TYPO3 installation
 =============================
 
 Now load the URL as shown by `ddev start` or `ddev describe` in your browser, e.g.
-http://t3master.ddev.site.
+http://t3master.ddev.site or just run `ddev launch`.
 
 You will now be guided through the basic installation steps by TYPO3.
 
