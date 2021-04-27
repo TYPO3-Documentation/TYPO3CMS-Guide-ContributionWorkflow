@@ -143,8 +143,7 @@ Create a file `FIRST_INSTALL`::
 Setup your TYPO3 installation
 =============================
 
-Now load the URL as shown by `ddev start` or `ddev describe` in your browser, e.g.
-http://t3master.ddev.site or just run `ddev launch`.
+Now load the URL by running the command `ddev launch`.
 
 You will now be guided through the basic installation steps by TYPO3.
 
