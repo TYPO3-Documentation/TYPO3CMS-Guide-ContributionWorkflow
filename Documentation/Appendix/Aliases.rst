@@ -142,8 +142,8 @@ with t3 to avoid conflicts with already existing aliases:
 .. code-block:: bash
 
    git config --global alias.t3clone 'clone git://git.typo3.org/Packages/TYPO3.CMS.git .'
-   git config --global alias.t3push 'push origin HEAD:refs/publish/master'
-   git config --global alias.t3push8 'push origin HEAD:refs/publish/TYPO3_8-7'
+   git config --global alias.t3push 'push origin HEAD:refs/for/master'
+   git config --global alias.t3push8 'push origin HEAD:refs/for/TYPO3_8-7'
 
 
 You can then use these, for example:
@@ -172,8 +172,8 @@ Alternatively, manually add the aliases to your ~/.gitconfig:
       resetom = reset --hard origin/master
 
       t3clone = clone git://git.typo3.org/Packages/TYPO3.CMS.git .
-      t3push  = push origin HEAD:refs/publish/master
-      t3push8 = push origin HEAD:refs/publish/TYPO3_8-7
+      t3push  = push origin HEAD:refs/for/master
+      t3push8 = push origin HEAD:refs/for/TYPO3_8-7
 
 Additional Information
 ======================
