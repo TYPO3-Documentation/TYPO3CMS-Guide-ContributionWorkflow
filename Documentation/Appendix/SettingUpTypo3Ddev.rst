@@ -10,6 +10,13 @@
 .. _ddev:
 .. _settting-up-typo3-with-ddev:
 
+.. warning::
+
+   This guide explains the setup of TYPO3 for the core contribution with DDEV,
+   follow the :ref:`quick installation guide <t3install:install-via-composer>`
+   to install TYPO3 using Composer for a project.
+
+
 ==========================
 Setting up TYPO3 with DDEV
 ==========================
