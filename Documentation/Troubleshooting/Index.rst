@@ -88,6 +88,21 @@ connections to review.typo3.org::
 
 Now the connection should work without having to specify any parameters as described above.
 
+If this does not work another issue might be that your SSH version is too new and does not
+accept the signature algorithm . You can test this by executing
+
+    ssh -v -p 29418 -i <path-to-private-key> <username>@review.typo3.org 2>&1 | grep "no mutual signature algorithm"
+    
+If you see
+
+    debug1: send_pubkey_test: no mutual signature algorithm
+    
+you need to allow the rsa Algorithm in your SSH config:
+
+    Host review.typo3.org
+       ...
+       PubkeyAcceptedKeyTypes +ssh-rsa
+
 Push: invalid committer
 -----------------------
 
