@@ -8,7 +8,19 @@ Review a patch
 
 Reviewing consists of two parts:
 
-A **code-review** (with optional comments) and **testing the change**. You can do both or just one or the other.
+#. :ref:`Code-review <lifeOfAPatch-review>`
+#. :ref:`Testing the change <lifeOfAPatch-test>`
+
+You can do both or just one or the other.
+
+If you're able to improve the patch yourself, it is very much appreciated
+if you also submit an improved version (see :ref:`lifeOfAPatch-improve-patch`
+for more information on this).
+
+.. seealso::
+
+   *  :ref:`Find the patch <Find-a-review>`
+   *  :ref:`Introduction to Gerrit <Working-with-Gerrit>`
 
 
 .. index::
@@ -17,25 +29,65 @@ A **code-review** (with optional comments) and **testing the change**. You can d
    single: Gerrit; Review
 
 .. _lifeOfAPatch-review:
+.. _Gerrit-Commenting-files:
 
 Code Review
 ===========
 
 A basic code review is possible by using the Gerrit web interface.
-Simply navigate to the patch and use the diff-tool ("side-by-side" or "unified").
 
-You can add comments to the code lines. More information on this can
-be found in the section :ref:`Gerrit-Commenting-files`.
+.. rst-class:: bignums-xxl
 
-Using the **Reply button**, you can post your comments and add a note.
-Of course you should also vote for the change (Be graceful with -1 votes though.).
-More information on voting in general can be found in the section
-:ref:`gerrit-voting`.
+#. Select the latest patchset
 
-If you're able to improve the patch yourself, it is very much appreciated
-if you also submit an improved version (see :ref:`lifeOfAPatch-improve-patch`
-for more information on this).
+   This should already be selected by default, but if you changed the patchset, you should
+   select :guilabel:`Go to the latest patch set` (above the list of changed files).
 
+#. To leave a comment, click on one of the files
+
+   .. image:: _assets/gerrit_review_click_on_file.png
+
+   Commenting in the files directly is optional, but strongly recommended. If you just want to leave a general
+   comment which needs no context, you can skip to step 8 (:guilabel:`Reply`).
+
+#. Optionally change the view
+
+   You will see a diff of this file against the current codebase.
+
+   You can change the view in the top right (:guilabel:`Diff view`) e.g. :guilabel:`side-by-side` or
+   :guilabel:`unified` (or change this in your settings).
+
+#. Leave one or more comments
+
+   Click on the line number in the file and a comment box will open.
+
+   .. image:: _assets/gerrit_review_comment_click.png
+
+   .. image:: _assets/gerrit_review_comment_file.png
+
+#. Click :guilabel:`Save`.
+
+   .. important::
+
+      You comment(s) will not yet be visible for others until you go back and click :guilabel:`Reply`.
+
+#. Go back
+
+   .. image:: _assets/gerrit_review_go_back.png
+
+#. (Optional) Add comments to more files.
+
+#. Now press :guilabel:`Reply`.
+
+   .. image:: _assets/gerrit_reply.png
+
+   Using the :guilabel:`Reply` button, you can post your comments (and optionally add an additional note).
+
+   .. image:: _assets/gerrit_comment.png
+
+   Of course you should also :ref:`vote <gerrit-voting>` for the change (Be graceful with -1 votes though.).
+
+   .. image:: _assets/gerrit_vote.png
 
 .. _lifeOfAPatch-test:
 .. _Gerrit-Testing-a-change:
@@ -64,36 +116,6 @@ Otherwise throw the changes away, to bring your repository back to a clean state
 
 
 
-
-.. index::
-   single: Review; Comment Files
-   single: Gerrit; Comment Files
-   single: Comment Files
-
-.. _Gerrit-Commenting-files:
-
-Comment files
-=============
-
-If you spotted a mistake in any file, you should provide the author with a useful clue where the mistake has been made.
-One way would be to simply note the filename and line number in the central comment box. But this would be cumbersome and
-annoying to handle (imagine a change with 150 files being modified). But Gerrit_ has a solution for that.
-
-.. sidebar:: Diff View
-
-   You can either use a **side-by-side** diff view or a classic **inline** diff depending on your settings in Gerrit_.
-
-If you click on a file in the **changed files** section, you will see a diff of this file against the current codebase.
-
-Simply point to the place you want to add a comment and hit the :kbd:`C` key on your keyboard. Leave your comment in the comment
-box and hit ``Save``. Keep in mind that all comments will not be sent to the reviewers immediately - you will still need
-to use the **Reply Button** to send them all (ideally with a vote indicating how severe your finding were).
-
-.. figure:: _assets/gerrit-comment-box.png
-   :class: with-shadow
-
-
-
 .. index::
    single: Review; Vote
    single: Gerrit; Vote
@@ -117,7 +139,7 @@ can also apply your votes.
 
    The +2 and -2 votes only available for core developers. See the section `Policy for votes`_. for more details.
 
-Click on ``Post`` and your comments will be saved. At the same time all other contributors who either watched this change
+Click on ``Send`` and your comments will be saved. At the same time all other contributors who either watched this change
 or have already voted on this change will get notified.
 
 
