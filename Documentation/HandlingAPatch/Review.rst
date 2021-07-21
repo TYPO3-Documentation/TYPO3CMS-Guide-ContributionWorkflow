@@ -6,16 +6,15 @@
 Review a patch
 ==============
 
-Reviewing consists of two parts:
+Reviewing a patch consists of two steps:
 
 #. :ref:`Code-review <lifeOfAPatch-review>`
 #. :ref:`Testing the change <lifeOfAPatch-test>`
 
-You can do both or just one or the other.
+You have the option to contribute to both stages or just a single stage in the review process.
 
-If you're able to improve the patch yourself, it is very much appreciated
-if you also submit an improved version (see :ref:`lifeOfAPatch-improve-patch`
-for more information on this).
+If you're able to improve the patch yourself, your contribution would be very much appreciated.
+Visit :ref:`lifeOfAPatch-improve-patch` to find out about what happens once a patch has been submitted for approval.
 
 .. seealso::
 
