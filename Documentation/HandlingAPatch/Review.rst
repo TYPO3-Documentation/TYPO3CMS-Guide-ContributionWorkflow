@@ -14,7 +14,7 @@ Reviewing a patch consists of two steps:
 You have the option to contribute to both stages or just a single stage in the review process.
 
 If you're able to improve the patch yourself, your contribution would be very much appreciated.
-Visit :ref:`lifeOfAPatch-improve-patch` to find out about what happens once a patch has been submitted for approval.
+Visit :ref:`lifeOfAPatch-improve-patch` to find out more about how you can help improve patches.
 
 .. seealso::
 
