@@ -8,6 +8,7 @@
 .. role:: sep (strong)
 .. role:: yaml(code)
 .. role:: typoscript(code)
+.. role:: pn(emphasis)
 
 .. role:: ts(typoscript)
    :class: typoscript

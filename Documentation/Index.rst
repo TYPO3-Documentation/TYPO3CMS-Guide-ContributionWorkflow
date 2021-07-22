@@ -112,6 +112,7 @@ as needed. Guides offer advice on how best to achieve a given task.
    DebuggingTypo3/Index
    HandlingAPatch/Index
    HandlingIssues/TicketWorkflow
+   CoreMergers/Index
 
 .. toctree::
    :hidden:
