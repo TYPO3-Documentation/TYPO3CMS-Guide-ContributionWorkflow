@@ -31,6 +31,7 @@ The merging process
    Merging gets blocked by a :guilabel:`-2` vote.
 
 #. Submit the patch
+
    You can merge by clicking the :guilabel:`Submit` button. The Core Merger
    to merge the patch also has to do
    the :ref:`Backporting <coreMergers-backport>` if the submit-message requests
