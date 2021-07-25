@@ -87,5 +87,5 @@ In contrast to -1, a -2 is a **veto**. Use with care. With a -2, you
 are taking responsibility of the patch and basically stating that it will not
 be done until you actively remove your negative vote.
 
-In the past, we usually had no real problem with someone giving -2 and then
-not acting responsible. It would be great if it stays this way.
+To date, we have had no real problem with someone giving -2 and then
+not acting responsibly. It would be great if it stays this way.
