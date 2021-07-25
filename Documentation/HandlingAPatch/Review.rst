@@ -133,7 +133,7 @@ and enter your comment. Here, you can also apply your votes.
    Chose your vote, say something nice and click :guilabel:`SEND`
 
 *  :guilabel:`+1` : you approve of the patch
-*  :guilabel:`-1` : you do not approve, in this case give some reason as a comment
+*  :guilabel:`-1` : you do not approve, in this case give your reason as a comment
 
 .. sidebar:: Votes
 
