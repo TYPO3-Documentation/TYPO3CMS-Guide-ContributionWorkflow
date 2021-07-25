@@ -45,7 +45,7 @@ The merging process
 
 #. The patch is successfully merged
 
-   When the merging was successful the Change looks like this:
+   When the merging is successful, the Change looks like this:
 
    .. figure:: /Images/External/Gerrit/CoreMergers/Merging2.png
       :class: with-shadow
