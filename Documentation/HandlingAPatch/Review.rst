@@ -188,11 +188,11 @@ be solved until this or that is fixed". Some hints on using -1 in reviews:
    or collides with other goals, a -1 is clearly ok.
 *  -1 can also be used if you are actively working on a patch and want to prevent
    a quick merge: "-1, working on it now, will push soonish".
-*  -1 may be ok if you have general doubts but you can not pin point it and need
+*  -1 may be ok if you have general doubts but you can not pinpoint it and need
    a second opinion: "Hey, this solution looks somehow weird and I doubt this is
-   what we should do here. I think we should have a statement by x or y who have
-   a deeper knowledge of this subsystem to have an eye on that. I do not want
-   this patch to be merged until this was sorted out and will vote -1 for now
+   what we should do here. I think we should ask person x or person y, who has
+   a deeper knowledge of this subsystem, to take a look at it. I do not want
+   this patch to be merged until this is sorted out and will vote -1 for now
    for this reason."
 
 
