@@ -15,7 +15,7 @@ Backport a Change
 .. include:: /_includes/CoreMergers.rst.txt
 
 
-First wait until the review process was successfully completed for the most
+Before you start, wait until the review process has been successfully completed for the most
 recent affected branch.
 
 Use Gerrit for the cherry-pick
