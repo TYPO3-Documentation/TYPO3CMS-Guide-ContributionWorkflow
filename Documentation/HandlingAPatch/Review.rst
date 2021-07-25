@@ -182,7 +182,7 @@ those are not pushed through in real live Gerrit habits. In general, if voting
 -1, you take some responsibility for this patch by saying "This one shouldn't
 be solved until this or that is fixed". Some hints on using -1 in reviews:
 
-*  Think about your vote and always give a sane explanation. "-1 looks ugly" is
+*  Think about your vote and always give a logical explanation. "-1 looks ugly" is
    not enough.
 *  If a patch is broken, does not fix the issue, is bogus, architecturally wrong
    or collides with other goals, a -1 is clearly ok.
