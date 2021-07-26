@@ -22,8 +22,9 @@ Commit Hooks
 `commit-msg` Hook
 =================
 
-* File: :file:`.git/hooks/commit-msg`
-* Source file: :file:`Build/git-hooks/commit-msg`
+*  File: :file:`.git/hooks/commit-msg`
+*  Source file: :file:`Build/git-hooks/commit-msg`
+
 This hook is mandatory. It **must** be used for core contribution!
 
 First of all, this hook will be executed whenever you do a commit on your local machine.
@@ -51,9 +52,9 @@ If the commit-msg hook finds errors in your commit-msg, you can try again, by am
 `pre-commit` Hook
 =================
 
-* File: :file:`.git/hooks/pre-commit`
-* Source file: :file:`Build/git-hooks/unix+mac/pre-commit`
-* This hook is optional. **This hook is not available for Windows.**, however it can executed on Windows machines by using a tool like the `Git BASH <https://gitforwindows.org/>`__.
+*  File: :file:`.git/hooks/pre-commit`
+*  Source file: :file:`Build/git-hooks/unix+mac/pre-commit`
+*  This hook is optional. **This hook is not available for Windows.**, however it can executed on Windows machines by using a tool like the `Git BASH <https://gitforwindows.org/>`__.
 
 The :file:`pre-commit` hook checks all added PHP files staged for the commit for Coding
 Guideline issues and will report any problems it finds.
@@ -61,10 +62,11 @@ Guideline issues and will report any problems it finds.
 To fix the issues, see :ref:`cgl-fix-my-commit`.
 
 After fixing the files you must amend your
-commit::
+commit:
+
+.. code-block:: bash
 
    git commit -a --amend
-
 
 
 .. index::
@@ -74,13 +76,13 @@ commit::
 .. _post-checkout-for-composer-update:
 
 Post-checkout hook for composer install
-======================================
+=======================================
 
 If you want to run `composer install` for each checkout (e.g. when switching branches, tags, etc), then you can use the `post-checkout` commit hook.
 
 Create a file named `.git/hooks/post-checkout` with the following contents:
 
-.. code::
+.. code-block:: bash
 
    #!/usr/bin/env python3
    #-*- coding: utf-8 -*-

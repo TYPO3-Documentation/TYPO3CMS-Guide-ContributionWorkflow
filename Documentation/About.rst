@@ -6,20 +6,20 @@
 About This Guide
 ================
 
-This guide provides all necessary information to enable you to contribute to the TYPO3 
-source code. 
+This guide provides all necessary information to enable you to contribute to the TYPO3
+source code.
 
-The main focus is submitting patches (to fix bugs or add new features) to the TYPO3 source 
-code, but you will also find information for :ref:`writing bug reports <bugreporting-index>`, 
-:ref:`adding documentation <Adding-documentation>`, :ref:`running tests <testing>`, 
+The main focus is submitting patches (to fix bugs or add new features) to the TYPO3 source
+code, but you will also find information for :ref:`writing bug reports <bugreporting-index>`,
+:ref:`adding documentation <Adding-documentation>`, :ref:`running tests <testing>`,
 :ref:`reviewing and testing patches <lifeOfAPatch>` etc.
 
 How this guide is structured
 ============================
 
 The guide is structured in a way to give you all necessary information **in the order
-that you need it.** This means you can read it from the beginning and use it as a 
-hands on guide, performing the steps as you go along. 
+that you need it.** This means you can read it from the beginning and use it as a
+hands on guide, performing the steps as you go along.
 
 The further you go along, the more advanced the topics will become.
 
@@ -29,35 +29,35 @@ you are looking for or browse through the menu.
 
 For example:
 
-* :ref:`quickstart-create-a-patch` walks you through making a change in the TYPO3
-  core (e.g. fix a bug or create a new feature).
+*  :ref:`quickstart-create-a-patch` walks you through making a change in the TYPO3
+   core (e.g. fix a bug or create a new feature).
 
 
 The chapters are structured as follows:
 
-* The chapters in :guilabel:`INTRODUCTION` give you an introduction. They are not necessary
-  for contribution but will give you some background information which may make
-  some things easier.
-* The chapters in :guilabel:`SETUP` show how to setup a TYPO3 installation, Git and your
-  accounts for contribution. This is a necessary prerequisite for most actions
-  (e.g. creating a patch), but must be done only once. We recommend to start with
-  this.
-* The chapters in :guilabel:`HOWTOS` walk you through one task. In most cases, it is assumed
-  that you already setup your environment.
-* :ref:`ADDITIONAL INFORMATION` contains a cheat sheet
-  :ref:`git cheat sheet <cheat-sheet-git>`, :guilabel:`Troubleshooting`
-  and the :ref:`appendix` which is a reference of some topics in more depth than what
-  was described in the main section. These pages near the end of the manual assume
-  that you are already familiar with contributing and serve as reference pages.
+*  The chapters in :guilabel:`INTRODUCTION` give you an introduction. They are not necessary
+   for contribution but will give you some background information which may make
+   some things easier.
+*  The chapters in :guilabel:`SETUP` show how to setup a TYPO3 installation, Git and your
+   accounts for contribution. This is a necessary prerequisite for most actions
+   (e.g. creating a patch), but must be done only once. We recommend to start with
+   this.
+*  The chapters in :guilabel:`HOWTOS` walk you through one task. In most cases, it is assumed
+   that you already setup your environment.
+*  :guilabel:`ADDITIONAL INFORMATION` contains a cheat sheet
+   :ref:`git cheat sheet <cheat-sheet-git>`, :guilabel:`Troubleshooting`
+   and the :ref:`appendix` which is a reference of some topics in more depth than what
+   was described in the main section. These pages near the end of the manual assume
+   that you are already familiar with contributing and serve as reference pages.
 
 
 
 Conventions used in this guide
 ==============================
 
-* When referring to elements in the gui, we use this formatting:
-  :guilabel:`Add new SSH key`.
-* Keystrokes are referred to by :kbd:`CTRL + c`
+*  When referring to elements in the gui, we use this formatting:
+   :guilabel:`Add new SSH key`.
+*  Keystrokes are referred to by :kbd:`CTRL + c`
 
 
 .. _other-resources-for-contribution:
@@ -69,8 +69,8 @@ Besides developing for the TYPO3 core, there are many other ways to contribute a
 
 You can find general information here:
 
-* General information about the various `Teams & Committes <https://typo3.org/teams-committees/>`__
-* General information on how you can `Participate <https://typo3.org/participate/>`__
+*  General information about the various `Teams & Committes <https://typo3.org/teams-committees/>`__
+*  General information on how you can `Participate <https://typo3.org/participate/>`__
 
 .. _contribute:
 

@@ -158,11 +158,11 @@ and setting up a working TYPO3 installation for core development, skip to number
 
       git commit -a
 
-   The :ref:`commit-msg hook <git-setup-commit-msg-hook>` will do some sanity
+   The :ref:`commit-msg hook <pre-commit-hook>` will do some sanity
    checks and add a line starting with `Change-Id:`.
 
 
-   If you have activated the :ref:`pre-commit hook <git-setup-precommithook>`
+   If you have activated the :ref:`pre-commit hook <pre-commit-hook>`
    it will loudly complain if something does not conform to the coding guidelines.
 
    In that case, use the :ref:`cgl-fix-my-commit` script to to fix CGL issues

@@ -83,7 +83,7 @@ Examples
 All examples expect to be executed from a git cloned working directory
 of master (as described in :ref:`setup`).
 
-.. _hint::
+.. note::
 
    Running the script or a specific command line argument combination for the first
    time will take some time, because all necessary prerequisites for the docker images
@@ -92,7 +92,7 @@ of master (as described in :ref:`setup`).
 Show help
 ~~~~~~~~~
 
-.. code-block::
+.. code-block:: bash
 
    ./Build/Scripts/runTests.sh -h
 
@@ -109,7 +109,7 @@ Run unit tests with xdebug (uses default port 9000)
 .. code-block:: bash
 
    ./Build/Scripts/runTests.sh -x
-   
+
 Run specific unit tests with xdebug
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -119,7 +119,7 @@ Run specific unit tests with xdebug
 
 Example::
 
-   Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/   
+   Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/
 
 Run functional tests
 ~~~~~~~~~~~~~~~~~~~~
@@ -185,8 +185,8 @@ Results
 All results will be displayed on the screen. The script should exit with
 standard exit codes:
 
-* 0 means all is ok
-* != 0 means error
+*  0 means all is ok
+*  != 0 means error
 
 Reports of the acceptance tests will be stored in
 :file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the browser.
@@ -260,7 +260,7 @@ Check for Coding Guidelines
 
 The cgl checking commands / scripts not only check, they repair as well!
 
-You can use the already mentioned script cglFixMyCommit::
+You can use the already mentioned script cglFixMyCommit:
 
 Mac / Linux::
 
@@ -280,9 +280,9 @@ Windows::
 More information
 ================
 
-* More details about the test system, test strategies, execution and set up can
-  be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
-* :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
-* external: `Serious software testing: TYPO3 runs its 20,000th build!
-  <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__ for more information
-  on how the automatic tests are run with Bamboo for every patchset that is uploaded for the core
+*  More details about the test system, test strategies, execution and set up can
+   be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
+*  :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
+*  external: `Serious software testing: TYPO3 runs its 20,000th build!
+   <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__ for more information
+   on how the automatic tests are run with Bamboo for every patchset that is uploaded for the core

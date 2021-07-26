@@ -92,11 +92,11 @@ If this does not work another issue might be that your SSH version is too new an
 accept the signature algorithm . You can test this by executing
 
     ssh -v -p 29418 -i <path-to-private-key> <username>@review.typo3.org 2>&1 | grep "no mutual signature algorithm"
-    
+
 If you see
 
     debug1: send_pubkey_test: no mutual signature algorithm
-    
+
 you need to allow the rsa Algorithm in your SSH config:
 
     Host review.typo3.org
@@ -185,7 +185,7 @@ Review the sections about creating a valid public/private key pair on your opera
 
 A valid private key in OpenSSH format starts with the following lines:
 
-.. code-block:: file
+.. code-block:: none
 
    -----BEGIN RSA PRIVATE KEY-----
    Proc-Type: 4,ENCRYPTED
@@ -199,7 +199,9 @@ Pushing old Patch Set again
 You want to make an old patch set the current one. You cannot simply
 checkout Patch Set 1 and push it again, as it is refused with a "no new changes" error message.
 
-Amend the commit using::
+Amend the commit using:
+
+.. code-block:: bash
 
     git commit --amend
 

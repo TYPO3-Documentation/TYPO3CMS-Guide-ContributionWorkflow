@@ -1,7 +1,7 @@
 .. include:: ../Includes.txt
 
 .. _appendix-slack-intro:
-.. _slack:
+.. _slack_contribution:
 
 =====
 Slack
@@ -19,9 +19,9 @@ On that page, you will also find information about recommended channels.
 Slack channels
 --------------
 
-* **#typo3-cms-coredev** is your channel of choice for core development
-* **#typo3-cms** is for general support issues
-* **#random** if you are not sure which channel to use or have a general question
+*  **#typo3-cms-coredev** is your channel of choice for core development
+*  **#typo3-cms** is for general support issues
+*  **#random** if you are not sure which channel to use or have a general question
 
 
 You do not need to ask for permission when asking a question. Ask your question directly
