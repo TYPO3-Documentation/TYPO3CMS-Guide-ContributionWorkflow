@@ -157,7 +157,7 @@ Setting up Your Remote
 
 You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
-   git config remote.origin.pushurl ssh://@review.typo3.org:29418/Packages/TYPO3.CMS.git
+   git config remote.origin.pushurl ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
 
 
 This will instruct Git to push using the
