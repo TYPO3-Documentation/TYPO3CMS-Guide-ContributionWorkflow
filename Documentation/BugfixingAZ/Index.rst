@@ -64,7 +64,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    Setup your TYPO3 installation usig the git cloned TYPO3 source::
 
       mkdir t3master;cd t3master
-      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+      git clone git://github.com/typo3/typo3 .
 
    etc.
 
@@ -91,7 +91,7 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
 
-      git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+      git config remote.origin.pushurl ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
       git config remote.origin.push +refs/heads/master:refs/for/master
 
 4. Setup your IDE to adhere to the coding guidelines

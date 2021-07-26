@@ -28,7 +28,7 @@ git clone
 
 Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3:: 
 
-   git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+   git clone git://github.com/typo3/typo3 .
 
 
 .. _git-guis:
