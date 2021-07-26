@@ -34,19 +34,19 @@ to cherry-pick it from the review system into your local git repository.
 
    If the recent patchset is not shown, select it first:
 
-   .. image:: _assets/gerrit-go-to-latest-patchset.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-go-to-latest-patchset.png
       :class: with-shadow
 
    Then click on :guilabel:`Download`:
 
-   .. image:: _assets/gerrit-download.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-download.png
       :class: with-shadow
 
 3. Click on copy next to the line for "Cherry pick"
 
    This copies the command to the clipboard.
 
-   .. image:: _assets/gerrit-cherry-pick.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-cherry-pick.png
       :class: with-shadow
 
 4. Clean up your local repository

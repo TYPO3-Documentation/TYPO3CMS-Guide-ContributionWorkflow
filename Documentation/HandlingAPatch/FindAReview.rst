@@ -32,7 +32,7 @@ Examples:
   to see a board
   of all open patches by type (Bugs, Tasks, Features)
 
-.. image:: _assets/forger-review-board.svg
+.. image:: /Images/External/Forger/forger-review-board.svg
    :class: with-shadow
 
 * `Sprints TYPO3-Core <https://forger.typo3.com/sprint/core>`__
@@ -61,7 +61,7 @@ Gerrit: Your Changes
 For your own patches, go to `Gerrit <https://review.typo3.org>`__
 and select Your: Changes.
 
-.. image:: _assets/gerrit-your-patches.png
+.. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-your-patches.png
    :class: with-shadow
 
 

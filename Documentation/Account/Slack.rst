@@ -35,7 +35,7 @@ Register for Slack account
 
 3. Login with your typo3.org account, then go to the "My Profile" tab and select "Use TYPO3 Slack".
 
-   .. image:: _assets/mytypo3profile.png
+   .. image:: /Images/External/Gerrit/Account/mytypo3profile.png
       :class: with-shadow
 
 4. Follow the next steps
@@ -54,17 +54,17 @@ Join #typo3-cms-coredev channel
    *Channels*:
 
 
-   .. image:: _assets/channels.png
+   .. image:: /Images/External/Gerrit/Account/channels.png
       :class: with-shadow
 
 2. Search for coredev-channel and select it:
 
-   .. image:: _assets/select-coredev-channel.svg
+   .. image:: /Images/External/Gerrit/Account/select-coredev-channel.svg
       :class: with-shadow
 
 3. Click "Join Channel"
 
-   .. image:: _assets/join-coredev-channel.png
+   .. image:: /Images/External/Gerrit/Account/join-coredev-channel.png
       :class: with-shadow
 
 More information

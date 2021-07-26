@@ -37,7 +37,7 @@ This chapter will explain the most important parts of the Gerrit_ UI to you.
 
 This is a screenshot of an open review on Gerrit_. We will go through the parts of the UI next:
 
-.. image:: _assets/gerrit-ui.png
+.. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-ui.png
    :alt: Screenshot of a code review on Gerrit
    :class: with-shadow
 

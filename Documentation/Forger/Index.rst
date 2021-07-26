@@ -12,7 +12,7 @@ Introduction to Forger
 
 .. sidebar:: TYPO3 Forger
 
-   .. image:: _assets/dave.png
+   .. image:: /Images/External/Dave/dave.png
       :width: 200px
 
    https://forger.typo3.com/

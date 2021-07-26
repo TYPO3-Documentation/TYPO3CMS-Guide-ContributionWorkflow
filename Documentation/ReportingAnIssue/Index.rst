@@ -100,7 +100,7 @@ Create an issue
 :ref:`Get your typo3.org account <TYPO3Account>`, head over to Forge_ and log in (if you aren't already).
 You can find the TYPO3 core issue tracker here: https://forge.typo3.org/projects/typo3cms-core/issues.
 
-.. image:: _assets/new-issue.png
+.. image:: /Images/External/Forge/new-issue.png
    :class: with-shadow
 
 .. tip::
@@ -247,7 +247,7 @@ Some hints for files:
   video that clarifies your issue. For example, use an animated gif screen capture
   tool to create an animated gif.
 
-.. image:: _assets/new-issue2.png
+.. image:: /Images/External/Forge/new-issue2.png
    :class: with-shadow
 
 .. tip::

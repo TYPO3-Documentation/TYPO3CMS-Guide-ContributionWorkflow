@@ -18,55 +18,55 @@ Download Git For Windows from  https://git-scm.com/.
 Right-click the ``Git-x.y.z-nn-bit.exe`` file you downloaded and select the option "Run as administrator". Confirm that you
 want to run the file.
 
-.. image:: ../_assets/git-setup-1.png
+.. image:: /Images/External/GitSetup/git-setup-1.png
 
 Click "Next>" to start the installer
 
-.. image:: ../_assets/git-setup-2.png
+.. image:: /Images/External/GitSetup/git-setup-2.png
 
 Click "Next>" to accept the GPL2 license.
 
-.. image:: ../_assets/git-setup-3.png
+.. image:: /Images/External/GitSetup/git-setup-3.png
 
 Set or keep the proposed install directory and click "Next>"
 
-.. image:: ../_assets/git-setup-4.png
+.. image:: /Images/External/GitSetup/git-setup-4.png
 
 Windows Explorer integration is very handy, especially the "Git Bash here" option.
 Click "Next>" to use the selected options.
 
-.. image:: ../_assets/git-setup-5.png
+.. image:: /Images/External/GitSetup/git-setup-5.png
 
 Chose whether you want to use a Start Menu folder and click "Next>"
 
-.. image:: ../_assets/git-setup-6.png
+.. image:: /Images/External/GitSetup/git-setup-6.png
 
 The second or third option is mandatory for certain other programs. The second option is a good balance between a limited amount
 of changes to your system and enough features. Select the one that suits you best and click "Next>"
 
-.. image:: ../_assets/git-setup-7.png
+.. image:: /Images/External/GitSetup/git-setup-7.png
 
 If you already have PuTTY or other Tortoise... products it's best to select "Use (Tortoise)Plink". Click "Next>" after selecting.
 
-.. image:: ../_assets/git-setup-8.png
+.. image:: /Images/External/GitSetup/git-setup-8.png
 
 Select the option "Checkout as-is, commit Unix-style line endings". This makes sure that files from the remote repository keep
 their line endings, but if you happen to add a new file with Windows line endings it will be converted to Unix-style line endings
 when you commit the file.
 
-.. image:: ../_assets/git-setup-9.png
+.. image:: /Images/External/GitSetup/git-setup-9.png
 
 Select the terminal of your choice. Click "Next>" for the next step.
 
-.. image:: ../_assets/git-setup-a.png
+.. image:: /Images/External/GitSetup/git-setup-a.png
 
 An experimental option; your decision. Click "Next>" after making your choice.
 
-.. image:: ../_assets/git-setup-b.png
+.. image:: /Images/External/GitSetup/git-setup-b.png
 
 All git tools will be installed.
 
-.. image:: ../_assets/git-setup-c.png
+.. image:: /Images/External/GitSetup/git-setup-c.png
 
 Done!
 
@@ -95,11 +95,11 @@ right-click to get the context menu and select "TortoiseGit > Settings".
 
 You'll first get a notification about the way that system wide, global and local settings work.
 
-.. image:: ../_assets/tortoise-setting.png
+.. image:: /Images/External/Tortoise/tortoise-setting.png
 
 The username and email address have to be the same as you entered in Gerrit
 
-.. image:: ../_assets/tortoise-remote.png
+.. image:: /Images/External/Tortoise/tortoise-remote.png
 
 Select "Git > Remote", select 'origin' "Remote" server and browse with the [...] button to select the PuTTY private key in the
 field "Putty Key".
@@ -136,7 +136,7 @@ Links to bugtracker
 In "Hook Scripts > Issue Tracker Config" you can configure how TortoiseGit can turn issue numbers in the commit message into
 links. In the Git log you can now click directly to the issue in forge.
 
-.. image:: ../_assets/tortoise-bugtraq.png
+.. image:: /Images/External/Tortoise/tortoise-bugtraq.png
 
 * Enter in the field "bugtraq.url" ``https://forge.typo3.org/issues/%BUGID%``
 * In the field "bugtraq.logregex" enter two lines:
@@ -155,7 +155,7 @@ commands the command line walkthrough will tell you all the secrets.
 Update the repository
 ---------------------
 
-.. image:: ../_assets/tortoise-sync.png
+.. image:: /Images/External/Tortoise/tortoise-sync.png
 
 Although it's not hard to use the git pull command, the "Git sync" dialogue of TortoiseGit has a nice overview of the incoming
 commits and all their changes. The context menu gives you all the options from the log viewer.
@@ -165,7 +165,7 @@ Create a branch
 
 It's easier to undo all the changes in a patch if you create a branch for it.
 
-.. image:: ../_assets/tortoise-new-branch.png
+.. image:: /Images/External/Tortoise/tortoise-new-branch.png
 
 Choose from the context menu "TortoiseGit > Create branch". Enter a name and enable the option "Switch to new branch". After
 clicking the OK button it shows the progress of the operation.
@@ -176,7 +176,7 @@ Cherry-picking
 Now we switch to the command line. First visit the page of the patch in Gerrit. From the Download menu, choose the copy button
 after the 'Cherry Pick' line. Paste the line with the 'Ins' button in the Bash window.
 
-.. image:: ../_assets/git-bash-cherry-pick.png
+.. image:: /Images/External/GitBash/git-bash-cherry-pick.png
 
 Now we can do the testing and register the votes in Gerrit.
 
@@ -202,7 +202,7 @@ Send the patch to Gerrit
 
 From the context menu select "TortoiseGit > Push".
 
-.. image:: ../_assets/tortoise-push.png
+.. image:: /Images/External/Tortoise/tortoise-push.png
 
 In the field "Local" there is already the name of your branch
 In the field "Remote" make sure there is the value 'refs/for/master' if you push for current master. If you push for older

@@ -45,12 +45,12 @@ Delete browser cache or
 
 Maintenance: Analyze Database Structure, Apply selected changes.
 
-.. image:: _assets/analyze.svg
+.. image:: /Images/ManualScreenshots/analyze.svg
    :class: with-shadow
 
 **In any case**:
 
 Maintenance: Flush TYPO3 and PHP Cache
 
-.. image:: _assets/flush_cache.svg
+.. image:: /Images/ManualScreenshots/flush_cache.svg
    :class: with-shadow

@@ -45,7 +45,7 @@ When adding images, always set a shadow in rest:
 
 .. code-block:: rest
 
-   .. image:: _assets/gerrit-new-ui2.png
+   .. image:: /Images/External/Tower/gerrit-new-ui2.png
       :class: with-shadow
 
 If it helps with readability on screen, limit the size of the image.

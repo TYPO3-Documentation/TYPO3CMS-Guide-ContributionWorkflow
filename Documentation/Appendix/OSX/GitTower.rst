@@ -12,7 +12,7 @@ Working with Git Tower
 
 .. sidebar:: Git Tower
 
-   .. image:: _assets/tower_app_icon.png
+   .. image:: /Images/External/Tower/tower_app_icon.png
       :width: 200px
 
 
@@ -30,7 +30,7 @@ Enabling Extended Gerrit Support in Tower
 In Tower's preferences window, activate the ``Gerrit Code Review`` option.
 This will enable the following adaptions in Tower's UI.
 
-.. image:: _assets/tower_enable_gerrit.png
+.. image:: /Images/External/Tower/tower_enable_gerrit.png
    :width: 400px
 
 Restart Tower after you enabled the setting.
@@ -48,7 +48,7 @@ Custom Toolbar Button
    You can add a custom Gerrit Push button to the toolbar. To do this, choose ``Customize Toolbar`` from the "View" main
    menu and drag the corresponding button onto the toolbar.
 
-   .. image:: _assets/tower_gerrit_pushbutton.png
+   .. image:: /Images/External/Tower/tower_gerrit_pushbutton.png
       :width: 400px
 
 

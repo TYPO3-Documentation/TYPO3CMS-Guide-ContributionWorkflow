@@ -28,7 +28,7 @@ General setup
 * `PHP Language Level`: choose appropriate version
 * `CLI Interpreter`: choose appropriate version
 
-.. image:: _assets/phpstorm-settings-language+frameworks-php.png
+.. image:: /Images/External/Phpstorm/phpstorm-settings-language+frameworks-php.png
    :align: center
    :alt: Setup PhpStorm PHP settings
 
@@ -68,7 +68,7 @@ Set **Predefined Style** in PhpStorm:
 Choose PSR-1 / PSR-2
 
 
-.. image:: _assets/phpstorm-settings-codestyle-php-setfrom.png
+.. image:: /Images/External/Phpstorm/phpstorm-settings-codestyle-php-setfrom.png
    :align: center
    :alt: Setup PhpStorm Predefined Code Style
 
@@ -166,7 +166,7 @@ Setup **Test Frameworks** in PhpStorm:
   <YOUR_WEBROOT>/vendor/typo3/testing-framework/Resource/Core/Build/UnitTestsBootstrap.php
 
 
-.. image:: _assets/phpstorm-settings-testing-framework.png
+.. image:: /Images/External/Phpstorm/phpstorm-settings-testing-framework.png
    :align: center
    :alt: Setup Testing Framework
 

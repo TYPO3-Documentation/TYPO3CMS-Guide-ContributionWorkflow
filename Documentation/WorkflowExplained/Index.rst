@@ -17,7 +17,7 @@ you understand `why` we do things the way we do them. So let us walk you through
 Regular Workflow
 ================
 
-.. image:: _assets/Regular-Workflow.png
+.. image:: /Images/Graphics/Regular-Workflow.png
    :width: 600px
 
 So this it what your usual coding workflow would look like.
@@ -32,7 +32,7 @@ guidelines, doesn't work on the respective PHP versions for the TYPO3 version yo
 TYPO3 Contribution Workflow
 ===========================
 
-.. image:: _assets/Contribution-Workflow.png
+.. image:: /Images/Graphics/Contribution-Workflow.png
    :width: 600px
 
 As you can see, our workflow is a bit different, simply because we do not allow to push right back to our Git repository.

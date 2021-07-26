@@ -16,7 +16,7 @@ In order to create a SSH key for Windows you can follow these steps.
 Generate Your Keys With Putty
 =============================
 
-.. image:: ../_assets/puttygen-generate.png
+.. image:: /Images/External/Putty/puttygen-generate.png
    :class: with-shadow
 
 * Download and run the PuTTY Windows Installer from the `official download page
@@ -28,7 +28,7 @@ Generate Your Keys With Putty
   generated key`` field to ``4096``
 * Click the Generate (2) button and follow the screen instructions
 
-.. image:: ../_assets/puttygen-save.png
+.. image:: /Images/External/Putty/puttygen-save.png
    :class: with-shadow
 
 * Fill the comment (1) to identify this key with your email for instance
@@ -41,7 +41,7 @@ Generate Your Keys With Putty
 
    Keep in mind that putty uses a proprietary format to store keys, which is
    incompatible with OpenSSH, when you use any of the save-buttons. If you need
-   to store you private key in the OpenSSH format use the menu item 
+   to store you private key in the OpenSSH format use the menu item
    ``Conversions->Export OpenSSH key``.
 
 

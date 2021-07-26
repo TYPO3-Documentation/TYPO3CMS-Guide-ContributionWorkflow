@@ -17,7 +17,7 @@ Setting up Gerrit (ssh)
 1. Click the :guilabel:`Sign In` button in the top right corner of the page
    `review.typo3.org <https://review.typo3.org>`__.
 
-   .. image:: _assets/gerrit_signin2.png
+   .. image:: /Images/External/Gerrit/Account/gerrit_signin2.png
       :class: with-shadow
 
    You will be prompted with a regular :guilabel:`Basic Authentication`
@@ -37,7 +37,7 @@ Setting up Gerrit (ssh)
 
 3. Add your public SSH key to Gerrit
 
-   .. image:: _assets/gerrit-add-ssh-key2.png
+   .. image:: /Images/External/Gerrit/Account/gerrit-add-ssh-key2.png
       :class: with-shadow
 
    * Click on your profile in the top right corner and click :guilabel:`Settings`.

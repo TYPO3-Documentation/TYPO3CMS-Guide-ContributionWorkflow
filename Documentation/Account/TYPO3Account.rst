@@ -10,15 +10,15 @@
 Signup for a TYPO3.org Account
 ==============================
 
-Head over to the `signup page on my.typo3.org <https://my.typo3.org/index.php?id=2>`__ 
-and fill out the form. 
+Head over to the `signup page on my.typo3.org <https://my.typo3.org/index.php?id=2>`__
+and fill out the form.
 
-.. image:: _assets/register-t30.png
+.. image:: /Images/External/Gerrit/Account/register-t30.png
    :class: with-shadow
 
 Username
    Pick a username you like. The form will directly tell you whether it's available or not.
-   To save yourself from annoying problems later on down the road, to not use special 
+   To save yourself from annoying problems later on down the road, to not use special
    characters like `@` or `!` in your username. Just use alphanumeric characters.
 
 E-mail

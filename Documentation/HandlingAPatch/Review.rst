@@ -44,7 +44,7 @@ A basic code review is possible by using the Gerrit web interface.
 
 #. To leave a comment, click on one of the files
 
-   .. image:: _assets/gerrit_review_click_on_file.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_click_on_file.png
 
    Commenting in the files directly is optional, but strongly recommended. If you just want to leave a general
    comment which needs no context, you can skip to step 8 (:guilabel:`Reply`).
@@ -60,9 +60,9 @@ A basic code review is possible by using the Gerrit web interface.
 
    Click on the line number in the file and a comment box will open.
 
-   .. image:: _assets/gerrit_review_comment_click.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_comment_click.png
 
-   .. image:: _assets/gerrit_review_comment_file.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_comment_file.png
 
 #. Click :guilabel:`Save`.
 
@@ -72,7 +72,7 @@ A basic code review is possible by using the Gerrit web interface.
 
 #. Go back
 
-   .. image:: _assets/gerrit_review_go_back.png
+   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_go_back.png
 
 #. (Optional) Add comments to more files.
 

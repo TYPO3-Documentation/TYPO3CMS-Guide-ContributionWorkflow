@@ -112,14 +112,14 @@ show you:
 
 **Gerrit:** Load your patch page in the browser.
 
-.. image:: _assets/gerrit_merge_conflict.png
+.. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_merge_conflict.png
    :class: with-shadow
 
 
 **Forger:** Open one of the `ReviewSprint <https://forger.typo3.com/sprint/reviews>`__
 views on Forger.
 
-.. image:: _assets/forger_merge_conflicts.png
+.. image:: /Images/External/Forger/forger_merge_conflicts.png
    :class: with-shadow
 
 In that case, you will need to resolve the conflicts in
