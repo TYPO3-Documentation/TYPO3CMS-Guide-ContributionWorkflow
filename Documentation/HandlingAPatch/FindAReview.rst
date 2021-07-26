@@ -16,7 +16,7 @@ is most convenient for you or what fits your needs.
    single: Tools; Forger Finding Reviews
    single: Review; Finding Reviews
 
-.. _forger:
+.. _forger_reviews:
 
 Forger
 ======

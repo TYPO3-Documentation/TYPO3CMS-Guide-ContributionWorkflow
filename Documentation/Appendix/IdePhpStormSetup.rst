@@ -53,7 +53,7 @@ See http://EditorConfig.org for more information. Use the `EditorConfig plugin
 <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__ for PhpStorm.
 
 If you use the :file:`.editorconfig` file (which is included in the TYPO3 core), some
-standard formatting rules are already setup automatically (e.g. indent with 
+standard formatting rules are already setup automatically (e.g. indent with
 4 spaces for PHP files).
 
 However, the rules defined in :file:`.editorconfig` are very minimal, so at
@@ -62,7 +62,7 @@ least set up PhpStorm to comply with PSR-1 / PSR-2 for PHP as described next.
 PHP files
 ---------
 
-Set **Predefined Style** in PhpStorm: 
+Set **Predefined Style** in PhpStorm:
 :guilabel:`File > Settings > Editor > Code Style > PHP > Set From > Predefined Style`
 
 Choose PSR-1 / PSR-2
@@ -92,13 +92,13 @@ Plugins for PhpStorm
 ====================
 
 Here are some plugins, you might use when developing TYPO3. DynamicReturnTypePlugin
-and Php Inspections are not TYPO3 specific, but will show possible errors and 
+and Php Inspections are not TYPO3 specific, but will show possible errors and
 are strongly recommended when developing for the TYPO3 core.
 
 .. hint::
    None of these plugins are mandatory, check out what might be useful for yourself!
 
-Install plugins in PhpStorm 
+Install plugins in PhpStorm
 ---------------------------
 
 #. Open Settings: :guilabel:`File > Settings` (:kbd:`ctrl + alt + s`)
@@ -125,11 +125,11 @@ Recommended Plugins
   This will show you errors in your reStructuredText files (file ending .rst)
   when you are editing the core changelog or are updating the documentation
   for a system extension.
-  
+
 Optional Plugins
 ----------------
-  
-* `Fluid plugin <https://plugins.jetbrains.com/plugin/11151-fluid--enterprise>`__ 
+
+* `Fluid plugin <https://plugins.jetbrains.com/plugin/11151-fluid--enterprise>`__
   (sgalinski)
 * `TypoScript plugin
   <https://plugins.jetbrains.com/plugin/11243-typoscript--enterprise>`__ (sgalinski)
@@ -144,7 +144,7 @@ Optional Plugins
    single: PhpStorm; Setup Testing Framework
    single: Testing; Setup PhpStorm
 
-.. _phpstorm-setup-plugins:
+.. _phpstorm-setup-plugins_testing_framework:
 
 Setting up  PhpStorm for the Testing Framework
 ==============================================

@@ -37,9 +37,9 @@ Deprecate a class
 Deprecate method
 ================
 
-* Add a :php:`@deprecated` annotation to the method doc comment
-* Add a :php:`trigger_error` call to the method, describing the migration
-path and triggering an error of type :php:`E_USER_DEPRECATED`
+*  Add a :php:`@deprecated` annotation to the method doc comment
+*  Add a :php:`trigger_error` call to the method, describing the migration
+   path and triggering an error of type :php:`E_USER_DEPRECATED`
 
 .. code-block:: php
 
