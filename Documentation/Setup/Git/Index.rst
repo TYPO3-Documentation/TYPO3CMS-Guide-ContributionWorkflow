@@ -242,7 +242,6 @@ Or, compare the :file:`.git/config` file inside the repository::
        merge = refs/heads/master
     [branch]
        autosetuprebase = remote
-    [url "ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git"]
 
     [commit]
        template = /path/to/.gitmessage.txt

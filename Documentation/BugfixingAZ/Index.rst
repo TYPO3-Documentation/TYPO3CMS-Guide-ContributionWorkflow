@@ -91,7 +91,7 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
 
-      git config remote.origin.pushurl ssh://@review.typo3.org:29418/Packages/TYPO3.CMS.git
+      git config remote.origin.pushurl ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
       git config remote.origin.push +refs/heads/master:refs/for/master
 
 4. Setup your IDE to adhere to the coding guidelines
