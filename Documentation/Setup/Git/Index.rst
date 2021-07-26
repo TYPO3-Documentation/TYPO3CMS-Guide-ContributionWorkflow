@@ -157,7 +157,7 @@ Setting up Your Remote
 
 You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
-   git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
+   git config remote.origin.pushurl ssh://@review.typo3.org:29418/Packages/TYPO3.CMS.git
 
 
 This will instruct Git to push using the
@@ -234,8 +234,9 @@ Or, compare the :file:`.git/config` file inside the repository::
        ignorecase = true
        precomposeunicode = true
     [remote "origin"]
-       url = git://github.com/typo3/typo3
-       fetch = +refs/heads/*:refs/remotes/origin/*
+        url = git@github.com:typo3/typo3
+        fetch = +refs/heads/:refs/remotes/origin/
+        pushurl = ssh://<TYPO3_USER_NAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
     [branch "master"]
        remote = origin
        merge = refs/heads/master
