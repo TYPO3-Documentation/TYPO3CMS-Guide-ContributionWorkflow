@@ -25,7 +25,7 @@ Prerequisites
 * We expect you have a fully-fledged web development setup at hand. If you are not sure, though, :ref:`take a look here <prerequisites>`.
 * Make sure, you have cloned the TYPO3 source as described previously in :ref:`setup-typo3-git-clone`::
 
-      git clone git://git.typo3.org/Packages/TYPO3.CMS.git .
+      git clone git://github.com/typo3/typo3 .
 
 
 
@@ -157,7 +157,7 @@ Setting up Your Remote
 
 You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
 
-   git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+   git config url."ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
 
 
 This will instruct Git to push using the
@@ -215,12 +215,12 @@ Show current configuration::
 The result should look like this::
 
    ...
-   remote.origin.url=git://git.typo3.org/Packages/TYPO3.CMS.git
+   remote.origin.url=git://github.com/typo3/typo3 .
    remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
    branch.master.remote=origin
    branch.master.merge=refs/heads/master
    branch.autosetuprebase=remote
-   url.ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418.pushinsteadof=git://git.typo3.org
+   url.ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
    commit.template=/path/to/.gitmessage.txt
    ...
 
@@ -234,15 +234,15 @@ Or, compare the :file:`.git/config` file inside the repository::
        ignorecase = true
        precomposeunicode = true
     [remote "origin"]
-       url = git://git.typo3.org/Packages/TYPO3.CMS.git
+       url = git://github.com/typo3/typo3
        fetch = +refs/heads/*:refs/remotes/origin/*
     [branch "master"]
        remote = origin
        merge = refs/heads/master
     [branch]
        autosetuprebase = remote
-    [url "ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418"]
-       pushInsteadOf = git://git.typo3.org
+    [url "ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git"]
+
     [commit]
        template = /path/to/.gitmessage.txt
 

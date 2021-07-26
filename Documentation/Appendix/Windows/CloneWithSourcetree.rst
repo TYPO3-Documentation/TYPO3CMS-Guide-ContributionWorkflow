@@ -137,7 +137,7 @@ In the Git Bash window (click Terminal), enter the following commands to set tha
 
 .. code-block:: bash
 
-   git config url."ssh://<username>@review.typo3.org:29418".pushInsteadOf git://git.typo3.org
+   git config url."ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
    git config remote.origin.push refs/heads/*:refs/for/*
    git config branch.autosetuprebase remote
 

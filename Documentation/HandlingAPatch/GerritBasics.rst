@@ -17,7 +17,7 @@ Gerrit is a web based code review and project management tool for Git based proj
 
 TYPO3's Gerrit interface is located at https://review.typo3.org.
 
-Gerrit handles the review process and is a gatekeeper in front of the official TYPO3 Git repository on git.typo3.org. Pushing to git.typo3.org repository is not allowed for anybody, instead every change has to pass a review process in Gerrit, which later pushes the change to the repository.
+Gerrit handles the review process and is a gatekeeper in front of the official TYPO3 Git repository on github.com/typo3/typo3. Directly pushing to the GitHub repository is not allowed. Instead every change has to pass a review process in Gerrit, which later pushes the change to the GitHub repository.
 
 
 
