@@ -231,18 +231,15 @@ Or, compare the :file:`.git/config` file inside the repository::
        filemode = true
        bare = false
        logallrefupdates = true
-       ignorecase = true
-       precomposeunicode = true
     [remote "origin"]
         url = git@github.com:typo3/typo3
-        fetch = +refs/heads/:refs/remotes/origin/
+        fetch = +refs/heads/*:refs/remotes/origin/*
         pushurl = ssh://<TYPO3_USER_NAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
     [branch "master"]
        remote = origin
        merge = refs/heads/master
     [branch]
        autosetuprebase = remote
-
     [commit]
        template = /path/to/.gitmessage.txt
 
