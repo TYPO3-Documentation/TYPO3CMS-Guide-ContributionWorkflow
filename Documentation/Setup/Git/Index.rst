@@ -215,7 +215,7 @@ Show current configuration::
 The result should look like this::
 
    ...
-   remote.origin.url=git://github.com/typo3/typo3 .
+   remote.origin.url=git://github.com/typo3/typo3
    remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
    branch.master.remote=origin
    branch.master.merge=refs/heads/master
