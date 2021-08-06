@@ -14,10 +14,10 @@ Run Tests
 =========
 
 For every patch that is uploaded to the Gerrit review server, a number
-of tests are run automatically using Bamboo.
+of tests are run automatically using GitLab CI.
 
 .. hint::
-   For more in-depth information about how TYPO3 runs the automatic tests with Bamboo
+   For more in-depth information about how TYPO3 runs the automatic tests with GitLab CI
    see the series "Testing TYPO3's Core" on the TYPO3 Blog. You can
    find the links in this article:
    `Serious software testing: TYPO3 runs its 20,000th build!
@@ -30,7 +30,7 @@ Practical Considerations
 
 Running *all* tests takes a considerable amount of time on a standard development
 machine, so it is not recommended to run all tests on your local
-platform for every patch you wish to submit. That's what Bamboo is for.
+platform for every patch you wish to submit. That's what GitLab CI is for.
 
 You might however want to run specific tests, for example for the following
 use cases:
@@ -285,4 +285,4 @@ More information
 *  :ref:`t3coreapi:testing-writing-unit` in TYPO3 explained
 *  external: `Serious software testing: TYPO3 runs its 20,000th build!
    <https://typo3.com/blog/serious-software-testing-typo3-runs-its-20000th-build>`__ for more information
-   on how the automatic tests are run with Bamboo for every patchset that is uploaded for the core
+   on how the automatic tests are run with GitLab CI for every patchset that is uploaded for the core
