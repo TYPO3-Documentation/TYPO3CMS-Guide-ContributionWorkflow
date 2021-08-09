@@ -125,6 +125,9 @@ Recommended Plugins
   This will show you errors in your reStructuredText files (file ending .rst)
   when you are editing the core changelog or are updating the documentation
   for a system extension.
+* `PHPUnit Enhancement <https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement>`__
+  This helps with code-completion and navigation in combination with unit tests
+  and Prophecy (among other things).
 
 Optional Plugins
 ----------------
