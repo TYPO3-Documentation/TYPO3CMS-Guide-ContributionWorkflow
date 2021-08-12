@@ -54,7 +54,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    * Signup for a `typo3.org account <https://my.typo3.org/index.php?id=2>`__
    * Signup for `Slack <https://my.typo3.org/index.php?id=35>`__, join the
      `#typo3-cms-coredev` channel
-   * Log in to `Gerrit <https://review.typo3.org>`__, click on Settings and upload your
+   * Log in to `Gerrit <https://review.typo3.org>`__, click on `Settings <https://review.typo3.org/settings/#SSHKeys>`__ and upload your
      ssh key
 
 2. Setup your TYPO3 installation
