@@ -141,7 +141,7 @@ with t3 to avoid conflicts with already existing aliases:
 
 .. code-block:: bash
 
-   git config --global alias.t3clone 'clone git://github.com/typo3/typo3 .'
+   git config --global alias.t3clone 'clone git@github.com:typo3/typo3 .'
    git config --global alias.t3push 'push origin HEAD:refs/for/master'
    git config --global alias.t3push8 'push origin HEAD:refs/for/TYPO3_8-7'
 
@@ -171,7 +171,7 @@ Alternatively, manually add the aliases to your ~/.gitconfig:
       pushom  = push origin master
       resetom = reset --hard origin/master
 
-      t3clone = clone git://github.com/typo3/typo3 .
+      t3clone = clone git@github.com:typo3/typo3 .
       t3push  = push origin HEAD:refs/for/master
       t3push8 = push origin HEAD:refs/for/TYPO3_8-7
 

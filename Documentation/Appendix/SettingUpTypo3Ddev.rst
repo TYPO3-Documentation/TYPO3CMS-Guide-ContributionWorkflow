@@ -60,7 +60,7 @@ Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
 
    mkdir t3master
    cd t3master
-   git clone git://github.com/typo3/typo3 .
+   git clone git@github.com:typo3/typo3 .
 
 
 
