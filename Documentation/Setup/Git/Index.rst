@@ -25,7 +25,7 @@ Prerequisites
 * We expect you have a fully-fledged web development setup at hand. If you are not sure, though, :ref:`take a look here <prerequisites>`.
 * Make sure, you have cloned the TYPO3 source as described previously in :ref:`setup-typo3-git-clone`::
 
-      git clone git://github.com/typo3/typo3 .
+      git clone git@github.com:typo3/typo3 .
 
 
 
@@ -215,7 +215,7 @@ Show current configuration::
 The result should look like this::
 
    ...
-   remote.origin.url=git://github.com/typo3/typo3
+   remote.origin.url=git@github.com:typo3/typo3
    remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
    branch.master.remote=origin
    branch.master.merge=refs/heads/master

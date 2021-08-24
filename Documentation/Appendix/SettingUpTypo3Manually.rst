@@ -30,7 +30,7 @@ optionally :ref:`yarn-build`.
 
 ::
 
-   git clone git://github.com/typo3/typo3 .
+   git clone git@github.com:typo3/typo3 .
    composer install
 
 

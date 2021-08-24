@@ -83,7 +83,7 @@ Initial clone
 
 Right-click in the folder of your choice in the Windows Explorer and select from the context menu the option "Git clone...".
 
-* URL: git://github.com/typo3/typo3 .
+* URL: git@github.com:typo3/typo3 .
 
 * "Load Putty key": select your .ppk file
 

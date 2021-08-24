@@ -64,7 +64,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    Setup your TYPO3 installation usig the git cloned TYPO3 source::
 
       mkdir t3master;cd t3master
-      git clone git://github.com/typo3/typo3 .
+      git clone git@github.com:typo3/typo3 .
 
    etc.
 

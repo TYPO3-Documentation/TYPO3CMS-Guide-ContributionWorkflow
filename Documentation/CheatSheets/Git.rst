@@ -25,7 +25,7 @@ git clone
 
 Clone latest master into current directory::
 
-   git clone git://github.com/typo3/typo3 .
+   git clone git@github.com:typo3/typo3 .
 
 .. _cheat-sheet-git-setup:
 

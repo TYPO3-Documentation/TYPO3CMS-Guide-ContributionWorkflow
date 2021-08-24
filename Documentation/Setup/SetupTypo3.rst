@@ -26,9 +26,9 @@ Setup the TYPO3 installation
 git clone
 =========
 
-Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3:: 
+Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3::
 
-   git clone git://github.com/typo3/typo3 .
+   git clone git@github.com:typo3/typo3 .
 
 
 .. _git-guis:
@@ -68,7 +68,7 @@ see :ref:`composer-install`)
 
 Information about :ref:`setting up Composer <prerequisites-composer>` is found in previous chapter.
 
-Composer cannot detect the TYPO3 version of your cloned project because there is none. Before you run 
+Composer cannot detect the TYPO3 version of your cloned project because there is none. Before you run
 `composer install` you need to export the `COMPOSER_ROOT_VERSION environment variable <https://getcomposer.org/doc/03-cli.md#composer-root-version>`__.
 Here you need to set a full version string matching the TYPO3 version of your clone.
 
