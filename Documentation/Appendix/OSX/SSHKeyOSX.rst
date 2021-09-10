@@ -35,7 +35,7 @@ To generate SSH keys in Mac OS X, follow these steps:
 
 #. Enter the following command in the Terminal window::
 
-      ssh-keygen -t rsa -b 4096
+      ssh-keygen -t ed25519
 
    This starts the key generation process. When you execute this command, the ssh-keygen utility prompts you to indicate where to store the key.
 
@@ -51,8 +51,8 @@ After you confirm the passphrase, the system generates the key pair and you will
 
 .. code-block:: text
 
-   Your identification has been saved in /Users/yourmacusername/.ssh/id_rsa.
-   Your public key has been saved in /Users/yourmacusername/.ssh/id_rsa.pub.
+   Your identification has been saved in /Users/yourmacusername/.ssh/id_ed25519.
+   Your public key has been saved in /Users/yourmacusername/.ssh/id_ed25519.pub.
    The key fingerprint is:
    ae:89:72:0b:85:da:5a:f4:7c:1f:c2:43:fd:c6:44:38 yourmacusername@yourmac.local
    The key's randomart image is:
@@ -78,7 +78,7 @@ the public key you use belongs to your Gerrit_ account.
 Your public key is saved to a file called ``id_rsa.pub`` in the ``.ssh`` subdirectory of your home directory. You can copy
 it to your clipboard using the following command::
 
-   pbcopy < ~/.ssh/id_rsa.pub
+   pbcopy < ~/.ssh/id_ed25519.pub
 
 Now you can head over to Gerrit_, go to settings and paste your public key as described :ref:`here<GerritAccount>`.
 
