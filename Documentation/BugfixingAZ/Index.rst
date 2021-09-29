@@ -221,7 +221,15 @@ and setting up a working TYPO3 installation for core development, skip to number
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
    your new change in the **#typo3-cms-coredev** channel using the command::
 
-      review:show [ReviewNumber or URL]
+      [ReviewNumber]: [TITLE] | [URL]
+
+      // Example
+      71347: [BUGFIX] Add support for DateTimeImmutable in JsonView | https://review.typo3.org/c/Packages/TYPO3.CMS/+/71347
+
+   Use the copy button to get the command from Gerrit_:
+
+   .. image:: /Images/External/Forge/copy-slack-link.png
+      :class: with-shadow
 
    This is not something, you will do for every review. As a first contributor
    it is recommended to mention that you are new to the process.
