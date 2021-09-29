@@ -219,14 +219,8 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
-   your new change in the **#typo3-cms-coredev** channel using the command::
-
-      [ReviewNumber]: [TITLE] | [URL]
-
-      // Example
-      71347: [BUGFIX] Add support for DateTimeImmutable in JsonView | https://review.typo3.org/c/Packages/TYPO3.CMS/+/71347
-
-   Use the copy button to get the command from Gerrit_:
+   your new change in the **#typo3-cms-coredev** channel. You can get a preformatted
+   line to post in the channel by clicking the copy button of your change in Gerrit_.
 
    .. image:: /Images/External/Forge/copy-slack-link.png
       :class: with-shadow
