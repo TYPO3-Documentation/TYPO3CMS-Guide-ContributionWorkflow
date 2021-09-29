@@ -220,7 +220,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
    your new change in the **#typo3-cms-coredev** channel. You can get a preformatted
-   line to post in the channel by clicking the copy button of your change in Gerrit_.
+   line of your change to post in the channel by clicking the copy button next to the title in Gerrit_:
 
    .. image:: /Images/External/Forge/copy-slack-link.png
       :class: with-shadow
