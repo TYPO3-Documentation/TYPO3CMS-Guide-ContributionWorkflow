@@ -53,17 +53,6 @@ instructions.
    Composer and yarn can run inside of DDEV, so there is no need to set them up locally.
 
 
-Clone TYPO3
-===========
-
-Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
-
-   mkdir t3master
-   cd t3master
-   git clone git@github.com:typo3/typo3 .
-
-
-
 Configure DDEV
 ==============
 
