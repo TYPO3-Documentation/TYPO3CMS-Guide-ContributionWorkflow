@@ -219,9 +219,11 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
-   your new change in the **#typo3-cms-coredev** channel using the command::
+   your new change in the **#typo3-cms-coredev** channel. You can get a preformatted
+   line of your change to post in the channel by clicking the copy button next to the title in Gerrit_:
 
-      review:show [ReviewNumber or URL]
+   .. image:: /Images/External/Forge/copy-slack-link.png
+      :class: with-shadow
 
    This is not something, you will do for every review. As a first contributor
    it is recommended to mention that you are new to the process.
