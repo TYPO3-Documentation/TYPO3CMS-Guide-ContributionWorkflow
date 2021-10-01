@@ -18,7 +18,7 @@
 
 
 =======================================
-TYPO3 core contribution setup with DDEV
+TYPO3 Core contribution setup with DDEV
 =======================================
 
 `DDEV <https://ddev.readthedocs.io>`__ provides several pre-configured
