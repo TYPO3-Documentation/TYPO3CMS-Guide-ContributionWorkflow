@@ -17,9 +17,9 @@
    to install TYPO3 using Composer for a project.
 
 
-==========================
-Setting up TYPO3 with DDEV
-==========================
+=======================================
+TYPO3 Core contribution setup with DDEV
+=======================================
 
 `DDEV <https://ddev.readthedocs.io>`__ provides several pre-configured
 environments based on Docker.
