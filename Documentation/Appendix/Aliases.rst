@@ -89,7 +89,7 @@ Sample List of Aliases
    alias t3docrun='source <(docker run --rm t3docs/render-documentation show-shell-commands)'
 
    # build docs
-   alias t3docmake='dockrun_t3rdf makehtml'
+   alias t3docmake='dockrun_t3rd makehtml'
 
    # open generated docs in browser (uses t3open alias, see above)
    # - use xdg-open for Linux
