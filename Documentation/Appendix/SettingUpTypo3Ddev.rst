@@ -13,7 +13,7 @@
 .. warning::
 
    This guide explains the setup of TYPO3 for the core contribution with DDEV,
-   follow the :ref:`quick installation guide <t3install:install-via-composer>`
+   follow the :ref:`quick installation guide <t3install:install>`
    to install TYPO3 using Composer for a project.
 
 
