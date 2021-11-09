@@ -12,8 +12,8 @@
 
 .. warning::
 
-   This guide explains the setup of TYPO3 for the core contribution with DDEV,
-   follow the :ref:`quick installation guide <t3install:install>`
+   This guide explains the setup of TYPO3 for the core contribution with DDEV.
+   Follow the :ref:`quick installation guide <t3install:install>`
    to install TYPO3 using Composer for a project.
 
 
@@ -27,13 +27,13 @@ environments based on Docker.
 Here is a description of how you can use DDEV to setup a working TYPO3
 installation using the cloned master of the TYPO3 git repository.
 
-You don't need to have a Webserver or Database running on your system.
+You don't need to have a Webserver, a Database or PHP running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
 or Database running on your machine, make sure there are no conflicts.
 You can change the default ports DDEV uses (e.g. port 80 / 443 for Webserver)
-in `.ddev/config.yaml` before you start it.
+in :file:`.ddev/config.yaml` before you start it.
 
-You can watch a video tutorial about setting up TYPO3 with DDEV, or go through steps outlined below.
+You can watch a video tutorial about setting up TYPO3 with DDEV, or go through the steps outlined below.
 
 .. youtube:: HZVMPoI9SIk
 
@@ -83,7 +83,7 @@ DDEV should suggest the correct defaults and you just need to press ENTER::
    > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
 
 
-In order to be able to use Composer inside DDEV, edit the configuration file `.ddev/config.yaml`::
+In order to be able to use Composer inside DDEV, edit the configuration file :file:`.ddev/config.yaml` ::
 
    composer_version: "2"
 
@@ -102,7 +102,7 @@ DDEV should now show a URL under which the site can be reached::
    > Successfully started t3master
    > Project can be reached at http://t3master.ddev.site http://127.0.0.1:32773
 
-Ignore the warning about missing :file:`LocalConfiguration.php` for now, we will take
+Ignore the warning about missing :file:`LocalConfiguration.php` for now. We will take
 care of that below.
 
 .. _ddev-composer-install:
@@ -137,7 +137,7 @@ Let DDEV dump information::
 
    ddev describe
 
-You may need some of this later.
+You gives you informations about the project, the urls, phpMyAdmin, MailHog and the mysql database.
 
 FIRST_INSTALL
 =============
