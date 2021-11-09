@@ -137,7 +137,7 @@ Let DDEV dump information::
 
    ddev describe
 
-This shows informations about the project, its urls and the access to phpMyAdmin, MailHog and the mysql database.
+Displays information about the project, its URLs and access to phpMyAdmin, MailHog and the MySQL database.
 
 FIRST_INSTALL
 =============
