@@ -37,21 +37,21 @@ Apache Webserver
 
    sudo apt-get install apache2
    sudo a2enmod deflate rewrite headers mime expires
-  
 
 
-PHP 7.2
+
+PHP 7.4
 -------
 
 ::
 
-   sudo apt-get install libapache2-mod-php7.2 php7.2-cli \
-   php7.2-common php7.2-curl php7.2-gd php7.2-imap php7.2-intl \
-   php7.2-json php7.2-mbstring php7.2-mysql php7.2-opcache \
-   php7.2-readline php7.2-soap php7.2-xml php7.2-zip
+   sudo apt-get install libapache2-mod-php7.4 php7.4-cli \
+   php7.4-common php7.4-curl php7.4-gd php7.4-imap php7.4-intl \
+   php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache \
+   php7.4-readline php7.4-soap php7.4-xml php7.4-zip
 
 .. important::
-   Make sure you use the correct PHP version for your TYPO3 version. For the current master TYPO3 9, this is PHP 7.2.
+   Make sure you use the correct PHP version for your TYPO3 version. For the current master TYPO3 11 LTS, this is PHP 7.4 or PHP 8.0.
 
 Make some changes to php.ini and reload::
 
