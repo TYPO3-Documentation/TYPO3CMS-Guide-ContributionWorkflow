@@ -75,10 +75,10 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    More information: :ref:`Setting-up-your-Git-environment`
 
-   Setup name and email (same as you used for typo3.org), replace `"Your name"` and `"your-email@example.com"` here)::
+   Setup name and email (same as you used for typo3.org), replace `"Your name"` and `"your-email@example.org"` here)::
 
       git config user.name "Your Name"
-      git config user.email "your-email@example.com"
+      git config user.email "your-email@example.org"
 
 
    Setup autosetuprebase::

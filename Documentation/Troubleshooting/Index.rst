@@ -138,7 +138,7 @@ Git with the following command::
 
 If needed, change it with the following command::
 
-    git config --global user.email your-email@example.com
+    git config --global user.email your-email@example.org
 
 You may change the user/author of your last commit with::
 
