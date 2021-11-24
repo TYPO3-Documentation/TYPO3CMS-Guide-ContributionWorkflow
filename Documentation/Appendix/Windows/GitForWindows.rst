@@ -139,7 +139,7 @@ links. In the Git log you can now click directly to the issue in forge.
 
 .. image:: /Images/External/Tortoise/tortoise-bugtraq.png
 
-* Enter in the field "bugtraq.url" ``https://forge.typo3.org/issues/%BUGID%``
+* Enter in the field "bugtraq.url" :samp:`https://forge.typo3.org/issues/%BUGID%`
 * In the field "bugtraq.logregex" enter two lines:
 
 .. code-block:: text
