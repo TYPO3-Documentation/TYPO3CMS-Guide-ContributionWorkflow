@@ -215,7 +215,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
    for pushing to other branches.
 
-9. Optional: Use Botty on Slack and wait for reviews
+9. Optional: Advertise review on Slack channel
 
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
