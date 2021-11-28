@@ -81,7 +81,7 @@ Examples
 --------
 
 All examples expect to be executed from a git cloned working directory
-of master (as described in :ref:`setup`).
+of TYPO3 CMS **main** branch (as described in :ref:`setup`).
 
 .. note::
 

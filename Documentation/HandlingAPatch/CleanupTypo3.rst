@@ -16,7 +16,7 @@ Cleanup git repository
 
 Before :ref:`Cherry-picking a patch <cherry-pick-a-patch>` or starting a new patch::
 
-   git reset --hard origin/master
+   git reset --hard origin/main
    git pull
 
 

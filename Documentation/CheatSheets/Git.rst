@@ -23,7 +23,7 @@ The following commands assume you are in the working directory of the TYPO3 core
 git clone
 =========
 
-Clone latest master into current directory::
+Clone TYPO3 CMS Git repository into current directory::
 
    git clone git@github.com:typo3/typo3 .
 
@@ -39,9 +39,9 @@ Workflow - common commands
 
 For details see :ref:`Fixing-a-bug-A-Z`
 
-Reset repo to last remote commit in (remote) master::
+Reset repo to last remote commit in (remote) main branch::
 
-   git reset --hard origin/master && git pull origin master
+   git reset --hard origin/main && git pull origin main
 
 Stage and commit all changes::
 
@@ -56,7 +56,7 @@ Stage and commit all changes to already existing commit::
 
    git commit -a --amend
 
-Push changes to remote master on gerrit (default method)::
+Push changes to remote main branch on gerrit (default method)::
 
    git push
 
@@ -64,7 +64,7 @@ This assumes, you have correctly configured your remote as described in
 :ref:`git-setup-remote`. If not, you must explicitly push using the
 `refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__::
 
-   git push origin HEAD:refs/for/master
+   git push origin HEAD:refs/for/main
 
 .. note::
    Pushing to `refs/publish` is deprecated, we now push to `refs/for`.
@@ -76,7 +76,7 @@ Workflow - work in progress
 
 In case you want to push a "Work in progress", use the following instead::
 
-      git push origin HEAD:refs/for/master%wip
+      git push origin HEAD:refs/for/main%wip
 
 You can also configure Gerrit to always mark your pushes as WIP. In order to do this
 head over to https://review.typo3.org/settings/ and configure "Set new
@@ -103,13 +103,13 @@ Checkout 9.5 branch::
 
 
 .. important::
-   Pushing to a branch other than master only makes sense if the bug only
-   exists on that branch and does not exist on master. Backporting of a
+   Pushing to a branch other than main only makes sense if the bug only
+   exists on that branch and does not exist on main. Backporting of a
    fix to a branch is done by the core team member who merges the original
-   fix to the master branch.
+   fix to the main branch.
 
 
-Long story short: In most cases, **push to master**. The rest is being taken
+Long story short: In most cases, **push to main**. The rest is being taken
 care of by core team members!
 
 Push 10.4 branch::
@@ -135,7 +135,7 @@ Example commit message for a bugfix:
    Description
 
    Resolves: #12345
-   Releases: master, 10.4
+   Releases: main, 10.4
 
 Other keywords:
 

@@ -162,16 +162,16 @@ Click the "Push" button to open the push dialog.
 
 .. image:: /Images/External/SourceTree/7_Win_SourceTree_Push_RefsForMaster.png
 
-Check the checkbox in front of your feature branch. As remote branch add "refs/for/master" - which will create a new patchset
-for master. If you want to create patches for older branches use 'refs/for/<branchName>', for example 'refs/for/TYPO3_6-2'.
-Be aware that you have to fix a bug in master first before it can go to older branches.
+Check the checkbox in front of your feature branch. As remote branch add "refs/for/main" - which will create a new patchset
+for main. If you want to create patches for older branches use 'refs/for/<branchName>', for example 'refs/for/TYPO3_6-2'.
+Be aware that you have to fix a bug in the main branch first before it can go to older branches.
 
 Now click ok. You should get a Gerrit link to your new change in the resulting output.
 
 Cleaning up
 -----------
 
-To get back to master just click on it at the "Branches" section. If you want to delete your feature branch,
+To get back to the main branch just click on it at the "Branches" section. If you want to delete your feature branch,
 right click on it and choose "Delete".
 
 .. image:: /Images/External/SourceTree/8_Win_SourceTree_CheckoutMaster.png

@@ -56,4 +56,4 @@ This chapter handles improving an existing patch. For creating a new patch, see 
    Once you are satisfied, push your improved Patch Set to Gerrit::
 
 
-      git push origin HEAD:refs/for/master
+      git push origin HEAD:refs/for/main

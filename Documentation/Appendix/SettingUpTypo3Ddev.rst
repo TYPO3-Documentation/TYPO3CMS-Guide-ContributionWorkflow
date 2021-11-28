@@ -25,7 +25,7 @@ TYPO3 Core contribution setup with DDEV
 environments based on Docker.
 
 Here is a description of how you can use DDEV to setup a working TYPO3
-installation using the cloned master of the TYPO3 git repository.
+installation using the cloned TYPO3 CMS Git repository.
 
 You don't need to have a Webserver, a Database or PHP running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
@@ -58,8 +58,8 @@ Clone TYPO3
 
 Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
 
-   mkdir t3master
-   cd t3master
+   mkdir t3coredev
+   cd t3coredev
    git clone git@github.com:typo3/typo3 .
 
 
@@ -67,7 +67,7 @@ Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
 Configure DDEV
 ==============
 
-For the master branch DDEV v1.16.5 or later is suggested to have the correct setup included.
+For the TYPO3 CMS core latest (main branch) DDEV v1.16.5 or later is suggested to have the correct setup included
 
 ::
 
@@ -75,11 +75,11 @@ For the master branch DDEV v1.16.5 or later is suggested to have the correct set
 
 DDEV should suggest the correct defaults and you just need to press ENTER::
 
-   > Project name (t3master):
+   > Project name (t3coredev):
 
    > Docroot Location (current directory):
 
-   > Found a typo3 codebase at /var/www/t3master.
+   > Found a typo3 codebase at /var/www/t3coredev.
    > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
 
 
@@ -94,13 +94,13 @@ Start DDEV
 ::
 
    ddev start
-   
+
 DDEV should now show a URL under which the site can be reached::
 
-   > TYPO3 does not seem to have been set up yet, missing LocalConfiguration.php (/var/www/t3master/typo3conf/LocalConfiguration.php)
+   > TYPO3 does not seem to have been set up yet, missing LocalConfiguration.php (/var/www/t3coredev/typo3conf/LocalConfiguration.php)
    > Generating AdditionalConfiguration.php file for database connection.
-   > Successfully started t3master
-   > Project can be reached at http://t3master.ddev.site http://127.0.0.1:32773
+   > Successfully started t3coredev
+   > Project can be reached at http://t3coredev.ddev.site http://127.0.0.1:32773
 
 Ignore the warning about missing :file:`LocalConfiguration.php` for now. We will take
 care of that below.
@@ -157,7 +157,7 @@ You will now be guided through the basic installation steps by TYPO3.
 .. tip::
 
    If you use the HTTPS url you may get a "Privacy error" or something similar from your browser.
-   You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to t3master.ddev.local
+   You will need to get your browser to ignore this warning (e.g. `Advanced:Proceed to t3coredev.ddev.local
    (unsafe)`, depends on browser).
 
    The warning is due to the fact that self-signed certificates are being used.
@@ -175,7 +175,7 @@ Shutdown DDEV
 When you are done you can do::
 
    ddev stop
-   
+
 For a list of commands see::
 
    ddev help

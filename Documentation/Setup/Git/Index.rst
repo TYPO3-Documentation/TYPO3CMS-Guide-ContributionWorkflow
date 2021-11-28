@@ -177,7 +177,7 @@ This will instruct Git to push using the
 `refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__
 when you do `git push`::
 
-   git config remote.origin.push +refs/heads/master:refs/for/master
+   git config remote.origin.push +refs/heads/main:refs/for/main
 
 
 .. index::
@@ -203,7 +203,7 @@ First, create a file, for example in :file:`~/.gitmessage.txt`.
    [BUGFIX|TASK|FEATURE]
 
    Resolves: #
-   Releases: master, 10.4
+   Releases: main, 10.4
 
 Make Git use this file as a template for the commit message::
 
@@ -230,8 +230,8 @@ The result should look like this::
    ...
    remote.origin.url=git@github.com:typo3/typo3
    remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-   branch.master.remote=origin
-   branch.master.merge=refs/heads/master
+   branch.main.remote=origin
+   branch.main.merge=refs/heads/main
    branch.autosetuprebase=remote
    url.ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
    commit.template=/path/to/.gitmessage.txt
@@ -248,9 +248,9 @@ Or, compare the :file:`.git/config` file inside the repository::
         url = git@github.com:typo3/typo3
         fetch = +refs/heads/*:refs/remotes/origin/*
         pushurl = ssh://<TYPO3_USER_NAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-    [branch "master"]
+    [branch "main"]
        remote = origin
-       merge = refs/heads/master
+       merge = refs/heads/main
     [branch]
        autosetuprebase = remote
     [commit]

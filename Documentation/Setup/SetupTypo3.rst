@@ -26,7 +26,7 @@ Setup the TYPO3 installation
 git clone
 =========
 
-Switch into your **empty** htdocs directory of choice and clone a fresh master of TYPO3::
+Switch into your **empty** htdocs directory of choice and clone the TYPO3 CMS core repository::
 
    git clone git@github.com:typo3/typo3 .
 
@@ -77,7 +77,7 @@ Example::
    # cd <cloned project>
    export COMPOSER_ROOT_VERSION=11.0.0
 
-Run composer install in the same directory you cloned the master repository to.
+Run composer install in the same directory you cloned the TYPO3 CMS core repository to.
 This may take several minutes::
 
    # cd <cloned project>

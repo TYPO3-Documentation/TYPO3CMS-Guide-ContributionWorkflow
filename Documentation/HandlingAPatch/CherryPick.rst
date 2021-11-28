@@ -53,7 +53,7 @@ to cherry-pick it from the review system into your local git repository.
 
    .. code-block:: bash
 
-      git reset --hard origin/master
+      git reset --hard origin/main
       git pull
 
 5. Execute the command (git cherry-pick)

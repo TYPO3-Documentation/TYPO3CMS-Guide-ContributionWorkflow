@@ -132,9 +132,9 @@ Run these commands in your terminal once, it will add the aliases to your global
    # Create an alias 'alias' to list all git aliases (in global config)
    git config --global alias.alias "config --get-regexp ^alias\."
 
-   git config --global alias.pullom 'pull origin master'
-   git config --global alias.pushom 'push origin master'
-   git config --global alias.resetom 'reset --hard origin/master'
+   git config --global alias.pullom 'pull origin main'
+   git config --global alias.pushom 'push origin main'
+   git config --global alias.resetom 'reset --hard origin/main'
 
 These are aliases, that may be useful for TYPO3 core contribution workflow. We start all commands
 with t3 to avoid conflicts with already existing aliases:
@@ -142,7 +142,7 @@ with t3 to avoid conflicts with already existing aliases:
 .. code-block:: bash
 
    git config --global alias.t3clone 'clone git@github.com:typo3/typo3 .'
-   git config --global alias.t3push 'push origin HEAD:refs/for/master'
+   git config --global alias.t3push 'push origin HEAD:refs/for/main'
    git config --global alias.t3push8 'push origin HEAD:refs/for/TYPO3_8-7'
 
 
@@ -167,12 +167,12 @@ Alternatively, manually add the aliases to your ~/.gitconfig:
 
       alias = config --get-regexp ^alias\\.
 
-      pullom  = pull origin master
-      pushom  = push origin master
-      resetom = reset --hard origin/master
+      pullom  = pull origin main
+      pushom  = push origin main
+      resetom = reset --hard origin/main
 
       t3clone = clone git@github.com:typo3/typo3 .
-      t3push  = push origin HEAD:refs/for/master
+      t3push  = push origin HEAD:refs/for/main
       t3push8 = push origin HEAD:refs/for/TYPO3_8-7
 
 Additional Information
