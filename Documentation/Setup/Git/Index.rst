@@ -19,13 +19,14 @@ Git Setup
 .. note::
 
    If you are working on a previously cloned, older repository, the TYPO3
-   repository URL changed to GitHub. Existing repositories can be adapted
-   like this:
+   repository URL changed to GitHub **and the branch "master" changed to "main".**
+   Existing repositories can be adapted like this:
 
    .. code-block:: bash
 
       $ git remote set-url origin git://github.com/typo3/typo3
       $ git config remote.origin.pushurl "ssh://<your-username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
+      $ git config remote.origin.push +refs/heads/main:refs/for/main
 
    See `Renaming the TYPO3 GitHub Repository <https://typo3.org/article/renaming-the-typo3-github-repository>`__.
 

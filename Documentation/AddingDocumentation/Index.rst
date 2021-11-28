@@ -75,11 +75,9 @@ name as suggested in the generator.
 Types of Changes
 ----------------
 
-.. todo:: Should the path typo3/sysext/core/Documentation/Changelog/master/ also be renamed to main?
-
 There are four different types of changes
 which have to follow a certain format and **always**
-need to go into :file:`typo3/sysext/core/Documentation/Changelog/master/`.
+need to go into :file:`typo3/sysext/core/Documentation/Changelog/<release>/`.
 
 Choose one which fits your patch:
 
