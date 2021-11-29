@@ -63,7 +63,7 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    Setup your TYPO3 installation usig the git cloned TYPO3 source::
 
-      mkdir t3master;cd t3master
+      mkdir t3coredev;cd t3coredev
       git clone git@github.com:typo3/typo3 .
 
    etc.
@@ -92,7 +92,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
 
       git config remote.origin.pushurl ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-      git config remote.origin.push +refs/heads/master:refs/for/master
+      git config remote.origin.push +refs/heads/main:refs/for/main
 
 4. Setup your IDE to adhere to the coding guidelines
 
@@ -150,9 +150,9 @@ and setting up a working TYPO3 installation for core development, skip to number
       Some descriptions with line length of max. 72 characters
 
       Resolves: #12346
-      Releases: master, 10.4
+      Releases: main, 10.4
 
-   Only create one commit. Do not create a branch. Work on master.
+   Only create one commit. Do not create a branch. Work on main.
 
    .. code-block:: bash
 
@@ -182,7 +182,7 @@ and setting up a working TYPO3 installation for core development, skip to number
 
    To submit the patch to Gerrit, issue the following command::
 
-      git push origin HEAD:refs/for/master
+      git push origin HEAD:refs/for/main
 
    If you have setup the default as described in :ref:`git-setup-remote`
    it is sufficient to use::

@@ -112,7 +112,7 @@ Otherwise throw the changes away, to bring your repository back to a clean state
 
 .. code-block:: bash
 
-   git reset --hard origin/master
+   git reset --hard origin/main
 
 .. index::
    single: Review; Vote

@@ -186,7 +186,7 @@ However, git status will show you:
    :linenos:
 
    $ git status
-   $ > On branch master
+   $ > On branch main
    $ > You are currently cherry-picking commit 805a207.
    $ > (fix conflicts and run "git cherry-pick --continue")
    $ > (use "git cherry-pick --abort" to cancel the cherry-pick operation)

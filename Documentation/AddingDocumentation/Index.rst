@@ -42,7 +42,7 @@ for some examples.
 
 Every file may optionally contain tags, but it must contain at least a
 NotScanned, PartiallyScanned or FullyScanned tag for the extension scanner.
-See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more 
+See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
 information.
 
 If you use the Forger reST File Generator, it will take care of this.
@@ -77,7 +77,7 @@ Types of Changes
 
 There are four different types of changes
 which have to follow a certain format and **always**
-need to go into :file:`typo3/sysext/core/Documentation/Changelog/master/`.
+need to go into :file:`typo3/sysext/core/Documentation/Changelog/<release>/`.
 
 Choose one which fits your patch:
 
@@ -217,25 +217,25 @@ in :ref:`h2document:rendering-docs-quickstart`.
 #. This is a combined command that does docker pull, docker run, and makes some shell commands available in current terminal!
 #. This runs the build command, it will create Documentation-GENERATED-temp in current directory
 #. `open` will run a URL - this should work on MacOS
-#. If you use Linux, use `xdg-open`, 
-   if this does not work, just open the URL in quotes in your browser. 
-#. cd - goes back to previous directory   
+#. If you use Linux, use `xdg-open`,
+   if this does not work, just open the URL in quotes in your browser.
+#. cd - goes back to previous directory
 
 .. tip::
 
    The first time you run this, it will take long. :code:`docker pull` will download
    the Docker image. The next time, it will be faster, because the image does
    not have to be downloaded and `dockrun_t3rd` will not build everything, it will only
-   build changed files. 
+   build changed files.
 
 .. important::
 
-   If you switch branches, you should rebuild everything. You can either remove the folder 
-   :file:`Documentation-GENERATED-temp/Cache` and all its contents or run `dockrun_t3rd 
+   If you switch branches, you should rebuild everything. You can either remove the folder
+   :file:`Documentation-GENERATED-temp/Cache` and all its contents or run `dockrun_t3rd
    makehtml-no-cache` which has the same effect.
 
 Make things easier for yourself by adding these commands as aliases or adding
-them as commands in your IDE / editor. 
+them as commands in your IDE / editor.
 
 .. _documentation-main:
 

@@ -47,7 +47,7 @@ EditorConfig
 ------------
 
 Please note that there is an
-`.editorconfig <https://github.com/typo3/typo3/blob/master/.editorconfig>`__
+`.editorconfig <https://github.com/typo3/typo3/blob/main/.editorconfig>`__
 file in the TYPO3 core repository.
 See http://EditorConfig.org for more information. Use the `EditorConfig plugin
 <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__ for PhpStorm.
@@ -117,7 +117,7 @@ Recommended Plugins
   the expected return type is determined from the first parameter
   passed to the function. The configuration file for this plugin is
   `dynamicReturnTypeMeta.json
-  <https://github.com/typo3/typo3/blob/master/dynamicReturnTypeMeta.json>`__
+  <https://github.com/typo3/typo3/blob/main/dynamicReturnTypeMeta.json>`__
 * `Php Inspections (EA Extended)
   <https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended->`__ :
   Static Code Analysis tool for PHP

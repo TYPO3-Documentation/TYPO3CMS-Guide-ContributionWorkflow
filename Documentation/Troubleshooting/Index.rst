@@ -32,7 +32,7 @@ Permission Denied
 
 .. code-block:: bash
 
-    $ git push origin HEAD:refs/for/master
+    $ git push origin HEAD:refs/for/main
     Permission denied (publickey).
     fatal: The remote end hung up unexpectedly
 
@@ -46,7 +46,7 @@ If this error happens, double check if you are
 
 The following push command (with `-v`) shows you the push URL (which contain review.typo3.org)::
 
-    $ git push origin HEAD:refs/for/master -v
+    $ git push origin HEAD:refs/for/main -v
     Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
     Permission denied (publickey).
     fatal: The remote end hung up unexpectedly
@@ -108,12 +108,12 @@ Push: invalid committer
 
 ::
 
-    $ git push -v origin HEAD:refs/for/master
+    $ git push -v origin HEAD:refs/for/main
     Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
     remote: ERROR:  https://review.typo3.org/#/settings/contact
     remote:
     To ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-    ! [remote rejected] HEAD -> refs/for/master (invalid committer)
+    ! [remote rejected] HEAD -> refs/for/main (invalid committer)
     error: failed to push some refs to 'ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git'
 
 
@@ -163,7 +163,7 @@ Push: prohibited by gerrit
 
 If Gerrit rejects your push with::
 
-    [remote rejected] master -> master (prohibited by gerrit)
+    [remote rejected] main -> main (prohibited by gerrit)
 
 you are likely trying to do a simple `git push`. However, as Gerrit prohibits
 directly pushing to the target branches, you have to use this lengthy command::
@@ -173,7 +173,7 @@ directly pushing to the target branches, you have to use this lengthy command::
 
 For example::
 
-    git push origin HEAD:refs/for/master
+    git push origin HEAD:refs/for/main
 
 
 Push: Invalid Key Format

@@ -128,7 +128,7 @@ Push to Gerrit
 In the Git Bash window, enter the following commands to set that you push to Gerrit instead of the TYPO3 repository directly.
 
 git config remote.origin.pushurl "ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
-git config remote.origin.push +refs/heads/master:refs/for/master
+git config remote.origin.push +refs/heads/main:refs/for/main
 git config branch.autosetuprebase remote
 
 Links to bugtracker
@@ -184,9 +184,9 @@ Now we can do the testing and register the votes in Gerrit.
 Cleaning up
 -----------
 
-Because there is a separate branch for this patch the only thing that is needed is to checkout master. This can be done on the
-command line ('git checkout master') or using TortoiseGit by using from the context menu "TortoiseGit > Switch/Checkout...".
-Select the branch 'master' from the dropdown and click OK.
+Because there is a separate branch for this patch the only thing that is needed is to checkout the main branch. This can be done on the
+command line ('git checkout main') or using TortoiseGit by using from the context menu "TortoiseGit > Switch/Checkout...".
+Select the **main** branch from the dropdown and click OK.
 
 Starting a new patch
 ====================
@@ -206,7 +206,7 @@ From the context menu select "TortoiseGit > Push".
 .. image:: /Images/External/Tortoise/tortoise-push.png
 
 In the field "Local" there is already the name of your branch
-In the field "Remote" make sure there is the value 'refs/for/master' if you push for current master. If you push for older
+In the field "Remote" make sure there is the value 'refs/for/main' if you push for current main. If you push for older
 branches the name could be 'refs/for/TYPO3_6-2' and so on.
 "Destination > Remote" should be 'origin'.
 Make sure the option "Autoload Putty Key" is enabled.

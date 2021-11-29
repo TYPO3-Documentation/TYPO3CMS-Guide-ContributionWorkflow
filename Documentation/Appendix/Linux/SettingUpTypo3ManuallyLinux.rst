@@ -17,7 +17,7 @@ Prerequisites
 
 You will need a Webserver, PHP and database on your system. Look at the page `System requirements
 <https://typo3.org/typo3-cms/overview/requirements/>`__ and check out the specific system
-requirements for the current master branch on the `Download TYPO3 <https://typo3.org/download/>`__
+requirements for the current main branch on the `Download TYPO3 <https://typo3.org/download/>`__
 page.
 
 Just as a minimal example, this is a list of packages you might want to
@@ -51,7 +51,7 @@ PHP 7.4
    php7.4-readline php7.4-soap php7.4-xml php7.4-zip
 
 .. important::
-   Make sure you use the correct PHP version for your TYPO3 version. For the current master TYPO3 11 LTS, this is PHP 7.4 or PHP 8.0.
+   Make sure you use the correct PHP version for your TYPO3 version.
 
 Make some changes to php.ini and reload::
 

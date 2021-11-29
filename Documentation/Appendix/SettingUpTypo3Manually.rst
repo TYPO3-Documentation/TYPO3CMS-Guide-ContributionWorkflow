@@ -13,7 +13,7 @@ Prerequisites
 
 You will need a Webserver, PHP and database on your system. Look at the page `System requirements
 <https://typo3.org/typo3-cms/overview/requirements/>`__ and also check out the specific system
-requirements for the current master branch on the `Download TYPO3 <https://typo3.org/download/>`__
+requirements for the current main branch on the `Download TYPO3 <https://typo3.org/download/>`__
 page.
 
 You will need to set up the prerequisites for your operating system. Look at the following for guidance:

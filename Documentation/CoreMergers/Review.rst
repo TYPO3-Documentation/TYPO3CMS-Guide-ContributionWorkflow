@@ -44,7 +44,7 @@ Consider these rules when comparing patches:
 
 *  If the patch was re-pushed due to the comments, check the diff between the
    versions of the patch.
-*  If the patch needed to be rebased onto current master, the change set might
+*  If the patch needed to be rebased onto current main, the change set might
    contain the changes due to rebasing. So better check the diff between base
    and most recent version in this case.
 

@@ -56,7 +56,7 @@ this is what we mean when we talk about rebase.
 Do not let information on the Web confuse you: Usually
 it is assumed that someone is working on a different branch
 (feature branch). In our commit model, we always work on one
-branch (master) and we only create one commit for a change.
+branch (main) and we only create one commit for a change.
 
 .. _when-should-you-rebase:
 
@@ -96,7 +96,7 @@ This is only possible, if there are not yet any merge conflicts.
 **Do it:**
 
 Load your patch in the browser, click on "Rebase" and then
-"Rebase on top of the master branch".
+"Rebase on top of the main branch".
 
 
 
@@ -118,7 +118,7 @@ directory, meaning you committed your changes.
 
 ::
 
-   git pull --rebase origin master
+   git pull --rebase origin main
 
 (which is the pull command you already know, with the
 additional option `--rebase`.)
@@ -128,16 +128,16 @@ or
 ::
 
    git fetch
-   git rebase origin/master
+   git rebase origin/main
 
 **What does it do:**
 
 From the manpage: "... rebase the current branch on top of the
-upstream branch after fetching." (upstream is origin/master)
+upstream branch after fetching." (upstream is origin/main)
 
 Remember, git pull (internally) does a `git fetch` and then `git merge`.
 With this command, git does a `git fetch` and then a `git rebase`
-using the upstream branch (latest master branch).
+using the upstream branch (latest main branch).
 
 **More information:**
 
