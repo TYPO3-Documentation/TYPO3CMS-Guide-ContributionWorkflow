@@ -9,7 +9,7 @@
 #    docker-compose run --rm howto
 #
 # More information:
-#   https://github.com/t3docs/docker-render-documentation/blob/master/README.rst
+#   https://github.com/t3docs/docker-render-documentation/blob/main/README.rst
 #
 version: '2'
 services:
