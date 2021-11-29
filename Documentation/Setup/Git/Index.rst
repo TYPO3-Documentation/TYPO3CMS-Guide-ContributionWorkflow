@@ -21,32 +21,34 @@ Git Setup
    If you are working on a previously cloned, older repository, the TYPO3
    repository URL changed to GitHub **and the branch "master" changed to "main".**
    Existing repositories can be adapted like this:
-   
+
    To switch from master to main:
 
    .. code-block:: bash
 
-       # rename current master branch to main
+       # Make sure that git pull loads from the "main" branch
+       git branch --set-upstream-to origin/main
+
+       # Rename your current "master" branch locally to "main" to match TYPO3's naming scheme
        git branch -m master main
 
-       # make refs/for/main the default when using git push
-       git config remote.origin.push +refs/heads/main:refs/for/main
+   Please also adapt your :ref:`commit message template <committemplate>`, if configured.
 
    If not using the GitHub remote yet, also change:
-   
+
    .. code-block:: bash
-   
+
        # set remote url for "origin"
        git remote set-url origin git://github.com/typo3/typo3
        # set push URL to gerrit (this has not changed)
        git config remote.origin.pushurl "ssh://<your-username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
 
-   
-   See 
-   
+
+   See
+
    * `TYPO3 Core Development to Change Branch Name <https://typo3.org/article/typo3-core-development-to-change-branch-name>`__ (November 28, 2021)
    * `Renaming the TYPO3 GitHub Repository <https://typo3.org/article/renaming-the-typo3-github-repository>`__. (July 6, 2021)
-    
+
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
