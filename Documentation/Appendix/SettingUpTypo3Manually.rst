@@ -38,7 +38,7 @@ optionally :ref:`yarn-build`.
 Create the database
 ===================
 
-We are assuming your are using MySQL 8.0 and the database should be called t3coredev and you will
+We are assuming you are using MySQL 8.0 and the database should be called t3coredev and you will
 access it with username `typo3` and password `somepassword` from localhost.
 
 ::
