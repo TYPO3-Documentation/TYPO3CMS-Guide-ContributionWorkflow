@@ -87,9 +87,9 @@ Edit configuration
 
 Edit the configuration file :file:`.ddev/config.yaml`.
 
-Set correct PHP version for latest "main" development branch::
+Set correct PHP version, for example::
 
-   php_version: "8.0"
+   php_version: "8.1"
 
 
 Start DDEV
