@@ -87,11 +87,6 @@ Edit configuration
 
 Edit the configuration file :file:`.ddev/config.yaml`.
 
-In order to be able to use Composer inside DDEV:: 
-
-   composer_version: "2"
-
-
 Set correct PHP version for latest "main" development branch::
 
    php_version: "8.0"
