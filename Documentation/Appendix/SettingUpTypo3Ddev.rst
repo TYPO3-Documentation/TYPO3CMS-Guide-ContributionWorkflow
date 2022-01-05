@@ -82,10 +82,14 @@ DDEV should suggest the correct defaults and you just need to press ENTER::
    > Found a typo3 codebase at /var/www/t3coredev.
    > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
 
+Edit configuration
+==================
 
-In order to be able to use Composer inside DDEV, edit the configuration file :file:`.ddev/config.yaml` ::
+Edit the configuration file :file:`.ddev/config.yaml`.
 
-   composer_version: "2"
+Set correct PHP version, for example::
+
+   php_version: "8.1"
 
 
 Start DDEV
