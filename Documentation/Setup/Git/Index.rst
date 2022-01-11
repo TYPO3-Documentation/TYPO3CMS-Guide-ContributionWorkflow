@@ -39,7 +39,7 @@ Git Setup
    .. code-block:: bash
 
        # set remote url for "origin"
-       git remote set-url origin git://github.com/typo3/typo3
+       git remote set-url origin https://github.com/typo3/typo3.git
        # set push URL to gerrit (this has not changed)
        git config remote.origin.pushurl "ssh://<your-username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
 
