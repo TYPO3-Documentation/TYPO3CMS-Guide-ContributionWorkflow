@@ -254,7 +254,7 @@ The result should look like this::
    branch.main.remote=origin
    branch.main.merge=refs/heads/main
    branch.autosetuprebase=remote
-   url.ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
+   remote.origin.pushurl=ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
    commit.template=/path/to/.gitmessage.txt
    ...
 
