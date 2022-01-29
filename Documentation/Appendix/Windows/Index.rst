@@ -9,4 +9,6 @@ Microsoft Windows help
    :glob:
    :titlesonly:
 
-   *
+   SSHGitWindows
+   CloneWithSourcetree
+   Troubleshooting
