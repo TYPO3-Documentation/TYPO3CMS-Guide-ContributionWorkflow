@@ -12,14 +12,14 @@ SSH and Git tools on Windows
 
    This guide refers to Windows 10 1803 and similarly featured Windows Server products.
 
-On Windows you have two possibities how to use Git:
+On Windows you have two different ways to use Git:
 
-  * WSL2 - The Windows Subsystem for Linux (2nd edition) is a native Linux inside/parallel to your Windows
+  * WSL2 - The Windows Subsystem for Linux (2nd edition) is a native Linux environment that runs alongside Windows
   * Git for Windows - The native Git version for Linux
 
-As Git requires SSH tools in order to talk to repositores via SSH you have these options:
+As Git requires SSH tools in order to talk to repositories via SSH you have two options:
 
-  * WSL2 - SSH is available within the WSL distros by default
+  * WSL2 - SSH is available within the WSL distributions by default
   * Git for Windows - You may either use the Windows native tools (see below) or use those shipped with Git for Windows.
 
 Installing native SSH tools
@@ -79,11 +79,11 @@ Better make sure your editor is set to use LF while contributing to TYPO3.
 
 .. image:: /Images/External/GitSetup/git-setup-9.jpg
 
-Select the terminal of your choice. MinTTY is a good choice, because it's mostly what you would exect from a terminal.
+Select the terminal of your choice. MinTTY is a good choice, because it's mostly what you would expect from a terminal.
 
 .. image:: /Images/External/GitSetup/git-setup-10.jpg
 
-Choosing "Rebase" is a rather save default setting. It makes sure that your commits are placed on top of whatever you pull in from the remote.
+Choosing "Rebase" is recommended. It makes sure that your commits are placed on top of whatever you pull in from the remote.
 If conflicts occur you have to solve them in your commit, contrary to a merge commit.
 This is a good option for TYPO3 development, but you may want to adjust this for other projects. It can be configured per repository, this is just the global default.
 
