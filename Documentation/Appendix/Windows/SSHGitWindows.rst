@@ -83,7 +83,7 @@ Select the terminal of your choice. MinTTY is a good choice, because it's mostly
 
 .. image:: /Images/External/GitSetup/git-setup-10.jpg
 
-Choosing "Rebase" is recommended. It makes sure that your commits are placed on top of whatever you pull in from the remote.
+Choosing "Rebase" is a safe default setting to start with. It makes sure that your commits are placed on top of whatever you pull in from the remote.
 If conflicts occur you have to solve them in your commit, contrary to a merge commit.
 This is a good option for TYPO3 development, but you may want to adjust this for other projects. It can be configured per repository, this is just the global default.
 
