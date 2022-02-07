@@ -43,8 +43,7 @@ or the short form: **be nice, be helpful!**
 Botty on Slack
 ~~~~~~~~~~~~~~
 
-Also checkout the help page on `"Botty" <https://wiki.typo3.org/T3Bot>`__, the TYPO3 slack bot. We will show you
-some of its commands later in this manual.
+Also the TYPO3 slack bot. We will show you some of its commands later in this manual.
 
 You cannot use Botty in your private channel or in a direct messaging channel with someone else. Botty will
 only be available in a public channel, to which it has been invited (which is the case in #typo3-cms-coredev).
