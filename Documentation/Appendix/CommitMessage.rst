@@ -72,7 +72,7 @@ Possible keywords are:
    the "main" branch of TYPO3 CMS, because no new features are allowed in older
    branches. Exceptions to this have to be discussed on a case-to-case basis with
    the designated release managers. Features have to be documented in the
-   See :ref:`changelog <changelog>`.
+   :ref:`changelog <changelog>`.
 
 `[DOCS]`
    This tag is used for changes regarding the documentation.
