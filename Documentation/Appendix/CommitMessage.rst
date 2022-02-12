@@ -71,9 +71,8 @@ Possible keywords are:
    feature, but it could also be removed. Features may exclusively be targeted for
    the "main" branch of TYPO3 CMS, because no new features are allowed in older
    branches. Exceptions to this have to be discussed on a case-to-case basis with
-   the designated release managers. Features have to be documented according to
-   `TYPO3 CMS Important Changes Documentation HowTo
-   <https://wiki.typo3.org/TYPO3_CMS_Important_Changes_Documentation_HowTo>`_ .
+   the designated release managers. Features have to be documented in the
+   :ref:`changelog <changelog>`.
 
 `[DOCS]`
    This tag is used for changes regarding the documentation.
@@ -87,8 +86,7 @@ Additionally other flags  **should be added** under certain circumstances:
    Breaking change. After this patch, something works different than before
    and the user / admin / extension developer will have to change something. Has to
    be  **documented** accordingly and should only be targeted for the main branch.
-   See `TYPO3 CMS Important Changes Documentation HowTo
-   <https://wiki.typo3.org/TYPO3_CMS_Important_Changes_Documentation_HowTo>`_.
+   See :ref:`Editing the changelog <changelog>`.
 
 .. important::
 
