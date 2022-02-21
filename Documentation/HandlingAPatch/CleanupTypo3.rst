@@ -31,6 +31,17 @@ cleanup your TYPO3 installation.
 It depends on the files that have changed, what you need to execute. In
 any case or if in doubt, you can safely perform all steps.
 
+**Flush the cache**:
+
+.. code-block:: shell
+   
+   bin/typo3 cache:flush
+   
+Or via the install tool
+
+.. image:: /Images/ManualScreenshots/flush_cache.svg
+   :class: with-shadow
+
 **Changes in composer.json**::
 
    composer install
@@ -46,11 +57,4 @@ Delete browser cache or
 Maintenance: Analyze Database Structure, Apply selected changes.
 
 .. image:: /Images/ManualScreenshots/analyze.svg
-   :class: with-shadow
-
-**In any case**:
-
-Maintenance: Flush TYPO3 and PHP Cache
-
-.. image:: /Images/ManualScreenshots/flush_cache.svg
    :class: with-shadow
