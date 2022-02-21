@@ -35,7 +35,7 @@ any case or if in doubt, you can safely perform all steps.
 
 .. code-block:: shell
    
-   typo3/sysext/core/bin/typo3 cache:flush
+   bin/typo3 cache:flush
    
 Or via the install tool
 
