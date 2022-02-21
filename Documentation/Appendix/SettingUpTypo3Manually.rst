@@ -38,14 +38,18 @@ optionally :ref:`yarn-build`.
 Create the database
 ===================
 
-We are assuming, the database should be called t3coredev and you will
+We are assuming you are using MySQL 8.0 and the database should be called t3coredev and you will
 access it with username `typo3` and password `somepassword` from localhost.
 
 ::
 
-   mysql> CREATE DATABASE t3coredev CHARACTER SET utf8 COLLATE utf8_general_ci;
+   mysql> CREATE DATABASE t3coredev CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
    mysql> CREATE USER `typo3`@`localhost` identified by `somepassword`;
    mysql> GRANT ALL ON t3coredev.* TO `typo3`@`localhost`;
+
+.. note::
+
+   For MySQL versions lower than 8.0 or MariaDB use the collation utf8mb4_general_ci.
 
 Create FIRST_INSTALL
 ====================
