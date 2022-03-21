@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. index::
    single: Deprecation
@@ -243,6 +243,6 @@ More information
 
 Changelogs
 
-* 9.0 :doc:`Dealing with properties that become protected <t3core:Changelog/9.0/Important-81330-DealingWithPropertiesThatAreMigratedToProtected>`
-* 9.0 :doc:`Trait to migrate public access to protected by deprecation <t3core:Changelog/9.0/Feature-81330-TraitToMigratePublicAccessToProtectedByDeprecation>`
-* 9.4 :doc:`Trait to detect public deprecated methods: PublicMethodDeprecationTrait <t3core:Changelog/9.4/Feature-85247-TraitToDetectPublicDeprecatedMethods>`
+* 9.0 :doc:`Dealing with properties that become protected <ext_core:Changelog/9.0/Important-81330-DealingWithPropertiesThatAreMigratedToProtected>`
+* 9.0 :doc:`Trait to migrate public access to protected by deprecation <ext_core:Changelog/9.0/Feature-81330-TraitToMigratePublicAccessToProtectedByDeprecation>`
+* 9.4 :doc:`Trait to detect public deprecated methods: PublicMethodDeprecationTrait <ext_core:Changelog/9.4/Feature-85247-TraitToDetectPublicDeprecatedMethods>`

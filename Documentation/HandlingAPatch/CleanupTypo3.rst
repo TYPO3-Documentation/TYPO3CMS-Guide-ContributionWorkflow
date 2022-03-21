@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. highlight:: bash
 
@@ -34,9 +34,9 @@ any case or if in doubt, you can safely perform all steps.
 **Flush the cache**:
 
 .. code-block:: shell
-   
+
    bin/typo3 cache:flush
-   
+
 Or via the install tool
 
 .. image:: /Images/ManualScreenshots/flush_cache.svg

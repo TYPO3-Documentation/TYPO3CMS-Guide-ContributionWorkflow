@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. index::
    single: Windows; Troubleshooting
@@ -36,16 +36,16 @@ Checklist for ssh problems
 
    See :ref:`GerritAccount`
 
-2. Check if your **private** SSH key is in the correct OpenSSH format. 
+2. Check if your **private** SSH key is in the correct OpenSSH format.
 
-   You can export your SSH key to the correct OpenSSH format with the Putty Key 
-   Generator with Conversions -> Export OpenSSH Key -> safe with a filename, 
+   You can export your SSH key to the correct OpenSSH format with the Putty Key
+   Generator with Conversions -> Export OpenSSH Key -> safe with a filename,
    but without a file ending!
 
 3. Check if the ssh-agent is running or turn it on
 
    .. code-block:: bash
-  
+
       ssh-agent -s
 
 4. Add your SSH key to the ssh-agent
@@ -54,11 +54,11 @@ Checklist for ssh problems
 
       ssh-add ~/.ssh/my_key
 
-   The SSH key should have NO file ending (like .ppk). 
-   In windows explorer you should find the SSH key in 
+   The SSH key should have NO file ending (like .ppk).
+   In windows explorer you should find the SSH key in
    the file:
-   
+
    .. code-block:: bash
-   
+
       C:\Users\<username>\.ssh\
 
