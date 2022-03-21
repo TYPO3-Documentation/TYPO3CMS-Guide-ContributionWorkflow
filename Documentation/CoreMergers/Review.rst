@@ -59,7 +59,7 @@ Voting +2
 Ready to merge
 --------------
 
-A Core Merger can give a +2 vote on :pn:`Code Review` and :pn:`Verified` if
+A Core Merger can give a +2 vote on *Code Review* and *Verified* if
 there is already a positive vote by another Core Merger.
 
 .. _Gerrit-No-brainers:

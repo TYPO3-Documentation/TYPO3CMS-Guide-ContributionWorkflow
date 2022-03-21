@@ -44,6 +44,8 @@ On these pages you will learn how to become a TYPO3 Core contributor.
    WorkflowExplained/Index
    Forger/Index
 
+.. _setup:
+
 .. toctree::
    :maxdepth: 1
    :titlesonly:

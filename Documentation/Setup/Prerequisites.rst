@@ -14,7 +14,7 @@ Prerequisites and Useful Tools
    the tools locally (e.g. Composer, yarn). They will be supplied by DDEV and you can run
    them inside the container.
 
-   In that case you can skip right to :ref:`ddev`.
+   In that case you can skip right to :ref:`DDEV <settting-up-typo3-with-ddev>`.
 
 Here's a list of the tools we use in the TYPO3 project:
 

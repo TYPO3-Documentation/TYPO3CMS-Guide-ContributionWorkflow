@@ -32,3 +32,13 @@
 .. By default, code blocks use PHP syntax highlighting
 
 .. highlight:: php
+
+.. -----------------
+.. reference targets
+.. -----------------
+
+.. _Forge: https://forge.typo3.org
+.. _Gerrit: https://review.typo3.org
+.. _T3O: https://typo3.org
+.. _Slack: https://slack.typo3.org
+.. _Forger: https://forger.typo3.com

@@ -15,7 +15,7 @@ Setup the TYPO3 installation
 
    .. rst-class:: horizbuttons-primary-m
 
-   - :ref:`ddev`
+   - :ref:`DDEV <settting-up-typo3-with-ddev>`
 
 .. index::
    single: Code Contribution Workflow; git clone
@@ -62,7 +62,7 @@ see :ref:`composer-install`)
 .. tip::
 
    If you plan to use a Docker based container solution for setting up your
-   TYPO3 installation (for example using :ref:`DDEV <ddev>`),
+   TYPO3 installation (for example using :ref:`DDEV <settting-up-typo3-with-ddev>`),
    you can perform the step `composer install` later and let it run
    :ref:`inside your Docker container <ddev-composer-install>`.
 
@@ -138,5 +138,5 @@ You will now need to use your git clone to setup a working installation
 of TYPO3. There are many different ways how you can do this. We
 provide a few examples in the Appendix:
 
-* :ref:`ddev`
+* :ref:`DDEV <settting-up-typo3-with-ddev>`
 * :ref:`setting-up-typo3-manually`
