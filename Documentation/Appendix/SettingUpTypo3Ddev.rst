@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. highlight:: bash
 
@@ -13,7 +13,7 @@
 .. warning::
 
    This guide explains the setup of TYPO3 for the core contribution with DDEV.
-   Follow the :ref:`quick installation guide <t3install:install>`
+   Follow the :ref:`quick installation guide <t3start:installation_index>`
    to install TYPO3 using Composer for a project.
 
 

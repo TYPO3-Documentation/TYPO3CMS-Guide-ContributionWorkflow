@@ -1,0 +1,44 @@
+.. More information about this file:
+   https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#includes-rst-txt
+
+.. ----------
+.. text roles
+.. ----------
+
+.. role:: aspect(emphasis)
+.. role:: bash(code)
+.. role:: html(code)
+.. role:: js(code)
+.. role:: php(code)
+.. role:: rst(code)
+.. role:: sep(strong)
+.. role:: sql(code)
+
+.. role:: tsconfig(code)
+   :class: typoscript
+
+.. role:: typoscript(code)
+.. role:: xml(code)
+   :class: html
+
+.. role:: yaml(code)
+
+.. default-role:: code
+
+.. ---------
+.. highlight
+.. ---------
+
+.. By default, code blocks use PHP syntax highlighting
+
+.. highlight:: php
+
+.. -----------------
+.. reference targets
+.. -----------------
+
+.. _Forge: https://forge.typo3.org
+.. _Gerrit: https://review.typo3.org
+.. _T3O: https://typo3.org
+.. _Slack: https://slack.typo3.org
+.. _Forger: https://forger.typo3.com

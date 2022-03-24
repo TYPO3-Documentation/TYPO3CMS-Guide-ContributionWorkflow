@@ -1,4 +1,4 @@
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _Start:
 .. _overview:
@@ -9,79 +9,34 @@
 TYPO3 Contribution Guide - Core Development
 ===========================================
 
+:Version:
+   |release|
+
 :Language:
-      en
+   en
 
-:Copyright:
-      since 2015
-
-:Authors:
-      `TYPO3 Core Team <https://typo3.org/community/teams/typo3-development/>`__ & TYPO3 community
-
-:Contact:
-      `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__
+:Author:
+   TYPO3 contributors
 
 :License:
-      Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0),
-      https://creativecommons.org/licenses/by-nc-sa/4.0/
+   This document is published under the
+   `Creative Commons BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__
+   license.
 
-The content of this document is related to TYPO3 CMS,
-a GNU/GPL CMS/Framework available from `typo3.org
-<https://typo3.org/>`_ .
+:Rendered:
+   |today|
 
+----
 
-**Quick links:**
+On these pages you will learn how to become a TYPO3 Core contributor.
 
-.. rst-class:: horizbuttons-primary-m
+----
 
-- :ref:`Git Setup <Setting-up-your-Git-environment>`
-- :ref:`Git Cheat Sheet <cheat-sheet-git>`
-- :ref:`Commit Message Rules <commitmessage>`
-- :ref:`bugreporting-index`
-- :ref:`Create a Patch <quickstart-create-a-patch>`
-
-
-.. rst-class:: horizbuttons-primary-m
-
-- :ref:`sitemap`
-- :ref:`index`
-
-
-
-**About this manual:**
-
-How to contribute to the TYPO3 codebase and how to submit issues (e.g. Bug reports).
-
-**Official Documentation:**
-
-This document is included as part of the official TYPO3 documentation.
-
-**For Documentation Contributors**
-
-If you find an error or something is missing, please:
-`Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues/new>`__
-
-You are welcome to help in improving this guide. Just click on "Edit me on GitHub"
-on the top right to submit your change request.
-
-You can find out more about how to do this in :ref:`h2document:docs-contribute`.
-
-:ref:`linktargets` | `GitHub repository <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow>`__
-| `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues>`__
-| `Pull Requests <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/pulls>`__
-
-
-**Guide**
-
-This document is a Guide. Guides are designed to familiarize a reader with a specific topic
-in order to provide a working knowledge of that particular process. Readers should peruse
-the guide from cover to cover in order to gain a practical overview of the process.
-Once completed, the Guide becomes a practical reference tool to which a reader can refer
-as needed. Guides offer advice on how best to achieve a given task.
-
+**Table of Contents:**
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
+   :titlesonly:
    :caption: INTRODUCTION
 
    About
@@ -89,9 +44,11 @@ as needed. Guides offer advice on how best to achieve a given task.
    WorkflowExplained/Index
    Forger/Index
 
+.. _setup:
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
+   :titlesonly:
    :caption: SETUP
 
    Account/Index
@@ -100,9 +57,9 @@ as needed. Guides offer advice on how best to achieve a given task.
    Setup/Git/Index
    Setup/SetupIde
 
-
 .. toctree::
-   :hidden:
+   :maxdepth: 1
+   :titlesonly:
    :caption: HOWTOS
 
    ReportingAnIssue/Index
@@ -115,16 +72,18 @@ as needed. Guides offer advice on how best to achieve a given task.
    CoreMergers/Index
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
+   :titlesonly:
    :caption: ADDITIONAL INFORMATION
 
    CheatSheets/Git
    Troubleshooting/Index
    Appendix/Index
 
+.. Meta Menu
+
 .. toctree::
    :hidden:
-   :caption: SITEMAP & INDEX
 
-   Sitemap/Index
+   Sitemap
    genindex

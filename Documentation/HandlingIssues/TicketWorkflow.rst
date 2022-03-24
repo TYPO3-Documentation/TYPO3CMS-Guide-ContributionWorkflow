@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 
@@ -14,7 +14,7 @@ Issue Workflow (Forge)
 
 This chapter describes the workflow of handling issues in TYPO3s Redmine
 available at Forge_. Once issues have been submitted, there may be information
-missing or the status may changed. Additional information can be added. 
+missing or the status may changed. Additional information can be added.
 
 Everyone is welcome to help in improving issues.
 

@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. index::
    single: Documentation Contribution; Adding Documentation
@@ -265,7 +265,7 @@ Not all system extensions have their own documentation. Some documentation
 If in doubt, ask in the **#typo3-cms-coredev** channel on Slack.
 
 For starting a system extension from scratch, please see
-:ref:`h2document:writing-doc-for-ext-from-scratch`.
+:ref:`h2document:how-to-start-docs-extension`.
 
 For an overview of the rendered documentation for system extensions, see
 `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
