@@ -242,8 +242,8 @@ them as commands in your IDE / editor.
 Policy for Changing the Main Documentation
 ==========================================
 
-Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi:start`,
-:ref:`t3tca:start` etc.) must be updated.
+Once a new TYPO3 release comes out, the main documentation (e.g. :doc:`t3coreapi:Index`,
+:doc:`t3tca:Index` etc.) must be updated.
 
 The procedure is documented in :ref:`h2document:update-docs`.
 
@@ -260,7 +260,7 @@ directory in the respective system extension directory, e.g.
 :file:`typo3/sysext/form/Documentation`.
 
 Not all system extensions have their own documentation. Some documentation
-(e.g. for the system extension *core*) is maintained within the :ref:`t3coreapi:start`.
+(e.g. for the system extension *core*) is maintained within the :doc:`t3coreapi:Index`.
 
 If in doubt, ask in the **#typo3-cms-coredev** channel on Slack.
 
