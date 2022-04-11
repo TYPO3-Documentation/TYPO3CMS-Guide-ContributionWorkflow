@@ -75,7 +75,7 @@ Here you need to set a full version string matching the TYPO3 version of your cl
 Example::
 
    # cd <cloned project>
-   export COMPOSER_ROOT_VERSION=11.0.0
+   export COMPOSER_ROOT_VERSION=12.0.0
 
 Run composer install in the same directory you cloned the TYPO3 CMS core repository to.
 This may take several minutes::
