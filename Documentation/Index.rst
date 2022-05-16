@@ -55,6 +55,7 @@ On these pages you will learn how to become a TYPO3 Core contributor.
    Setup/Prerequisites
    Setup/SetupTypo3
    Setup/Git/Index
+   Setup/UseStyleguide
    Setup/SetupIde
 
 .. toctree::
