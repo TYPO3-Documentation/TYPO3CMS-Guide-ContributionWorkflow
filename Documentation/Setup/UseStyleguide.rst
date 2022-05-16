@@ -8,17 +8,17 @@
 Use EXT:styleguide
 ==================
 
-It is recommended to use the styleguide extension to autogenerate several
-example pages which can be used for testing frontend and backend of TYPO3.
+It is recommended to use the styleguide extension to auto generate several
+example pages which can be used for testing the frontend and backend of TYPO3.
 
 The typo3/cms-styleguide extension is part of the TYPO3 core repository.
-It used to mostly showcase TCA / FormEngine features but has since evolved
-to provide further features.
+It used mostly to showcase TCA / FormEngine features but has since evolved
+to provide additional features.
 
 The styleguide extension can create pages within the TYPO3 site, specifically:
 
 *  The "Styleguide TCA demo" will create several pages showcasing TCA features,
-   e.g. there are examples for the common column types.
+   including examples for common column types.
 *  The "Styleguide Frontend" uses a custom TypoScript template provided by
    the styleguide extension and creates pages which can be viewed
    in the frontend.
@@ -42,4 +42,4 @@ Setup
    *  :guilabel:`Create styleguide page tree with data`
    *  :guilabel:`Create styleguide frontend`
 
-The pages will now be created. Wait a bit for flash messages to appear.
+The pages will now be created. Wait a moment until a flash message appears.
