@@ -53,8 +53,8 @@ On these pages you will learn how to become a TYPO3 Core contributor.
 
    Account/Index
    Setup/Prerequisites
-   Setup/SetupTypo3
    Setup/Git/Index
+   Setup/SetupTypo3
    Setup/UseStyleguide
    Setup/SetupIde
 
