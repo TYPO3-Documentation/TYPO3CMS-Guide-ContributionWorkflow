@@ -8,7 +8,7 @@
 Prerequisites and Useful Tools
 ==============================
 
-Necessary:
+Required:
 
 *  Git
 *  Docker and Docker Composer for running :file:`runTests.sh` to setup, build,
@@ -21,8 +21,8 @@ Recommended:
    can also use a simple editor, a properly setup IDE will help with
    code-completion, marking errors and applying coding guidelines.
 *  DDEV for setting up the TYPO3 installation. Alternative methods
-   are possible, e.g. using a locally installed Webserver and database. DDEV
+   are possible, e.g. using a locally installed web server and database. DDEV
    provides custom configurations for TYPO3 which can be used for core
    development as well.
 
-Using these tools will be described in depth, further along in this chapter.
+Information on using these tools is covered in detail later on this chapter.
