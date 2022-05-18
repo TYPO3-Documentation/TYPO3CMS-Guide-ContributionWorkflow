@@ -17,36 +17,6 @@ Setup the TYPO3 installation
 
    - :ref:`DDEV <settting-up-typo3-with-ddev>`
 
-.. index::
-   single: Code Contribution Workflow; git clone
-
-.. _setup-typo3-git-clone:
-.. _git-clone:
-
-git clone
-=========
-
-Switch into your **empty** htdocs directory of choice and clone the TYPO3 CMS core repository::
-
-   git clone git@github.com:typo3/typo3 .
-
-
-.. _git-guis:
-
-Git GUIs
-========
-
-If you rather like to work with your favorite Git GUI, we compiled a list of the ones used throughout the core team
-here.
-
-* :ref:`SourceTree on Windows<windows-clonewithsourcetree>`
-* SourceTree on OSX
-* :ref:`Git Tower on OSX<gittower-osx>`
-* `GitKraken <https://www.gitkraken.com>`__
-
-
-
-
 
 .. index::
    single: Code Contribution Workflow; composer install

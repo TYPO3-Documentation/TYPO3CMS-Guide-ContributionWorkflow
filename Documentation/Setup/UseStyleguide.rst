@@ -3,6 +3,7 @@
 .. highlight:: bash
 
 .. _use-styleguide:
+.. _after-setup-typo3:
 
 ==================
 Use EXT:styleguide
