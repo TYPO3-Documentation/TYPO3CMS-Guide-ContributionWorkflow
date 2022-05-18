@@ -26,6 +26,20 @@ The styleguide extension can create pages within the TYPO3 site, specifically:
 Setup
 =====
 
+.. tip::
+
+   Once the styleguide extension is activated, it is possible to create
+   (or delete) the pages via command line::
+
+      # show help
+      bin/typo3 styleguide:generate -h
+
+      # create pages
+      bin/typo3 styleguide:generate -c
+
+      # or (with DDEV)
+      ddev exec bin/typo3 styleguide:generate -c
+
 .. rst-class:: bignums-xxl
 
 1. Activate the styleguide extension in the extension manager
