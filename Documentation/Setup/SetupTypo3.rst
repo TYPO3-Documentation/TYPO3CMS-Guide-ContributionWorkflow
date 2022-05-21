@@ -37,20 +37,27 @@ composer install
 
 Information about :ref:`setting up Composer <prerequisites-composer>` is found in previous chapter.
 
-Composer cannot detect the TYPO3 version of your cloned project because there is none. Before you run
-`composer install` you need to export the `COMPOSER_ROOT_VERSION environment variable <https://getcomposer.org/doc/03-cli.md#composer-root-version>`__.
-Here you need to set a full version string matching the TYPO3 version of your clone.
-
-Example::
-
-   # cd <cloned project>
-   export COMPOSER_ROOT_VERSION=12.0.0
-
 Run composer install in the same directory you cloned the TYPO3 CMS core repository to.
 This may take several minutes::
 
    # cd <cloned project>
    composer install
+
+
+.. note::
+
+   This is **no longer necessary for the current main branch**, but may be necessary
+   for older version (if working in other branches) (see related
+   `issue <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues/254>`__).
+   Composer could not detect the TYPO3 version of your cloned project because there was none. Before you run
+   `composer install` may need to export the `COMPOSER_ROOT_VERSION environment variable <https://getcomposer.org/doc/03-cli.md#composer-root-version>`__.
+   Here you need to set a full version string matching the TYPO3 version of your clone.
+
+   Example::
+
+      # cd <cloned project>
+      export COMPOSER_ROOT_VERSION=12.0.0
+
 
 
 
