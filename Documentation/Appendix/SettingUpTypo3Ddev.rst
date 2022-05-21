@@ -78,6 +78,9 @@ Set correct PHP version, for example::
 
    php_version: "8.1"
 
+Add necessary packages for the :ref:`yarn build process <Yarn build process>` (only needed if you are working on assets):
+
+   webimage_extra_packages: [automake,build-essential]
 
 Start DDEV
 ==========
@@ -105,6 +108,8 @@ This runs inside the container and thus uses your configured Composer version::
 
    ddev composer install
 
+Yarn build process
+==================
 
 It is not necessary for the initial build, but once you change some assets (e.g.
 Typescript, SCSS files), you should build with yarn. You might like to try this
