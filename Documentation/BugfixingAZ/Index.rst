@@ -41,68 +41,13 @@ So you want to fix a bug or add a new feature to TYPO3? **Great!**
 Step by Step Walkthrough
 ========================
 
-If you already walked through the manual up to here and performed all steps for setting up your accounts
-and setting up a working TYPO3 installation for core development, skip to number 6:
-"Make your changes to the code"!
+You should have a cloned Git repository with a working TYPO3 installation
+as described in :ref:`setup <setup>`. Especially the
+:ref:`Git setup <Setting-up-your-Git-environment>` is required.
 
 .. rst-class:: bignums-xxl
 
-1. Setup accounts
-
-   More information: :ref:`setting-up-your-account`
-
-   * Signup for a `typo3.org account <https://my.typo3.org/index.php?id=2>`__
-   * Signup for `Slack <https://my.typo3.org/index.php?id=35>`__, join the
-     `#typo3-cms-coredev` channel
-   * Log in to `Gerrit <https://review.typo3.org>`__, click on `Settings <https://review.typo3.org/settings/#SSHKeys>`__ and upload your
-     ssh key
-
-2. Setup your TYPO3 installation
-
-   More information: :ref:`setup-typo3`.
-
-   Setup your TYPO3 installation usig the git cloned TYPO3 source::
-
-      mkdir t3coredev;cd t3coredev
-      git clone git@github.com:typo3/typo3 .
-
-   etc.
-
-   Use :ref:`DDEV <settting-up-typo3-with-ddev>` if you want
-   a quick and simple setup without having to install all system requirements.
-
-3. Setup your git environment
-
-   More information: :ref:`Setting-up-your-Git-environment`
-
-   Setup name and email (same as you used for typo3.org), replace :samp:`Your name` and :samp:`your-email@example.org` here)::
-
-      git config user.name "Your Name"
-      git config user.email "your-email@example.org"
-
-
-   Setup autosetuprebase::
-
-      git config branch.autosetuprebase remote
-
-   Setup commit-msg hook::
-
-      cp Build/git-hooks/commit-msg .git/hooks/commit-msg
-
-   Push to Gerrit (replace `<YOUR_TYPO3_USERNAME>` here)::
-
-      git config remote.origin.pushurl ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-      git config remote.origin.push +refs/heads/main:refs/for/main
-
-4. Setup your IDE to adhere to the coding guidelines
-
-   More information: :ref:`setup-ide`
-
-   Use the :file:`.editorconfig` in the TYPO3 core directory to setup your IDE.
-   As :file:`.editorconfig` only contains minimal rules, it is a good idea to
-   additionally setup your IDE to use PSR-1 / PSR-2 for PHP files.
-
-5. Create an Issue on Forge
+#. Create an Issue on Forge
 
    More information: :ref:`bugreporting-index`
 
@@ -112,7 +57,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    a patch for an existing issue.
 
 
-6. Make your changes to the code, add documentation, tests
+#. Make your changes to the code, add documentation, tests
 
    This part is pretty straightforward. But be warned, there
    are still a few dark places deep inside the TYPO3 core dating back to the
@@ -132,7 +77,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    See :ref:`Testing the core <testing>` in TYPO3 Explained for more information
    about writing and running tests.
 
-7. Commit your changes
+#. Commit your changes
 
    Please make sure that you read the :ref:`commitmessage` in the Appendix.
    Your code will not be merged if it does not follow the commit message
@@ -178,7 +123,7 @@ and setting up a working TYPO3 installation for core development, skip to number
       Keep in mind that you can commit with --amend **as often as you want,**
       just make sure you keep the `Change-Id:` line intact.
 
-8. Push to Gerrit
+#. Push to Gerrit
 
    To submit the patch to Gerrit, issue the following command::
 
@@ -215,7 +160,7 @@ and setting up a working TYPO3 installation for core development, skip to number
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
    for pushing to other branches.
 
-9. Optional: Advertise review on Slack channel
+#. Optional: Advertise review on Slack channel
 
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
