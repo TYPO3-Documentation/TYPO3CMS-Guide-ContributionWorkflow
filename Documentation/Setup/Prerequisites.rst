@@ -11,9 +11,9 @@ Prerequisites and Useful Tools
 Required:
 
 *  Git
-*  Docker and Docker Composer for running :file:`runTests.sh` to setup, build,
-   perform checks and run tests. Alternatively, you can run some of the tools
-   locally or within DDEV. In that case, they must also be installed.
+*  Once you have setup the Git repository, it is advised to look at the listed
+   dependencies for  :file:`runTests.sh` by running
+   :bash:`Build/Scripts/runTests.sh -h` (see :ref:`runTests_sh`).
 
 Recommended:
 
