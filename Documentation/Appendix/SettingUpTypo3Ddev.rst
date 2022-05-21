@@ -101,25 +101,53 @@ care of that below.
 
 .. _ddev-composer-install:
 
-Install dependencies via composer
-=================================
+Build
+=====
 
-This runs inside the container and thus uses your configured Composer version::
+It is recommended to run tasks such as :bash:`composer install` etc. via the
+:ref:`runTests.sh <runTests_sh>` script. We provide the direct commands in some
+places - in case there is good reason to run the commands directly. But, if you
+need the direct commands, you are encouraged to check look them up yourself
+using the instructions in :ref:`run-tests-directly-without-docker`.
 
-   ddev composer install
+.. tabs::
 
-Yarn build process
-==================
+   .. group-tab:: runTests.sh
 
-It is not necessary for the initial build, but once you change some assets (e.g.
-Typescript, SCSS files), you should build with yarn. You might like to try this
-now::
+      .. code-block:: bash
 
-   ddev exec "cd Build && yarn install"
-   ddev exec "cd Build && yarn build"
+         Build/Scripts/runTests.sh -s composerInstall
 
-The first command is required once, the second (build) command is required after
-every change of a resource file.
+   .. group-tab:: DDEV
+
+      ::
+
+         ddev composer install
+
+
+The following is not necessary for the initial build, but once you change some assets (e.g.
+Typescript, SCSS files), you must build them. You might like to try this
+now:
+
+.. tabs::
+
+   .. group-tab:: runTests.sh
+
+      ::
+
+         Build/Scripts/runTests.sh -s buildCss
+         Build/Scripts/runTests.sh -s buildJavascript
+
+   .. group-tab:: DDEV
+
+      ::
+
+         ddev exec "cd Build && yarn install"
+         ddev exec "cd Build && yarn build"
+
+
+      The first command is required once, the second (build) command is required after
+      every change of a resource file.
 
 .. seealso::
 
