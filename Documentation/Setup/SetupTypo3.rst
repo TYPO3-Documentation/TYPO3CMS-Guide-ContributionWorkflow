@@ -56,8 +56,7 @@ here.
 composer install
 ================
 
-*-- required* (unless run `composer install` from container solution, such as DDEV,
-see :ref:`composer-install`)
+*-- required*
 
 .. tip::
 
