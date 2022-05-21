@@ -20,20 +20,8 @@ You will need to set up the prerequisites for your operating system. Look at the
 
 * :ref:`setting-up-typo3-manually-linux`
 
-
-Clone TYPO3
-===========
-
-Create a clone of git as described in :ref:`git-clone`, run :ref:`composer-install` and
-optionally :ref:`yarn-build`.
-
-
-::
-
-   git clone git@github.com:typo3/typo3 .
-   composer install
-
-
+You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
+have switched to the directory which contains the local Git repository.
 
 Create the database
 ===================

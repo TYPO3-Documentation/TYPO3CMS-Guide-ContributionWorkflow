@@ -38,13 +38,13 @@ You can watch a video tutorial about setting up TYPO3 with DDEV, or go through t
 .. youtube:: HZVMPoI9SIk
 
 
-Setting up the prerequisites
-============================
+Prerequisites
+=============
 
-You will need to install Docker and other
+*  Install Docker and other
 `ddev system requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
-Then install DDEV as described in the
+*  Install DDEV as described in the
 `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
 instructions.
 
@@ -52,16 +52,8 @@ instructions.
 
    Composer and yarn can run inside of DDEV, so there is no need to set them up locally.
 
-
-Clone TYPO3
-===========
-
-Create a clone of the TYPO3 git repository as described in :ref:`git-clone`::
-
-   mkdir t3coredev
-   cd t3coredev
-   git clone git@github.com:typo3/typo3 .
-
+*  You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
+   have switched to the directory which contains the local Git repository.
 
 
 Configure DDEV
@@ -191,7 +183,7 @@ If you are in the middle of setting up a TYPO3 installation for core development
 
 .. rst-class:: horizbuttons-primary-m
 
-- :ref:`Setting-up-your-Git-environment`.
+- :ref:`after-setup-typo3`.
 
 
 Resources

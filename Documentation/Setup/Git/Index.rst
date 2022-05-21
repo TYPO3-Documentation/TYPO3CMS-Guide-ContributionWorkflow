@@ -52,14 +52,24 @@ Git Setup
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
-Prerequisites
-=============
+.. index::
+   single: Code Contribution Workflow; git clone
+   single: git; git clone
 
-* If you want to get an introduction to how our workflow works, :ref:`head over here<workflow-explained>`
-* We expect you have a fully-fledged web development setup at hand. If you are not sure, though, :ref:`take a look here <prerequisites>`.
-* Make sure, you have cloned the TYPO3 source as described previously in :ref:`setup-typo3-git-clone`::
+.. _setup-typo3-git-clone:
+.. _git-clone:
 
-      git clone git@github.com:typo3/typo3 .
+git clone
+=========
+
+Create a directory for your TYPO3 core installation and change into it, e.g.::
+
+   mkdir /var/www/t3coredev
+   cd /var/www/t3coredev
+
+Clone the TYPO3 CMS core repository::
+
+   git clone git@github.com:typo3/typo3 .
 
 
 
