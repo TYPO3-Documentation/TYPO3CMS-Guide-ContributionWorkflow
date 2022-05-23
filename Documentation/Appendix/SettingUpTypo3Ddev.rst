@@ -37,11 +37,11 @@ Prerequisites
 =============
 
 *  Install Docker and other
-`ddev system requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
+   `ddev system requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
 *  Install DDEV as described in the
-`Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
-instructions.
+   `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
+   instructions.
 
 .. note::
 
