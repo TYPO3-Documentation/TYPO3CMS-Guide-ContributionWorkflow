@@ -78,7 +78,7 @@ Set correct PHP version, for example::
 
    php_version: "8.1"
 
-Add necessary packages for the :ref:`yarn build process <Yarn build process>` (only needed if you are working on assets):
+Add necessary packages for the :ref:`yarn build process <Yarn build process>` (only needed if you are working on assets)::
 
    webimage_extra_packages: [automake,build-essential]
 
