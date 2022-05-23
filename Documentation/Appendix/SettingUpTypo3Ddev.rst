@@ -74,18 +74,23 @@ Edit configuration
 
 Edit the configuration file :file:`.ddev/config.yaml`.
 
-Set correct PHP version, for example::
+Set correct PHP version, for example
+
+.. code-block:: yaml
 
    php_version: "8.1"
 
-Add necessary packages for the :ref:`yarn build process <Yarn build process>` (only needed if you are working on assets):
+Add necessary packages for the :ref:`yarn build process <Yarn build process>`
+(only needed if you are working on assets):
+
+.. code-block:: yaml
 
    webimage_extra_packages: [automake,build-essential]
 
 Start DDEV
 ==========
 
-::
+.. code-block:: bash
 
    ddev start
 
@@ -120,12 +125,12 @@ using the instructions in :ref:`run-tests-directly-without-docker`.
 
    .. group-tab:: DDEV
 
-      ::
+      .. code-block:: bash
 
          ddev composer install
 
 
-The following is not necessary for the initial build, but once you change some assets (e.g.
+The following is not necessary for the initial build, but once you change some assets (for example
 Typescript, SCSS files), you must build them. You might like to try this
 now:
 
@@ -133,14 +138,14 @@ now:
 
    .. group-tab:: runTests.sh
 
-      ::
+      .. code-block:: bash
 
          Build/Scripts/runTests.sh -s buildCss
          Build/Scripts/runTests.sh -s buildJavascript
 
    .. group-tab:: DDEV
 
-      ::
+      .. code-block:: bash
 
          ddev exec "cd Build && yarn install"
          ddev exec "cd Build && yarn build"
@@ -157,7 +162,9 @@ now:
 DDEV describe
 =============
 
-Let DDEV dump information::
+Let DDEV dump information:
+
+.. code-block:: bash
 
    ddev describe
 
@@ -166,7 +173,9 @@ Displays information about the project, its URLs and access to phpMyAdmin, MailH
 FIRST_INSTALL
 =============
 
-Create a file `FIRST_INSTALL`::
+Create a file `FIRST_INSTALL`:
+
+.. code-block:: bash
 
    touch FIRST_INSTALL
 
