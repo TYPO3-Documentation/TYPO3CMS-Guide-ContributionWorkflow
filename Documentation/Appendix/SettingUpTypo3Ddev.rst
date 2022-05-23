@@ -107,7 +107,7 @@ Build
 It is recommended to run tasks such as :bash:`composer install` etc. via the
 :ref:`runTests.sh <runTests_sh>` script. We provide the direct commands in some
 places - in case there is good reason to run the commands directly. But, if you
-need the direct commands, you are encouraged to check look them up yourself
+need the direct commands, you are encouraged to look them up
 using the instructions in :ref:`run-tests-directly-without-docker`.
 
 .. tabs::
