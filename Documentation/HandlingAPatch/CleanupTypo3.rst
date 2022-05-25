@@ -49,7 +49,7 @@ Or via the install tool
 **Changes in .css / .js files**:
 
 Delete browser cache or
-`hard refresh <https://www.getfilecloud.com/blog/2015/03/tech-tip-how-to-do-hard-refresh-in-browsers/>`__
+`hard refresh <https://www.filecloud.com/blog/2015/03/tech-tip-how-to-do-hard-refresh-in-browsers/>`__
 (e.g. CTRL + F5)
 
 **Changes in DB schema (ext_tables.sql)**:
