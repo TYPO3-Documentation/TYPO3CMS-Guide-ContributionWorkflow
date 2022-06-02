@@ -115,8 +115,8 @@ as described in :ref:`setup <setup>`. Especially the
    If you have activated the :ref:`pre-commit hook <pre-commit-hook>`
    it will loudly complain if something does not conform to the coding guidelines.
 
-   In that case, use the :ref:`cgl-fix-my-commit` script to to fix CGL issues
-   (it uses `php-cs-fixer <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`__).
+   In that case, use the :ref:`runTests.sh <runTestsShCgl>` script to to fix CGL
+   issues.
 
    After you have created your commit, you can still make changes by
    amending to your commit:

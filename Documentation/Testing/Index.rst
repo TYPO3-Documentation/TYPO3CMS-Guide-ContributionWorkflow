@@ -144,6 +144,8 @@ Run composer install:
 
    Build/Scripts/runTests.sh -s composerInstall
 
+.. _runTestsShCgl:
+
 CGL check and fix
 -----------------
 
