@@ -152,6 +152,15 @@ Optional Plugins
 Setting up  PhpStorm for the Testing Framework
 ==============================================
 
+*Optional*
+
+.. note::
+
+   It is recommended to use the script :ref:`runTests.sh <runTests_sh>` for
+   running tests. Alternatively, if you wish to run the unit tests within
+   PhpStorm, you can set them up this way.
+
+
 First setup the Testing Framework. Replace <YOUR_WEBROOT> with your path
 to the web directory. You must use absolute
 paths for this.
@@ -164,9 +173,9 @@ Setup **Test Frameworks** in PhpStorm:
 * Use composer autoloader
 * `Path to script`: <YOUR_WEBROOT>/vendor/autoload.php
 * Test runner: Defaut configuration file:
-  <YOUR_WEBROOT>/vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
+  <YOUR_WEBROOT>/Build/phpunit/UnitTests.xml
 * Test Runner: Default bootstrap file:
-  <YOUR_WEBROOT>/vendor/typo3/testing-framework/Resource/Core/Build/UnitTestsBootstrap.php
+  <YOUR_WEBROOT>/Build/phpunit/UnitTestsBootstrap.php
 
 
 .. image:: /Images/External/Phpstorm/phpstorm-settings-testing-framework.png
