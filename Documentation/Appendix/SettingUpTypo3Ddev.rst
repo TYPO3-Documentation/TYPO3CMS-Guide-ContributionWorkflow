@@ -74,18 +74,23 @@ Edit configuration
 
 Edit the configuration file :file:`.ddev/config.yaml`.
 
-Set correct PHP version, for example::
+Set correct PHP version, for example
+
+.. code-block:: yaml
 
    php_version: "8.1"
 
-Add necessary packages for the :ref:`yarn build process <Yarn build process>` (only needed if you are working on assets):
+Add necessary packages for the :ref:`yarn build process <Yarn build process>`
+(only needed if you are working on assets):
+
+.. code-block:: yaml
 
    webimage_extra_packages: [automake,build-essential]
 
 Start DDEV
 ==========
 
-::
+.. code-block:: bash
 
    ddev start
 
@@ -101,25 +106,53 @@ care of that below.
 
 .. _ddev-composer-install:
 
-Install dependencies via composer
-=================================
+Build
+=====
 
-This runs inside the container and thus uses your configured Composer version::
+It is recommended to run tasks such as :bash:`composer install` etc. via the
+:ref:`runTests.sh <runTests_sh>` script. We provide the direct commands in some
+places - in case there is good reason to run the commands directly. But, if you
+need the direct commands, you are encouraged to look them up
+using the instructions in :ref:`run-tests-directly-without-docker`.
 
-   ddev composer install
+.. tabs::
 
-Yarn build process
-==================
+   .. group-tab:: runTests.sh
 
-It is not necessary for the initial build, but once you change some assets (e.g.
-Typescript, SCSS files), you should build with yarn. You might like to try this
-now::
+      .. code-block:: bash
 
-   ddev exec "cd Build && yarn install"
-   ddev exec "cd Build && yarn build"
+         Build/Scripts/runTests.sh -s composerInstall
 
-The first command is required once, the second (build) command is required after
-every change of a resource file.
+   .. group-tab:: DDEV
+
+      .. code-block:: bash
+
+         ddev composer install
+
+
+The following is not necessary for the initial build, but once you change some assets (for example
+Typescript, SCSS files), you must build them. You might like to try this
+now:
+
+.. tabs::
+
+   .. group-tab:: runTests.sh
+
+      .. code-block:: bash
+
+         Build/Scripts/runTests.sh -s buildCss
+         Build/Scripts/runTests.sh -s buildJavascript
+
+   .. group-tab:: DDEV
+
+      .. code-block:: bash
+
+         ddev exec "cd Build && yarn install"
+         ddev exec "cd Build && yarn build"
+
+
+      The first command is required once, the second (build) command is required after
+      every change of a resource file.
 
 .. seealso::
 
@@ -129,7 +162,9 @@ every change of a resource file.
 DDEV describe
 =============
 
-Let DDEV dump information::
+Let DDEV dump information:
+
+.. code-block:: bash
 
    ddev describe
 
@@ -138,7 +173,9 @@ Displays information about the project, its URLs and access to phpMyAdmin, MailH
 FIRST_INSTALL
 =============
 
-Create a file `FIRST_INSTALL`::
+Create a file `FIRST_INSTALL`:
+
+.. code-block:: bash
 
    touch FIRST_INSTALL
 
