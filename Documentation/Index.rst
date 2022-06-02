@@ -65,6 +65,7 @@ On these pages you will learn how to become a TYPO3 Core contributor.
 
    ReportingAnIssue/Index
    BugfixingAZ/Index
+   Build/Index
    AddingDocumentation/Index
    Testing/Index
    DebuggingTypo3/Index

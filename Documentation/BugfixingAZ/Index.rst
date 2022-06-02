@@ -70,6 +70,9 @@ as described in :ref:`setup <setup>`. Especially the
    For new features, breaking changes and deprecations, it is necessary to :ref:`add
    information to the changelog <changelog>`.
 
+   If you change SCSS, JavaScript or TypeScript files, you can :ref:`build <build>`
+   locally.
+
    Add Unit Tests or Functional Tests for new functionality, refine existing tests
    if necessary. Tests are important because they ensure that
    TYPO3 will behave consistently now and in the future.
