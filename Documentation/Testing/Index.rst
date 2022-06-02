@@ -51,10 +51,14 @@ See the listed dependencies in the help output.
 Options
 =======
 
-*  -h    : show help
-*  -s    : choose the command to run (if omitted, unit tests are run)
-*  -p    : PHP version (if omitted, the default version is used)
-* ...
+-h
+   show help
+-s
+   choose the command to run (if omitted, unit tests are run)
+-p
+   PHP version (if omitted, the default version is used)
+
+For more options, see the help (`-h`).
 
 We will quickly go over each type of command next.
 
