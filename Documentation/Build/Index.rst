@@ -9,14 +9,14 @@
    single: TypeScript
 .. _build:
 
-=====
-Build
-=====
+===============
+Building assets
+===============
 
-This page explains building JavaScript and CSS files.
+This page explains building assets like JavaScript and CSS files.
 
 For the most part, the TypeScript, JavaScript and SCSS sources are contained in
-:file:`Build/Sources`. These are converted into target files, usually located in:
+:file:`Build/Sources`. These are compiled to target files, usually located in:
 
 * CSS: :file:`typo3/sysext/*/Resources/Public/Css`
 * JavaScript: :file:`typo3/sysext/*/Resources/Public/JavaScript`
