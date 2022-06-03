@@ -25,23 +25,25 @@ Git Setup
    To switch from master to main:
 
    .. code-block:: bash
+      :caption: shell command
 
-       # Make sure that git pull loads from the "main" branch
-       git branch --set-upstream-to origin/main
+      # Make sure that git pull loads from the "main" branch
+      git branch --set-upstream-to origin/main
 
-       # Rename your current "master" branch locally to "main" to match TYPO3's naming scheme
-       git branch -m master main
+      # Rename your current "master" branch locally to "main" to match TYPO3's naming scheme
+      git branch -m master main
 
    Please also adapt your :ref:`commit message template <committemplate>`, if configured.
 
    If not using the GitHub remote yet, also change:
 
    .. code-block:: bash
+      :caption: shell command
 
-       # set remote url for "origin"
-       git remote set-url origin https://github.com/typo3/typo3.git
-       # set push URL to gerrit (this has not changed)
-       git config remote.origin.pushurl "ssh://<your-username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
+      # set remote url for "origin"
+      git remote set-url origin https://github.com/typo3/typo3.git
+      # set push URL to gerrit (this has not changed)
+      git config remote.origin.pushurl "ssh://<your-username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
 
 
    See
@@ -62,12 +64,18 @@ These steps will walk you through your basic Git setup when working with TYPO3.
 git clone
 =========
 
-Create a directory for your TYPO3 core installation and change into it, e.g.::
+Create a directory for your TYPO3 core installation and change into it, e.g.:
+
+.. code-block:: bash
+   :caption: shell command
 
    mkdir /var/www/t3coredev
    cd /var/www/t3coredev
 
-Clone the TYPO3 CMS core repository::
+Clone the TYPO3 CMS core repository:
+
+.. code-block:: bash
+   :caption: shell command
 
    git clone git@github.com:typo3/typo3 .
 
@@ -85,7 +93,11 @@ Set Username and Email
 *-- required* (unless this is already setup globally, see `git config --global -l`)
 
 You need to instruct git to work with your name and email address. Make sure the email address and user name are the same as those you used when
-:ref:`setting up your TYPO3 account<TYPO3Account>`::
+:ref:`setting up your TYPO3 account<TYPO3Account>`:
+
+.. code-block:: bash
+   :caption: shell command
+
 
    git config user.name "Your Name"
    git config user.email "your-email@example.org"
@@ -104,10 +116,12 @@ Set autosetuprebase
 *-- required*
 
 In order to avoid weird merges in your local repository when pulling in new commits from typo3.org, we encourage everybody
-to set the autosetuprebase option, such that your local commits are always rebased on top of the official code::
+to set the autosetuprebase option, such that your local commits are always rebased on top of the official code:
+
+.. code-block:: bash
+   :caption: shell command
 
    git config branch.autosetuprebase remote
-
 
 
 .. index::
@@ -134,7 +148,10 @@ commit-msg Hook
 
 *-- required*
 
-Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`::
+Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`:
+
+.. code-block:: bash
+   :caption: shell command
 
    # ensure folder exists
    mkdir -p .git/hooks
@@ -160,7 +177,10 @@ pre-commit Hook
 
 The pre-commit hook runs on Linux and MacOS. To use the pre-commit hook on Windows you can use a tool like the `Git BASH <https://gitforwindows.org/>`__.
 
-Activate the hook by copying the sample file to :file:`.git/hooks/pre-commit`::
+Activate the hook by copying the sample file to :file:`.git/hooks/pre-commit`:
+
+.. code-block:: bash
+   :caption: shell command
 
    # ensure folder exists
    mkdir -p .git/hooks
@@ -179,7 +199,10 @@ Alternative: Setup With Composer
 
 As an alternative for copying the hook scripts manually, you can use the following composer command:
 
-For Linux / MacOS::
+For Linux / MacOS:
+
+.. code-block:: bash
+   :caption: shell command
 
    composer gerrit:setup
 
@@ -199,14 +222,20 @@ Setting up Your Remote
 
 *-- required*
 
-You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git::
+You must instruct Git to push to Gerrit_ instead of the original repository. It acts as a kind of facade in front of Git:
+
+.. code-block:: bash
+   :caption: shell command
 
    git config remote.origin.pushurl ssh://<YOUR_TYPO3_USERNAME>@review.typo3.org:29418/Packages/TYPO3.CMS.git
 
 
 This will instruct Git to push using the
 `refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__
-when you do `git push`::
+when you do `git push`:
+
+.. code-block:: bash
+   :caption: shell command
 
    git config remote.origin.push +refs/heads/main:refs/for/main
 
@@ -227,16 +256,20 @@ Git will use the template to create the commit message, which you can
 then modify in your editor. So use this, to make it easier for you to
 fill out the required information.
 
-First, create a file, for example in :file:`~/.gitmessage.txt`.
+First, create a file, for example :file:`~/.gitmessage.txt`.
 
-.. code-block:: none
+.. code-block:: text
+   :caption: ~/.gitmessage.txt
 
    [BUGFIX|TASK|FEATURE]
 
    Resolves: #
    Releases: main, 10.4
 
-Make Git use this file as a template for the commit message::
+Make Git use this file as a template for the commit message:
+
+.. code-block:: bash
+   :caption: shell command
 
    git config commit.template ~/.gitmessage.txt
 
@@ -252,11 +285,17 @@ Show Configuration
 
 *-- optional*
 
-Show current configuration::
+Show current configuration:
 
-  git config -l
+.. code-block:: bash
+   :caption: shell command
 
-The result should look like this::
+   git config -l
+
+The result should look like this:
+
+.. code-block:: none
+   :caption: result
 
    ...
    remote.origin.url=git@github.com:typo3/typo3
@@ -268,7 +307,10 @@ The result should look like this::
    commit.template=/path/to/.gitmessage.txt
    ...
 
-Or, compare the :file:`.git/config` file inside the repository::
+Or, compare the :file:`.git/config` file inside the repository:
+
+.. code-block:: ini
+   :caption: .git/config
 
     [core]
        repositoryformatversion = 0

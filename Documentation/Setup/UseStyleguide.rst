@@ -30,7 +30,10 @@ Setup
 .. tip::
 
    Once the styleguide extension is activated, it is possible to create
-   (or delete) the pages via command line::
+   (or delete) the pages via command line:
+
+   .. code-block:: bash
+      :caption: shell command
 
       # show help
       bin/typo3 styleguide:generate -h

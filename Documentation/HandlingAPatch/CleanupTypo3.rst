@@ -14,7 +14,10 @@ Cleanup tasks
 Cleanup git repository
 ======================
 
-Before :ref:`Cherry-picking a patch <cherry-pick-a-patch>` or starting a new patch::
+Before :ref:`Cherry-picking a patch <cherry-pick-a-patch>` or starting a new patch:
+
+.. code-block:: bash
+   :caption: shell command
 
    git reset --hard origin/main
    git pull
@@ -34,6 +37,7 @@ any case or if in doubt, you can safely perform all steps.
 **Flush the cache**:
 
 .. code-block:: shell
+   :caption: shell command
 
    bin/typo3 cache:flush
 
@@ -42,7 +46,10 @@ Or via the install tool
 .. image:: /Images/ManualScreenshots/flush_cache.svg
    :class: with-shadow
 
-**Changes in composer.json**::
+**Changes in composer.json**:
+
+.. code-block:: shell
+   :caption: shell command
 
    composer install
 

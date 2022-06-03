@@ -171,7 +171,10 @@ Check Your `rst` File
 
 When your change is finished, you can run the following script to check that
 your rst file is ok. The script will check all files in
-:file:`typo3/sysext/core/Documentation/Changelog`::
+:file:`typo3/sysext/core/Documentation/Changelog`:
+
+.. code-block:: shell
+   :caption: shell command
 
    Build/Scripts/validateRstFiles.php
 
@@ -199,6 +202,7 @@ If you wish to render the Changelog locally, you can use docker as described
 in :ref:`h2document:rendering-docs-quickstart`.
 
 .. code-block:: bash
+   :caption: shell command
    :linenos:
 
    cd typo3/sysext/core/

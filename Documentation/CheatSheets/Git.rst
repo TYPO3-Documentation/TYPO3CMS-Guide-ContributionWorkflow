@@ -23,7 +23,10 @@ The following commands assume you are in the working directory of the TYPO3 core
 git clone
 =========
 
-Clone TYPO3 CMS Git repository into current directory::
+Clone TYPO3 CMS Git repository into current directory:
+
+.. code-block:: bash
+   :caption: shell command
 
    git clone git@github.com:typo3/typo3 .
 
@@ -39,30 +42,48 @@ Workflow - common commands
 
 For details see :ref:`Fixing-a-bug-A-Z`
 
-Reset repo to last remote commit in (remote) main branch::
+Reset repo to last remote commit in (remote) main branch:
+
+.. code-block:: bash
+   :caption: shell command
 
    git reset --hard origin/main && git pull origin main
 
-Stage and commit all changes::
+Stage and commit all changes:
+
+.. code-block:: bash
+   :caption: shell command
 
    git commit -a
 
-Is the same as::
+Is the same as:
+
+.. code-block:: bash
+   :caption: shell command
 
    git add .
    git commit
 
-Stage and commit all changes to already existing commit::
+Stage and commit all changes to already existing commit:
+
+.. code-block:: bash
+   :caption: shell command
 
    git commit -a --amend
 
-Push changes to remote main branch on gerrit (default method)::
+Push changes to remote main branch on gerrit (default method):
+
+.. code-block:: bash
+   :caption: shell command
 
    git push
 
 This assumes, you have correctly configured your remote as described in
 :ref:`git-setup-remote`. If not, you must explicitly push using the
-`refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__::
+`refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__:
+
+.. code-block:: bash
+   :caption: shell command
 
    git push origin HEAD:refs/for/main
 
@@ -74,9 +95,12 @@ This assumes, you have correctly configured your remote as described in
 Workflow - work in progress
 ===========================
 
-In case you want to push a "Work in progress", use the following instead::
+In case you want to push a "Work in progress", use the following instead:
 
-      git push origin HEAD:refs/for/main%wip
+.. code-block:: bash
+   :caption: shell command
+
+   git push origin HEAD:refs/for/main%wip
 
 You can also configure Gerrit to always mark your pushes as WIP. In order to do this
 head over to https://review.typo3.org/settings/ and configure "Set new
@@ -89,15 +113,24 @@ See: https://gerrit-review.googlesource.com/Documentation/user-upload.html#wip
 Workflow -other branches
 ========================
 
-Show all branches::
+Show all branches:
+
+.. code-block:: bash
+   :caption: shell command
 
    git branch -a
 
-Checkout 10.4 branch::
+Checkout 10.4 branch:
+
+.. code-block:: bash
+   :caption: shell command
 
    git checkout 10.4
 
-Checkout 9.5 branch::
+Checkout 9.5 branch:
+
+.. code-block:: bash
+   :caption: shell command
 
    git checkout 9.5
 
@@ -112,11 +145,17 @@ Checkout 9.5 branch::
 Long story short: In most cases, **push to main**. The rest is being taken
 care of by core team members!
 
-Push 10.4 branch::
+Push 10.4 branch:
+
+.. code-block:: bash
+   :caption: shell command
 
    git push origin HEAD:refs/for/10.4
 
-Push 9.5 branch::
+Push 9.5 branch:
+
+.. code-block:: bash
+   :caption: shell command
 
    git push origin HEAD:refs/for/9.5
 
@@ -129,6 +168,7 @@ Details: :ref:`commitmessage`
 Example commit message for a bugfix:
 
 .. code-block:: text
+   :caption: commit message
 
    [BUGFIX] Subject line
 
@@ -155,20 +195,32 @@ Other keywords:
 Workflow - Undoing / fixing things
 ==================================
 
-Throw away all changes since last commit::
+Throw away all changes since last commit:
+
+.. code-block:: bash
+   :caption: shell command
 
    git reset HEAD --hard
 
-Unstage a file (remove file from index, but keep in working dir)::
+Unstage a file (remove file from index, but keep in working dir):
+
+.. code-block:: bash
+   :caption: shell command
 
    git reset <path>
 
-Change author for last commit::
+Change author for last commit:
+
+.. code-block:: bash
+   :caption: shell command
 
    git commit --amend --author "Some Name <some@email>"
 
 
-Squash last 2 commits::
+Squash last 2 commits:
+
+.. code-block:: bash
+   :caption: shell command
 
    git rebase -i HEAD~2
 
