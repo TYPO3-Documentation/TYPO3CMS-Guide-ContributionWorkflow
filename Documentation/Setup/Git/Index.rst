@@ -309,7 +309,7 @@ The result should look like this:
 
 Or, compare the :file:`.git/config` file inside the repository:
 
-.. code-block:: none
+.. code-block:: ini
    :caption: .git/config
 
     [core]
