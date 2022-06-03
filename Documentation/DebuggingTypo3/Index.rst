@@ -34,7 +34,7 @@ php.ini
 
 Example setup:
 
-.. code-block:: text
+.. code-block:: ini
    :caption: php.ini
 
    xdebug.remote_enable = 1
