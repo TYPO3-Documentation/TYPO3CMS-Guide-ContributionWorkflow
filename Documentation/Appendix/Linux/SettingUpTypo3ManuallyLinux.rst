@@ -40,21 +40,30 @@ Apache Webserver
 
 
 
-PHP 7.4
--------
+PHP
+---
+
+.. note::
+
+   You may have to add a PPA (ondrej/php) to get the latest PHP version. If
+   you are not familiar with doing that, consider using :ref:`DDEV <ddev>`.
+
+Install the latest PHP version for the core development branch (see
+`composer.json <https://github.com/TYPO3/typo3/blob/main/composer.json>`__ in
+TYPO3 repository on GitHub), including the required PHP extensions listed
+in :ref:`System requirements <t3start:system-requirements>`.
 
 ::
 
-   sudo apt-get install libapache2-mod-php7.4 php7.4-cli \
-   php7.4-common php7.4-curl php7.4-gd php7.4-imap php7.4-intl \
-   php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache \
-   php7.4-readline php7.4-soap php7.4-xml php7.4-zip
+   sudo apt-get install libapache2-mod-<version> php<version>-cli ...
 
-.. important::
-   Make sure you use the correct PHP version for your TYPO3 version.
+Make some changes to php.ini and reload. Also refer to the
+:ref:`System requirements <t3start:system-requirements>` for the recommended
+values, but you may want to increase the values for your development environment.
 
 Make some changes to php.ini and reload::
 
+   memory_limit = 512M
    max_execution_time = 240
    max_input_vars = 1500
 
