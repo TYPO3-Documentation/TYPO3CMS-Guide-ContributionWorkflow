@@ -33,7 +33,7 @@ Setup
 Apache Webserver
 -----------------
 
-::
+.. code-block:: bash
 
    sudo apt-get install apache2
    sudo a2enmod deflate rewrite headers mime expires
@@ -43,7 +43,7 @@ Apache Webserver
 PHP 7.4
 -------
 
-::
+.. code-block:: bash
 
    sudo apt-get install libapache2-mod-php7.4 php7.4-cli \
    php7.4-common php7.4-curl php7.4-gd php7.4-imap php7.4-intl \
@@ -53,13 +53,18 @@ PHP 7.4
 .. important::
    Make sure you use the correct PHP version for your TYPO3 version.
 
-Make some changes to php.ini and reload::
+Make some changes to php.ini (or appropriate file in :file:`conf.d`) and reload:
+
+.. code-block:: bash
+   :caption: php.ini (or other PHP config filename)
 
    max_execution_time = 240
    max_input_vars = 1500
 
 
-Restart Webserver::
+Restart Webserver:
+
+.. code-block:: bash
 
    sudo service apache2 restart
 
@@ -67,7 +72,7 @@ Restart Webserver::
 MySQL Server
 ------------
 
-::
+.. code-block:: bash
 
    sudo apt-get install mysql-server
 
@@ -75,7 +80,7 @@ ImageMagick
 -----------
 
 
-::
+.. code-block:: bash
 
    sudo apt-get install imagemagick
 
@@ -84,9 +89,10 @@ ImageMagick
 Create a basic site for your installation
 -----------------------------------------
 
-Edit a sitefile, e.g. `/etc/apache2/sites-available/t3coredev.conf`
+Edit a sitefile, make sure it will point to the correct htdocs directory:
 
-make sure it will point to the correct htdocs directory::
+.. code-block:: apacheconf
+   :caption: /etc/apache2/sites-available/t3coredev.conf
 
    <VirtualHost *:80>
       ServerAdmin youremail@yourdomain
@@ -97,7 +103,9 @@ make sure it will point to the correct htdocs directory::
    </VirtualHost>
 
 
-Enable it::
+Enable it:
+
+.. code-block:: bash
 
    sudo a2ensite t3coredev
    sudo service apache2 reload
@@ -106,9 +114,8 @@ Enable it::
 Create a domain in your /etc/hosts
 ----------------------------------
 
-/etc/hosts:
-
-::
+.. code-block:: linux-config
+   :caption: /etc/hosts
 
    127.0.0.1 localhost t3coredev
 
