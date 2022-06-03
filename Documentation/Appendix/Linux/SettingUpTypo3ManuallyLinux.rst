@@ -55,7 +55,7 @@ PHP 7.4
 
 Make some changes to php.ini (or appropriate file in :file:`conf.d`) and reload:
 
-.. code-block:: bash
+.. code-block:: ini
    :caption: php.ini (or other PHP config filename)
 
    max_execution_time = 240
