@@ -177,31 +177,44 @@ Relationships
    2. If you have multiple resolved or related issues, **use one line for each
       issue number**. Do not separate them by comma or alike!
 
-   ::
+   .. code-block:: text
+      :caption: commit message
 
       Resolves: #12345
       Resolves: #67890
 
 
 1. `Resolves:`
-   You need to reference an issue on Forge_ here simply by adding #[ISSUE_NUMBER]. For **features** and **tasks**, it closes the issue on merge.::
+   You need to reference an issue on Forge_ here simply by adding #[ISSUE_NUMBER]. For **features** and **tasks**, it closes the issue on merge.:
+
+   .. code-block:: text
+      :caption: commit message
 
       Resolves: #12345
 
    *Historical* : Some issues from the time since the introduction of GIT
    (March 1st 2011) and the migration of the bug tracker to Forge
    (March 29th 2011), still refer to Mantis bug tracker numbers, with a
-   prefix the number with an  *M* , i.e.::
+   prefix the number with an  *M* , i.e.:
+
+   .. code-block:: text
+      :caption: commit message
 
       Resolves: #M12345
 
 2. `Related:`
-   Other issues related to this change which are not resolved (for **all types**, it simply adds a relation, no closing). You need to reference an issue on Forge_ by just adding the issue number like in::
+   Other issues related to this change which are not resolved (for **all types**, it simply adds a relation, no closing). You need to reference an issue on Forge_ by just adding the issue number like in:
+
+   .. code-block:: text
+      :caption: commit message
 
       Related: #12345
 
 3. `Releases:`
-   This is a comma separated list of the target versions you intend to apply this fix on. In general, we **always** fix things on **main** first and then backport a change if it goes along with our support rules for older versions.. Example::
+   This is a comma separated list of the target versions you intend to apply this fix on. In general, we **always** fix things on **main** first and then backport a change if it goes along with our support rules for older versions.. Example:
+
+   .. code-block:: text
+      :caption: commit message
 
       Releases: main, 10.4, 9.5
 
@@ -209,7 +222,10 @@ Relationships
 
 4. `Depends`
    For TYPO3  **documentation patches**.
-   Refer to the corresponding TYPO3 Core patch::
+   Refer to the corresponding TYPO3 Core patch:
+
+   .. code-block:: text
+      :caption: commit message
 
       Depends: ChangeIdOfCorePatch
 

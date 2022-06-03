@@ -41,7 +41,10 @@ This chapter handles improving an existing patch. For creating a new patch, see 
 5. Add files and amend to commit
 
    Update the change by **amending** the previous commit. This will overwrite
-   the commit you fetched from Gerrit with your changes::
+   the commit you fetched from Gerrit with your changes:
+
+   .. code-block:: bash
+      :caption: shell command
 
       git commit --amend -a
 
@@ -53,7 +56,9 @@ This chapter handles improving an existing patch. For creating a new patch, see 
 
 6. Push your change to Gerrit
 
-   Once you are satisfied, push your improved Patch Set to Gerrit::
+   Once you are satisfied, push your improved Patch Set to Gerrit:
 
+   .. code-block:: bash
+      :caption: shell command
 
       git push origin HEAD:refs/for/main

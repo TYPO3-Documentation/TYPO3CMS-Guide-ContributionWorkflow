@@ -114,9 +114,8 @@ This command assumes, you are currently working on your patch
 in your local git repository and you have a clean working
 directory, meaning you committed your changes.
 
-**Do it:**
-
-::
+.. code-block:: bash
+   :caption: shell command
 
    git pull --rebase origin main
 
@@ -125,7 +124,8 @@ additional option `--rebase`.)
 
 or
 
-::
+.. code-block:: bash
+   :caption: shell command
 
    git fetch
    git rebase origin/main

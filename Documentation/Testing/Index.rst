@@ -36,7 +36,10 @@ especially look in the beginning of the output for a description and the listing
 of dependencies, in the list under `-s` to show available commands and at
 the bottom of the output for examples.
 
-Show help::
+Show help:
+
+.. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/runTests.sh -h
 
@@ -134,7 +137,10 @@ of TYPO3 CMS **main** branch (as described in :ref:`setup`).
 composer install
 ----------------
 
-Run composer install::
+Run composer install:
+
+.. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/runTests.sh -s composerInstall
 
@@ -143,12 +149,18 @@ CGL check and fix
 
 Do Coding Guidelines checks and fix them.
 
-Check and fix. This applies the command only to the files in the latest commit::
+Check and fix. This applies the command only to the files in the latest commit:
+
+.. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/runTests.sh -s cglGit
 
 Check and do NOT fix. This applies the command only to the files in the latest
-commit::
+commit:
+
+.. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/runTests.sh -s cglGit -n
 
@@ -157,6 +169,7 @@ Run all unit tests
 ------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/runTests.sh
 
@@ -164,6 +177,7 @@ Run unit tests with xdebug (uses default port 9000)
 ---------------------------------------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    ./Build/Scripts/runTests.sh -x
 
@@ -171,6 +185,7 @@ Run specific unit tests with xdebug
 -----------------------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/runTests.sh -x <directory or file>
 
@@ -182,6 +197,7 @@ Run functional tests
 --------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    ./Build/Scripts/runTests.sh -s functional
 
@@ -189,6 +205,7 @@ Run functional tests with PostgreSQL
 ------------------------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    ./Build/Scripts/runTests.sh -s functional -d postgres
 
@@ -196,6 +213,7 @@ Run acceptance tests
 --------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    ./Build/Scripts/runTests.sh -s acceptance
 
@@ -211,13 +229,17 @@ with the additional `-v` (for verbose output) option.
 Before diagnosing problems in the script, make sure to check if
 Docker is running smoothly on your system.
 
-A quick test is to run the docker hello-world image::
+A quick test is to run the docker hello-world image:
+
+.. code-block:: bash
+   :caption: shell command
 
    docker run hello-world
 
 You should see something like this message:
 
-.. code-block:: none
+.. code-block:: text
+   :caption: result
 
    Hello from Docker!
    This message shows that your installation appears to be working correctly.
@@ -274,6 +296,7 @@ Run all unit tests
 ------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
 
@@ -281,6 +304,7 @@ Run specific unit tests
 -----------------------
 
 .. code-block:: bash
+   :caption: shell command
 
    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml <directory or file>
 
@@ -293,8 +317,9 @@ Run all functional tests
 ------------------------
 
 .. code-block:: bash
+   :caption: shell command
 
-  bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
+   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
 
 
 
@@ -309,11 +334,17 @@ Check for Coding Guidelines
 
 The cgl checking commands / scripts not only check, they repair as well!
 
-Mac / Linux::
+Mac / Linux:
+
+.. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/cglFixMyCommit.sh
 
-Windows::
+Windows:
+
+.. code-block:: bash
+   :caption: shell command
 
    Build/Scripts/cglFixMyCommit.bat
 

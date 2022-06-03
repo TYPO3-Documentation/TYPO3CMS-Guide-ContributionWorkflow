@@ -358,7 +358,8 @@ of the problem.
 
 **Example:**
 
-::
+.. code-block:: text
+   :caption: Redmine inline formatting
 
    !filename.png!
 
@@ -388,13 +389,15 @@ descriptive anchor text.
 
 **Syntax:**
 
-::
+.. code-block:: text
+   :caption: Redmine inline formatting
 
    "Anchor text":url
 
 **Example:**
 
-::
+.. code-block:: text
+   :caption: Redmine inline formatting
 
    "Forger search example":https://forger.typo3.com/search?query=really+long+query+string+with+filters&filters%5Btypo3_version%5D%5B8%5D=true&filters%5Bcategory%5D%5BLink_Handling_%26_Routing%5D=true
 
