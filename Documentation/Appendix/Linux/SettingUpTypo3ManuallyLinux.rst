@@ -1,7 +1,5 @@
 .. include:: /Includes.rst.txt
 
-.. highlight:: bash
-
 .. index::
    single: Linux
    single: Setup; Linux
