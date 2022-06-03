@@ -79,7 +79,7 @@ Contribute to this Guide
 
 If you find a bug in this manual, please be so kind as to check the
 online version on https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/.
-From there you can hit the "Edit me on GitHub" button in the top right corner
+From there you can hit the "Edit on GitHub" button in the top right corner
 and submit a pull request via GitHub. Alternatively you can just report an `issue
 on Github <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues>`__.
 

@@ -15,7 +15,7 @@ Aliases & Git Aliases
    The following should work on MacOS and Linux as well as on Windows with some bash
    compliant shell.
    It has been tested on Linux (Xubuntu). You can help to keep this page up-to-date
-   by using "Edit me on GitHub" (see :ref:`h2document:docs-contribute` for more
+   by using "Edit on GitHub" (see :ref:`h2document:docs-contribute` for more
    information).
 
 For shell commands you often use, you can add them to your list of aliases.
