@@ -1,7 +1,5 @@
 .. include:: /Includes.rst.txt
-.. highlight:: shell
-
-
+.. highlight:: bash
 
 .. index::
    single: Troubleshooting
@@ -31,10 +29,15 @@ Permission Denied
 -----------------
 
 .. code-block:: bash
+   :caption: shell command
 
-    $ git push origin HEAD:refs/for/main
-    Permission denied (publickey).
-    fatal: The remote end hung up unexpectedly
+   git push origin HEAD:refs/for/main
+
+.. code-block:: none
+   :caption: result
+
+   Permission denied (publickey).
+   fatal: The remote end hung up unexpectedly
 
 If this error happens, double check if you are
 
@@ -44,77 +47,110 @@ If this error happens, double check if you are
 * You must use an SSH key :ref:`known to Gerrit <gerrit-ssh>`
 * You must use the :ref:`correct URL <git-setup-remote>`
 
-The following push command (with `-v`) shows you the push URL (which contain review.typo3.org)::
+The following push command (with `-v`) shows you the push URL (which contain review.typo3.org):
 
-    $ git push origin HEAD:refs/for/main -v
-    Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-    Permission denied (publickey).
-    fatal: The remote end hung up unexpectedly
+.. code-block:: bash
+   :caption: shell command
+
+   git push origin HEAD:refs/for/main -v
+
+.. code-block:: none
+   :caption: result
+
+   Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+   Permission denied (publickey).
+   fatal: The remote end hung up unexpectedly
 
 Debugging the SSH Connection
 ----------------------------
 
-Try connecting to the server with using an SSH client (OpenSSH, Putty, etc.)::
+Try connecting to the server with using an SSH client (OpenSSH, Putty, etc.):
 
-    ssh -p 29418 <username>@review.typo3.org
+.. code-block:: bash
+   :caption: shell command
 
-If the output looks like this, everything is fine::
+   ssh -p 29418 <username>@review.typo3.org
 
-    ****    Welcome to Gerrit Code Review    ****
+If the output looks like this, everything is fine:
 
-    Hi <Name>, you have successfully connected over SSH.
+.. code-block:: none
+   :caption: result
 
-    Unfortunately, interactive shells are disabled.
-    To clone a hosted Git repository, use:
+   ****    Welcome to Gerrit Code Review    ****
 
-    git clone ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+   Hi <Name>, you have successfully connected over SSH.
 
-    Connection to review.typo3.org closed.
+   Unfortunately, interactive shells are disabled.
+   To clone a hosted Git repository, use:
+
+   git clone ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+
+   Connection to review.typo3.org closed.
 
 Otherwise, your SSH client does not automatically choose the right private key file.
 By default, ssh searches for the key in :file:`~/.ssh/id_rsa` and :file:`~/.ssh/id_dsa`.
 
-You can manually specify it using the -i parameter::
+You can manually specify it using the -i parameter:
 
-    ssh -p 29418 -i <path-to-private-key> <username>@review.typo3.org
+.. code-block:: bash
+   :caption: shell command
+
+   ssh -p 29418 -i <path-to-private-key> <username>@review.typo3.org
 
 If this works, modify :file:`~/.ssh/config` to define the file name for
-connections to review.typo3.org::
+connections to review.typo3.org:
 
-    Host review.typo3.org
-       User <username>
-       IdentityFile ~/.ssh/<keyfile>
-       Port 29418
+.. code-block:: linux-config
+   :caption: ~/.ssh/config
+
+   Host review.typo3.org
+      User <username>
+      IdentityFile ~/.ssh/<keyfile>
+      Port 29418
 
 Now the connection should work without having to specify any parameters as described above.
 
 If this does not work another issue might be that your SSH version is too new and does not
-accept the signature algorithm . You can test this by executing::
+accept the signature algorithm . You can test this by executing:
 
-    ssh -v -p 29418 -i <path-to-private-key> <username>@review.typo3.org 2>&1 | grep "no mutual signature algorithm"
+.. code-block:: bash
+   :caption: shell command
 
-If you see::
+   ssh -v -p 29418 -i <path-to-private-key> <username>@review.typo3.org 2>&1 | grep "no mutual signature algorithm"
 
-    debug1: send_pubkey_test: no mutual signature algorithm
+If you see the following:
 
-you need to allow the rsa Algorithm in your SSH config::
+.. code-block:: none
+   :caption: result
 
-    Host review.typo3.org
-       ...
-       PubkeyAcceptedKeyTypes +ssh-rsa
+   debug1: send_pubkey_test: no mutual signature algorithm
+
+you need to allow the rsa Algorithm in your SSH config:
+
+.. code-block:: linux-config
+   :caption: ~/.ssh/config
+
+   Host review.typo3.org
+      ...
+      PubkeyAcceptedKeyTypes +ssh-rsa
 
 Push: invalid committer
 -----------------------
 
-::
+.. code-block:: bash
+   :caption: shell command
 
-    $ git push -v origin HEAD:refs/for/main
-    Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-    remote: ERROR:  https://review.typo3.org/#/settings/contact
-    remote:
-    To ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-    ! [remote rejected] HEAD -> refs/for/main (invalid committer)
-    error: failed to push some refs to 'ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git'
+   git push -v origin HEAD:refs/for/main
+
+.. code-block:: none
+   :caption: result
+
+   Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+   remote: ERROR:  https://review.typo3.org/#/settings/contact
+   remote:
+   To ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+   ! [remote rejected] HEAD -> refs/for/main (invalid committer)
+   error: failed to push some refs to 'ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git'
 
 
 This message simply means that your email address is not registered as an Web-Identity.
@@ -132,46 +168,68 @@ If you are trying to push changes and get this error message, then your
 email address is probably not known to the system. Open Settings > Identities
 in Gerrit and check the email address, which is connected to your account
 (you can add more of them if needed). Additionally, check your setttings in
-Git with the following command::
+Git with the following command:
 
-    git config user.email
+.. code-block:: bash
+   :caption: shell command
 
-If needed, change it with the following command::
+   git config user.email
 
-    git config --global user.email your-email@example.org
+If needed, change it with the following command:
 
-You may change the user/author of your last commit with::
+.. code-block:: bash
+   :caption: shell command
 
-    git commit --amend
+   git config --global user.email your-email@example.org
+
+You may change the user/author of your last commit with:
+
+.. code-block:: bash
+   :caption: shell command
+
+   git commit --amend
 
 Missing Change-Id in commit message
 -----------------------------------
 
-::
+.. code-block:: none
+   :caption: result
 
     ! [remote rejected] HEAD -> refs/for/X/X (missing Change-Id in commit message)
 
 If pushing a commit fails with this error message, you probably did not copy the :ref:`commit-hook <git-setup-commit-msg-hook>`.
 Make sure that the file :file:`.git/hooks/commit-msg` exists and is executable.
 
-Afterwards, you have to amend your commit to make it include the Change-Id::
+Afterwards, you have to amend your commit to make it include the Change-Id:
+
+.. code-block:: bash
+   :caption: shell command
 
     git commit --amend
 
 Push: prohibited by gerrit
 --------------------------
 
-If Gerrit rejects your push with::
+If Gerrit rejects your push with:
+
+.. code-block:: none
+   :caption: result
 
     [remote rejected] main -> main (prohibited by gerrit)
 
 you are likely trying to do a simple `git push`. However, as Gerrit prohibits
-directly pushing to the target branches, you have to use this lengthy command::
+directly pushing to the target branches, you have to use this lengthy command:
+
+.. code-block:: bash
+   :caption: shell command
 
    git push origin HEAD:refs/for/<release-branch>
 
 
-For example::
+For example:
+
+.. code-block:: bash
+   :caption: shell command
 
     git push origin HEAD:refs/for/main
 
