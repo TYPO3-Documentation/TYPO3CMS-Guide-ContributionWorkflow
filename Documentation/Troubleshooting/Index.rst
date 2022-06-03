@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: bash
 
 .. index::
    single: Troubleshooting
