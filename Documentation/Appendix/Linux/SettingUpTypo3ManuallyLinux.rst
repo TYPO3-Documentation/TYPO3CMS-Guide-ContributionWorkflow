@@ -1,7 +1,5 @@
 .. include:: /Includes.rst.txt
 
-.. highlight:: bash
-
 .. index::
    single: Linux
    single: Setup; Linux
@@ -33,7 +31,8 @@ Setup
 Apache Webserver
 -----------------
 
-::
+.. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install apache2
    sudo a2enmod deflate rewrite headers mime expires
@@ -53,7 +52,8 @@ Install the latest PHP version for the core development branch (see
 TYPO3 repository on GitHub), including the required PHP extensions listed
 in :ref:`System requirements <t3start:system-requirements>`.
 
-::
+.. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install libapache2-mod-<version> php<version>-cli ...
 
@@ -61,14 +61,20 @@ Make some changes to php.ini and reload. Also refer to the
 :ref:`System requirements <t3start:system-requirements>` for the recommended
 values, but you may want to increase the values for your development environment.
 
-Make some changes to php.ini and reload::
+Make some changes to php.ini (or appropriate file in :file:`conf.d`) and reload:
+
+.. code-block:: ini
+   :caption: php.ini (or other PHP config filename)
 
    memory_limit = 512M
    max_execution_time = 240
    max_input_vars = 1500
 
 
-Restart Webserver::
+Restart Webserver:
+
+.. code-block:: bash
+   :caption: shell command
 
    sudo service apache2 restart
 
@@ -76,7 +82,8 @@ Restart Webserver::
 MySQL Server
 ------------
 
-::
+.. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install mysql-server
 
@@ -84,7 +91,8 @@ ImageMagick
 -----------
 
 
-::
+.. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install imagemagick
 
@@ -93,9 +101,10 @@ ImageMagick
 Create a basic site for your installation
 -----------------------------------------
 
-Edit a sitefile, e.g. `/etc/apache2/sites-available/t3coredev.conf`
+Edit a sitefile, make sure it will point to the correct htdocs directory:
 
-make sure it will point to the correct htdocs directory::
+.. code-block:: apacheconf
+   :caption: /etc/apache2/sites-available/t3coredev.conf
 
    <VirtualHost *:80>
       ServerAdmin youremail@yourdomain
@@ -106,7 +115,10 @@ make sure it will point to the correct htdocs directory::
    </VirtualHost>
 
 
-Enable it::
+Enable it:
+
+.. code-block:: bash
+   :caption: shell command
 
    sudo a2ensite t3coredev
    sudo service apache2 reload
@@ -115,9 +127,8 @@ Enable it::
 Create a domain in your /etc/hosts
 ----------------------------------
 
-/etc/hosts:
-
-::
+.. code-block:: linux-config
+   :caption: /etc/hosts
 
    127.0.0.1 localhost t3coredev
 
