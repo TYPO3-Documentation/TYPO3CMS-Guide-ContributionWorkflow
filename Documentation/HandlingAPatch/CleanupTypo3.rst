@@ -36,22 +36,27 @@ any case or if in doubt, you can safely perform all steps.
 
 **Flush the cache**:
 
-.. code-block:: shell
+.. code-block:: bash
    :caption: shell command
 
+   Build/Scripts/runTests.sh -s clean
    bin/typo3 cache:flush
-
-Or via the install tool
-
-.. image:: /Images/ManualScreenshots/flush_cache.svg
-   :class: with-shadow
 
 **Changes in composer.json**:
 
-.. code-block:: shell
-   :caption: shell command
+.. tabs::
 
-   composer install
+   .. group-tab:: runTests.sh
+
+      .. code-block:: bash
+
+         Build/Scripts/runTests.sh -s composerInstall
+
+   .. group-tab:: direct command
+
+      .. code-block:: bash
+
+         composer install
 
 **Changes in .css / .js files**:
 
