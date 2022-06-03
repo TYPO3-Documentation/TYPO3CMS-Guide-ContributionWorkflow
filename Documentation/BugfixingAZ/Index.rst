@@ -91,7 +91,8 @@ as described in :ref:`setup <setup>`. Especially the
 
    For a bugfix, your commit message may look something like this:
 
-   .. code-block:: none
+   .. code-block:: text
+      :caption: commit message
 
       [BUGFIX] Subject line of max 52 chars
 
@@ -103,6 +104,7 @@ as described in :ref:`setup <setup>`. Especially the
    Only create one commit. Do not create a branch. Work on main.
 
    .. code-block:: bash
+      :caption: shell command
 
       git commit -a
 
@@ -117,7 +119,10 @@ as described in :ref:`setup <setup>`. Especially the
    (it uses `php-cs-fixer <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`__).
 
    After you have created your commit, you can still make changes by
-   amending to your commit::
+   amending to your commit:
+
+   .. code-block:: bash
+      :caption: shell command
 
       git commit -a --amend
 
@@ -128,12 +133,18 @@ as described in :ref:`setup <setup>`. Especially the
 
 #. Push to Gerrit
 
-   To submit the patch to Gerrit, issue the following command::
+   To submit the patch to Gerrit, issue the following command:
+
+   .. code-block:: bash
+      :caption: shell command
 
       git push origin HEAD:refs/for/main
 
    If you have setup the default as described in :ref:`git-setup-remote`
-   it is sufficient to use::
+   it is sufficient to use:
+
+   .. code-block:: bash
+      :caption: shell command
 
       git push
 
@@ -142,7 +153,8 @@ as described in :ref:`setup <setup>`. Especially the
 
    If Gerrit accepts your push, it responds with the following messages:
 
-   .. code-block:: bash
+   .. code-block:: none
+      :caption: result
 
       remote: New Changes:
       remote:   https://review.typo3.org/<gerrit-id>
