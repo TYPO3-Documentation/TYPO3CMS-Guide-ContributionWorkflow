@@ -258,7 +258,7 @@ fill out the required information.
 
 First, create a file, for example :file:`~/.gitmessage.txt`.
 
-.. code-block:: none
+.. code-block:: text
    :caption: ~/.gitmessage.txt
 
    [BUGFIX|TASK|FEATURE]
