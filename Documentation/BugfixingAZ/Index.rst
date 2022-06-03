@@ -91,7 +91,7 @@ as described in :ref:`setup <setup>`. Especially the
 
    For a bugfix, your commit message may look something like this:
 
-   .. code-block:: none
+   .. code-block:: text
       :caption: commit message
 
       [BUGFIX] Subject line of max 52 chars
