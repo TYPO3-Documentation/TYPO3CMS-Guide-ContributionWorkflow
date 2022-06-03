@@ -34,6 +34,7 @@ Apache Webserver
 -----------------
 
 .. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install apache2
    sudo a2enmod deflate rewrite headers mime expires
@@ -44,6 +45,7 @@ PHP 7.4
 -------
 
 .. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install libapache2-mod-php7.4 php7.4-cli \
    php7.4-common php7.4-curl php7.4-gd php7.4-imap php7.4-intl \
@@ -65,6 +67,7 @@ Make some changes to php.ini (or appropriate file in :file:`conf.d`) and reload:
 Restart Webserver:
 
 .. code-block:: bash
+   :caption: shell command
 
    sudo service apache2 restart
 
@@ -73,6 +76,7 @@ MySQL Server
 ------------
 
 .. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install mysql-server
 
@@ -81,6 +85,7 @@ ImageMagick
 
 
 .. code-block:: bash
+   :caption: shell command
 
    sudo apt-get install imagemagick
 
@@ -106,6 +111,7 @@ Edit a sitefile, make sure it will point to the correct htdocs directory:
 Enable it:
 
 .. code-block:: bash
+   :caption: shell command
 
    sudo a2ensite t3coredev
    sudo service apache2 reload
