@@ -37,6 +37,49 @@ Setup
 
 For detailed setup instructions, please see: :ref:`Setting-up-your-Git-environment`
 
+Migrations
+==========
+
+.. _migrate-master-main:
+
+Migrate master => main
+----------------------
+
+If you are using an older installation with the master branch you can switch
+like this from master to main:
+
+.. code-block:: bash
+   :caption: shell command
+
+   # Make sure that git pull loads from the "main" branch
+   git branch --set-upstream-to origin/main
+
+   # Rename your current "master" branch locally to "main" to match TYPO3's naming scheme
+   git branch -m master main
+
+Please also adapt your :ref:`commit message template <committemplate>` (if
+configured) to use "main" instead of "master".
+
+* `TYPO3 Core Development to Change Branch Name <https://typo3.org/article/typo3-core-development-to-change-branch-name>`__ (November 28, 2021)
+
+.. _migrateToGithub:
+
+Migrate to GitHub
+-----------------
+
+If you are working with an older t3coredev installation and are not using the
+GitHub URL yet, you can switch like this:
+
+.. code-block:: bash
+   :caption: shell command
+
+   # set remote url for "origin"
+   git remote set-url origin https://github.com/typo3/typo3.git
+   # set push URL to gerrit (this has not changed)
+   git config remote.origin.pushurl "ssh://<your-username>@review.typo3.org:29418/Packages/TYPO3.CMS.git"
+
+* `Renaming the TYPO3 GitHub Repository <https://typo3.org/article/renaming-the-typo3-github-repository>`__. (July 6, 2021)
+
 Workflow - common commands
 ==========================
 
