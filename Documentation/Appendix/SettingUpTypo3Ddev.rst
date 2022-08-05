@@ -156,7 +156,7 @@ now:
 
 .. seealso::
 
-   * `Using Developer Tools with DDEV-Local <https://ddev.readthedocs.io/en/stable/users/developer-tools/>`__
+   * `Using Developer Tools with DDEV-Local <https://ddev.readthedocs.io/en/stable/users/basics/developer-tools/>`__
 
 
 DDEV describe
@@ -238,11 +238,11 @@ Slack channels
 DDEV documentation
 ------------------
 
-* `Get Started with DDEV <https://www.drud.com/get-started/>`__
+* `Get Started with DDEV <https://ddev.com/get-started/>`__
 * `DDEV System requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__
 * `General DDEV installation <https://ddev.readthedocs.io/en/latest/#installation>`__
-* `DDEV TYPO3 Quickstart <https://ddev.readthedocs.io/en/latest/users/cli-usage/#typo3-quickstart>`__
-* `DDEV commands <https://ddev.readthedocs.io/en/latest/users/cli-usage>`__
+* `DDEV TYPO3 Quickstart <https://ddev.readthedocs.io/en/stable/users/quickstart/#typo3>`__
+* `DDEV commands <https://ddev.readthedocs.io/en/stable/users/basics/cli-usage/>`__
 
 
 * `TYPO3 GmbH Blog post: DDEV adds support for TYPO3 CMS <https://typo3.com/blog/ddev-adds-support-for-typo3-cms/>`__
