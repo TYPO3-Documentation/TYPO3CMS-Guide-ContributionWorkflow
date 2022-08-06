@@ -29,6 +29,12 @@ Setup
 
 .. tip::
 
+   .. code-block: bash
+      :caption: You may install EXT:styleguide with composer easily, e.g. with DDEV
+      
+      # install EXT:styleguide inside DDEV
+      ddev composer require typo3/cms-styleguide
+
    Once the styleguide extension is activated, it is possible to create
    (or delete) the pages via command line:
 
