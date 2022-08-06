@@ -263,3 +263,27 @@ Amend the commit using:
     git commit --amend
 
 Even without modifying the Commit Message, it gets a new SHA. This commit can be pushed again.
+
+Resolving Merge Conflicts in generated asset files
+--------------------------------------------------
+
+If you cherry pick a patch for review; you might encounter a mergeconflict with a generated asset file:
+
+.. code-block:: none
+   :caption: result
+
+   Mergeconflict in typo3/sysext/backend/Resources/Public/Css/backend.css
+   
+To resolve the conflict, use the following workflow:
+
+.. code-block:: bash
+   :caption: shell command
+
+   cd Build
+   yarn build
+   git add
+   git add typo3/sysext/backend/Resources/Public/Css/backend.css
+   git cherry-pick --continue
+
+You will see the Commit Message again and you can now save it. 
+When you push this change, it will create a new Patchset - this is expected behavior.
