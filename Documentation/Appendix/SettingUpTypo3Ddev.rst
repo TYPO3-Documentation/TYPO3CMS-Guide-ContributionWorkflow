@@ -45,7 +45,7 @@ Prerequisites
 
 .. note::
 
-   Composer and yarn can run inside of DDEV, so there is no need to set them up locally.
+   Composer and npm can run inside of DDEV, so there is no need to set them up locally.
 
 *  You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
    have switched to the directory which contains the local Git repository.
@@ -80,7 +80,7 @@ Set correct PHP version, for example
 
    php_version: "8.1"
 
-Add necessary packages for the :ref:`yarn build process <Yarn build process>`
+Add necessary packages for the npm build process,
 (only needed if you are working on assets):
 
 .. code-block:: yaml
@@ -147,12 +147,14 @@ now:
 
       .. code-block:: bash
 
-         ddev exec "cd Build && yarn install"
-         ddev exec "cd Build && yarn build"
+         ddev exec "cd Build && npm ci"
+         ddev exec "cd Build && npm run build"
 
 
       The first command is required once, the second (build) command is required after
       every change of a resource file.
+
+      Be aware that until TYPO3 11.5 yarn was used. 
 
 .. seealso::
 

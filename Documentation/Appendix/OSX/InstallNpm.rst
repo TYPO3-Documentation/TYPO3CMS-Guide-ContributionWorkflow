@@ -1,17 +1,16 @@
 .. include:: /Includes.rst.txt
 
 .. index::
-   single: OS X; Yarn installation
-   single: Yarn installation; OS X
+   single: OS X; Npm installation
+   single: Npm installation; OS X
 
 .. _osx-npm:
 
 ===================
-Yarn install on OSX
+Npm install on OSX
 ===================
 
-Head over to https://yarnpkg.com and download the OSX installer. It will detect your operating system version and will
-give you the right downloads right off the bat.
+Head over to https://docs.npmjs.com/cli/ and follow the install instructions.
 
 Once you have installed it, you can open up the Terminal app which is located under Applications/Utilities on your mac.
-Once in the terminal, type ``yarn -v`` to get the version number of yarn that is currently running on your machine.
+Once in the terminal, type ``npm -v`` to get the version number of npm that is currently running on your machine.
