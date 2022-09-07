@@ -280,7 +280,7 @@ To resolve the conflict, use the following workflow:
    :caption: shell command
 
    cd Build
-   yarn build
+   npm run build
    git add
    git add typo3/sysext/backend/Resources/Public/Css/backend.css
    git cherry-pick --continue
