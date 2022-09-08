@@ -74,8 +74,6 @@ to cherry-pick it from the review system into your local git repository.
 
       git stash pop 'comment-your-changes'
 
-
-
 6. Cleanup your TYPO3 installation
 
    Depending on the changes made by the patch, you may have to apply some changes
