@@ -68,6 +68,14 @@ to cherry-pick it from the review system into your local git repository.
 
       git fetch https://review.typo3.org/Packages/TYPO3.CMS refs/changes/47/56947/11 && git cherry-pick FETCH_HEAD
 
+   Re-apply your local changes, if you had any.
+   
+   .. code-block:: bash
+
+      git stash pop 'comment-your-changes'
+
+
+
 6. Cleanup your TYPO3 installation
 
    Depending on the changes made by the patch, you may have to apply some changes
