@@ -51,6 +51,12 @@ to cherry-pick it from the review system into your local git repository.
 
 4. Clean up your local repository
 
+   Save your local changes beforehand, if you have any.
+   
+   .. code-block:: bash
+
+      git stash save 'comment-your-changes'
+
    .. code-block:: bash
 
       git reset --hard origin/main
