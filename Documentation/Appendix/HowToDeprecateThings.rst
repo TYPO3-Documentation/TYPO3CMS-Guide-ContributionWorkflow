@@ -9,10 +9,14 @@
 How to deprecate classes, methods, arguments and hooks in the TYPO3 core
 ========================================================================
 
-TYPO3 core development policy states that public API will not be changed
+TYPO3 Core development policy states that public API will not be changed
 without a grace period where extension authors can adapt to the changes.
 In that grace period a deprecation warning will be thrown. If you want to remove
-or change functionality in the TYPO3 core, it has to be deprecated first.
+or change functionality in the TYPO3 Core, it has to be deprecated first.
+
+..  note::
+    Up on deprecating or removing functionality the change must be added
+    to the :ref:`Extension scanner <extension-scanner>` whenever possible.
 
 Here is how:
 
