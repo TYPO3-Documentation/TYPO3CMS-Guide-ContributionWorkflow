@@ -7,11 +7,11 @@ Extension scanner
 =================
 
 Whenever functionality is :ref:`deprecated <deprecations>` or removed by
-a breaking change it should be added to the Extension scanner as a weak or
+a breaking change it should be added to the Extension Scanner as either a weak or
 strong match.
 
-When changing Core API, Core developers should keep an eye on the extension scanner and add matcher
-configurations if possible. This is typically the case if PHP API was changed and the patch comes with
+When changing Core API, Core developers should monitor the extension scanner and add matcher
+configurations where possible. This is typically the case if PHP API was changed and the patch comes with
 a deprecation or breaking ReST file to document the change.
 
 
@@ -26,6 +26,7 @@ be tagged with one of the three tags :rst:`FullyScanned`,
 :rst:`FullyScanned` tag is used by the extension scanner to mark instances as
 "not affected by this change", as such they should be added with care and only
 if the scanner configuration matches all changes mentioned in the reST file.
+
 If only parts of the reST file are covered, :rst:`PartiallyScanned` has to be
 added and the reST file should mention which parts are and are not covered.
 If the scanner does not cover a reST file at all then :rst:`NotScanned` can
@@ -37,7 +38,7 @@ be added.
     .. index:: Frontend, FullyScanned, ext:frontend
 
 If a reST file is renamed the file may be covered in a matcher configuration
-which then needs to be adapted, too. The reST files are not bound to
+which then needs to be adapted as well. The reST files are not bound to
 specific directories in the matcher configuration so moving a reST file
 to a different location within the :file:`Changelog` directory has no effect.
 
