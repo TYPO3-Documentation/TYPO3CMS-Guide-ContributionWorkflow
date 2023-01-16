@@ -38,14 +38,10 @@ Apache Webserver
    sudo a2enmod deflate rewrite headers mime expires
 
 .. note::
-   You may have to edit /etc/apache2/apache.conf
    to allow override with .htaccess files for yout typo3 base directory 
    change AllowOverride None to ALL
-:caption: apache.conf
- <Directory /var/www/>
-   AllowOverride ALL
- </Directory>
-
+   https://httpd.apache.org/docs/2.4/en/mod/core.html#allowoverride
+   
 PHP
 ---
 
