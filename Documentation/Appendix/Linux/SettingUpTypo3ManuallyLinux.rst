@@ -39,7 +39,7 @@ Apache Webserver
 
 .. note::
    To allow override with :file:`.htaccess` files for your  TYPO3 base directory 
-   change AllowOverride from 'None' to 'ALL'
+   change `AllowOverride` from `None` to `ALL`
    https://httpd.apache.org/docs/2.4/en/mod/core.html#allowoverride
    
 PHP
