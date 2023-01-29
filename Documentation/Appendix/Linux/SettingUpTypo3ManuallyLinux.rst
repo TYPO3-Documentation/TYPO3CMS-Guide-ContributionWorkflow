@@ -37,8 +37,11 @@ Apache Webserver
    sudo apt-get install apache2
    sudo a2enmod deflate rewrite headers mime expires
 
-
-
+.. note::
+   To allow override with :file:`.htaccess` files for your TYPO3 base directory 
+   change `AllowOverride` from `None` to `ALL`
+   https://httpd.apache.org/docs/2.4/en/mod/core.html#allowoverride
+   
 PHP
 ---
 
