@@ -21,7 +21,12 @@ You will need to set up the prerequisites for your operating system. Look at the
 * :ref:`setting-up-typo3-manually-linux`
 
 You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
-have switched to the directory which contains the local Git repository.
+are in the directory which contains the local Git repository:
+
+.. code-block:: shell
+    :caption: shell command
+
+    cd /var/www/t3coredev
 
 Create the database
 ===================
@@ -29,11 +34,12 @@ Create the database
 We are assuming you are using MySQL 8.0 and the database should be called t3coredev and you will
 access it with username `typo3` and password `somepassword` from localhost.
 
-::
+.. code-block:: mysql
+    :caption: database command
 
-   mysql> CREATE DATABASE t3coredev CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-   mysql> CREATE USER `typo3`@`localhost` identified by `somepassword`;
-   mysql> GRANT ALL ON t3coredev.* TO `typo3`@`localhost`;
+    mysql> CREATE DATABASE t3coredev CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+    mysql> CREATE USER `typo3`@`localhost` identified by `somepassword`;
+    mysql> GRANT ALL ON t3coredev.* TO `typo3`@`localhost`;
 
 .. note::
 
@@ -42,11 +48,10 @@ access it with username `typo3` and password `somepassword` from localhost.
 Create FIRST_INSTALL
 ====================
 
-In your htdocs directory:
+.. code-block:: shell
+    :caption: shell command in /var/www/t3coredev
 
-::
-
-   touch FIRST_INSTALL
+    touch FIRST_INSTALL
 
 
 Continue ...
