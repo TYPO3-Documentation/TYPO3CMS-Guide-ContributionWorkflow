@@ -11,7 +11,7 @@ Here, we list some resources that are useful when editing this manual:
 General information
 ===================
 
-* :doc:`h2document:Index` (official guide)
+* :ref:`h2document:start` (official guide)
 
 Resources for this guide
 ========================
