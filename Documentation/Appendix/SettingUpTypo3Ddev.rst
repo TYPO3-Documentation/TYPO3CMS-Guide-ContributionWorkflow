@@ -94,6 +94,7 @@ Failed to start t3coredev: Unable to listen on required ports, port 80 is alread
 .. code-block:: yaml
 
    router_http_port: "8090"
+   router_https_port: "8443"
 
 Start DDEV
 ==========
