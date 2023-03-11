@@ -87,7 +87,7 @@ Add necessary packages for the npm build process,
 
    webimage_extra_packages: [automake,build-essential]
    
-Optional set http port new to avoid conflicts with local default setups.
+Optionally, set a new HTTP/HTTPS port to avoid conflicts with local defaults.
 Error message:
 Failed to start t3coredev: Unable to listen on required ports, port 80 is already in use,
 
