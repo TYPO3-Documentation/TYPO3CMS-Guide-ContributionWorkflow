@@ -86,6 +86,15 @@ Add necessary packages for the npm build process,
 .. code-block:: yaml
 
    webimage_extra_packages: [automake,build-essential]
+   
+Optionally, set a new HTTP/HTTPS port to avoid conflicts with local defaults.
+Error message:
+Failed to start t3coredev: Unable to listen on required ports, port 80 is already in use,
+
+.. code-block:: yaml
+
+   router_http_port: "8090"
+   router_https_port: "8443"
 
 Start DDEV
 ==========
