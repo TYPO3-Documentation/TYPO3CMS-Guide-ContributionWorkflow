@@ -166,6 +166,11 @@ Here you can go into detail about the how and why of the change. It should be br
 
 -  Wrap the lines after 72 characters manually
 
+.. note::
+
+   The default editor for git commit messages is `nano`. To display information on number of characters in `nano` create a file `~/.nanorc` and add the line `set constantshow`.
+
+
 Relationships
 -------------
 
