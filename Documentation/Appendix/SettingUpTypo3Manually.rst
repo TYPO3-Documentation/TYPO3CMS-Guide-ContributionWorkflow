@@ -54,11 +54,28 @@ Create FIRST_INSTALL
     touch FIRST_INSTALL
 
 
-Continue ...
-============
+Installation wizard
+===================
 
 You can now access the TYPO3 installation wizard by loading the page in the
 browser with the configured URL, e.g. http://t3coredev. This should redirect
 to http://t3coredev/typo3/install.php.
 
 Follow the instructions of the installation wizard.
+
+Or run typo3 setup on the command line. Note that you are effectively in a
+non-composer installation and the command is in
+:file:`typo3/sysext/core/bin/typo3`.
+
+.. code-block:: shell
+    :caption: command line
+
+    typo3/sysext/core/bin/typo3 setup
+
+As usual for TYPO3 commands, use -h for help:
+
+.. code-block:: shell
+    :caption: command line
+
+    typo3/sysext/core/bin/typo3 setup -h
+
