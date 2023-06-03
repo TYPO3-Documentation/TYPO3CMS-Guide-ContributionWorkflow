@@ -86,7 +86,7 @@ Add necessary packages for the npm build process,
 .. code-block:: yaml
 
    webimage_extra_packages: [automake,build-essential]
-   
+
 Optionally, set a new HTTP/HTTPS port to avoid conflicts with local defaults.
 Error message:
 Failed to start t3coredev: Unable to listen on required ports, port 80 is already in use,
@@ -96,27 +96,10 @@ Failed to start t3coredev: Unable to listen on required ports, port 80 is alread
    router_http_port: "8090"
    router_https_port: "8443"
 
-Start DDEV
-==========
-
-.. code-block:: bash
-
-   ddev start
-
-DDEV should now show a URL under which the site can be reached::
-
-   > TYPO3 does not seem to have been set up yet, missing LocalConfiguration.php (/var/www/t3coredev/typo3conf/LocalConfiguration.php)
-   > Generating AdditionalConfiguration.php file for database connection.
-   > Successfully started t3coredev
-   > Project can be reached at http://t3coredev.ddev.site http://127.0.0.1:32773
-
-Ignore the warning about missing :file:`LocalConfiguration.php` for now. We will take
-care of that below.
-
 .. _ddev-composer-install:
 
-Build
-=====
+composer install
+================
 
 It is recommended to run tasks such as :bash:`composer install` etc. via the
 :ref:`runTests.sh <runTests_sh>` script. We provide the direct commands in some
@@ -136,8 +119,12 @@ using the instructions in :ref:`run-tests-directly-without-docker`.
 
       .. code-block:: bash
 
+         # Not recommended, use runTests.sh.
+         # If using DDEV commands, must run ddev start first
          ddev composer install
 
+(optional) Build
+================
 
 The following is not necessary for the initial build, but once you change some assets (for example
 Typescript, SCSS files), you must build them. You might like to try this
@@ -163,12 +150,11 @@ now:
       The first command is required once, the second (build) command is required after
       every change of a resource file.
 
-      Be aware that until TYPO3 11.5 yarn was used. 
+      Be aware that until TYPO3 11.5 yarn was used.
 
 .. seealso::
 
    * `Using Developer Tools with DDEV-Local <https://ddev.readthedocs.io/en/stable/users/basics/developer-tools/>`__
-
 
 DDEV describe
 =============
@@ -190,6 +176,12 @@ Create a file `FIRST_INSTALL`:
 
    touch FIRST_INSTALL
 
+Start DDEV
+==========
+
+.. code-block:: bash
+
+   ddev start
 
 Setup your TYPO3 installation
 =============================

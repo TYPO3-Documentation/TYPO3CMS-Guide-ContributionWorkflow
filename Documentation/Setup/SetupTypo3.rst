@@ -17,13 +17,6 @@ Setup the TYPO3 installation
 
    - :ref:`DDEV <settting-up-typo3-with-ddev>`
 
-You will now need to setup a working installation
-of TYPO3. There are different ways how you can do this. We
-provide a few examples in the Appendix:
-
-* :ref:`DDEV <settting-up-typo3-with-ddev>`
-* :ref:`setting-up-typo3-manually`
-
 In any case, use the cloned Git repository as basis (see :ref:`git-clone`).
 
 .. index::
@@ -71,3 +64,14 @@ alternative. You only need to run one of these!
       .. code-block:: bash
 
          composer install
+
+Create working TYPO3 instance
+=============================
+
+You will now need to setup a working installation
+of TYPO3. There are different ways how you can do this. We
+provide a few examples in the Appendix:
+
+* :ref:`DDEV <settting-up-typo3-with-ddev>`
+* :ref:`setting-up-typo3-manually`
+
