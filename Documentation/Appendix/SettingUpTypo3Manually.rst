@@ -57,6 +57,8 @@ Create FIRST_INSTALL
 Continue ...
 ============
 
-You can now access the TYPO3 installation wizard by going to, e.g.
-http://t3coredev/typo3/. Follow the instructions of the installation
-wizard.
+You can now access the TYPO3 installation wizard by loading the page in the
+browser with the configured URL, e.g. http://t3coredev. This should redirect
+to http://t3coredev/typo3/install.php.
+
+Follow the instructions of the installation wizard.
