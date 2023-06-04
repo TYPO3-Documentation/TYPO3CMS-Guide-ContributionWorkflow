@@ -63,7 +63,7 @@ to http://t3coredev/typo3/install.php.
 
 Follow the instructions of the installation wizard.
 
-Or run typo3 setup on the command line. Note that you are effectively in a
+Or run `typo3 setup` on the command line. You are in a
 non-composer installation and the command is in
 :file:`typo3/sysext/core/bin/typo3`.
 
