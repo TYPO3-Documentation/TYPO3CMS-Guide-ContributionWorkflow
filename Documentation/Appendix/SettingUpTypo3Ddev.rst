@@ -96,6 +96,13 @@ Failed to start t3coredev: Unable to listen on required ports, port 80 is alread
    router_http_port: "8090"
    router_https_port: "8443"
 
+Start DDEV
+==========
+
+.. code-block:: bash
+
+   ddev start
+
 .. _ddev-composer-install:
 
 composer install
@@ -175,13 +182,6 @@ Create a file `FIRST_INSTALL`:
 .. code-block:: bash
 
    touch FIRST_INSTALL
-
-Start DDEV
-==========
-
-.. code-block:: bash
-
-   ddev start
 
 Setup your TYPO3 installation
 =============================
