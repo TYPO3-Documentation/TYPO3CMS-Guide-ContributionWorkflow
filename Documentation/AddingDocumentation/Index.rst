@@ -12,12 +12,10 @@ Add Documentation
 
 **Quick links:**
 
-.. rst-class:: horizbuttons-primary-m
-
 - :ref:`h2document:Formatting-with-reST`
 - :ref:`h2document:format-rest-cgl`
 - :ref:`h2document:rest-cheat-sheet`
-- :ref:`h2document:rendering-docs-quickstart`
+- :ref:`h2document:render-documentation-with-docker`
 
 
 The documentation `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
@@ -45,8 +43,6 @@ NotScanned, PartiallyScanned or FullyScanned tag for the extension scanner.
 See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
 information.
 
-If you use the Forger reST File Generator, it will take care of this.
-
 .. index::
    single: Tools; reST File Generator
    single: Changelog; Generate new Entries
@@ -54,13 +50,11 @@ If you use the Forger reST File Generator, it will take care of this.
 
 .. _rest-file-generator:
 
-reST File Generator
--------------------
+Forger reST Helper
+------------------
 
-.. tip::
-
-   If you want to save yourself some time you can use the rst Helper at
-   https://forger.typo3.com/utilities/rst
+Use the `Forger reST Helper <https://forger.typo3.com/utilities/rst>`__ to
+generate changelogs.
 
 This is strongly recommended because the tool will generate correctly
 formatted files. You can always add more to the .rst file directly later.
@@ -69,7 +63,8 @@ Select the type of rst snippet you want to create, enter your issue number
 and click the search button. Select appropriate tags.
 
 When you are done, copy the generated text and create a file with the same
-name as suggested in the generator.
+name as suggested in the generator in
+:file:`typo3/sysext/core/Documentation/Changelog/...`.
 
 
 Types of Changes
@@ -199,47 +194,13 @@ Render the Changelog
 --------------------
 
 If you wish to render the Changelog locally, you can use docker as described
-in :ref:`h2document:rendering-docs-quickstart`.
-
-.. code-block:: bash
-   :caption: shell command
-   :linenos:
-
-   cd typo3/sysext/core/
-   source <(docker run --rm t3docs/render-documentation show-shell-commands)
-   dockrun_t3rd makehtml
-   # on Mac
-   open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-   # on Linux
-   xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-   # On Windows
-   start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-   cd -
-
-
-#. First, change to the :file:`core` directory
-#. This is a combined command that does docker pull, docker run, and makes some shell commands available in current terminal!
-#. This runs the build command, it will create Documentation-GENERATED-temp in current directory
-#. `open` will run a URL - this should work on MacOS
-#. If you use Linux, use `xdg-open`,
-   if this does not work, just open the URL in quotes in your browser.
-#. cd - goes back to previous directory
-
-.. tip::
-
-   The first time you run this, it will take long. :code:`docker pull` will download
-   the Docker image. The next time, it will be faster, because the image does
-   not have to be downloaded and `dockrun_t3rd` will not build everything, it will only
-   build changed files.
+in :ref:`h2document:render-documentation-with-docker`.
 
 .. important::
 
    If you switch branches, you should rebuild everything. You can either remove the folder
    :file:`Documentation-GENERATED-temp/Cache` and all its contents or run `dockrun_t3rd
    makehtml-no-cache` which has the same effect.
-
-Make things easier for yourself by adding these commands as aliases or adding
-them as commands in your IDE / editor.
 
 .. _documentation-main:
 
