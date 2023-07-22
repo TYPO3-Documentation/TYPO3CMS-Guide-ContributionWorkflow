@@ -198,11 +198,6 @@ please respond in a timely fashion and improve your review. If things are unclea
 ask in the **#typo3-cms-coredev** channel on https://typo3.slack.com.
 
 
-.. tip::
-
-   Look at the page :ref:`aliases` for some sample aliases which might help to
-   simplify your workflow in the future.
-
 Helpful links
 =============
 
