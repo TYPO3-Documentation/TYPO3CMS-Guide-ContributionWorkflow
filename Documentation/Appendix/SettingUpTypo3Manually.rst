@@ -62,20 +62,3 @@ browser with the configured URL, e.g. http://t3coredev. This should redirect
 to http://t3coredev/typo3/install.php.
 
 Follow the instructions of the installation wizard.
-
-Or run `typo3 setup` on the command line. You are in a
-non-Composer installation and the command is in
-:file:`typo3/sysext/core/bin/typo3`.
-
-.. code-block:: shell
-    :caption: command line
-
-    typo3/sysext/core/bin/typo3 setup
-
-As usual for TYPO3 commands, use -h for help:
-
-.. code-block:: shell
-    :caption: command line
-
-    typo3/sysext/core/bin/typo3 setup -h
-
