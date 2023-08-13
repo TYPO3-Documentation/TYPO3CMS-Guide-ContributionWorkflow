@@ -110,79 +110,48 @@ Install Your Commit Hooks
 
 There are two git hooks available for TYPO3 development:
 
-* :ref:`commit-msg-hook`: required
-* :ref:`pre-commit-hook`: optional, currently not available for Windows
+*   :ref:`commit-msg-hook`: required
+*   :ref:`pre-commit-hook`: optional, the pre-commit hook runs on Linux and
+    MacOS. To use the pre-commit hook on Windows you can use a tool like the
+    `Git BASH <https://gitforwindows.org/>`__.
 
-To set them up, do the following:
+To set them up, you can use the existing Composer command or copy the hooks
+manually.
 
-commit-msg Hook
----------------
+.. tabs::
 
-*-- required*
+    .. group-tab:: Composer
 
-Activate the hook by copying the sample file to :file:`.git/hooks/commit-msg`:
+        Install commit-msg and pre-commit hook to .git/hooks
 
-.. code-block:: bash
-   :caption: shell command
+        .. code-block:: bash
+            :caption: shell command
 
-   # ensure folder exists
-   mkdir -p .git/hooks
+            composer gerrit:setup
 
-   # copy
-   cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+        More information: :ref:`custom-composer-commands`.
 
-   # make executable
-   chmod +x .git/hooks/commit-msg
+    .. group-tab:: Manual copy
 
-.. note::
+        .. note::
 
-   You usually do not need the `mkdir` or the `chmod`. It does not do any harm to
-   execute it in any case though.
+            You usually do not need the `mkdir` or the `chmod`. It does not do any harm to
+            execute it in any case though.
 
-More information: :ref:`commit-msg-hook`
+        .. code-block:: bash
+           :caption: shell command
 
+            # ensure folder exists
+            mkdir -p .git/hooks
 
-pre-commit Hook
----------------
+            # copy commit-msg hook
+            cp Build/git-hooks/commit-msg .git/hooks/commit-msg
+            # optional: copy pre-commit hook
+            cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
 
-*-- optional*
-
-The pre-commit hook runs on Linux and MacOS. To use the pre-commit hook on Windows you can use a tool like the `Git BASH <https://gitforwindows.org/>`__.
-
-Activate the hook by copying the sample file to :file:`.git/hooks/pre-commit`:
-
-.. code-block:: bash
-   :caption: shell command
-
-   # ensure folder exists
-   mkdir -p .git/hooks
-
-   # copy
-   cp Build/git-hooks/unix+mac/pre-commit .git/hooks/
-
-   # make executable
-   chmod +x .git/hooks/pre-commit
-
-More information: :ref:`pre-commit-hook`
-
-
-Alternative: Setup With Composer
---------------------------------
-
-As an alternative for copying the hook scripts manually, you can use the following composer command:
-
-For Linux / MacOS:
-
-.. code-block:: bash
-   :caption: shell command
-
-   composer gerrit:setup
-
-This will "install" the :file:`commit-msg` hook and :file:`pre-commit` hook.
-
-More information: :ref:`custom-composer-commands`.
-
-
+            # make executable
+            chmod +x .git/hooks/commit-msg
+            chmod +x .git/hooks/pre-commit
 
 .. index::
    single: Code Contribution Workflow; git setup remote
