@@ -30,7 +30,7 @@ installation using the cloned TYPO3 CMS Git repository.
 You don't need to have a Webserver, a Database or PHP running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
 or Database running on your machine, make sure there are no conflicts (e.g.
-change the ports in the ddev config, see below).
+change the ports in the :ref:`ddev config <ddev-configure>`).
 
 Prerequisites
 =============
@@ -49,6 +49,7 @@ Prerequisites
 *  You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
    have switched to the directory which contains the local Git repository.
 
+.. _ddev-configure:
 
 Configure DDEV
 ==============
