@@ -29,9 +29,8 @@ installation using the cloned TYPO3 CMS Git repository.
 
 You don't need to have a Webserver, a Database or PHP running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
-or Database running on your machine, make sure there are no conflicts.
-You can change the default ports DDEV uses (e.g. port 80 / 443 for Webserver)
-in :file:`.ddev/config.yaml` before you start it.
+or Database running on your machine, make sure there are no conflicts (e.g.
+change the ports in the :ref:`ddev config <ddev-configure>`).
 
 Prerequisites
 =============
@@ -50,6 +49,7 @@ Prerequisites
 *  You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
    have switched to the directory which contains the local Git repository.
 
+.. _ddev-configure:
 
 Configure DDEV
 ==============
@@ -69,32 +69,30 @@ DDEV should suggest the correct defaults and you just need to press ENTER::
    > Found a typo3 codebase at /var/www/t3coredev.
    > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
 
-Edit configuration
-==================
+Change configuration
+====================
 
-Edit the configuration file :file:`.ddev/config.yaml`.
+In order to make further changes to the configuration, use ddev config as shown below
+or edit the configuration file :file:`.ddev/config.yaml` manually.
 
-Set correct PHP version, for example
+.. code-block:: shell
 
-.. code-block:: yaml
+    # Set correct PHP version:
+    ddev config --php-version="8.1"
 
-   php_version: "8.1"
+    # Add necessary packages for the npm build process,
+    # (only needed if you are working on assets):
+    ddev config --nodejs-version="18"
+    ddev config --webimage-extra-packages="automake,build-essential"
 
-Add necessary packages for the npm build process,
-(only needed if you are working on assets):
-
-.. code-block:: yaml
-
-   webimage_extra_packages: [automake,build-essential]
-   
 Optionally, set a new HTTP/HTTPS port to avoid conflicts with local defaults.
 Error message:
 Failed to start t3coredev: Unable to listen on required ports, port 80 is already in use,
 
 .. code-block:: yaml
 
-   router_http_port: "8090"
-   router_https_port: "8443"
+   ddev config --router_http_port="8090"
+   ddev config --router_https_port="8443"
 
 Start DDEV
 ==========
@@ -163,7 +161,7 @@ now:
       The first command is required once, the second (build) command is required after
       every change of a resource file.
 
-      Be aware that until TYPO3 11.5 yarn was used. 
+      Be aware that until TYPO3 v11.5 yarn was used.
 
 .. seealso::
 
