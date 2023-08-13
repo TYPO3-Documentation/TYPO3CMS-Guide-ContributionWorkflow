@@ -73,7 +73,7 @@ Change configuration
 ====================
 
 In order to make further changes to the configuration, use :ref:`ddev config <ddev-configure>`
-below or edit the configuration file :file:`.ddev/config.yaml` manually.
+or edit the configuration file :file:`.ddev/config.yaml` manually.
 
 .. code-block:: shell
 
