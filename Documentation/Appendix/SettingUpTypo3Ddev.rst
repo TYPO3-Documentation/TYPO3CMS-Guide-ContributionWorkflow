@@ -72,7 +72,7 @@ DDEV should suggest the correct defaults and you just need to press ENTER::
 Change configuration
 ====================
 
-In order to make further changes to the configuration, use ddev config as shown
+In order to make further changes to the configuration, use :ref:`ddev config <ddev-configure>`
 below or edit the configuration file :file:`.ddev/config.yaml` manually.
 
 .. code-block:: shell
