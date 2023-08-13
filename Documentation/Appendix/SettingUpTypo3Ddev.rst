@@ -161,7 +161,7 @@ now:
       The first command is required once, the second (build) command is required after
       every change of a resource file.
 
-      Be aware that until TYPO3 11.5 yarn was used.
+      Be aware that until TYPO3 v11.5 yarn was used.
 
 .. seealso::
 
