@@ -54,33 +54,6 @@ read the event description and if in doubt, contact the person
 listed in the event description.
 
 .. index::
-   single: Events; Review Friday
-   single: Review Friday
-   single: Review; Review Friday
-
-.. _typo3-gmbh-review-friday:
-
-TYPO3 GmbH Review Friday
-------------------------
-
-If you live near Düsseldorf in Germany, Review Friday might be your event of choice.
-During this event, you can work on your patch(es) and communicate with other
-contributors.
-Anyone is welcome to join and it is free. Food and drink is also provided.
-
-**Bring your laptop.**
-
-For a recap of previous events, look at
-`Recap: TYPO3 GmbH Review Fridays July and August 2018
-<https://typo3.org/article/recap-typo3-gmbh-review-fridays-july-and-august-2018/>`__
-
-The event usually takes place on the first Friday of the month from 9 a.m. to 12 p.m
-at the `TYPO3 GmbH headquarters <https://typo3.com/contact/>`__.
-
-Search for the next Review Friday on `Events on typo3.org <https://typo3.org/community/events/>`__
-and look at the event description for further information.
-
-.. index::
    single: Events; Code Sprints
    single: Code Sprints
    single: Sprints
