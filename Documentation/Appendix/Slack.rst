@@ -30,20 +30,3 @@ in the channel and wait for a response.
 
 As always, make sure to follow the `Code of conduct <https://typo3.org/community/code-of-conduct/>`__
 or the short form: **be nice, be helpful!**
-
-
-
-
-.. index::
-   single: Slack; Botty
-   single: Botty
-
-.. _botty:
-
-Botty on Slack
-~~~~~~~~~~~~~~
-
-Also the TYPO3 slack bot. We will show you some of its commands later in this manual.
-
-You cannot use Botty in your private channel or in a direct messaging channel with someone else. Botty will
-only be available in a public channel, to which it has been invited (which is the case in #typo3-cms-coredev).
