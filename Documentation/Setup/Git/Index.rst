@@ -64,7 +64,7 @@ Clone the TYPO3 CMS core repository:
         .. code-block:: bash
            :caption: shell command
 
-           https://github.com/typo3/typo3.git .
+           git clone https://github.com/typo3/typo3.git .
 
 
 
