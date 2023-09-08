@@ -46,10 +46,25 @@ Create a directory for your TYPO3 core installation and change into it, e.g.:
 
 Clone the TYPO3 CMS core repository:
 
-.. code-block:: bash
-   :caption: shell command
+.. tabs::
 
-   git clone git@github.com:typo3/typo3 .
+    .. group-tab:: SSH
+
+        Use the SSH clone method if you've added your SSH key to your GitHub account:
+
+        .. code-block:: bash
+           :caption: shell command
+
+           git clone git@github.com:typo3/typo3 .
+
+    .. group-tab:: HTTPS
+
+        As an alternative, you can always use the HTTPS clone method:
+
+        .. code-block:: bash
+           :caption: shell command
+
+           https://github.com/typo3/typo3.git .
 
 
 
