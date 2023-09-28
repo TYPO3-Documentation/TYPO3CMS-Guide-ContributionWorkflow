@@ -53,7 +53,7 @@ alternative. You only need to run one of these!
     ..  code-block:: bash
 
         # cd <cloned project>
-        export COMPOSER_ROOT_VERSION=12.0.0
+        export COMPOSER_ROOT_VERSION=13.0.0
 
 
 ..  tabs::
