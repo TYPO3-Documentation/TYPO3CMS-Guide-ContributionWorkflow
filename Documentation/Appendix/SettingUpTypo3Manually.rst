@@ -34,7 +34,7 @@ Create the database
 We are assuming you are using MySQL 8.0 and the database should be called t3coredev and you will
 access it with username `typo3` and password `somepassword` from localhost.
 
-.. code-block:: mysql
+..  code-block:: sql
     :caption: database command
 
     mysql> CREATE DATABASE t3coredev CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;

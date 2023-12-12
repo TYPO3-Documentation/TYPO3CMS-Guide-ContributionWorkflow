@@ -99,7 +99,7 @@ You can manually specify it using the -i parameter:
 If this works, modify :file:`~/.ssh/config` to define the file name for
 connections to review.typo3.org:
 
-.. code-block:: linux-config
+.. code-block:: text
    :caption: ~/.ssh/config
 
    Host review.typo3.org
@@ -126,7 +126,7 @@ If you see the following:
 
 you need to allow the rsa Algorithm in your SSH config:
 
-.. code-block:: linux-config
+.. code-block:: text
    :caption: ~/.ssh/config
 
    Host review.typo3.org
@@ -273,7 +273,7 @@ If you cherry pick a patch for review; you might encounter a mergeconflict with 
    :caption: result
 
    Mergeconflict in typo3/sysext/backend/Resources/Public/Css/backend.css
-   
+
 To resolve the conflict, use the following workflow:
 
 .. code-block:: bash
@@ -285,5 +285,5 @@ To resolve the conflict, use the following workflow:
    git add typo3/sysext/backend/Resources/Public/Css/backend.css
    git cherry-pick --continue
 
-You will see the Commit Message again and you can now save it. 
+You will see the Commit Message again and you can now save it.
 When you push this change, it will create a new Patchset - this is expected behavior.
