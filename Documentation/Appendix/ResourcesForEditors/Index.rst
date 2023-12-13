@@ -42,7 +42,7 @@ Hints for adding images
 
 When adding images, always set a shadow in rest:
 
-.. code-block:: rest
+.. code-block:: rst
 
    .. image:: /Images/External/Tower/gerrit-new-ui2.png
       :class: with-shadow
