@@ -78,7 +78,7 @@ or edit the configuration file :file:`.ddev/config.yaml` manually.
 .. code-block:: shell
 
     # Set correct PHP version:
-    ddev config --php-version="8.1"
+    ddev config --php-version="8.2"
 
     # Add necessary packages for the npm build process,
     # (only needed if you are working on assets):
@@ -91,8 +91,8 @@ Failed to start t3coredev: Unable to listen on required ports, port 80 is alread
 
 .. code-block:: yaml
 
-   ddev config --router_http_port="8090"
-   ddev config --router_https_port="8443"
+   ddev config --router-http-port="8090"
+   ddev config --router-https-port="8443"
 
 Start DDEV
 ==========
