@@ -19,8 +19,10 @@ This is just a very brief overview.
 PHP
 ===
 
-Make sure you are using the correct PHP codestyle. It is **PSR-1 / PSR-2** at
-the time of writing and specified in the :ref:`TYPO3 Coding Guidelines
+Make sure you are using the correct PHP codestyle. It is based on
+the `TYPO3 Coding Standards <https://github.com/TYPO3/coding-standards>`__,
+(which follows PHP-FIG, PSR-1/PSR-2 and PSR-12 at the time of this writing),
+and covered in the :ref:`TYPO3 Coding Guidelines
 <t3coreapi:cgl>`.
 
 See :ref:`PhpStorm setup: CGL <phpstorm-setup-cgl>` for information on how
