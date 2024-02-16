@@ -64,7 +64,7 @@ for information on how to use the provided
 `config.php <https://github.com/TYPO3/typo3/blob/main/Build/php-cs-fixer/config.php>`__
 within PhpStorm.
 
-For a quick start, you can Howevern use the following PhpStorm code
+For a quick start, you can use the following PhpStorm code
 style to comply with PSR-12, which is the most recent recommendation
 at the time of this writing that PhpStorm provides a preset for:
 
