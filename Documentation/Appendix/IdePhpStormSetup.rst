@@ -58,10 +58,15 @@ standard formatting rules are already setup automatically (e.g. indent with
 
 The rules defined in :file:`.editorconfig` are very minimal and
 it is suggested to see the :ref:`TYPO3 Coding Guidelines <t3coreapi:cgl>`
-for more information and toolchain configuration.
+for more information and toolchain configuration. Please read 
+`PhpStorm documentation on using PHP CS Fixer <https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html#installing-configuring-php-cs-fixer>`__
+for information on how to use the provided
+`config.php <https://github.com/TYPO3/typo3/blob/main/Build/php-cs-fixer/config.php>`__
+within PhpStorm.
 
-However, you can use the following PhpStorm code style to comply with PSR-12, which
-is the most recent recommendation at the time of this writing.
+For a quick start, you can Howevern use the following PhpStorm code
+style to comply with PSR-12, which is the most recent recommendation
+at the time of this writing that PhpStorm provides a preset for:
 
 PHP files
 ---------

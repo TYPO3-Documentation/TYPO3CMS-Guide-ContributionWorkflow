@@ -31,8 +31,7 @@ There is an .editorconfig file in the TYPO3 core repository.
 See http://EditorConfig.org for more information.
 
 Please note that the rules in :file:`.editorconfig` are very minimal. So, additionally,
-setup your Editor / IDE to use PSR-12 (recommended at the time of this
-writing) or, even better, use the recommendation as described in the
+setup your Editor / IDE to use the recommendation as described in the
 :ref:`Coding Guidelines of TYPO3 <t3coreapi:cgl>`.
 
 See :ref:`PhpStorm setup CGL <phpstorm-setup-cgl>` for information about setting up
