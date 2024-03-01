@@ -64,8 +64,8 @@ alternative. You only need to run one of these!
 
             Build/Scripts/runTests.sh -s composerInstall
 
-   ..  group-tab:: direct command
+    ..  group-tab:: direct command
 
-       ..  code-block:: bash
+        ..  code-block:: bash
 
-           composer install
+            composer install

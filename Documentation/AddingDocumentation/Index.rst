@@ -179,7 +179,7 @@ are required for the Changelog. It will **not** do a reST syntax check.
 In order to make sure that your file contains no syntax errors and will
 be rendered correctly, do one or more of the following:
 
-* Check our :ref:`format-rest-cgl` and :ref:`rest-common-pitfalls`.
+* Check out :ref:`h2document:format-rest-cgl`.
 * Use an editor or IDE that properly supports reST and shows errors
 * Render the Changelog locally with docker as explained in the next section
 
