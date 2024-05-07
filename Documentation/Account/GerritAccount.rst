@@ -25,7 +25,7 @@ Setting up Gerrit (ssh)
    :ref:`set up earlier <TYPO3Account>`.
 
 
-2. Create your ssh key
+2. Create your SSH key
 
    If you don't know how to create your SSH Public/Private Key,
    we have compiled a list of links for you:
@@ -44,7 +44,7 @@ Setting up Gerrit (ssh)
 
    * On the left hand side, click :guilabel:`SSH Keys`.
 
-   * Copy-paste the contents of your public ssh key file (e.g.
+   * Copy-paste the contents of your public SSH key file (e.g.
      :file:`~/.ssh/id_rsa.pub`) into the text field next to
      :guilabel:`New SSH key` and
      then click on :guilabel:`Add new SSH key`.

@@ -69,8 +69,8 @@ Besides developing for the TYPO3 core, there are many other ways to contribute a
 
 You can find general information here:
 
-*  General information about the various `Teams & Committes <https://typo3.org/teams-committees/>`__
-*  General information on how you can `Participate <https://typo3.org/participate/>`__
+*  General information about the various `Teams & Committees <https://typo3.org/community/teams/>`__
+*  General information on how you can `Contribute and Get Involved <https://typo3.org/community/contribute/>`__
 
 .. _contribute:
 

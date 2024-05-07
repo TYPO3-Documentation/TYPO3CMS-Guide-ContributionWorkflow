@@ -276,7 +276,7 @@ A good bug report should contain all or any of these elements:
    Here you can add:
 
    * A brief description of your environment. Depending on the nature of
-     the bug it *might* inclde your operating system
+     the bug it *might* include your operating system
      (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
      used, the database used (mySql, SQLServer, ...) and its version.
      In any case, the full version of TYPO3 (e.g. 9.5.1) is very helpful. If
@@ -299,7 +299,7 @@ A good bug report should contain all or any of these elements:
 #. Actual results
 
    This is the heart of your problem: what happened after you followed the
-   steps? Please add also here if your problem is repeteable or comes out
+   steps? Please add also here if your problem is repeatable or comes out
    randomly.
 
 #. Expected results
@@ -318,7 +318,7 @@ the bug.
 .. tip::
 
    Use redmine formatting to structure your bug report and make it more readable, for
-   example use headlines (h1, h2) to structure the parts, hightlighted code (<>) for
+   example use headlines (h1, h2) to structure the parts, highlighted code (<>) for
    code snippets, code for inline images (!image!).
 
 

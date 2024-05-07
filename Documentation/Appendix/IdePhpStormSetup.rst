@@ -49,7 +49,7 @@ EditorConfig
 Please note that there is an
 `.editorconfig <https://github.com/typo3/typo3/blob/main/.editorconfig>`__
 file in the TYPO3 core repository.
-See http://EditorConfig.org for more information. Use the `EditorConfig plugin
+See https://editorconfig.org/ for more information. Use the `EditorConfig plugin
 <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__ for PhpStorm.
 
 If you use the :file:`.editorconfig` file (which is included in the TYPO3 core), some
@@ -58,7 +58,7 @@ standard formatting rules are already setup automatically (e.g. indent with
 
 The rules defined in :file:`.editorconfig` are very minimal and
 it is suggested to see the :ref:`TYPO3 Coding Guidelines <t3coreapi:cgl>`
-for more information and toolchain configuration. Please read 
+for more information and toolchain configuration. Please read
 `PhpStorm documentation on using PHP CS Fixer <https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html#installing-configuring-php-cs-fixer>`__
 for information on how to use the provided
 `config.php <https://github.com/TYPO3/typo3/blob/main/Build/php-cs-fixer/config.php>`__

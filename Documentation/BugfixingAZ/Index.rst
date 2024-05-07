@@ -65,7 +65,7 @@ as described in :ref:`setup <setup>`. Especially the
    there is ancient code we didn't have to touch yet because it just works.
 
    Make sure to look at :ref:`deprecations` in the Appendix for information
-   about to deprecate things if you need to make changes to the public API.
+   about how to deprecate things if you need to make changes to the public API.
 
    For new features, breaking changes and deprecations, it is necessary to :ref:`add
    information to the changelog <changelog>`.

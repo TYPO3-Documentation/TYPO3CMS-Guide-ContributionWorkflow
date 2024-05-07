@@ -8,7 +8,7 @@
    single: Setup; DDEV
 
 .. _ddev:
-.. _settting-up-typo3-with-ddev:
+.. _setting-up-typo3-with-ddev:
 
 .. warning::
 

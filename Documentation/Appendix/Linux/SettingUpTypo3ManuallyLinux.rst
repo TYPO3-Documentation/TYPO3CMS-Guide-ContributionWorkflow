@@ -14,8 +14,8 @@ Prerequisites
 =============
 
 You will need a Webserver, PHP and database on your system. Look at the page `System requirements
-<https://typo3.org/typo3-cms/overview/requirements/>`__ and check out the specific system
-requirements for the current main branch on the `Download TYPO3 <https://typo3.org/download/>`__
+<https://get.typo3.org/version/12#system-requirements>`__ and check out the specific system
+requirements for the current main branch on the `Download TYPO3 <https://get.typo3.org/>`__
 page.
 
 Just as a minimal example, this is a list of packages you might want to

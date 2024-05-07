@@ -15,13 +15,13 @@ Setup the TYPO3 installation
 
     .. rst-class:: horizbuttons-primary-m
 
-    - :ref:`DDEV <settting-up-typo3-with-ddev>`
+    - :ref:`DDEV <setting-up-typo3-with-ddev>`
 
 You will now need to setup a working installation
 of TYPO3. There are different ways how you can do this. We
 provide a few examples in the Appendix:
 
-*   :ref:`DDEV <settting-up-typo3-with-ddev>`
+*   :ref:`DDEV <setting-up-typo3-with-ddev>`
 *   :ref:`setting-up-typo3-manually`
 
 In any case, use the cloned Git repository as basis (see :ref:`git-clone`).
