@@ -8,7 +8,11 @@
                project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow"
                project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues"
                edit-on-github-branch="main" edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow"
-               typo3-core-preferred="main"/>
-    <project title="TYPO3 Contribution Guide - Core Development" release="main" version="main"
-             copyright="since 2015 by the TYPO3 contributors"/>
+               typo3-core-preferred="main"
+               interlink-shortcode="t3contribute"
+            />
+    <project title="TYPO3 Contribution Guide - Core Development" 
+            release="main" 
+            version="main"
+            copyright="since 2015 by the TYPO3 contributors"/>
 </guides>
