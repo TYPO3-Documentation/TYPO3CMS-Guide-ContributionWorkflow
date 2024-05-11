@@ -137,7 +137,7 @@ and enter your comment. Here, you can also apply your votes.
 
 .. sidebar:: Votes
 
-   The :guilabel:`+2` and :guilabel:`-2` votes only available for Core Mergers.
+   The :guilabel:`+2` and :guilabel:`-2` votes are only available for Core Mergers.
    See the section :ref:`Review a patch as a Core Merger<coreMergers-review>`.
    for more details.
 

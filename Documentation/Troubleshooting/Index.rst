@@ -87,7 +87,7 @@ If the output looks like this, everything is fine:
    Connection to review.typo3.org closed.
 
 Otherwise, your SSH client does not automatically choose the right private key file.
-By default, ssh searches for the key in :file:`~/.ssh/id_rsa` and :file:`~/.ssh/id_dsa`.
+By default, SSH searches for the key in :file:`~/.ssh/id_rsa` and :file:`~/.ssh/id_dsa`.
 
 You can manually specify it using the -i parameter:
 
@@ -110,7 +110,7 @@ connections to review.typo3.org:
 Now the connection should work without having to specify any parameters as described above.
 
 If this does not work another issue might be that your SSH version is too new and does not
-accept the signature algorithm . You can test this by executing:
+accept the signature algorithm. You can test this by executing:
 
 .. code-block:: bash
    :caption: shell command
@@ -166,7 +166,7 @@ You are not a committer
 If you are trying to push changes and get this error message, then your
 email address is probably not known to the system. Open Settings > Identities
 in Gerrit and check the email address, which is connected to your account
-(you can add more of them if needed). Additionally, check your setttings in
+(you can add more of them if needed). Additionally, check your settings in
 Git with the following command:
 
 .. code-block:: bash
@@ -267,7 +267,7 @@ Even without modifying the Commit Message, it gets a new SHA. This commit can be
 Resolving Merge Conflicts in generated asset files
 --------------------------------------------------
 
-If you cherry pick a patch for review; you might encounter a mergeconflict with a generated asset file:
+If you cherry pick a patch for review; you might encounter a merge conflict with a generated asset file:
 
 .. code-block:: none
    :caption: result

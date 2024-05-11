@@ -32,7 +32,7 @@ Hints for creating images
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Do not create huge fullscreen images. If an image contains too much information,
-try to highlight the significant information by usinng boxes, text, numbers and / or
+try to highlight the significant information by using boxes, text, numbers and / or
 arrows in the image.
 
 Add a white border inside the image if it helps the image to stand out from the text.

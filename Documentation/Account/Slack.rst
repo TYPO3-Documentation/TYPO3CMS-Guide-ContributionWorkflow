@@ -29,7 +29,7 @@ Register for Slack account
    In order to join the slack workspace, you must already have your
    typo3.org account.
 
-2. Got to `Slack for TYPO3 on my.typo3.org <https://my.typo3.org/index.php?id=35>`__.
+2. Go to `Slack for TYPO3 on my.typo3.org <https://my.typo3.org/index.php?id=35>`__.
 
    On that page, you will also find information about recommended channels.
 

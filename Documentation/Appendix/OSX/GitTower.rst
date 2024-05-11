@@ -22,7 +22,7 @@ Tower provides extended support for Gerrit_, which comes in handy because we wor
 
 Although it is a paid product, we think the cost is absolutely worth it.
 
-You can learn more about Git Tower on their website http://www.git-tower.com/.
+You can learn more about Git Tower on their website https://www.git-tower.com/.
 
 Enabling Extended Gerrit Support in Tower
 =========================================

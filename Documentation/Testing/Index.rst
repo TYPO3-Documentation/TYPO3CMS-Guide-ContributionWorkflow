@@ -250,7 +250,7 @@ You should see something like this message:
 See `Get Started, Part 1: Orientation and setup <https://docs.docker.com/get-started/#test-docker-version>`__
 
 Also, see docker troubleshooting pages for more in-depth information,
-such as `Docker for Mac: Logs and troublehooting
+such as `Docker for Mac: Logs and troubleshooting
 <https://docs.docker.com/docker-for-mac/troubleshoot/>`__
 
 Results

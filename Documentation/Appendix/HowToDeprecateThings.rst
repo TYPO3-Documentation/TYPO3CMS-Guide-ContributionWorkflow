@@ -15,7 +15,7 @@ In that grace period a deprecation warning will be thrown. If you want to remove
 or change functionality in the TYPO3 Core, it has to be deprecated first.
 
 ..  note::
-    Up on deprecating or removing functionality the change must be added
+    Upon deprecating or removing functionality the change must be added
     to the :ref:`Extension scanner <extension-scanner>` whenever possible.
 
 Here is how:
@@ -98,7 +98,7 @@ the future:
 
 #. Add the :php:`TYPO3\CMS\Core\Compatibility\PublicPropertyDeprecationTrait` trait to
    the class.
-#. Add the property :php:`$deprecatedPublicMethods` to the class and list all properties that
+#. Add the property :php:`$deprecatedPublicProperties` to the class and list all properties that
    should no longer be accessed from outside of the class.
 #. Make the property private/protected.
 
@@ -228,7 +228,7 @@ Example:
     * not be converted back to <link> tags anymore.
     *
     * @param string $value Content input
-    * @param bool $internallyCalledFromCore internal option for calls where the Core is still using this function, to supress method deprecations
+    * @param bool $internallyCalledFromCore internal option for calls where the Core is still using this function, to suppress method deprecations
     * @return string Content output
     * @deprecated will be removed in TYPO3 v10, only ->TS_AtagToAbs() should be called directly, <link> syntax is deprecated
     */

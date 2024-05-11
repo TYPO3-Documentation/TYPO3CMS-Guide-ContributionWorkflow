@@ -45,7 +45,7 @@ Email notification
 
 If you are in any way involved in the review (e.g. you are author,
 reviewer or you made changes), you will get a notification about
-it to your email adress. The notification contains a link.
+it to your email address. The notification contains a link.
 
 
 
