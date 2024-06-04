@@ -221,14 +221,14 @@ Let's verify our PhpStorm debug settings first. Go to File > Settings > Language
 default port(9000) and also raise "Max. simultaneous connections" to two or three. Note remote debugging
 may impose a security risk since everyone on the network can send debug streams to your host.
 
-..  figure:: /Images/ExternalImages/Testing/PhpstormXdebugSettings.png
+..  figure:: PhpstormXdebugSettings.png
     :class: with-shadow
     :alt: Phpstorm debug settings window
 
 Accept changes and enable "Start listening for PHP connections". If you changed settings, turn them
 off and on once to read new settings.
 
-..  figure:: /Images/ExternalImages/Testing/PhpstormDebugListen.png
+..  figure:: PhpstormDebugListen.png
     :class: with-shadow
     :alt: Phpstorm with enabled debug listening
 
@@ -237,7 +237,7 @@ not on empty lines and not on array assignments. The best way is to use a straig
 a simple test file for now, add a breakpoint and then execute this test. If all goes well, PhpStorm
 stops at this line and opens the debug window.
 
-..  figure:: /Images/ExternalImages/Testing/PhpstormDebugSession.png
+..  figure:: PhpstormDebugSession.png
     :class: with-shadow
     :alt: Phpstorm with active debug session
 
