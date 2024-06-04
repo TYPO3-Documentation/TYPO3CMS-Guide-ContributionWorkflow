@@ -363,3 +363,8 @@ More information
 
 *  More details about the test system, test strategies, execution and set up can
    be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
+
+..  toctree::
+    :glob:
+
+    *
