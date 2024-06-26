@@ -100,6 +100,7 @@ linking issue and patch reviews, for example:
 ..  code-block::
 
    [TASK] Provide PSR-7 Request in PolicyMutatedEvent
+   
    For additional context does the PolicyMutatedEvent
    now provide the current PSR-7 Request.
 
