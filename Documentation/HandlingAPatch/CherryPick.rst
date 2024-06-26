@@ -52,7 +52,7 @@ to cherry-pick it from the review system into your local git repository.
 4. Clean up your local repository
 
    Save your local changes beforehand, if you have any. Otherwise the
-   `git reset`` performed after that would delete local changes, which
+   `git reset` performed after that would delete local changes, which
    may happen if you work on different patches simultaneously with the
    same repository directory.
 
