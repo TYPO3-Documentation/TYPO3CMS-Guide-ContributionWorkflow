@@ -117,7 +117,7 @@ that are important. Let's go over these really quick.
 Tracker
 -------
 
-The `tracker`` is just Redmine's term for the type of an issue. The trackers you will
+The `tracker` is just Redmine's term for the type of an issue. The trackers you will
 be using the most are **Feature** and **Bug**.
 
 The others are mostly for internal organization (like **Stories** and **Epics**)
