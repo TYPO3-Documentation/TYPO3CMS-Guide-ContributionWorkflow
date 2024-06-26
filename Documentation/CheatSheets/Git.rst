@@ -163,19 +163,19 @@ Show all branches:
 
    git branch -a
 
-Checkout 10.4 branch:
+Checkout 12.4 branch:
 
 .. code-block:: bash
    :caption: shell command
 
-   git checkout 10.4
+   git checkout 12.4
 
-Checkout 9.5 branch:
+Checkout 11.5 branch:
 
 .. code-block:: bash
    :caption: shell command
 
-   git checkout 9.5
+   git checkout 11.5
 
 
 .. important::
@@ -188,19 +188,19 @@ Checkout 9.5 branch:
 Long story short: In most cases, **push to main**. The rest is being taken
 care of by core team members!
 
-Push 10.4 branch:
+Push 12.4 branch:
 
 .. code-block:: bash
    :caption: shell command
 
-   git push origin HEAD:refs/for/10.4
+   git push origin HEAD:refs/for/12.4
 
-Push 9.5 branch:
+Push 11.5 branch:
 
 .. code-block:: bash
    :caption: shell command
 
-   git push origin HEAD:refs/for/9.5
+   git push origin HEAD:refs/for/11.5
 
 
 Workflow - commit msg
@@ -231,7 +231,7 @@ Other keywords:
    [!!!][FEATURE]
    [WIP][TASK]
 
-* subject < 52 chars
+* subject < 52 chars (if possible, otherwise <= 72)
 * other lines <= 72 chars
 
 

@@ -31,7 +31,7 @@ in the **#typo3-cms-coredev** channel. (Remember to :ref:`register <slack-accoun
 Target Versions
 ===============
 
-Target versions are set by the core team only. Until we can enforce this technically,
+Target versions are set by the Core team only. Until we can enforce this technically,
 feel free to remove target versions set by issue reporters.
 
 **Candidate for patchlevel:**

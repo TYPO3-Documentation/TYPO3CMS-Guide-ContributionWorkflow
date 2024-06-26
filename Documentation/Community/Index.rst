@@ -48,7 +48,7 @@ any TYPO3 event in some way or another.
 Look for events like "Review Friday", "Code Sprints" and "Developer Days".
 Next, we will describe some events that are relevant for core
 contribution. They are not specifically targeted at providing support,
-but the event may be open to new core contributors and may give
+but the event may be open to new Core contributors and may give
 you the opportunity to ask questions and get help. In any case,
 read the event description and if in doubt, contact the person
 listed in the event description.
@@ -64,7 +64,7 @@ Code Sprints
 ------------
 
 For joining code sprints, it is recommended that you have at least a little experience
-with TYPO3 core contribution and are familiar with the workflow.
+with TYPO3 Core contribution and are familiar with the workflow.
 
 Look for the next Code Sprints on the `Events page on typo3.org
 <https://typo3.org/community/events/>`__.

@@ -32,14 +32,14 @@ is maintained in the core.
 Changelog
 =========
 
-Some patches require a .rst (reStructuredText) Changelog file describing the change.
+Some patches require a :file:`.rst` (reStructuredText) Changelog file describing the change.
 Not all patches
 need an entry in the Changelog. Check the list below. Also see the current
 `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
 for some examples.
 
 Every file may optionally contain tags, but it must contain at least a
-NotScanned, PartiallyScanned or FullyScanned tag for the extension scanner.
+`NotScanned`, `PartiallyScanned`` or `FullyScanned`` tag for the extension scanner.
 See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
 information.
 

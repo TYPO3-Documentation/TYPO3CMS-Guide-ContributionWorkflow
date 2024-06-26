@@ -34,7 +34,7 @@ the patch be merged (for more details on voting, see :ref:`gerrit-voting`).
 
 Additionally, a suite of tests (unit, functional and acceptance) will
 automatically run on every patch (set), the results being shown as a +1 or
--1 by typo3.com.
+-1 by "Core CI".
 
 
 

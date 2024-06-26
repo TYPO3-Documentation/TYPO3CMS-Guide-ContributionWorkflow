@@ -35,7 +35,7 @@ System dependencies
 Many developers are familiar with `Docker <https://www.docker.com/>`_. As outlined in the
 :ref:`history <testing-history>` chapter, test execution needs a well defined, isolated, stable and
 reliable environment to run tests and also remove the need to manage niche dependencies on your local
-environment for tests such as "execute functional test "X" using PostgreSQL with xdebug".
+environment for tests such as "execute functional test 'X' using PostgreSQL with xdebug".
 
 Git, docker and docker-compose are all required. For standalone test execution, a local installation of
 PHP is not required. You can even `composer install` a Core by calling `Build/Scripts/runTests.sh -s
@@ -45,7 +45,7 @@ If you're using a Mac, install or update Docker to the most recent version using
 your choice.
 
 If you are using Ubuntu Linux 18.04 or higher, everything should be ok after
-calling `sudo apt-get install git docker docker-compose` once. For other Linux distributions
+calling `sudo apt-get install git docker` once. For other Linux distributions
 including older releases of Ubuntu, users should have a look at the Docker homepage to see how to update
 to a recent version. It usually involves adding some other package repository and updating / installing using it.
 Make sure your local user is a member of the `docker` group, else the script will fail with something like
@@ -70,8 +70,8 @@ running on the host system. Executing the basic Core unit test suite boils down 
     Build/Scripts/runTests.sh
 
 That's it. You just executed the entire unit test suite.
-Now that we have examined the initial Core clone and a Composer install process, we will then look at the
-different ways we can apply the :file:`runTests.sh` or other scenarios.
+Now that we have examined the initial Core clone and a Composer install process, we will look at the
+different ways we can utilize the :file:`runTests.sh` for other scenarios.
 
 
 Overview

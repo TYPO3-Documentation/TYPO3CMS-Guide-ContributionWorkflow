@@ -16,8 +16,6 @@ General information
 Resources for this guide
 ========================
 
-* `warnings.txt <https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/_buildinfo/warnings.txt>`__
-  (list of warnings)
 * `Issues on Github <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-ContributionWorkflow/issues>`__
 
 Best practices for editing this guide

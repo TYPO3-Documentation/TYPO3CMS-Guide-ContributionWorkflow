@@ -35,7 +35,7 @@ This Change-Id will only be generated if it is not yet present in your commit me
 a Change-Id on your own, the result will be chaos.
 
 Apart from that the hook will check your commit message for logical errors like missing keywords, Resolves lines etc.
-For detailed information on the format of a commit message, :ref:`click here<commitmessage>`.
+For detailed information on the format of a commit message, :ref:`click here <commitmessage>`.
 
 If the commit-msg hook finds errors in your commit-msg, you can try again, by amending to the commit::
 

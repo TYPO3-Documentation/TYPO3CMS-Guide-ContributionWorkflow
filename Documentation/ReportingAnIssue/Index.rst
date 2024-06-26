@@ -64,7 +64,7 @@ by following these guidelines:
 
 Remove side effects
    Work on a TYPO3 instance which is as clean as possible so you can
-   rule out extensions messing with the TYPO3 core. If you need to set
+   rule out extensions messing with the TYPO3 Core. If you need to set
    up an extension to illustrate the problem, make sure it is as free
    of side effects as possible.
 
@@ -117,7 +117,7 @@ that are important. Let's go over these really quick.
 Tracker
 -------
 
-The tracker is just Redmines term for the type of issue. The trackers you will
+The `tracker`` is just Redmine's term for the type of an issue. The trackers you will
 be using the most are **Feature** and **Bug**.
 
 The others are mostly for internal organization (like **Stories** and **Epics**)

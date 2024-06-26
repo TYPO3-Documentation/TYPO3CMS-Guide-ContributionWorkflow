@@ -13,7 +13,7 @@ History
 Introduction
 ============
 
-The TYPO3 Core  development has quite an impressive history on automatic testing. This chapter
+The TYPO3 Core development has quite an impressive history on automatic testing. This chapter
 outlines some of the important steps the system went through over the years. It may be just
 an interesting read but may also explain why things are as they are now.
 
@@ -207,7 +207,7 @@ we always only knew *after* a merge if the test suite stays green. But we wanted
 suite is green *before* merging a patch. Enabling Travis CI to test each and every patch set that is
 pushed to the review system was out of question due to the long run times, though.
 
-So we looked for alternatives. Luckily, the TYPO3 GmbH was founded in 2016 and got a open source license
+So we looked for alternatives. Luckily, the TYPO3 GmbH was founded in 2016 and got an open source license
 by `atlassian <https://atlassian.com/>`_ for their main products. Atlassian has an own continuous
 integration solution called bamboo. This CI allows adding "remote agents" that pick up single jobs
 to run them. It's possible to scale by just adding more agents. We thus split the time consuming test

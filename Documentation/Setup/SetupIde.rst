@@ -27,7 +27,7 @@ In the Appendix, you can find some hints that might be useful for
 Coding Guidelines
 -----------------
 
-There is an .editorconfig file in the TYPO3 core repository.
+There is an :file:`.editorconfig`` file in the TYPO3 core repository.
 See https://editorconfig.org/ for more information.
 
 Please note that the rules in :file:`.editorconfig` are very minimal. So, additionally,

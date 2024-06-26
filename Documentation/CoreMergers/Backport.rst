@@ -75,7 +75,7 @@ Manual backport
 ===============
 
 If the automatic backport fails, you need to manually cherry-pick the patch to the target branch. (e.g. cherry-pick the
-main patch onto your local (up to date) 10.4 branch) You will most likely need to adjust the code for the older branch.
+main patch onto your local (up to date) 12.4 branch) You will most likely need to adjust the code for the older branch.
 
 Edit the commit message to comply to the guidelines again. (e.g. remove the Reviewed-* and Tested-* lines added by Gerrit)
 

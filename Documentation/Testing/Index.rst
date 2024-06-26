@@ -19,8 +19,8 @@ Using runTests.sh
 What is runTests.sh?
 ====================
 
-This is a shell script which is included in the TYPO3 core git repository. It
-used to supply commands for running tests but has since evolved to include
+This is a shell script which is included in the TYPO3 Core git repository. It
+used to supply commands for running tests, but has since evolved to include
 other commands as well for checking, fixing, building etc. It will be used for a
 number of tasks during the core contribution workflow.
 
@@ -32,9 +32,9 @@ Show help
 =========
 
 It is recommended to use the `-h` option (help) to show the help output and
-especially look in the beginning of the output for a description and the listing
-of dependencies, in the list under `-s` to show available commands and at
-the bottom of the output for examples.
+especially look at the beginning of the output for a description and the listing
+of dependencies. The listing in section `-s` shows available commands, and the bottom
+lists several examples you can copy+paste to try.
 
 Show help:
 
@@ -49,7 +49,7 @@ Show help:
 Prerequisites
 =============
 
-See the listed dependencies in the help output.
+See the listed options/commands in the help output.
 
 Options
 =======

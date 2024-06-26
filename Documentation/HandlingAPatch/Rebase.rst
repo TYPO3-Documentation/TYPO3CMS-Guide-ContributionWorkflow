@@ -50,7 +50,7 @@ different commit (typically the latest one) and your patch
 will be based on the latest version.
 
 There are other applications for rebase (e.g. squash commits),
-but this is the one relevant for the TYPO3 Contribution Workflow, so
+but only this is the one relevant for the TYPO3 Contribution Workflow, so
 this is what we mean when we talk about rebase.
 
 Do not let information on the Web confuse you: Usually

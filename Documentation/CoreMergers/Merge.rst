@@ -28,7 +28,7 @@ The merging process
    vote from a Core Merger. A :guilabel:`+2` can be given by the second
    Core Merger to review the patch positively.
 
-   Merging gets blocked by a :guilabel:`-2` vote.
+   Merging gets blocked by a single :guilabel:`-2` vote.
 
 #. Submit the patch
 

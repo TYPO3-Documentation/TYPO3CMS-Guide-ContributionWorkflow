@@ -38,7 +38,7 @@ Permission Denied
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
 
-If this error happens, double check if you are
+If this error happens, double check if you are:
 
 * Using the correct SSH user name (which is your :ref:`user name on typo3.org <TYPO3Account>`)
 * If your username contains special characters (like @ or !), you must escape them using
@@ -46,7 +46,7 @@ If this error happens, double check if you are
 * You must use an SSH key :ref:`known to Gerrit <gerrit-ssh>`
 * You must use the :ref:`correct URL <git-setup-remote>`
 
-The following push command (with `-v`) shows you the push URL (which contain review.typo3.org):
+The following push command (with `-v`) shows you the push URL (which must contain `review.typo3.org`):
 
 .. code-block:: bash
    :caption: shell command
@@ -89,7 +89,7 @@ If the output looks like this, everything is fine:
 Otherwise, your SSH client does not automatically choose the right private key file.
 By default, SSH searches for the key in :file:`~/.ssh/id_rsa` and :file:`~/.ssh/id_dsa`.
 
-You can manually specify it using the -i parameter:
+You can manually specify the location using the `-i` parameter:
 
 .. code-block:: bash
    :caption: shell command
@@ -97,7 +97,7 @@ You can manually specify it using the -i parameter:
    ssh -p 29418 -i <path-to-private-key> <username>@review.typo3.org
 
 If this works, modify :file:`~/.ssh/config` to define the file name for
-connections to review.typo3.org:
+connections to `review.typo3.org`:
 
 .. code-block:: text
    :caption: ~/.ssh/config
@@ -154,9 +154,9 @@ Push: invalid committer
 
 This message simply means that your email address is not registered as an Web-Identity.
 If this error happens, just go to the website that the error message suggests:
-https://review.typo3.org/#/settings/contact Register the email address you
-use to push (button "Register New Email") - even if it is already in the dropdownlist.
-Click on the link you receive via email. Be sure your are already logged in on review.typo3.org.
+`https://review.typo3.org/#/settings/contact`. Register the email address you
+use to push (button :guilabel:`Register New Email`) - even if it is already in the dropdown list.
+Click on the link you receive via email. Be sure your are already logged in on `review.typo3.org`.
 Otherwise the link does register the email address. Check if your new identity is registered
 (https://review.typo3.org/#/settings/web-identities). Pushing should work now.
 
@@ -164,7 +164,7 @@ You are not a committer
 -----------------------
 
 If you are trying to push changes and get this error message, then your
-email address is probably not known to the system. Open Settings > Identities
+email address is probably not known to the system. Open :guilabel:`Settings > Identities`
 in Gerrit and check the email address, which is connected to your account
 (you can add more of them if needed). Additionally, check your settings in
 Git with the following command:

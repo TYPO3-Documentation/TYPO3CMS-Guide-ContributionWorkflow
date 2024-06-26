@@ -17,10 +17,10 @@ About Composer
 Composer is a dependency manager for PHP.
 
 So what it basically does is find packages you have defined to be part of your application (in our case TYPO3). But what
-if these packages rely on other packages as well? This is where composer jumps in and takes care of keeping all these
+if these packages rely on other packages as well? This is where Composer jumps in and takes care of keeping all these
 packages in sync.
 
-Since we use quite some packages (because why would we invent things ourselves that are already there?) composer is an
+Since we use quite some packages (because why would we invent things ourselves that are already there?) Composer is an
 extremely useful tool for us.
 
 .. index::
@@ -62,7 +62,7 @@ in the correct order!
 Custom TYPO3 Composer Commands
 ==============================
 
-Some additional composer commands have been added for core development.
+Some additional Composer commands have been added for Core development.
 
 Just run::
 

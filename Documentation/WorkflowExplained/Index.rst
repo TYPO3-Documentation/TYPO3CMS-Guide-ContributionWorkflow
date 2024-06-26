@@ -11,16 +11,16 @@
 TYPO3 Contribution Explained
 ============================
 
-Ok, so you want to overview first, that's fine. Actually, it's a brilliant idea to understand the concept first to help
+Ok, so you want an overview first, that's fine. Actually, it's a brilliant idea to understand the concept first to help
 you understand `why` we do things the way we do them. So let us walk you through that.
 
-Regular Workflow
-================
+Common Workflow
+===============
 
 .. image:: /Images/Graphics/Regular-Workflow.png
    :width: 600px
 
-So this it what your usual coding workflow would look like.
+So this it what your usual coding workflow may look like.
 
 #. You clone or pull from a central Git repository and change some lines of code
 #. You push right back to that central repository
@@ -36,7 +36,7 @@ TYPO3 Contribution Workflow
    :width: 600px
 
 As you can see, our workflow is a bit different, simply because we do not allow to push right back to our Git repository.
-We use an 6-eye principle to ensure proper quality assurance and Gerrit_ helps us here - but let's go over the workflow step by step.
+We use a 6-eye principle to ensure proper quality assurance and Gerrit_ helps us here - but let's go over the workflow step by step.
 
 #. You clone or pull as usual and do changes to the codebase.
 #. When trying to push back to the Git repository, you will not be allowed to do so. In fact, the only entity that may push

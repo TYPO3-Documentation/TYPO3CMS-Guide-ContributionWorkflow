@@ -79,7 +79,8 @@ Set Username and Email
 
 *-- required* (unless this is already setup globally, see `git config --global -l`)
 
-You need to instruct git to work with your name and email address. Make sure the email address and user name are the same as those you used when
+You need to instruct git to work with your name and email address. Make sure the email
+address and user name are the same as those you used when
 :ref:`setting up your TYPO3 account<TYPO3Account>`:
 
 .. code-block:: bash
@@ -103,7 +104,7 @@ Set autosetuprebase
 *-- required*
 
 In order to avoid weird merges in your local repository when pulling in new commits from typo3.org, we encourage everybody
-to set the autosetuprebase option, such that your local commits are always rebased on top of the official code:
+to set the `autosetuprebase` Git option, such that your local commits are always rebased on top of the official code:
 
 .. code-block:: bash
    :caption: shell command
@@ -209,7 +210,7 @@ Setting up a Commit Message Template
 
 If you follow these instructions, whenever you create a new commit,
 Git will use the template to create the commit message, which you can
-then modify in your editor. So use this, to make it easier for you to
+then modify in your editor. So use this to make it easier for you to
 fill out the required information.
 
 First, create a file, for example :file:`~/.gitmessage.txt`.

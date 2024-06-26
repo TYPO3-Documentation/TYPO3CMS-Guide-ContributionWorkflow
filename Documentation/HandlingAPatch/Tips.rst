@@ -21,7 +21,7 @@ This page contains some general tips beyond the description of the workflow.
 Tips for new contributors
 =========================
 
-You are a new contributor. You found an issue in the core you wanted to
+You are a new contributor. You found an issue in the Core you wanted to
 see fixed, you found a solution, you are satisfied with it, you
 :ref:`setup your environment <setup>`, you figured out how to
 :ref:`create a patch and push to Gerrit <Fixing-a-bug-A-Z>`,
@@ -103,7 +103,7 @@ and evolve in Gerrit until everyone is satisfied. This can take some time.
 
 This is what you can do:
 
-* Familiarized yourself with :ref:`Gerrit <Working-with-Gerrit>`.
+* Familiarize yourself with :ref:`Gerrit <Working-with-Gerrit>`.
 
 * If reviewers make specific suggestions to improve your patch follow these
   suggestions and :ref:`upload another patchset <lifeOfAPatch-improve-patch>`.
@@ -193,7 +193,7 @@ Push new patchsets
 
 **Don't be scared of pushing new patch sets!**
 
-There are two different information on a merged patch set: The author of a
+There are two different pieces of information on a merged patch set: The author of a
 patch and the committer. Usually, the author of a patch is the person who
 pushed the first patch set to gerrit, while the committer is the person
 who finally pressed the merge button. When
