@@ -250,39 +250,56 @@ A valid private key in OpenSSH format starts with the following lines:
 
 followed by about 25 lines of seemingly random signs.
 
-Pushing old Patch Set again
----------------------------
+Pushing old Patch Set again (updating/rebasing)
+-----------------------------------------------
 
-You want to make an old patch set the current one. You cannot simply
-checkout Patch Set 1 and push it again, as it is refused with a "no new changes" error message.
+If you want to update an older patch set/version, so that it appears to be the
+current one, you always need to get an updated commit hash. So you cannot just
+checkout Patch Set 1 (or any other one) and perform a Git push. This would be
+refused with a "no new changes" error message.
 
-Amend the commit using:
+So you need to amend the commit using:
 
 .. code-block:: bash
 
     git commit --amend
 
-Even without modifying the Commit Message, it gets a new SHA. This commit can be pushed again.
+and then, even without modifying the Commit Message, it gets a new SHA. This commit
+can then be pushed again.
 
 Resolving Merge Conflicts in generated asset files
 --------------------------------------------------
 
-If you cherry pick a patch for review; you might encounter a merge conflict with a generated asset file:
+If you cherry pick a patch for review, you might encounter a merge conflict with a generated asset file
+(JavaScript or CSS build files):
 
 .. code-block:: none
    :caption: result
 
    Mergeconflict in typo3/sysext/backend/Resources/Public/Css/backend.css
 
-To resolve the conflict, use the following workflow:
+To resolve the conflict, do not try to resolve conflichts in a huge 1-line file, but instead
+re-create the assets using the following workflow:
 
 .. code-block:: bash
    :caption: shell command
 
-   cd Build
-   npm run build
-   git add
+   # Perform re-build using the helper "runTests.sh"
+
+   # Make sure dependencies are up to date
+   ./Build/Scripts/runTests.sh -s composerInstall
+
+   # Clean possibly previously build files
+   ./Build/Scripts/runTests.sh -s clean
+
+   # Execute the build
+   ./Build/Scripts/runTests.sh -s buildCss
+   ./Build/Scripts/runTests.sh -s buildJavascript
+
+   # Now add all conflicting files as resolved:
    git add typo3/sysext/backend/Resources/Public/Css/backend.css
+
+   # Continue the cherry-pick process
    git cherry-pick --continue
 
 You will see the Commit Message again and you can now save it.

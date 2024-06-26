@@ -80,6 +80,10 @@ as described in :ref:`setup <setup>`. Especially the
    See :ref:`Testing the core <testing>` in TYPO3 Explained for more information
    about writing and running tests.
 
+   Once you have finalized your patch, check out the :ref:`common-review-checks`
+   for a list of what kind of review checks people may perform on your contribution.
+   Stay ahead of the game and address those yourself first.
+
 #. Commit your changes
 
    Please make sure that you read the :ref:`commitmessage` in the Appendix.
@@ -167,9 +171,10 @@ as described in :ref:`setup <setup>`. Especially the
 
    You can visit the link to https://review.typo3.org to see your patch in Gerrit.
 
-   If the automatically starting pre-merge build fails due to an error on Bamboo which
-   isn't caused by your patch (e.g. time out) you can restart it on
-   `Intercept <https://intercept.typo3.com/admin/bamboo/core>`__.
+   The Continuous Integration service, running on GitLab Pipelines, will automatically
+   be executed in the background and perform checks and tests on your patch.
+   Failing tests will be linked to that instance, where jobs can also be retried
+   (given sufficient permissions when being logged in to GitLab).
 
    Advanced users / core team only: See
    :ref:`cheat sheet: other branches <cheat-sheet-git-other-branches>`
@@ -192,6 +197,9 @@ Now, it's time to sit back and await feedback on your changes. The review team p
 dozens of requests each day, so expect a succinct response that is short and to the point.
 You will get notified by email, if there is activity on your patch in Gerrit
 (e.g. votes, comments, new patchsets, merge etc.).
+
+Check out the section :ref:`reviewPatch` for more about this process, in which you can
+also be involved!
 
 It is not unusual for a patch to get comments requesting changes. If that happens,
 please respond in a timely fashion and improve your review. If things are unclear,
