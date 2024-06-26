@@ -39,7 +39,7 @@ need an entry in the Changelog. Check the list below. Also see the current
 for some examples.
 
 Every file may optionally contain tags, but it must contain at least a
-`NotScanned`, `PartiallyScanned`` or `FullyScanned`` tag for the extension scanner.
+`NotScanned`, `PartiallyScanned` or `FullyScanned` tag for the extension scanner.
 See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
 information.
 
