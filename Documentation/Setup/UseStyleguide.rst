@@ -9,7 +9,7 @@
 Use EXT:styleguide
 ==================
 
-It is recommended to use the `styleguide`` extension to auto generate several
+It is recommended to use the `styleguide` extension to auto generate several
 example pages which can be used for testing the frontend and backend of TYPO3.
 
 The :t3src:`styleguide` extension is part of the TYPO3 Core repository.
