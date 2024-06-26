@@ -309,3 +309,15 @@ major pre-condition, the broken constant TYPO3_MODE is finally gone (deprecated 
 Further core versions can drop that constant and extensions will have to drop their usage, too.
 So with v12, TYPO3_MODE will be gone, and TYPO3 can create cool features from this. So again, the
 core testing paved the way for new opportunities and TYPO3 usages.
+
+2024
+====
+
+TYPO3 currently uses 4 dedicated "bare bone" Servers to perform CI tasks. This hardware performs
+11.513 unit tets in ~15 seconds. A typical pre-merge pipeline runtime is at ~5 minutes with 2 permutations
+of acceptance tests, 3 permutations of ~7500 functional tests, 3 permutations of unit tests plus
+statical code analysis, linting, build checks.
+
+The 4 servers are provisioned using Ansible:
+`https://git.typo3.org/typo3/CI/testing-infrastructure/-/tree/main/ansible?ref_type=heads`__ and
+Pipelines configured in `https://github.com/TYPO3/typo3/tree/main/Build/gitlab-ci/`__.
