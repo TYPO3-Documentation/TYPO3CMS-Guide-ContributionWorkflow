@@ -94,7 +94,7 @@ The GitLab CI Pipeline is maintained through the Ansible infrastructure found on
 `https://git.typo3.org/typo3/CI/testing-infrastructure/-/tree/main/ansible?ref_type=heads`__, and the Pipeline
 itself is set up through `https://github.com/TYPO3/typo3/tree/main/Build/gitlab-ci/`__.
 
-Compared to your local execution tt's just that the combinations of tests
+Compared to your local execution it's just that the combinations of tests
 and splitting to different jobs which is slightly different, for instance GitLab CI paralelly performs multiple
 tests with more complex version matrixes (PHP and Databases).
 
@@ -138,7 +138,7 @@ Let's pick a :file:`runTests.sh` example and have a closer look:
 The command asks :file:`runTests.sh` to execute the "functional" test suite `-s functional` and to not execute all
 available tests but only those within `typo3/sysext/core/Tests/Functional/Authentication/`. The script first
 starts the containers it needs: Redis, memcached (previosuly also MariaDB by default, which is now using
-SQLite instead, due to less depndencies). All in one network. It then then starts a PHP 8.0 container and calls
+SQLite instead, due to less depndencies). All in one network. It then then starts a PHP 8.2 container and calls
 phpunit from there to execute the tests. phpunit executes only one test in this case, that one is green. The containers
 and networks are then removed again. Note the exit code of :file:`runTests.sh` (`echo $?`) is identical to the exit
 code of the phpunit call: If phpunit reports green, :file:`runTests.sh` returns 0, and if phpunit is red, the exit code
