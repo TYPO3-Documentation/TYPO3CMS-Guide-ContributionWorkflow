@@ -45,8 +45,10 @@ any TYPO3 event in some way or another.
 * For an up-to-date list of events, see `Events on typo3.org
   <https://typo3.org/community/events/>`__
 
-Look for events like "Review Friday", "Code Sprints" and "Developer Days".
-Next, we will describe some events that are relevant for core
+Look for events like "Review Friday", "Code Sprints" and "Developer Days"
+or one of the many "BarCamps".
+
+Next, we will describe some events that are relevant for Core
 contribution. They are not specifically targeted at providing support,
 but the event may be open to new Core contributors and may give
 you the opportunity to ask questions and get help. In any case,

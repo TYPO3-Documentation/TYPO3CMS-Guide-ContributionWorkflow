@@ -35,3 +35,6 @@ It is also possible to lint the files locally:
 
    Build/Scripts/runTests.sh -s lintScss
    Build/Scripts/runTests.sh -s lintTypescript
+
+Remember to commit the compiled files alongside any patches, they are part
+of the monorepo.

@@ -10,6 +10,11 @@
 GRUNT install on OSX
 ====================
 
+..  hint::
+
+   You may not need this at all, if you are using :ref:`runTests.sh <runtests_sh>`
+   with dockerized environment for building all assets.
+
 First off, make sure you installed **npm** like described :ref:`here<osx-npm>`.
 
 In your Terminal app navigate to the folder that you cloned the TYPO3 source into. Switch into the ``Build`` folder and run

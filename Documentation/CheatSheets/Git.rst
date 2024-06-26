@@ -132,6 +132,8 @@ This assumes, you have correctly configured your remote as described in
 
 .. note::
    Pushing to `refs/publish` is deprecated, we now push to `refs/for`.
+   Check out :ref:`git-commit-with-message` on how to specify a distinct
+   small message alongsite your patch set.
 
 .. _git-work-in-progress:
 
