@@ -45,9 +45,10 @@ We use a 6-eye principle to ensure proper quality assurance and Gerrit_ helps us
 #. From here, any contributor can review the change.
 #. Reviewing consists of two parts, the **Code Review** where a contributor checks if the code style is according to our
    coding guidelines or in general `makes sense` by reading and the **Verification** which means if the code does what it
-   is supposed to do (like fixing an issue) and checks whether the unit tests run through.
-#. If a review has enough positive votes, an **active contributor** (aka member of the core team) is able to merge that review
-   into the existing codebase. The reason we need a member of the core team to finally merge the change is that we run a
-   "You break it, you fix it" policy, so the core team member that merged a change immediately becomes responsible for that
-   change in case the original author decides to no longer work on it. And he / she will be responsible for
-   backporting it to older TYPO3 versions.
+   is supposed to do (like fixing an issue) and checks whether the unit, functional and acceptance tests run through.
+#. If a review has enough positive votes (at least two people voting verified+reviewed), an **active contributor**
+   (aka member of the Core team, called "Merger") is able to merge that review into the existing codebase. The reason
+   we need a member of the Core team to finally merge the change is that we run a "You break it, you fix it" policy.
+   So, the Core team member that merged a change immediately becomes responsible for that change in case the original
+   author decides to no longer work on it. And he / she will  be responsible for backporting it to selected older TYPO3
+   versions.

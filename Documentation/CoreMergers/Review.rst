@@ -13,7 +13,16 @@ Review a patch as a Core Merger
 .. include:: /_includes/CoreMergers.rst.txt
 
 Please see :ref:`reviewPatch` for general information on how to review a
-patch.
+patch, also the :ref:`cheat-sheet on common review issues <common-review-checks>`.
+
+As a Core Merger you have a huge responsibility because your vote (or misvote)
+has an impact on dedicated work of contributors or colleagues. This swings
+both ways: You can also greatly impact confidence and participation by being
+involved in a public voting and commenting process.
+
+Remember that you represent the TYPO3 project as a public-facing "Person with Power".
+Please try to always vote by explaining your reasoning, and feel free to
+correspond with your fellow Co-Mergers for impactful decisions.
 
 .. figure:: /Images/External/Gerrit/CoreMergers/VoteCoreMerger.png
    :class: with-shadow
@@ -69,7 +78,8 @@ Low brainers
 -------------
 
 A Core Merger can give a +2 and submit right away in case of "low-brainers"
-(what used to be called "FYI").
+(what used to be called "FYI" and relates to changes that are highly
+unlikely to negatively impact anything).
 
 A Core Merger can give a +2 and wait a bit before submitting
 (used to be called "FYI24", "FYI48", ...).

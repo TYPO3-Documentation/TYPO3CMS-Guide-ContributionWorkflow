@@ -80,11 +80,24 @@ Be up to date
 
    Or even better: use the latest version from git.
 
+Be explicit
+   It can take a lot of time to reproduce or understand issues. Please try to
+   be as brief as possible, but as detailed as needed. Supplying code examples
+   to reproduce an issue, or showing screenshots helps a lot!
+
+Remain involved
+   If we have questions about your issue, and need feedback from you, please ensure
+   you get notified to replies to your issue and try to respond. Often, further
+   details are needed.
+
 Talk to the core team
-   When in doubt, don't hesitate to talk to us on `Slack <https://typo3.slack.com>`__
+   If you are a developer yourself and are able to address an issue (no matter if
+   bug or feature) yourself, but need some guidance on how to approach it,
+   don't hesitate to talk to us on `Slack <https://typo3.slack.com>`__
    in the **#typo3-cms-coredev**
    channel. (Remember to `register <https://forger.typo3.com/slack>`__
-   first.)
+   first.) This channel is not a support channel for end-users. Those needs
+   are covered by `https://typo3.org/help`__.
 
 
 
@@ -193,6 +206,12 @@ Category
 
 Choose a category that fits your issue.
 
+Core developers tend to identify with certain areas of TYPO3, which are
+mirrored in the category system (usually by "Core extension" or area).
+
+The better you can classify your problem, the more likely it is that
+a Core developer will spot your issue in "his area".
+
 
 
 .. index::
@@ -205,8 +224,12 @@ TYPO3 version
 
 (for bugs only)
 
-Choose the TYPO3 version, where the error occurs.
+Choose the TYPO3 version, where the error occurs. Ideally try
+to report an issue for the latest TYPO3 version where your issue
+applies to.
 
+Older TYPO3 versions outside of the LTS support range are less
+likely to receive attention.
 
 
 .. index::
@@ -249,6 +272,13 @@ Some hints for files:
 
 .. image:: /Images/External/Forge/new-issue2.png
    :class: with-shadow
+
+(optional) Related issues
+-------------------------
+
+If your search already yielded related issues to your own, it would be very helpful,
+if you can add a relation to those ticket numbers. You can also do that afterwards,
+and our support staff may also sometimes relate your issues.
 
 .. tip::
 
@@ -295,6 +325,10 @@ A good bug report should contain all or any of these elements:
    This is a short easy-to-follow guide that allows us to understand how to
    trigger the bug following it. Using a numerated list of steps is just fine
    here; you can also add screenshots.
+   If possible, use TYPO3 Core extensions like :ref:`use-styleguide` to make
+   an issue reproducible. The easier our support helpers are able to follow
+   your instructions, the more likely it is we can also find the problematic
+   area in the TYPO3 code.
 
 #. Actual results
 
@@ -314,6 +348,11 @@ A good bug report should contain all or any of these elements:
 Please consider that these guidelines are very generic. Not always all these parts are
 necessary, but having the necessary information could help a lot to reproduce and fix
 the bug.
+
+This not only applies to bugs, but also feature requests. For feature requests,
+state why a change is needed/helpful, what problems it solves. TYPO3 is a very modular
+and highly configurable system - not every feature needs to be solved in the TYPO3 core,
+but can be an extension (maybe yours!) instead.
 
 .. tip::
 
@@ -404,6 +443,13 @@ descriptive anchor text.
 **See:**
 
 * `Redmine Info: External links <https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile#External-links>`__
+
+Continued workflow
+==================
+
+So, you've filed an issue following the steps above, and submitted it.
+
+What now? Read further in :ref:`issue-workflow`.
 
 Additional Resources
 ====================

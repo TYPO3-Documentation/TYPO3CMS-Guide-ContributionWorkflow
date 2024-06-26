@@ -91,6 +91,29 @@ Gerrit: Search
 
 Or use the search box on `Gerrit <https://review.typo3.org>`__
 
+GitHub: Links to Gerrit
+=======================
+
+Each commit to the TYPO3 Git repository comes with some metadata
+linking issue and patch reviews, for example:
+
+..  code-block::
+
+   [TASK] Provide PSR-7 Request in PolicyMutatedEvent
+   For additional context does the PolicyMutatedEvent
+   now provide the current PSR-7 Request.
+
+   Resolves: #104141
+   Releases: main, 12.4
+   Change-Id: I1817366e77f20f6c43eef0ee209fbb419e7237e2
+   Reviewed-on: https://review.typo3.org/c/Packages/TYPO3.CMS/+/84913
+   Tested-by: Lorem Ipsum <example@example.com>
+   Reviewed-by: Lorem Ipsum <example@example.com>
+   Tested-by: core-ci <typo3@example.com>
+
+The line `Resolves` contains the Forge issue id.
+The line `Reviewed-on` contains the link to the gerrit patch.
+
 Forge
 =====
 
