@@ -60,7 +60,7 @@ filter options.
 
 You help the people maintaining the issue tracker a lot by first making sure
 your problem is not covered already. The less duplicate issues our team needs
-to triage, the more time we have for actually adressing bugs and features.
+to triage, the more time we have for actually addressing bugs and features.
 
 .. index::
    single: Issue Reporting Workflow; Identifying
