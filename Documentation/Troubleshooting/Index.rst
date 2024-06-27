@@ -278,7 +278,7 @@ If you cherry pick a patch for review, you might encounter a merge conflict with
 
    Mergeconflict in typo3/sysext/backend/Resources/Public/Css/backend.css
 
-To resolve the conflict, do not try to resolve conflichts in a huge 1-line file, but instead
+To resolve the conflict, do not try to resolve conflicts in a huge 1-line file, but instead
 re-create the assets using the following workflow:
 
 .. code-block:: bash
