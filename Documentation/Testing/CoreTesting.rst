@@ -137,8 +137,8 @@ Let's pick a :file:`runTests.sh` example and have a closer look:
 
 The command asks :file:`runTests.sh` to execute the "functional" test suite `-s functional` and to not execute all
 available tests but only those within `typo3/sysext/core/Tests/Functional/Authentication/`. The script first
-starts the containers it needs: Redis, memcached (previosuly also MariaDB by default, which is now using
-SQLite instead, due to less depndencies). All in one network. It then then starts a PHP 8.2 container and calls
+starts the containers it needs: Redis, memcached (previously also MariaDB by default, which is now using
+SQLite instead, due to less dependencies). All in one network. It then starts a PHP 8.2 container and calls
 phpunit from there to execute the tests. phpunit executes only one test in this case, that one is green. The containers
 and networks are then removed again. Note the exit code of :file:`runTests.sh` (`echo $?`) is identical to the exit
 code of the phpunit call: If phpunit reports green, :file:`runTests.sh` returns 0, and if phpunit is red, the exit code
@@ -157,7 +157,7 @@ are not valid:
 ..  code-block:: shell
 
     lolli@apoc /var/www/local/cms/Web $ Build/Scripts/runTests.sh -h
-    TYPO3 core test runner. Execute acceptance, unit, functional and other test suites in
+    TYPO3 Core test runner. Execute acceptance, unit, functional and other test suites in
     a container based test environment. Handles execution of single test files, sending
     xdebug information to a local IDE and more.
     ...
