@@ -260,7 +260,7 @@ of Gerrit reviews (as well as Forge issues) may feel intimidating.
 
 Due to this it is vital to "clean up" patches from time to time:
 
-*  If you are no longer planning to work on a patch, maybe better anbandon
+*  If you are no longer planning to work on a patch, maybe better abandon
    it, or ask other involved people to carry on.
 *  If your patch is not getting feedback for a long time, ask in the
    #typo3-cms-coredev channel of the `TYPO3 slack workspace <https://typo3.slack.com>`__
