@@ -22,10 +22,10 @@ What is runTests.sh?
 This is a shell script which is included in the TYPO3 Core git repository. It
 used to supply commands for running tests, but has since evolved to include
 other commands as well for checking, fixing, building etc. It will be used for a
-number of tasks during the core contribution workflow.
+number of tasks and will be a vital part during your Core contribution workflow.
 
-The script uses Docker and several Docker images to run the
-tasks - using the correct versions (of PHP etc.) for the current
+The script uses Docker (also supporting podman) and several Docker images to run the
+tasks - using the correct versions (of PHP, Node/NPM etc.) for the current
 branch of your TYPO3 repository.
 
 Show help
@@ -60,6 +60,16 @@ Options
    choose the command to run (if omitted, unit tests are run)
 -p
    PHP version (if omitted, the default version is used)
+-b
+   choose podman (default) or docker for image execution
+-d
+   Database type (sqlite, mariadb, mysql, postgres)
+-i
+   Database version in conjunction with `-d`, for example `-d mariadb -i 11.4` for MariaDB 11.4
+-x
+   Enable xdebug usage
+-u
+   Update docker image versions
 
 For more options, see the help (`-h`).
 
@@ -89,7 +99,7 @@ which start with the same string.
 
 Commands for building:
 
-*  -s composerInstall (composerInstall*)
+*  -s composerInstall (composer*)
 *  -s buildCss: build CSS assets
 *  -s buildJavascript
 * ...
@@ -98,9 +108,10 @@ Checks and fixes, run static analyzer, lint etc:
 
 *  -s cglGit : check (and fix!) the CGL issues in the files which are in the most
    recent git commit
+*  -s cgl (cgl*)
 *  -s lintPhp
-*  -s lintScss
-*  -s phpstan
+*  -s lintScss (lint*)
+*  -s phpstan (phpstan*)
 *  -s checkComposer (check*)
 * ...
 
@@ -116,11 +127,38 @@ Cleanup, clear cache:
 *  -s clean (clean*)
 * ...
 
+Dispatchers:
+
+*  -s npm -- `[npm command]`
+*  -s composer -- `[composer command]`
+
 Additional setup
 ================
 
-Be sure to exclude the :file:`typo3temp` directory from indexing in your IDE
+Be sure to exclude the :file:`typo3temp` and :file:`.cache` directory from indexing in your IDE
 (e.g. PhpStorm) before starting the acceptance tests.
+
+Also, if you are using `DDEV` for example with `Mutagen` performing filesystem
+synchronization, it is vital that you configure the `typo3temp` and `.cache` directory
+to be excluded in your file :file:`.ddev/mutagen/mutagen.yml` like this:
+
+..  code-block:: yaml
+
+    sync:
+      defaults:
+        mode: "two-way-resolved"
+        stageMode: "neighboring"
+        ignore:
+          paths:
+            # ...
+            - "typo3temp/"
+            - "public/typo3temp"
+            - ".cache"
+            # ...
+
+Due to the testing framework and involved components like PHPstan,
+PHPUnit and Composer writing many, many small files this can make
+your tests several HUNDREDS percent slower, especially on macOS.
 
 Examples
 ========
@@ -150,17 +188,17 @@ Run composer install:
 CGL check and fix
 -----------------
 
-Do Coding Guidelines checks and fix them.
+Perform checks on Coding Guidelines and fix them.
 
-Check and fix. This applies the command only to the files in the latest commit:
+This applies the command only to the files in the latest commit:
 
 .. code-block:: bash
    :caption: shell command
 
    Build/Scripts/runTests.sh -s cglGit
 
-Check and do NOT fix. This applies the command only to the files in the latest
-commit:
+If you only want to see possible fixes being applied, you can
+execute the command in "dry-run" mode:
 
 .. code-block:: bash
    :caption: shell command
@@ -226,9 +264,6 @@ or more for the acceptance tests.
 Troubleshooting
 ===============
 
-If something does not work as expected, it might help to run the script
-with the additional `-v` (for verbose output) option.
-
 Before diagnosing problems in the script, make sure to check if
 Docker is running smoothly on your system.
 
@@ -253,6 +288,40 @@ Also, see docker troubleshooting pages for more in-depth information,
 such as `Docker for Mac: Logs and troubleshooting
 <https://docs.docker.com/docker-for-mac/troubleshoot/>`__
 
+There is no built-in debugging to the `runTests.sh` script. It can happen
+that (docker or other) command execution needs to be debugged.
+
+For this you need to get your hands dirty and inspect the file. Most commands
+are performed like this:
+
+.. code-block:: bash
+   :caption: runTests.sh (excerpt)
+
+    lintScss)
+        COMMAND="cd Build; npm ci || exit 1; node_modules/grunt/bin/grunt stylelint"
+        ${CONTAINER_BIN} run ${CONTAINER_COMMON_PARAMS} --name lint-css-${SUFFIX} -e HOME=${CORE_ROOT}/.cache ${IMAGE_NODEJS} /bin/sh -c "${COMMAND}"
+        SUITE_EXIT_CODE=$?
+        ;;
+
+to debug this, you can add an "echo" statement to reveal `$COMMAND` and also put
+an `echo` before the `${CONTAINER_BIN}` statement, like this:
+
+.. code-block:: bash
+   :caption: runTests.sh (excerpt)
+
+    lintScss)
+        COMMAND="cd Build; npm ci || exit 1; node_modules/grunt/bin/grunt stylelint"
+        CONTAINER_COMMAND="${CONTAINER_BIN} run ${CONTAINER_COMMON_PARAMS} --name lint-css-${SUFFIX} -e HOME=${CORE_ROOT}/.cache ${IMAGE_NODEJS} /bin/sh -c ${COMMAND}"
+        echo "EXECUTE:"
+        echo $COMMAND
+        echo $CONTAINER_COMMAND
+        SUITE_EXIT_CODE=$?
+        ;;
+
+Then when you execute the script, instead of the command being executed, you can see what is used.
+Copy+paste that execution to your local shell and see if you can spot specific errors.
+You may want to add options like `-v` to the `$COMMAND` to see, why that command may fail.
+
 Results
 =======
 
@@ -263,7 +332,7 @@ standard exit codes:
 *  != 0 means error
 
 Reports of the acceptance tests will be stored in
-:file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the browser.
+:file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the remotely controlled browser.
 
 
 
@@ -278,7 +347,8 @@ Direct commands without Docker
 
 If you have problems with docker, you can run some of the lowlevel scripts and
 commands directly. However it does depend on your system, whether they run
-successfully. The docker / :file:`runTests.sh` method gives us the possibility to have
+successfully (due to PHP, composer and other dependencies).
+The docker / :file:`runTests.sh` method gives us the possibility to have
 a controlled environment where the tests run in. That also means, the databases
 that the functional tests require are already created automatically. That is not
 the case, if you run the tests locally on your current system.
@@ -286,12 +356,13 @@ the case, if you run the tests locally on your current system.
 That being said, running the tests directly is not being officially supported,
 but you can try this out yourself.
 
-You can look in the source of :file:`Build/Scripts/runTests.sh` or rather in
-:file:`Build/testing-docker/local/docker-compose.yml` to see which commands the :file:`runTests.sh`
-script calls and run these directly. Not everything will work, because there may
+You can look in the source of :file:`Build/Scripts/runTests.sh` to see which
+commands the :file:`runTests.sh` script calls and run these directly
+(also see the "Troubleshooting" section above). Not everything will work, because there may
 be dependencies, that are only available in the docker container.
 
-Also, you can run some of the scripts in :file:`Build/Scripts` directly.
+Also, you can run some of the scripts in :file:`Build/Scripts` directly,
+which are otherwise just dispatched from within a docker container.
 
 Examples:
 
@@ -336,6 +407,7 @@ Check for Coding Guidelines
 ---------------------------
 
 The cgl checking commands / scripts not only check, they repair as well!
+They can also be utilized from GIT hooks.
 
 Mac / Linux:
 
@@ -355,8 +427,8 @@ Windows:
 .. important::
 
    Remember, cglFixMyCommit only checks files in latest commit, so you must have
-   committed already. Commit again with --amend after you checked things and repaired
-   the file, or call cglFixMyCommit.sh -h for alternatives.
+   committed already. Commit again with `git commit --amend` after you checked things and repaired
+   the file, or call `cglFixMyCommit.sh -h` for alternatives.
 
 More information
 ================

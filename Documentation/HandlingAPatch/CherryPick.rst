@@ -51,16 +51,20 @@ to cherry-pick it from the review system into your local git repository.
 
 4. Clean up your local repository
 
-   Save your local changes beforehand, if you have any.
-   
+   Save your local changes beforehand, if you have any. Otherwise the
+   `git reset` performed after that would delete local changes, which
+   may happen if you work on different patches simultaneously with the
+   same repository directory.
+
    .. code-block:: bash
 
       git stash save 'comment-your-changes'
 
    .. code-block:: bash
 
+      git fetch --all
       git reset --hard origin/main
-      git pull
+      git pull --rebase
 
 5. Execute the command (git cherry-pick)
 
@@ -77,5 +81,7 @@ to cherry-pick it from the review system into your local git repository.
 6. Cleanup your TYPO3 installation
 
    Depending on the changes made by the patch, you may have to apply some changes
-   to your TYPO3 installation: see :ref:`cleanup-typo3`.
+   to your TYPO3 installation as well. Also, if the last time you pulled from the
+   GitHub repository is some time ago, you may need to pull the most recent
+   dependencies. And you may need to rebuild the CSS/JS assets. See :ref:`cleanup-typo3`.
 
