@@ -201,10 +201,11 @@ However, git status will show you:
 All files shown with "both modified" will need to be attended to.
 
 
-Resolve the conflicts
----------------------
+Resolve the conflicts manually
+------------------------------
 
-If you want to do it manually, look for all occurrences of `<<<<<<<`.
+If you want to do it manually (instead of using an IDE to do it visually), look for
+all occurrences of `<<<<<<<`.
 
 These are markers. They are used as follows (as in example above):
 
@@ -229,6 +230,36 @@ The merge conflict will show:
 
 There may be more than one conflict in a file!
 
+Special case: JavaScript/CSS merge conflicts
+--------------------------------------------
+
+JavaScript and CSS assets are build from sources in the monorepo, with the commands:
+
+.. code-block:: bash
+
+   # optionally, reset state
+   Build/Scripts/runTests.sh -s clean
+
+   Build/Scripts/runTests.sh -s buildCss
+   Build/Scripts/runTests.sh -s buildJavascript
+
+This "compiles" files with ".scss" and ".ts" extensions to their bundled ".css" and
+".js" variants. TYPO3 also versions these files inside the monorepo.
+
+Commiters need to be aware they need to maintain these asset versions, if they change
+any of the build source files, and commit them alongside their patch.
+
+Since the compiled files are merged on one single line, a merge conflict in these files
+will occur, if your patch works on anything CSS/JS related and other changes
+have been introduced meanwhile.
+
+The solution to resolve merge conflicts in these files is actually vers easy. Just
+re-perform the commands from above (`...buildCss/buildJavascript`), which will re-create
+the assets from your cherry-picked patchset. You may need to resolve conflicts in the
+`.ts/.scss` files beforehand, if there are any due to rebasing.
+
+Afterwards, you can include the generated `.css/.js` file your git amend commit like
+any other resolved conflict (see below).
 
 Resume command
 --------------
@@ -257,3 +288,14 @@ Resume git cherry-pick
 .. code-block:: bash
 
    git cherry-pick --continue
+
+Commit changes after rebase/cherry-pick
+---------------------------------------
+
+Once your git repository is in sync with `HEAD` and your cherry-picking was
+successsful, you can edit/add files, commit and push as usual:
+
+.. code-block:: bash
+
+   git commit --amend
+   git push

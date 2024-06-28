@@ -9,11 +9,11 @@
 Use EXT:styleguide
 ==================
 
-It is recommended to use the styleguide extension to auto generate several
+It is recommended to use the `styleguide` extension to auto generate several
 example pages which can be used for testing the frontend and backend of TYPO3.
 
-The typo3/cms-styleguide extension is part of the TYPO3 core repository.
-It used mostly to showcase TCA / FormEngine features but has since evolved
+The :t3src:`styleguide` extension is part of the TYPO3 Core repository.
+It used to mostly to showcase TCA / FormEngine features but has since evolved
 to provide additional features.
 
 The styleguide extension can create pages within the TYPO3 site, specifically:
@@ -23,6 +23,19 @@ The styleguide extension can create pages within the TYPO3 site, specifically:
 *  The "Styleguide Frontend" uses a custom TypoScript template provided by
    the styleguide extension and creates pages which can be viewed
    in the frontend.
+
+Also, the styleguide presents you with examples of several backend UI elements
+like notifications, tabs, accordions and more.
+
+The extension is very helpful for Core contributors and reviewers, because it
+allows to test many TCA related configurations easily, without the need to
+create custom extensions to reproduce problems.
+
+`EXT:styleguide` has been integrated to the TYPO3 Core monorepository with
+version 13. On older TYPO3 versions you need to install the package for example
+via TER or Packagist (using Composer).
+
+Go explore!
 
 Setup
 =====
@@ -48,7 +61,8 @@ Setup
 
 1. Activate the styleguide extension in the extension manager
 2. Click on :guilabel:`?` in the top bar
-3. Click on the :guilabel:`Styleguide` menu item
+3. Click on the :guilabel:`Styleguide` menu item (older TYPO3 versions
+   present a custom module menu item)
 
    The Styleguide overview appears.
 

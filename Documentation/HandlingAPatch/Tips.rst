@@ -274,4 +274,44 @@ Voting
 
 Consider the :ref:`policies and tips for voting patches <gerrit-voting>`.
 
+..  _common-review-checks:
+
+Common code review checks
+-------------------------
+
+For reviewing and giving feedback, here's a couple of things that are often addressed. You can
+use this list both for checking other people's patches, as well as your own.
+
+*  Is the code-flow readable? Does it need more (or less) comments? Any code complexities
+   ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
+*  Do breaking changes occur that need to be noticed? This can also apply to:
+   *  Type Hinting
+   *  using PHP features beyond the supported PHP version
+   *  Loss of existing functionality
+   *  Typos
+*  Are new class, method, function, variable names understandable
+*  Is there a need to add unit/functional testing for specific changes
+*  Are regression tests for a bugfix needed?
+*  Is the "Releases: " scope of a patch spanning the proper TYPO3 versions
+   (depending on the state of current LTS and priority-bugfix-only releases)
+*  Are the "final" and "private/protected" and "readonly" scopes of classes, methods and variables used properly?
+*  Is Dependency Injection used where applicable?
+*  Are possibilities for early code returns and reduced nesting levels addressed?
+*  If a change is Breaking or comes with a larger impact: Is a "Breaking.rst" or "Important.rst" document part of the patch?
+*  If a patch is a new feature: Is a "Feature"-rst part of the patch? Check out the `rst file generator <https://forger.typo3.com/utilities/rst>`
+   for help on creating files like this.
+*  Does the licensing of any foreign code introduced match the Core licensing?
+*  Is the commit message complete, clear and properly mentions all part of a patch?
+*  If a new Exception is added, is the timestamp-identifier unique and recent?
+*  When new PHP files are added, do they contain the TYPO3 License and a `declare strict_types` header?
+*  Is the provided commit message, reST files and the code itself aligned? Sometimes in the process
+   of reworking a patch multiple times, these three place of documentation can become out of sync.
+*  If SCSS/TS changes are involved, are the resulting build files included in the patch, and were built with the
+   right environment?
+*  Does your patch deprecate anything? If so, have you followed :ref:`deprecations`?
+
+If you feel this section is missing good things to watch out for for, please contribute to the
+documentation. This list does not claim to be complete, but should act as a kind of "Cheat-Sheet" for
+reviewing.
+
 
