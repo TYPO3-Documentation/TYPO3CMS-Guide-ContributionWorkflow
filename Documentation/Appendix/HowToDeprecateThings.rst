@@ -18,6 +18,12 @@ or change functionality in the TYPO3 Core, it has to be deprecated first.
     Upon deprecating or removing functionality the change must be added
     to the :ref:`Extension scanner <extension-scanner>` whenever possible.
 
+..  note::
+    It's not always possible to "deprecate" everything. In some cases,
+    hard breaking changes must be introduced. These need to be addressed
+    and discussed with much care beyond the scope of this chapter, and can
+    only occur in new major versions of TYPO3 in the `X.0.x` focus release.
+
 Here is how:
 
 

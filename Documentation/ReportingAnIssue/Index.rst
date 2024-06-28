@@ -24,6 +24,11 @@ Introduction to Forge
 
 The issue tracker Forge is currently based on Redmine. It is used to
 report and handle open issues (including bugs and feature requests).
+
+Note that Forge is not only used for the Community to report bugs
+and features, but also the Core development team creates issues for
+each and every change to TYPO3.
+
 First, get yourself an account, see
 :ref:`TYPO3-Guide-ContributionWorkflow-Account`.
 
@@ -49,6 +54,13 @@ something similar has already been reported.
 easy to find existing issues. Filters are located on the the left hand
 side of the navigation menu. You can use this feature to help refine searches.
 
+Of course you are also able to use the search functionality of
+`Forge <https://forge.typo3.org>`__ itself, which offers some more specific
+filter options.
+
+You help the people maintaining the issue tracker a lot by first making sure
+your problem is not covered already. The less duplicate issues our team needs
+to triage, the more time we have for actually addressing bugs and features.
 
 .. index::
    single: Issue Reporting Workflow; Identifying
@@ -66,7 +78,8 @@ Remove side effects
    Work on a TYPO3 instance which is as clean as possible so you can
    rule out extensions messing with the TYPO3 Core. If you need to set
    up an extension to illustrate the problem, make sure it is as free
-   of side effects as possible.
+   of side effects as possible. Ideally, try to reproduce your
+   problem or feature by using existing Core extensions (like :ref:`use-styleguide`).
 
 Narrow down the problem
    Try different browsers, this will help the team (and you) a lot to
@@ -134,7 +147,8 @@ be using the most are **Feature** and **Bug**.
 
 The others are mostly for internal organization (like **Stories** and **Epics**)
 and things which aren't really a feature or a bug... they are just **Tasks**
-somebody needs to take care of.
+somebody needs to take care of, because the Core development team also uses
+this system for their daily work.
 
 
 
@@ -153,7 +167,8 @@ a report for yourself :)
 .. tip::
 
    Remember, the subject is also helpful for people searching for already
-   existing issues. Be as clear and precise as possible!
+   existing issues. Be as clear and precise as possible! Also try to not mis-spell
+   vital keywords (for example use "extbase" and not "ext-bse").
 
 Bad example:
    Bug
@@ -298,7 +313,7 @@ It is important to provide **the specific information that is necessary** to be
 able to **understand**, **reproduce** and **fix** the bug.
 
 Use your common sense and your experience to guide you: What would you need if you
-wanted to find the bug in the code and fix it? What do you need if you want to
+wanted to find the bug in the code and fix it yourself? What do you need if you want to
 reproduce it to debug it or test if the patch solves the problem?
 
 A good bug report should contain all or any of these elements:
@@ -309,10 +324,10 @@ A good bug report should contain all or any of these elements:
 
    * A brief description of your environment. Depending on the nature of
      the bug it *might* include your operating system
-     (Windows, Linux, macOS, ...), the full version of TYPO3, the webserver
-     used, the database used (mySql, SQLServer, ...) and its version.
-     In any case, the full version of TYPO3 (e.g. 9.5.1) is very helpful. If
-     your bug is reproducible on several versions (e.g. 10.1.0 and 9.5.1),
+     (Windows, Linux, macOS, ...), the full version of TYPO3 and PHP, the webserver
+     used, the database used (MySQL, MariaDB, ...) and its version.
+     In any case, the full version of TYPO3 (e.g. 12.4.16) is very helpful. If
+     your bug is reproducible on several versions (e.g. 13.2.1 and 12.4.16),
      that is helpful as well.
    * A description of the TYPO3 setup that you are using or that is necessary
      to trigger the bug. Your issue came out using TYPO3 with multiple

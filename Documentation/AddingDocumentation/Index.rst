@@ -198,9 +198,8 @@ in :ref:`h2document:render-documentation-with-docker`.
 
 .. important::
 
-   If you switch branches, you should rebuild everything. You can either remove the folder
-   :file:`Documentation-GENERATED-temp/Cache` and all its contents or run `dockrun_t3rd
-   makehtml-no-cache` which has the same effect.
+   If you switch branches, you should rebuild everything. You can simply remove the folder
+   :file:`Documentation-GENERATED-temp/Cache` and all its contents.
 
 .. _documentation-main:
 
