@@ -237,8 +237,11 @@ JavaScript and CSS assets are build from sources in the monorepo, with the comma
 
 .. code-block:: bash
 
-   Buid/Scripts/runTests.sh -s buildCss
-   Buid/Scripts/runTests.sh -s buildJavascript
+   # optionally, reset state
+   Build/Scripts/runTests.sh -s clean
+
+   Build/Scripts/runTests.sh -s buildCss
+   Build/Scripts/runTests.sh -s buildJavascript
 
 This "compiles" files with ".scss" and ".ts" extensions to their bundled ".css" and
 ".js" variants. TYPO3 also versions these files inside the monorepo.

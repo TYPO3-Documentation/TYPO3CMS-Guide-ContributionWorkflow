@@ -75,10 +75,9 @@ Narrow down the problem
 Be up to date
    First of all you should make sure that the bug does exist on the latest TYPO3
    version; we always recommend you to upgrade your TYPO3 environment to the latest
-   release of the LTS version you use.
-   See https://get.typo3.org/ to get the latest version of your LTS.
+   release of the LTS version, see `https://get.typo3.org/`__.
 
-   Or even better: use the latest version from git.
+   Or even better: use the latest version from git (`main`).
 
 Be explicit
    It can take a lot of time to reproduce or understand issues. Please try to
@@ -228,9 +227,12 @@ Choose the TYPO3 version, where the error occurs. Ideally try
 to report an issue for the latest TYPO3 version where your issue
 applies to.
 
-Older TYPO3 versions outside of the LTS support range are less
-likely to receive attention.
+Older TYPO3 versions outside of the latest LTS support range are less
+likely to receive attention due to being in "priority bugfix-mode". Only
+the latest LTS release receives full support, and anything in ELTS
+support mode is not covered by the issue tracker.
 
+Check `https://get.typo3.org/`__ for supported releases and their state.
 
 .. index::
    single: Issue; PHP version
