@@ -19,8 +19,9 @@ Before :ref:`Cherry-picking a patch <cherry-pick-a-patch>` or starting a new pat
 .. code-block:: bash
    :caption: shell command
 
+   git fetch --all
    git reset --hard origin/main
-   git pull
+   git pull --rebase
 
 
 .. _cleanup-typo3:
@@ -40,7 +41,9 @@ any case or if in doubt, you can safely perform all steps.
    :caption: shell command
 
    Build/Scripts/runTests.sh -s clean
+   # For DDEV environments, prefix with `ddev ...`
    bin/typo3 cache:flush
+   bin/typo3 cache:warmup
 
 **Changes in composer.json**:
 
@@ -64,9 +67,16 @@ Delete browser cache or
 `hard refresh <https://www.filecloud.com/blog/2015/03/tech-tip-how-to-do-hard-refresh-in-browsers/>`__
 (e.g. CTRL + F5)
 
+Also you may need to create the JS/CSS assets:
+
+   .. code-block:: bash
+
+      ./Build/Scripts/runTests.sh -s buildCss
+      ./Build/Scripts/runTests.sh -s buildJavascript
+
 **Changes in DB schema (ext_tables.sql)**:
 
-Maintenance: Analyze Database Structure, Apply selected changes.
+:guilabel:`Maintenance: Analyze Database Structure, Apply selected changes.`
 
 .. image:: /Images/ManualScreenshots/analyze.svg
    :class: with-shadow

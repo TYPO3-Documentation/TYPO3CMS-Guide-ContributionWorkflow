@@ -37,16 +37,17 @@ composer install
 Run composer install in the same directory you cloned the TYPO3 CMS core
 repository.
 
-It is recommended to use runTests.sh for this. The "direct command" is an
-alternative. You only need to run one of these!
+It is recommended to use :file:`runTests.sh` for this (see :ref:`testing-core`). The "direct command" is an
+alternative, but it requires your local system to have proper PHP and Composer versions ready to use.
+You only need to run one of these!
 
 
 ..  note::
 
-    While working with the TYPO3 sources composer can not detect the TYPO3 version of your
+    While working with the TYPO3 sources, Composer may not detect the TYPO3 version of your
     cloned project because there was none. Before you run `composer install` may need to export
     the `COMPOSER_ROOT_VERSION environment variable <https://getcomposer.org/doc/03-cli.md#composer-root-version>`__.
-    Here you need to set a full version string matching the TYPO3 version of your clone.
+    Here you need to set a full version string matching the TYPO3 version of your Git clone.
 
     Example:
 
