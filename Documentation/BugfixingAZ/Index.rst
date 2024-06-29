@@ -42,7 +42,8 @@ Step by Step Walkthrough
 ========================
 
 You should have a cloned Git repository with a working TYPO3 installation
-as described in :ref:`setup <setup>`. Especially the
+as described in :ref:`setup <setup>` (or via the
+:ref:`Quick start guide <quickstart>`). Especially the
 :ref:`Git setup <Setting-up-your-Git-environment>` is required.
 
 .. rst-class:: bignums-xxl
@@ -182,6 +183,7 @@ as described in :ref:`setup <setup>`. Especially the
 
 #. Optional: Advertise review on Slack channel
 
+.. _announce-slack:
    Once your push to Gerrit_ goes through, you will receive a URL for your new
    change. If you are on `Slack <https://typo3.slack.com>`__ you can now advertise
    your new change in the **#typo3-cms-coredev** channel. You can get a preformatted

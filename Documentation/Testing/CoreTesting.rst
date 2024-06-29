@@ -246,6 +246,8 @@ mounts the local path to the same location within the container, so path mapping
 also comes with a `guide <https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html>`_ how to set up
 debugging.
 
+..  _building-assets:
+
 Building
 ========
 
