@@ -14,6 +14,28 @@ code, but you will also find information for :ref:`writing bug reports <bugrepor
 :ref:`adding documentation <Adding-documentation>`, :ref:`running tests <testing>`,
 :ref:`reviewing and testing patches <lifeOfAPatch>` etc.
 
+Why contribute?
+===============
+
+Here are some ideas why contribution is great:
+
+*  Do you earn your income through the TYPO3 ecosystem? Contribute to keep it alive and going,
+   securing your work.
+*  Do you want to become a more experience developer? Or gather UX/UI expertise in a
+   large, broadly used system?
+*  Do you work in a company that has less sophisticated code testing and review capacities,
+   and you want to learn from the TYPO3, understand it, and use your
+   knowledge to work more effectively?
+*  Do you want to keep up to date with latest development, be a part of it to
+   shape it suit your needs? Have a democratic impact on a large project affecting
+   many people?
+*  If you know about fresh changes, it will make it much easier to perform updates
+   for your projects! If you spot breaking changes affecting your project,
+   you can much better give feedback on it and shape the final implementation.
+*  Get in touch with awesome, kind and dedicated like-minded people like you.
+   Be part of a community and feel connected, and see people appreciating your
+   help.
+
 How this guide is structured
 ============================
 
