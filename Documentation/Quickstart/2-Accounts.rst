@@ -1,10 +1,10 @@
 :navigation-title: Accounts
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Accounts
+..  index::
+    single: Accounts
 
-.. _quickstart-accounts:
+..  _quickstart-accounts:
 
 Quick Start: Accounts needed
 ============================
