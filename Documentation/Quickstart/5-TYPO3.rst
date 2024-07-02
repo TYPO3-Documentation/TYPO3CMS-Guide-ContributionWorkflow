@@ -34,7 +34,7 @@ Quick Start: Set up TYPO3
 
     ..  code:: bash
 
-        touch FIRST_INSTALL
+        ddev exec touch FIRST_INSTALL
         ddev typo3 setup \
             --driver=mysqli \
             --host=db \
