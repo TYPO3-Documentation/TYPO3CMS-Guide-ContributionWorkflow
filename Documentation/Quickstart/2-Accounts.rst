@@ -23,7 +23,7 @@ Quick Start: Accounts needed
     The code review system that is used for your code contributions.
     There, all patches are commented and voted/approved/rejected.
 
-    You login here via the `My TYPO3` SSO account and need to upload
+    First login via the `My TYPO3` SSO account. Afterwards you need to upload
     your SSH public key here. See :ref:`GerritAccount`.
 
 3.  Forge (`https://forge.typo3.org/`__)
