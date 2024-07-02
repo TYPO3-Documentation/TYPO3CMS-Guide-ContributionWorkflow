@@ -1,10 +1,10 @@
 :navigation-title: Reviewing & more
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Reviewing and more contribution
+..  index::
+    single: Reviewing and more contribution
 
-.. _quickstart-contribute:
+..  _quickstart-contribute:
 
 Quick Start: Reviewing and contributing more
 ============================================
