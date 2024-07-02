@@ -40,8 +40,8 @@ the Quick Start guide, you should know how to do this.
 
     This guide expects you can execute `git` terminal commands.
 
-    This guide will use the *https* method to connect to GitHub, so that you do not
-    neccessarily need a GitHub account.
+    This guide uses the *https* method to connect to GitHub, so you do not
+    need to have a GitHub account.
 
 6.  SSH client plus SSH key(s) and an email account
 
