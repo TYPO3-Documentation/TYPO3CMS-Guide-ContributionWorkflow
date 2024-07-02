@@ -1,11 +1,11 @@
 :orphan:
 :navigation-title: Create patch - Intention
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Patch
+..  index::
+    single: Patch
 
-.. _quickstart-intent:
+..  _quickstart-intent:
 
 Quick Start: Create a patch - Intention
 =======================================
