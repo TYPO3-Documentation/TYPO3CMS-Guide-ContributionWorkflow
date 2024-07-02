@@ -90,7 +90,7 @@ Quick Start: Set up TYPO3
 
         ddev launch typo3
 
-    .. attention::
+    ..  attention::
 
         **@TODO**: Frontend of `EXT:styleguide` does not seem to work for me,
         following the guide. Even after enabling the :guilabel:`styleguide frontend demo`
