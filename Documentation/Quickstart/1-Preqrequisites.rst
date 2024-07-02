@@ -52,7 +52,7 @@ the Quick Start guide, you should know how to do this.
 7.  PHP IDE / Editor
 
     It is recommended to use a good PHP IDE. As part of the target audience of this guide
-    you should already use something like PhpStorm, Visual Studeio Code, vi(m)...
+    you should already use something like PhpStorm, Visual Studio Code, vi(m)...
 
 8.  Assumed path structure and name usage
 
