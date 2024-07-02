@@ -1,11 +1,10 @@
 :navigation-title: Create patch
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Patch
+..  index::
+    single: Patch
 
-.. _quickstart-patch:
-
+..  _quickstart-patch:
 Quick Start: Create a patch
 ===========================
 
