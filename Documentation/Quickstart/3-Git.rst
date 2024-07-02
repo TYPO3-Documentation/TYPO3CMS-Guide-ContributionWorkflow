@@ -1,10 +1,10 @@
 :navigation-title: Git
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Git repository
+..  index::
+    single: Git repository
 
-.. _quickstart-git:
+..  _quickstart-git:
 
 Quick Start: Set up Git repository
 ==================================
