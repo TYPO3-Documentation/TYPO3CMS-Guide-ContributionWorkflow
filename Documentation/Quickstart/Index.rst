@@ -1,11 +1,11 @@
 :navigation-title: Quick Start: 15 Mins to contribute!
 
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Quickstart, Kickstart
+..  index::
+    single: Quickstart, Kickstart
 
-.. _quickstart:
+..  _quickstart:
 
 ============================================================
 Quick Start: Get ready to contribute to TYPO3 in 15 Minutes!
