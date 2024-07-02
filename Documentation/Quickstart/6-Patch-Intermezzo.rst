@@ -14,13 +14,13 @@ For this part of the guide to be effective, we establish our intent.
 
 This could be many things:
 
-*  **Fix a bug** in one of the TYPO3 Core Extensions
-*  Introduce a **new feature**
-*  Fix mistakes or add content in the **Documentation** of any of the Core Extensions
-*  Enhance **tests** for certain functionality
-*  Raise or add **dependencies** within TYPO3
-*  Adjust the **TYPO3 Build** or **Testing Pipeline**
-*  Make changes to the **TypeScript/SCSS build** of TYPO3
+*   **Fix a bug** in one of the TYPO3 Core Extensions
+*   Introduce a **new feature**
+*   Fix mistakes or add content in the **Documentation** of any of the Core Extensions
+*   Enhance **tests** for certain functionality
+*   Raise or add **dependencies** within TYPO3
+*   Adjust the **TYPO3 Build** or **Testing Pipeline**
+*   Make changes to the **TypeScript/SCSS build** of TYPO3
 
 For the sake of clarity, let's pick a simple example:
 
