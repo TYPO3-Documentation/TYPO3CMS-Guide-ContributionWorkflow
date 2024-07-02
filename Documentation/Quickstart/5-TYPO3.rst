@@ -1,10 +1,10 @@
 :navigation-title: TYPO3
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: TYPO3
+..  index::
+    single: TYPO3
 
-.. _quickstart-typo3:
+..  _quickstart-typo3:
 
 Quick Start: Set up TYPO3
 =========================
