@@ -1,10 +1,10 @@
 :navigation-title: DDEV
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: DDEV
+..  index::
+    single: DDEV
 
-.. _quickstart-ddev:
+..  _quickstart-ddev:
 
 Quick Start: Set up DDEV
 ========================
