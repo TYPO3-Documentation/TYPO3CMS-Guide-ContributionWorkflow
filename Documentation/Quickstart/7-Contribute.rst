@@ -20,7 +20,7 @@ With your environment, you can:
 1.  Keep up to date with development
 
     By executing this in your working environment,
-    you can always catch up the the latest `main`
+    you can always catch up to the latest `main`
     TYPO3 version:
 
     ..  code:: bash
