@@ -44,7 +44,7 @@ Quick Start: Set up DDEV
         Creating a new DDEV project config in the current directory (~/TYPO3-Contribute)
         Once completed, your configuration will be written to ~/TYPO3-Contribute/.ddev/config.yaml
 
-        Configuring a 'typo3' project named 't3dev' with docroot 'public' at '~/TYPO3-Contribute/'.
+        Configuring a 'typo3' project named 't3dev' with docroot '.' at '~/TYPO3-Contribute/'.
         For full details use 'ddev describe'.
         Configuration complete. You may now run 'ddev start'.
 
