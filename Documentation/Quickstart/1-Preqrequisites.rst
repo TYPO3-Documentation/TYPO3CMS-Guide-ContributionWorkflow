@@ -1,10 +1,10 @@
 :navigation-title: Prerequisites
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Prerequisites
+..  index::
+    single: Prerequisites
 
-.. _quickstart-prerequisites:
+..  _quickstart-prerequisites:
 
 Quick Start: Prerequisites
 ==========================
