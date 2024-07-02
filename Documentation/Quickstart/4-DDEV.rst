@@ -15,7 +15,7 @@ Quick Start: Set up DDEV
 
     ..  code:: bash
 
-        chdir ~/TYPO3-Contribute
+        cd ~/TYPO3-Contribute
         ddev config \
             --project-name 't3dev' \
             --project-type 'typo3' \
