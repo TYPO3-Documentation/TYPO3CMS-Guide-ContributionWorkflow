@@ -48,7 +48,6 @@ These are the sections:
             *  **SSH** client plus SSH key(s) and an email account
 
             *  A **PHP IDE** of your choice (PhpStorm, Visual Studio Code, vi(m), ...)
-               core concepts.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
