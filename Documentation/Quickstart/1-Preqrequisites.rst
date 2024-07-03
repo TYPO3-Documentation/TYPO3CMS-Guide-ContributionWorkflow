@@ -24,7 +24,9 @@ the Quick Start guide, you should know how to do this.
 
     Either the "original" `Docker Desktop <https://www.docker.com/products/docker-desktop/>`__
     or an alternative like `OrbStack <https://orbstack.dev/>`__, `Podman <https://podman.io/>`__,
-    `Colima <https://github.com/abiosoft/colima>`__ or others.
+    `Colima <https://github.com/abiosoft/colima>`__ or others. Linux uses may prefer to use
+    usual direct docker or podman setup instead of the `* Desktop` variants which is fully
+    fine and used by many core contributors and merger.
 
 3.  DDEV
 
@@ -35,6 +37,9 @@ the Quick Start guide, you should know how to do this.
 
     Your operating system needs to provide a Bash terminal, many steps of this guide
     will be executed on the shell.
+
+    Even if you use another shell and adopt mentioned commands to your shell, TYPO3
+    core provided scripts requires bash and are written for bash, for example `Build/Scripts/runTests.sh`.
 
 5.  Git client
 
