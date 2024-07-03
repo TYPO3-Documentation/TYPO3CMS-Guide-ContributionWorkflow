@@ -16,6 +16,11 @@ Now with this example in mind, we have two modified files that we want to commit
 *  :file:`typo3/sysext/backend/Classes/Form/Element/JsonElement.php`
 *  :file:`typo3/sysext/backend/Tests/Unit/Form/Element/JsonElementTest.php`
 
+..  note::
+
+    Ensure to be in the TYPO3 monorepo checkout `TYPO3-Contribute` created
+    in the previous step, for example :bash:`cd ~/TYPO3-Contribute`.
+
 ..  rst-class:: bignums-xxl
 
 1.  Create a matching Forge Ticket
@@ -41,8 +46,8 @@ Now with this example in mind, we have two modified files that we want to commit
     steps, you should not have any other modified files:
 
     ..  code:: bash
+        :caption: **Check git status of the repository**
 
-        cd ~/TYPO3-Contribute
         git status
 
     The output should be:
@@ -63,13 +68,20 @@ Now with this example in mind, we have two modified files that we want to commit
 3.  Add changed files to git stage:
 
     ..  code:: bash
+        :caption: **Add single files to git stage to be pre-selected for a commit**
 
-        git add typo3/sysext/backend/Classes/Form/Element/JsonElement.php
-        git add typo3/sysext/backend/Tests/Unit/Form/Element/JsonElementTest.php
+        git add typo3/sysext/backend/Classes/Form/Element/JsonElement.php && \
+            git add typo3/sysext/backend/Tests/Unit/Form/Element/JsonElementTest.php
+
+    ..  note::
+
+        Please ensure to only add files related to your change to the stage,
+        and discard unrelated files if reasonable.
 
 4.  Commit the files
 
     ..  code:: bash
+        :caption: **Create a git commit for files in the git stash**
 
         git commit
 
@@ -77,6 +89,7 @@ Now with this example in mind, we have two modified files that we want to commit
     and show this:
 
     ..  code:: text
+        :caption: **The commit message template is loaded to help with commit message structure**
 
         [BUGFIX|TASK|FEATURE|DOCS]
 
@@ -94,9 +107,9 @@ Now with this example in mind, we have two modified files that we want to commit
         #       modified:   typo3/sysext/backend/Tests/Unit/Form/Element/JsonElementTest.php
         #
 
-    Replace that to read:
-
     ..  code:: text
+        :caption: **Replace that to read:**
+
         [TASK] Add HTML5 spec "input-type='json'" to TCA type=json
 
         Resolves: #12345
@@ -107,12 +120,12 @@ Now with this example in mind, we have two modified files that we want to commit
 5.  Push to Git repository
 
     ..  code:: bash
+        :caption: **Push the commit to configured remote push url (Gerrit)**
 
         git push
 
-    Output:
-
     ..  code:: text
+        :caption: **Output:**
 
         Enumerating objects: 11859, done.
         Counting objects: 100% (11859/11859), done.
@@ -163,7 +176,51 @@ Now with this example in mind, we have two modified files that we want to commit
 
     See :ref:`lifeOfAPatch-improve-patch` for details.
 
-8.  Special notes
+8.  Cleaning up
+
+    It's important to cleanup your local checkout after working on a change or
+    reviewing it to avoid stacking multiple changes into a **not intented**
+    relation chain and stack to the simple one commit workflow.
+
+    At least resetting the repository and removing your created commit is the
+    bare minimum you need to do:
+
+    ..  code:: bash
+        :caption: **Reset repository**
+
+        git reset --hard origin/main
+
+    Usually you want to reset to the current upstream state, including recently
+    merged changes. Due to the nature that this could involve changes in composer
+    dependencies, database changes or changes in the Dependency Injection container
+    configuration, following chained commands are a fail-safe variant - which you
+    may add as an alias to your shell:
+
+    ..  code:: bash
+        :caption: **Reset repository to current upstream and ensure working state**
+
+        git fetch --all && \
+            git reset --hard origin/main && \
+            Build/Scripts/runTests.sh -s composerInstall && \
+            ddev typo3 cache:flush && \
+            ddev typo3 cache:warmup
+
+    ..  code:: bash
+        :caption: **Check status of the repository**
+
+        git status
+
+    ..  code::
+        :caption: **... which should output something similar to following:**
+
+        On branch main
+        Your branch is up-to-date with 'origin/main'.
+
+        nothing to commit, working tree clean
+
+
+
+9.  Special notes
 
     In some cases you may need to alter assets of the TYPO3 Core, like
     `TypeScript` or `SCSS`. See :ref:`building-assets` for how to build
