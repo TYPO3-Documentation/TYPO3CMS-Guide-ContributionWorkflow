@@ -11,8 +11,8 @@ Quick Start: Set up TYPO3
 
 ..  note::
 
-    Ensure to be in the TYPO3 monorepo checkout `TYPO3-Contribute` created
-    in the previous step, for example :bash:`cd ~/TYPO3-Contribute`.
+    Ensure that your current working directory is the one
+    used in previous steps, here :bash:`cd $HOME/work/TYPO3-Contribute`.
 
 ..  rst-class:: bignums-xxl
 
@@ -93,8 +93,8 @@ Quick Start: Set up TYPO3
 
     Note there remain some extensions disabled (`filemetadata`, `indexed_search`,
     `linkvalidator`, `opendocs`, `reactions`, `recycler`, `scheduler`, `webhooks`,
-    `workspaces`). If you plan to work on these, activate them similarly or using
-    the `Extension Manager` in the TYPO3 Backend.
+    `workspaces`). If you plan to work on these, activate them similarly, or use
+    the :guilabel:`Extension Manager` in the TYPO3 Backend.
 
 4.  Log in to TYPO3
 
@@ -110,5 +110,5 @@ Quick Start: Set up TYPO3
 
         **HINT**: Frontend of `EXT:styleguide` does not seem to work right now
         using the new Site Sets feature. Thus the `EXT:styleguide` frontend page
-        tree is installed using the `TypoScript Template Records` variant. Bare
+        tree is installed using the `TypoScript Template Records` variant. Bear
         that in mind if you want to work on the `Site Sets Feature`.

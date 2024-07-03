@@ -17,11 +17,12 @@ With your environment, you can:
 
 ..  note::
 
-    Ensure to be in the TYPO3 monorepo checkout `TYPO3-Contribute` created
-    in the previous step, for example :bash:`cd ~/TYPO3-Contribute`.
+    Ensure that your current working directory is the one
+    used in previous steps, here :bash:`cd $HOME/work/TYPO3-Contribute`.
 
 ..  rst-class:: bignums-xxl
 
+..  _quickstart-reset:
 1.  Keep up to date with development
 
     By executing this in your working environment,
@@ -46,15 +47,33 @@ With your environment, you can:
             ddev typo3 cache:warmup && \
             ddev typo3 extension:setup
 
-    After that, you should also log into the TYPO3 backend
-    and ensure via the :guilabel:`Database Analyzer` that your
-    database is up to date.
+    This resets your local state to the the current upstream state, including
+    recently merged changes. This may involve changes in Composer
+    dependencies, database changes or changes in the Dependency Injection container
+    configuration. The steps above are a fail-safe way to ensure a working environment:
+
+    ..  code:: bash
+        :caption: **Check status of the repository**
+
+        git status
+
+    ..  code::
+        :caption: **... which should output something similar to following:**
+
+        On branch main
+        Your branch is up-to-date with 'origin/main'.
+
+        nothing to commit, working tree clean
 
     ..  hint::
 
         You may want to create a Bash alias for this, if you
         do it more often.
         Also see :ref:`cleanup-typo3` for details.
+
+    After that, you should also log into the TYPO3 backend
+    and ensure via the :guilabel:`Database Analyzer` that your
+    database is up to date.
 
 2.  Coordinate with the team
 
@@ -84,11 +103,6 @@ With your environment, you can:
 
     You can even commit and contribute on other people's patches -
     always make sure to ask first, before you do that.
-
-    ..  hint::
-
-        Do not forget to cleanup your repository again. See first point to
-        reset your installation again to upstream state.
 
 3.  Read on
 

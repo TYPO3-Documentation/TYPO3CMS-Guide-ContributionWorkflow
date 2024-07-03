@@ -18,8 +18,8 @@ Now with this example in mind, we have two modified files that we want to commit
 
 ..  note::
 
-    Ensure to be in the TYPO3 monorepo checkout `TYPO3-Contribute` created
-    in the previous step, for example :bash:`cd ~/TYPO3-Contribute`.
+    Ensure that your current working directory is the one
+    used in previous steps, here :bash:`cd $HOME/work/TYPO3-Contribute`.
 
 ..  rst-class:: bignums-xxl
 
@@ -179,50 +179,9 @@ Now with this example in mind, we have two modified files that we want to commit
 8.  Cleaning up
 
     It's important to cleanup your local checkout after working on a change or
-    reviewing it to avoid stacking multiple changes into a **not intented**
-    relation chain and stack to the simple one commit workflow.
-
-    At least resetting the repository and removing your created commit is the
-    bare minimum you need to do:
-
-    ..  code:: bash
-        :caption: **Reset repository**
-
-        git reset --hard origin/main
-
-    Usually you want to reset to the current upstream state, including recently
-    merged changes. Due to the nature that this could involve changes in composer
-    dependencies, database changes or changes in the Dependency Injection container
-    configuration, following chained commands are a fail-safe variant - which you
-    may add as an alias to your shell:
-
-    ..  code:: bash
-        :caption: **Reset repository to current upstream and ensure working state**
-
-        Build/Scripts/runTests.sh -s clean && \
-            git fetch --all && \
-            git reset --hard origin/main && \
-            git pull --rebase && \
-            ./Build/Scripts/runTests.sh -u && \
-            ./Build/Scripts/runTests.sh composerInstall && \
-            ddev typo3 cache:flush && \
-            ddev typo3 cache:warmup && \
-            ddev typo3 extension:setup
-
-    ..  code:: bash
-        :caption: **Check status of the repository**
-
-        git status
-
-    ..  code::
-        :caption: **... which should output something similar to following:**
-
-        On branch main
-        Your branch is up-to-date with 'origin/main'.
-
-        nothing to commit, working tree clean
-
-
+    reviewing it, to avoid stacking multiple changes into a **not intentional**
+    relation chain. See :ref:`resetting <quickstart-reset>` for information
+    on this.
 
 9.  Special notes
 

@@ -32,7 +32,7 @@ On these pages you will learn how to become a TYPO3 Core contributor.
 
 .. rst-class:: horizbuttons-primary-m
 
-*  :ref:`Quick Start: Contribute in 15 Minutes! <quickstart>`
+*  :ref:`Quick Start: Contribute in under 30 Minutes! <quickstart>`
 
 ----
 

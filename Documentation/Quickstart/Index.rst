@@ -1,4 +1,4 @@
-:navigation-title: Quick Start: 15 Mins to contribute!
+:navigation-title: Quick Start: Contribute in Under 30 Mins!
 
 ..  include:: /Includes.rst.txt
 
@@ -7,9 +7,9 @@
 
 ..  _quickstart:
 
-============================================================
-Quick Start: Get ready to contribute to TYPO3 in 15 Minutes!
-============================================================
+==================================================================
+Quick Start: Get ready to contribute to TYPO3 in under 30 minutes!
+==================================================================
 
 This `Tutorial` / `How To` will show you the easiest and
 *quickest way to become a contributor* to TYPO3.

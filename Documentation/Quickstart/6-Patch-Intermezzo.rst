@@ -133,7 +133,7 @@ with an output like:
     PHPUnit 11.2.5 by Sebastian Bergmann and contributors.
 
     Runtime:       PHP 8.2.20
-    Configuration: ~/TYPO3-contrib/Build/phpunit/UnitTests.xml
+    Configuration: /.../TYPO3-Contribute/Build/phpunit/UnitTests.xml
 
     ..                                                                  2 / 2 (100%)
 

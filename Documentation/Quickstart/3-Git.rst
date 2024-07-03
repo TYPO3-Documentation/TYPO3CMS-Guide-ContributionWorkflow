@@ -11,53 +11,36 @@ Quick Start: Set up Git repository
 
 ..  tip::
 
-    Some commands needs replacing values with your information. Copy them by using
-    the copy icon in the code block and paste them in a raw text file or editor,
-    adjust the values, copy it again and paste it into your terminal to make handling
-    these commands easier.
+    You may want to adapt some commands that are shown here.
+    Copy them by using the copy icon in the code block, paste them
+    in a raw text file or editor, adjust the values. Then copy it
+    from there to paste it into your terminal again.
 
 ..  rst-class:: bignums-xxl
 
 1.  Init directory and clone Repository
 
     ..  code:: bash
-        :caption: **Head over to your working folder**
-
-        cd /path/to/your/working/folder
-
-        # or create one
-        mkdir -p $HOME/working-folder && \
-            cd $HOME/working-folder
-
-    ..  code:: bash
         :caption: **Create contribution folder and clone TYPO3 into a it**
 
-            mkdir -p ./TYPO3-Contribute && \
-                cd ./TYPO3-Contribute && \
+            mkdir -p $HOME/working-folder/TYPO3-Contribute && \
+                cd $HOME/working-folder/TYPO3-Contribute && \
                 git clone https://github.com/typo3/typo3.git .
 
 2.  Set up Git specifics
 
     ..  note::
 
-        Replace `user.name` and `user.email` values in the next commands with
-        your name and email address to be used for git commit message author
-        information.
+        Remember that we use some convetions for username and email, see
+        :ref:`prerequisite assumptions <quickstart-assumptions>.
 
     ..  code:: bash
-        :caption: **Set User meta data to git (author information)**
+        :caption: **Set up git user meta data and repository**
 
-        git config user.name "John Doe" ; \
-            git config user.email "john.doe@example.com"
-
-    ..  note::
-
-        Replace `john-doe` in next command with your Gerrit (TYPO3) user name.
-
-    ..  code:: bash
-        :caption: **Set push remote repository to the TYPO3 Gerrit instance**
-
-        git config remote.origin.pushurl ssh://john-doe@review.typo3.org:29418/Packages/TYPO3.CMS.git ; \
+        git config user.name "John Doe" && \
+            git config user.email "john.doe@example.com" && \
+            git config remote.origin.pushurl \
+                ssh://john-doe@review.typo3.org:29418/Packages/TYPO3.CMS.git && \
             git config remote.origin.push +refs/heads/main:refs/for/main
 
     ..  code:: bash
@@ -78,35 +61,5 @@ Quick Start: Set up Git repository
             echo ''
             echo 'Resolves: #'
             echo 'Releases: main'
-          } > ~/.gitmessage-typo3.txt && \
-          git config commit.template ~/.gitmessage-typo3.txt
-
-    ..  code:: bash
-        :caption: **Display repository git config ...**
-
-        cat .git/config
-
-    ..  code::
-        :caption: **... and verify that following options are contained with your settings**
-
-        [core]
-            repositoryformatversion = 0
-            filemode = true
-            bare = false
-            logallrefupdates = true
-        [remote "origin"]
-            url = https://github.com/typo3/typo3.git
-            fetch = +refs/heads/*:refs/remotes/origin/*
-            pushurl = ssh://john-doe@review.typo3.org:29418/Packages/TYPO3.CMS.git
-            push = +refs/heads/main:refs/for/main
-        [branch "main"]
-            remote = origin
-            merge = refs/heads/main
-        [user]
-            name = John Doe
-            email = john.doe@example.com
-        [branch]
-            autosetuprebase = remote
-        [commit]
-            template = /home/sbuerk/.gitmessage-typo3.txt
-
+          } > $HOME/.gitmessage-typo3.txt && \
+          git config commit.template $HOME/.gitmessage-typo3.txt

@@ -82,8 +82,8 @@ Also you may need to create the JS/CSS assets:
 One-liner command
 ~~~~~~~~~~~~~~~~~
 
-If you want to reset your local installation in one go, you could use following
-one-liner command composed out of the single parts explained above:
+If you want to reset your local installation in one go, you could use the following
+one-liner command, combining the mentioned parts from above:
 
 ..  code:: bash
     :caption: **Reset local repository to upstream state**
@@ -101,4 +101,4 @@ one-liner command composed out of the single parts explained above:
 ..  note::
 
     You may still check the `Database Analyzer` in the backend for changes or
-    removed columns and tables to ensure a clean state.ssss
+    removed columns and tables to ensure a clean state.
