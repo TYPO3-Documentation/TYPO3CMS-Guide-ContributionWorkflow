@@ -50,9 +50,16 @@ which has this code at `line 188`:
             </typo3-formengine-element-json>';
     }
 
-We change this code into:
+..  hint::
+
+    Before making any changes and creating a patch, it's important to ensure a
+    clean state in the repository, which means that a `git status` should tell
+    you `nothing to commit, working tree clean`. If this is not the case, head
+    over to the next chapter and lookup the step about resetting (cleaning) the
+    local repository first.
 
 ..  code:: php
+    :caption: **We change this code into:**
     :emphasize-lines: 3,12
 
         $editorHtml = '
