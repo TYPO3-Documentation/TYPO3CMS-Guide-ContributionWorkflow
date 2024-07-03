@@ -118,7 +118,7 @@ After the change, we can verify our test works:
 
 ..  code:: bash
 
-    ./Build/Scripts/runTests.sh -p 8.3 -s unit typo3/sysext/backend/Tests/Unit/Form/Element/JsonElementTest.php
+    ./Build/Scripts/runTests.sh -s unit typo3/sysext/backend/Tests/Unit/Form/Element/JsonElementTest.php
 
 with an output like:
 
@@ -126,7 +126,7 @@ with an output like:
 
     PHPUnit 11.2.5 by Sebastian Bergmann and contributors.
 
-    Runtime:       PHP 8.3.8
+    Runtime:       PHP 8.2.20
     Configuration: ~/TYPO3-contrib/Build/phpunit/UnitTests.xml
 
     ..                                                                  2 / 2 (100%)
@@ -138,7 +138,7 @@ with an output like:
     ###########################################################################
     Result of unit
     Container runtime: docker
-    PHP: 8.3
+    PHP: 8.2
     SUCCESS
     ###########################################################################
 
