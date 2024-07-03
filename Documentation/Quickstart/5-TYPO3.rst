@@ -9,6 +9,11 @@
 Quick Start: Set up TYPO3
 =========================
 
+..  note::
+
+    Ensure to be in the TYPO3 monorepo checkout `TYPO3-Contribute` created
+    in the previous step, for example :bash:`cd ~/TYPO3-Contribute`.
+
 ..  rst-class:: bignums-xxl
 
 1.  Perform `composer` install
@@ -17,9 +22,9 @@ Quick Start: Set up TYPO3
     and thus do not use a local or DDEV `composer` command directly:
 
     ..  code:: bash
+        :caption: **Install composer dependencies using default php version**
 
-        chdir ~/TYPO3-Contribute
-        ./Build/Scripts/runTests.sh -s composerInstall -p 8.3
+        ./Build/Scripts/runTests.sh -s composerInstall
 
     Bear in mind: Even though we use `composer` to install dependencies,
     the resulting TYPO3 installation will be in **Legacy** mode, not
@@ -33,41 +38,50 @@ Quick Start: Set up TYPO3
     (`db:db@db`), you do not need to adapt this.
 
     ..  code:: bash
+        :caption: **Setup the instance using the TYPO3 setup command**
 
-        ddev exec touch FIRST_INSTALL
-        ddev typo3 setup \
-            --driver=mysqli \
-            --host=db \
-            --port=3306 \
-            --dbname=db \
-            --username=db \
-            --password=db \
-            --admin-username=john-doe \
-            --admin-user-password='John-Doe-1701D.' \
-            --admin-email="john.doe@example.com" \
-            --project-name='TYPO3 Contribution' \
-            --no-interaction \
-            --server-type=apache \
-            --force
-
-    This should result in a message:
+        ddev exec touch FIRST_INSTALL && \
+            ddev typo3 setup \
+                --driver=mysqli \
+                --host=db \
+                --port=3306 \
+                --dbname=db \
+                --username=db \
+                --password=db \
+                --admin-username=john-doe \
+                --admin-user-password='John-Doe-1701D.' \
+                --admin-email="john.doe@example.com" \
+                --project-name='TYPO3 Contribution' \
+                --no-interaction \
+                --server-type=apache \
+                --force
 
     ..  code::
+        :caption: **This should result in a message:**
 
         ✓ Congratulations - TYPO3 Setup is done.
 
 3.  Activate `EXT:styleguide`
 
     ..  code:: bash
+        :caption: **Ensure extension setup and activate EXT:styleguide**
 
-        ddev typo3 extension:setup
-        ddev typo3 extension:activate styleguide
+        ddev typo3 extension:setup && \
+            ddev typo3 extension:activate styleguide
+
+    ..  code:: bash
+        :caption: **Setup all default backend user groups**
+
         ddev typo3 setup:begroups:default --groups=Both
-        ddev typo3 styleguide:generate --create -- all
 
-    Which should give this output:
+    ..  code:: bash
+        :caption: **Create styleguide TCA and FRONTEND page tree**
+
+        ddev typo3 styleguide:generate --create -- tca && \
+            ddev typo3 styleguide:generate --create -- frontend-systemplate
 
     ..  code::
+        :caption: **Which should give this output:**
 
         [OK] Extension(s) "core, filelist, frontend, impexp, lowlevel, form, extbase, fluid, fluid_styled_content, install,
             reports, redirects, setup, rte_ckeditor, adminpanel, backend, belog, beuser, dashboard, extensionmanager, felogin,
@@ -79,7 +93,8 @@ Quick Start: Set up TYPO3
 
     Note there remain some extensions disabled (`filemetadata`, `indexed_search`,
     `linkvalidator`, `opendocs`, `reactions`, `recycler`, `scheduler`, `webhooks`,
-    `workspaces`). If you plan to work on these, activate them similarly.
+    `workspaces`). If you plan to work on these, activate them similarly or using
+    the `Extension Manager` in the TYPO3 Backend.
 
 4.  Log in to TYPO3
 
@@ -87,16 +102,13 @@ Quick Start: Set up TYPO3
     password as specified above (`john-doe : John-Doe-1701D.`) by calling:
 
     ..  code::
+        :caption: **Open up the TYPO3 Backend for the ddev instance**
 
         ddev launch typo3
 
     ..  attention::
 
-        **@TODO**: Frontend of `EXT:styleguide` does not seem to work for me,
-        following the guide. Even after enabling the :guilabel:`styleguide frontend demo`
-        page tree, this happens when opening `https://t3dev.ddev.site/styleguide-demo-187/`:
-
-        ..  code:: text
-
-            (1/1) #1607585445 TYPO3\CMS\Core\Error\Http\InternalServerErrorException
-            No page configured for type=0.
+        **HINT**: Frontend of `EXT:styleguide` does not seem to work right now
+        using the new Site Sets feature. Thus the `EXT:styleguide` frontend page
+        tree is installed using the `TypoScript Template Records` variant. Bare
+        that in mind if you want to work on the `Site Sets Feature`.
