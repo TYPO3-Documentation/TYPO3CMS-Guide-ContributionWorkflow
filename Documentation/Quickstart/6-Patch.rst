@@ -199,11 +199,15 @@ Now with this example in mind, we have two modified files that we want to commit
     ..  code:: bash
         :caption: **Reset repository to current upstream and ensure working state**
 
-        git fetch --all && \
+        Build/Scripts/runTests.sh -s clean && \
+            git fetch --all && \
             git reset --hard origin/main && \
-            Build/Scripts/runTests.sh -s composerInstall && \
+            git pull --rebase && \
+            ./Build/Scripts/runTests.sh -u && \
+            ./Build/Scripts/runTests.sh composerInstall && \
             ddev typo3 cache:flush && \
-            ddev typo3 cache:warmup
+            ddev typo3 cache:warmup && \
+            ddev typo3 extension:setup
 
     ..  code:: bash
         :caption: **Check status of the repository**

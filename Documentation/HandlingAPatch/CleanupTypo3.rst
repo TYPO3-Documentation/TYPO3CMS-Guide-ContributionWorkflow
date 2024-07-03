@@ -16,12 +16,13 @@ Cleanup git repository
 
 Before :ref:`Cherry-picking a patch <cherry-pick-a-patch>` or starting a new patch:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: **Reset local repository**
 
-   git fetch --all
-   git reset --hard origin/main
-   git pull --rebase
+    Build/Scripts/runTests.sh -s clean && \
+        git fetch --all && \
+        git reset --hard origin/main && \
+        git pull --rebase
 
 
 .. _cleanup-typo3:
@@ -35,31 +36,16 @@ cleanup your TYPO3 installation.
 It depends on the files that have changed, what you need to execute. In
 any case or if in doubt, you can safely perform all steps.
 
-**Flush the cache**:
+..  code-block:: bash
+    :caption: **Flush the cache**:
 
-.. code-block:: bash
-   :caption: shell command
+    ddev typo3 cache:flush && \
+        ddev typo3 cache:warmup
 
-   Build/Scripts/runTests.sh -s clean
-   # For DDEV environments, prefix with `ddev ...`
-   bin/typo3 cache:flush
-   bin/typo3 cache:warmup
+..  code-block:: bash
+    :caption: **Changes in composer.json**:
 
-**Changes in composer.json**:
-
-.. tabs::
-
-   .. group-tab:: runTests.sh
-
-      .. code-block:: bash
-
-         Build/Scripts/runTests.sh -s composerInstall
-
-   .. group-tab:: direct command
-
-      .. code-block:: bash
-
-         composer install
+    Build/Scripts/runTests.sh -s composerInstall
 
 **Changes in .css / .js files**:
 
@@ -69,14 +55,50 @@ Delete browser cache or
 
 Also you may need to create the JS/CSS assets:
 
-   .. code-block:: bash
+..  code-block:: bash
 
-      ./Build/Scripts/runTests.sh -s buildCss
-      ./Build/Scripts/runTests.sh -s buildJavascript
+    ./Build/Scripts/runTests.sh -s buildCss && \
+        ./Build/Scripts/runTests.sh -s buildJavascript
 
 **Changes in DB schema (ext_tables.sql)**:
+
+..  code:: bash
+    :caption: Create missing tables and fields
+
+    ddev typo3 extension:setup
 
 :guilabel:`Maintenance: Analyze Database Structure, Apply selected changes.`
 
 .. image:: /Images/ManualScreenshots/analyze.svg
    :class: with-shadow
+
+**Update core-testing docker images**
+
+..  code:: bash
+    :caption:  **Pull latest core-testing images versions**
+
+    ./Build/Scripts/runTests.sh -u
+
+One-liner command
+~~~~~~~~~~~~~~~~~
+
+If you want to reset your local installation in one go, you could use following
+one-liner command composed out of the single parts explained above:
+
+..  code:: bash
+    :caption: **Reset local repository to upstream state**
+
+    ./Build/Scripts/runTests.sh -u && \
+        Build/Scripts/runTests.sh -s clean && \
+        git fetch --all && \
+        git reset --hard origin/main && \
+        git pull --rebase && \
+        ./Build/Scripts/runTests.sh composerInstall && \
+        ddev typo3 cache:flush && \
+        ddev typo3 cache:warmup && \
+        ddev typo3 extension:setup
+
+..  note::
+
+    You may still check the `Database Analyzer` in the backend for changes or
+    removed columns and tables to ensure a clean state.ssss

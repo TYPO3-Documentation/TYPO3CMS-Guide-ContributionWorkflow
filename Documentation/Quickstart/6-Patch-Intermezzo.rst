@@ -54,9 +54,8 @@ which has this code at `line 188`:
 
     Before making any changes and creating a patch, it's important to ensure a
     clean state in the repository, which means that a `git status` should tell
-    you `nothing to commit, working tree clean`. If this is not the case, head
-    over to the next chapter and lookup the step about resetting (cleaning) the
-    local repository first.
+    you `nothing to commit, working tree clean`. Also see :ref:`reset-to-a-clean-state`
+    for details.
 
 ..  code:: php
     :caption: **We change this code into:**
