@@ -170,8 +170,9 @@ Now with this example in mind, we have two modified files that we want to commit
 
     ..  code:: bash
 
-        // ... edit files
-        git commit . --amend
+        # ... edit files
+        # ... commit all changed files
+        git commit -a --amend
         git push
 
     See :ref:`lifeOfAPatch-improve-patch` for details.
