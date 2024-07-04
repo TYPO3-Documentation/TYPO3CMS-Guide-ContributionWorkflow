@@ -96,6 +96,13 @@ Quick Start: Set up TYPO3
     `workspaces`). If you plan to work on these, activate them similarly, or use
     the :guilabel:`Extension Manager` in the TYPO3 Backend.
 
+    ..  attention::
+
+        **HINT**: Frontend of `EXT:styleguide` does not seem to work right now
+        using the new Site Sets feature. Thus the `EXT:styleguide` frontend page
+        tree is installed using the `TypoScript Template Records` variant. Bear
+        that in mind if you want to work on the `Site Sets Feature`.
+
 4.  Log in to TYPO3
 
     You should now be able to log in to the TYPO3 backend with the username and
@@ -106,9 +113,3 @@ Quick Start: Set up TYPO3
 
         ddev launch typo3
 
-    ..  attention::
-
-        **HINT**: Frontend of `EXT:styleguide` does not seem to work right now
-        using the new Site Sets feature. Thus the `EXT:styleguide` frontend page
-        tree is installed using the `TypoScript Template Records` variant. Bear
-        that in mind if you want to work on the `Site Sets Feature`.
