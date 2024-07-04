@@ -30,6 +30,10 @@ TYPO3 Contribution Guide - Core Development
 
 On these pages you will learn how to become a TYPO3 Core contributor.
 
+.. rst-class:: horizbuttons-primary-m
+
+*  :ref:`Quick Start: Contribute in under 30 Minutes! <quickstart>`
+
 ----
 
 **Table of Contents:**
@@ -63,6 +67,7 @@ On these pages you will learn how to become a TYPO3 Core contributor.
    :titlesonly:
    :caption: HOWTOS
 
+   Quickstart/Index
    ReportingAnIssue/Index
    BugfixingAZ/Index
    Build/Index
