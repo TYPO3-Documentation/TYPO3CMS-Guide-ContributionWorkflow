@@ -5,9 +5,9 @@
 .. _intended-audience:
 .. _recommended-reading:
 
-===========================================
-TYPO3 Contribution Guide - Core Development
-===========================================
+=============================
+TYPO3 Core Contribution Guide
+=============================
 
 :Version:
    |release|
