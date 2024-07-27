@@ -1,7 +1,7 @@
 ..  include:: /Includes.rst.txt
 
 ..  index::
-   single: Documentation Contribution; Adding Documentation
+    single: Documentation Contribution; Adding Documentation
 
 ..  _Bugfixing-Adding-documentation:
 ..  _Adding-documentation:
