@@ -48,7 +48,7 @@ information.
 Render the Changelog locally
 ----------------------------
 
-If you have `Docker <https://docs.docker.com>`__ or `Podman <https://podman.io/>`__
+If you have `Docker <https://www.docker.com>`__ or `Podman <https://podman.io/>`__
 installed you can try out the rendering of the changelog locally:
 
 ..  tabs::
