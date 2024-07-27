@@ -145,7 +145,7 @@ for a planned removal. See more information: :ref:`Deprecations <deprecations>`
 #.  **Impact** - how will the change affect your installation.
 
 #.  **Affected Installations** - describe scenarios under which circumstances
-    an TYPO3 install will be affected by this change.
+    a TYPO3 install will be affected by this change.
 
 #.  **Migration** - provide instructions what needs to be done to get things
     working again. Explicitly mention if no migration is possible.
