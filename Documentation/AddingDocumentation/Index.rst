@@ -128,7 +128,7 @@ that may break extensions if they use this part.
 
 
 ..  index::
-   single: Documentation Contribution Workflow; Deprecations
+    single: Documentation Contribution Workflow; Deprecations
 
 ..  _documenting-changelog-deprecations:
 
