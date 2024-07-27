@@ -78,6 +78,9 @@ Now with this example in mind, we have two modified files that we want to commit
         Please ensure to only add files related to your change to the stage,
         and discard unrelated files if reasonable.
 
+    If your change is a breaking, a feature or deprecation, add a
+    :ref:`Changelog entry <changelog>`.
+
 4.  Commit the files
 
     ..  code:: bash

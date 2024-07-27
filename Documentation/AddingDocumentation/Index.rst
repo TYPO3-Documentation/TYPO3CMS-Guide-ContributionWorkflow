@@ -1,10 +1,10 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
+..  index::
    single: Documentation Contribution; Adding Documentation
 
-.. _Bugfixing-Adding-documentation:
-.. _Adding-documentation:
+..  _Bugfixing-Adding-documentation:
+..  _Adding-documentation:
 
 =================
 Add Documentation
@@ -12,22 +12,22 @@ Add Documentation
 
 **Quick links:**
 
-- :ref:`h2document:Formatting-with-reST`
-- :ref:`h2document:format-rest-cgl`
-- :ref:`h2document:rest-cheat-sheet`
-- :ref:`h2document:render-documentation-with-docker`
+*   :ref:`h2document:Formatting-with-reST`
+*   :ref:`h2document:format-rest-cgl`
+*   :ref:`h2document:rest-cheat-sheet`
+*   :ref:`h2document:render-documentation-with-docker`
 
 
-The documentation `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+The documentation :doc:`TYPO3 Core Changelog <changelog:Index#typo3-core-changelog>`
 and documentation for
-`system extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
-is maintained in the core.
+:ref:`System Extensions <t3docs:System-Extensions>`
+is maintained in the Core.
 
-.. index::
-   single: Documentation Contribution Workflow; Add Changelog
-   single: Changelog; Add Entries
+..  index::
+    single: Documentation Contribution Workflow; Add Changelog
+    single: Changelog; Add Entries
 
-.. _changelog:
+..  _changelog:
 
 Changelog
 =========
@@ -35,7 +35,7 @@ Changelog
 Some patches require a :file:`.rst` (reStructuredText) Changelog file describing the change.
 Not all patches
 need an entry in the Changelog. Check the list below. Also see the current
-`Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+:doc:`TYPO3 Core Changelog <changelog:Index#typo3-core-changelog>`
 for some examples.
 
 Every file may optionally contain tags, but it must contain at least a
@@ -43,12 +43,39 @@ Every file may optionally contain tags, but it must contain at least a
 See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
 information.
 
-.. index::
-   single: Tools; reST File Generator
-   single: Changelog; Generate new Entries
-   single: Documentation Contribution Workflow; Generating reST Files
+..  _render-the-changelog:
 
-.. _rest-file-generator:
+Render the Changelog locally
+----------------------------
+
+If you have `Docker <https://docs.docker.com>`__ or `Podman <https://podman.io/>`__
+installed you can try out the rendering of the changelog locally:
+
+..  tabs::
+
+    ..  group-tab:: Docker
+
+        ..  code-block:: bash
+
+            cd typo3/sysext/core
+            docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            xdg-open "Documentation-GENERATED-temp/Index.html"
+
+    ..  group-tab:: Podman
+
+        ..  code-block:: bash
+
+            cd typo3/sysext/core
+            docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            xdg-open "Documentation-GENERATED-temp/Index.html"
+
+
+..  index::
+    single: Tools; reST File Generator
+    single: Changelog; Generate new Entries
+    single: Documentation Contribution Workflow; Generating reST Files
+
+..  _rest-file-generator:
 
 Forger reST Helper
 ------------------
@@ -76,10 +103,10 @@ need to go into :file:`typo3/sysext/core/Documentation/Changelog/<release>/`.
 
 Choose one which fits your patch:
 
-.. index::
-   single: Documentation Contribution Workflow; Breaking Changes
+..  index::
+    single: Documentation Contribution Workflow; Breaking Changes
 
-.. _documenting-changelog-breaking-changes:
+..  _documenting-changelog-breaking-changes:
 
 Breaking Changes
 ~~~~~~~~~~~~~~~~
@@ -89,21 +116,21 @@ that may break extensions if they use this part.
 
 **Mandatory sections:**
 
-#. **Description** - why things had to break backwards compatibility.
+#.  **Description** - why things had to break backwards compatibility.
 
-#. **Impact** - how will the change affect your installation.
+#.  **Impact** - how will the change affect your installation.
 
-#. **Affected Installations** - describe scenarios under which circumstances
-   a TYPO3 install will be affected by this change.
+#.  **Affected Installations** - describe scenarios under which circumstances
+    a TYPO3 install will be affected by this change.
 
-#. **Migration** - provide instructions what needs to be done to get things
-   working again. Explicitly mention if no migration is possible.
+#.  **Migration** - provide instructions what needs to be done to get things
+    working again. Explicitly mention if no migration is possible.
 
 
-.. index::
+..  index::
    single: Documentation Contribution Workflow; Deprecations
 
-.. _documenting-changelog-deprecations:
+..  _documenting-changelog-deprecations:
 
 Deprecations
 ~~~~~~~~~~~~
@@ -113,21 +140,21 @@ for a planned removal. See more information: :ref:`Deprecations <deprecations>`
 
 **Mandatory sections:**
 
-#. **Description** - why things had to be deprecated.
+#.  **Description** - why things had to be deprecated.
 
-#. **Impact** - how will the change affect your installation.
+#.  **Impact** - how will the change affect your installation.
 
-#. **Affected Installations** - describe scenarios under which circumstances
-   an TYPO3 install will be affected by this change.
+#.  **Affected Installations** - describe scenarios under which circumstances
+    an TYPO3 install will be affected by this change.
 
-#. **Migration** - provide instructions what needs to be done to get things
-   working again. Explicitly mention if no migration is possible.
+#.  **Migration** - provide instructions what needs to be done to get things
+    working again. Explicitly mention if no migration is possible.
 
 
-.. index::
+..  index::
    single: Documentation Contribution Workflow; Features
 
-.. _documenting-changelog-features:
+..  _documenting-changelog-features:
 
 Features
 ~~~~~~~~
@@ -136,15 +163,15 @@ A patch adds new functionality.
 
 **Mandatory sections:**
 
-#. **Description** - what can the new feature do.
+#.  **Description** - what can the new feature do.
 
-#. **Impact** - how users are affected by this new feature.
+#.  **Impact** - how users are affected by this new feature.
 
 
-.. index::
+..  index::
    single: Documentation Contribution Workflow; Important Information
 
-.. _documenting-changelog-important-information:
+..  _documenting-changelog-important-information:
 
 Important Information
 ~~~~~~~~~~~~~~~~~~~~~
@@ -154,12 +181,12 @@ important enough to require a Changelog entry.
 
 #. **Description** - describe what is so important it needed an rst snippet
 
-.. index::
-   single: Documentation Contribution Workflow; Checking reST Files
-   single: Tools; Checking reST Files
-   single: Changelog; Checking
+..  index::
+    single: Documentation Contribution Workflow; Checking reST Files
+    single: Tools; Checking reST Files
+    single: Changelog; Checking
 
-.. _changelog-check-rst:
+..  _changelog-check-rst:
 
 Check Your `rst` File
 ---------------------
@@ -168,10 +195,10 @@ When your change is finished, you can run the following script to check that
 your rst file is ok. The script will check all files in
 :file:`typo3/sysext/core/Documentation/Changelog`:
 
-.. code-block:: shell
-   :caption: shell command
+..  code-block:: shell
+    :caption: shell command
 
-   Build/Scripts/validateRstFiles.php
+    Build/Scripts/validateRstFiles.php
 
 This script will check if the .rst files contain all mandatory tags that
 are required for the Changelog. It will **not** do a reST syntax check.
@@ -179,29 +206,16 @@ are required for the Changelog. It will **not** do a reST syntax check.
 In order to make sure that your file contains no syntax errors and will
 be rendered correctly, do one or more of the following:
 
-* Check out :ref:`h2document:format-rest-cgl`.
-* Use an editor or IDE that properly supports reST and shows errors
-* Render the Changelog locally with docker as explained in the next section
+*   Check out :ref:`h2document:format-rest-cgl`.
+*   :ref:`Render the Changelog locally <render-the-changelog>` with Docker or
+    Podman and resolve all warnings.
 
-.. index::
-   single: Documentation Contribution Workflow; Rendering Changelog
-   single: Tools; Rendering Changelog
-   single: Changelog; Rendering
+..  index::
+    single: Documentation Contribution Workflow; Rendering Changelog
+    single: Tools; Rendering Changelog
+    single: Changelog; Rendering
 
-.. _render-the-changelog:
-
-Render the Changelog
---------------------
-
-If you wish to render the Changelog locally, you can use docker as described
-in :ref:`h2document:render-documentation-with-docker`.
-
-.. important::
-
-   If you switch branches, you should rebuild everything. You can simply remove the folder
-   :file:`Documentation-GENERATED-temp/Cache` and all its contents.
-
-.. _documentation-main:
+..  _documentation-main:
 
 Policy for Changing the Main Documentation
 ==========================================
@@ -211,10 +225,10 @@ Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi
 
 The procedure is documented in :ref:`h2document:update-docs`.
 
-.. index::
-   single: Documentation Contribution Workflow; Documenting System Extensions
+..  index::
+    single: Documentation Contribution Workflow; Documenting System Extensions
 
-.. _documenting-system-extensions:
+..  _documenting-system-extensions:
 
 Document System Extensions
 ==========================
@@ -241,5 +255,6 @@ locally with docker to test your changes as described in
 More Information
 ================
 
-* See `Documenting Changes <https://docs.typo3.org/typo3cms/extensions/core/latest/Changelog/Howto.html>`__ for more information on the Changelog
-* See :ref:`extension-scanner` in TYPO3 Explained
+*   See :doc:`Documenting Changes <changelog:Changelog/Howto#documenting-changes>`
+    for more information on the Changelog
+*   See :ref:`extension-scanner` in TYPO3 Explained
