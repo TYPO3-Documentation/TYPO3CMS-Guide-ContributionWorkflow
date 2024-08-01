@@ -55,7 +55,7 @@ Setup
       bin/typo3 styleguide:generate -c
 
       # or (with DDEV)
-      ddev exec bin/typo3 styleguide:generate -c
+      ddev exec vendor/bin/typo3 styleguide:generate -c
 
 .. rst-class:: bignums-xxl
 
