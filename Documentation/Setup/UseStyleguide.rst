@@ -40,6 +40,7 @@ Go explore!
 Setup
 =====
 
+1. Activate the styleguide extension in the extension manager
 .. tip::
 
    Once the styleguide extension is activated, it is possible to create
@@ -48,19 +49,18 @@ Setup
    .. code-block:: bash
       :caption: shell command
 
+      # create pages
+      bin/typo3 styleguide:generate -c
+      # or (with DDEV)
+      ddev typo3 styleguide:generate -c
+
       # show help
       bin/typo3 styleguide:generate -h
 
-      # create pages
-      bin/typo3 styleguide:generate -c
-
-      # or (with DDEV)
-      ddev exec bin/typo3 styleguide:generate -c
-
 .. rst-class:: bignums-xxl
 
-1. Activate the styleguide extension in the extension manager
-2. Click on :guilabel:`?` in the top bar
+
+2. In the Modules bar, Click on Sytem > Styleguide
 3. Click on the :guilabel:`Styleguide` menu item (older TYPO3 versions
    present a custom module menu item)
 
