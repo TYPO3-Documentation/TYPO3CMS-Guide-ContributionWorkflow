@@ -48,14 +48,14 @@ Setup
    .. code-block:: bash
       :caption: shell command
 
-      # show help
-      bin/typo3 styleguide:generate -h
-
       # create pages
       bin/typo3 styleguide:generate -c
 
       # or (with DDEV)
       ddev exec bin/typo3 styleguide:generate -c
+
+      # show help
+      bin/typo3 styleguide:generate -h
 
 .. rst-class:: bignums-xxl
 
