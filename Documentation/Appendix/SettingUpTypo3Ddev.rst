@@ -124,17 +124,17 @@ using the instructions in :ref:`run-tests-directly-without-docker`.
 
 .. tabs::
 
-   .. group-tab:: runTests.sh
-
-      .. code-block:: bash
-
-         Build/Scripts/runTests.sh -s composerInstall
-
    .. group-tab:: DDEV
 
       .. code-block:: bash
 
          ddev composer install
+
+   .. group-tab:: runTests.sh
+
+      .. code-block:: bash
+
+         Build/Scripts/runTests.sh -s composerInstall
 
 
 The following is not necessary for the initial build, but once you change some assets (for example
@@ -143,19 +143,20 @@ now:
 
 .. tabs::
 
-   .. group-tab:: runTests.sh
-
-      .. code-block:: bash
-
-         Build/Scripts/runTests.sh -s buildCss
-         Build/Scripts/runTests.sh -s buildJavascript
-
    .. group-tab:: DDEV
 
       .. code-block:: bash
 
          ddev exec "cd Build && npm ci"
          ddev exec "cd Build && npm run build"
+
+.. group-tab:: runTests.sh
+
+      .. code-block:: bash
+
+         Build/Scripts/runTests.sh -s buildCss
+         Build/Scripts/runTests.sh -s buildJavascript
+
 
 
 The first command is required once, the second (build) command is required after
