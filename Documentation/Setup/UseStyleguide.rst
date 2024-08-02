@@ -40,6 +40,7 @@ Go explore!
 Setup
 =====
 
+1. Activate the styleguide extension in the extension manager
 .. tip::
 
    Once the styleguide extension is activated, it is possible to create
@@ -59,7 +60,7 @@ Setup
 
 .. rst-class:: bignums-xxl
 
-1. Activate the styleguide extension in the extension manager
+
 2. Click on :guilabel:`?` in the top bar
 3. Click on the :guilabel:`Styleguide` menu item (older TYPO3 versions
    present a custom module menu item)
