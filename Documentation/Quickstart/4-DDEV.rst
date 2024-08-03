@@ -28,7 +28,7 @@ Quick Start: Set up DDEV
             --database 'mariadb:10.11' \
             --php-version '8.2' \
             --composer-version 'stable' \
-            --nodejs-version '20' \
+            --nodejs-version '22' \
             \
             --project-tld 'ddev.site' \
             --router-http-port '80' \
