@@ -150,7 +150,7 @@ now:
          ddev exec "cd Build && npm ci"
          ddev exec "cd Build && npm run build"
 
-.. group-tab:: runTests.sh
+    .. group-tab:: runTests.sh
 
       .. code-block:: bash
 
