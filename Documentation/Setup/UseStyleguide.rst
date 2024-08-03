@@ -40,24 +40,25 @@ Go explore!
 Setup
 =====
 
-1. Activate the styleguide extension in the extension manager
-.. tip::
-
-   Once the styleguide extension is activated, it is possible to create
-   (or delete) the pages via command line:
-
-   .. code-block:: bash
-      :caption: shell command
-
-      # create pages
-      bin/typo3 styleguide:generate -c
-      # or (with DDEV)
-      ddev typo3 styleguide:generate -c
-
-      # show help
-      bin/typo3 styleguide:generate -h
-
 .. rst-class:: bignums-xxl
+
+1. Activate the styleguide extension in the extension manager
+    .. tip::
+    
+       Once the styleguide extension is activated, it is possible to create
+       (or delete) the pages via command line:
+    
+       .. code-block:: bash
+          :caption: shell command
+    
+          # create pages
+          bin/typo3 styleguide:generate -c
+          # or (with DDEV)
+          ddev typo3 styleguide:generate -c
+    
+          # show help
+          bin/typo3 styleguide:generate -h
+    
 
 
 2. In the Modules bar, Click on Sytem > Styleguide
