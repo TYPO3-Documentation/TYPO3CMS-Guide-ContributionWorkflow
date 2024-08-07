@@ -139,7 +139,6 @@ Optional Plugins
   (sgalinski)
 * `TypoScript plugin
   <https://plugins.jetbrains.com/plugin/11243-typoscript--enterprise>`__ (sgalinski)
-* :ref:`phpstorm-gerritplugin`
 * `TYPO3 CMS Plugin
   <https://plugins.jetbrains.com/plugin/9496-typo3-cms-plugin>`__
 * `TYPO3 XLIFF Utility
