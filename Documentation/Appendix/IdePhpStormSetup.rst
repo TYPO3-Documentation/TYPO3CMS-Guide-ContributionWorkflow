@@ -132,6 +132,8 @@ Recommended Plugins
   This helps with code-completion and navigation in combination with unit tests
   and Prophecy (among other things).
 
+.. _phpstorm-gerritplugin:
+
 Optional Plugins
 ----------------
 
