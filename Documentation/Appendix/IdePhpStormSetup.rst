@@ -132,6 +132,8 @@ Recommended Plugins
   This helps with code-completion and navigation in combination with unit tests
   and Prophecy (among other things).
 
+.. _phpstorm-gerritplugin:
+
 Optional Plugins
 ----------------
 
@@ -139,7 +141,8 @@ Optional Plugins
   (sgalinski)
 * `TypoScript plugin
   <https://plugins.jetbrains.com/plugin/11243-typoscript--enterprise>`__ (sgalinski)
-* :ref:`phpstorm-gerritplugin`
+ * `Gerrit plugin
+  <https://plugins.jetbrains.com/plugin/7272-gerrit>`__
 * `TYPO3 CMS Plugin
   <https://plugins.jetbrains.com/plugin/9496-typo3-cms-plugin>`__
 * `TYPO3 XLIFF Utility
