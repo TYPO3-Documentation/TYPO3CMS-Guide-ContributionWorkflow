@@ -64,9 +64,10 @@ Quick Start: Set up TYPO3
 3.  Activate `EXT:styleguide`
 
     ..  code:: bash
-        :caption: **Ensure extension setup and activate EXT:styleguide**
+        :caption: **Ensure extension setup and activate required extensions (EXT:styleguide, EXT:indexed_search)**
 
         ddev typo3 extension:setup && \
+            ddev typo3 extension:activate indexed_search && \
             ddev typo3 extension:activate styleguide
 
     ..  code:: bash
