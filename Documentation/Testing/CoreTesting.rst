@@ -255,7 +255,7 @@ Luckily, `runTests.sh` also helps us to build JavaScript and CSS assets:
 
 ..  code-block:: shell
 
-    Build/Scripts/runTests.sh -s buildJavaScript
+    Build/Scripts/runTests.sh -s buildJavascript
     Build/Scripts/runTests.sh -s buildCss
 
 Again, this utilizes all the needed containers for the proper NodeJS environment, so you have
