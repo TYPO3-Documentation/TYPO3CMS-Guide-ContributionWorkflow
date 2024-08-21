@@ -23,6 +23,72 @@ and documentation for
 :ref:`System Extensions <t3docs:System-Extensions>`
 is maintained in the Core.
 
+Quickstart to contribute documentation
+======================================
+
+To work on the Core documentation of TYPO3, you need to work with the main TYPO3
+mono-repository. You can **not** contribute Documentation patches on single read-only
+repositories like `https://github.com/typo3-cms/felogin`__ through the GitHub interface!
+
+You can, however, use the GitHub interface and contribute to `https://github.com/TYPO3/typo3/tree/main/typo3/sysext/felogin`__.
+Submitting a GitHub PR will result in a GitHub Action workflow that closes your
+PR, transfers it to forge, transfers it to gerrit, and link them to each other. That workflow
+can be prone to errors though, especially if a branch other than `main` is involved.
+
+So, if possible you could better set follow the :ref:`Quickstart <quickstart>` guide to
+set up a Core contribution installation. A lot can be left out,
+as you do not necessarily even need a TYPO3 instance running when you only want to contribute
+documentation.
+
+The minimal steps to contribute documentation "the right way" (and to allow you to properly
+participate in our review workflow) is this:
+
+..  rst-class:: bignums-xxl
+
+1.  Prerequisites
+
+    From the :ref:`Quickstart Prerequisites <quickstart-prerequisites>` you need:
+
+    1.  Operating System
+    2.  GIT client
+    3.  SSH client + keys
+    4.  Optional Bonus: Docker (to render documentation), a suitable Text-Editor
+
+2.  Set-up accounts
+
+    You need all of the :ref:`Quickstart Accounts <quickstart-accounts>` (My TYPO3, GitHub, Gerrit, Forge)
+
+3.  Set-up GIT
+
+    Set up and clone the TYPO3 mono-repository as described in :ref:`Quickstart GIT <quickstart-git>`.
+
+    Note: the steps :ref:`<quickstart-ddev>` and :ref:`<quickstart-typo3>` are not needed for Documentation-only use.
+
+4.  Start documenting
+
+    Now you can start editing files in, for example, :file:`typo3/sysext/felogin/Documentation/Index.rst` and
+    when you are done, you can render the documentation (see :ref:`<render-extension>`) to verify
+    the look of your changes.
+
+5.  Create issue
+
+    Once you feel comfortable and happy with your patch, you go to `create an issue on Forge
+    <https://forge.typo3.org/projects/typo3cms-core/issues/new>`__. Choose the category `Documentation`
+    and enter an appropriate description like:
+
+        **Tracker**: Task
+
+        **Subject**: Add example for EXT:felogin RedirectLoginHandler
+
+        **Description**: (Describe what kind of documentation changes you made. Mention to which TYPO3 version it applies)
+
+6.  Submit patch
+
+    Now follow the steps outlined in :ref:`<quickstart-patch>`, and refer to the Documentation files
+    you edited, instead of the PHP files given as examples there. This will then submit your patch
+    to our Gerrit review instance.
+
+
 ..  index::
     single: Documentation Contribution Workflow; Add Changelog
     single: Changelog; Add Entries
@@ -69,6 +135,31 @@ installed you can try out the rendering of the changelog locally:
             docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             xdg-open "Documentation-GENERATED-temp/Index.html"
 
+..  _render-extension:
+
+Render any system documentation locally
+---------------------------------------
+
+As above, you can render any extension locally, too. You need to change the directory to the extension
+directory you want to render. For `EXT:felogin` that would be:
+
+..  tabs::
+
+    ..  group-tab:: Docker
+
+        ..  code-block:: bash
+
+            cd typo3/sysext/felogin
+            docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            xdg-open "Documentation-GENERATED-temp/Index.html"
+
+    ..  group-tab:: Podman
+
+        ..  code-block:: bash
+
+            cd typo3/sysext/felogin
+            docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            xdg-open "Documentation-GENERATED-temp/Index.html"
 
 ..  index::
     single: Tools; reST File Generator
