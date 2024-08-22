@@ -23,6 +23,8 @@ and documentation for
 :ref:`System Extensions <t3docs:System-Extensions>`
 is maintained in the Core.
 
+.. _adding-documentation-quickstart:
+
 Quickstart to contribute documentation
 ======================================
 
