@@ -37,7 +37,7 @@ Submitting a GitHub PR will result in a GitHub Action workflow that closes your
 PR, transfers it to forge, transfers it to gerrit, and link them to each other. That workflow
 can be prone to errors though, especially if a branch other than `main` is involved.
 
-So, if possible you could better set follow the :ref:`Quickstart <quickstart>` guide to
+So, if possible you could better follow the :ref:`Quickstart <quickstart>` guide to
 set up a Core contribution installation. A lot can be left out,
 as you do not necessarily even need a TYPO3 instance running when you only want to contribute
 documentation.
