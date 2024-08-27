@@ -170,6 +170,37 @@ Here you can go into detail about the how and why of the change. It should be br
 
 -  Wrap the lines after 72 characters manually
 
+..  _commitmessage-links:
+Inserting links / long lines
+----------------------------
+
+Sometimes you must insert long links that exceed the line length of 72 characters.
+
+In that case, it is ok to have these long lines - because inserting linebreaks
+would make the link invalid. You can ignore warnings of possible CGL checks,
+or (temporarily) disable your GIT commit hook check for this specific warning.
+
+It is best practice to use placeholders for links and then group used links
+at the end in your commit message, like this:
+
+..  code-block:: none
+
+    [BUGFIX] Link some long links
+
+    In [1] is is documented, that something is not wrong. But
+    in reality [2] properly indicates, this is indeed right.
+
+    So we follow the advice of [3][4] and make things better.
+
+    [1] https://example.com/a/very/very/long-link/because/it/is/really-needed-I-mean-it-its-long-but-okay
+    [2] https://example.com/this/is/short/but/also/nice
+    [3] https://example.com/snafu
+    [4] https://example.com/mostlyharmless
+
+This is no specifically parsed syntax, the `[number]` formatting is
+just common plaintext formatting.
+
+
 Relationships
 -------------
 

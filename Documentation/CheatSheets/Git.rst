@@ -235,7 +235,7 @@ Other keywords:
 
 * subject < 52 chars (if possible, otherwise <= 72)
 * other lines <= 72 chars
-
+* hyperlinks with > 72 chars are allowed when required (:ref:`<commitmessage-links>`)
 
 Workflow - Undoing / fixing things
 ==================================
