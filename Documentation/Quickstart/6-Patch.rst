@@ -119,6 +119,8 @@ Now with this example in mind, we have two modified files that we want to commit
         Releases: main
 
     Close your editor with saving the commit message.
+    For proper formatting and wording of a commit message, please read the
+    details in :ref:`commitmessage`.
 
 5.  Push to Git repository
 

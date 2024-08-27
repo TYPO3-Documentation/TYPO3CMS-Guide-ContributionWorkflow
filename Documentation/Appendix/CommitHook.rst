@@ -36,6 +36,7 @@ a Change-Id on your own, the result will be chaos.
 
 Apart from that the hook will check your commit message for logical errors like missing keywords, Resolves lines etc.
 For detailed information on the format of a commit message, :ref:`click here <commitmessage>`.
+This also describes cases in which you might exceed the line length of 72 characters (hyperlinks).
 
 If the commit-msg hook finds errors in your commit-msg, you can try again, by amending to the commit::
 
