@@ -197,6 +197,11 @@ at the end in your commit message, like this:
     [3] https://example.com/snafu
     [4] https://example.com/mostlyharmless
 
+    Resolves: #12346
+    Related: #12345
+    Releases: main, 12.4
+    Change-Id: Ida1234567894ea8b3cd1e0f55208d60c22465b00
+
 This is no specifically parsed syntax, the `[number]` formatting is
 just common plaintext formatting.
 
