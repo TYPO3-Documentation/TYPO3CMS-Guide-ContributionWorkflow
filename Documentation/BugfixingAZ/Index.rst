@@ -161,11 +161,12 @@ as described in :ref:`setup <setup>` (or via the
    .. code-block:: none
       :caption: result
 
-      remote: New Changes:
-      remote:   https://review.typo3.org/<gerrit-id>
+      remote: SUCCESS
       remote:
-      To ssh://<username>@review.typo3.org:29418/Packages/TYPO3.CMS.git
-       * [new branch]      HEAD -> refs/for/<release-branch>
+      remote:   https://review.typo3.org/c/Packages/TYPO3.CMS/+/<gerrit-id> [...] ... [NEW]
+      remote:
+      To ssh://review.typo3.org:29418/Packages/TYPO3.CMS.git
+      * [new reference]         main -> refs/for/main
 
    If you see an error, check out the :ref:`Git Troubleshooting <git-troubleshooting>`
    section.
