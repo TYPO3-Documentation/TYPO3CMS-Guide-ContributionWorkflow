@@ -42,7 +42,7 @@ With your environment, you can:
             git reset --hard origin/main && \
             git pull --rebase && \
             ./Build/Scripts/runTests.sh -u && \
-            ./Build/Scripts/runTests.sh composerInstall && \
+            ./Build/Scripts/runTests.sh -s composerInstall && \
             ddev typo3 cache:flush && \
             ddev typo3 cache:warmup && \
             ddev typo3 extension:setup
