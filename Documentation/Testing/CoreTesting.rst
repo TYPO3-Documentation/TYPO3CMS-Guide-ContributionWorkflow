@@ -265,5 +265,5 @@ You can also run a watch task thanks to the full integration of npm command exec
 
 ..  code-block:: shell
 
-    Build/Scripts/runTests.sh -s npm -- run watch
+    Build/Scripts/runTests.sh -s npm -- run watch:build
 
