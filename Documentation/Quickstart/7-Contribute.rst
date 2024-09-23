@@ -91,7 +91,7 @@ With your environment, you can:
     ..  code:: bash
         :caption: **Ensure working state for checkout change**
 
-        ./Build/Scripts/runTests.sh composerInstall && \
+        ./Build/Scripts/runTests.sh -s composerInstall && \
             ddev typo3 cache:flush && \
             ddev typo3 cache:warmup && \
             ddev typo3 extension:setup
