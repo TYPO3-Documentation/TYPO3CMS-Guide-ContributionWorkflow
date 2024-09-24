@@ -61,7 +61,7 @@ First try to use the Gerrit cherry-pick feature for automatic backporting.
 
 #. Merge the backport
 
-   If the backport is a :ref:`Low brainer <Gerrit-low-brainers>` you can vote
+   If the backport is :ref:`straight-forward and not complex <Gerrit-low-complexity>`, you can vote
    :guilabel:`+2` and continue to merge the backport. Otherwise it should be
    reviewed by at least one other Core Merger.
 

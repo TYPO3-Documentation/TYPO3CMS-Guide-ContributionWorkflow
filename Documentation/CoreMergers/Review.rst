@@ -73,13 +73,14 @@ there is already a positive vote by another Core Merger.
 
 .. _Gerrit-No-brainers:
 .. _Gerrit-Low-brainers:
+.. _Gerrit-Low-complexity:
 
-Low brainers
--------------
+Patches of low complexity
+-------------------------
 
-A Core Merger can give a +2 and submit right away in case of "low-brainers"
-(what used to be called "FYI" and relates to changes that are highly
-unlikely to negatively impact anything).
+A Core Merger can give a +2 and submit right away in case of patches
+that are of very low complexity (like spelling corrections, indentation,
+or obvious bugs), and are highly unlikely to negatively impact anything.
 
 A Core Merger can give a +2 and wait a bit before submitting
 (used to be called "FYI24", "FYI48", ...).
