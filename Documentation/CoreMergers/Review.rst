@@ -73,6 +73,7 @@ there is already a positive vote by another Core Merger.
 
 .. _Gerrit-No-brainers:
 .. _Gerrit-Low-brainers:
+.. _Gerrit-Low-complexity:
 
 Patches of low complexity
 -------------------------
