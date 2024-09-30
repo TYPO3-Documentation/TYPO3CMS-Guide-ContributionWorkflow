@@ -93,7 +93,7 @@ one-liner command, combining the mentioned parts from above:
         git fetch --all && \
         git reset --hard origin/main && \
         git pull --rebase && \
-        ./Build/Scripts/runTests.sh composerInstall && \
+        ./Build/Scripts/runTests.sh -s composerInstall && \
         ddev typo3 cache:flush && \
         ddev typo3 cache:warmup && \
         ddev typo3 extension:setup
