@@ -79,6 +79,9 @@ Also you may need to create the JS/CSS assets:
 
     ./Build/Scripts/runTests.sh -u
 
+
+.. _cleanup-typo3-one-liner:
+
 One-liner command
 ~~~~~~~~~~~~~~~~~
 
