@@ -25,7 +25,7 @@ TYPO3 Core contribution setup with DDEV
 environments based on Docker.
 
 Here is a description of how you can use DDEV to setup a working TYPO3
-installation using the cloned TYPO3 CMS Git repository.
+installation using the cloned TYPO3 CMS git repository.
 
 You don't need to have a Webserver, a Database or PHP running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
@@ -35,19 +35,19 @@ change the ports in the :ref:`ddev config <ddev-configure>`).
 Prerequisites
 =============
 
-*  Install Docker and other
+*  Install **Docker** and other
    `ddev system requirements <https://ddev.readthedocs.io/en/latest/#system-requirements>`__.
 
-*  Install DDEV as described in the
+*  Install **DDEV** as described in the
    `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
    instructions.
+
+*  You have **cloned the TYPO3 git repository** as described in :ref:`git-clone` and
+   have **switched to the directory** which contains the local git repository.
 
 .. note::
 
    Composer and npm can run inside of DDEV, so there is no need to set them up locally.
-
-*  You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
-   have switched to the directory which contains the local Git repository.
 
 .. _ddev-configure:
 
