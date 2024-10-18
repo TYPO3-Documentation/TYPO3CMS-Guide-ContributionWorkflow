@@ -104,7 +104,7 @@ as described in :ref:`setup <setup>` (or via the
       Some descriptions with line length of max. 72 characters
 
       Resolves: #12346
-      Releases: main, 12.4
+      Releases: main, 13.4
 
    Only create one commit. Do not create a branch. Work on main.
 

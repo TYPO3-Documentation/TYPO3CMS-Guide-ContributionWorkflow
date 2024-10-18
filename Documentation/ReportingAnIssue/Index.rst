@@ -326,8 +326,8 @@ A good bug report should contain all or any of these elements:
      the bug it *might* include your operating system
      (Windows, Linux, macOS, ...), the full version of TYPO3 and PHP, the webserver
      used, the database used (MySQL, MariaDB, ...) and its version.
-     In any case, the full version of TYPO3 (e.g. 12.4.16) is very helpful. If
-     your bug is reproducible on several versions (e.g. 13.2.1 and 12.4.16),
+     In any case, the full version of TYPO3 (e.g. 12.4.22) is very helpful. If
+     your bug is reproducible on several versions (e.g. 13.4.0 and 12.4.22),
      that is helpful as well.
    * A description of the TYPO3 setup that you are using or that is necessary
      to trigger the bug. Your issue came out using TYPO3 with multiple
