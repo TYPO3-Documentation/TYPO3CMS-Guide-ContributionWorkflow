@@ -165,19 +165,19 @@ Show all branches:
 
    git branch -a
 
+Checkout 13.4 branch:
+
+.. code-block:: bash
+   :caption: shell command
+
+   git checkout 13.4
+
 Checkout 12.4 branch:
 
 .. code-block:: bash
    :caption: shell command
 
    git checkout 12.4
-
-Checkout 11.5 branch:
-
-.. code-block:: bash
-   :caption: shell command
-
-   git checkout 11.5
 
 
 .. important::
@@ -190,19 +190,19 @@ Checkout 11.5 branch:
 Long story short: In most cases, **push to main**. The rest is being taken
 care of by core team members!
 
+Push 13.4 branch:
+
+.. code-block:: bash
+   :caption: shell command
+
+   git push origin HEAD:refs/for/13.4
+
 Push 12.4 branch:
 
 .. code-block:: bash
    :caption: shell command
 
    git push origin HEAD:refs/for/12.4
-
-Push 11.5 branch:
-
-.. code-block:: bash
-   :caption: shell command
-
-   git push origin HEAD:refs/for/11.5
 
 
 Workflow - commit msg

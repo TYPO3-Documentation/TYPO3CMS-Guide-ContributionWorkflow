@@ -100,12 +100,12 @@ linking issue and patch reviews, for example:
 ..  code-block::
 
    [TASK] Provide PSR-7 Request in PolicyMutatedEvent
-   
+
    For additional context does the PolicyMutatedEvent
    now provide the current PSR-7 Request.
 
    Resolves: #104141
-   Releases: main, 12.4
+   Releases: main, 13.4
    Change-Id: I1817366e77f20f6c43eef0ee209fbb419e7237e2
    Reviewed-on: https://review.typo3.org/c/Packages/TYPO3.CMS/+/84913
    Tested-by: Lorem Ipsum <example@example.com>
