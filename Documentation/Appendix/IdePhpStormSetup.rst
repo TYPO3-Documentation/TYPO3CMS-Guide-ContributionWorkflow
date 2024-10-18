@@ -131,6 +131,9 @@ Recommended Plugins
 * `PHPUnit Enhancement <https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement>`__
   This helps with code-completion and navigation in combination with unit tests
   and Prophecy (among other things).
+* `CSV Editor <https://plugins.jetbrains.com/plugin/10037-csv-editor>`__
+  Allows to easily inspect and edit CSV formatted files in a table (for example used in
+  testing fixture files).
 
 .. _phpstorm-gerritplugin:
 
