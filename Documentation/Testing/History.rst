@@ -314,7 +314,7 @@ core testing paved the way for new opportunities and TYPO3 usages.
 ====
 
 TYPO3 currently uses 4 dedicated "bare bone" Servers to perform CI tasks. This hardware performs
-11.513 unit tets in ~15 seconds. A typical pre-merge pipeline runtime is at ~5 minutes with 2 permutations
+11.513 unit tests in ~15 seconds. A typical pre-merge pipeline runtime is at ~5 minutes with 2 permutations
 of acceptance tests, 3 permutations of ~7500 functional tests, 3 permutations of unit tests plus
 statical code analysis, linting, build checks.
 
