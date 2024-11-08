@@ -22,21 +22,21 @@ Quick Start: Set up DDEV
         :caption: **Create a suitable ddev configuration**
 
         ddev config \
-            --project-name 't3c-main' \
-            --project-type 'typo3' \
-            --docroot '.' \
-            --database 'mariadb:10.11' \
-            --php-version '8.2' \
-            --composer-version 'stable' \
-            --nodejs-version '22' \
+            --project-name='t3c-main' \
+            --project-type='typo3' \
+            --docroot='.' \
+            --database='mariadb:10.11' \
+            --php-version='8.2' \
+            --composer-version='stable' \
+            --nodejs-version='22' \
             \
-            --project-tld 'ddev.site' \
-            --router-http-port '80' \
-            --router-https-port '443' \
-            --webserver-type 'apache-fpm' \
-            --additional-hostnames 't3c-dev.ddev.site,t3c-prod.ddev.site' \
+            --project-tld='ddev.site' \
+            --router-http-port='80' \
+            --router-https-port='443' \
+            --webserver-type='apache-fpm' \
+            --additional-hostnames='t3c-dev.ddev.site,t3c-prod.ddev.site' \
             \
-            --timezone 'Europe/Berlin' \
+            --timezone='Europe/Berlin' \
             --web-environment='TYPO3_CONTEXT=Development' \
             --webimage-extra-packages='build-essential,locales-all'
 

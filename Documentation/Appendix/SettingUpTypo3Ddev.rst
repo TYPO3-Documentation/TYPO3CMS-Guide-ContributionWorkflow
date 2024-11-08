@@ -78,16 +78,16 @@ or edit the configuration file :file:`.ddev/config.yaml` manually.
 .. code-block:: shell
 
     # Set correct PHP version:
-    ddev config --php-version="8.2"
+    ddev config --php-version='8.2'
 
     # Change to Apache webserver because using htaccess rules works out of the TYPO3-box
     # and needs no custom NGINX configuration
-    ddev config --webserver-type 'apache-fpm'
+    ddev config --webserver-type='apache-fpm'
 
     # Add necessary packages for the npm build process,
     # (only needed if you are working on assets):
-    ddev config --nodejs-version="22"
-    ddev config --webimage-extra-packages="automake,build-essential,locales-all"
+    ddev config --nodejs-version='22'
+    ddev config --webimage-extra-packages='automake,build-essential,locales-all'
 
 Optionally, set a new HTTP/HTTPS port to avoid conflicts with local defaults.
 Error message:
@@ -95,8 +95,8 @@ Failed to start t3coredev: Unable to listen on required ports, port 80 is alread
 
 .. code-block:: yaml
 
-   ddev config --router-http-port="8090"
-   ddev config --router-https-port="8443"
+   ddev config --router-http-port='8090'
+   ddev config --router-https-port='8443'
 
 Start DDEV
 ==========
