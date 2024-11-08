@@ -38,7 +38,7 @@ Quick Start: Set up DDEV
             \
             --timezone 'Europe/Berlin' \
             --web-environment='TYPO3_CONTEXT=Development' \
-            --webimage-extra-packages='build-essential'
+            --webimage-extra-packages='build-essential,locales-all'
 
     Adapt parameters as wanted.
 
