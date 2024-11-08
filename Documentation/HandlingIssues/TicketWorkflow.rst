@@ -141,7 +141,7 @@ Status
 
    The upside: The patch that has been made may apply to your own instance.
    You can always download patches and apply them locally, see
-   :ref:`Applying Core patches <t3upgrade:applying-core-patches>` for details.
+   :ref:`Applying Core patches <t3coreapi:applying-core-patches>` for details.
 
 #. Closed
 
