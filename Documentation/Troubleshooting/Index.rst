@@ -305,6 +305,7 @@ re-create the assets using the following workflow:
 You will see the Commit Message again and you can now save it.
 When you push this change, it will create a new Patchset - this is expected behavior.
 
+..  _troubleshooting-included-in:
 In which TYPO3 release was a patch merged into?
 -----------------------------------------------
 

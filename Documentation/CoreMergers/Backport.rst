@@ -86,6 +86,7 @@ Push the review back to Gerrit.
 
 On Gerrit the original patch will show the cherry-pick as a related patch.
 
+..  _coreMergers-backport-included-in:
 In which TYPO3 release was a patch merged into?
 ===============================================
 
