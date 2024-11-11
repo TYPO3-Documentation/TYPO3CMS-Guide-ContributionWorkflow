@@ -85,3 +85,10 @@ Edit the commit message to comply to the guidelines again. (e.g. remove the Revi
 Push the review back to Gerrit.
 
 On Gerrit the original patch will show the cherry-pick as a related patch.
+
+In which TYPO3 release was a patch merged into?
+===============================================
+
+See :ref:`<cheatsheet-git-included-in>` for information on how to use the
+:guilabel:`Included in` menu button to see, in which TYPO3 releases a patch
+was merged into.

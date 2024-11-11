@@ -237,6 +237,35 @@ Other keywords:
 * other lines <= 72 chars
 * hyperlinks with > 72 chars are allowed when required (:ref:`<commitmessage-links>`)
 
+Workflow - push with Gerrit message
+===================================
+
+Due to the nature of the commit workflow with gerrit, and a commit
+always getting amended, you have no individual commit messages for one
+Gerrit patch set.
+
+To workaround that, you can add small comments to individual patch sets
+pushed to Gerrit like this:
+
+..  code-block:: bash
+
+    git push origin HEAD:refs/for/main%m=Fixed_issue_in_JavaScript
+
+Since that notation is a bit bland (no spaces, no linebreaks, no special
+characters, it can be helpful to utilize a small Bash script:
+
+..  code-block:: bash
+    :caption: push_with_message.sh
+
+    #!/bin/bash
+    read -p "Please enter pseudo-commit message: " answer
+
+    answer=$(echo "$answer" | tr -c '[:alnum:]' '_')
+    git push origin HEAD:refs/for/main%m=$answer
+
+Replace "main" with possibly other branches (`13.4`, `12.4`, ...) that
+you may want to push to.
+
 Workflow - Undoing / fixing things
 ==================================
 
@@ -275,6 +304,21 @@ This is very handy, in case you accidentally created a new commit
 instead of adding to an existing commit (with `git commit --amend`). This way,
 you can merge the last 2 commits and the commit messages.
 
+..  _cheatsheet-git-included-in:
+Information: Where was a patch included?
+========================================
+
+Sometimes you see an old gerrit issue that was committed and pushed against
+`main`, but wonder in which TYPO3 version it was included. Often, you can
+already deduce from a `Releases: main, 12.4` line that it was committed when
+`13.4` was `main`. But if you only see `Releases: main` you might begin to look
+up the date of a patch and relate it to release dates, or begin to inspect the
+git repository manually.
+
+But: Hold on! Just check out the Gerrit interface and on the top right you see
+the menu, from where you also cherry-pick a patch or download a patch. There's
+a menu entry :guilabel:`Included in` which will reveal all TYPO3 releases (via
+GIT tags), a patch was included in.
 
 References
 ==========
