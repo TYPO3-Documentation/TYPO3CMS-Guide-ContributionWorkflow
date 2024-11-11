@@ -237,6 +237,7 @@ Other keywords:
 * other lines <= 72 chars
 * hyperlinks with > 72 chars are allowed when required (:ref:`<commitmessage-links>`)
 
+..  _cheatsheet-git-push-with-message:
 Workflow - push with Gerrit message
 ===================================
 
