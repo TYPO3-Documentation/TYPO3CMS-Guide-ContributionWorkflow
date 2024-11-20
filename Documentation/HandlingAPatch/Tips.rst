@@ -308,6 +308,7 @@ use this list both for checking other people's patches, as well as your own.
    of reworking a patch multiple times, these three place of documentation can become out of sync.
 *  If SCSS/TS changes are involved, are the resulting build files included in the patch, and were built with the
    right environment?
+*  When changes are made to Xliff files, is the correct spelling in American (US) English used?
 *  Does your patch deprecate anything? If so, have you followed :ref:`deprecations`?
 
 If you feel this section is missing good things to watch out for for, please contribute to the
