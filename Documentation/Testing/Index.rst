@@ -98,7 +98,7 @@ which start with the same string.
 
 Commands for building:
 
-*  -s composerInstall (composer*)
+*  `-s composerInstall`: install composer dependencies from `composer.lock`
 *  -s build: build CSS+JS assets
 * ...
 
