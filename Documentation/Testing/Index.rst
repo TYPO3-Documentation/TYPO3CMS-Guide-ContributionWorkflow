@@ -99,7 +99,7 @@ which start with the same string.
 Commands for building:
 
 *  `-s composerInstall`: install composer dependencies from `composer.lock`
-*  -s build: build CSS+JS assets
+*  `-s build`: build CSS+JS assets
 * ...
 
 Checks and fixes, run static analyzer, lint etc:
