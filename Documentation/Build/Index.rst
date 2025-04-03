@@ -26,8 +26,9 @@ If you make changes to the source files, you can build locally using
 
 .. code-block:: bash
 
-   Build/Scripts/runTests.sh -s buildCss
-   Build/Scripts/runTests.sh -s buildJavascript
+   Build/Scripts/runTests.sh -s build
+
+Note you can also use `npm` + `nvm` locally, if you are proficient with setting this up locally.
 
 It is also possible to lint the files locally:
 

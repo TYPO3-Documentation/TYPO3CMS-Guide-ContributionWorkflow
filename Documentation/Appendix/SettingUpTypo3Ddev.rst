@@ -147,19 +147,28 @@ now:
 
 .. tabs::
 
+   .. group-tab:: locally
+
+      .. code-block:: bash
+
+         cd Build
+         nvm use
+         npm install
+         npm run build
+         // or: npm run watch:build
+
    .. group-tab:: DDEV
 
       .. code-block:: bash
 
-         ddev exec "cd Build && npm ci"
+         ddev exec "cd Build && npm install"
          ddev exec "cd Build && npm run build"
 
    .. group-tab:: runTests.sh
 
       .. code-block:: bash
 
-         Build/Scripts/runTests.sh -s buildCss
-         Build/Scripts/runTests.sh -s buildJavascript
+         Build/Scripts/runTests.sh -s build
 
 
 

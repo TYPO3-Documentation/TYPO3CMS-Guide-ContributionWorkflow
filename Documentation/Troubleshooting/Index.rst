@@ -293,8 +293,7 @@ re-create the assets using the following workflow:
    ./Build/Scripts/runTests.sh -s clean
 
    # Execute the build
-   ./Build/Scripts/runTests.sh -s buildCss
-   ./Build/Scripts/runTests.sh -s buildJavascript
+   ./Build/Scripts/runTests.sh -s build
 
    # Now add all conflicting files as resolved:
    git add typo3/sysext/backend/Resources/Public/Css/backend.css
