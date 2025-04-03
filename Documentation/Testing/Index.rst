@@ -84,8 +84,7 @@ Output example:
         Specifies which test suite to run
             - acceptance: main application acceptance tests
             - acceptanceInstall: installation acceptance tests, only with -d mariadb|postgres|sqlite
-            - buildCss: execute scss to css builder
-            - buildJavascript: execute typescript to javascript builder
+            - build: execute frontend build (TypeScript, Sass, Contrib, Assets)
             - cgl: test and fix all core php files
    ...
 
@@ -100,8 +99,7 @@ which start with the same string.
 Commands for building:
 
 *  -s composerInstall (composer*)
-*  -s buildCss: build CSS assets
-*  -s buildJavascript
+*  -s build: build CSS+JS assets
 * ...
 
 Checks and fixes, run static analyzer, lint etc:

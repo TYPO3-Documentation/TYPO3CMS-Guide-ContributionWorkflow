@@ -240,8 +240,7 @@ JavaScript and CSS assets are build from sources in the monorepo, with the comma
    # optionally, reset state
    Build/Scripts/runTests.sh -s clean
 
-   Build/Scripts/runTests.sh -s buildCss
-   Build/Scripts/runTests.sh -s buildJavascript
+   Build/Scripts/runTests.sh -s build
 
 This "compiles" files with ".scss" and ".ts" extensions to their bundled ".css" and
 ".js" variants. TYPO3 also versions these files inside the monorepo.
@@ -254,7 +253,7 @@ will occur, if your patch works on anything CSS/JS related and other changes
 have been introduced meanwhile.
 
 The solution to resolve merge conflicts in these files is actually vers easy. Just
-re-perform the commands from above (`...buildCss/buildJavascript`), which will re-create
+re-perform the commands from above (`... build`), which will re-create
 the assets from your cherry-picked patchset. You may need to resolve conflicts in the
 `.ts/.scss` files beforehand, if there are any due to rebasing.
 

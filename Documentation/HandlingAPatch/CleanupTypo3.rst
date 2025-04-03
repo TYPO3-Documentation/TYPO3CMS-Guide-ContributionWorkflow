@@ -57,8 +57,7 @@ Also you may need to create the JS/CSS assets:
 
 ..  code-block:: bash
 
-    ./Build/Scripts/runTests.sh -s buildCss && \
-        ./Build/Scripts/runTests.sh -s buildJavascript
+    ./Build/Scripts/runTests.sh -s build
 
 **Changes in DB schema (ext_tables.sql)**:
 
