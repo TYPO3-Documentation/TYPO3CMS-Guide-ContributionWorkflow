@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: OS X
+..  index::
+    single: OS X
 
-.. _appendix-osx:
+..  _appendix-osx:
 
 OS X help
 ===============
 
-.. toctree::
-   :glob:
-   :titlesonly:
+..  toctree::
+    :glob:
+    :titlesonly:
 
-   *
+    *

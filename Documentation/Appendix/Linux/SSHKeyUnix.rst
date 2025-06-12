@@ -1,10 +1,10 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Linux; SSH Key
-   single: SSH Key; Linux
+..  index::
+    single: Linux; SSH Key
+    single: SSH Key; Linux
 
-.. _ssh-key-unix:
+..  _ssh-key-unix:
 
 =======================================
 Creating a SSH Public Key on Unix/Linux

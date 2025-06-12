@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+..  highlight:: bash
 
-.. _cleanup-tasks:
+..  _cleanup-tasks:
 
 =============
 Cleanup tasks
 =============
 
-.. _Gerrit-Reset-to-a-clean-state:
-.. _reset-to-a-clean-state:
+..  _Gerrit-Reset-to-a-clean-state:
+..  _reset-to-a-clean-state:
 
 Cleanup git repository
 ======================
@@ -25,7 +25,7 @@ Before :ref:`Cherry-picking a patch <cherry-pick-a-patch>` or starting a new pat
         git pull --rebase
 
 
-.. _cleanup-typo3:
+..  _cleanup-typo3:
 
 Cleanup TYPO3 installation
 ==========================
@@ -68,8 +68,8 @@ Also you may need to create the JS/CSS assets:
 
 :guilabel:`Maintenance: Analyze Database Structure, Apply selected changes.`
 
-.. image:: /Images/ManualScreenshots/analyze.svg
-   :class: with-shadow
+..  image:: /Images/ManualScreenshots/analyze.svg
+    :class: with-shadow
 
 **Update core-testing docker images**
 
@@ -79,7 +79,7 @@ Also you may need to create the JS/CSS assets:
     ./Build/Scripts/runTests.sh -u
 
 
-.. _cleanup-typo3-one-liner:
+..  _cleanup-typo3-one-liner:
 
 One-liner command
 ~~~~~~~~~~~~~~~~~

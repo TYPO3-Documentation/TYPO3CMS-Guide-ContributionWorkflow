@@ -1,32 +1,30 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+..  highlight:: bash
 
-.. _phpstorm-setup-xdebug:
+..  _phpstorm-setup-xdebug:
 
 ===========
 Debug TYPO3
 ===========
 
-.. index::
-   single: Tools; Debugging With PhpStorm and Xdebug
-   single: Debugging; With PhpStorm and Xdebug
+..  index::
+    single: Tools; Debugging With PhpStorm and Xdebug
+    single: Debugging; With PhpStorm and Xdebug
 
-.. _debugging-with-phpstorm-and-xdebug:
+..  _debugging-with-phpstorm-and-xdebug:
 
 Debugging With PhpStorm and Xdebug
 ==================================
 
-
-.. youtube:: VtffB0CG1ok
-
+..  youtube:: VtffB0CG1ok
 
 In order to configure PhpStorm with Xdebug you need to do three things:
 
-#. Install xdebug
-#. Configure xdebug settings in your php.ini
-#. Use the appropriate plugin in your browser
-#. Configure PhpStorm
+#.  Install xdebug
+#.  Configure xdebug settings in your php.ini
+#.  Use the appropriate plugin in your browser
+#.  Configure PhpStorm
 
 
 php.ini
@@ -34,12 +32,12 @@ php.ini
 
 Example setup:
 
-.. code-block:: ini
-   :caption: php.ini
+..  code-block:: ini
+    :caption: php.ini
 
-   xdebug.remote_enable = 1
-   xdebug.remote_host = localhost
-   xdebug.max_nesting_level = 1000
+    xdebug.remote_enable = 1
+    xdebug.remote_host = localhost
+    xdebug.max_nesting_level = 1000
 
 You should also configure the port (xdebug.remote_port) if that should differ from the default (9000).
 
@@ -50,15 +48,14 @@ Install Plugin
 
 Install plugin "Xdebug Helper" for your browser. To start debugging, click on the bug icon and select "Debug".
 
-
 PhpStorm
 --------
 
-* Check `Run: Webserver Debug Validation`
-* Start `Run: Start listing for PHP Debug Connections`
-* Create some breakpoints
+*   Check `Run: Webserver Debug Validation`
+*   Start `Run: Start listing for PHP Debug Connections`
+*   Create some breakpoints
 
 More Information
 ================
 
-* `Configuring Xdebug with PhpStorm <https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html#integrationWithProduct>`__ (Jetbrains)
+*   `Configuring Xdebug with PhpStorm <https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html#integrationWithProduct>`__ (Jetbrains)

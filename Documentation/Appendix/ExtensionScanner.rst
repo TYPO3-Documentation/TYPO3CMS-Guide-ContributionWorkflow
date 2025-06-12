@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: Extension scanner
-.. _extension-scanner:
+..  include:: /Includes.rst.txt
+..  index:: Extension scanner
+..  _extension-scanner:
 
 =================
 Extension scanner
@@ -15,7 +15,7 @@ configurations where possible. This is typically the case if PHP API was changed
 a deprecation or breaking ReST file to document the change.
 
 
-.. index:: Extension scanner; Changelog connection
+..  index:: Extension scanner; Changelog connection
 
 Connection to the changelog reStructuredText files
 ==================================================
@@ -35,14 +35,14 @@ be added.
 ..  code-block:: rst
     :caption: Last line of a fully scanned reST file in the changelog
 
-    .. index:: Frontend, FullyScanned, ext:frontend
+    ..  index:: Frontend, FullyScanned, ext:frontend
 
 If a reST file is renamed the file may be covered in a matcher configuration
 which then needs to be adapted as well. The reST files are not bound to
 specific directories in the matcher configuration so moving a reST file
 to a different location within the :file:`Changelog` directory has no effect.
 
-.. index:: Extension Scanner; Configuration
+..  index:: Extension Scanner; Configuration
 
 Extension scanner PHP configuration
 ===================================

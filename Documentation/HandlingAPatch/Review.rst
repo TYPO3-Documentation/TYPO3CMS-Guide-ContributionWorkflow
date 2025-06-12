@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _reviewPatch:
+..  _reviewPatch:
 
 ==============
 Review a patch
@@ -19,19 +19,19 @@ a Core merger or Team member.
 If you're able to improve the patch yourself, your contribution would be very much appreciated.
 Visit :ref:`lifeOfAPatch-improve-patch` to find out more about how you can help improve patches.
 
-.. seealso::
+..  seealso::
 
-   *  :ref:`Find the patch <Find-a-review>`
-   *  :ref:`Introduction to Gerrit <Working-with-Gerrit>`
+    *   :ref:`Find the patch <Find-a-review>`
+    *   :ref:`Introduction to Gerrit <Working-with-Gerrit>`
 
 
-.. index::
-   single: Review; Code Review
-   single: Code Review
-   single: Gerrit; Review
+..  index::
+    single: Review; Code Review
+    single: Code Review
+    single: Gerrit; Review
 
-.. _lifeOfAPatch-review:
-.. _Gerrit-Commenting-files:
+..  _lifeOfAPatch-review:
+..  _Gerrit-Commenting-files:
 
 Code Review
 ===========
@@ -40,62 +40,62 @@ A basic code review is possible by using the Gerrit web interface.
 
 For some tips on what to review, check our :ref:`common-review-checks`.
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-#. Select the latest patchset
+1.  Select the latest patchset
 
-   This should already be selected by default, but if you changed the patchset, you should
-   select :guilabel:`Go to the latest patch set` (above the list of changed files).
+    This should already be selected by default, but if you changed the patchset, you should
+    select :guilabel:`Go to the latest patch set` (above the list of changed files).
 
-#. To leave a comment, click on one of the files
+2.  To leave a comment, click on one of the files
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_click_on_file.png
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_click_on_file.png
 
-   Commenting in the files directly is optional, but strongly recommended. If you just want to leave a general
-   comment which needs no context, you can skip to step 8 (:guilabel:`Reply`).
+    Commenting in the files directly is optional, but strongly recommended. If you just want to leave a general
+    comment which needs no context, you can skip to step 8 (:guilabel:`Reply`).
 
-#. Optionally change the view
+3.  Optionally change the view
 
-   You will see a diff of this file against the current codebase.
+    You will see a diff of this file against the current codebase.
 
-   You can change the view in the top right (:guilabel:`Diff view`) e.g. :guilabel:`side-by-side` or
-   :guilabel:`unified` (or change this in your settings).
+    You can change the view in the top right (:guilabel:`Diff view`) e.g. :guilabel:`side-by-side` or
+    :guilabel:`unified` (or change this in your settings).
 
-#. Leave one or more comments
+4.  Leave one or more comments
 
-   Click on the line number in the file and a comment box will open.
+    Click on the line number in the file and a comment box will open.
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_comment_click.png
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_comment_click.png
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_comment_file.png
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_comment_file.png
 
-#. Click :guilabel:`Save`.
+5.  Click :guilabel:`Save`.
 
-   .. important::
+    ..  important::
 
-      You comment(s) will not yet be visible for others until you go back and click :guilabel:`Reply`.
+        You comment(s) will not yet be visible for others until you go back and click :guilabel:`Reply`.
 
-#. Go back
+6.  Go back
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_go_back.png
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit_review_go_back.png
 
-#. (Optional) Add comments to more files.
+7.  (Optional) Add comments to more files.
 
-#. Now press :guilabel:`Reply`.
+8.  Now press :guilabel:`Reply`.
 
-   Using the :guilabel:`Reply` button, you can post your comments
-   (and optionally add an additional note).
+    Using the :guilabel:`Reply` button, you can post your comments
+    (and optionally add an additional note).
 
-   .. figure:: /Images/External/Gerrit/CoreMergers/VoteUser.png
-      :class: with-shadow
+    ..  figure:: /Images/External/Gerrit/CoreMergers/VoteUser.png
+        :class: with-shadow
 
-      Vote by clicking the :guilabel:`Reply` button
+        Vote by clicking the :guilabel:`Reply` button
 
-   Of course you should also :ref:`vote <gerrit-voting>` for the change
-   (Be graceful with -1 votes though).
+    Of course you should also :ref:`vote <gerrit-voting>` for the change
+    (Be graceful with -1 votes though).
 
-.. _lifeOfAPatch-test:
-.. _Gerrit-Testing-a-change:
+..  _lifeOfAPatch-test:
+..  _Gerrit-Testing-a-change:
 
 Test a patch
 ============
@@ -115,16 +115,16 @@ If you want to help the author and provide an improved patch, continue with the 
 
 Otherwise throw the changes away, to bring your repository back to a clean state:
 
-.. code-block:: bash
+..  code-block:: bash
 
-   git reset --hard origin/main
+    git reset --hard origin/main
 
-.. index::
-   single: Review; Vote
-   single: Gerrit; Vote
-   single: Vote
+..  index::
+    single: Review; Vote
+    single: Gerrit; Vote
+    single: Vote
 
-.. _gerrit-voting:
+..  _gerrit-voting:
 
 Vote
 ====
@@ -135,32 +135,30 @@ and enter your comment. Here, you can also apply your votes.
 Remember, everyone with just a TYPO3 user account is able to vote, you do not
 need to be a team member or Core merger.
 
-.. figure:: /Images/External/Gerrit/CoreMergers/VoteUser.png
-   :class: with-shadow
+..  figure:: /Images/External/Gerrit/CoreMergers/VoteUser.png
+    :class: with-shadow
 
-   Chose your vote, say something nice and click :guilabel:`SEND`
+    Chose your vote, say something nice and click :guilabel:`SEND`
 
-*  :guilabel:`+1` : you approve of the patch
-*  :guilabel:`-1` : you do not approve, in this case give your reason as a comment
+*   :guilabel:`+1` : you approve of the patch
+*   :guilabel:`-1` : you do not approve, in this case give your reason as a comment
 
-.. sidebar:: Votes
+..  sidebar:: Votes
 
-   The :guilabel:`+2` and :guilabel:`-2` votes are only available for Core Mergers.
-   See the section :ref:`Review a patch as a Core Merger <coreMergers-review>`.
-   for more details.
+    The :guilabel:`+2` and :guilabel:`-2` votes are only available for Core Mergers.
+    See the section :ref:`Review a patch as a Core Merger <coreMergers-review>`.
+    for more details.
 
 Click on :guilabel:`Send` and your comments will be saved. At the same time
 all other contributors who either watched this change
 or have already voted on this change will get notified.
 
-
-
-.. _Gerrit-Policy-for-votes:
+..  _Gerrit-Policy-for-votes:
 
 Policy for votes
 ----------------
 
-.. This section was copied from Gerrit/Index.rst
+..  This section was copied from Gerrit/Index.rst
 
 **Code Review:** Needs :guilabel:`+1` of two reviewers, one of them being a Core Merger.
 
@@ -179,7 +177,6 @@ As soon as the patch has reached the approved status by getting a :guilabel:`+2`
 **Code Review** and **Verified**, a Core Merger can decide to push the
 :guilabel:`Submit` button, finally pushing it to the main repository.
 
-
 Hints on voting -1
 ------------------
 
@@ -192,24 +189,24 @@ those are not pushed through in real live Gerrit habits. In general, if voting
 -1, you take some responsibility for this patch by saying "This one shouldn't
 be solved until this or that is fixed". Some hints on using -1 in reviews:
 
-*  Think about your vote and always give a logical explanation. "-1 looks ugly" is
-   not enough.
-*  If a patch is broken, does not fix the issue, is bogus, architecturally wrong
-   or collides with other goals, a -1 is clearly ok.
-*  -1 can also be used if you are actively working on a patch and want to prevent
-   a quick merge: "-1, working on it now, will push soonish".
-*  -1 may be ok if you have general doubts but you can not pinpoint it and need
-   a second opinion: "Hey, this solution looks somehow weird and I doubt this is
-   what we should do here. I think we should ask person x or person y, who has
-   a deeper knowledge of this subsystem, to take a look at it. I do not want
-   this patch to be merged until this is sorted out and will vote -1 for now
-   for this reason."
-*  If you are on the "receiving end" of a "-1" or even a "-2" vote, please do not
-   be afraid or feel bad. This is done as part of the process to make TYPO3
-   evolve as best as it can. Try to work out problems or negative feedback,
-   be kind to each other and remember you are contributing to OpenSource because
-   the experience of improving things together, and learning from each other
-   is what drives us.
+*   Think about your vote and always give a logical explanation. "-1 looks ugly" is
+    not enough.
+*   If a patch is broken, does not fix the issue, is bogus, architecturally wrong
+    or collides with other goals, a -1 is clearly ok.
+*   -1 can also be used if you are actively working on a patch and want to prevent
+    a quick merge: "-1, working on it now, will push soonish".
+*   -1 may be ok if you have general doubts but you can not pinpoint it and need
+    a second opinion: "Hey, this solution looks somehow weird and I doubt this is
+    what we should do here. I think we should ask person x or person y, who has
+    a deeper knowledge of this subsystem, to take a look at it. I do not want
+    this patch to be merged until this is sorted out and will vote -1 for now
+    for this reason."
+*   If you are on the "receiving end" of a "-1" or even a "-2" vote, please do not
+    be afraid or feel bad. This is done as part of the process to make TYPO3
+    evolve as best as it can. Try to work out problems or negative feedback,
+    be kind to each other and remember you are contributing to OpenSource because
+    the experience of improving things together, and learning from each other
+    is what drives us.
 
 Vote resets ("Revote")
 ----------------------
@@ -260,15 +257,15 @@ of Gerrit reviews (as well as Forge issues) may feel intimidating.
 
 Due to this it is vital to "clean up" patches from time to time:
 
-*  If you are no longer planning to work on a patch, maybe better abandon
-   it, or ask other involved people to carry on.
-*  If your patch is not getting feedback for a long time, ask in the
-   #typo3-cms-coredev channel of the `TYPO3 slack workspace <https://typo3.slack.com>`__
-   if people may want to review or give feedback on. Or try to find people
-   working in a similar area of your patch and see if you can join forces.
-*  From time to time, check on patches you have voted on, to see if you can
-   push things forward to either get merged or abandoned.
-*  Sometimes just check all your own open patches and see if you might catch
-   interest in picking it up again.
-*  Please either update older patches in "Merge conflict" mode or state your
-   intent to abandon the patch.
+*   If you are no longer planning to work on a patch, maybe better abandon
+    it, or ask other involved people to carry on.
+*   If your patch is not getting feedback for a long time, ask in the
+    #typo3-cms-coredev channel of the `TYPO3 slack workspace <https://typo3.slack.com>`__
+    if people may want to review or give feedback on. Or try to find people
+    working in a similar area of your patch and see if you can join forces.
+*   From time to time, check on patches you have voted on, to see if you can
+    push things forward to either get merged or abandoned.
+*   Sometimes just check all your own open patches and see if you might catch
+    interest in picking it up again.
+*   Please either update older patches in "Merge conflict" mode or state your
+    intent to abandon the patch.

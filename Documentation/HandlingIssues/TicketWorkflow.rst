@@ -1,12 +1,10 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
+..  index::
+    single: Forge; Issue Workflow
+    single: Issue Workflow
 
-
-.. index::
-   single: Forge; Issue Workflow
-   single: Issue Workflow
-
-.. _issue-workflow:
+..  _issue-workflow:
 
 ======================
 Issue Workflow (Forge)
@@ -47,139 +45,137 @@ Contributor's Guide!
 
 Once an issue has been triaged by our support volunteers, this will usually happen:
 
-.. index::
-   single: Issue Workflow; Status
+..  index::
+    single: Issue Workflow; Status
 
 Status
 ======
 
-#. New
+#.  New
 
-   This is the initial state of an issue. It may get reverted to this status,
-   when possible feedback loops are done, but the issue itself could not yet
-   be "Accepted" due to missing strategic or capacity decisions.
+    This is the initial state of an issue. It may get reverted to this status,
+    when possible feedback loops are done, but the issue itself could not yet
+    be "Accepted" due to missing strategic or capacity decisions.
 
-#. No status change, but "things happen"
+#.  No status change, but "things happen"
 
-   Your issue may remain in status "New" or "Accepted", but further feedback
-   might be added, or relations to other issues could be added, or
-   other metadata (like tags) get adjusted. If you see this happening,
-   some of our support staff has "seen" your issue. If your issue is
-   older, and you see this happening, this might be a good time to get
-   involved again and see if your issue still applies.
+    Your issue may remain in status "New" or "Accepted", but further feedback
+    might be added, or relations to other issues could be added, or
+    other metadata (like tags) get adjusted. If you see this happening,
+    some of our support staff has "seen" your issue. If your issue is
+    older, and you see this happening, this might be a good time to get
+    involved again and see if your issue still applies.
 
-#. Needs Feedback:
+#.  Needs Feedback:
 
-   Your issue has been set from Status "New" to "Needs Feedback".
+    Your issue has been set from Status "New" to "Needs Feedback".
 
-   This means, we have further questions to process or discuss your issue.
-   Once you provide the feedback, the person involved with it will usually
-   get back to you again.
+    This means, we have further questions to process or discuss your issue.
+    Once you provide the feedback, the person involved with it will usually
+    get back to you again.
 
-#. Accepted
+#.  Accepted
 
-   Your issue has been "accepted" to be reproducible and understandable,
-   and will hopefully find a volunteer to fix it.
+    Your issue has been "accepted" to be reproducible and understandable,
+    and will hopefully find a volunteer to fix it.
 
-   Please bear in mind that this status does not mean someone immediately
-   begins to work on it. It is just a status that developers can use to
-   search for accepted issues to work on. And it is a good pool of issues
-   to address for example in remote or on-site Code sprints (see
-   `https://typo3.org/community/meet/regular-open-sprints`__).
+    Please bear in mind that this status does not mean someone immediately
+    begins to work on it. It is just a status that developers can use to
+    search for accepted issues to work on. And it is a good pool of issues
+    to address for example in remote or on-site Code sprints (see
+    `https://typo3.org/community/meet/regular-open-sprints`__).
 
-#. In Progress
+#.  In Progress
 
-   Someone has actively taken on your issue to work on.
+    Someone has actively taken on your issue to work on.
 
-#. Under Review
+#.  Under Review
 
-   This is the status you are looking for.
+    This is the status you are looking for.
 
-   This means a Patch has been made that should address your problem.
-   The link to such a Patch in our review system will be attached to the
-   comment.
+    This means a Patch has been made that should address your problem.
+    The link to such a Patch in our review system will be attached to the
+    comment.
 
-   Now it is very important for that patch to:
+    Now it is very important for that patch to:
 
-   * actually fix your issue
-   * be accepted by Core mergers to be part of the TYPO3 code
+    *   actually fix your issue
+    *   be accepted by Core mergers to be part of the TYPO3 code
 
-   Anyone can create/contribute a patch to any issue, one does not need
-   to be assigned to it. One is also free to contribute to existing
-   Patches of an issue.
+    Anyone can create/contribute a patch to any issue, one does not need
+    to be assigned to it. One is also free to contribute to existing
+    Patches of an issue.
 
-   And most importantly: You are VERY welcome to review the patch
-   yourself. If you can comment on the patch tracking system that
-   a patch solves your problem, and even vote for it, this will
-   highly increase the chances of your patch getting merged.
+    And most importantly: You are VERY welcome to review the patch
+    yourself. If you can comment on the patch tracking system that
+    a patch solves your problem, and even vote for it, this will
+    highly increase the chances of your patch getting merged.
 
-   Sometimes discussion about solving an issue is then carried on to the
-   Gerrit review system, which is linked in the issue comment. You may want
-   to regularly check on that patch state and maybe give feedback there.
+    Sometimes discussion about solving an issue is then carried on to the
+    Gerrit review system, which is linked in the issue comment. You may want
+    to regularly check on that patch state and maybe give feedback there.
 
-   Please note that the patch system is meant for highly technical feedback.
-   If your feedback is more general, please provide that only in the issue tracker.
+    Please note that the patch system is meant for highly technical feedback.
+    If your feedback is more general, please provide that only in the issue tracker.
 
-   An issue that is "Under Review" may get merged very quickly, but it may
-   also even take very long to get merged, or even rejected/abandoned.
+    An issue that is "Under Review" may get merged very quickly, but it may
+    also even take very long to get merged, or even rejected/abandoned.
 
-#. Resolved
+#.  Resolved
 
-   Making a note here: Huge success! Your issue report lead to an actual
-   code improvement of TYPO3, and the patch resulting from your issue
-   has been merged. Thank you!
+    Making a note here: Huge success! Your issue report lead to an actual
+    code improvement of TYPO3, and the patch resulting from your issue
+    has been merged. Thank you!
 
-   Sometimes it might not be what you expected at first, because requirements
-   and needs may change, and need to be adapted for the broad community.
+    Sometimes it might not be what you expected at first, because requirements
+    and needs may change, and need to be adapted for the broad community.
 
-   It can also occur that the issue you reported for a specific TYPO3
-   version is only fixed for a more recent version, and not the one you
-   reported with. Sadly we cannot backport every single bugfix, and need
-   to make internal decissions about which changes get put into older
-   versions. Patches never get merged to versions below the LTS (Long-term support)
-   threshold.
+    It can also occur that the issue you reported for a specific TYPO3
+    version is only fixed for a more recent version, and not the one you
+    reported with. Sadly we cannot backport every single bugfix, and need
+    to make internal decissions about which changes get put into older
+    versions. Patches never get merged to versions below the LTS (Long-term support)
+    threshold.
 
-   The upside: The patch that has been made may apply to your own instance.
-   You can always download patches and apply them locally, see
-   :ref:`Applying Core patches <t3coreapi:applying-core-patches>` for details.
+    The upside: The patch that has been made may apply to your own instance.
+    You can always download patches and apply them locally, see
+    :ref:`Applying Core patches <t3coreapi:applying-core-patches>` for details.
 
-#. Closed
+#.  Closed
 
-   This may be a frustrating status for your issue to be put in. We need to
-   close issues that:
+    This may be a frustrating status for your issue to be put in. We need to
+    close issues that:
 
-   *  are no longer reproducible
-   *  are outdated
-   *  are not fixable/adressable within reasonable resource limits
-   *  do not align with the TYPO3 project goal
-   *  receive no feedback for a longer time
-   *  relate to abandoned patches
+    *   are no longer reproducible
+    *   are outdated
+    *   are not fixable/adressable within reasonable resource limits
+    *   do not align with the TYPO3 project goal
+    *   receive no feedback for a longer time
+    *   relate to abandoned patches
 
-   If your issue has been closed but you believe this is a mistake, our support
-   staff are just humans after all, please bear with us. You can still give feedback
-   to closed issues, you can reach out through other community means, or you can
-   also create follow-up issues.
+    If your issue has been closed but you believe this is a mistake, our support
+    staff are just humans after all, please bear with us. You can still give feedback
+    to closed issues, you can reach out through other community means, or you can
+    also create follow-up issues.
 
-#. Outside help / Volunteering opportunity
+#.  Outside help / Volunteering opportunity
 
-   The more watchers an issue has, the more likely it is regarded as being of importance.
+    The more watchers an issue has, the more likely it is regarded as being of importance.
 
-   It can help if you regularly search the issue tracker yourself for similar problems
-   than yours, and maybe set relations to new issues, or comment in issues that you
-   haven't submitted yourself, but where you can contribute.
+    It can help if you regularly search the issue tracker yourself for similar problems
+    than yours, and maybe set relations to new issues, or comment in issues that you
+    haven't submitted yourself, but where you can contribute.
 
-   The task of maintaining the issue tracker is a large one; several dozen issues
-   are worked on each day. If you can help to add relations to related tickets,
-   or provide feedback or additional information in "foreign" tickets, this can help us out.
+    The task of maintaining the issue tracker is a large one; several dozen issues
+    are worked on each day. If you can help to add relations to related tickets,
+    or provide feedback or additional information in "foreign" tickets, this can help us out.
 
-   The ideal help of course is if you are able to solve issues by providing solutions
-   or patches to issues.
-
-
+    The ideal help of course is if you are able to solve issues by providing solutions
+    or patches to issues.
 
 
-.. index::
-   single: Issue Workflow; Target Versions
+..  index::
+    single: Issue Workflow; Target Versions
 
 Target Versions
 ===============

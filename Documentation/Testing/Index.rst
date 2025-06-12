@@ -1,16 +1,14 @@
-.. include:: /Includes.rst.txt
-.. highlight:: shell
+..  include:: /Includes.rst.txt
+..  highlight:: shell
 
+..  index::
+    single: Code Contribution Workflow; Running Tests Locally
+    single: Testing; Running Tests Locally
+    single: Code Contribution Workflow; runTests.sh
+    single: runTests.sh
 
-
-.. index::
-   single: Code Contribution Workflow; Running Tests Locally
-   single: Testing; Running Tests Locally
-   single: Code Contribution Workflow; runTests.sh
-   single: runTests.sh
-
-.. _testing:
-.. _runTests_sh:
+..  _testing:
+..  _runTests_sh:
 
 =================
 Using runTests.sh
@@ -38,13 +36,13 @@ lists several examples you can copy+paste to try.
 
 Show help:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/runTests.sh -h
+    Build/Scripts/runTests.sh -h
 
 
-.. _runTests.sh-prerequisites:
+..  _runTests.sh-prerequisites:
 
 Prerequisites
 =============
@@ -55,21 +53,21 @@ Options
 =======
 
 -h
-   show help
+    show help
 -s
-   choose the command to run (if omitted, unit tests are run)
+    choose the command to run (if omitted, unit tests are run)
 -p
-   PHP version (if omitted, the default version is used)
+    PHP version (if omitted, the default version is used)
 -b
-   choose podman (default) or docker for image execution
+    choose podman (default) or docker for image execution
 -d
-   Database type (sqlite, mariadb, mysql, postgres)
+    Database type (sqlite, mariadb, mysql, postgres)
 -i
-   Database version in conjunction with `-d`, for example `-d mariadb -i 11.4` for MariaDB 11.4
+    Database version in conjunction with `-d`, for example `-d mariadb -i 11.4` for MariaDB 11.4
 -x
-   Enable xdebug usage
+    Enable xdebug usage
 -u
-   Update docker image versions
+    Update docker image versions
 
 For more options, see the help (`-h`).
 
@@ -77,16 +75,17 @@ We will quickly go over each type of command next.
 
 Output example:
 
-.. code-block:: text
+..  code-block:: text
 
-   Options:
+    Options:
+
     -s <...>
         Specifies which test suite to run
             - acceptance: main application acceptance tests
             - acceptanceInstall: installation acceptance tests, only with -d mariadb|postgres|sqlite
             - build: execute frontend build (TypeScript, Sass, Contrib, Assets)
             - cgl: test and fix all core php files
-   ...
+    ...
 
 Commands
 ========
@@ -98,37 +97,37 @@ which start with the same string.
 
 Commands for building:
 
-*  `-s composerInstall`: install composer dependencies from `composer.lock`
-*  `-s build`: build CSS+JS assets
-* ...
+*   `-s composerInstall`: install composer dependencies from `composer.lock`
+*   `-s build`: build CSS+JS assets
+*   ...
 
 Checks and fixes, run static analyzer, lint etc:
 
-*  -s cglGit : check (and fix!) the CGL issues in the files which are in the most
-   recent git commit
-*  -s cgl (cgl*)
-*  -s lintPhp
-*  -s lintScss (lint*)
-*  -s phpstan (phpstan*)
-*  -s checkComposer (check*)
-* ...
+*   -s cglGit : check (and fix!) the CGL issues in the files which are in the most
+    recent git commit
+*   -s cgl (cgl*)
+*   -s lintPhp
+*   -s lintScss (lint*)
+*   -s phpstan (phpstan*)
+*   -s checkComposer (check*)
+*   ...
 
 Commands for running tests:
 
-*  -s unit (unit*)
-*  -s functional (functional*)
-*  -s acceptance (acceptance*)
-* ...
+*   -s unit (unit*)
+*   -s functional (functional*)
+*   -s acceptance (acceptance*)
+*   ...
 
 Cleanup, clear cache:
 
-*  -s clean (clean*)
-* ...
+*   -s clean (clean*)
+*   ...
 
 Dispatchers:
 
-*  -s npm -- `[npm command]`
-*  -s composer -- `[composer command]`
+*   -s npm -- `[npm command]`
+*   -s composer -- `[composer command]`
 
 Additional setup
 ================
@@ -164,24 +163,24 @@ Examples
 All examples expect to be executed from a git cloned working directory
 of TYPO3 CMS **main** branch (as described in :ref:`setup`).
 
-.. note::
+..  note::
 
-   Running the script or a specific command line argument combination for the first
-   time will take some time, because all necessary prerequisites for the docker images
-   need to be fetched. The next runs should be faster.
+    Running the script or a specific command line argument combination for the first
+    time will take some time, because all necessary prerequisites for the docker images
+    need to be fetched. The next runs should be faster.
 
 composer install
 ----------------
 
 Run composer install:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/runTests.sh -s composerInstall
+    Build/Scripts/runTests.sh -s composerInstall
 
-.. _runTestsShCgl:
-.. _cgl-fix-my-commit:
+..  _runTestsShCgl:
+..  _cgl-fix-my-commit:
 
 CGL check and fix
 -----------------
@@ -190,71 +189,71 @@ Perform checks on Coding Guidelines and fix them.
 
 This applies the command only to the files in the latest commit:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/runTests.sh -s cglGit
+    Build/Scripts/runTests.sh -s cglGit
 
 If you only want to see possible fixes being applied, you can
 execute the command in "dry-run" mode:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/runTests.sh -s cglGit -n
+    Build/Scripts/runTests.sh -s cglGit -n
 
 
 Run all unit tests
 ------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/runTests.sh
+    Build/Scripts/runTests.sh
 
 Run unit tests with xdebug (uses default port 9000)
 ---------------------------------------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ./Build/Scripts/runTests.sh -x
+    ./Build/Scripts/runTests.sh -x
 
 Run specific unit tests with xdebug
 -----------------------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/runTests.sh -x <directory or file>
+    Build/Scripts/runTests.sh -x <directory or file>
 
 Example::
 
-   Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/
+    Build/Scripts/runTests.sh -x typo3/sysext/core/Tests/Unit/LinkHandling/
 
 Run functional tests
 --------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ./Build/Scripts/runTests.sh -s functional
+    ./Build/Scripts/runTests.sh -s functional
 
 Run functional tests with PostgreSQL
 ------------------------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ./Build/Scripts/runTests.sh -s functional -d postgres
+    ./Build/Scripts/runTests.sh -s functional -d postgres
 
 Run acceptance tests
 --------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ./Build/Scripts/runTests.sh -s acceptance
+    ./Build/Scripts/runTests.sh -s acceptance
 
 Depending on the power of your local machine you can expect about 30 minutes
 or more for the acceptance tests.
@@ -267,18 +266,18 @@ Docker is running smoothly on your system.
 
 A quick test is to run the docker hello-world image:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   docker run hello-world
+    docker run hello-world
 
 You should see something like this message:
 
-.. code-block:: text
-   :caption: result
+..  code-block:: text
+    :caption: result
 
-   Hello from Docker!
-   This message shows that your installation appears to be working correctly.
+    Hello from Docker!
+    This message shows that your installation appears to be working correctly.
 
 See `Get Started, Part 1: Orientation and setup <https://docs.docker.com/get-started/#test-docker-version>`__
 
@@ -292,8 +291,8 @@ that (docker or other) command execution needs to be debugged.
 For this you need to get your hands dirty and inspect the file. Most commands
 are performed like this:
 
-.. code-block:: bash
-   :caption: runTests.sh (excerpt)
+..  code-block:: bash
+    :caption: runTests.sh (excerpt)
 
     lintScss)
         COMMAND="cd Build; npm ci || exit 1; node_modules/grunt/bin/grunt stylelint"
@@ -304,8 +303,8 @@ are performed like this:
 to debug this, you can add an "echo" statement to reveal `$COMMAND` and also put
 an `echo` before the `${CONTAINER_BIN}` statement, like this:
 
-.. code-block:: bash
-   :caption: runTests.sh (excerpt)
+..  code-block:: bash
+    :caption: runTests.sh (excerpt)
 
     lintScss)
         COMMAND="cd Build; npm ci || exit 1; node_modules/grunt/bin/grunt stylelint"
@@ -326,19 +325,17 @@ Results
 All results will be displayed on the screen. The script should exit with
 standard exit codes:
 
-*  0 means all is ok
-*  != 0 means error
+*   0 means all is ok
+*   != 0 means error
 
 Reports of the acceptance tests will be stored in
 :file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the remotely controlled browser.
 
+..  index::
+    single: Code Contribution Workflow; Running Tests Locally without Docker
+    single: Testing; Running Tests Locally without Docker
 
-
-.. index::
-   single: Code Contribution Workflow; Running Tests Locally without Docker
-   single: Testing; Running Tests Locally without Docker
-
-.. _run-tests-directly-without-docker:
+..  _run-tests-directly-without-docker:
 
 Direct commands without Docker
 ==============================
@@ -367,39 +364,37 @@ Examples:
 Run all unit tests
 ------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
+    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml
 
 Run specific unit tests
 -----------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml <directory or file>
+    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml <directory or file>
 
 Example::
 
-   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml typo3/sysext/core/Tests/Unit/LinkHandling/
+    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/UnitTests.xml typo3/sysext/core/Tests/Unit/LinkHandling/
 
 
 Run all functional tests
 ------------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
+    bin/phpunit -c vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTests.xml
 
+..  index::
+    single: Code Contribution Workflow; Checking for Coding Guidelines
+    single: Tools; Checking for Coding Guidelines
 
-
-.. index::
-   single: Code Contribution Workflow; Checking for Coding Guidelines
-   single: Tools; Checking for Coding Guidelines
-
-.. _check-for-coding-guidelines:
+..  _check-for-coding-guidelines:
 
 Check for Coding Guidelines
 ---------------------------
@@ -409,30 +404,30 @@ They can also be utilized from GIT hooks.
 
 Mac / Linux:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/cglFixMyCommit.sh
+    Build/Scripts/cglFixMyCommit.sh
 
 Windows:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   Build/Scripts/cglFixMyCommit.bat
+    Build/Scripts/cglFixMyCommit.bat
 
 
-.. important::
+..  important::
 
-   Remember, cglFixMyCommit only checks files in latest commit, so you must have
-   committed already. Commit again with `git commit --amend` after you checked things and repaired
-   the file, or call `cglFixMyCommit.sh -h` for alternatives.
+    Remember, cglFixMyCommit only checks files in latest commit, so you must have
+    committed already. Commit again with `git commit --amend` after you checked things and repaired
+    the file, or call `cglFixMyCommit.sh -h` for alternatives.
 
 More information
 ================
 
-*  More details about the test system, test strategies, execution and set up can
-   be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
+*   More details about the test system, test strategies, execution and set up can
+    be found in :ref:`TYPO3 explained <t3coreapi:testing>`.
 
 ..  toctree::
     :glob:

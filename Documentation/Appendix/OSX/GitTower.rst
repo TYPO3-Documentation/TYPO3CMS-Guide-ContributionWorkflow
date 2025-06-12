@@ -1,19 +1,19 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Git Tower
-   single: Git; Git Tower
+..  index::
+    single: Git Tower
+    single: Git; Git Tower
 
-.. _gittower-osx:
+..  _gittower-osx:
 
 ======================
 Working with Git Tower
 ======================
 
-.. sidebar:: Git Tower
+..  sidebar:: Git Tower
 
-   .. image:: /Images/External/Tower/tower_app_icon.png
-      :width: 200px
+    ..  image:: /Images/External/Tower/tower_app_icon.png
+        :width: 200px
 
 
 Git Tower is a Git GUI for OSX.
@@ -30,8 +30,8 @@ Enabling Extended Gerrit Support in Tower
 In Tower's preferences window, activate the ``Gerrit Code Review`` option.
 This will enable the following adaptions in Tower's UI.
 
-.. image:: /Images/External/Tower/tower_enable_gerrit.png
-   :width: 400px
+..  image:: /Images/External/Tower/tower_enable_gerrit.png
+    :width: 400px
 
 Restart Tower after you enabled the setting.
 
@@ -41,17 +41,20 @@ Pushing to Gerrit
 With the Gerrit option enabled in Tower's preferences, performing "Push" operations to Gerrit becomes easier:
 
 Custom Menu Options
-   When right-clicking a local branch in the sidebar, a new Push <branch> to Gerrit… menu option is available. If you hold
-   down the ⌥ key, the item becomes a "quick" action that will be performed without a confirmation dialog.
+    When right-clicking a local branch in the sidebar, a new Push <branch>
+    to Gerrit… menu option is available. If you hold down the ⌥ key, the item
+    becomes a "quick" action that will be performed without a confirmation dialog.
 
 Custom Toolbar Button
-   You can add a custom Gerrit Push button to the toolbar. To do this, choose ``Customize Toolbar`` from the "View" main
-   menu and drag the corresponding button onto the toolbar.
+    You can add a custom Gerrit Push button to the toolbar. To do this,
+    choose ``Customize Toolbar`` from the "View" main menu and drag the
+    corresponding button onto the toolbar.
 
-   .. image:: /Images/External/Tower/tower_gerrit_pushbutton.png
-      :width: 400px
+    ..  image:: /Images/External/Tower/tower_gerrit_pushbutton.png
+        :width: 400px
 
 
-You'll find that the following dialog is optimized for pushing to Gerrit. It will automatically format the Push Refspec
-according to Gerrit's requirements - so you can simply enter the name of the code review branch you want to push to.
-
+You'll find that the following dialog is optimized for pushing to Gerrit. It
+will automatically format the Push Refspec according to Gerrit's
+requirements - so you can simply enter the name of the code review branch
+you want to push to.

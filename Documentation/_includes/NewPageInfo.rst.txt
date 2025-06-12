@@ -1,12 +1,12 @@
-.. important::
+..  important::
 
-   This page has recently been added.
+    This page has recently been added.
 
-   Please help by proofreading. If you find any issue that
-   needs changing, click :guilabel:`Edit on GitHub` on the top
-   right corner of this page and add your suggestions.
+    Please help by proofreading. If you find any issue that
+    needs changing, click :guilabel:`Edit on GitHub` on the top
+    right corner of this page and add your suggestions.
 
-   For more information, see :ref:`h2document:docs-contribute`.
+    For more information, see :ref:`h2document:docs-contribute`.
 
-   For help, ask in **#typo3-documentation** on Slack (see
-   https://my.typo3.org/index.php?id=35 to register).
+    For help, ask in **#typo3-documentation** on Slack (see
+    https://my.typo3.org/index.php?id=35 to register).

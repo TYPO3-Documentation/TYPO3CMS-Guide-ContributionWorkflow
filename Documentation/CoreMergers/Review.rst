@@ -1,16 +1,16 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Gerrit; Submit a Change
-   single: Submit a Change
+..  index::
+    single: Gerrit; Submit a Change
+    single: Submit a Change
 
-.. _coreMergers-review:
+..  _coreMergers-review:
 
 ===============================
 Review a patch as a Core Merger
 ===============================
 
-.. include:: /_includes/CoreMergers.rst.txt
+..  include:: /_includes/CoreMergers.rst.txt
 
 Please see :ref:`reviewPatch` for general information on how to review a
 patch, also the :ref:`cheat-sheet on common review issues <common-review-checks>`.
@@ -24,18 +24,18 @@ Remember that you represent the TYPO3 project as a public-facing "Person with Po
 Please try to always vote by explaining your reasoning, and feel free to
 correspond with your fellow Co-Mergers for impactful decisions.
 
-.. figure:: /Images/External/Gerrit/CoreMergers/VoteCoreMerger.png
-   :class: with-shadow
+..  figure:: /Images/External/Gerrit/CoreMergers/VoteCoreMerger.png
+    :class: with-shadow
 
-   Vote by clicking the :guilabel:`Reply` button
+    Vote by clicking the :guilabel:`Reply` button
 
 
-.. _Gerrit-Vote-plus-1:
+..  _Gerrit-Vote-plus-1:
 
 Voting +1
 =========
 
-.. _Gerrit-Practical-considerations:
+..  _Gerrit-Practical-considerations:
 
 Practical considerations
 ------------------------
@@ -51,19 +51,19 @@ see what has changed from the already reviewed patch to the new one.
 
 Consider these rules when comparing patches:
 
-*  If the patch was re-pushed due to the comments, check the diff between the
-   versions of the patch.
-*  If the patch needed to be rebased onto current main, the change set might
-   contain the changes due to rebasing. So better check the diff between base
-   and most recent version in this case.
+*   If the patch was re-pushed due to the comments, check the diff between the
+    versions of the patch.
+*   If the patch needed to be rebased onto current main, the change set might
+    contain the changes due to rebasing. So better check the diff between base
+    and most recent version in this case.
 
-.. _Gerrit-Vote-plus-2:
+..  _Gerrit-Vote-plus-2:
 
 Voting +2
 =========
 
-.. figure:: /Images/External/Gerrit/CoreMergers/Vote-plus-2.png
-   :class: with-shadow
+..  figure:: /Images/External/Gerrit/CoreMergers/Vote-plus-2.png
+    :class: with-shadow
 
 Ready to merge
 --------------
@@ -71,9 +71,9 @@ Ready to merge
 A Core Merger can give a +2 vote on *Code Review* and *Verified* if
 there is already a positive vote by another Core Merger.
 
-.. _Gerrit-No-brainers:
-.. _Gerrit-Low-brainers:
-.. _Gerrit-Low-complexity:
+..  _Gerrit-No-brainers:
+..  _Gerrit-Low-brainers:
+..  _Gerrit-Low-complexity:
 
 Patches of low complexity
 -------------------------
@@ -85,13 +85,13 @@ or obvious bugs), and are highly unlikely to negatively impact anything.
 A Core Merger can give a +2 and wait a bit before submitting
 (used to be called "FYI24", "FYI48", ...).
 
-.. _Gerrit-Vote-minus-2:
+..  _Gerrit-Vote-minus-2:
 
 Voting -2
 =========
 
-.. figure:: /Images/External/Gerrit/CoreMergers/Vote-minus-2.png
-   :class: with-shadow
+..  figure:: /Images/External/Gerrit/CoreMergers/Vote-minus-2.png
+    :class: with-shadow
 
 A :guilabel:`-2` vote by a Core Merger blocks a patch from merging.
 In contrast to -1, a -2 is a **veto**. Use with care. With a -2, you

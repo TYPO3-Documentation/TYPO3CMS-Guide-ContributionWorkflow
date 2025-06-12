@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _about:
+..  _about:
 
 ================
 About This Guide
@@ -19,22 +19,22 @@ Why contribute?
 
 Here are some ideas why contribution is great:
 
-*  Do you earn your income through the TYPO3 ecosystem? Contribute to keep it alive and going,
-   securing your work.
-*  Do you want to become a more experience developer? Or gather UX/UI expertise in a
-   large, broadly used system?
-*  Do you work in a company that has less sophisticated code testing and review capacities,
-   and you want to learn from the TYPO3, understand it, and use your
-   knowledge to work more effectively?
-*  Do you want to keep up to date with latest development, be a part of it to
-   shape it suit your needs? Have a democratic impact on a large project affecting
-   many people?
-*  If you know about fresh changes, it will make it much easier to perform updates
-   for your projects! If you spot breaking changes affecting your project,
-   you can much better give feedback on it and shape the final implementation.
-*  Get in touch with awesome, kind and dedicated like-minded people like you.
-   Be part of a community and feel connected, and see people appreciating your
-   help.
+*   Do you earn your income through the TYPO3 ecosystem? Contribute to keep it alive and going,
+    securing your work.
+*   Do you want to become a more experience developer? Or gather UX/UI expertise in a
+    large, broadly used system?
+*   Do you work in a company that has less sophisticated code testing and review capacities,
+    and you want to learn from the TYPO3, understand it, and use your
+    knowledge to work more effectively?
+*   Do you want to keep up to date with latest development, be a part of it to
+    shape it suit your needs? Have a democratic impact on a large project affecting
+    many people?
+*   If you know about fresh changes, it will make it much easier to perform updates
+    for your projects! If you spot breaking changes affecting your project,
+    you can much better give feedback on it and shape the final implementation.
+*   Get in touch with awesome, kind and dedicated like-minded people like you.
+    Be part of a community and feel connected, and see people appreciating your
+    help.
 
 How this guide is structured
 ============================
@@ -51,38 +51,36 @@ you are looking for or browse through the menu.
 
 For example:
 
-*  :ref:`quickstart-create-a-patch` walks you through making a change in the TYPO3
-   core (e.g. fix a bug or create a new feature).
+*   :ref:`quickstart-create-a-patch` walks you through making a change in the TYPO3
+    core (e.g. fix a bug or create a new feature).
 
 
 The chapters are structured as follows:
 
-*  The chapters in :guilabel:`INTRODUCTION` give you an introduction. They are not necessary
-   for contribution but will give you some background information which may make
-   some things easier.
-*  The chapters in :guilabel:`SETUP` show how to setup a TYPO3 installation, Git and your
-   accounts for contribution. This is a necessary prerequisite for most actions
-   (e.g. creating a patch), but must be done only once. We recommend to start with
-   this.
-*  The chapters in :guilabel:`HOWTOS` walk you through one task. In most cases, it is assumed
-   that you already setup your environment.
-*  :guilabel:`ADDITIONAL INFORMATION` contains a cheat sheet
-   :ref:`git cheat sheet <cheat-sheet-git>`, :guilabel:`Troubleshooting`
-   and the :ref:`appendix` which is a reference of some topics in more depth than what
-   was described in the main section. These pages near the end of the manual assume
-   that you are already familiar with contributing and serve as reference pages.
-
-
+*   The chapters in :guilabel:`INTRODUCTION` give you an introduction. They are not necessary
+    for contribution but will give you some background information which may make
+    some things easier.
+*   The chapters in :guilabel:`SETUP` show how to setup a TYPO3 installation, Git and your
+    accounts for contribution. This is a necessary prerequisite for most actions
+    (e.g. creating a patch), but must be done only once. We recommend to start with
+    this.
+*   The chapters in :guilabel:`HOWTOS` walk you through one task. In most cases, it is assumed
+    that you already setup your environment.
+*   :guilabel:`ADDITIONAL INFORMATION` contains a cheat sheet
+    :ref:`git cheat sheet <cheat-sheet-git>`, :guilabel:`Troubleshooting`
+    and the :ref:`appendix` which is a reference of some topics in more depth than what
+    was described in the main section. These pages near the end of the manual assume
+    that you are already familiar with contributing and serve as reference pages.
 
 Conventions used in this guide
 ==============================
 
-*  When referring to elements in the gui, we use this formatting:
-   :guilabel:`Add new SSH key`.
-*  Keystrokes are referred to by :kbd:`CTRL + c`
+*   When referring to elements in the gui, we use this formatting:
+    :guilabel:`Add new SSH key`.
+*   Keystrokes are referred to by :kbd:`CTRL + c`
 
 
-.. _other-resources-for-contribution:
+..  _other-resources-for-contribution:
 
 Other ways to contribute
 ========================
@@ -91,10 +89,10 @@ Besides developing for the TYPO3 core, there are many other ways to contribute a
 
 You can find general information here:
 
-*  General information about the various `Teams & Committees <https://typo3.org/community/teams/>`__
-*  General information on how you can `Contribute and Get Involved <https://typo3.org/community/contribute/>`__
+*   General information about the various `Teams & Committees <https://typo3.org/community/teams/>`__
+*   General information on how you can `Contribute and Get Involved <https://typo3.org/community/contribute/>`__
 
-.. _contribute:
+..  _contribute:
 
 Contribute to this Guide
 ========================

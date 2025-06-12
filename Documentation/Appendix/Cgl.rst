@@ -1,10 +1,10 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: CGL
-   single: Coding Guidelines
+..  index::
+    single: CGL
+    single: Coding Guidelines
 
-.. _appendix-cgl:
+..  _appendix-cgl:
 
 =================
 Coding Guidelines

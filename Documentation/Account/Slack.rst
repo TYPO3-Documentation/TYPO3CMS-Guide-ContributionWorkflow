@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _slack-account:
+..  _slack-account:
 
 =====
 Slack
@@ -13,59 +13,59 @@ it is the projects chosen platform for communication.
 It is mandatory to create a typo3.org account, before you
 can join the TYPO3 Slack workspace.
 
-.. index::
-   single: Account; Slack Registration
-   single: Tools; Slack Registration
+..  index::
+    single: Account; Slack Registration
+    single: Tools; Slack Registration
 
-.. _register-for-slack-account:
+..  _register-for-slack-account:
 
 Register for Slack account
 --------------------------
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-1. :ref:`Signup for typo3.org account <TYPO3Account>` (if not done already)
+1.  :ref:`Signup for typo3.org account <TYPO3Account>` (if not done already)
 
-   In order to join the slack workspace, you must already have your
-   typo3.org account.
+    In order to join the slack workspace, you must already have your
+    typo3.org account.
 
-2. Go to `Slack for TYPO3 on my.typo3.org <https://my.typo3.org/index.php?id=35>`__.
+2.  Go to `Slack for TYPO3 on my.typo3.org <https://my.typo3.org/index.php?id=35>`__.
 
-   On that page, you will also find information about recommended channels.
+    On that page, you will also find information about recommended channels.
 
-3. Login with your typo3.org account, then go to the "My Profile" tab and select "Use TYPO3 Slack".
+3.  Login with your typo3.org account, then go to the "My Profile" tab and select "Use TYPO3 Slack".
 
-   .. image:: /Images/External/Gerrit/Account/mytypo3profile.png
-      :class: with-shadow
+    ..  image:: /Images/External/Gerrit/Account/mytypo3profile.png
+        :class: with-shadow
 
-4. Follow the next steps
+4.  Follow the next steps
 
-   including clicking on the link in the welcome email with
-   subject "Stefan Busemann has invited you to join a Slack workspace" from slack.
+    including clicking on the link in the welcome email with
+    subject "Stefan Busemann has invited you to join a Slack workspace" from slack.
 
 Join #typo3-cms-coredev channel
 -------------------------------
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-1. Open Channels Browser
+1.  Open Channels Browser
 
-   Once logged in https://typo3.slack.com, go to Channels Browser by clicking on
-   *Channels*:
+    Once logged in https://typo3.slack.com, go to Channels Browser by clicking on
+    *Channels*:
 
 
-   .. image:: /Images/External/Gerrit/Account/channels.png
-      :class: with-shadow
+    ..  image:: /Images/External/Gerrit/Account/channels.png
+        :class: with-shadow
 
-2. Search for coredev-channel and select it:
+2.  Search for coredev-channel and select it:
 
-   .. image:: /Images/External/Gerrit/Account/select-coredev-channel.svg
-      :class: with-shadow
+    ..  image:: /Images/External/Gerrit/Account/select-coredev-channel.svg
+        :class: with-shadow
 
-3. Click "Join Channel"
+3.  Click "Join Channel"
 
-   .. image:: /Images/External/Gerrit/Account/join-coredev-channel.png
-      :class: with-shadow
+    ..  image:: /Images/External/Gerrit/Account/join-coredev-channel.png
+        :class: with-shadow
 
 More information
 ----------------

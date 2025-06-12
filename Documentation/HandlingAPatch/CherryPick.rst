@@ -1,12 +1,12 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+...  highlight:: bash
 
-.. index::
-   single: Code Contribution Workflow; Cherry pick a patch
-   single: Git; Cherry pick a patch
+..  index::
+    single: Code Contribution Workflow; Cherry pick a patch
+    single: Git; Cherry pick a patch
 
-.. _cherry-pick-a-patch:
+..  _cherry-pick-a-patch:
 
 ===================
 Cherry-pick a patch
@@ -15,73 +15,70 @@ Cherry-pick a patch
 In order to test a patch or make additional changes on it, you will need
 to cherry-pick it from the review system into your local git repository.
 
+..  important::
 
-.. important::
+    Make sure to always get the latest patch set of the current review.
+    You can check this by looking at the **Patch Sets** menu left of the
+    :guilabel:`Download` button. If the link :guilabel:`Go to latest patch set`
+    is not shown, you know you picked the latest patch set.
 
-   Make sure to always get the latest patch set of the current review.
-   You can check this by looking at the **Patch Sets** menu left of the
-   :guilabel:`Download` button. If the link :guilabel:`Go to latest patch set`
-   is not shown, you know you picked the latest patch set.
+..  rst-class:: bignums-xxl
 
+1.  Find the review on Gerrit
 
-.. rst-class:: bignums-xxl
+    see :ref:`Find-a-review`
 
-1. Find the review on Gerrit
+2.  Select the latest patchset and click download
 
-   see :ref:`Find-a-review`
+    If the recent patchset is not shown, select it first:
 
-2. Select the latest patchset and click download
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit-go-to-latest-patchset.png
+        :class: with-shadow
 
-   If the recent patchset is not shown, select it first:
+    Then click on :guilabel:`Download`:
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-go-to-latest-patchset.png
-      :class: with-shadow
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit-download.png
+        :class: with-shadow
 
-   Then click on :guilabel:`Download`:
+3.  Click on copy next to the line for "Cherry pick"
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-download.png
-      :class: with-shadow
+    This copies the command to the clipboard.
 
-3. Click on copy next to the line for "Cherry pick"
+    ..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit-cherry-pick.png
+        :class: with-shadow
 
-   This copies the command to the clipboard.
+4.  Clean up your local repository
 
-   .. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-cherry-pick.png
-      :class: with-shadow
+    Save your local changes beforehand, if you have any. Otherwise the
+    `git reset` performed after that would delete local changes, which
+    may happen if you work on different patches simultaneously with the
+    same repository directory.
 
-4. Clean up your local repository
+    ..  code-block:: bash
 
-   Save your local changes beforehand, if you have any. Otherwise the
-   `git reset` performed after that would delete local changes, which
-   may happen if you work on different patches simultaneously with the
-   same repository directory.
+        git stash save 'comment-your-changes'
 
-   .. code-block:: bash
+    ..  code-block:: bash
 
-      git stash save 'comment-your-changes'
+        git fetch --all
+        git reset --hard origin/main
+        git pull --rebase
 
-   .. code-block:: bash
+5.  Execute the command (git cherry-pick)
 
-      git fetch --all
-      git reset --hard origin/main
-      git pull --rebase
+    In your shell, paste the copied command and execute it. Example::
 
-5. Execute the command (git cherry-pick)
+        git fetch https://review.typo3.org/Packages/TYPO3.CMS refs/changes/47/56947/11 && git cherry-pick FETCH_HEAD
 
-   In your shell, paste the copied command and execute it. Example::
+    Re-apply your local changes, if you had any.
 
-      git fetch https://review.typo3.org/Packages/TYPO3.CMS refs/changes/47/56947/11 && git cherry-pick FETCH_HEAD
+    ..  code-block:: bash
 
-   Re-apply your local changes, if you had any.
+        git stash pop 'comment-your-changes'
 
-   .. code-block:: bash
+6.  Cleanup your TYPO3 installation
 
-      git stash pop 'comment-your-changes'
-
-6. Cleanup your TYPO3 installation
-
-   Depending on the changes made by the patch, you may have to apply some changes
-   to your TYPO3 installation as well. Also, if the last time you pulled from the
-   GitHub repository is some time ago, you may need to pull the most recent
-   dependencies. And you may need to rebuild the CSS/JS assets. See :ref:`cleanup-typo3`.
-
+    Depending on the changes made by the patch, you may have to apply some changes
+    to your TYPO3 installation as well. Also, if the last time you pulled from the
+    GitHub repository is some time ago, you may need to pull the most recent
+    dependencies. And you may need to rebuild the CSS/JS assets. See :ref:`cleanup-typo3`.

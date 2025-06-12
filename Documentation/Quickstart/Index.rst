@@ -23,133 +23,133 @@ structure of this whole guide for more information.
 
 These are the sections:
 
-.. container:: row m-0 p-0
+..  container:: row m-0 p-0
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`1. Prerequisites <quickstart-prerequisites>`
+                ..  rubric:: :ref:`1. Prerequisites <quickstart-prerequisites>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  OS: Windows WSL2, macOS, Linux
+                *   OS: Windows WSL2, macOS, Linux
 
-            *  **Docker environment** (Podman, OrbStack, Colima works too)
+                *   **Docker environment** (Podman, OrbStack, Colima works too)
 
-            *  **DDEV**
+                *   **DDEV**
 
-            *  **Terminal** (Bash)
+                *   **Terminal** (Bash)
 
-            *  **Git** client
+                *   **Git** client
 
-            *  **SSH** client plus SSH key(s) and an email account
+                *   **SSH** client plus SSH key(s) and an email account
 
-            *  A **PHP IDE** of your choice (PhpStorm, Visual Studio Code, vi(m), ...)
+                *   A **PHP IDE** of your choice (PhpStorm, Visual Studio Code, vi(m), ...)
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`2. Accounts <quickstart-accounts>`
+                ..  rubric:: :ref:`2. Accounts <quickstart-accounts>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  **my.TYPO3.org**, using SSO for:
+                *   **my.TYPO3.org**, using SSO for:
 
-               *  Gerrit (**Review System**)
+                *   Gerrit (**Review System**)
 
-               *  Forge (Redmine **Issue Tracker**)
+                *   Forge (Redmine **Issue Tracker**)
 
-            *  (recommended) Slack (**Chat**)
+                *   (recommended) Slack (**Chat**)
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`3. Set up Git <quickstart-git>`
+                ..  rubric:: :ref:`3. Set up Git <quickstart-git>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-               *  **Clone repository**
+                *   **Clone repository**
 
-               *  Set up **SSH key**, **Git hooks** and **push URL**
+                *   Set up **SSH key**, **Git hooks** and **push URL**
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`4. Set up DDEV <quickstart-ddev>`
+                ..  rubric:: :ref:`4. Set up DDEV <quickstart-ddev>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-               *  **Configure DDEV**
+                *   **Configure DDEV**
 
-               *  **Start Docker containers**
+                *   **Start Docker containers**
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`5. Set up TYPO3 <quickstart-typo3>`
+                ..  rubric:: :ref:`5. Set up TYPO3 <quickstart-typo3>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-               *  **Install TYPO3**
+                *   **Install TYPO3**
 
-               *  Enable **EXT:styleguide**
+                *   Enable **EXT:styleguide**
 
-               *  Launch **TYPO3 Backend**
+                *   Launch **TYPO3 Backend**
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`6. Create a patch <quickstart-patch>`
+                ..  rubric:: :ref:`6. Create a patch <quickstart-patch>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-               *  **Develop**
+                *   **Develop**
 
-               *  **Set up Forge issue**
+                *   **Set up Forge issue**
 
-               *  **Commit** and **push to Gerrit**
+                *   **Commit** and **push to Gerrit**
 
-               *  **Work in Gerrit**
+                *   **Work in Gerrit**
 
-               *  **Announce** your contribution
+                *   **Announce** your contribution
 
-               *  Implement **Feedback**
+                *   Implement **Feedback**
 
-               *  **Merge**/abandon a patch
+                *   **Merge**/abandon a patch
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`7. Contribute more! <quickstart-contribute>`
+                ..  rubric:: :ref:`7. Contribute more! <quickstart-contribute>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-               *  **Coordinate** with the team
+                *   **Coordinate** with the team
 
-               *  **Cherry-picks** and **resetting**
+                *   **Cherry-picks** and **resetting**
 
-               *  **Reviewing** other patches
+                *   **Reviewing** other patches
 
 ..  toctree::
     :hidden:

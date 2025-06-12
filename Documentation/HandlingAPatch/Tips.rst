@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _best-practices-review:
+..  _best-practices-review:
 
 =================================
 Tips for contributors & reviewers
@@ -8,15 +8,15 @@ Tips for contributors & reviewers
 
 This page contains some general tips beyond the description of the workflow.
 
-* :ref:`For new contributors <new-contributors-tips>`
-* :ref:`For active contributors <tips-for-reviewers-and-active-contributors>`
-  (related to reviewing patches)
+*   :ref:`For new contributors <new-contributors-tips>`
+*   :ref:`For active contributors <tips-for-reviewers-and-active-contributors>`
+    (related to reviewing patches)
 
-.. index::
-   single: Gerrit
-   single: NewContributors
+..  index::
+    single: Gerrit
+    single: NewContributors
 
-.. _new-contributors-tips:
+..  _new-contributors-tips:
 
 Tips for new contributors
 =========================
@@ -41,33 +41,33 @@ especially like to see new contributors and try to help getting them onboarded
 and up to speed. Please consider the following things before becoming
 frustrated or giving up:
 
-* Most of the time spent on TYPO3 CMS core development is done for free.
-  This gives contributors and reviewers freedom on what they work on.
-  Unfortunately, this also means that sometimes a patch is not given the
-  dedication it should receive.
+*   Most of the time spent on TYPO3 CMS core development is done for free.
+    This gives contributors and reviewers freedom on what they work on.
+    Unfortunately, this also means that sometimes a patch is not given the
+    dedication it should receive.
 
-* The review queue is often longer than the review power available.
-  (See the dashboard on `Forger <https://forger.typo3.com/>`__ for the
-  number of open reviews.) Sometimes patches are overlooked
-  just because there is other hot stuff being worked on.
+*   The review queue is often longer than the review power available.
+    (See the dashboard on `Forger <https://forger.typo3.com/>`__ for the
+    number of open reviews.) Sometimes patches are overlooked
+    just because there is other hot stuff being worked on.
 
-* Parts of the team usually work on something bigger. It may happen that some
-  patches in the hot areas are merged very quickly while others do not get
-  any attention. This is somehow natural and cannot be avoided since at any
-  given time some reviewers usually focus on certain areas to get them right.
+*   Parts of the team usually work on something bigger. It may happen that some
+    patches in the hot areas are merged very quickly while others do not get
+    any attention. This is somehow natural and cannot be avoided since at any
+    given time some reviewers usually focus on certain areas to get them right.
 
-* Sometimes the whole team focuses on different stuff. For example, usually
-  around "big" releases, the team focuses on bug fixing, so feature patches
-  may get stuck for some time.
+*   Sometimes the whole team focuses on different stuff. For example, usually
+    around "big" releases, the team focuses on bug fixing, so feature patches
+    may get stuck for some time.
 
-* Sometimes large parts of the active contributors are inactive at the same
-  time. There are for example main holiday sessions with low overall activity.
+*   Sometimes large parts of the active contributors are inactive at the same
+    time. There are for example main holiday sessions with low overall activity.
 
-* Sometimes getting little or no feedback on patches also has other reasons.
-  Maybe the issue description is insufficient or not understood, maybe there is
-  no documented way on how to reproduce a certain issue, or the bug or feature
-  is bogus, or the issue is so complex and hard to solve that no one really
-  wants to get their hands dirty on it.
+*   Sometimes getting little or no feedback on patches also has other reasons.
+    Maybe the issue description is insufficient or not understood, maybe there is
+    no documented way on how to reproduce a certain issue, or the bug or feature
+    is bogus, or the issue is so complex and hard to solve that no one really
+    wants to get their hands dirty on it.
 
 What you can do to get feedback
 -------------------------------
@@ -75,21 +75,21 @@ What you can do to get feedback
 Here are some things you can do to raise awareness and get more feedback on
 your patch and to help getting it reviewed (and eventually merged):
 
-* Raise awareness: You are allowed to "ping" a patch once in a while. For
-  example, you could :ref:`add a comment <Gerrit-Commenting-files>`
-  "Hey, what is the status here, how to
-  proceed with this patch?". This will raise the issue to the top in the
-  queue and increases your chance of feedback. In general: Ask what is
-  wrong, raise awareness, ask what is missing.
+*   Raise awareness: You are allowed to "ping" a patch once in a while. For
+    example, you could :ref:`add a comment <Gerrit-Commenting-files>`
+    "Hey, what is the status here, how to
+    proceed with this patch?". This will raise the issue to the top in the
+    queue and increases your chance of feedback. In general: Ask what is
+    wrong, raise awareness, ask what is missing.
 
-* Ask for help: Sometimes, issues can be solved in a better way if they are
-  coordinated in direct chat. The TYPO3 CMS team uses Slack as
-  instant communication platform. You are always welcome to join the
-  #typo3-cms-coredev channel and ask for help on your pending patches.
-  Please see :ref:`slack` for more information on how to join slack.
-  Joining the #typo3-cms-coredev Slack channel usually helps sorting out
-  things and gives a much better feeling on how the team works
-  and what is going on.
+*   Ask for help: Sometimes, issues can be solved in a better way if they are
+    coordinated in direct chat. The TYPO3 CMS team uses Slack as
+    instant communication platform. You are always welcome to join the
+    #typo3-cms-coredev channel and ask for help on your pending patches.
+    Please see :ref:`slack` for more information on how to join slack.
+    Joining the #typo3-cms-coredev Slack channel usually helps sorting out
+    things and gives a much better feeling on how the team works
+    and what is going on.
 
 How to improve your patch
 -------------------------
@@ -103,31 +103,31 @@ and evolve in Gerrit until everyone is satisfied. This can take some time.
 
 This is what you can do:
 
-* Familiarize yourself with :ref:`Gerrit <Working-with-Gerrit>`.
+*   Familiarize yourself with :ref:`Gerrit <Working-with-Gerrit>`.
 
-* If reviewers make specific suggestions to improve your patch follow these
-  suggestions and :ref:`upload another patchset <lifeOfAPatch-improve-patch>`.
+*   If reviewers make specific suggestions to improve your patch follow these
+    suggestions and :ref:`upload another patchset <lifeOfAPatch-improve-patch>`.
 
-* If you do not know what the suggestions mean or are unsure what to do, ask
-  for help on :ref:`Slack <slack>` in the #typo3-cms-coredev channel.
+*   If you do not know what the suggestions mean or are unsure what to do, ask
+    for help on :ref:`Slack <slack>` in the #typo3-cms-coredev channel.
 
-* Act helpful and friendly: Chances are higher that your patch will be merged
-  if the way you are communicating is fair. This is even more important for
-  reviewers and active contributors, we do not allow ranters and haters in our
-  team  and we try to stick to our
-  `Code of conduct <https://typo3.org/community/code-of-conduct/>`__
-  Please keep that in mind when working with us. You will be rewarded with
-  the pleasure of working with a group of pretty smart people if you act
-  accordingly.
+*   Act helpful and friendly: Chances are higher that your patch will be merged
+    if the way you are communicating is fair. This is even more important for
+    reviewers and active contributors, we do not allow ranters and haters in our
+    team  and we try to stick to our
+    `Code of conduct <https://typo3.org/community/code-of-conduct/>`__
+    Please keep that in mind when working with us. You will be rewarded with
+    the pleasure of working with a group of pretty smart people if you act
+    accordingly.
 
-* Don't get frustrated by -1 votes: Voting a patch down is a natural process
-  in the review system and is not a sign that we hate you, your patch or your
-  kitten. Our goal is to only merge things that are verified to be ready to
-  go. A -1 basically blocks a patch from merging for a reason, and reviewers
-  always add information on what is wrong or missing. Everyone wants to
-  improve the system, so a -1 is just one method to achieve this.
+*   Don't get frustrated by -1 votes: Voting a patch down is a natural process
+    in the review system and is not a sign that we hate you, your patch or your
+    kitten. Our goal is to only merge things that are verified to be ready to
+    go. A -1 basically blocks a patch from merging for a reason, and reviewers
+    always add information on what is wrong or missing. Everyone wants to
+    improve the system, so a -1 is just one method to achieve this.
 
-.. _tips-for-reviewers-and-active-contributors:
+..  _tips-for-reviewers-and-active-contributors:
 
 Tips for reviewers and active contributors
 ==========================================
@@ -221,11 +221,11 @@ before the CGL are followed.
 However, if looking at patches, it is important to first answer these
 questions:
 
-* Is the issue itself relevant?
-* Does the solution embed well in current development strategies?
-* Is the architectural solution ok or is the patch just fixing some symptom
-  instead of a different, maybe bigger problem?
-* Does the solution contradict other patches we have in the same area?
+*   Is the issue itself relevant?
+*   Does the solution embed well in current development strategies?
+*   Is the architectural solution ok or is the patch just fixing some symptom
+    instead of a different, maybe bigger problem?
+*   Does the solution contradict other patches we have in the same area?
 
 So, first it should be decided if the architectural solution is fine. If that
 is the case, the patch can then be optimized towards CGL needs. It happened
@@ -282,37 +282,40 @@ Common code review checks
 For reviewing and giving feedback, here's a couple of things that are often addressed. You can
 use this list both for checking other people's patches, as well as your own.
 
-*  Is the code-flow readable? Does it need more (or less) comments? Any code complexities
-   ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
-*  Do breaking changes occur that need to be noticed? This can also apply to:
-   *  Type Hinting
-   *  using PHP features beyond the supported PHP version
-   *  Loss of existing functionality
-   *  Typos
-*  Are new class, method, function, variable names understandable
-*  Is there a need to add unit/functional testing for specific changes
-*  Are regression tests for a bugfix needed?
-*  Is the "Releases: " scope of a patch spanning the proper TYPO3 versions
-   (depending on the state of current LTS and priority-bugfix-only releases)
-*  Are the "final" and "private/protected" and "readonly" scopes of classes, methods and variables used properly?
-*  Is Dependency Injection used where applicable?
-*  Are possibilities for early code returns and reduced nesting levels addressed?
-*  If a change is Breaking or comes with a larger impact: Is a "Breaking.rst" or "Important.rst" document part of the patch?
-*  If a patch is a new feature: Is a "Feature"-rst part of the patch? Check out the `rst file generator <https://forger.typo3.com/utilities/rst>`
-   for help on creating files like this.
-*  Does the licensing of any foreign code introduced match the Core licensing?
-*  Is the commit message complete, clear and properly mentions all part of a patch?
-*  If a new Exception is added, is the timestamp-identifier unique and recent?
-*  When new PHP files are added, do they contain the TYPO3 License and a `declare strict_types` header?
-*  Is the provided commit message, reST files and the code itself aligned? Sometimes in the process
-   of reworking a patch multiple times, these three place of documentation can become out of sync.
-*  If SCSS/TS changes are involved, are the resulting build files included in the patch, and were built with the
-   right environment?
-*  When changes are made to Xliff files, is the correct spelling in American (US) English used?
-*  Does your patch deprecate anything? If so, have you followed :ref:`deprecations`?
+*   Is the code-flow readable? Does it need more (or less) comments? Any code complexities
+    ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
+*   Do breaking changes occur that need to be noticed? This can also apply to:
 
-If you feel this section is missing good things to watch out for for, please contribute to the
-documentation. This list does not claim to be complete, but should act as a kind of "Cheat-Sheet" for
-reviewing.
+    *   Type Hinting
+    *   using PHP features beyond the supported PHP version
+    *   Loss of existing functionality
+    *   Typos
 
+*   Are new class, method, function, variable names understandable
+*   Is there a need to add unit/functional testing for specific changes
+*   Are regression tests for a bugfix needed?
+*   Is the "Releases: " scope of a patch spanning the proper TYPO3 versions
+    (depending on the state of current LTS and priority-bugfix-only releases)
+*   Are the "final" and "private/protected" and "readonly" scopes of classes,
+    methods and variables used properly?
+*   Is Dependency Injection used where applicable?
+*   Are possibilities for early code returns and reduced nesting levels addressed?
+*   If a change is Breaking or comes with a larger impact: Is
+    a "Breaking.rst" or "Important.rst" document part of the patch?
+*   If a patch is a new feature: Is a "Feature"-rst part of the patch? Check
+    out the `rst file generator <https://forger.typo3.com/utilities/rst>`
+    for help on creating files like this.
+*   Does the licensing of any foreign code introduced match the Core licensing?
+*   Is the commit message complete, clear and properly mentions all part of a patch?
+*   If a new Exception is added, is the timestamp-identifier unique and recent?
+*   When new PHP files are added, do they contain the TYPO3 License and a `declare strict_types` header?
+*   Is the provided commit message, reST files and the code itself aligned? Sometimes in the process
+    of reworking a patch multiple times, these three place of documentation can become out of sync.
+*   If SCSS/TS changes are involved, are the resulting build files included in
+    the patch, and were built with the right environment?
+*   When changes are made to Xliff files, is the correct spelling in American (US) English used?
+*   Does your patch deprecate anything? If so, have you followed :ref:`deprecations`?
 
+If you feel this section is missing good things to watch out for for, please
+contribute to the documentation. This list does not claim to be complete, but
+should act as a kind of "Cheat-Sheet" for reviewing.
