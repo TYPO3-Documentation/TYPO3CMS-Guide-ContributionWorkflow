@@ -41,7 +41,7 @@ Setup
 
 ..  rst-class:: bignums-xxl
 
-1.  Activate the styleguide extension in the extension manager
+1.  Activate the styleguide extension in the Extension Manager
     ..  tip::
 
         Once the styleguide extension is activated, it is possible to create
