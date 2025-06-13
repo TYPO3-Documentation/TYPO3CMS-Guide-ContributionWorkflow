@@ -1,14 +1,14 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _appendix-windows:
+..  _appendix-windows:
 
 Microsoft Windows help
 ======================
 
-.. toctree::
-   :glob:
-   :titlesonly:
+..  toctree::
+    :glob:
+    :titlesonly:
 
-   SSHGitWindows
-   CloneWithSourcetree
-   Troubleshooting
+    SSHGitWindows
+    CloneWithSourcetree
+    Troubleshooting

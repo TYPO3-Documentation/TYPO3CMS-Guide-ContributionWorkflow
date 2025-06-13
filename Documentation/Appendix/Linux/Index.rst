@@ -1,12 +1,12 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _appendix-linux:
+..  _appendix-linux:
 
 Linux/Unix help
 ======================
 
-.. toctree::
-   :glob:
-   :titlesonly:
+..  toctree::
+    :glob:
+    :titlesonly:
 
-   *
+    *

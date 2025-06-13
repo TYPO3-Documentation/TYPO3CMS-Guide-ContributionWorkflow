@@ -1,64 +1,63 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Gerrit; Submit a Change
-   single: Submit a Change
+..  index::
+    single: Gerrit; Submit a Change
+    single: Submit a Change
 
-.. _coreMergers-merge:
-.. _lifeOfAPatch-Merging-Patches:
+..  _coreMergers-merge:
+..  _lifeOfAPatch-Merging-Patches:
 
 ==============
 Merge patches
 ==============
 
-.. include:: /_includes/CoreMergers.rst.txt
+..  include:: /_includes/CoreMergers.rst.txt
 
 
-.. _lifeOfAPatch-Merging-Patches-Prerequisites:
+..  _lifeOfAPatch-Merging-Patches-Prerequisites:
 
 The merging process
 ===================
 
+..  rst-class:: bignums-xxl
 
-.. rst-class:: bignums-xxl
+1.  Prerequisites
 
-#. Prerequisites
+    A patch can only be merged if it has received a :ref:`+ 2<Gerrit-Vote-plus-2>`
+    vote from a Core Merger. A :guilabel:`+2` can be given by the second
+    Core Merger to review the patch positively.
 
-   A patch can only be merged if it has received a :ref:`+ 2<Gerrit-Vote-plus-2>`
-   vote from a Core Merger. A :guilabel:`+2` can be given by the second
-   Core Merger to review the patch positively.
+    Merging gets blocked by a single :guilabel:`-2` vote.
 
-   Merging gets blocked by a single :guilabel:`-2` vote.
+2.  Submit the patch
 
-#. Submit the patch
+    You can merge by clicking the :guilabel:`Submit` button. The Core Merger
+    to merge the patch also has to do
+    the :ref:`Backporting <coreMergers-backport>` if the submit-message requests
+    for a backport.
 
-   You can merge by clicking the :guilabel:`Submit` button. The Core Merger
-   to merge the patch also has to do
-   the :ref:`Backporting <coreMergers-backport>` if the submit-message requests
-   for a backport.
+    ..  figure:: /Images/External/Gerrit/CoreMergers/Merging1.png
+        :class: with-shadow
 
-   .. figure:: /Images/External/Gerrit/CoreMergers/Merging1.png
-      :class: with-shadow
+        The :guilabel:`Submit` button on a patch in status :guilabel:`Ready
+        to submit`.
 
-      The :guilabel:`Submit` button on a patch in status :guilabel:`Ready
-      to submit`.
+3.  The patch is successfully merged
 
-#. The patch is successfully merged
+    When the merging is successful, the Change looks like this:
 
-   When the merging is successful, the Change looks like this:
+    ..  figure:: /Images/External/Gerrit/CoreMergers/Merging2.png
+        :class: with-shadow
 
-   .. figure:: /Images/External/Gerrit/CoreMergers/Merging2.png
-      :class: with-shadow
+        The patch in status :guilabel:`Merged`.
 
-      The patch in status :guilabel:`Merged`.
+4.  Backport if necessary
 
-#. Backport if necessary
+    If required in the commit message, do the
+    :ref:`backport <coreMergers-backport>` next.
 
-   If required in the commit message, do the
-   :ref:`backport <coreMergers-backport>` next.
+5.  How to revert a submitted change
 
-#. How to revert a submitted change
-
-   There is a :guilabel:`Revert` button available now. Please stick to the
-   :ref:`revert workflow<coreMergers-revert>` if reverting a change should
-   become necessary.
+    There is a :guilabel:`Revert` button available now. Please stick to the
+    :ref:`revert workflow<coreMergers-revert>` if reverting a change should
+    become necessary.

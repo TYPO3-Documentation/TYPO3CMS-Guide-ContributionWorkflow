@@ -1,8 +1,8 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+..  highlight:: bash
 
-.. _setting-up-typo3-manually:
+..  _setting-up-typo3-manually:
 
 =========================
 Setting up TYPO3 manually
@@ -18,12 +18,12 @@ page.
 
 You will need to set up the prerequisites for your operating system. Look at the following for guidance:
 
-* :ref:`setting-up-typo3-manually-linux`
+*   :ref:`setting-up-typo3-manually-linux`
 
 You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
 are in the directory which contains the local Git repository:
 
-.. code-block:: shell
+..  code-block:: shell
     :caption: shell command
 
     cd /var/www/t3coredev
@@ -41,14 +41,14 @@ access it with username `typo3` and password `somepassword` from localhost.
     mysql> CREATE USER `typo3`@`localhost` identified by `somepassword`;
     mysql> GRANT ALL ON t3coredev.* TO `typo3`@`localhost`;
 
-.. note::
+..  note::
 
-   For MySQL versions lower than 8.0 or MariaDB use the collation utf8mb4_general_ci.
+    For MySQL versions lower than 8.0 or MariaDB use the collation utf8mb4_general_ci.
 
 Create FIRST_INSTALL
 ====================
 
-.. code-block:: shell
+..  code-block:: shell
     :caption: shell command in /var/www/t3coredev
 
     touch FIRST_INSTALL

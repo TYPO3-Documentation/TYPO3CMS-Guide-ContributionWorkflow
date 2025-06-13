@@ -1,17 +1,13 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
+..  index::
+    single: Tools; Gerrit Introduction
 
-
-
-.. index::
-   single: Tools; Gerrit Introduction
-
-.. _Working-with-Gerrit:
+..  _Working-with-Gerrit:
 
 ======================
 Introduction to Gerrit
 ======================
-
 
 Gerrit is a web based code review and project management tool for Git based projects.
 
@@ -23,11 +19,10 @@ pushing to the GitHub (or GitLab) repository is not allowed. Instead every chang
 pass a review process in Gerrit, which later pushes the change to the GitLab->GitHub repositories.
 
 
+..  index::
+    single: Tools; Gerrit Ui
 
-.. index::
-   single: Tools; Gerrit Ui
-
-.. _Gerrit-Overview-of-the-UI:
+..  _Gerrit-Overview-of-the-UI:
 
 Overview of the UI
 ==================
@@ -37,30 +32,38 @@ should be mostly self-explanatory. Gerrit also comes with its own help system.
 
 This is a screenshot of an open review on Gerrit_. We will go through the parts of the UI next:
 
-.. image:: /Images/External/Gerrit/HandlingAPatch/gerrit-ui.png
-   :alt: Screenshot of a code review on Gerrit
-   :class: with-shadow
+..  image:: /Images/External/Gerrit/HandlingAPatch/gerrit-ui.png
+    :alt: Screenshot of a code review on Gerrit
+    :class: with-shadow
 
-#. The **search box** lets you write complex search queries with little coding knowledge. For detailed information on how to
-   use the search, refer to the official documentation on https://review.typo3.org/Documentation/user-search.html.
-   Most people use `Forger <https://forger.typo3.com>`__, because it provides more sophisticated ways to
-   find a review. Look at :ref:`Find-a-review` for more information.
+#.  The **search box** lets you write complex search queries with little coding
+    knowledge. For detailed information on how to use the search, refer to the
+    official documentation on https://review.typo3.org/Documentation/user-search.html.
+    Most people use `Forger <https://forger.typo3.com>`__, because it provides more sophisticated ways to
+    find a review. Look at :ref:`Find-a-review` for more information.
 
-#. The **commit message** formatted like we explained in :ref:`"The commit message"<commitmessage>`.
+#.  The **commit message** formatted like we explained in :ref:`"The commit message"<commitmessage>`.
 
-#. The **Reply Button** which you will use to vote on code quality and testing as well as to send comments. We will be
-   covering this button in more detail later.
+#.  The **Reply Button** which you will use to vote on code quality and testing
+    as well as to send comments. We will be covering this button in more detail
+    later.
 
-#. The **Download Button**. You will be using this control to :ref:`cherry pick a change <cherry-pick-a-patch>`.
+#.  The **Download Button**. You will be using this control
+    to :ref:`cherry pick a change <cherry-pick-a-patch>`.
 
-#. Other changes **related** to this change. This can be either due to a similar topic or because the commit summary is
-   related to the change we are currently reviewing.
+#.  Other changes **related** to this change. This can be either due to a
+    similar topic or because the commit summary is related to the change we are
+    currently reviewing.
 
-#. The **current review status**. Here you can see who has voted (and how they voted) on a change. The votes only apply
-   to one given patchset. If a new patchset is uploaded, it must be revoted. Note the +1 by TYPO3com, which means that
-   the automatic testsuite ran successfully.
+#.  The **current review status**. Here you can see who has voted (and how they
+    voted) on a change. The votes only apply to one given patchset. If a new
+    patchset is uploaded, it must be revoted. Note the +1 by TYPO3com, which
+    means that the automatic testsuite ran successfully.
 
-#. All **changed files** in this current change. You can click every file to take a look at what exactly has changed. There
-   is a select box on top of the file list that allows you to do a diff between patch sets to quickly see what has changed.
+#.  All **changed files** in this current change. You can click every file to
+    take a look at what exactly has changed. There is a select box on top of
+    the file list that allows you to do a diff between patch sets to quickly see
+    what has changed.
 
-#. The **history** of this change. Here you can see comments, new patch sets, votes on a change etc.
+#.  The **history** of this change. Here you can see comments, new patch sets,
+    votes on a change etc.

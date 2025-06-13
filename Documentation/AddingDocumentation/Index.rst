@@ -23,7 +23,7 @@ and documentation for
 :ref:`System Extensions <t3docs:System-Extensions>`
 is maintained in the Core.
 
-.. _adding-documentation-quickstart:
+..  _adding-documentation-quickstart:
 
 Quickstart to contribute documentation
 ======================================
@@ -32,7 +32,8 @@ To work on the Core documentation of TYPO3, you need to work with the main TYPO3
 mono-repository. You can **not** contribute Documentation patches on single read-only
 repositories like `https://github.com/typo3-cms/felogin`__ through the GitHub interface!
 
-You can, however, use the GitHub interface and contribute to `https://github.com/TYPO3/typo3/tree/main/typo3/sysext/felogin`__.
+You can, however, use the GitHub interface and contribute
+to `https://github.com/TYPO3/typo3/tree/main/typo3/sysext/felogin`__.
 Submitting a GitHub PR will result in a GitHub Action workflow that closes your
 PR, transfers it to forge, transfers it to gerrit, and link them to each other. That workflow
 can be prone to errors though, especially if a branch other than `main` is involved.
@@ -51,10 +52,10 @@ participate in our review workflow) is this:
 
     From the :ref:`Quickstart Prerequisites <quickstart-prerequisites>` you need:
 
-    1.  Operating System
-    2.  GIT client
-    3.  SSH client + keys
-    4.  Optional Bonus: Docker (to render documentation), a suitable Text-Editor
+    #.  Operating System
+    #.  GIT client
+    #.  SSH client + keys
+    #.  Optional Bonus: Docker (to render documentation), a suitable Text-Editor
 
 2.  Set-up accounts
 
@@ -245,7 +246,7 @@ for a planned removal. See more information: :ref:`Deprecations <deprecations>`
 
 
 ..  index::
-   single: Documentation Contribution Workflow; Features
+    single: Documentation Contribution Workflow; Features
 
 ..  _documenting-changelog-features:
 
@@ -260,9 +261,8 @@ A patch adds new functionality.
 
 #.  **Impact** - how users are affected by this new feature.
 
-
 ..  index::
-   single: Documentation Contribution Workflow; Important Information
+    single: Documentation Contribution Workflow; Important Information
 
 ..  _documenting-changelog-important-information:
 
@@ -272,7 +272,7 @@ Important Information
 Anything that does not fit the other categories but is
 important enough to require a Changelog entry.
 
-#. **Description** - describe what is so important it needed an rst snippet
+#.  **Description** - describe what is so important it needed an rst snippet
 
 ..  index::
     single: Documentation Contribution Workflow; Checking reST Files

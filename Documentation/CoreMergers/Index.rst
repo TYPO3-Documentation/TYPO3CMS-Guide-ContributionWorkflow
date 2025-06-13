@@ -1,18 +1,18 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+..  highlight:: bash
 
-.. _core_mergers:
+..  _core_mergers:
 
 ============
 Core Mergers
 ============
 
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Review
-   Merge
-   Backport
-   Revert
+    Review
+    Merge
+    Backport
+    Revert

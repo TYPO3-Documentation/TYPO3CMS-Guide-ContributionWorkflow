@@ -1,20 +1,20 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. index::
-   single: Troubleshooting
+..  index::
+    single: Troubleshooting
 
-.. _troubleshooting:
+..  _troubleshooting:
 
 ===============
 Troubleshooting
 ===============
 
 
-.. index::
-   single: Git; Troubleshooting
-   single: Troubleshooting; Git
+..  index::
+    single: Git; Troubleshooting
+    single: Troubleshooting; Git
 
-.. _git-troubleshooting:
+..  _git-troubleshooting:
 
 Git Troubleshooting
 ===================
@@ -27,82 +27,82 @@ Also, you may want to :ref:`check your configuration <git-show-config>`
 Permission Denied
 -----------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git push origin HEAD:refs/for/main
+    git push origin HEAD:refs/for/main
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
-   Permission denied (publickey).
-   fatal: The remote end hung up unexpectedly
+    Permission denied (publickey).
+    fatal: The remote end hung up unexpectedly
 
 If this error happens, double check if you are:
 
-* Using the correct SSH user name (which is your :ref:`user name on typo3.org <TYPO3Account>`)
-* If your username contains special characters (like @ or !), you must escape them using
-  a backslash (or even better: use a username without special characters)
-* You must use an SSH key :ref:`known to Gerrit <gerrit-ssh>`
-* You must use the :ref:`correct URL <git-setup-remote>`
+*   Using the correct SSH user name (which is your :ref:`user name on typo3.org <TYPO3Account>`)
+*   If your username contains special characters (like @ or !), you must escape them using
+    a backslash (or even better: use a username without special characters)
+*   You must use an SSH key :ref:`known to Gerrit <gerrit-ssh>`
+*   You must use the :ref:`correct URL <git-setup-remote>`
 
 The following push command (with `-v`) shows you the push URL (which must contain `review.typo3.org`):
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git push origin HEAD:refs/for/main -v
+    git push origin HEAD:refs/for/main -v
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
-   Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-   Permission denied (publickey).
-   fatal: The remote end hung up unexpectedly
+    Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+    Permission denied (publickey).
+    fatal: The remote end hung up unexpectedly
 
 Debugging the SSH Connection
 ----------------------------
 
 Try connecting to the server with using an SSH client (OpenSSH, Putty, etc.):
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ssh -p 29418 <username>@review.typo3.org
+    ssh -p 29418 <username>@review.typo3.org
 
 If the output looks like this, everything is fine:
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
-   ****    Welcome to Gerrit Code Review    ****
+    ****    Welcome to Gerrit Code Review    ****
 
-   Hi <Name>, you have successfully connected over SSH.
+    Hi <Name>, you have successfully connected over SSH.
 
-   Unfortunately, interactive shells are disabled.
-   To clone a hosted Git repository, use:
+    Unfortunately, interactive shells are disabled.
+    To clone a hosted Git repository, use:
 
-   git clone ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+    git clone ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
 
-   Connection to review.typo3.org closed.
+    Connection to review.typo3.org closed.
 
 Otherwise, your SSH client does not automatically choose the right private key file.
 By default, SSH searches for the key in :file:`~/.ssh/id_rsa` and :file:`~/.ssh/id_dsa`.
 
 You can manually specify the location using the `-i` parameter:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ssh -p 29418 -i <path-to-private-key> <username>@review.typo3.org
+    ssh -p 29418 -i <path-to-private-key> <username>@review.typo3.org
 
 If this works, modify :file:`~/.ssh/config` to define the file name for
 connections to `review.typo3.org`:
 
-.. code-block:: text
-   :caption: ~/.ssh/config
+..  code-block:: text
+    :caption: ~/.ssh/config
 
-   Host review.typo3.org
+    Host review.typo3.org
       User <username>
       IdentityFile ~/.ssh/<keyfile>
       Port 29418
@@ -112,44 +112,44 @@ Now the connection should work without having to specify any parameters as descr
 If this does not work another issue might be that your SSH version is too new and does not
 accept the signature algorithm. You can test this by executing:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   ssh -v -p 29418 -i <path-to-private-key> <username>@review.typo3.org 2>&1 | grep "no mutual signature algorithm"
+    ssh -v -p 29418 -i <path-to-private-key> <username>@review.typo3.org 2>&1 | grep "no mutual signature algorithm"
 
 If you see the following:
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
-   debug1: send_pubkey_test: no mutual signature algorithm
+    debug1: send_pubkey_test: no mutual signature algorithm
 
 you need to allow the rsa Algorithm in your SSH config:
 
-.. code-block:: text
-   :caption: ~/.ssh/config
+..  code-block:: text
+    :caption: ~/.ssh/config
 
-   Host review.typo3.org
+    Host review.typo3.org
       ...
       PubkeyAcceptedKeyTypes +ssh-rsa
 
 Push: invalid committer
 -----------------------
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git push -v origin HEAD:refs/for/main
+    git push -v origin HEAD:refs/for/main
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
-   Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-   remote: ERROR:  https://review.typo3.org/#/settings/contact
-   remote:
-   To ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
-   ! [remote rejected] HEAD -> refs/for/main (invalid committer)
-   error: failed to push some refs to 'ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git'
+    Pushing to ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+    remote: ERROR:  https://review.typo3.org/#/settings/contact
+    remote:
+    To ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git
+    ! [remote rejected] HEAD -> refs/for/main (invalid committer)
+    error: failed to push some refs to 'ssh://<username>@review.typo3.org:29418/REPOSITORY_NAME.git'
 
 
 This message simply means that your email address is not registered as a Web-Identity.
@@ -169,30 +169,30 @@ in Gerrit and check the email address, which is connected to your account
 (you can add more of them if needed). Additionally, check your settings in
 Git with the following command:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git config user.email
+    git config user.email
 
 If needed, change it with the following command:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git config --global user.email your-email@example.org
+    git config --global user.email your-email@example.org
 
 You may change the user/author of your last commit with:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git commit --amend
+    git commit --amend
 
 Missing Change-Id in commit message
 -----------------------------------
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
     ! [remote rejected] HEAD -> refs/for/X/X (missing Change-Id in commit message)
 
@@ -201,8 +201,8 @@ Make sure that the file :file:`.git/hooks/commit-msg` exists and is executable.
 
 Afterwards, you have to amend your commit to make it include the Change-Id:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
     git commit --amend
 
@@ -211,24 +211,24 @@ Push: prohibited by gerrit
 
 If Gerrit rejects your push with:
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
     [remote rejected] main -> main (prohibited by gerrit)
 
 you are likely trying to do a simple `git push`. However, as Gerrit prohibits
 directly pushing to the target branches, you have to use this lengthy command:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git push origin HEAD:refs/for/<release-branch>
+    git push origin HEAD:refs/for/<release-branch>
 
 
 For example:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
     git push origin HEAD:refs/for/main
 
@@ -242,11 +242,11 @@ Review the sections about creating a valid public/private key pair on your opera
 
 A valid private key in OpenSSH format starts with the following lines:
 
-.. code-block:: none
+..  code-block:: none
 
-   -----BEGIN RSA PRIVATE KEY-----
-   Proc-Type: 4,ENCRYPTED
-   DEK-Info: DES-EDE3-CBC,0314A92F87D7FEDF
+    -----BEGIN RSA PRIVATE KEY-----
+    Proc-Type: 4,ENCRYPTED
+    DEK-Info: DES-EDE3-CBC,0314A92F87D7FEDF
 
 followed by about 25 lines of seemingly random signs.
 
@@ -260,7 +260,7 @@ refused with a "no new changes" error message.
 
 So you need to amend the commit using:
 
-.. code-block:: bash
+..  code-block:: bash
 
     git commit --amend
 
@@ -273,38 +273,39 @@ Resolving Merge Conflicts in generated asset files
 If you cherry pick a patch for review, you might encounter a merge conflict with a generated asset file
 (JavaScript or CSS build files):
 
-.. code-block:: none
-   :caption: result
+..  code-block:: none
+    :caption: result
 
-   Mergeconflict in typo3/sysext/backend/Resources/Public/Css/backend.css
+    Mergeconflict in typo3/sysext/backend/Resources/Public/Css/backend.css
 
 To resolve the conflict, do not try to resolve conflicts in a huge 1-line file, but instead
 re-create the assets using the following workflow:
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   # Perform re-build using the helper "runTests.sh"
+    # Perform re-build using the helper "runTests.sh"
 
-   # Make sure dependencies are up to date
-   ./Build/Scripts/runTests.sh -s composerInstall
+    # Make sure dependencies are up to date
+    ./Build/Scripts/runTests.sh -s composerInstall
 
-   # Clean possibly previously build files
-   ./Build/Scripts/runTests.sh -s clean
+    # Clean possibly previously build files
+    ./Build/Scripts/runTests.sh -s clean
 
-   # Execute the build
-   ./Build/Scripts/runTests.sh -s build
+    # Execute the build
+    ./Build/Scripts/runTests.sh -s build
 
-   # Now add all conflicting files as resolved:
-   git add typo3/sysext/backend/Resources/Public/Css/backend.css
+    # Now add all conflicting files as resolved:
+    git add typo3/sysext/backend/Resources/Public/Css/backend.css
 
-   # Continue the cherry-pick process
-   git cherry-pick --continue
+    # Continue the cherry-pick process
+    git cherry-pick --continue
 
 You will see the Commit Message again and you can now save it.
 When you push this change, it will create a new Patchset - this is expected behavior.
 
 ..  _troubleshooting-included-in:
+
 In which TYPO3 release was a patch merged into?
 -----------------------------------------------
 

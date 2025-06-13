@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _appendix-slack-intro:
-.. _slack_contribution:
+..  _appendix-slack-intro:
+..  _slack_contribution:
 
 =====
 Slack

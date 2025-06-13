@@ -1,9 +1,9 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+..  highlight:: bash
 
-.. _use-styleguide:
-.. _after-setup-typo3:
+..  _use-styleguide:
+..  _after-setup-typo3:
 
 ==================
 Use EXT:styleguide
@@ -18,11 +18,11 @@ to provide additional features.
 
 The styleguide extension can create pages within the TYPO3 site, specifically:
 
-*  The "Styleguide TCA demo" will create several pages showcasing TCA features,
-   including examples for common column types.
-*  The "Styleguide Frontend" uses a custom TypoScript template provided by
-   the styleguide extension and creates pages which can be viewed
-   in the frontend.
+*   The "Styleguide TCA demo" will create several pages showcasing TCA features,
+    including examples for common column types.
+*   The "Styleguide Frontend" uses a custom TypoScript template provided by
+    the styleguide extension and creates pages which can be viewed
+    in the frontend.
 
 Also, the styleguide presents you with examples of several backend UI elements
 like notifications, tabs, accordions and more.
@@ -40,39 +40,37 @@ Go explore!
 Setup
 =====
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-1. Activate the styleguide extension in the extension manager
-    .. tip::
-    
-       Once the styleguide extension is activated, it is possible to create
-       (or delete) the pages via command line:
-    
-       .. code-block:: bash
-          :caption: shell command
-    
-          # create pages
-          bin/typo3 styleguide:generate -c
-          # or (with DDEV)
-          ddev typo3 styleguide:generate -c
-    
-          # show help
-          bin/typo3 styleguide:generate -h
-    
+1.  Activate the styleguide extension in the extension manager
+    ..  tip::
 
+        Once the styleguide extension is activated, it is possible to create
+        (or delete) the pages via command line:
 
-2. In the Modules bar, Click on Sytem > Styleguide
-3. Click on the :guilabel:`Styleguide` menu item (older TYPO3 versions
-   present a custom module menu item)
+        ..  code-block:: bash
+            :caption: shell command
 
-   The Styleguide overview appears.
+            # create pages
+            bin/typo3 styleguide:generate -c
+            # or (with DDEV)
+            ddev typo3 styleguide:generate -c
 
-4. Click on :guilabel:`TCA / Records / Frontend`
-5. Create pages
+            # show help
+            bin/typo3 styleguide:generate -h
 
-   Click the buttons:
+2.  In the Modules bar, Click on Sytem > Styleguide
+3.  Click on the :guilabel:`Styleguide` menu item (older TYPO3 versions
+    present a custom module menu item)
 
-   *  :guilabel:`Create styleguide page tree with data`
-   *  :guilabel:`Create styleguide frontend`
+    The Styleguide overview appears.
+
+4.  Click on :guilabel:`TCA / Records / Frontend`
+5.  Create pages
+
+    Click the buttons:
+
+    *   :guilabel:`Create styleguide page tree with data`
+    *   :guilabel:`Create styleguide frontend`
 
 The pages will now be created. Wait a moment until a flash message appears.

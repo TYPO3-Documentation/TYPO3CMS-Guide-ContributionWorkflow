@@ -1,19 +1,16 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
+..  index::
+    single: Code Contribution Workflow; Rebasing
+    single: Git; Rebase
 
-
-.. index::
-   single: Code Contribution Workflow; Rebasing
-   single: Git; Rebase
-
-.. _rebase:
+..  _rebase:
 
 ======
 Rebase
 ======
 
-
-.. _rebase-intro:
+..  _rebase-intro:
 
 What is rebase?
 ===============
@@ -27,11 +24,10 @@ commit. Meanwhile, other commits are merged and the TYPO3 codebase
 changes. Your patch will still be based on an older version
 of the source.
 
+..  code-block:: none
 
-.. code-block:: none
-
-   remote | local | commits
-   ------------------------
+    remote | local | commits
+    ------------------------
 
      +                 x : latest commit
      |
@@ -58,7 +54,7 @@ it is assumed that someone is working on a different branch
 (feature branch). In our commit model, we always work on one
 branch (main) and we only create one commit for a change.
 
-.. _when-should-you-rebase:
+..  _when-should-you-rebase:
 
 When should you rebase?
 =======================
@@ -71,7 +67,7 @@ You can also do it before you run tests and push your change.
 In fact, it is good practice to do this!
 
 
-.. _how-to-rebase:
+..  _how-to-rebase:
 
 How do you rebase?
 ==================
@@ -81,7 +77,7 @@ The following assumes, there are not yet any merge conflicts. If
 there are merge conflicts, you must resolve them as you rebase
 / merge / cherry-pick. See the section :ref:`resolve-merge-conflicts`.
 
-.. _rebase-with-gerrit-button:
+..  _rebase-with-gerrit-button:
 
 Method 1: Use Rebase button on Gerrit
 -------------------------------------
@@ -99,8 +95,7 @@ Load your patch in the browser, click on "Rebase" and then
 "Rebase on top of the main branch".
 
 
-
-.. _rebase-with-git-pull:
+..  _rebase-with-git-pull:
 
 Method 2: git pull --rebase
 ---------------------------
@@ -114,21 +109,21 @@ This command assumes, you are currently working on your patch
 in your local git repository and you have a clean working
 directory, meaning you committed your changes.
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git pull --rebase origin main
+    git pull --rebase origin main
 
 (which is the pull command you already know, with the
 additional option `--rebase`.)
 
 or
 
-.. code-block:: bash
-   :caption: shell command
+..  code-block:: bash
+    :caption: shell command
 
-   git fetch
-   git rebase origin/main
+    git fetch
+    git rebase origin/main
 
 **What does it do:**
 
@@ -141,7 +136,7 @@ using the upstream branch (latest main branch).
 
 **More information:**
 
-* `StackOverflow: Difference between git pull and git pull --rebase
+*   `StackOverflow: Difference between git pull and git pull --rebase
   <https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase>`__
 
 

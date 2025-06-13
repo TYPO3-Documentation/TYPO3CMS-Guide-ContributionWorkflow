@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  highlight:: bash
+...  highlight:: bash
 
 ..  _setup-typo3:
 ..  _setup-typo3-installation:
@@ -13,9 +13,9 @@ Setup the TYPO3 installation
 
     If you are setting TYPO3 up with DDEV, you can skip this page and jump straight to
 
-    .. rst-class:: horizbuttons-primary-m
+    ..  rst-class:: horizbuttons-primary-m
 
-    - :ref:`DDEV <setting-up-typo3-with-ddev>`
+        *   :ref:`DDEV <setting-up-typo3-with-ddev>`
 
 You will now need to setup a working installation
 of TYPO3. There are different ways how you can do this. We

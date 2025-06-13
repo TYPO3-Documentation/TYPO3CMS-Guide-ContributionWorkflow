@@ -1,25 +1,22 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
+..  index::
+    single: Code Contribution Workflow; Handle and Improve a Patch
 
-.. index::
-   single: Code Contribution Workflow; Handle and Improve a Patch
-
-.. _lifeOfAPatch:
-.. _improving-a-patch:
+..  _lifeOfAPatch:
+..  _improving-a-patch:
 
 ===================================
 Handle and Improve a Patch (Gerrit)
 ===================================
 
-.. note::
+..  note::
 
-   This chapter assumes your environment is set up properly as described in
-   :ref:`Contribution Walkthrough Environment Setup<setup>`
-
+    This chapter assumes your environment is set up properly as described in
+    :ref:`Contribution Walkthrough Environment Setup<setup>`
 
 This chapter focuses on handling an existing patch, by reviewing it, modifying
 it, reverting it etc. If you want to create a new patch, look at :ref:`Fixing-a-bug-A-Z`.
-
 
 The code contribution workflow is based on patches and patchsets.
 A patch can be updated multiple times, adding a new patchset on top.
@@ -36,20 +33,15 @@ Additionally, a suite of tests (unit, functional and acceptance) will
 automatically run on every patch (set), the results being shown as a +1 or
 -1 by "Core CI".
 
+..  toctree::
+    :titlesonly:
 
-
-
-.. toctree::
-   :titlesonly:
-
-   Tips
-   GerritBasics
-   FindAReview
-   CherryPick
-   CleanupTypo3
-   ChangeAPatch
-   Review
-   Rebase
-   ResolveMergeConflicts
-
-
+    Tips
+    GerritBasics
+    FindAReview
+    CherryPick
+    CleanupTypo3
+    ChangeAPatch
+    Review
+    Rebase
+    ResolveMergeConflicts

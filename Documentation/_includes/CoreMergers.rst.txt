@@ -1,4 +1,4 @@
 
-.. note::
+..  note::
 
-   This is a section targeted towards Core Mergers only.
+    This is a section targeted towards Core Mergers only.

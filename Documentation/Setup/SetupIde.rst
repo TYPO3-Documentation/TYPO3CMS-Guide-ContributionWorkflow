@@ -1,13 +1,11 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. highlight:: bash
+..  highlight:: bash
 
+..  index::
+    single: Code Contribution Workflow; setup IDE
 
-
-.. index::
-   single: Code Contribution Workflow; setup IDE
-
-.. _setup-ide:
+..  _setup-ide:
 
 ==============
 Setup your IDE
@@ -16,13 +14,10 @@ Setup your IDE
 In the Appendix, you can find some hints that might be useful for
 :ref:`phpstorm-setup`.
 
+..  index::
+    single: Code Contribution Workflow; setup coding guidelines
 
-
-
-.. index::
-   single: Code Contribution Workflow; setup coding guidelines
-
-.. _coding-guidelines:
+..  _coding-guidelines:
 
 Coding Guidelines
 -----------------
