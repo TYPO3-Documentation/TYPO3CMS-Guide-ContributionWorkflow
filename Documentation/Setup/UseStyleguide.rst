@@ -42,8 +42,8 @@ Setup
 ..  rst-class:: bignums-xxl
 
 1.  Activate the styleguide extension in the Extension Manager
-    ..  tip::
 
+    ..  tip::
         Once the styleguide extension is activated, it is possible to create
         (or delete) the pages via command line:
 
