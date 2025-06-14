@@ -47,16 +47,16 @@ Setup
         Once the styleguide extension is activated, it is possible to create
         (or delete) the pages via command line:
 
-        ..  code-block:: bash
-            :caption: shell command
+    ..  code-block:: bash
+        :caption: shell command
 
-            # create pages
-            bin/typo3 styleguide:generate -c
-            # or (with DDEV)
-            ddev typo3 styleguide:generate -c
+        # create pages
+        bin/typo3 styleguide:generate -c
+        # or (with DDEV)
+        ddev typo3 styleguide:generate -c
 
-            # show help
-            bin/typo3 styleguide:generate -h
+        # show help
+        bin/typo3 styleguide:generate -h
 
 2.  In the Modules bar click on :guilabel:`System > Styleguide`
 3.  Click on the :guilabel:`Styleguide` menu item (former TYPO3 versions
