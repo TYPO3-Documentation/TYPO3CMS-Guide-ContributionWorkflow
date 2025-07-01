@@ -359,4 +359,4 @@ More?
 
 If you feel this section is missing good things to watch out for, please
 contribute to the documentation. This list does not claim to be complete, but
-should act as a kind of "Cheat-Sheet" or Checklist for reviewing.
+should act as a kind of "Cheat-Sheet" or checklist for reviewing.
