@@ -351,14 +351,18 @@ When changes are made to **Xliff files** (translations):
     argument placeholders** or remove existing ones, or change the meaning
     of an existing label. Instead, a new language key has to be
     introduced (and the old one can be removed or at least deprecated/documented as outdated).
-    This is important because localizations are only specific to the main
-    version, and delivered for any TYPO3 patch-level version. So this
-    could cause PHP exceptions when **argument placeholders mismatch**.
+    Otherwise, localization changes will be pushed to earlier TYPO3 versions
+    and could cause PHP exceptions when **argument placeholders mismatch**.
     When labels are removed, translations will fall back to their english
     counterpart in prior patchlevel versions.
-*   Existing language labels in the `main` branch can be adjusted without being
-    considered "breaking", since no LTS releases are made based off
-    this.
+*   Removed language keys will only be removed in the TYPO3 major version
+    scope where the change is committed to.
+*   Any existing label change committed to `main` will automatically update
+    labels in ALL other TYPO3 versions, even if the TYPO3 Core repository
+    does not backport the patch to earlier versions. Non-existing labels
+    will not be included/updated of course. This is under the
+    assumption, that existing label contents are only altered in terms
+    of spelling/grammar, but **never change in meaning or arguments**.
 
 ..  _common-review-checks-missing:
 More?
