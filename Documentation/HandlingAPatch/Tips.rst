@@ -282,6 +282,10 @@ Common code review checks / checklist
 For reviewing and giving feedback, here's a couple of things that are often addressed. You can
 use this list both for checking other people's patches, as well as your own.
 
+..  _common-review-checks-general:
+General checks
+~~~~~~~~~~~~~~
+
 *   Is the **code-flow readable**? Does it need more (or less) comments? Any **code complexities**
     ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
 *   Do breaking changes occur that need to be noticed? This can also apply to:
@@ -292,39 +296,66 @@ use this list both for checking other people's patches, as well as your own.
     *   Typos
 
 *   Are new class, method, function, **variable names understandable**
+*   Are possibilities for **early code returns** and reduced **nesting levels** addressed?
+*   If **SCSS/TypeScript** changes are involved, are the resulting build files included in
+    the patch, and were built with the right environment?
+
+..  _common-review-checks-testing:
+Testing
+~~~~~~~
+
 *   Is there a need to add **unit/functional testing** for specific changes
 *   Are **regression tests** for a bugfix needed?
+
+..  _common-review-checks-formalities:
+Formalities
+~~~~~~~~~~~
+
 *   Is the **"Releases: " scope** of a patch spanning the proper TYPO3 versions
     (depending on the state of current LTS and priority-bugfix-only releases)
-*   Are the **"final" and "private/protected" and "readonly" scopes** of classes,
-    methods and variables used properly?
-*   Is **Dependency Injection** used where applicable?
-*   Are possibilities for **early code returns** and reduced **nesting levels** addressed?
-*   If a change is Breaking or comes with a larger impact: Is
-    a **"Breaking.rst" or "Important.rst"** document part of the patch?
-*   If a patch is a new feature: Is a **"Feature"-rst** part of the patch? Check
-    out the `rst file generator <https://forger.typo3.com/utilities/rst>`
-    for help on creating files like this.
 *   Does the **licensing** of any foreign code introduced match the Core licensing?
 *   Is the **commit message complete**, clear and properly mentions all part of a patch?
 *   If a new Exception is added, is the timestamp-identifier unique and recent?
 *   When **new PHP files** are added, do they contain the TYPO3 License and a `declare strict_types` header?
+
+..  _common-review-checks-php:
+PHP specifics
+~~~~~~~~~~~~~
+
+*   Are the **"final" and "private/protected" and "readonly" scopes** of classes,
+    methods and variables used properly?
+*   Is **Dependency Injection** used where applicable?
+
+..  _common-review-checks-docs:
+Documentation
+~~~~~~~~~~~~~
+
+*   If a change is Breaking or comes with a larger impact: Is
+    a **"Breaking.rst" or "Important.rst"** document part of the patch?
+*   If a patch is a new feature: Is a **"Feature"-rst** part of the patch? Check
+    out the `rst file generator <https://forger.typo3.com/utilities/rst>`_
+    for help on creating files like this.
 *   Is the provided commit message, reST files and the code itself aligned? Sometimes in the process
     of reworking a patch multiple times, these three place of documentation can become out of sync.
-*   If **SCSS/TypeScript** changes are involved, are the resulting build files included in
-    the patch, and were built with the right environment?
 *   Does your patch **deprecate** anything? If so, have you followed :ref:`deprecations`?
+
 ..  _common-review-checks-xlf:
-*   When changes are made to **Xliff files** (translations):
+Xliff / language files
+~~~~~~~~~~~~~~~~~~~~~~
 
-    *   Is the **correct spelling** in American (US) English used?
-    *   Does the file use **proper indentation levels and characters** (tab)?
-    *   If an **existing** language key is changed on a LTS branch, it must **NOT introduce new
-        argument placeholders** or remove existing ones. Instead, a new language key has to be
-        introduced (and the old one can be deprecated/documented as outdated). This is
-        important because localizations are delivered for any TYPO3 patch-level version,
-        and could cause PHP exceptions when **argument placeholders mismatch**.
+When changes are made to **Xliff files** (translations):
 
+*   Is the **correct spelling** in American (US) English used?
+*   Does the file use **proper indentation levels and characters** (tab)?
+*   If an **existing** language key is changed on a LTS branch, it must **NOT introduce new
+    argument placeholders** or remove existing ones. Instead, a new language key has to be
+    introduced (and the old one can be deprecated/documented as outdated). This is
+    important because localizations are delivered for any TYPO3 patch-level version,
+    and could cause PHP exceptions when **argument placeholders mismatch**.
+
+..  _common-review-checks-missing:
+More?
+~~~~~
 
 If you feel this section is missing good things to watch out for, please
 contribute to the documentation. This list does not claim to be complete, but
