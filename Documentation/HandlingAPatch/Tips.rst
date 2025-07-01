@@ -326,6 +326,6 @@ use this list both for checking other people's patches, as well as your own.
         and could cause PHP exceptions when **argument placeholders mismatch**.
 
 
-If you feel this section is missing good things to watch out for for, please
+If you feel this section is missing good things to watch out for, please
 contribute to the documentation. This list does not claim to be complete, but
 should act as a kind of "Cheat-Sheet" or Checklist for reviewing.
