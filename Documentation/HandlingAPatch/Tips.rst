@@ -349,9 +349,12 @@ When changes are made to **Xliff files** (translations):
 *   Does the file use **proper indentation levels and characters** (tab)?
 *   If an **existing** language key is changed on a LTS branch, it must **NOT introduce new
     argument placeholders** or remove existing ones. Instead, a new language key has to be
-    introduced (and the old one can be deprecated/documented as outdated). This is
-    important because localizations are delivered for any TYPO3 patch-level version,
+    introduced (and the old one can be removed or at least deprecated/documented as outdated).
+    This is important because localizations are delivered for any TYPO3 patch-level version,
     and could cause PHP exceptions when **argument placeholders mismatch**.
+*   When labels are removed, translations will fall back to their english
+    counterpart. This is better than carrying around deprecated language
+    labels which are no longer emitted in the TYPO3 core.
 
 ..  _common-review-checks-missing:
 More?
