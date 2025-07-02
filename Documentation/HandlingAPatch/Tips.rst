@@ -357,6 +357,15 @@ When changes are made to **Xliff files** (translations):
     counterpart in prior patchlevel versions.
 *   Removed language keys will only be removed in the TYPO3 major version
     scope where the change is committed to.
+*   A language label must **only** be removed in "main" versions, never
+    backported to other branches. This would remove the label from
+    translations of existing, non-updated TYPO3-setups of that version
+    from the translation server downloads. Labels can only be removed
+    if they have never been used in the any of the patchlevel releases
+    that came before. Example: A language key that has been used in 13.4.1
+    and then Fluid templates were changed in 13.4.10 (to not need the key
+    anymore). Because of this, the key can **not** be removed, because existing 13.4.1
+    releases would then no longer contain the translation.
 *   Any existing label change committed to `main` will automatically update
     labels in ALL other TYPO3 versions, even if the TYPO3 Core repository
     does not backport the patch to earlier versions. Non-existing labels
