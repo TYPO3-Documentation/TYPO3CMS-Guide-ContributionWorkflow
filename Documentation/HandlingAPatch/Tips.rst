@@ -276,46 +276,107 @@ Consider the :ref:`policies and tips for voting patches <gerrit-voting>`.
 
 ..  _common-review-checks:
 
-Common code review checks
--------------------------
+Common code review checks / checklist
+-------------------------------------
 
 For reviewing and giving feedback, here's a couple of things that are often addressed. You can
 use this list both for checking other people's patches, as well as your own.
 
-*   Is the code-flow readable? Does it need more (or less) comments? Any code complexities
+..  _common-review-checks-general:
+General checks
+~~~~~~~~~~~~~~
+
+*   Is the **code-flow readable**? Does it need more (or less) comments? Any **code complexities**
     ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
 *   Do breaking changes occur that need to be noticed? This can also apply to:
 
-    *   Type Hinting
+    *   **Type hinting / type declarations**
     *   using PHP features beyond the supported PHP version
     *   Loss of existing functionality
     *   Typos
 
-*   Are new class, method, function, variable names understandable
-*   Is there a need to add unit/functional testing for specific changes
-*   Are regression tests for a bugfix needed?
-*   Is the "Releases: " scope of a patch spanning the proper TYPO3 versions
+*   Are new class, method, function, **variable names understandable**
+*   Are possibilities for **early code returns** and reduced **nesting levels** addressed?
+*   If **SCSS/TypeScript** changes are involved, are the resulting build files included in
+    the patch, and were built with the right environment?
+
+..  _common-review-checks-testing:
+Testing
+~~~~~~~
+
+*   Is there a need to add **unit/functional testing** for specific changes
+*   Are **regression tests** for a bugfix needed?
+
+..  _common-review-checks-formalities:
+Formalities
+~~~~~~~~~~~
+
+*   Is the **"Releases: " scope** of a patch spanning the proper TYPO3 versions
     (depending on the state of current LTS and priority-bugfix-only releases)
-*   Are the "final" and "private/protected" and "readonly" scopes of classes,
-    methods and variables used properly?
-*   Is Dependency Injection used where applicable?
-*   Are possibilities for early code returns and reduced nesting levels addressed?
-*   If a change is Breaking or comes with a larger impact: Is
-    a "Breaking.rst" or "Important.rst" document part of the patch?
-*   If a patch is a new feature: Is a "Feature"-rst part of the patch? Check
-    out the `rst file generator <https://forger.typo3.com/utilities/rst>`
-    for help on creating files like this.
-*   Does the licensing of any foreign code introduced match the Core licensing?
-*   Is the commit message complete, clear and properly mentions all part of a patch?
+*   Does the **licensing** of any foreign code introduced match the Core licensing?
+*   Is the **commit message complete**, clear and properly mentions all part of a patch?
 *   If a new Exception is added, is the timestamp-identifier unique and recent?
-*   When new PHP files are added, do they contain the TYPO3 License and a `declare strict_types` header?
+*   When **new PHP files** are added, do they contain the TYPO3 License and a `declare strict_types` header?
+
+..  _common-review-checks-php:
+PHP specifics
+~~~~~~~~~~~~~
+
+*   Are the **"final" and "private/protected" and "readonly" scopes** of classes,
+    methods and variables used properly?
+*   Is **Dependency Injection** used where applicable?
+
+..  _common-review-checks-docs:
+Documentation
+~~~~~~~~~~~~~
+
+*   If a change is Breaking or comes with a larger impact: Is
+    a **"Breaking.rst" or "Important.rst"** document part of the patch?
+*   If a patch is a new feature: Is a **"Feature"-rst** part of the patch? Check
+    out the `rst file generator <https://forger.typo3.com/utilities/rst>`_
+    for help on creating files like this.
 *   Is the provided commit message, reST files and the code itself aligned? Sometimes in the process
     of reworking a patch multiple times, these three place of documentation can become out of sync.
-*   If SCSS/TS changes are involved, are the resulting build files included in
-    the patch, and were built with the right environment?
-*   When changes are made to Xliff files, is the correct spelling in American (US) English used?
-*   Does your patch deprecate anything? If so, have you followed :ref:`deprecations`?
+*   Does your patch **deprecate** anything? If so, have you followed :ref:`deprecations`?
 
-If you feel this section is missing good things to watch out for for, please
+..  _common-review-checks-xlf:
+Xliff / language files
+~~~~~~~~~~~~~~~~~~~~~~
+
+When changes are made to **Xliff files** (translations):
+
+*   Is the **correct spelling** in American (US) English used?
+*   Does the file use **proper indentation levels and characters** (tab)?
+*   If an **existing** language key is changed on a LTS branch, it must **NOT introduce new
+    argument placeholders** or remove existing ones, or change the meaning
+    of an existing label. Instead, a new language key has to be
+    introduced (and the old one can be removed or at least deprecated/documented as outdated).
+    Otherwise, localization changes will be pushed to earlier TYPO3 versions
+    and could cause PHP exceptions when **argument placeholders mismatch**.
+    When labels are removed, translations will fall back to their english
+    counterpart in prior patchlevel versions.
+*   Removed language keys will only be removed in the TYPO3 major version
+    scope where the change is committed to.
+*   A language label must **only** be removed in "main" versions, never
+    backported to other branches. This would remove the label from
+    translations of existing, non-updated TYPO3-setups of that version
+    from the translation server downloads. Labels can only be removed
+    if they have never been used in the any of the patchlevel releases
+    that came before. Example: A language key that has been used in 13.4.1
+    and then Fluid templates were changed in 13.4.10 (to not need the key
+    anymore). Because of this, the key can **not** be removed, because existing 13.4.1
+    releases would then no longer contain the translation.
+*   Any existing label change committed to `main` will automatically update
+    labels in ALL other TYPO3 versions, even if the TYPO3 Core repository
+    does not backport the patch to earlier versions. Non-existing labels
+    will not be included/updated of course. This is under the
+    assumption, that existing label contents are only altered in terms
+    of spelling/grammar, but **never change in meaning or arguments**.
+
+..  _common-review-checks-missing:
+More?
+~~~~~
+
+If you feel this section is missing good things to watch out for, please
 contribute to the documentation. This list does not claim to be complete, but
-should act as a kind of "Cheat-Sheet" for reviewing.
+should act as a kind of "Cheat-Sheet" or checklist for reviewing.

@@ -50,4 +50,5 @@ Xliff files
 Language files are usually stored in a Folder Resources/Private/Language
 in files with the ending *.xlf*. While no tabs are allowed to indent
 in PHP files, you should edit Xliff files using tabs.
-
+Please also check :ref:`common-review-checks-xlf` for Xliff-specific things
+to pay attention to.
