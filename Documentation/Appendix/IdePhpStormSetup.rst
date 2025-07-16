@@ -112,14 +112,6 @@ Recommended Plugins
 -------------------
 
 *   `EditorConfig plugin <https://plugins.jetbrains.com/plugin/7294-editorconfig>`__
-*   `DynamicReturnTypePlugin
-    <https://plugins.jetbrains.com/plugin/7251-dynamicreturntypeplugin>`__ :
-    With this Plugin, return types for some functions can be configured
-    dynamically. For example, if you use `GeneralUtility::makeInstance`,
-    the expected return type is determined from the first parameter
-    passed to the function. The configuration file for this plugin is
-    `dynamicReturnTypeMeta.json
-    <https://github.com/typo3/typo3/blob/main/dynamicReturnTypeMeta.json>`__
 *   `Php Inspections (EA Extended)
     <https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended->`__ :
     Static Code Analysis tool for PHP
