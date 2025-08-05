@@ -32,7 +32,7 @@ Quick Start: Set up Git repository
     ..  note::
 
         Remember that we use some conventions for username and email, see
-        :ref:`prerequisite assumptions <quickstart-assumptions>.
+        :ref:`prerequisite assumptions <quickstart-assumptions>`.
 
     ..  code:: bash
         :caption: **Set up git user meta data and repository**
