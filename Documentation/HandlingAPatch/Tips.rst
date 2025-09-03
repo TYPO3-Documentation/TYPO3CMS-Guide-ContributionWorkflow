@@ -283,6 +283,7 @@ For reviewing and giving feedback, here's a couple of things that are often addr
 use this list both for checking other people's patches, as well as your own.
 
 ..  _common-review-checks-general:
+
 General checks
 ~~~~~~~~~~~~~~
 
@@ -305,6 +306,7 @@ General checks
     the patch, and were built with the right environment?
 
 ..  _common-review-checks-testing:
+
 Testing
 ~~~~~~~
 
@@ -312,6 +314,7 @@ Testing
 *   Are **regression tests** for a bugfix needed?
 
 ..  _common-review-checks-formalities:
+
 Formalities
 ~~~~~~~~~~~
 
@@ -323,6 +326,7 @@ Formalities
 *   When **new PHP files** are added, do they contain the TYPO3 License and a `declare strict_types` header?
 
 ..  _common-review-checks-php:
+
 PHP specifics
 ~~~~~~~~~~~~~
 
@@ -331,6 +335,7 @@ PHP specifics
 *   Is **Dependency Injection** used where applicable?
 
 ..  _common-review-checks-docs:
+
 Documentation
 ~~~~~~~~~~~~~
 
@@ -344,6 +349,7 @@ Documentation
 *   Does your patch **deprecate** anything? If so, have you followed :ref:`deprecations`?
 
 ..  _common-review-checks-xlf:
+
 Xliff / language files
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -378,6 +384,7 @@ When changes are made to **Xliff files** (translations):
     of spelling/grammar, but **never change in meaning or arguments**.
 
 ..  _common-review-checks-missing:
+
 More?
 ~~~~~
 
