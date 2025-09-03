@@ -290,10 +290,14 @@ General checks
     ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
 *   Do breaking changes occur that need to be noticed? This can also apply to:
 
-    *   **Type hinting / type declarations**
+    *   **Type hinting / type declarations** - specifically, narrowing type
+        declarations should usually not be backported to patchlevel
+        versions (especially if it affects public methods/properties). Similarly,
+        adding type-casting to variables declared as "pass by reference" in their
+        method signatures should be prevented in backports.
     *   using PHP features beyond the supported PHP version
     *   Loss of existing functionality
-    *   Typos
+    *   Typos (specifically in variable/method/function/property names)
 
 *   Are new class, method, function, **variable names understandable**
 *   Are possibilities for **early code returns** and reduced **nesting levels** addressed?
