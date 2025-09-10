@@ -283,6 +283,7 @@ For reviewing and giving feedback, here's a couple of things that are often addr
 use this list both for checking other people's patches, as well as your own.
 
 ..  _common-review-checks-general:
+
 General checks
 ~~~~~~~~~~~~~~
 
@@ -290,10 +291,14 @@ General checks
     ("cognitive complexity") that could be easier to read when using different conditions/loops/sub-methods?
 *   Do breaking changes occur that need to be noticed? This can also apply to:
 
-    *   **Type hinting / type declarations**
+    *   **Type hinting / type declarations** - specifically, narrowing type
+        declarations should usually not be backported to patchlevel
+        versions (especially if it affects public methods/properties). Similarly,
+        adding type-casting to variables declared as "pass by reference" in their
+        method signatures should be prevented in backports.
     *   using PHP features beyond the supported PHP version
     *   Loss of existing functionality
-    *   Typos
+    *   Typos (specifically in variable/method/function/property names)
 
 *   Are new class, method, function, **variable names understandable**
 *   Are possibilities for **early code returns** and reduced **nesting levels** addressed?
@@ -301,6 +306,7 @@ General checks
     the patch, and were built with the right environment?
 
 ..  _common-review-checks-testing:
+
 Testing
 ~~~~~~~
 
@@ -308,6 +314,7 @@ Testing
 *   Are **regression tests** for a bugfix needed?
 
 ..  _common-review-checks-formalities:
+
 Formalities
 ~~~~~~~~~~~
 
@@ -319,6 +326,7 @@ Formalities
 *   When **new PHP files** are added, do they contain the TYPO3 License and a `declare strict_types` header?
 
 ..  _common-review-checks-php:
+
 PHP specifics
 ~~~~~~~~~~~~~
 
@@ -327,6 +335,7 @@ PHP specifics
 *   Is **Dependency Injection** used where applicable?
 
 ..  _common-review-checks-docs:
+
 Documentation
 ~~~~~~~~~~~~~
 
@@ -340,6 +349,7 @@ Documentation
 *   Does your patch **deprecate** anything? If so, have you followed :ref:`deprecations`?
 
 ..  _common-review-checks-xlf:
+
 Xliff / language files
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -374,6 +384,7 @@ When changes are made to **Xliff files** (translations):
     of spelling/grammar, but **never change in meaning or arguments**.
 
 ..  _common-review-checks-missing:
+
 More?
 ~~~~~
 
