@@ -256,9 +256,7 @@ done so already.
 Slack channels
 --------------
 
-*   **#ddev**
 *   **#typo3-cms-coredev** : Only for core development, ask general TYPO3 support questions in **#typo3-cms**
-
 
 DDEV documentation
 ------------------
@@ -271,3 +269,10 @@ DDEV documentation
 
 
 *   `TYPO3 GmbH Blog post: DDEV adds support for TYPO3 CMS <https://typo3.com/blog/ddev-adds-support-for-typo3-cms/>`__
+
+
+DDEV discord server
+-------------------
+
+For matters related to DDEV and DDEV development, the DDEV Discord server (https://discord.gg/kDvSFBSZfs) provides
+access to the DDEV team and opportunities to contribute to the project's development.
