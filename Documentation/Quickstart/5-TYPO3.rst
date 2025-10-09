@@ -92,10 +92,10 @@ Quick Start: Set up TYPO3
         TCA page tree created!
         Frontend page tree created!
 
-    Note there remain some extensions disabled (`filemetadata`, `indexed_search`,
-    `linkvalidator`, `opendocs`, `reactions`, `recycler`, `scheduler`, `webhooks`,
-    `workspaces`). If you plan to work on these, activate them similarly, or use
-    the :guilabel:`Extension Manager` in the TYPO3 Backend.
+    Note there remain some extensions disabled (`filemetadata`, `linkvalidator`,
+    `opendocs`, `reactions`, `recycler`, `scheduler`, `webhooks`, `workspaces`).
+    If you plan to work on these, activate them similarly, or use the
+    :guilabel:`Extension Manager` in the TYPO3 Backend.
 
     ..  attention::
 
