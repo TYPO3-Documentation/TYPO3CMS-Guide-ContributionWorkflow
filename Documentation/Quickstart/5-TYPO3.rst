@@ -50,7 +50,7 @@ Quick Start: Set up TYPO3
                 --password=db \
                 --admin-username=john-doe \
                 --admin-user-password='John-Doe-1701D.' \
-                --admin-email="john.doe@example.com" \
+                --admin-email='john.doe@example.com' \
                 --project-name='TYPO3 Contribution' \
                 --no-interaction \
                 --server-type=apache \
