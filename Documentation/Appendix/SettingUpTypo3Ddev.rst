@@ -7,15 +7,14 @@
     single: DDEV
     single: Setup; DDEV
 
-..  _ddev:
-..  _setting-up-typo3-with-ddev:
-
 ..  warning::
 
     This guide explains the setup of TYPO3 for the core contribution with DDEV.
     Follow the :ref:`quick installation guide <t3start:installation_index>`
     to install TYPO3 using Composer for a project.
 
+..  _ddev:
+..  _setting-up-typo3-with-ddev:
 
 =======================================
 TYPO3 Core contribution setup with DDEV
@@ -31,6 +30,8 @@ You don't need to have a Webserver, a Database or PHP running on your system.
 Everything will be supplied by DDEV. In fact, if you do have a Webserver
 or Database running on your machine, make sure there are no conflicts (e.g.
 change the ports in the :ref:`ddev config <ddev-configure>`).
+
+..  _ddev-prerequisites:
 
 Prerequisites
 =============
@@ -69,6 +70,8 @@ DDEV should suggest the correct defaults and you just need to press ENTER::
     > Found a typo3 codebase at /var/www/t3coredev.
     > Project Type [backdrop, drupal6, drupal7, drupal8, drupal9, laravel, magento, magento2, php, typo3, wordpress] (typo3):
 
+..  _ddev-configure-change:
+
 Change configuration
 ====================
 
@@ -97,6 +100,8 @@ Failed to start t3coredev: Unable to listen on required ports, port 80 is alread
 
     ddev config --router-http-port='8090'
     ddev config --router-https-port='8443'
+
+..  _ddev-start:
 
 Start DDEV
 ==========
@@ -179,6 +184,7 @@ Be aware that until TYPO3 v11.5 yarn was used.
 
     *   `Using Developer Tools with DDEV-Local <https://ddev.readthedocs.io/en/stable/users/basics/developer-tools/>`__
 
+..  _ddev-describe:
 
 DDEV describe
 =============
@@ -191,6 +197,8 @@ Let DDEV dump information:
 
 Displays information about the project, its URLs and access to phpMyAdmin, MailHog and the MySQL database.
 
+..  _ddev-first-install:
+
 FIRST_INSTALL
 =============
 
@@ -200,6 +208,7 @@ Create a file `FIRST_INSTALL`:
 
     touch FIRST_INSTALL
 
+..  _ddev-setup:
 
 Setup your TYPO3 installation
 =============================
@@ -218,10 +227,14 @@ You will now be guided through the basic installation steps by TYPO3.
 
     If you are getting a `trustedHostsPattern` error on initial access, try accessing the HTTP domain first.
 
+..  _ddev-setup-additional:
+
 Additional setup
 ================
 
 Be sure to add the .ddev directory to your local gitignore (e.g. :file:`.git/info/exclude`).
+
+..  _ddev-shutdown:
 
 Shutdown DDEV
 =============
@@ -234,6 +247,8 @@ For a list of commands see::
 
     ddev help
 
+..  _ddev-next-steps:
+
 Next step
 =========
 
@@ -243,6 +258,7 @@ If you are in the middle of setting up a TYPO3 installation for core development
 
 *   :ref:`after-setup-typo3`.
 
+..  _ddev-next-resources:
 
 Resources
 =========
@@ -253,10 +269,14 @@ be nice. Register for
 the `TYPO3 slack workspace <https://forger.typo3.com/slack>`__ if you have not
 done so already.
 
+..  _ddev-next-resources-slack:
+
 Slack channels
 --------------
 
 *   **#typo3-cms-coredev** : Only for core development, ask general TYPO3 support questions in **#typo3-cms**
+
+..  _ddev-next-resources-documentation:
 
 DDEV documentation
 ------------------
@@ -270,6 +290,7 @@ DDEV documentation
 
 *   `TYPO3 GmbH Blog post: DDEV adds support for TYPO3 CMS <https://typo3.com/blog/ddev-adds-support-for-typo3-cms/>`__
 
+..  _ddev-next-resources-discord:
 
 DDEV discord server
 -------------------
