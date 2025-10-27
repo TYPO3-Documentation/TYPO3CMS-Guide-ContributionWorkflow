@@ -11,6 +11,19 @@
 Quick Start: Get ready to contribute to TYPO3 in under 30 minutes!
 ==================================================================
 
+..  hint::
+
+    The TYPO3 contribution workflow is a bit **different compared to
+    Gitlab Merge Requests (MR) or GitHub Pull Requests (PR)**. 
+    Once you set up GIT with your credentials (explained in these chapters),
+    you can directly push code to the `main` branch of TYPO3's own GIT.
+    Don't be afraid! You don't directly push "live code", but instead this
+    automatically triggers a workflow on our code review system
+    `Gerrit <https://review.typo3.org/>`_. This is where comments
+    are made, additional changes pushed (as ammended commits, with
+    distinct "patch sets") and in the end merged by a member of the
+    Core team.
+
 This `Tutorial` / `How To` will show you the easiest and
 *quickest way to become a contributor* to TYPO3.
 
