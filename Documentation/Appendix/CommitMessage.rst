@@ -10,12 +10,12 @@
 Commit Message rules for TYPO3 CMS
 ===================================
 
-Since we strive to automate a lot of things the commit message plays an
-important role in order to be able to automate.
+In TYPO3 we try to automate the contribution/coding process as much as possible
+and the commit message plays an important role in that.
 
-Git and related tools work best when following a certain guideline for commit
-messages. A deeper `introduction on git revision log conventions <http://tbaggery.com/2008/04/19/a-note-about-git-commit-
-messages.html>`_ is helpful to understand the scope.
+Git and related tools work best when following strict guidelines for commit
+messages. The `introduction to git revision log conventions <http://tbaggery.com/2008/04/19/a-note-about-git-commit-
+messages.html>`_ explains the guidelines in more detail.
 
 Here is an example of a final commit message. The `Change-Id` will be generated
 by the commit-hook. Do not set the `Change-Id` on your first commit!
@@ -241,10 +241,10 @@ Relationships
 
 
 #.  `Resolves:` **(REQUIRED)**
-    You **must** reference an issue on Forge_ here by
-    adding #[ISSUE_NUMBER]. The commit-msg hook will reject commits that
-    do not have at least one `Resolves:` line. For **features** and **tasks**,
-    it closes the issue on merge:
+    You **must** reference an issue on Forge_ by
+    adding the #[ISSUE_NUMBER]. The commit-msg hook rejects commits that
+    do not have at least one `Resolves:` line. For **feature** and **task** commits,
+    the resolved issues are closed on merge:
 
     ..  code-block:: text
         :caption: commit message
@@ -263,10 +263,9 @@ Relationships
 
 #.  `Related:` **(OPTIONAL)**
     Other issues related to this change which are not resolved (for **all
-    types**, it simply adds a relation, no closing). This is optional and
+    types** of commit, it only adds relations and the issues are not closed). This is optional and
     **cannot be used alone** - you must have at least one `Resolves:` line
-    in addition to any `Related:` lines. You need to reference an issue on
-    Forge_ by just adding the issue number like in:
+    as well. You reference the related issue on Forge_ by adding the issue number:
 
     ..  code-block:: text
         :caption: commit message
