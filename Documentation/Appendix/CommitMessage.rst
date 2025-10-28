@@ -240,10 +240,11 @@ Relationships
             Resolves: #67890
 
 
-#.  `Resolves:`
-    You need to reference an issue on Forge_ here simply by
-    adding #[ISSUE_NUMBER]. For **features** and **tasks**, it closes the
-    issue on merge.:
+#.  `Resolves:` **(REQUIRED)**
+    You **must** reference an issue on Forge_ here by
+    adding #[ISSUE_NUMBER]. The commit-msg hook will reject commits that
+    do not have at least one `Resolves:` line. For **features** and **tasks**,
+    it closes the issue on merge:
 
     ..  code-block:: text
         :caption: commit message
@@ -260,10 +261,12 @@ Relationships
 
         Resolves: #M12345
 
-#.  `Related:`
+#.  `Related:` **(OPTIONAL)**
     Other issues related to this change which are not resolved (for **all
-    types**, it simply adds a relation, no closing). You need to reference an
-    issue on Forge_ by just adding the issue number like in:
+    types**, it simply adds a relation, no closing). This is optional and
+    **cannot be used alone** - you must have at least one `Resolves:` line
+    in addition to any `Related:` lines. You need to reference an issue on
+    Forge_ by just adding the issue number like in:
 
     ..  code-block:: text
         :caption: commit message
