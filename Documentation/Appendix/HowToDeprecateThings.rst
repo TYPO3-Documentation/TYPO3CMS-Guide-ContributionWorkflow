@@ -254,9 +254,9 @@ Example:
 Deprecate a language label reference
 ====================================
 
-When you move or remove a language label from the Core, third-party extensions and
-projects might still depend on it. It is good practice to keep the original label
-and mark it as deprecated using the ``x-unused-since`` attribute:
+If you move or remove a language label from the Core, third-party extensions and
+projects may still depend on it. Therefore, it is good practice to keep the original label
+and mark it as deprecated with an ``x-unused-since`` attribute:
 
 ..  code-block:: xml
 
@@ -264,20 +264,20 @@ and mark it as deprecated using the ``x-unused-since`` attribute:
         <source>Type</source>
     </trans-unit>
 
-The label can then be completely removed in the next major TYPO3 version. Before
-doing so, ensure that the label is no longer referenced within the Core.
+The label can then be completely removed in the next major TYPO3 version (the
+label must be no longer be referenced in the Core.)
 
-Note that some label references use automatically computed label strings. Check
-those cases carefully before removal.
+Note that some label references use computed label strings, so check
+these carefully before removal.
 
 ..  _move-xliff-file:
 
 Move or rename XLIFF files
 ==========================
 
-If you move or rename an entire XLIFF file, add a mapping to
+If you move or rename an XLIFF file, add a mapping to
 :php:`TYPO3\CMS\Core\Localization\LocalizationFactory` in the ``MOVED_FILES``
-constant. Remove all references to the old XLIFF file within the Core. The mapping
+constant. Remove all references to the old XLIFF file in the Core. The mapping
 can be safely removed in the next major TYPO3 version.
 
 More information
