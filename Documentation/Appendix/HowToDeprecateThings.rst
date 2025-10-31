@@ -26,6 +26,7 @@ or change functionality in the TYPO3 Core, it has to be deprecated first.
 
 Here is how:
 
+..  contents::
 
 ..  index::
     single: Deprecation; Deprecate a class
@@ -248,6 +249,37 @@ Example:
         $value = $this->TS_AtagToAbs($value);
         // ...
     }
+
+..  _deprecate-language-reference:
+
+Deprecate a language label reference
+====================================
+
+If you move or remove a language label from the Core, third-party extensions and
+projects may still depend on it. Therefore, it is good practice to keep the original label
+and mark it as deprecated with an ``x-unused-since`` attribute:
+
+..  code-block:: xml
+
+    <trans-unit id="CType_formlabel" x-unused-since="14.0">
+        <source>Type</source>
+    </trans-unit>
+
+The label can then be completely removed in the next major TYPO3 version (the
+label must not be referenced any longer in the Core.)
+
+Note that some label references use computed label strings, so check
+these carefully before removal.
+
+..  _move-xliff-file:
+
+Move or rename XLIFF files
+==========================
+
+If you move or rename an XLIFF file, add a mapping to
+:php:`TYPO3\CMS\Core\Localization\LocalizationFactory` in the ``MOVED_FILES``
+constant. Remove all references to the old XLIFF file in the Core. The mapping
+can be safely removed in the next major TYPO3 version.
 
 More information
 ================
