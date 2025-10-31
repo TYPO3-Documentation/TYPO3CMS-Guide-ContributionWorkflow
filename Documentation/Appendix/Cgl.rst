@@ -89,10 +89,10 @@ label reference can be separated by dots, for example:
 
 ..  code-block:: xml
 
-    <trans-unit id="my-field.title">
+    <trans-unit id="my_field.title">
         <source>My title</source>
     </trans-unit>
-    <trans-unit id="my-field.description">
+    <trans-unit id="my_field.description">
         <source>My description</source>
     </trans-unit>
 
