@@ -266,7 +266,7 @@ and mark it as deprecated with an ``x-unused-since`` attribute:
     </trans-unit>
 
 The label can then be completely removed in the next major TYPO3 version (the
-label must be no longer be referenced in the Core.)
+label must not be referenced any longer in the Core.)
 
 Note that some label references use computed label strings, so check
 these carefully before removal.
