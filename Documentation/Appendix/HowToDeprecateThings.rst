@@ -249,6 +249,7 @@ Example:
         $value = $this->TS_AtagToAbs($value);
         // ...
     }
+
 ..  _deprecate-language-reference:
 
 Deprecate a language label reference
