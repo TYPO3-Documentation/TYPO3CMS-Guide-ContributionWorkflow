@@ -73,8 +73,8 @@ XLIFF file naming
 XLIFF files have historically been named with file names starting with
 `locallang_`. Newly introduced XLIFF files should drop the `locallang_`
 prefix and only be named according to their purpose, for example
-`clipboard.xlf` or `db/tt_content.xlf`. Newly introduced file and path
-names should use *lower camel case*.
+`clipboard.xlf` or `db/tt_content.xlf`. Newly introduced file
+names should use **snake_case**.
 
 TCA-related XLIFF files should either be called `db.xlf` or be stored in a
 folder named `db`, for example `db/tt_content.xlf`.
