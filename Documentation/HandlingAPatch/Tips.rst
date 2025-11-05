@@ -313,6 +313,19 @@ Testing
 *   Is there a need to add **unit/functional testing** for specific changes
 *   Are **regression tests** for a bugfix needed?
 
+..  _common-review-checks-acceptance:
+
+Acceptance Tests
+~~~~~~~~~~~~~~~~
+
+*   Does the proposed patch work functionally, does it implement what the commit message
+    offers?
+*   Are acceptance tests for this needed (Playwright for new ones) and if they are implemented,
+    do they cover all needed functionality?
+*   If backend GUI functionality is involved, does the functionality work as both Admin as well
+    as restricted users? Especially important if any "isAdmin" checks are involved, and how
+    the functionality gracefully resolves as non-admin.
+
 ..  _common-review-checks-formalities:
 
 Formalities
