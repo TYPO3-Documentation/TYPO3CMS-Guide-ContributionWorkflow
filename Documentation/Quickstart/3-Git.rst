@@ -21,7 +21,7 @@ Quick Start: Set up Git repository
 1.  Init directory and clone Repository
 
     ..  code:: bash
-        :caption: **Create contribution folder and clone TYPO3 into a it**
+        :caption: **Create contribution folder and clone TYPO3 into it**
 
             mkdir -p $HOME/work/TYPO3-Contribute && \
                 cd $HOME/work/TYPO3-Contribute && \
