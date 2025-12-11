@@ -60,8 +60,13 @@ Xliff files
 ===========
 
 Language files are usually stored in a Folder Resources/Private/Language
-in files with the ending *.xlf*. While no tabs are allowed to indent
-in PHP files, you should edit Xliff files using tabs.
+in files with the ending *.xlf*. Xliff files are indented using 2 spaces. 
+The following command normalizes your XLIFF files:
+
+..  code-block:: bash
+
+    Build/Scripts/runTests.sh -s normalizeXliff
+    
 Please also check :ref:`common-review-checks-xlf` for Xliff-specific things
 to pay attention to.
 
