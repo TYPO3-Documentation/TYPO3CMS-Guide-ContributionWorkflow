@@ -1,3 +1,5 @@
+:navigation-title: How to deprecate
+
 ..  include:: /Includes.rst.txt
 
 ..  index::
@@ -6,7 +8,7 @@
 ..  _deprecations:
 
 ========================================================================
-How to deprecate classes, methods, arguments and hooks in the TYPO3 core
+How to deprecate classes, methods, arguments and hooks in the TYPO3 Core
 ========================================================================
 
 TYPO3 Core development policy states that public API will not be changed
@@ -257,16 +259,35 @@ Deprecate a language label reference
 
 If you move or remove a language label from the Core, third-party extensions and
 projects may still depend on it. Therefore, it is good practice to keep the original label
-and mark it as deprecated with an ``x-unused-since`` attribute:
+and mark it as deprecated with an `x-unused-since` attribute for XLIFF 1.2 or the
+`subState="deprecated"` property for XLIFF 2.0 files:
 
-..  code-block:: xml
+..  tabs::
 
-    <trans-unit id="CType_formlabel" x-unused-since="14.0">
-        <source>Type</source>
-    </trans-unit>
+    ..  group-tab:: XLIFF 1.2
+
+        ..  code-block:: xml
+        
+            <trans-unit id="CType_formlabel" x-unused-since="14.0">
+                <source>Type</source>
+            </trans-unit>
+
+    ..  group-tab:: XLIFF 2.0
+
+        ..  code-block:: xml
+
+            <unit id="label5">
+                <segment subState="deprecated">
+                    <source>This is label #5 (deprecated in English)</source>
+                </segment>
+            </unit>
 
 The label can then be completely removed in the next major TYPO3 version (the
 label must not be referenced any longer in the Core.)
+
+A deprecation warning is triggered the first time a deprecated label is written
+to the cache. Subsequent resolutions of the same label use the cached entry and do
+not trigger additional warnings until the cache is cleared.
 
 Note that some label references use computed label strings, so check
 these carefully before removal.
