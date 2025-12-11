@@ -49,8 +49,8 @@ Quick Start: Set up DDEV
         Once completed, your configuration will be written to /.../TYPO3-Contribute/.ddev/config.yaml.
 
         Configuring a 'typo3' named 't3c-main' project with docroot '.' at /.../TYPO3-Contribute
-        TYPO3 does not seem to have been set up yet, missing LocalConfiguration.php (/.../TYPO3-Contribute/typo3conf/LocalConfiguration.php)
-        Generating AdditionalConfiguration.php file for database connection.
+        TYPO3 does not seem to have been set up yet, missing settings.php (/.../TYPO3-Contribute/typo3conf/system/settings.php)
+        Generating additional.php file for database connection.
         Configuration complete. You may now run 'ddev start'.
 
 2.  Start DDEV instance
