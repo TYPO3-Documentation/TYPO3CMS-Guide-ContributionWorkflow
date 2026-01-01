@@ -38,7 +38,19 @@ Quick Start: Set up DDEV
             \
             --timezone='Europe/Berlin' \
             --web-environment='TYPO3_CONTEXT=Development' \
-            --webimage-extra-packages='build-essential,locales-all'
+            --webimage-extra-packages='build-essential,locales'
+
+    ..  note::
+
+        Recent DDEV versions (≥ 1.24) use Debian 12 (Bookworm) as base image.
+        On Debian Bookworm, the package ``locales-all`` is no longer available
+        and has been replaced by ``locales``.
+
+        Older DDEV versions based on earlier Debian releases may still work
+        with ``locales-all``.
+
+        See:
+        https://packages.debian.org/bookworm/locales
 
     Adapt parameters as wanted.
 
