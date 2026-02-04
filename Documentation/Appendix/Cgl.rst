@@ -103,3 +103,32 @@ label reference can be separated by dots, for example:
 
 Existing labels should not be mass-changed to snake case, as each changed label
 must be retranslated into all languages.
+
+..  _appendix-cgl-xliff-domain-syntax:
+
+Utilizing "translation domain syntax"
+-------------------------------------
+
+With `Feature: #93334 - Translation Domain Mapping <https://docs.typo3.org/permalink/changelog:feature-93334-1729000000>`_
+and `Feature: #107759 - TranslateViewHelper supports translation domain syntax <https://docs.typo3.org/permalink/changelog:feature-107759-1729433323>`_
+the label localization within fluid template files and PHP code can be
+shortened:
+
+..  code-block:: fluid
+
+    <f:translate key="form.legend" domain="core.messages" />
+    <f:translate key="module.title" domain="core.module" />
+
+..  code-block:: php
+
+    $languageService->sL('backend.toolbar:save');
+    
+This syntax is preferred and should be utilized for any new code committed
+to TYPO3 v14+ because of these reasons:
+
+*   It is shorter, easier to read, has no odd "LLL:EXT:" magic notation
+*   Applies conventions of Symfony translation usage in other frameworks
+*   Allows better automatic extraction and analysis (CLI commands)
+*   Allows for better deprecations and usage analysis
+
+Detailed reasons are found in the mentioned changelogs.
