@@ -126,7 +126,7 @@ shortened:
 This syntax is preferred and should be utilized for any new code committed
 to TYPO3 v14+ because of these reasons:
 
-*   It is shorter, easier to read, has no odd "LLL:EXT:" magic notation
+*   It is shorter, easier to read, has no odd `LLL:EXT:` magic notation
 *   Applies conventions of Symfony translation usage in other frameworks
 *   Allows better automatic extraction and analysis (CLI commands)
 *   Allows for better deprecations and usage analysis
