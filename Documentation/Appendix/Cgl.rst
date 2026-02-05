@@ -111,7 +111,7 @@ Utilizing "translation domain syntax"
 
 With `Feature: #93334 - Translation Domain Mapping <https://docs.typo3.org/permalink/changelog:feature-93334-1729000000>`_
 and `Feature: #107759 - TranslateViewHelper supports translation domain syntax <https://docs.typo3.org/permalink/changelog:feature-107759-1729433323>`_
-the label localization within fluid template files and PHP code can be
+the label localization within Fluid template files and PHP code can be
 shortened:
 
 ..  code-block:: html
