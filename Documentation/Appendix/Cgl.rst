@@ -114,7 +114,7 @@ and `Feature: #107759 - TranslateViewHelper supports translation domain syntax <
 the label localization within fluid template files and PHP code can be
 shortened:
 
-..  code-block:: fluid
+..  code-block:: html
 
     <f:translate key="form.legend" domain="core.messages" />
     <f:translate key="module.title" domain="core.module" />
