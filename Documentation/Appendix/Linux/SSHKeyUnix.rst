@@ -10,4 +10,4 @@
 Creating a SSH Public Key on Unix/Linux
 =======================================
 
-Please refer to :ref:`OSX section <ssh-key-osx>` about generation of SSH keys, it is the same way.
+See the identical chapter from :ref:`OSX section <ssh-key-osx>`. It is done in the same way.
