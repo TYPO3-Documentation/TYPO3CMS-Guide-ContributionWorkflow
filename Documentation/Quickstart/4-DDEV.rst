@@ -26,7 +26,7 @@ Quick Start: Set up DDEV
             --project-type='typo3' \
             --docroot='.' \
             --database='mariadb:10.11' \
-            --php-version='8.2' \
+            --php-version='8.5' \
             --composer-version='stable' \
             --nodejs-version='22' \
             \

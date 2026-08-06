@@ -93,6 +93,6 @@ We will use:
 * **John Doe** to be your name.
 * **john.doe@example.com** to be your email address that you used for all accounts.
 * **john-doe** to be your TYPO3.org username.
-* A TYPO3 **legacy mode** installation (Non-Composer) with MariaDB 10.11 and PHP 8.2.
+* A TYPO3 **legacy mode** installation (Non-Composer) with MariaDB 10.11 and PHP 8.5.
 
-Adjust any occurences of this to match your environment.
+Adjust any occurrences of this to match your environment.

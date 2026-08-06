@@ -81,7 +81,7 @@ or edit the configuration file :file:`.ddev/config.yaml` manually.
 ..  code-block:: shell
 
     # Set correct PHP version:
-    ddev config --php-version='8.2'
+    ddev config --php-version='8.5'
 
     # Change to Apache webserver because using htaccess rules works out of the TYPO3-box
     # and needs no custom NGINX configuration

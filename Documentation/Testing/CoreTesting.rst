@@ -110,9 +110,9 @@ Let's pick a :file:`runTests.sh` example and have a closer look:
 ..  code-block:: shell
 
     lolli@apoc /var/www/local/cms/Web $ Build/Scripts/runTests.sh -s functional typo3/sysext/core/Tests/Functional/Authentication/
-    PHPUnit 11.2.5 by Sebastian Bergmann and contributors.
+    PHPUnit 11.5.55 by Sebastian Bergmann and contributors.
 
-    Runtime:       PHP 8.2.19
+    Runtime:       PHP 8.5
     Configuration: /Users/garvin/TYPO3/typo3-core-bugreproduce-base/typo3-core/Build/phpunit/FunctionalTests.xml
 
     ................................................................. 65 / 67 ( 97%)
@@ -125,7 +125,7 @@ Let's pick a :file:`runTests.sh` example and have a closer look:
     ###########################################################################
     Result of functional
     Container runtime: docker
-    PHP: 8.2
+    PHP: 8.5
     DBMS: sqlite
     SUCCESS
     ###########################################################################
@@ -138,7 +138,7 @@ Let's pick a :file:`runTests.sh` example and have a closer look:
 The command asks :file:`runTests.sh` to execute the "functional" test suite `-s functional` and to not execute all
 available tests but only those within `typo3/sysext/core/Tests/Functional/Authentication/`. The script first
 starts the containers it needs: Redis, memcached (previously also MariaDB by default, which is now using
-SQLite instead, due to less dependencies). All in one network. It then starts a PHP 8.2 container and calls
+SQLite instead, due to less dependencies). All in one network. It then starts a PHP 8.5 container and calls
 phpunit from there to execute the tests. phpunit executes only one test in this case, that one is green. The containers
 and networks are then removed again. Note the exit code of :file:`runTests.sh` (`echo $?`) is identical to the exit
 code of the phpunit call: If phpunit reports green, :file:`runTests.sh` returns 0, and if phpunit is red, the exit code
@@ -167,14 +167,14 @@ tests, but there is more:
 
 ..  code-block:: shell
 
-    # Execute the unit test suite with PHP 8.3
-    Build/Scripts/runTests.sh -s unit -p 8.3
+    # Execute the unit test suite with PHP 8.5
+    Build/Scripts/runTests.sh -s unit -p 8.5
 
     # Execute some backend acceptance tests
     Build/Scripts/runTests.sh -s acceptance typo3/sysext/core/Tests/Acceptance/Backend/Topbar/
 
-    # Execute some functional tests with PHP 8.2 and postgres DBMS
-    Build/Scripts/runTests.sh -s functional -p 8.2 -d postgres typo3/sysext/core/Tests/Functional/Package/
+    # Execute some functional tests with PHP 8.5 and postgres DBMS
+    Build/Scripts/runTests.sh -s functional -p 8.5 -d postgres typo3/sysext/core/Tests/Functional/Package/
 
     # Execute the cgl fixer
     Build/Scripts/runTests.sh -s cglGit
@@ -232,7 +232,7 @@ stops at this line and opens the debug window.
 
 ..  code-block:: shell
 
-    Build/Scripts/runTests.sh -x -s functional -p 8.1 -d postgres typo3/sysext/core/Tests/Functional/Package/RuntimeActivatedPackagesTest.php
+    Build/Scripts/runTests.sh -x -s functional -p 8.5 -d postgres typo3/sysext/core/Tests/Functional/Package/RuntimeActivatedPackagesTest.php
 
 The important flag here is `-x`! This is available for unit and functional testing. It enables xdebug
 in the PHP container and sends all debug information to port 9000 of the host system. If a local PhpStorm

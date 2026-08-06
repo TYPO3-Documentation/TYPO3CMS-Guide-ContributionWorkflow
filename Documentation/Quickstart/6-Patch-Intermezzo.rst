@@ -130,9 +130,9 @@ with an output like:
 
 ..  code:: text
 
-    PHPUnit 11.2.5 by Sebastian Bergmann and contributors.
+    PHPUnit 11.5.55 by Sebastian Bergmann and contributors.
 
-    Runtime:       PHP 8.2.20
+    Runtime:       PHP 8.5
     Configuration: /.../TYPO3-Contribute/Build/phpunit/UnitTests.xml
 
     ..                                                                  2 / 2 (100%)
@@ -144,7 +144,7 @@ with an output like:
     ###########################################################################
     Result of unit
     Container runtime: docker
-    PHP: 8.2
+    PHP: 8.5
     SUCCESS
     ###########################################################################
 
