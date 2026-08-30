@@ -77,4 +77,4 @@ Quick Start: Set up DDEV
         Waiting for additional project containers to become ready...
         All project containers are now ready.
         Successfully started t3c-main
-        Project can be reached at https://t3c-main.ddev.site https://t3c-dev.ddev.site.ddev.site https://t3c-prod.ddev.site.ddev.site https://127.0.0.1:32802
+        Project can be reached at https://t3c-main.ddev.site https://t3c-dev.ddev.site https://t3c-prod.ddev.site https://127.0.0.1:32802
