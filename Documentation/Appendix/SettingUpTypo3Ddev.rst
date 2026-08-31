@@ -81,7 +81,7 @@ or edit the configuration file :file:`.ddev/config.yaml` manually.
 ..  code-block:: shell
 
     # Set correct PHP version:
-    ddev config --php-version='8.2'
+    ddev config --php-version='8.5'
 
     # Change to Apache webserver because using htaccess rules works out of the TYPO3-box
     # and needs no custom NGINX configuration
@@ -89,7 +89,7 @@ or edit the configuration file :file:`.ddev/config.yaml` manually.
 
     # Add necessary packages for the npm build process,
     # (only needed if you are working on assets):
-    ddev config --nodejs-version='22'
+    ddev config --nodejs-version='24'
     ddev config --webimage-extra-packages='automake,build-essential,locales-all'
 
 Optionally, set a new HTTP/HTTPS port to avoid conflicts with local defaults.
