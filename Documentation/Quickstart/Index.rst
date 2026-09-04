@@ -20,15 +20,15 @@ Quick Start: Get ready to contribute to TYPO3 in under 30 minutes!
     Don't be afraid! You don't directly push "live code", but instead this
     automatically triggers a workflow on our code review system
     `Gerrit <https://review.typo3.org/>`_. This is where comments
-    are made, additional changes pushed (as ammended commits, with
+    are made, additional changes pushed (as amended commits, with
     distinct "patch sets") and in the end merged by a member of the
-    Core team.
+    TYPO3 Core Team.
 
 This `Tutorial` / `How To` will show you the easiest and
-*quickest way to become a contributor* to TYPO3.
+*quickest way to become a contributor* to TYPO3 Core.
 
-It is aimed at developers who have a *good general knowledge*,
-but need to know the *specifics and rules* of TYPO3 contributions.
+It is aimed at developers who have a *good general knowledge*.
+They need to know the *specifics and rules* of TYPO3 contributions.
 
 We will use *very brief wording* and only few "read further" hints to
 *streamline the process* with conventions. Please check out the
@@ -120,7 +120,7 @@ These are the sections:
 
                 *   **Install TYPO3**
 
-                *   Enable **EXT:styleguide**
+                *   Activate **EXT:styleguide**
 
                 *   Launch **TYPO3 Backend**
 
