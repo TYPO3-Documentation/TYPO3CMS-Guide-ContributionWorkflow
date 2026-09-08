@@ -160,4 +160,3 @@ re-execute the test, you will see it will properly report a failure.
 
 This concludes stating an intent for contributing a patch and you have a modified
 file plus a test to contribute. Continue on :ref:`quickstart-patch`!
-

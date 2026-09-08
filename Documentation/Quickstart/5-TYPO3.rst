@@ -113,4 +113,3 @@ Quick Start: Set up TYPO3
         :caption: **Open up the TYPO3 Backend for the ddev instance**
 
         ddev launch typo3
-
