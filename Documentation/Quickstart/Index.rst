@@ -14,7 +14,7 @@ Quick Start: Get ready to contribute to TYPO3 in under 30 minutes!
 ..  hint::
 
     The TYPO3 contribution workflow is a bit **different compared to
-    Gitlab Merge Requests (MR) or GitHub Pull Requests (PR)**. 
+    Gitlab Merge Requests (MR) or GitHub Pull Requests (PR)**.
     Once you set up Git with your credentials (explained in these chapters),
     you can directly push code to the `main` branch of TYPO3's own Git.
     Don't be afraid! You don't directly push "live code", but instead this

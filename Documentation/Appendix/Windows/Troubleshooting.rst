@@ -62,4 +62,3 @@ Checklist for SSH problems
     ..  code-block:: bash
 
         C:\Users\<username>\.ssh\
-

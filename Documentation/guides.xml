@@ -12,7 +12,7 @@
                interlink-shortcode="t3contribute"
             />
     <project title="TYPO3 Core Contribution Guide"
-            release="main" 
+            release="main"
             version="main"
             copyright="since 2015 by the TYPO3 contributors"/>
 </guides>

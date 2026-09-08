@@ -267,7 +267,7 @@ and mark it as deprecated with an `x-unused-since` attribute for XLIFF 1.2 or th
     ..  group-tab:: XLIFF 1.2
 
         ..  code-block:: xml
-        
+
             <trans-unit id="CType_formlabel" x-unused-since="14.0">
                 <source>Type</source>
             </trans-unit>

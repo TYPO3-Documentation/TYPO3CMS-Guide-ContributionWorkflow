@@ -76,4 +76,3 @@ to list them. You will see something like:
     gerrit:setup:commitMessageHook:enable  Enable the commit message hook needed for gerrit
     gerrit:setup:preCommitHook:disable     Disable pre commit hook to run some checks locally
     gerrit:setup:preCommitHook:enable      Enable pre commit hook to run some checks locally
-

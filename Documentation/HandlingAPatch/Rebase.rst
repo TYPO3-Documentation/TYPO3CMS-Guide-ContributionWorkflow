@@ -138,6 +138,3 @@ using the upstream branch (latest main branch).
 
 *   `StackOverflow: Difference between git pull and git pull --rebase
   <https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase>`__
-
-
-

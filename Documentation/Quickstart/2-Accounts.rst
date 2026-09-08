@@ -41,4 +41,3 @@ Quick Start: Accounts needed
 
     You need to register an account for Slack, see `https://typo3.org/community/meet/chat-slack/`__
     and :ref:`slack-account`.
-

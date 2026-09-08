@@ -200,4 +200,3 @@ Now with this example in mind, we have two modified files that we want to commit
     The TYPO3 community is thankful for you following this guide, and we
     hope once you have set up your development environment for it
     you can enjoy being an active contributor!
-
