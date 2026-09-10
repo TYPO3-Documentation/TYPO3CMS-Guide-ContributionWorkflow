@@ -114,8 +114,8 @@ This is what you can do:
 *   Act helpful and friendly: Chances are higher that your patch will be merged
     if the way you are communicating is fair. This is even more important for
     reviewers and active contributors, we do not allow ranters and haters in our
-    team  and we try to stick to our
-    `Code of conduct <https://docs.typo3.org/permalink/guide-policy:coc>`__
+    team and we try to stick to our
+    `Code of conduct <https://docs.typo3.org/permalink/guide-policy:coc>`__.
     Please keep that in mind when working with us. You will be rewarded with
     the pleasure of working with a group of pretty smart people if you act
     accordingly.
