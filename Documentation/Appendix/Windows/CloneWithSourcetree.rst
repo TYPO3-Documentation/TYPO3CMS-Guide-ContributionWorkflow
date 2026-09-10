@@ -128,7 +128,7 @@ following command to the bash and execute it:
 
 ..  code-block:: bash
 
-    curl -o .git/hooks/commit-msg "https://typo3.org/fileadmin/resources/git/commit-msg.txt" && chmod +x .git/hooks/commit-msg
+    cp Build/git-hooks/commit-msg .git/hooks/commit-msg && chmod +x .git/hooks/commit-msg
 
 ..  note::
 

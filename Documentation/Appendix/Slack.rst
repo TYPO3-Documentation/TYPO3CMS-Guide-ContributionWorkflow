@@ -28,5 +28,5 @@ You do not need to ask for permission when asking a question. Ask your question 
 in the channel and wait for a response.
 
 
-As always, make sure to follow the `Code of conduct <https://typo3.org/community/code-of-conduct/>`__
+As always, make sure to follow the `Code of conduct <https://docs.typo3.org/permalink/guide-policy:coc>`__
 or the short form: **be nice, be helpful!**

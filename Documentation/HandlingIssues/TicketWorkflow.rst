@@ -82,8 +82,7 @@ Status
     Please bear in mind that this status does not mean someone immediately
     begins to work on it. It is just a status that developers can use to
     search for accepted issues to work on. And it is a good pool of issues
-    to address for example in remote or on-site Code sprints (see
-    `https://typo3.org/community/meet/regular-open-sprints`__).
+    to address for example in remote or on-site Code sprints.
 
 #.  In Progress
 
