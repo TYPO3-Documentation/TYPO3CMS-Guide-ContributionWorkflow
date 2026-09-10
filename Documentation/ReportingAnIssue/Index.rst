@@ -104,7 +104,7 @@ Talk to the core team
     bug or feature) yourself, but need some guidance on how to approach it,
     don't hesitate to talk to us on `Slack <https://typo3.slack.com>`__
     in the **#typo3-cms-coredev**
-    channel. (Remember to `register <https://forger.typo3.com/slack>`__
+    channel. (Remember to `register <https://typo3.community/meet/slack>`__
     first.) This channel is not a support channel for end-users. Those needs
     are covered by `https://typo3.org/help`__.
 
