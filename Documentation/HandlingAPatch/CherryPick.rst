@@ -26,7 +26,7 @@ to cherry-pick it from the review system into your local git repository.
 
 1.  Find the review on Gerrit
 
-    see :ref:`Find-a-review`
+    see :ref:`Find a review on Gerrit <Find-a-review>`
 
 2.  Select the latest patchset and click download
 
@@ -81,4 +81,4 @@ to cherry-pick it from the review system into your local git repository.
     Depending on the changes made by the patch, you may have to apply some changes
     to your TYPO3 installation as well. Also, if the last time you pulled from the
     GitHub repository is some time ago, you may need to pull the most recent
-    dependencies. And you may need to rebuild the CSS/JS assets. See :ref:`cleanup-typo3`.
+    dependencies. And you may need to rebuild the CSS/JS assets. See :ref:`cleaning up the TYPO3 installation <cleanup-typo3>`.

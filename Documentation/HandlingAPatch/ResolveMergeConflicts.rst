@@ -119,7 +119,7 @@ views on Forger.
 In that case, you will need to resolve the conflicts in
 some way.
 
-See next section :ref:`how-to-resolve-merge-conflicts` for more information about
+See next section :ref:`how to resolve conflicts <how-to-resolve-merge-conflicts>` for more information about
 resolving merge conflicts.
 
 ..  index::

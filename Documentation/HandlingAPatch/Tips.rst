@@ -86,7 +86,8 @@ your patch and to help getting it reviewed (and eventually merged):
     coordinated in direct chat. The TYPO3 CMS team uses Slack as
     instant communication platform. You are always welcome to join the
     #typo3-cms-coredev channel and ask for help on your pending patches.
-    Please see :ref:`slack` for more information on how to join slack.
+    Please see :ref:`Slack <appendix-slack-intro>` for more information on how to
+    join Slack.
     Joining the #typo3-cms-coredev Slack channel usually helps sorting out
     things and gives a much better feeling on how the team works
     and what is going on.
@@ -214,7 +215,7 @@ Decide about general issues before fixing nitpicks
 
 **First, think about the solution itself and if that is ok, fix nitpicks!**
 
-Core patches must follow our general :ref:`t3coreapi:cgl` to get maintainable,
+Core patches must follow our general :ref:`Coding guidelines <t3coreapi:cgl>` to get maintainable,
 readable and quickly understandable source code. In general, patches are not merged
 before the CGL are followed.
 
@@ -359,7 +360,7 @@ Documentation
     for help on creating files like this.
 *   Is the provided commit message, reST files and the code itself aligned? Sometimes in the process
     of reworking a patch multiple times, these three place of documentation can become out of sync.
-*   Does your patch **deprecate** anything? If so, have you followed :ref:`deprecations`?
+*   Does your patch **deprecate** anything? If so, have you followed :ref:`how to deprecate classes, methods, arguments and hooks <deprecations>`?
 
 ..  _common-review-checks-xlf:
 

@@ -54,7 +54,7 @@ which has this code at `line 188`:
 
     Before making any changes and creating a patch, it's important to ensure a
     clean state in the repository, which means that a `git status` should tell
-    you `nothing to commit, working tree clean`. Also see :ref:`reset-to-a-clean-state`
+    you `nothing to commit, working tree clean`. Also see :ref:`cleaning up the git repository <reset-to-a-clean-state>`
     for details.
 
 ..  code:: php
@@ -159,4 +159,4 @@ re-execute the test, you will see it will properly report a failure.
     this is beyond the scope of this chapter.
 
 This concludes stating an intent for contributing a patch and you have a modified
-file plus a test to contribute. Continue on :ref:`quickstart-patch`!
+file plus a test to contribute. Continue on :ref:`Quick Start: Create a patch <quickstart-patch>`!

@@ -12,7 +12,7 @@ Review a patch as a Core Merger
 
 ..  include:: /_includes/CoreMergers.rst.txt
 
-Please see :ref:`reviewPatch` for general information on how to review a
+Please see :ref:`Review a patch <reviewPatch>` for general information on how to review a
 patch, also the :ref:`cheat-sheet on common review issues <common-review-checks>`.
 
 As a Core Merger you have a huge responsibility because your vote (or misvote)

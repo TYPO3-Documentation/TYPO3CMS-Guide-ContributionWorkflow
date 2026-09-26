@@ -22,7 +22,7 @@ Create a Patch
 *   :ref:`Commit Message rules <commitmessage>`
 *   :ref:`Deprecations <deprecations>`
 *   :ref:`Testing <testing>`
-*   :ref:`Adding-documentation`
+*   :ref:`Add Documentation <Adding-documentation>`
 
 So you want to fix a bug or add a new feature to TYPO3? **Great!**
 
@@ -31,7 +31,7 @@ So you want to fix a bug or add a new feature to TYPO3? **Great!**
     If you
     should encounter any problems or have questions, talk to us on
     https://typo3.slack.com in the **#typo3-cms-coredev** channel
-    (see :ref:`appendix-slack-intro`).
+    (see :ref:`Slack <appendix-slack-intro>`).
 
 
 ..  _Bugfixing-prerequisites:
@@ -50,7 +50,7 @@ as described in :ref:`setup <setup>` (or via the
 
 1.  Create an Issue on Forge
 
-    More information: :ref:`bugreporting-index`
+    More information: :ref:`Report an Issue <bugreporting-index>`
 
     Every patch must have a matching issue on
     `Forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__,
@@ -65,7 +65,7 @@ as described in :ref:`setup <setup>` (or via the
     medieval times of PHP4. Yes, TYPO3 has been around for quite some time now. And
     there is ancient code we didn't have to touch yet because it just works.
 
-    Make sure to look at :ref:`deprecations` in the Appendix for information
+    Make sure to look at :ref:`how to deprecate classes, methods, arguments and hooks <deprecations>` in the Appendix for information
     about how to deprecate things if you need to make changes to the public API.
 
     For new features, breaking changes and deprecations, it is necessary to :ref:`add
@@ -81,18 +81,18 @@ as described in :ref:`setup <setup>` (or via the
     See :ref:`Testing the core <testing>` in TYPO3 Explained for more information
     about writing and running tests.
 
-    Once you have finalized your patch, check out the :ref:`common-review-checks`
+    Once you have finalized your patch, check out the :ref:`Common code review checks <common-review-checks>`
     for a list of what kind of review checks people may perform on your contribution.
     Stay ahead of the game and address those yourself first.
 
 3.  Commit your changes
 
-    Please make sure that you read the :ref:`commitmessage` in the Appendix.
+    Please make sure that you read the :ref:`commit message rules <commitmessage>` in the Appendix.
     Your code will not be merged if it does not follow the commit message
     rules.
 
     ..  important::
-        The section :ref:`commitmessage` is a must-read. Read it. Follow it.
+        The section :ref:`the commit message rules <commitmessage>` is a must-read. Read it. Follow it.
 
     For a bugfix, your commit message may look something like this:
 
@@ -144,7 +144,7 @@ as described in :ref:`setup <setup>` (or via the
 
         git push origin HEAD:refs/for/main
 
-    If you have setup the default as described in :ref:`git-setup-remote`
+    If you have setup the default as described in :ref:`Setting up Your Remote <git-setup-remote>`
     it is sufficient to use:
 
     ..  code-block:: bash
@@ -153,7 +153,7 @@ as described in :ref:`setup <setup>` (or via the
         git push
 
     In case you want to push a "Work in progress", check out:
-    :ref:`git-work-in-progress`.
+    :ref:`the work in progress workflow <git-work-in-progress>`.
 
     If Gerrit accepts your push, it responds with the following messages:
 
@@ -200,7 +200,7 @@ dozens of requests each day, so expect a succinct response that is short and to 
 You will get notified by email, if there is activity on your patch in Gerrit
 (e.g. votes, comments, new patchsets, merge etc.).
 
-Check out the section :ref:`reviewPatch` for more about this process, in which you can
+Check out the section :ref:`Review a patch <reviewPatch>` for more about this process, in which you can
 also be involved!
 
 It is not unusual for a patch to get comments requesting changes. If that happens,
@@ -220,16 +220,16 @@ Next Steps
 ==========
 
 You will find some more information about the review process in the chapter
-:ref:`lifeOfAPatch`. The following pages are especially relevant
+:ref:`handling and improving a patch <lifeOfAPatch>`. The following pages are especially relevant
 for new contributors:
 
-*   :ref:`new-contributors-tips`
-*   :ref:`Working-with-Gerrit` describes the review tool Gerrit.
-*   :ref:`Find-a-review` is helpful if you don't know how to find your patch on Gerrit.
+*   :ref:`the tips for new contributors <new-contributors-tips>`
+*   :ref:`the introduction to Gerrit <Working-with-Gerrit>` describes the review tool Gerrit.
+*   :ref:`Find a review on Gerrit <Find-a-review>` is helpful if you don't know how to find your patch on Gerrit.
 *   Gerrit works with up- and downvoting patches. A patch must get a specific number of
-    upvotes before it can be merged. :ref:`lifeOfAPatch-review` gives
+    upvotes before it can be merged. :ref:`Code Review <lifeOfAPatch-review>` gives
     an introduction to how this works.
 *   When you make additional changes to your patch, make sure you do not add another
     commit. Append to your original commit instead as described in
-    :ref:`lifeOfAPatch-improve-patch`.
-*   Before starting to work on a new, unrelated patch you need to run the :ref:`cleanup-tasks`.
+    :ref:`Upload a new Patch Set <lifeOfAPatch-improve-patch>`.
+*   Before starting to work on a new, unrelated patch you need to run the :ref:`Cleanup tasks <cleanup-tasks>`.

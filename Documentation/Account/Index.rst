@@ -21,9 +21,9 @@ These are the TYPO3 online tools you will be using. For these you need a typo3.o
 
 Follow the instructions to setup your accounts:
 
-*   :ref:`TYPO3Account`
-*   :ref:`GerritAccount`
-*   optional: :ref:`slack-account`
+*   :ref:`sign up for a TYPO3.org account <TYPO3Account>`
+*   :ref:`Setting up Gerrit (ssh) <GerritAccount>`
+*   optional: :ref:`Slack <slack-account>`
 
 ..  toctree::
     :maxdepth: 1

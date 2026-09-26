@@ -65,7 +65,7 @@ amending to the commit::
 The :file:`pre-commit` hook checks all added PHP files staged for the commit for Coding
 Guideline issues and will report any problems it finds.
 
-To fix the issues, see :ref:`cgl-fix-my-commit`.
+To fix the issues, see :ref:`CGL check and fix <cgl-fix-my-commit>`.
 
 After fixing the files you must amend your commit:
 

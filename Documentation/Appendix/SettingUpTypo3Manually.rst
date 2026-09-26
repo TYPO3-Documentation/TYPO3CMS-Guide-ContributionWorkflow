@@ -18,9 +18,9 @@ page.
 
 You will need to set up the prerequisites for your operating system. Look at the following for guidance:
 
-*   :ref:`setting-up-typo3-manually-linux`
+*   :ref:`setting up TYPO3 manually under Linux <setting-up-typo3-manually-linux>`
 
-You have cloned the TYPO3 git repository as described in :ref:`git-clone` and
+You have cloned the TYPO3 git repository as described in :ref:`git clone <git-clone>` and
 are in the directory which contains the local Git repository:
 
 ..  code-block:: shell

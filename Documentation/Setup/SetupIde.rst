@@ -12,7 +12,7 @@ Setup your IDE
 ==============
 
 In the Appendix, you can find some hints that might be useful for
-:ref:`phpstorm-setup`.
+:ref:`PhpStorm: Setup <phpstorm-setup>`.
 
 ..  index::
     single: Code Contribution Workflow; setup coding guidelines

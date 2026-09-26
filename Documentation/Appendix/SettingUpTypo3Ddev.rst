@@ -43,7 +43,7 @@ Prerequisites
     `Installation <https://ddev.readthedocs.io/en/latest/#installation>`__
     instructions.
 
-*   You have **cloned the TYPO3 git repository** as described in :ref:`git-clone` and
+*   You have **cloned the TYPO3 git repository** as described in :ref:`git clone <git-clone>` and
     have **switched to the directory** which contains the local git repository.
 
 ..  note::
@@ -129,7 +129,7 @@ It is recommended to run tasks such as :bash:`composer install` etc. via the
 :ref:`runTests.sh <runTests_sh>` script. We provide the direct commands in some
 places - in case there is good reason to run the commands directly. But, if you
 need the direct commands, you are encouraged to look them up
-using the instructions in :ref:`run-tests-directly-without-docker`.
+using the instructions in :ref:`the direct commands without Docker <run-tests-directly-without-docker>`.
 
 ..  tabs::
 
@@ -256,7 +256,7 @@ If you are in the middle of setting up a TYPO3 installation for core development
 
 ..  rst-class:: horizbuttons-primary-m
 
-*   :ref:`after-setup-typo3`.
+*   :ref:`Use EXT:styleguide <after-setup-typo3>`.
 
 ..  _ddev-next-resources:
 

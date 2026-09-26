@@ -35,7 +35,7 @@ Clone TYPO3 CMS Git repository into current directory:
 Setup
 =====
 
-For detailed setup instructions, please see: :ref:`Setting-up-your-Git-environment`
+For detailed setup instructions, please see: :ref:`Git Setup <Setting-up-your-Git-environment>`
 
 Migrations
 ==========
@@ -83,7 +83,7 @@ GitHub URL yet, you can switch like this:
 Workflow - common commands
 ==========================
 
-For details see :ref:`Fixing-a-bug-A-Z`
+For details see :ref:`Create a Patch <Fixing-a-bug-A-Z>`
 
 Reset repo to last remote commit in (remote) main branch:
 
@@ -122,7 +122,7 @@ Push changes to remote main branch on gerrit (default method):
     git push
 
 This assumes, you have correctly configured your remote as described in
-:ref:`git-setup-remote`. If not, you must explicitly push using the
+:ref:`Setting up Your Remote <git-setup-remote>`. If not, you must explicitly push using the
 `refs/for namespace <https://gerrit-review.googlesource.com/Documentation/concept-refs-for-namespace.html>`__:
 
 ..  code-block:: bash
@@ -132,7 +132,7 @@ This assumes, you have correctly configured your remote as described in
 
 ..  note::
     Pushing to `refs/publish` is deprecated, we now push to `refs/for`.
-    Check out :ref:`git-commit-with-message` on how to specify a distinct
+    Check out :ref:`Upload a new Patch Set <git-commit-with-message>` on how to specify a distinct
     small message alongsite your patch set.
 
 ..  _git-work-in-progress:
@@ -207,7 +207,7 @@ Push 12.4 branch:
 Workflow - commit msg
 =====================
 
-Details: :ref:`commitmessage`
+Details: :ref:`the commit message rules <commitmessage>`
 
 Example commit message for a bugfix:
 
@@ -234,7 +234,7 @@ Other keywords:
 
 *   subject < 52 chars (if possible, otherwise <= 72)
 *   other lines <= 72 chars
-*   hyperlinks with > 72 chars are allowed when required (:ref:`<commitmessage-links>`)
+*   hyperlinks with > 72 chars are allowed when required (:ref:`inserting links and long lines <commitmessage-links>`)
 
 ..  _cheatsheet-git-push-with-message:
 
