@@ -16,7 +16,7 @@ Quick Start: Accounts needed
 1.  My TYPO3 (`https://my.typo3.org`__)
 
     Vital account! Acts as a Single Sign On (SSO) provider for
-    several other services. See :ref:`TYPO3Account`.
+    several other services. See :ref:`sign up for a TYPO3.org account <TYPO3Account>`.
 
 2.  Gerrit (`https://review.typo3.org`__)
 
@@ -24,7 +24,7 @@ Quick Start: Accounts needed
     There, all patches are commented and voted/approved/rejected.
 
     First login via the `My TYPO3` SSO account. Afterwards you need to upload
-    your SSH public key here. See :ref:`GerritAccount`.
+    your SSH public key here. See :ref:`Setting up Gerrit (ssh) <GerritAccount>`.
 
 3.  Forge (`https://forge.typo3.org/`__)
 
@@ -40,4 +40,4 @@ Quick Start: Accounts needed
     The channel `#typo3-cms-coredev` is important.
 
     You need to register an account for Slack, see `https://typo3.org/community/meet/chat-slack/`__
-    and :ref:`slack-account`.
+    and :ref:`Slack <slack-account>`.

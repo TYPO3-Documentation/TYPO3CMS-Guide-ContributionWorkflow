@@ -12,10 +12,10 @@ Add Documentation
 
 **Quick links:**
 
-*   :ref:`h2document:Formatting-with-reST`
-*   :ref:`h2document:format-rest-cgl`
-*   :ref:`h2document:rest-cheat-sheet`
-*   :ref:`h2document:render-documentation-with-docker`
+*   :ref:`the reST cheat sheet <h2document:Formatting-with-reST>`
+*   :ref:`Coding guidelines for reST files <h2document:format-rest-cgl>`
+*   :ref:`the reST cheat sheet <h2document:rest-cheat-sheet>`
+*   :ref:`Rendering the Documentation folder locally with Docker <h2document:render-documentation-with-docker>`
 
 
 The documentation :doc:`TYPO3 Core Changelog <changelog:Index#typo3-core-changelog>`
@@ -65,12 +65,15 @@ participate in our review workflow) is this:
 
     Set up and clone the TYPO3 mono-repository as described in :ref:`Quickstart GIT <quickstart-git>`.
 
-    Note: the steps :ref:`<quickstart-ddev>` and :ref:`<quickstart-typo3>` are not needed for Documentation-only use.
+    Note: the steps :ref:`Set up DDEV <quickstart-ddev>` and
+    :ref:`Set up TYPO3 <quickstart-typo3>` are not needed for Documentation-only
+    use.
 
 4.  Start documenting
 
     Now you can start editing files in, for example, :file:`typo3/sysext/felogin/Documentation/Index.rst` and
-    when you are done, you can render the documentation (see :ref:`<render-extension>`) to verify
+    when you are done, you can render the documentation (see
+    :ref:`Render any system documentation locally <render-extension>`) to verify
     the look of your changes.
 
 5.  Create issue
@@ -87,7 +90,9 @@ participate in our review workflow) is this:
 
 6.  Submit patch
 
-    Now follow the steps outlined in :ref:`<quickstart-patch>`, and refer to the Documentation files
+    Now follow the steps outlined in
+    :ref:`Quick Start: Create a patch <quickstart-patch>`, and refer to the
+    Documentation files
     you edited, instead of the PHP files given as examples there. This will then submit your patch
     to our Gerrit review instance.
 
@@ -109,7 +114,7 @@ for some examples.
 
 Every file may optionally contain tags, but it must contain at least a
 `NotScanned`, `PartiallyScanned` or `FullyScanned` tag for the extension scanner.
-See :ref:`t3coreapi:extension-scanner` in TYPO3 Explained for more
+See :ref:`Extension scanner <t3coreapi:extension-scanner>` in TYPO3 Explained for more
 information.
 
 ..  _render-the-changelog:
@@ -299,8 +304,8 @@ are required for the Changelog. It will **not** do a reST syntax check.
 In order to make sure that your file contains no syntax errors and will
 be rendered correctly, do one or more of the following:
 
-*   Check out :ref:`h2document:format-rest-cgl`.
-*   :ref:`Render the Changelog locally <render-the-changelog>` with Docker or
+*   Check out :ref:`Coding guidelines for reST files <h2document:format-rest-cgl>`.
+*   :ref:`rendering the changelog locally <render-the-changelog>` with Docker or
     Podman and resolve all warnings.
 
 ..  index::
@@ -313,10 +318,10 @@ be rendered correctly, do one or more of the following:
 Policy for Changing the Main Documentation
 ==========================================
 
-Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi:start`,
-:ref:`t3tca:start` etc.) must be updated.
+Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`TYPO3 Explained <t3coreapi:start>`,
+:ref:`TCA Reference <t3tca:start>` etc.) must be updated.
 
-The procedure is documented in :ref:`h2document:update-docs`.
+The procedure is documented in :ref:`Apply Changelog entries to the docs <h2document:update-docs>`.
 
 ..  index::
     single: Documentation Contribution Workflow; Documenting System Extensions
@@ -331,23 +336,23 @@ directory in the respective system extension directory, e.g.
 :file:`typo3/sysext/form/Documentation`.
 
 Not all system extensions have their own documentation. Some documentation
-(e.g. for the system extension *core*) is maintained within the :ref:`t3coreapi:start`.
+(e.g. for the system extension *core*) is maintained within the :ref:`TYPO3 Explained <t3coreapi:start>`.
 
 If in doubt, ask in the **#typo3-cms-coredev** channel on Slack.
 
 For starting a system extension from scratch, please see
-:ref:`h2document:how-to-start-docs-extension`.
+:ref:`Use the init command to create the Documentation folder <h2document:how-to-start-docs-extension>`.
 
 For an overview of the rendered documentation for system extensions, see
 `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 
 When you have made changes to the documentation, you can render
 locally with docker to test your changes as described in
-:ref:`render-the-changelog`.
+:ref:`rendering the changelog locally <render-the-changelog>`.
 
 More Information
 ================
 
 *   See :doc:`Documenting Changes <changelog:Changelog/Howto#documenting-changes>`
     for more information on the Changelog
-*   See :ref:`extension-scanner` in TYPO3 Explained
+*   See :ref:`Extension scanner <extension-scanner>` in TYPO3 Explained

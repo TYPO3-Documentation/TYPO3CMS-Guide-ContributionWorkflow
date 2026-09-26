@@ -30,7 +30,7 @@ See :ref:`PhpStorm setup: CGL <phpstorm-setup-cgl>` for information on how
 to configure the correct coding style.
 
 The Appendix contains information on scripts to check / fix coding
-guideline issues: :ref:`cgl-fix-my-commit`
+guideline issues: :ref:`CGL check and fix <cgl-fix-my-commit>`
 
 Most PHP coding guidelines can be automatically applied with the command:
 
@@ -67,7 +67,8 @@ The following command normalizes your XLIFF files:
 
     Build/Scripts/runTests.sh -s normalizeXliff
 
-Please also check :ref:`common-review-checks-xlf` for Xliff-specific things
+Please also check :ref:`Xliff / language files <common-review-checks-xlf>` for
+Xliff-specific things
 to pay attention to.
 
 ..  _appendix-cgl-xliff-filename:

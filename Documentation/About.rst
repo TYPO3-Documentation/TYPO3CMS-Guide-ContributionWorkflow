@@ -51,7 +51,7 @@ you are looking for or browse through the menu.
 
 For example:
 
-*   :ref:`quickstart-create-a-patch` walks you through making a change in the TYPO3
+*   :ref:`Create a Patch <quickstart-create-a-patch>` walks you through making a change in the TYPO3
     core (e.g. fix a bug or create a new feature).
 
 
@@ -68,7 +68,7 @@ The chapters are structured as follows:
     that you already setup your environment.
 *   :guilabel:`ADDITIONAL INFORMATION` contains a cheat sheet
     :ref:`git cheat sheet <cheat-sheet-git>`, :guilabel:`Troubleshooting`
-    and the :ref:`appendix` which is a reference of some topics in more depth than what
+    and the :ref:`appendix <appendix>` which is a reference of some topics in more depth than what
     was described in the main section. These pages near the end of the manual assume
     that you are already familiar with contributing and serve as reference pages.
 
@@ -108,7 +108,7 @@ and the TYPO3 Documentation Team always appreciates support.
 If you want to support us, please join the slack channel `#typo3-documentation
 <https://typo3.slack.com/messages/C028JEPJL>`__.
 
-Have a look at :ref:`h2document:docs-contribute` for more information
+Have a look at :ref:`Contribute to the TYPO3 documentation <h2document:docs-contribute>` for more information
 about how to contribute to the TYPO3 documentation.
 
 And finally, as a last resort, you can get in touch with the

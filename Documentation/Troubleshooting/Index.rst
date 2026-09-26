@@ -214,7 +214,7 @@ Push: Invalid Key Format
 
 You get an error about an invalid key format. This might happen if you didn't save your key in the OpenSSH format but in a proprietary format like i.e. offered by PuTTY.
 
-Review the sections about creating a valid public/private key pair on your operating system: :ref:`gerrit-ssh`
+Review the sections about creating a valid public/private key pair on your operating system: :ref:`Setting up Gerrit (ssh) <gerrit-ssh>`
 
 A valid private key in OpenSSH format starts with the following lines:
 
@@ -285,6 +285,7 @@ When you push this change, it will create a new Patchset - this is expected beha
 In which TYPO3 release was a patch merged into?
 -----------------------------------------------
 
-See :ref:`<cheatsheet-git-included-in>` for information on how to use the
+See :ref:`where a patch was included <cheatsheet-git-included-in>` for
+information on how to use the
 :guilabel:`Included in` menu button to see, in which TYPO3 releases a patch
 was merged into.

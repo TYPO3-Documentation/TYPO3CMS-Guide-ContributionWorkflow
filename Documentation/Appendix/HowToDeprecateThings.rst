@@ -138,7 +138,7 @@ the future:
 Make class methods protected
 ============================
 
-This works in a similar way as :ref:`make-class-properties-protected`: The trait
+This works in a similar way as :ref:`making class properties protected <make-class-properties-protected>`: The trait
 :php:`TYPO3\CMS\Core\Compatibility\PublicMethodDeprecationTrait` allows to make
 public methods protected or private without breaking extensions.
 

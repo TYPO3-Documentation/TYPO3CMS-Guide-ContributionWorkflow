@@ -69,7 +69,7 @@ With your environment, you can:
 
         You may want to create a Bash alias for this, if you
         do it more often.
-        Also see :ref:`cleanup-typo3` for details.
+        Also see :ref:`cleaning up the TYPO3 installation <cleanup-typo3>` for details.
 
     After that, you should also log into the TYPO3 backend
     and ensure via the :guilabel:`Database Analyzer` that your
@@ -108,6 +108,6 @@ With your environment, you can:
 
     Further information on reviewing and contributing:
 
-    *  :ref:`core-contrib-quickstart`
-    *  :ref:`lifeOfAPatch`
-    *  :ref:`reviewPatch`
+    *  :ref:`Create a Patch <core-contrib-quickstart>`
+    *  :ref:`handling and improving a patch <lifeOfAPatch>`
+    *  :ref:`Review a patch <reviewPatch>`

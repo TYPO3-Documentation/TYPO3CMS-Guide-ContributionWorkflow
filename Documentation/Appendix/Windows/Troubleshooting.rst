@@ -35,7 +35,7 @@ Checklist for SSH problems
 
 1.  Make sure the **public** SSH key is stored in your Gerrit account.
 
-    See :ref:`GerritAccount`
+    See :ref:`Setting up Gerrit (ssh) <GerritAccount>`
 
 2.  Check if your **private** SSH key is in the correct OpenSSH format.
 

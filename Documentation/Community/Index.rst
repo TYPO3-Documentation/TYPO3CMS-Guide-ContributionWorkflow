@@ -24,7 +24,7 @@ Slack
 
 The main communication platform for TYPO3 is the Slack chat system. In
 order to register for Slack, you **first need a typo3.org account**
-and **then request a Slack account**. This is explained here: :ref:`slack-account`.
+and **then request a Slack account**. This is explained here: :ref:`Slack <slack-account>`.
 
 You can ask specific questions about contributing in the **#typo3-cms-coredev**
 channel, general TYPO3 questions should be asked in the **#typo3-cms** channel.

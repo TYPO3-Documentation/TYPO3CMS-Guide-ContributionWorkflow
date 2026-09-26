@@ -141,4 +141,4 @@ because it is not configured yet
 Next step
 =========
 
-Proceed with :ref:`setting-up-typo3-manually`.
+Proceed with :ref:`Setting up TYPO3 manually <setting-up-typo3-manually>`.

@@ -6,7 +6,7 @@
     needs changing, click :guilabel:`Edit on GitHub` on the top
     right corner of this page and add your suggestions.
 
-    For more information, see :ref:`h2document:docs-contribute`.
+    For more information, see :ref:`Contribute to the TYPO3 documentation <h2document:docs-contribute>`.
 
     For help, ask in **#typo3-documentation** on Slack (see
     https://my.typo3.org/index.php?id=35 to register).

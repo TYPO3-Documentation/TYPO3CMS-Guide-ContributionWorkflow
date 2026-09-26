@@ -318,14 +318,14 @@ the commit message:
 
 #.  Add a `Reverts`-line for the ticket that belongs to the original patch.
 
-You will find  more information about the life cycle of a patch here :ref:`lifeOfAPatch-Reverting-Patches`.
+You will find  more information about the life cycle of a patch here :ref:`Revert patches <lifeOfAPatch-Reverting-Patches>`.
 
 Commit Template
 ===============
 
 You can use a custom template for automatically generating a commit message with the basics.
 
-This is covered in the Git setup instructions, see :ref:`committemplate`.
+This is covered in the Git setup instructions, see :ref:`setting up a commit message template <committemplate>`.
 
 Bad summary lines examples vs. good examples
 ============================================

@@ -19,8 +19,8 @@ Git Setup
     If you are working on a previously cloned, older repository, you can skip
     this page but may need to make the following changes to your Git setup:
 
-    *   :ref:`migrate-master-main`
-    *   :ref:`migrateToGithub`
+    *   :ref:`Migrate master => main <migrate-master-main>`
+    *   :ref:`Migrate to GitHub <migrateToGithub>`
 
 These steps will walk you through your basic Git setup when working with TYPO3.
 
@@ -123,8 +123,8 @@ Install Your Commit Hooks
 
 There are two git hooks available for TYPO3 development:
 
-*   :ref:`commit-msg-hook`: required
-*   :ref:`pre-commit-hook`: optional, the pre-commit hook runs on Linux and
+*   :ref:`commit-msg Hook <commit-msg-hook>`: required
+*   :ref:`pre-commit Hook <pre-commit-hook>`: optional, the pre-commit hook runs on Linux and
     MacOS. To use the pre-commit hook on Windows you can use a tool like the
     `Git BASH <https://gitforwindows.org/>`__.
 
@@ -142,7 +142,7 @@ manually.
 
             composer gerrit:setup
 
-        More information: :ref:`custom-composer-commands`.
+        More information: :ref:`the custom TYPO3 Composer commands <custom-composer-commands>`.
 
     ..  group-tab:: Manual copy
 
@@ -231,7 +231,7 @@ Make Git use this file as a template for the commit message:
 
 
 For additional information about how to write a proper commit message
-see :ref:`commitmessage`.
+see :ref:`the commit message rules <commitmessage>`.
 
 
 ..  _git-show-config:
@@ -289,6 +289,6 @@ Or, compare the :file:`.git/config` file inside the repository:
 Other resources
 ===============
 
-*   :ref:`Troubleshooting`
+*   :ref:`Troubleshooting <Troubleshooting>`
 *   See :ref:`git cheat sheet <cheat-sheet-git>` for more git commands.
 *   We have compiled a list of more information for you in the :ref:`Appendix<appendix>` section.

@@ -17,12 +17,12 @@ Both steps are free for everyone in the OpenSource community, you are not requir
 a Core merger or Team member.
 
 If you're able to improve the patch yourself, your contribution would be very much appreciated.
-Visit :ref:`lifeOfAPatch-improve-patch` to find out more about how you can help improve patches.
+Visit :ref:`Upload a new Patch Set <lifeOfAPatch-improve-patch>` to find out more about how you can help improve patches.
 
 ..  seealso::
 
     *   :ref:`Find the patch <Find-a-review>`
-    *   :ref:`Introduction to Gerrit <Working-with-Gerrit>`
+    *   :ref:`the introduction to Gerrit <Working-with-Gerrit>`
 
 
 ..  index::
@@ -38,7 +38,7 @@ Code Review
 
 A basic code review is possible by using the Gerrit web interface.
 
-For some tips on what to review, check our :ref:`common-review-checks`.
+For some tips on what to review, check our :ref:`Common code review checks <common-review-checks>`.
 
 ..  rst-class:: bignums-xxl
 
@@ -102,7 +102,7 @@ Test a patch
 
 For testing the patch you need to import the change into your local repository.
 
-Look at :ref:`cherry-pick-a-patch` for information on how to do this.
+Look at :ref:`Cherry-pick a patch <cherry-pick-a-patch>` for information on how to do this.
 
 Test the patch in your local TYPO3 installation and verify the reported bug
 is fixed and no other bugs are introduced with the change.
@@ -111,7 +111,7 @@ Depending on the outcome of your tests, place your positive/negative vote
 in Gerrit, using the **Reply button**.
 
 If you want to help the author and provide an improved patch, continue with the section
-:ref:`lifeOfAPatch-improve-patch`.
+:ref:`Upload a new Patch Set <lifeOfAPatch-improve-patch>`.
 
 Otherwise throw the changes away, to bring your repository back to a clean state:
 
@@ -180,7 +180,7 @@ As soon as the patch has reached the approved status by getting a :guilabel:`+2`
 Hints on voting -1
 ------------------
 
-See also :ref:`reviewPatch` about the policies on voting and how to vote.
+See also :ref:`Review a patch <reviewPatch>` about the policies on voting and how to vote.
 
 In general, :guilabel:`-1` on reading and/or testing of a patch is a mechanism used to
 improve a patch. Still, -1 still takes a risk to kill someone elses patch

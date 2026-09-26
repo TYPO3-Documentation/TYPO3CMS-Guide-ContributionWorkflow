@@ -14,7 +14,7 @@
 Upload a new Patch Set
 ======================
 
-This chapter handles improving an existing patch. For creating a new patch, see :ref:`Fixing-a-bug-A-Z`.
+This chapter handles improving an existing patch. For creating a new patch, see :ref:`Create a Patch <Fixing-a-bug-A-Z>`.
 
 ..  rst-class:: bignums-xxl
 
@@ -22,7 +22,7 @@ This chapter handles improving an existing patch. For creating a new patch, see 
 
     The latest version of the patch is still in your local git repository. If not,
     you must cherry-pick the latest patch set from Gerrit as described in
-    :ref:`cherry-pick-a-patch`.
+    :ref:`Cherry-pick a patch <cherry-pick-a-patch>`.
 
 2.  Edit files to improve the patch
 
@@ -30,12 +30,12 @@ This chapter handles improving an existing patch. For creating a new patch, see 
 
     If you add functionality, it is a good idea to add tests.
 
-    See :ref:`t3coreapi:testing-writing-unit` in TYPO3 Explained for more information
+    See :ref:`Unit testing with the TYPO3 testing framework <t3coreapi:testing-writing-unit>` in TYPO3 Explained for more information
     about writing Unit Tests.
 
 4.  Test your changes (optional)
 
-    Run the TYPO3 testsuite locally, as described under :ref:`testing`. Otherwise,
+    Run the TYPO3 testsuite locally, as described under :ref:`Using runTests.sh <testing>`. Otherwise,
     don't worry, the automatic CI will do that for every committed patch set on the
     TYPO3 infrastructure.
 

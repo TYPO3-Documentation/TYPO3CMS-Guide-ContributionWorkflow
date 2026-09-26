@@ -22,9 +22,9 @@ of TYPO3. There are different ways how you can do this. We
 provide a few examples in the Appendix:
 
 *   :ref:`DDEV <setting-up-typo3-with-ddev>`
-*   :ref:`setting-up-typo3-manually`
+*   :ref:`Setting up TYPO3 manually <setting-up-typo3-manually>`
 
-In any case, use the cloned Git repository as basis (see :ref:`git-clone`).
+In any case, use the cloned Git repository as basis (see :ref:`git clone <git-clone>`).
 
 ..  index::
     single: Code Contribution Workflow; composer install
@@ -37,7 +37,7 @@ composer install
 Run composer install in the same directory you cloned the TYPO3 CMS core
 repository.
 
-It is recommended to use :file:`runTests.sh` for this (see :ref:`testing-core`). The "direct command" is an
+It is recommended to use :file:`runTests.sh` for this (see :ref:`core testing in depth <testing-core>`). The "direct command" is an
 alternative, but it requires your local system to have proper PHP and Composer versions ready to use.
 You only need to run one of these!
 

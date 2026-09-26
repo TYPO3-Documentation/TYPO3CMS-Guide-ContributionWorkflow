@@ -40,7 +40,7 @@ This is a screenshot of an open review on Gerrit_. We will go through the parts 
     knowledge. For detailed information on how to use the search, refer to the
     official documentation on https://review.typo3.org/Documentation/user-search.html.
     Most people use `Forger <https://forger.typo3.com>`__, because it provides more sophisticated ways to
-    find a review. Look at :ref:`Find-a-review` for more information.
+    find a review. Look at :ref:`Find a review on Gerrit <Find-a-review>` for more information.
 
 #.  The **commit message** formatted like we explained in :ref:`"The commit message"<commitmessage>`.
 

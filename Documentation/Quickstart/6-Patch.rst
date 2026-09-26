@@ -8,7 +8,7 @@
 Quick Start: Create a patch
 ===========================
 
-Please read :ref:`quickstart-intent` for a longer text about an example
+Please read :ref:`Quick Start: Create a patch - Intention <quickstart-intent>` for a longer text about an example
 which kind of patch you could contribute.
 
 Now with this example in mind, we have two modified files that we want to commit:
@@ -28,7 +28,7 @@ Now with this example in mind, we have two modified files that we want to commit
     Every patch needs to have a reason to be introduced. For this,
     you need to `create an issue on Forge
     <https://forge.typo3.org/projects/typo3cms-core/issues/new>`__,
-    see :ref:`forge-introduction`. With our example you could create
+    see :ref:`the introduction to Forge <forge-introduction>`. With our example you could create
     an issue like:
 
         **Tracker**: Task
@@ -120,7 +120,7 @@ Now with this example in mind, we have two modified files that we want to commit
 
     Close your editor with saving the commit message.
     For proper formatting and wording of a commit message, please read the
-    details in :ref:`commitmessage`.
+    details in :ref:`the commit message rules <commitmessage>`.
 
 5.  Push to Git repository
 
@@ -165,7 +165,7 @@ Now with this example in mind, we have two modified files that we want to commit
     You are welcome to join the Slack channel `#typo3-cms-coredev` and
     :ref:`advertise your contribution for feedback <announce-slack>`.
 
-    You might want to check :ref:`common-review-checks` for things that
+    You might want to check :ref:`Common code review checks <common-review-checks>` for things that
     people will review in your patch, hopefully leading to be merged.
 
     Depending on the feedback you may need to further refine your patch.
@@ -180,7 +180,7 @@ Now with this example in mind, we have two modified files that we want to commit
         git commit -a --amend
         git push
 
-    See :ref:`lifeOfAPatch-improve-patch` for details.
+    See :ref:`Upload a new Patch Set <lifeOfAPatch-improve-patch>` for details.
 
 8.  Cleaning up
 
@@ -192,7 +192,7 @@ Now with this example in mind, we have two modified files that we want to commit
 9.  Special notes
 
     In some cases you may need to alter assets of the TYPO3 Core, like
-    `TypeScript` or `SCSS`. See :ref:`building-assets` for how to build
+    `TypeScript` or `SCSS`. See :ref:`building the assets <building-assets>` for how to build
     and then commit these files to your patch.
 
 10. Thank you!

@@ -75,7 +75,7 @@ How do you rebase?
 
 The following assumes, there are not yet any merge conflicts. If
 there are merge conflicts, you must resolve them as you rebase
-/ merge / cherry-pick. See the section :ref:`resolve-merge-conflicts`.
+/ merge / cherry-pick. See the section :ref:`Resolve Merge conflicts <resolve-merge-conflicts>`.
 
 ..  _rebase-with-gerrit-button:
 

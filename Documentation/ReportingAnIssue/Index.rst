@@ -28,7 +28,7 @@ and features, but also the Core development team creates issues for
 each and every change to TYPO3.
 
 First, get yourself an account, see
-:ref:`TYPO3-Guide-ContributionWorkflow-Account`.
+:ref:`Setting up Your Accounts <TYPO3-Guide-ContributionWorkflow-Account>`.
 
 When you want to report a bug or suggest a new feature, go to the
 `"Issues" section for the TYPO3 Core
@@ -76,7 +76,7 @@ Remove side effects
     rule out extensions messing with the TYPO3 Core. If you need to set
     up an extension to illustrate the problem, make sure it is as free
     of side effects as possible. Ideally, try to reproduce your
-    problem or feature by using existing Core extensions (like :ref:`use-styleguide`).
+    problem or feature by using existing Core extensions (like :ref:`Use EXT:styleguide <use-styleguide>`).
 
 Narrow down the problem
     Try different browsers, this will help the team (and you) a lot to
@@ -181,11 +181,11 @@ Good example:
 Description
 -----------
 
-For bugs, provide steps how to reproduce the problem. See :ref:`best-practices-bug-report`
+For bugs, provide steps how to reproduce the problem. See :ref:`the best practices for a good bug report <best-practices-bug-report>`
 for some extra hints on what should go in the description.
 
 Be sure to add images, code snippets and or stacktraces if they help to refine
-the problem description. See :ref:`create-issue-files` for hints on adding files.
+the problem description. See :ref:`the optional files section <create-issue-files>` for hints on adding files.
 
 Always keep in mind these points when writing your issue report:
 
@@ -199,7 +199,7 @@ Format your issue
     Formatting your report helps readability. For longer text, use headers (h1, h2)
     to structure it. Use highlighted code (<>) for code snippets. Don't use very long
     sentences, instead use bullet points. See the section
-    :ref:`formatting-in-redmine` for more information on formatting your text.
+    :ref:`the hints for formatting in Redmine <formatting-in-redmine>` for more information on formatting your text.
 Be polite.
     Always.
 
@@ -334,7 +334,7 @@ A good bug report should contain all or any of these elements:
     This is a short easy-to-follow guide that allows us to understand how to
     trigger the bug following it. Using a numerated list of steps is just fine
     here; you can also add screenshots.
-    If possible, use TYPO3 Core extensions like :ref:`use-styleguide` to make
+    If possible, use TYPO3 Core extensions like :ref:`Use EXT:styleguide <use-styleguide>` to make
     an issue reproducible. The easier our support helpers are able to follow
     your instructions, the more likely it is we can also find the problematic
     area in the TYPO3 code.
@@ -458,7 +458,7 @@ Continued workflow
 
 So, you've filed an issue following the steps above, and submitted it.
 
-What now? Read further in :ref:`issue-workflow`.
+What now? Read further in :ref:`the issue workflow <issue-workflow>`.
 
 Additional Resources
 ====================

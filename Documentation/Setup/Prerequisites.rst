@@ -12,7 +12,7 @@ Required:
 
 *   Git
 *   Once you have setup the Git repository, it is advised to look at the listed
-    dependencies (basically: Docker) for  :file:`runTests.sh` (see :ref:`runTests_sh`).
+    dependencies (basically: Docker) for  :file:`runTests.sh` (see :ref:`Using runTests.sh <runTests_sh>`).
 
 Recommended:
 
