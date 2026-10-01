@@ -40,8 +40,10 @@ missing keywords, Resolves lines etc. For detailed information on the format of
 a commit message, :ref:`click here <commitmessage>`. This also describes cases
 in which you might exceed the line length of 72 characters (hyperlinks).
 
-If the commit-msg hook finds errors in your commit-msg, you can try again, by
-amending to the commit::
+The hook only reports these errors: the commit is created anyway, with a
+`Change-Id`, and an error box is printed in the terminal. Read the output of
+every commit. If the commit-msg hook finds errors in your commit message, fix
+them by amending the commit::
 
     git commit --amend
 
