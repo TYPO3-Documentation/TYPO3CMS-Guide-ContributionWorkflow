@@ -315,13 +315,14 @@ Testing
 *   Are **regression tests** for a bugfix needed?
 
 ..  _common-review-checks-acceptance:
+..  _common-review-checks-e2e:
 
-Acceptance Tests
+End-to-end tests
 ~~~~~~~~~~~~~~~~
 
 *   Does the proposed patch work functionally, does it implement what the commit message
     offers?
-*   Are acceptance tests for this needed (Playwright for new ones) and if they are implemented,
+*   Are end-to-end tests (Playwright) for this needed and if they are implemented,
     do they cover all needed functionality?
 *   If backend GUI functionality is involved, does the functionality work as both Admin as well
     as restricted users? Especially important if any "isAdmin" checks are involved, and how

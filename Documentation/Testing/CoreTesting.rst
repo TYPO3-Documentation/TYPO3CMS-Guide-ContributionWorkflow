@@ -157,12 +157,12 @@ are not valid:
 ..  code-block:: shell
 
     lolli@apoc /var/www/local/cms/Web $ Build/Scripts/runTests.sh -h
-    TYPO3 Core test runner. Execute acceptance, unit, functional and other test suites in
+    TYPO3 core test runner. Execute unit, functional and other test suites in
     a container based test environment. Handles execution of single test files, sending
     xdebug information to a local IDE and more.
     ...
 
-Some further examples: The most important tests suites are unit tests, functional tests and acceptance
+Some further examples: The most important tests suites are unit tests, functional tests and end-to-end
 tests, but there is more:
 
 ..  code-block:: shell
@@ -170,8 +170,8 @@ tests, but there is more:
     # Execute the unit test suite with PHP 8.5
     Build/Scripts/runTests.sh -s unit -p 8.5
 
-    # Execute some backend acceptance tests
-    Build/Scripts/runTests.sh -s acceptance typo3/sysext/core/Tests/Acceptance/Backend/Topbar/
+    # Execute the end-to-end tests (Playwright) of the Extension Manager
+    Build/Scripts/runTests.sh -s e2e Build/tests/playwright/e2e/extensions/installed-extensions.spec.ts
 
     # Execute some functional tests with PHP 8.5 and postgres DBMS
     Build/Scripts/runTests.sh -s functional -p 8.5 -d postgres typo3/sysext/core/Tests/Functional/Package/

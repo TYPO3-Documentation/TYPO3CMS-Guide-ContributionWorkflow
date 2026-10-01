@@ -81,10 +81,13 @@ Output example:
 
     -s <...>
         Specifies which test suite to run
-            - acceptance: main application acceptance tests
-            - acceptanceInstall: installation acceptance tests, only with -d mariadb|postgres|sqlite
             - build: execute frontend build (TypeScript, Sass, Contrib, Assets)
             - cgl: test and fix all core php files
+            ...
+            - e2e: end to end tests (use e2e-prepare for manual execution)
+            - e2e-prepare: Start a test instance of TYPO3
+            - e2e-browser: end to end tests with the GUI running on http://127.0.0.1:43837
+            - e2e-install: installation end to end tests, only with -d mariadb|mysql|postgres|sqlite
     ...
 
 Commands
@@ -116,7 +119,7 @@ Commands for running tests:
 
 *   -s unit (unit*)
 *   -s functional (functional*)
-*   -s acceptance (acceptance*)
+*   -s e2e (e2e*)
 *   ...
 
 Cleanup, clear cache:
@@ -133,7 +136,7 @@ Additional setup
 ================
 
 Be sure to exclude the :file:`typo3temp` and :file:`.cache` directory from indexing in your IDE
-(e.g. PhpStorm) before starting the acceptance tests.
+(e.g. PhpStorm) before starting the end-to-end tests.
 
 Also, if you are using `DDEV` for example with `Mutagen` performing filesystem
 synchronization, it is vital that you configure the `typo3temp` and `.cache` directory
@@ -247,16 +250,32 @@ Run functional tests with PostgreSQL
 
     ./Build/Scripts/runTests.sh -s functional -d postgres
 
-Run acceptance tests
+..  _run-e2e-tests:
+
+Run end-to-end tests
 --------------------
+
+End-to-end tests use `Playwright <https://playwright.dev/>`__. The specs are
+located in :file:`Build/tests/playwright/e2e/`. The former Codeception based
+`-s acceptance` suite does not exist any more.
 
 ..  code-block:: bash
     :caption: shell command
 
-    ./Build/Scripts/runTests.sh -s acceptance
+    ./Build/Scripts/runTests.sh -s e2e
 
-Depending on the power of your local machine you can expect about 30 minutes
-or more for the acceptance tests.
+Run a single spec file:
+
+..  code-block:: bash
+    :caption: shell command
+
+    ./Build/Scripts/runTests.sh -s e2e Build/tests/playwright/e2e/extensions/installed-extensions.spec.ts
+
+The test instance is a Composer installation by default. Use
+`-M classic` to run the tests against a classic installation, as some
+functionality (for example activating extensions in the Extension Manager)
+only exists there. `-s e2e-prepare` starts a test instance for manual
+testing, `-s e2e-browser` runs the tests with the Playwright GUI.
 
 Troubleshooting
 ===============
@@ -328,8 +347,9 @@ standard exit codes:
 *   0 means all is ok
 *   != 0 means error
 
-Reports of the acceptance tests will be stored in
-:file:`typo3temp/var/tests/AcceptanceReports` with screenshots from the remotely controlled browser.
+Reports of the end-to-end tests are stored in
+:file:`typo3temp/var/tests/playwright-reports` and
+:file:`typo3temp/var/tests/playwright-results`.
 
 ..  index::
     single: Code Contribution Workflow; Running Tests Locally without Docker

@@ -50,7 +50,7 @@ proper quality assurance and Gerrit_ helps us here - but let's go over the workf
     checks if the code style is according to our coding guidelines or in
     general `makes sense` by reading and the **Verification** which means if the
     code does what it is supposed to do (like fixing an issue) and checks
-    whether the unit, functional and acceptance tests run through.
+    whether the unit, functional and end-to-end tests run through.
 #.  If a review has enough positive votes (at least two people voting
     verified+reviewed), an **active contributor** (aka member of the Core
     team, called "Merger") is able to merge that review into the existing
