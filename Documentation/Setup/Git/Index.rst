@@ -126,7 +126,9 @@ There are two git hooks available for TYPO3 development:
 *   :ref:`commit-msg Hook <commit-msg-hook>`: required
 *   :ref:`pre-commit Hook <pre-commit-hook>`: optional, the pre-commit hook runs on Linux and
     MacOS. To use the pre-commit hook on Windows you can use a tool like the
-    `Git BASH <https://gitforwindows.org/>`__.
+    `Git BASH <https://gitforwindows.org/>`__. It needs a local PHP at least as
+    new as the one the Core requires; without it, use
+    :ref:`CGL check and fix <cgl-fix-my-commit>` in a container instead.
 
 To set them up, you can use the existing Composer command or copy the hooks
 manually.
