@@ -27,8 +27,8 @@ Quick Start: Get ready to contribute to TYPO3 in under 30 minutes!
 This `Tutorial` / `How To` will show you the easiest and
 *quickest way to become a contributor* to TYPO3 Core.
 
-It is aimed at developers who have a *good general knowledge*.
-They need to know the *specifics and rules* of TYPO3 contributions.
+It is aimed at developers who have a *good general knowledge*,
+but need to know the *specifics and rules* of TYPO3 contributions.
 
 We will use *very brief wording* and only few "read further" hints to
 *streamline the process* with conventions. Please check out the
