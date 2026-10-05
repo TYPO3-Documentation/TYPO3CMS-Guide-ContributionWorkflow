@@ -169,7 +169,7 @@ Status
     are worked on each day. If you can help to add relations to related tickets,
     or provide feedback or additional information in "foreign" tickets, this can help us out.
 
-    The ideal help of course is if you are able to solve issues by providing solutions
+    The ideal help is if you are able to solve issues by providing solutions
     or patches to issues.
 
 

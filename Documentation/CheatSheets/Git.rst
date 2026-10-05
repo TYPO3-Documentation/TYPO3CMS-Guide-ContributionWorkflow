@@ -317,7 +317,7 @@ already deduce from a `Releases: main, 12.4` line that it was committed when
 up the date of a patch and relate it to release dates, or begin to inspect the
 git repository manually.
 
-But: Hold on! Just check out the Gerrit interface and on the top right you see
+But: Hold on! Check out the Gerrit interface and on the top right you see
 the menu, from where you also cherry-pick a patch or download a patch. There's
 a menu entry :guilabel:`Included in` which will reveal all TYPO3 releases (via
 GIT tags), a patch was included in.

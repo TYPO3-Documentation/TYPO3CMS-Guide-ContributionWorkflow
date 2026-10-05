@@ -28,7 +28,7 @@ Also, the styleguide presents you with examples of several backend UI elements
 like notifications, tabs, accordions and more.
 
 The extension is very helpful for Core contributors and reviewers, because it
-allows to test many TCA related configurations easily, without the need to
+allows to test many TCA related configurations without the need to
 create custom extensions to reproduce problems.
 
 `EXT:styleguide` has been integrated to the TYPO3 Core monorepository with

@@ -267,7 +267,7 @@ place next time. But your fix itself is great, I verified it and it works.
 As usual there are exceptions to those rules. Sometimes a reviewer has no time
 to do those CGL fixes and decides to vote -1 instead, or maybe a patch is
 codewise so ugly that is does not make much sense to put energy into that.
-This is ok, just keep in mind that in general we appreciate minor issues to
+This is ok, but keep in mind that in general we appreciate minor issues to
 be fixed by the reviewer directly.
 
 Voting
@@ -393,7 +393,7 @@ When changes are made to **Xliff files** (translations):
 *   Any existing label change committed to `main` will automatically update
     labels in ALL other TYPO3 versions, even if the TYPO3 Core repository
     does not backport the patch to earlier versions. Non-existing labels
-    will not be included/updated of course. This is under the
+    will not be included/updated. This is under the
     assumption, that existing label contents are only altered in terms
     of spelling/grammar, but **never change in meaning or arguments**.
 

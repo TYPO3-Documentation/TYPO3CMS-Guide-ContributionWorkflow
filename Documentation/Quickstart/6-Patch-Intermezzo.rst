@@ -103,7 +103,7 @@ which already performs a test:
         self::assertStringContainsString('&quot;foo&quot;: &quot;bar&quot;', $result['html']);
 
 In most cases you need to create a distinct test method for patches you make,
-but in this case we can take the easy route and just append our expectation:
+but in this case it is enough to append our expectation:
 
 ..  code:: php
     :emphasize-lines: 4,11

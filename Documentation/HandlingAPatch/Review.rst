@@ -91,7 +91,7 @@ For some tips on what to review, check our :ref:`Common code review checks <comm
 
         Vote by clicking the :guilabel:`Reply` button
 
-    Of course you should also :ref:`vote <gerrit-voting>` for the change
+    You should also :ref:`vote <gerrit-voting>` for the change
     (Be graceful with -1 votes though).
 
 ..  _lifeOfAPatch-test:
@@ -265,7 +265,7 @@ Due to this it is vital to "clean up" patches from time to time:
     working in a similar area of your patch and see if you can join forces.
 *   From time to time, check on patches you have voted on, to see if you can
     push things forward to either get merged or abandoned.
-*   Sometimes just check all your own open patches and see if you might catch
+*   Sometimes check all your own open patches and see if you might catch
     interest in picking it up again.
 *   Please either update older patches in "Merge conflict" mode or state your
     intent to abandon the patch.

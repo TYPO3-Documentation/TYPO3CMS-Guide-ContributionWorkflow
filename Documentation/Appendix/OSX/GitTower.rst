@@ -56,5 +56,5 @@ Custom Toolbar Button
 
 You'll find that the following dialog is optimized for pushing to Gerrit. It
 will automatically format the Push Refspec according to Gerrit's
-requirements - so you can simply enter the name of the code review branch
+requirements - so you can enter the name of the code review branch
 you want to push to.

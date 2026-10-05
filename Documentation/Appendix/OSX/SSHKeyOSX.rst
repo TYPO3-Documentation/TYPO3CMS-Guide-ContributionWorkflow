@@ -30,7 +30,7 @@ this key.
 
 An SSH key consists of a pair of files. One is the private key, which you
 should **never** give to anyone. No one will ever
-ask you for it and if so, simply ignore them - they are trying to steal it.
+ask you for it and if so, ignore them - they are trying to steal it.
 The other is the public key. When you generate your keys, you will
 use ``ssh-keygen`` to store the keys in a safe location so you can
 authenticate with Gerrit_.
