@@ -50,8 +50,8 @@ clone the Git source and after every `git pull` request or switching branches::
 
     composer install
 
-But, just follow the :ref:`setup instructions <setup>`, it will walk you through the commands
-in the correct order!
+Follow the :ref:`setup instructions <setup>` instead. They walk you through the
+commands in the correct order!
 
 
 ..  index::
@@ -64,7 +64,7 @@ Custom TYPO3 Composer Commands
 
 Some additional Composer commands have been added for Core development.
 
-Just run::
+Run::
 
     composer
 

@@ -21,7 +21,7 @@ Setting up Gerrit (ssh)
         :class: with-shadow
 
     You will be prompted with a regular :guilabel:`Basic Authentication`
-    window, simply enter your TYPO3.org username and password you had
+    window. Enter your TYPO3.org username and password you had
     :ref:`set up earlier <TYPO3Account>`.
 
 

@@ -29,13 +29,13 @@ right corner.
 #.  Visualize the current development with a lot of useful **graphs**. You can
     learn more about the graphs `here <https://forger.typo3.com/help>`_.
 
-#.  Show and filter **reviews** incl. filters to easily find things to review.
+#.  Show and filter **reviews** incl. filters to find things to review.
     Check out the ``Reviews`` menu.
 
 #.  Offer a variety of Kanban-style boards both for **issues** and **reviews**.
     Take a look at the ``Sprints`` menu, for
     example `Sprints: Reviews: Bugfixes <https://forger.typo3.com/sprint/reviews?&boardId=bugfix>`__.
-    Note: this is a great way to follow the current development. Just put up
+    Note: this is a great way to follow the current development. Put up
     any board on a huge screen and use an auto-reload plugin in your browser.
 
 #.  Supply an `Issue Management <https://forger.typo3.com/management>`__ view

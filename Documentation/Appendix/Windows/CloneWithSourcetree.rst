@@ -181,7 +181,7 @@ Now click ok. You should get a Gerrit link to your new change in the resulting o
 Cleaning up
 -----------
 
-To get back to the main branch just click on it at the "Branches" section. If
+To get back to the main branch, click on it at the "Branches" section. If
 you want to delete your feature branch, right click on it and choose "Delete".
 
 ..  image:: /Images/External/SourceTree/8_Win_SourceTree_CheckoutMaster.png

@@ -129,7 +129,7 @@ Push: invalid committer
 
 
 This message simply means that your email address is not registered as a Web-Identity.
-If this error happens, just go to the website that the error message suggests:
+If this error happens, go to the website that the error message suggests:
 `https://review.typo3.org/#/settings/contact`. Register the email address you
 use to push (button :guilabel:`Register New Email`) - even if it is already in the dropdown list.
 Click on the link you receive via email. Be sure your are already logged in on `review.typo3.org`.

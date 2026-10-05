@@ -244,7 +244,7 @@ Since the compiled files are merged on one single line, a merge conflict in thes
 will occur, if your patch works on anything CSS/JS related and other changes
 have been introduced meanwhile.
 
-The solution to resolve merge conflicts in these files is actually vers easy. Just
+To resolve merge conflicts in these files,
 re-perform the commands from above (`... build`), which will re-create
 the assets from your cherry-picked patchset. You may need to resolve conflicts in the
 `.ts/.scss` files beforehand, if there are any due to rebasing.

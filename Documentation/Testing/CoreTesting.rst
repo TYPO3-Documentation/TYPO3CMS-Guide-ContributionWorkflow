@@ -182,7 +182,7 @@ tests, but there is more:
     # Verbose runTests.sh output. Shows main steps and Composer commands for debugging
     Build/Scripts/runTests.sh -v
 
-As shown there are various combinations available. Just go ahead, read the help output and play around.
+As shown there are various combinations available. Go ahead, read the help output and play around.
 There are tons of further test suites to try.
 
 Also note that you can use the `-b` option to switch between `docker` and `podman` container execution,

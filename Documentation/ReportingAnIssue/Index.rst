@@ -47,11 +47,11 @@ Before you go ahead and report a bug, it is recommended that you check
 `Forger <https://forger.typo3.com>`__ to see if the same issue or
 something similar has already been reported.
 
-`Forger's <https://forger.typo3.com>`__ search functionality makes it
-easy to find existing issues. Filters are located on the the left hand
+`Forger's <https://forger.typo3.com>`__ search functionality helps
+you find existing issues. Filters are located on the the left hand
 side of the navigation menu. You can use this feature to help refine searches.
 
-Of course you are also able to use the search functionality of
+You can also use the search functionality of
 `Forge <https://forge.typo3.org>`__ itself, which offers some more specific
 filter options.
 
@@ -157,7 +157,7 @@ Subject
 -------
 
 Pick a meaningful subject. Something like "Error in list module" is very generic
-and doesn't help describing the problem. Just imagine how you would like to get
+and doesn't help describing the problem. Imagine how you would like to get
 a report for yourself :)
 
 ..  tip::

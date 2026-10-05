@@ -64,7 +64,7 @@ Clone the TYPO3 CMS core repository:
 
             git clone https://github.com/typo3/typo3.git .
 
-Of course you can also use your custom user-specific workspace like
+You can also use your custom user-specific workspace like
 :file:`/home/kaspar/TYPO3-Contribution/` to store the files, as you
 do not necessarily need to run a webserver to later setup your installation.
 

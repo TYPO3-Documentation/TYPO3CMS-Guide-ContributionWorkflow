@@ -24,7 +24,7 @@ Quick Start: Get ready to contribute to TYPO3 in under 30 minutes!
     distinct "patch sets") and in the end merged by a member of the
     TYPO3 Core Team.
 
-This `Tutorial` / `How To` will show you the easiest and
+This `Tutorial` / `How To` will show you the
 *quickest way to become a contributor* to TYPO3 Core.
 
 It is aimed at developers who have a *good general knowledge*,

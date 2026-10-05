@@ -133,7 +133,7 @@ as described in :ref:`setup <setup>` (or via the
     ..  tip::
 
         Keep in mind that you can commit with --amend **as often as you want,**
-        just make sure you keep the `Change-Id:` line intact.
+        make sure you keep the `Change-Id:` line intact.
 
 4.  Push to Gerrit
 
