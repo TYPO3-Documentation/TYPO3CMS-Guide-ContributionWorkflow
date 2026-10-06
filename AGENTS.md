@@ -49,9 +49,13 @@ https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument):
    (https://docs.typo3.org/permalink/h2document:link-anchor), and anchors are
    never removed once published
    (https://docs.typo3.org/permalink/h2document:anchor-persistence).
-6. **Validate before committing** — run `make test-docs`, and run the
+6. **Link TYPO3 documentation with permalinks**, also inside this manual,
+   and give every link its own link text:
+   https://docs.typo3.org/permalink/h2document:permalinks. Do not suggest
+   replacing a permalink with `:ref:`.
+7. **Validate before committing** — run `make test-docs`, and run the
    pre-commit hooks (see Commands).
-7. **Never commit or push without being asked.**
+8. **Never commit or push without being asked.**
 
 ## Commit message format
 
