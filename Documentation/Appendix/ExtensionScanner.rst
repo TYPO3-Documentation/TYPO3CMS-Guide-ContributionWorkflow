@@ -20,9 +20,11 @@ a deprecation or breaking ReST file to document the change.
 Connection to the changelog reStructuredText files
 ==================================================
 
-All changelog type reStructuredText (reST) files since Core version 9 have to
-be tagged with one of the three tags :rst:`FullyScanned`,
-:rst:`PartiallyScanned` or :rst:`NotScanned`. In particular, the
+All `Deprecation` and `Breaking` changelog reStructuredText (reST) files since
+Core version 9 have to be tagged with exactly one of the three tags
+:rst:`FullyScanned`, :rst:`PartiallyScanned` or :rst:`NotScanned`. `Feature`
+and `Important` files do not need one of these tags, as the extension scanner
+only looks for removed or deprecated functionality. In particular, the
 :rst:`FullyScanned` tag is used by the extension scanner to mark instances as
 "not affected by this change", as such they should be added with care and only
 if the scanner configuration matches all changes mentioned in the reST file.

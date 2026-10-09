@@ -112,10 +112,12 @@ need an entry in the Changelog. Check the list below. Also see the current
 :doc:`TYPO3 Core Changelog <changelog:Index#typo3-core-changelog>`
 for some examples.
 
-Every file may optionally contain tags, but it must contain at least a
-`NotScanned`, `PartiallyScanned` or `FullyScanned` tag for the extension scanner.
-See :ref:`Extension scanner <t3coreapi:extension-scanner>` in TYPO3 Explained for more
-information.
+Every file ends with an index line of tags. `Deprecation` and `Breaking` files
+must contain exactly one `NotScanned`, `PartiallyScanned` or `FullyScanned` tag
+for the extension scanner; `Feature` and `Important` files do not need one.
+The authoritative list of tags is :file:`typo3/sysext/core/Documentation/Changelog/Howto.rst`
+in the Core repository. See :ref:`Extension scanner <t3coreapi:extension-scanner>`
+in TYPO3 Explained for more information.
 
 ..  _render-the-changelog:
 
