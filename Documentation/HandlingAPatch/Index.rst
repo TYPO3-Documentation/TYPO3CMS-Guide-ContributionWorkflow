@@ -29,7 +29,7 @@ every patch must be reviewed. Only after at least 2 people have tested the patch
 and at least 2 people have verified it (one of them must be a member of the core team), can
 the patch be merged (for more details on voting, see :ref:`Vote <gerrit-voting>`).
 
-Additionally, a suite of tests (unit, functional and acceptance) will
+Additionally, a suite of tests (unit, functional and end-to-end) will
 automatically run on every patch (set), the results being shown as a +1 or
 -1 by "Core CI".
 
