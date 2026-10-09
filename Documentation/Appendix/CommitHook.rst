@@ -65,6 +65,17 @@ amending to the commit::
 The :file:`pre-commit` hook checks all added PHP files staged for the commit for Coding
 Guideline issues and will report any problems it finds.
 
+..  attention::
+
+    The hook runs `php-cs-fixer` with the PHP installed on your machine, not
+    in a container. If that PHP version is older than the one the TYPO3 Core
+    requires (see `require.php` in the Core's :file:`composer.json`), the
+    check stops with a fatal PHP error on every commit and reports Coding
+    Guideline errors that may not exist. The commit is still created. In
+    that case remove :file:`.git/hooks/pre-commit` and check the Coding
+    Guidelines in a container instead, see
+    :ref:`CGL check and fix <cgl-fix-my-commit>`.
+
 To fix the issues, see :ref:`CGL check and fix <cgl-fix-my-commit>`.
 
 After fixing the files you must amend your commit:

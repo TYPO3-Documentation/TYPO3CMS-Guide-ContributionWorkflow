@@ -63,3 +63,8 @@ Quick Start: Set up Git repository
             echo 'Releases: main'
           } > $HOME/.gitmessage-typo3.txt && \
           git config commit.template $HOME/.gitmessage-typo3.txt
+
+    The optional :ref:`pre-commit hook <pre-commit-hook>` runs with your local
+    PHP. If every commit prints a fatal PHP error from it, your PHP is older
+    than the Core requires: remove :file:`.git/hooks/pre-commit` and use
+    :ref:`CGL check and fix <cgl-fix-my-commit>` instead.
