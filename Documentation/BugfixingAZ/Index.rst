@@ -113,8 +113,9 @@ as described in :ref:`setup <setup>` (or via the
 
         git commit -a
 
-    The :ref:`commit-msg hook <pre-commit-hook>` will do some sanity
-    checks and add a line starting with `Change-Id:`.
+    The :ref:`commit-msg hook <commit-msg-hook>` will do some sanity
+    checks and add a line starting with `Change-Id:`. It reports problems
+    but does not stop the commit, so read its output.
 
     If you have activated the :ref:`pre-commit hook <pre-commit-hook>`
     it will loudly complain if something does not conform to the coding guidelines.

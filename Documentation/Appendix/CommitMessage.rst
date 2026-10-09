@@ -242,8 +242,9 @@ Relationships
 
 #.  `Resolves:` **(REQUIRED)**
     You **must** reference an issue on Forge_ by
-    adding the #[ISSUE_NUMBER]. The commit-msg hook rejects commits that
-    do not have at least one `Resolves:` line. For **feature** and **task** commits,
+    adding the #[ISSUE_NUMBER]. The commit-msg hook reports an error for commits
+    that do not have at least one `Resolves:` line, but it does not stop the
+    commit: read its output and amend the commit. For **feature** and **task** commits,
     the resolved issues are closed on merge:
 
     ..  code-block:: text
@@ -299,8 +300,8 @@ Relationships
 
     The change id is a randomly generated unique ID that identifies this change in
     Gerrit_.
-    The `Change-Id` line is automatically added by :ref:`our pre-commit hook
-    <pre-commit-hook>`. The commit hook is executed when you have finished
+    The `Change-Id` line is automatically added by :ref:`our commit-msg hook
+    <commit-msg-hook>`. The commit hook is executed when you have finished
     editing and save the commit message.
 
     *Attention:* Be sure to keep the existing Change-Id when adding a new patchset
