@@ -71,6 +71,12 @@ Ready to merge
 A Core Merger can give a +2 vote on *Code Review* and *Verified* if
 there is already a positive vote by another Core Merger.
 
+Check whether the change carries a `Signed-off-by:` line by a person. It is
+recommended, not required, so a missing line is no reason to reject a change.
+Question code that looks copied from another source, whether or not AI was
+involved. See `AI assistance and attribution
+<https://docs.typo3.org/permalink/t3contribute:commitmessage-ai-attribution>`_.
+
 ..  _Gerrit-No-brainers:
 ..  _Gerrit-Low-brainers:
 ..  _Gerrit-Low-complexity:
