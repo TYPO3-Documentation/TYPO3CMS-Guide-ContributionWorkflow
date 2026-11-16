@@ -222,7 +222,7 @@ First, create a file, for example :file:`~/.gitmessage.txt`.
     [BUGFIX|TASK|FEATURE]
 
     Resolves: #
-    Releases: main, 13.4
+    Releases: main, 14.3
 
 Make Git use this file as a template for the commit message:
 
