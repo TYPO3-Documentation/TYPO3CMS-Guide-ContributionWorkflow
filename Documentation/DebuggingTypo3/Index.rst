@@ -19,7 +19,7 @@ Debugging With PhpStorm and Xdebug
 
 ..  youtube:: VtffB0CG1ok
 
-In order to configure PhpStorm with Xdebug you need to do three things:
+In order to configure PhpStorm with Xdebug you need to do four things:
 
 #.  Install xdebug
 #.  Configure xdebug settings in your php.ini
@@ -35,11 +35,15 @@ Example setup:
 ..  code-block:: ini
     :caption: php.ini
 
-    xdebug.remote_enable = 1
-    xdebug.remote_host = localhost
+    xdebug.mode = debug
+    xdebug.client_host = localhost
     xdebug.max_nesting_level = 1000
 
-You should also configure the port (xdebug.remote_port) if that should differ from the default (9000).
+You should also configure the port (xdebug.client_port) if that should differ from the default (9003).
+
+These are the settings of Xdebug 3. They replace the Xdebug 2 settings
+`xdebug.remote_enable`, `xdebug.remote_host` and `xdebug.remote_port`, see the
+`Xdebug upgrade guide <https://xdebug.org/docs/upgrade_guide>`__.
 
 Remember to restart your Webserver / php-fpm / Docker after you made your changes.
 
@@ -52,7 +56,7 @@ PhpStorm
 --------
 
 *   Check `Run: Webserver Debug Validation`
-*   Start `Run: Start listing for PHP Debug Connections`
+*   Start `Run: Start Listening for PHP Debug Connections`
 *   Create some breakpoints
 
 More Information
